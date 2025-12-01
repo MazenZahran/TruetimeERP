@@ -4425,6 +4425,9 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1454, 752</value>
   </data>
+  <data name="Statickey.Caption" xml:space="preserve">
+    <value>Conkey</value>
+  </data>
   <data name="BarEndDate.Caption" xml:space="preserve">
     <value>Ending Date</value>
   </data>
@@ -11707,6 +11710,18 @@
   <data name="&gt;&gt;PopupMenu6.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;Statickey_.Name" xml:space="preserve">
+    <value>Statickey_</value>
+  </data>
+  <data name="&gt;&gt;Statickey_.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Statickey.Name" xml:space="preserve">
+    <value>Statickey</value>
+  </data>
+  <data name="&gt;&gt;Statickey.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Main</value>
   </data>
@@ -12687,7 +12702,7 @@
     <value>الدوام حسب ساعات شهرية مطلوبة</value>
   </data>
   <metadata name="PopupMenuAttMonthly.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 91</value>
+    <value>807, 54</value>
   </metadata>
   <data name="BarButtonMonthlyAttReport.Caption" xml:space="preserve">
     <value>تقرير الدوام</value>
@@ -13614,6 +13629,9 @@
   <data name="BarButtonItem16.Caption" xml:space="preserve">
     <value>BarButtonItem16</value>
   </data>
+  <data name="Statickey_.Caption" xml:space="preserve">
+    <value>Conkey</value>
+  </data>
   <data name="RibbonControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -13621,10 +13639,10 @@
     <value>10, 6, 10, 6</value>
   </data>
   <metadata name="RibbonMiniToolbar1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>644, 54</value>
+    <value>392, 54</value>
   </metadata>
   <metadata name="PopupMenu8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>269, 54</value>
+    <value>17, 54</value>
   </metadata>
   <data name="RibbonPageGroup19.Text" xml:space="preserve">
     <value>نظام المهام</value>
@@ -15701,7 +15719,7 @@
     <value>مشتريات</value>
   </data>
   <metadata name="PopupMenu4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>518, 54</value>
+    <value>266, 54</value>
   </metadata>
   <data name="BarButtonItem80.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -16005,7 +16023,7 @@
     <value>BarButtonItem126</value>
   </data>
   <metadata name="PopupMenu3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 54</value>
+    <value>1198, 17</value>
   </metadata>
   <data name="BarButtonItem127.Caption" xml:space="preserve">
     <value>BarButtonItem127</value>
@@ -16946,7 +16964,7 @@
     <value>جلسات الجرد</value>
   </data>
   <metadata name="PopupMenu5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>143, 54</value>
+    <value>1324, 17</value>
   </metadata>
   <metadata name="PopupMenu2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1072, 17</value>
@@ -16970,13 +16988,13 @@
     <value>919, 17</value>
   </metadata>
   <metadata name="RadialMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>395, 54</value>
+    <value>143, 54</value>
   </metadata>
   <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>806, 54</value>
+    <value>554, 54</value>
   </metadata>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>968, 54</value>
+    <value>716, 54</value>
   </metadata>
   <data name="RibbonPageGroup34.Text" xml:space="preserve">
     <value>ادارة تاجير المركبات</value>
@@ -17246,10 +17264,10 @@
 &lt;/div&gt;</value>
   </data>
   <metadata name="AlertControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>198, 91</value>
+    <value>988, 54</value>
   </metadata>
   <metadata name="SvgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>323, 91</value>
+    <value>1113, 54</value>
   </metadata>
   <data name="SvgImageCollection1.AcceptMedium.svg" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -17388,7 +17406,7 @@
 &lt;/div&gt;</value>
   </data>
   <metadata name="HtmlContentPopup1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>489, 91</value>
+    <value>1279, 54</value>
   </metadata>
   <data name="HtmlContentPopup1.HtmlTemplate.Styles" xml:space="preserve">
     <value>.root {
@@ -17482,6 +17500,6 @@
 &lt;/div&gt;</value>
   </data>
   <metadata name="PopupMenu6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>654, 91</value>
+    <value>17, 91</value>
   </metadata>
 </root>

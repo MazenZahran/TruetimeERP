@@ -476,6 +476,15 @@ LogInCont:
         Application.Exit()
     End Sub
 
+    Private Sub LogInMenue_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.Control AndAlso e.KeyCode = Keys.D Then
+            e.Handled = True
+            e.SuppressKeyPress = True
+            Dim hwid As String = GetHWID()
+            MessageBox.Show(hwid, "Unique", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
     Private Sub LogInMenue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 

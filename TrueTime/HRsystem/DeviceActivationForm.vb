@@ -31,13 +31,18 @@ Public Class DeviceActivationForm
             txtNotes.Focus()
             Return
         End If
+        If String.IsNullOrWhiteSpace(txtRequestedBy.Text) Then
+            MessageBox.Show("يجب إدخال اسمك لطلب التفعيل", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtNotes.Focus()
+            Return
+        End If
 
         Try
             btnRequestActivation.Enabled = False
             btnCheckActivation.Enabled = False
             lblStatus.Text = "جاري إرسال الطلب..."
 
-            Dim result As String = Await SubmitDeviceRequest(_deviceKey, _deviceName, _deviceModel, txtNotes.Text)
+            Dim result As String = Await SubmitDeviceRequest(_deviceKey, _deviceName, _deviceModel, txtNotes.Text, txtRequestedBy.Text)
 
             Dim jsonResult = JObject.Parse(result)
             Dim message As String = jsonResult("message")?.ToString()
@@ -179,7 +184,7 @@ Public Class DeviceActivationForm
         End Try
     End Function
 
-    Private Async Function SubmitDeviceRequest(uniqueDeviceKey As String, deviceName As String, deviceModel As String, userNotes As String) As Task(Of String)
+    Private Async Function SubmitDeviceRequest(uniqueDeviceKey As String, deviceName As String, deviceModel As String, userNotes As String, RequestedBy As String) As Task(Of String)
         Try
             Dim apiUrl As String = GlobalVariables.ttsSystemsAPI & "Access/SubmitDeviceRequest"
 
@@ -188,7 +193,8 @@ Public Class DeviceActivationForm
                 ""uniqueDeviceKey"": """ & uniqueDeviceKey & """,
                 ""deviceName"": """ & deviceName & """,
                 ""deviceModel"": """ & deviceModel & """,
-                ""userNotes"": """ & userNotes & """
+                ""userNotes"": """ & userNotes & """,
+                ""RequestedBy"": """ & RequestedBy & """
             }"
 
             Using client As New HttpClient()
@@ -372,10 +378,5 @@ Public Class DeviceActivationForm
             Console.WriteLine("Error saving IsNew: " & ex.Message)
             MessageBox.Show("خطأ في حفظ حالة التفعيل: " & ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim F As New ContractDetails
-        F.ShowDialog()
     End Sub
 End Class

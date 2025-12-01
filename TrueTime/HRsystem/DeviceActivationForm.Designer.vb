@@ -31,7 +31,8 @@ Partial Class DeviceActivationForm
         Me.btnCheckActivation = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtRequestedBy = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -112,7 +113,7 @@ Partial Class DeviceActivationForm
         'txtNotes
         '
         Me.txtNotes.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.txtNotes.Location = New System.Drawing.Point(30, 260)
+        Me.txtNotes.Location = New System.Drawing.Point(30, 274)
         Me.txtNotes.Multiline = True
         Me.txtNotes.Name = "txtNotes"
         Me.txtNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -125,7 +126,7 @@ Partial Class DeviceActivationForm
         Me.lblNotes.AutoSize = True
         Me.lblNotes.Font = New System.Drawing.Font("Tahoma", 9.0!)
         Me.lblNotes.ForeColor = System.Drawing.Color.Red
-        Me.lblNotes.Location = New System.Drawing.Point(440, 235)
+        Me.lblNotes.Location = New System.Drawing.Point(447, 257)
         Me.lblNotes.Name = "lblNotes"
         Me.lblNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lblNotes.Size = New System.Drawing.Size(103, 14)
@@ -181,14 +182,25 @@ Partial Class DeviceActivationForm
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
-        'Button1
+        'txtRequestedBy
         '
-        Me.Button1.Location = New System.Drawing.Point(493, 10)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.txtRequestedBy.Location = New System.Drawing.Point(42, 230)
+        Me.txtRequestedBy.Name = "txtRequestedBy"
+        Me.txtRequestedBy.Size = New System.Drawing.Size(387, 20)
+        Me.txtRequestedBy.TabIndex = 11
+        Me.txtRequestedBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(435, 232)
+        Me.Label1.Name = "Label1"
+        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Label1.Size = New System.Drawing.Size(115, 14)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "طلب التفعيل بواسطة:"
         '
         'DeviceActivationForm
         '
@@ -196,7 +208,8 @@ Partial Class DeviceActivationForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(580, 420)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtRequestedBy)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnCheckActivation)
@@ -233,5 +246,6 @@ Partial Class DeviceActivationForm
     Friend WithEvents lblStatus As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblDBName As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtRequestedBy As TextBox
+    Friend WithEvents Label1 As Label
 End Class

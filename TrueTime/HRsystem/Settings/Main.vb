@@ -50,6 +50,10 @@ Public Class Main
         My.Forms.Main.RibbonControl.Show()
         BarLanguage.Caption = GlobalVariables._SystemLanguage
 
+        Statickey.Caption = DeviceActivationForm.GetStaticContractKeyFromDatabase()
+
+
+
         Dim MyDBConnection As String = ConfigurationManager.ConnectionStrings("TrueTime.My.MySettings.TrueTimeConnectionString").ConnectionString
         Dim builder As SqlConnectionStringBuilder = New SqlConnectionStringBuilder(MyDBConnection)
         My.Forms.Main.ItemDataBaseName.Caption = builder.InitialCatalog
