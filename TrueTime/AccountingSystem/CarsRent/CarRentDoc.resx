@@ -1,0 +1,3824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TileViewColumn2.Caption" xml:space="preserve">
+    <value>رقم المركبة</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TileViewColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TileViewColumn4.Caption" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="RepositoryType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="RepositoryType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryType.Columns" xml:space="preserve">
+    <value>CarTypeID</value>
+  </data>
+  <data name="RepositoryType.Columns1" xml:space="preserve">
+    <value>Name1</value>
+  </data>
+  <data name="RepositoryType.Columns2" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="RepositoryType.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryType.Columns5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryType.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.Columns9" xml:space="preserve">
+    <value>CarType</value>
+  </data>
+  <data name="RepositoryType.Columns10" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="RepositoryType.Columns11" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryType.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryType.Columns14" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryType.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.NullText" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="TileViewColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TileViewColumn5.Caption" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="RepositoryModel.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryModel.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryModel.Columns" xml:space="preserve">
+    <value>CarModel</value>
+  </data>
+  <data name="RepositoryModel.Columns1" xml:space="preserve">
+    <value>الموديل</value>
+  </data>
+  <data name="RepositoryModel.Columns2" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryModel.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryModel.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryModel.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.Columns9" xml:space="preserve">
+    <value>CarModelID</value>
+  </data>
+  <data name="RepositoryModel.Columns10" xml:space="preserve">
+    <value>Name4</value>
+  </data>
+  <data name="RepositoryModel.Columns11" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryModel.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryModel.Columns14" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryModel.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.NullText" xml:space="preserve">
+    <value>الموديل</value>
+  </data>
+  <data name="TileViewColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="TileViewColumn9.Caption" xml:space="preserve">
+    <value>السائق</value>
+  </data>
+  <data name="TileViewColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="TileViewColumn16.Caption" xml:space="preserve">
+    <value>صورة المركبة</value>
+  </data>
+  <data name="TileViewColumn16.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn16.VisibleIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="TileViewColumn24.Caption" xml:space="preserve">
+    <value>تاريخ الترخيص</value>
+  </data>
+  <data name="TileViewColumn24.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn24.VisibleIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="TileViewColumn6.Caption" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="TileViewColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TileViewColumn18.Caption" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="TileViewColumn18.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn18.VisibleIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="TileViewColumn18.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TileViewColumn8.Caption" xml:space="preserve">
+    <value>المحروقات</value>
+  </data>
+  <data name="RepositoryFulsType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryFulsType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryFulsType.Items" xml:space="preserve">
+    <value>سولار</value>
+  </data>
+  <data name="RepositoryFulsType.Items1" xml:space="preserve">
+    <value>بنزين</value>
+  </data>
+  <data name="TileViewColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn8.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TileViewColumn37.Caption" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="TileViewColumn37.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn37.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TileViewColumn37.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn39.Caption" xml:space="preserve">
+    <value>رقم الموبايل</value>
+  </data>
+  <data name="TileViewColumn39.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn39.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TileViewColumn39.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn40.Caption" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="TileViewColumn40.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn40.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TileViewColumn40.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn33.Caption" xml:space="preserve">
+    <value>الصورة</value>
+  </data>
+  <data name="TileViewColumn33.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn33.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TileViewColumn33.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn32.Caption" xml:space="preserve">
+    <value>رقم المركبة</value>
+  </data>
+  <data name="TileViewColumn32.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn32.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TileViewColumn32.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn35.Caption" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="TileViewColumn35.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn35.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TileViewColumn35.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn36.Caption" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="TileViewColumn36.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn36.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="TileViewColumn36.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="RepositorySearchDriver.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositorySearchDriver.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositorySearchDriver.NullText" xml:space="preserve">
+    <value>السائق</value>
+  </data>
+  <data name="ColAccountKey2.Caption" xml:space="preserve">
+    <value>رقم الحساب</value>
+  </data>
+  <data name="ColAccountKey2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColAccountKey2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ColFullName2.Caption" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="ColFullName2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColFullName2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SimpleButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 384</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SimpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="SimpleButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 17</value>
+  </data>
+  <data name="TimePeriodOfRent.EditValue" type="System.TimeSpan, mscorlib">
+    <value>00:00:00</value>
+  </data>
+  <data name="TimePeriodOfRent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 246</value>
+  </data>
+  <data name="TimePeriodOfRent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TimePeriodOfRent.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>الفترة:</value>
+  </data>
+  <data name="TimePeriodOfRent.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="TimePeriodOfRent.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TimePeriodOfRent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 36</value>
+  </data>
+  <data name="TimePeriodOfRent.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;TimePeriodOfRent.Name" xml:space="preserve">
+    <value>TimePeriodOfRent</value>
+  </data>
+  <data name="&gt;&gt;TimePeriodOfRent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TimeSpanEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TimePeriodOfRent.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TimePeriodOfRent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TextFromBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 40</value>
+  </data>
+  <data name="TextFromBack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextFromBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="TextFromBack.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;TextFromBack.Name" xml:space="preserve">
+    <value>TextFromBack</value>
+  </data>
+  <data name="&gt;&gt;TextFromBack.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextFromBack.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextFromBack.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TextDocForWhat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 40</value>
+  </data>
+  <data name="TextDocForWhat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextDocForWhat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="TextDocForWhat.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;TextDocForWhat.Name" xml:space="preserve">
+    <value>TextDocForWhat</value>
+  </data>
+  <data name="&gt;&gt;TextDocForWhat.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextDocForWhat.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextDocForWhat.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TextAddDriverIdentityType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 306</value>
+  </data>
+  <data name="TextAddDriverIdentityType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextAddDriverIdentityType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 22</value>
+  </data>
+  <data name="TextAddDriverIdentityType.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverIdentityType.Name" xml:space="preserve">
+    <value>TextAddDriverIdentityType</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverIdentityType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverIdentityType.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverIdentityType.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="IdentityNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 349</value>
+  </data>
+  <data name="IdentityNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="IdentityNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <data name="IdentityNo.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;IdentityNo.Name" xml:space="preserve">
+    <value>IdentityNo</value>
+  </data>
+  <data name="&gt;&gt;IdentityNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;IdentityNo.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;IdentityNo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="AddDriverBirthday.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AddDriverBirthday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 263</value>
+  </data>
+  <data name="AddDriverBirthday.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="AddDriverBirthday.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="AddDriverBirthday.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="AddDriverBirthday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 22</value>
+  </data>
+  <data name="AddDriverBirthday.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;AddDriverBirthday.Name" xml:space="preserve">
+    <value>AddDriverBirthday</value>
+  </data>
+  <data name="&gt;&gt;AddDriverBirthday.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddDriverBirthday.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;AddDriverBirthday.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="AddDriverTarkhesEndDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AddDriverTarkhesEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 349</value>
+  </data>
+  <data name="AddDriverTarkhesEndDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="AddDriverTarkhesEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="AddDriverTarkhesEndDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="AddDriverTarkhesEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 22</value>
+  </data>
+  <data name="AddDriverTarkhesEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesEndDate.Name" xml:space="preserve">
+    <value>AddDriverTarkhesEndDate</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesEndDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesEndDate.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="AddDriverTarkhesIssueDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AddDriverTarkhesIssueDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 349</value>
+  </data>
+  <data name="AddDriverTarkhesIssueDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="AddDriverTarkhesIssueDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="AddDriverTarkhesIssueDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="AddDriverTarkhesIssueDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 22</value>
+  </data>
+  <data name="AddDriverTarkhesIssueDate.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesIssueDate.Name" xml:space="preserve">
+    <value>AddDriverTarkhesIssueDate</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesIssueDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesIssueDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;AddDriverTarkhesIssueDate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="AddDriverIdentityNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 306</value>
+  </data>
+  <data name="AddDriverIdentityNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="AddDriverIdentityNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 22</value>
+  </data>
+  <data name="AddDriverIdentityNo.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;AddDriverIdentityNo.Name" xml:space="preserve">
+    <value>AddDriverIdentityNo</value>
+  </data>
+  <data name="&gt;&gt;AddDriverIdentityNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddDriverIdentityNo.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;AddDriverIdentityNo.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="TextAddDriverName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 263</value>
+  </data>
+  <data name="TextAddDriverName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextAddDriverName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 22</value>
+  </data>
+  <data name="TextAddDriverName.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverName.Name" xml:space="preserve">
+    <value>TextAddDriverName</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverName.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextAddDriverName.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="IdentityType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 349</value>
+  </data>
+  <data name="IdentityType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="IdentityType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="IdentityType.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;IdentityType.Name" xml:space="preserve">
+    <value>IdentityType</value>
+  </data>
+  <data name="&gt;&gt;IdentityType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;IdentityType.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;IdentityType.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TarkhesID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 306</value>
+  </data>
+  <data name="TarkhesID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TarkhesID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <data name="TarkhesID.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;TarkhesID.Name" xml:space="preserve">
+    <value>TarkhesID</value>
+  </data>
+  <data name="&gt;&gt;TarkhesID.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TarkhesID.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TarkhesID.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Nationality.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 349</value>
+  </data>
+  <data name="Nationality.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="Nationality.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 22</value>
+  </data>
+  <data name="Nationality.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;Nationality.Name" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="&gt;&gt;Nationality.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Nationality.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;Nationality.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="TarkhesEndDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TarkhesEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 306</value>
+  </data>
+  <data name="TarkhesEndDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TarkhesEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="TarkhesEndDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="TarkhesEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 22</value>
+  </data>
+  <data name="TarkhesEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;TarkhesEndDate.Name" xml:space="preserve">
+    <value>TarkhesEndDate</value>
+  </data>
+  <data name="&gt;&gt;TarkhesEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TarkhesEndDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TarkhesEndDate.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="TarkhesIssueDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TarkhesIssueDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 306</value>
+  </data>
+  <data name="TarkhesIssueDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TarkhesIssueDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="TarkhesIssueDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="TarkhesIssueDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="TarkhesIssueDate.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;TarkhesIssueDate.Name" xml:space="preserve">
+    <value>TarkhesIssueDate</value>
+  </data>
+  <data name="&gt;&gt;TarkhesIssueDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TarkhesIssueDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TarkhesIssueDate.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="DateRefBirthDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DateRefBirthDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 263</value>
+  </data>
+  <data name="DateRefBirthDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DateRefBirthDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DateRefBirthDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DateRefBirthDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 22</value>
+  </data>
+  <data name="DateRefBirthDate.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;DateRefBirthDate.Name" xml:space="preserve">
+    <value>DateRefBirthDate</value>
+  </data>
+  <data name="&gt;&gt;DateRefBirthDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DateRefBirthDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DateRefBirthDate.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="TextDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 286</value>
+  </data>
+  <data name="TextDistance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextDistance.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>المسافة المقطوعة:</value>
+  </data>
+  <data name="TextDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 36</value>
+  </data>
+  <data name="TextDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;TextDistance.Name" xml:space="preserve">
+    <value>TextDistance</value>
+  </data>
+  <data name="&gt;&gt;TextDistance.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextDistance.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextDistance.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="VoucherNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 246</value>
+  </data>
+  <data name="VoucherNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="VoucherNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 13</value>
+  </data>
+  <data name="VoucherNo.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="VoucherNo.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;VoucherNo.Name" xml:space="preserve">
+    <value>VoucherNo</value>
+  </data>
+  <data name="&gt;&gt;VoucherNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.HyperlinkLabelControl, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;VoucherNo.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;VoucherNo.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="DocStartDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DocStartDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DocStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>797, 246</value>
+  </data>
+  <data name="DocStartDate.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>تاريخ / وقت التسليم</value>
+  </data>
+  <data name="DocStartDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DocStartDate.Properties.CalendarTimeProperties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>تاريخ / وقت التسليم</value>
+  </data>
+  <data name="DocStartDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DocStartDate.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DocStartDate.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DocStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 36</value>
+  </data>
+  <data name="DocStartDate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DocStartDate.Name" xml:space="preserve">
+    <value>DocStartDate</value>
+  </data>
+  <data name="&gt;&gt;DocStartDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocStartDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocStartDate.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="CarTypeDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 81</value>
+  </data>
+  <data name="CarTypeDetails.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="CarTypeDetails.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>نوع المركبة:</value>
+  </data>
+  <data name="CarTypeDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 36</value>
+  </data>
+  <data name="CarTypeDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;CarTypeDetails.Name" xml:space="preserve">
+    <value>CarTypeDetails</value>
+  </data>
+  <data name="&gt;&gt;CarTypeDetails.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CarTypeDetails.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;CarTypeDetails.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="TextCarEndTarkhes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 81</value>
+  </data>
+  <data name="TextCarEndTarkhes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextCarEndTarkhes.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>باق على انتهاء الرخصة:</value>
+  </data>
+  <data name="TextCarEndTarkhes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 36</value>
+  </data>
+  <data name="TextCarEndTarkhes.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;TextCarEndTarkhes.Name" xml:space="preserve">
+    <value>TextCarEndTarkhes</value>
+  </data>
+  <data name="&gt;&gt;TextCarEndTarkhes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextCarEndTarkhes.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextCarEndTarkhes.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="GridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 40</value>
+  </data>
+  <data name="TileViewColumn1.Caption" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="TileViewColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TileViewColumn3.Caption" xml:space="preserve">
+    <value>رقم الشاصي</value>
+  </data>
+  <data name="TileViewColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TileViewColumn7.Caption" xml:space="preserve">
+    <value>اللون</value>
+  </data>
+  <data name="TileViewColumn7.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn7.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TileViewColumn10.Caption" xml:space="preserve">
+    <value>تاريخ الشراء</value>
+  </data>
+  <data name="TileViewColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn10.VisibleIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="TileViewColumn11.Caption" xml:space="preserve">
+    <value>تكلفة المركبة</value>
+  </data>
+  <data name="TileViewColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn11.VisibleIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TileViewColumn12.Caption" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="TileViewColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn12.VisibleIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="TileViewColumn13.Caption" xml:space="preserve">
+    <value>تاريخ البيع</value>
+  </data>
+  <data name="TileViewColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn13.VisibleIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="TileViewColumn14.Caption" xml:space="preserve">
+    <value>مبغ البيع</value>
+  </data>
+  <data name="TileViewColumn14.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn14.VisibleIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="TileViewColumn15.Caption" xml:space="preserve">
+    <value>الزبون</value>
+  </data>
+  <data name="TileViewColumn15.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn15.VisibleIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TileViewColumn17.Caption" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="RepositorySort.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositorySort.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositorySort.NullText" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="TileViewColumn17.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn17.VisibleIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="TileViewColumn19.Caption" xml:space="preserve">
+    <value>حساب الصيانة</value>
+  </data>
+  <data name="RepositoryRepairAccount.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryRepairAccount.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryRepairAccount.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TileViewColumn19.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn19.VisibleIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="TileViewColumn21.Caption" xml:space="preserve">
+    <value>عداد المركبة وقت الشراء</value>
+  </data>
+  <data name="TileViewColumn21.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn21.VisibleIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="TileViewColumn22.Caption" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+  <data name="RepositoryOpen.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryOpen.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Glyph</value>
+  </data>
+  <data name="RepositoryOpen.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RepositoryOpen.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryOpen.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryOpen.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EditorButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABh0RVh0VGl0
+        bGUAT3BlbjtPcGVuRG9jdW1lbnQ7fYnAFAAAAH5JREFUOE9j+P//PwMlGEOAVMzw7kjRfxwYJIcT08UA
+        vJhiA2AugRnwFN2JxGKYAUvfHSmSwmILIXwXZkDquyNFUVgUEMLzYQaovTtSNAuLAkI4DmQAzP83sSgg
+        hOVAGsn2PywQyfX/PJgBquT6H9mAW1gUEMJyYAPQcxepGADxQullkygN7gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="RepositoryOpen.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="TileViewColumn22.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn22.VisibleIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="TileViewColumn22.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TileViewColumn23.Caption" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="RepositoryEdit.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryEdit.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Glyph</value>
+  </data>
+  <data name="RepositoryEdit.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RepositoryEdit.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryEdit.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryEdit.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EditorButtonImageOptions2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAt0RVh0VGl0
+        bGUARWRpdDtlNaxEAAAAmUlEQVQ4T52OsQ2DQAxFoctENJnBKTMFLXWQ26Qjw3gsFgAin7BkfUHso3gI
+        xH/vriGWppKBWL7E0uo3/oxQedspERxEfFxAmXBwhp78gshKLD0Oj/DXtshbZX3HMeJljBRQiORy7Uwg
+        JZ8F0vJRoErGQLXsA/crsgWexHIjlrFWtsBMLOIiadkCy36qRToc/UMf/toPHET8AObczQSGIsegAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="RepositoryEdit.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="TileViewColumn23.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn23.VisibleIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="TileViewColumn23.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TileViewColumn25.Caption" xml:space="preserve">
+    <value>تاريخ التامين</value>
+  </data>
+  <data name="TileViewColumn25.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn25.VisibleIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="TileViewColumn26.Caption" xml:space="preserve">
+    <value>السعة</value>
+  </data>
+  <data name="TileViewColumn26.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn26.VisibleIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="TileViewColumn27.Caption" xml:space="preserve">
+    <value>مسجلة بإسم</value>
+  </data>
+  <data name="TileViewColumn27.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn27.VisibleIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="TileViewColumn28.Caption" xml:space="preserve">
+    <value>تيبوجراف</value>
+  </data>
+  <data name="TileViewColumn28.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn28.VisibleIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="TileViewColumn29.Caption" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="TileViewColumn29.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn29.VisibleIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="TileViewColumn30.Caption" xml:space="preserve">
+    <value>حالة الايجار</value>
+  </data>
+  <data name="TileViewColumn30.CustomizationCaption" xml:space="preserve">
+    <value>حالة الايجار</value>
+  </data>
+  <data name="TileViewColumn30.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn30.VisibleIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="TileViewColumn30.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn31.Caption" xml:space="preserve">
+    <value>رقم السند</value>
+  </data>
+  <data name="TileViewColumn31.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn31.VisibleIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="TileViewColumn31.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn20.Caption" xml:space="preserve">
+    <value>الاجرة اليومية</value>
+  </data>
+  <data name="TileViewColumn20.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn20.VisibleIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="TileViewColumn20.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="resource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAAB
+        AAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEB
+        AgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwM
+        DP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDP/AABEIADsBpQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJ
+        Cgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKC
+        CQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImK
+        kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T1
+        9vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncA
+        AQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
+        RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+        tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO8ooor/
+        AC7P9QAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAM0UUUAFGc0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaAC
+        jNFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+        FFFFABRRRQAUUUUAFGKKKADGKKKKACiiigAooooAKKKKACiijNABRRuozQAUUUUAFFFFABRRRQAUUUUA
+        FFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="TileViewItemElement1.Text" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="resource.Font1" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement2.Text" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="resource.Font2" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement3.Text" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="resource.Font3" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 15.75pt, style=Bold</value>
+  </data>
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAXYAAAA5CAYAAAAiJwBoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOZJREFUeF7t1DERACAMwMBKq39TsOOA3A+/REBmdw8AHfMGAP5m7AAxxg4QY+wA
+        McYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4Q
+        Y+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAx
+        xg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj
+        7AAxF1iTb7prQNhYAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="TileViewItemElement4.Text" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="TileViewItemElement5.Text" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="resource.Font4" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement6.Text" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="resource.Font5" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement7.Text" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="resource.Font6" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement8.Text" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="resource.Font7" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement9.Text" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="resource.Font8" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement10.Text" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="resource.Font9" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement11.Text" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="TileViewItemElement12.Text" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="resource.Font10" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement13.Text" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="resource.Font11" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="resource.Image2" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAAB
+        AAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEB
+        AgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwM
+        DP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDP/AABEIADsBpQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJ
+        Cgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKC
+        CQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImK
+        kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T1
+        9vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncA
+        AQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
+        RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+        tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO8ooor/
+        AC7P9QAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAM0UUUAFGc0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaAC
+        jNFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+        FFFFABRRRQAUUUUAFGKKKADGKKKKACiiigAooooAKKKKACiijNABRRuozQAUUUUAFFFFABRRRQAUUUUA
+        FFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="TileViewItemElement14.Text" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="resource.Font12" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement15.Text" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="resource.Font13" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement16.Text" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="resource.Font14" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 15.75pt, style=Bold</value>
+  </data>
+  <data name="resource.Image3" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAXYAAAA5CAYAAAAiJwBoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAOZJREFUeF7t1DERACAMwMBKq39TsOOA3A+/REBmdw8AHfMGAP5m7AAxxg4QY+wA
+        McYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4Q
+        Y+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAx
+        xg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj7AAxxg4QY+wAMcYOEGPsADHGDhBj
+        7AAxF1iTb7prQNhYAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="TileViewItemElement17.Text" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="TileViewItemElement18.Text" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="resource.Font15" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement19.Text" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="resource.Font16" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement20.Text" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="resource.Font17" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement21.Text" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="resource.Font18" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement22.Text" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="resource.Font19" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement23.Text" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="resource.Font20" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement24.Text" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="TileViewItemElement25.Text" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="resource.Font21" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement26.Text" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="resource.Image4" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAAB
+        AAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEB
+        AgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwM
+        DP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDP/AABEIADsBpQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJ
+        Cgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKC
+        CQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImK
+        kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T1
+        9vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncA
+        AQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
+        RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+        tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO8ooor/
+        AC7P9QAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAM0UUUAFGc0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaAC
+        jNFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+        FFFFABRRRQAUUUUAFGKKKADGKKKKACiiigAooooAKKKKACiijNABRRuozQAUUUUAFFFFABRRRQAUUUUA
+        FFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="TileViewItemElement27.Text" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="TileViewItemElement28.Text" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="RepositoryCarOnOrpak.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryCarOnOrpak.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryCarOnOrpak.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 307</value>
+  </data>
+  <data name="GridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Name" xml:space="preserve">
+    <value>GridControl1</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="TextDocCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 310</value>
+  </data>
+  <data name="TextDocCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextDocCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>589, 22</value>
+  </data>
+  <data name="TextDocCode.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;TextDocCode.Name" xml:space="preserve">
+    <value>TextDocCode</value>
+  </data>
+  <data name="&gt;&gt;TextDocCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextDocCode.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextDocCode.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="TextIdentityNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 160</value>
+  </data>
+  <data name="TextIdentityNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextIdentityNo.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>رقم الهوية:</value>
+  </data>
+  <data name="TextIdentityNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 36</value>
+  </data>
+  <data name="TextIdentityNo.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;TextIdentityNo.Name" xml:space="preserve">
+    <value>TextIdentityNo</value>
+  </data>
+  <data name="&gt;&gt;TextIdentityNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextIdentityNo.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextIdentityNo.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ExchangeRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 289</value>
+  </data>
+  <data name="ExchangeRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="ExchangeRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 22</value>
+  </data>
+  <data name="ExchangeRate.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRate.Name" xml:space="preserve">
+    <value>ExchangeRate</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;ExchangeRate.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="TrackBarControl1.EditValue" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TrackBarControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 326</value>
+  </data>
+  <data name="TrackBarControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TrackBarLabel1.Label" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="TrackBarLabel2.Label" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="TrackBarLabel3.Label" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="TrackBarLabel4.Label" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="TrackBarLabel5.Label" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="TrackBarLabel6.Label" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="TrackBarLabel7.Label" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="TrackBarLabel8.Label" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="TrackBarLabel9.Label" xml:space="preserve">
+    <value>90</value>
+  </data>
+  <data name="TrackBarLabel10.Label" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="TrackBarControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 72</value>
+  </data>
+  <data name="TrackBarControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;TrackBarControl1.Name" xml:space="preserve">
+    <value>TrackBarControl1</value>
+  </data>
+  <data name="&gt;&gt;TrackBarControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TrackBarControl, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TrackBarControl1.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TrackBarControl1.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="Amount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 289</value>
+  </data>
+  <data name="Amount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="Amount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="Amount.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Amount.Name" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="&gt;&gt;Amount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Amount.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;Amount.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="Currency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 289</value>
+  </data>
+  <data name="Currency.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="Currency.Properties.Columns" xml:space="preserve">
+    <value>CurrID</value>
+  </data>
+  <data name="Currency.Properties.Columns1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Currency.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Currency.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="Currency.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Currency.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Currency.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="Currency.Properties.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="Currency.Properties.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="Currency.Properties.Columns9" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Currency.Properties.Columns10" xml:space="preserve">
+    <value>العملة</value>
+  </data>
+  <data name="Currency.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Currency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="Currency.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Currency.Name" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="&gt;&gt;Currency.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Currency.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;Currency.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="VoucherNotes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 315</value>
+  </data>
+  <data name="VoucherNotes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="VoucherNotes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 22</value>
+  </data>
+  <data name="VoucherNotes.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;VoucherNotes.Name" xml:space="preserve">
+    <value>VoucherNotes</value>
+  </data>
+  <data name="&gt;&gt;VoucherNotes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;VoucherNotes.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;VoucherNotes.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="TextAgeOfTarkhes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 160</value>
+  </data>
+  <data name="TextAgeOfTarkhes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextAgeOfTarkhes.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>عمر الرخصة:</value>
+  </data>
+  <data name="TextAgeOfTarkhes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
+  </data>
+  <data name="TextAgeOfTarkhes.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;TextAgeOfTarkhes.Name" xml:space="preserve">
+    <value>TextAgeOfTarkhes</value>
+  </data>
+  <data name="&gt;&gt;TextAgeOfTarkhes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextAgeOfTarkhes.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextAgeOfTarkhes.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="DocDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DocDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 263</value>
+  </data>
+  <data name="DocDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DocDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DocDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DocDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="DocDate.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;DocDate.Name" xml:space="preserve">
+    <value>DocDate</value>
+  </data>
+  <data name="&gt;&gt;DocDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocDate.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="TextDailyAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 246</value>
+  </data>
+  <data name="TextDailyAmount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextDailyAmount.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>الأجرة اليومية:</value>
+  </data>
+  <data name="TextDailyAmount.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextDailyAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 36</value>
+  </data>
+  <data name="TextDailyAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;TextDailyAmount.Name" xml:space="preserve">
+    <value>TextDailyAmount</value>
+  </data>
+  <data name="&gt;&gt;TextDailyAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextDailyAmount.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextDailyAmount.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="DocManualNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 263</value>
+  </data>
+  <data name="DocManualNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DocManualNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 22</value>
+  </data>
+  <data name="DocManualNo.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;DocManualNo.Name" xml:space="preserve">
+    <value>DocManualNo</value>
+  </data>
+  <data name="&gt;&gt;DocManualNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocManualNo.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocManualNo.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="TextRefAge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 160</value>
+  </data>
+  <data name="TextRefAge.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="TextRefAge.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>العمر:</value>
+  </data>
+  <data name="TextRefAge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 36</value>
+  </data>
+  <data name="TextRefAge.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;TextRefAge.Name" xml:space="preserve">
+    <value>TextRefAge</value>
+  </data>
+  <data name="&gt;&gt;TextRefAge.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TextRefAge.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;TextRefAge.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="LookDocStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 40</value>
+  </data>
+  <data name="LookDocStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="LookDocStatus.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns" xml:space="preserve">
+    <value>DocStatus</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns1" xml:space="preserve">
+    <value>Name5</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LookDocStatus.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns9" xml:space="preserve">
+    <value>DocName</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns10" xml:space="preserve">
+    <value>حالة السند</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns11" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LookDocStatus.Properties.Columns14" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v24.1">
+    <value>None</value>
+  </data>
+  <data name="LookDocStatus.Properties.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="LookDocStatus.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LookDocStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 22</value>
+  </data>
+  <data name="LookDocStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;LookDocStatus.Name" xml:space="preserve">
+    <value>LookDocStatus</value>
+  </data>
+  <data name="&gt;&gt;LookDocStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LookDocStatus.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;LookDocStatus.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="DocID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 40</value>
+  </data>
+  <data name="DocID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DocID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 22</value>
+  </data>
+  <data name="DocID.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;DocID.Name" xml:space="preserve">
+    <value>DocID</value>
+  </data>
+  <data name="&gt;&gt;DocID.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocID.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocID.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="DocNote2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 263</value>
+  </data>
+  <data name="DocNote2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DocNote2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 135</value>
+  </data>
+  <data name="DocNote2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;DocNote2.Name" xml:space="preserve">
+    <value>DocNote2</value>
+  </data>
+  <data name="&gt;&gt;DocNote2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocNote2.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocNote2.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="LabelFormName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="LabelFormName.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 18pt, style=Bold</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v24.1" name="DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="LabelFormName.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v24.1">
+    <value>None</value>
+  </data>
+  <data name="LabelFormName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 12</value>
+  </data>
+  <data name="LabelFormName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="LabelFormName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 26</value>
+  </data>
+  <data name="LabelFormName.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="LabelFormName.Text" xml:space="preserve">
+    <value>سند تاجير مركبة</value>
+  </data>
+  <data name="&gt;&gt;LabelFormName.Name" xml:space="preserve">
+    <value>LabelFormName</value>
+  </data>
+  <data name="&gt;&gt;LabelFormName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LabelFormName.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;LabelFormName.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="DocNotes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 263</value>
+  </data>
+  <data name="DocNotes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DocNotes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 135</value>
+  </data>
+  <data name="DocNotes.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;DocNotes.Name" xml:space="preserve">
+    <value>DocNotes</value>
+  </data>
+  <data name="&gt;&gt;DocNotes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocNotes.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocNotes.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="SimpleSave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="SimpleSave.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAH4DAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5Z
+        ZWxsb3d7ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlD
+        MjM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tk
+        aXNwbGF5OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rp
+        c3BsYXk6aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41
+        O30KCS5zdDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7
+        ZmlsbDojRDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rp
+        c3BsYXk6aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJWYWxpZGF0aW9uIj4N
+        CiAgICA8Zz4NCiAgICAgIDxwb2x5Z29uIHBvaW50cz0iMjcsNCAxMSwyMCA1LDE0IDIsMTcgMTEsMjYg
+        MzAsNyAgICIgY2xhc3M9IkdyZWVuIiAvPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="SimpleSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="SimpleSave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="SimpleSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 38</value>
+  </data>
+  <data name="SimpleSave.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SimpleSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="&gt;&gt;SimpleSave.Name" xml:space="preserve">
+    <value>SimpleSave</value>
+  </data>
+  <data name="&gt;&gt;SimpleSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleSave.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;SimpleSave.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="ReferanceID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>689, 160</value>
+  </data>
+  <data name="ReferanceID.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>الزبون:</value>
+  </data>
+  <data name="ReferanceID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="ReferanceID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TileViewColumn38.Caption" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="TileViewColumn38.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn38.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TileViewColumn38.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewItemElement29.Text" xml:space="preserve">
+    <value>TileViewColumn37</value>
+  </data>
+  <data name="TileViewItemElement30.Text" xml:space="preserve">
+    <value>موبايل:</value>
+  </data>
+  <data name="TileViewItemElement31.Text" xml:space="preserve">
+    <value>رقم الهوية:</value>
+  </data>
+  <data name="TileViewItemElement32.Text" xml:space="preserve">
+    <value>TileViewColumn39</value>
+  </data>
+  <data name="TileViewItemElement33.Text" xml:space="preserve">
+    <value>TileViewColumn40</value>
+  </data>
+  <data name="ReferanceID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 36</value>
+  </data>
+  <data name="ReferanceID.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;ReferanceID.Name" xml:space="preserve">
+    <value>ReferanceID</value>
+  </data>
+  <data name="&gt;&gt;ReferanceID.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ReferanceID.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;ReferanceID.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="DocBaseAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 246</value>
+  </data>
+  <data name="DocBaseAmount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="DocBaseAmount.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>المبلغ:</value>
+  </data>
+  <data name="DocBaseAmount.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DocBaseAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 36</value>
+  </data>
+  <data name="DocBaseAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;DocBaseAmount.Name" xml:space="preserve">
+    <value>DocBaseAmount</value>
+  </data>
+  <data name="&gt;&gt;DocBaseAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocBaseAmount.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocBaseAmount.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="OdometerTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 286</value>
+  </data>
+  <data name="OdometerTo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="OdometerTo.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>العداد عند الاستلام:</value>
+  </data>
+  <data name="OdometerTo.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OdometerTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 36</value>
+  </data>
+  <data name="OdometerTo.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;OdometerTo.Name" xml:space="preserve">
+    <value>OdometerTo</value>
+  </data>
+  <data name="&gt;&gt;OdometerTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OdometerTo.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;OdometerTo.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="CarID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>688, 81</value>
+  </data>
+  <data name="CarID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="CarID.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>المركبة:</value>
+  </data>
+  <data name="CarID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="CarID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TileViewColumn34.Caption" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="TileViewColumn34.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn34.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TileViewColumn34.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewItemElement34.Text" xml:space="preserve">
+    <value>TileViewColumn33</value>
+  </data>
+  <data name="TileViewItemElement35.Text" xml:space="preserve">
+    <value>TileViewColumn32</value>
+  </data>
+  <data name="TileViewItemElement36.Text" xml:space="preserve">
+    <value>TileViewColumn35</value>
+  </data>
+  <data name="TileViewItemElement37.Text" xml:space="preserve">
+    <value>TileViewColumn36</value>
+  </data>
+  <data name="CarID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 36</value>
+  </data>
+  <data name="CarID.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;CarID.Name" xml:space="preserve">
+    <value>CarID</value>
+  </data>
+  <data name="&gt;&gt;CarID.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CarID.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;CarID.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="OdometerFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 286</value>
+  </data>
+  <data name="OdometerFrom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="OdometerFrom.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>العداد عند التسليم:</value>
+  </data>
+  <data name="OdometerFrom.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OdometerFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 36</value>
+  </data>
+  <data name="OdometerFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;OdometerFrom.Name" xml:space="preserve">
+    <value>OdometerFrom</value>
+  </data>
+  <data name="&gt;&gt;OdometerFrom.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;OdometerFrom.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;OdometerFrom.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="DocEndDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="DocEndDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DocEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 246</value>
+  </data>
+  <data name="DocEndDate.Properties.AdvancedModeOptions.Label" xml:space="preserve">
+    <value>تاريخ / وقت الاستلام</value>
+  </data>
+  <data name="DocEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DocEndDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="DocEndDate.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DocEndDate.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DocEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 36</value>
+  </data>
+  <data name="DocEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DocEndDate.Name" xml:space="preserve">
+    <value>DocEndDate</value>
+  </data>
+  <data name="&gt;&gt;DocEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DocEndDate.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;DocEndDate.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="LayoutControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LayoutControlItem5.Text" xml:space="preserve">
+    <value>تاريخ السند:</value>
+  </data>
+  <data name="LayoutControlItem12.Text" xml:space="preserve">
+    <value>رقم السند:</value>
+  </data>
+  <data name="LayoutControlItem17.Text" xml:space="preserve">
+    <value>كود الفاتورة</value>
+  </data>
+  <data name="LayoutControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 33</value>
+  </data>
+  <data name="LayoutControl3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="LayoutControlItem27.Text" xml:space="preserve">
+    <value>العمر</value>
+  </data>
+  <data name="LayoutControlItem33.Text" xml:space="preserve">
+    <value>رقم الهوية:</value>
+  </data>
+  <data name="LayoutControlItem30.Text" xml:space="preserve">
+    <value>باقي على انتهاء الرخصة (يوم)</value>
+  </data>
+  <data name="LayoutControlGroup4.Text" xml:space="preserve">
+    <value>بيانات الزبون</value>
+  </data>
+  <data name="LayoutControlItem6.Text" xml:space="preserve">
+    <value>الأجرة اليومية:</value>
+  </data>
+  <data name="LayoutControlItem9.Text" xml:space="preserve">
+    <value>المبلغ:</value>
+  </data>
+  <data name="LayoutControlItem32.Text" xml:space="preserve">
+    <value>نسبة الوقود:</value>
+  </data>
+  <data name="LayoutControlGroupRentData.Text" xml:space="preserve">
+    <value>بيانات التأجير</value>
+  </data>
+  <data name="LayoutControlItem36.Text" xml:space="preserve">
+    <value>رقم الفاتورة:</value>
+  </data>
+  <data name="LayoutControlItem22.Text" xml:space="preserve">
+    <value>رقم السند اليدوي:</value>
+  </data>
+  <data name="LayoutControlItem23.Text" xml:space="preserve">
+    <value>تاريخ الفاتورة:</value>
+  </data>
+  <data name="LayoutControlItem13.Text" xml:space="preserve">
+    <value>العملة:</value>
+  </data>
+  <data name="LayoutControlItem8.Text" xml:space="preserve">
+    <value>المبلغ:</value>
+  </data>
+  <data name="LayoutControlItem24.Text" xml:space="preserve">
+    <value>ملاحظات الفاتورة:</value>
+  </data>
+  <data name="LayoutControlItem2.Text" xml:space="preserve">
+    <value>سعر الصرف:</value>
+  </data>
+  <data name="LayoutControlGroupVoucherData.Text" xml:space="preserve">
+    <value>بيانات الفاتورة</value>
+  </data>
+  <data name="LayoutControlItem38.Text" xml:space="preserve">
+    <value>تاريخ نهاية الرخصة:</value>
+  </data>
+  <data name="LayoutControlItem37.Text" xml:space="preserve">
+    <value>تاريخ اصدار الرخصة:</value>
+  </data>
+  <data name="LayoutControlItem28.Text" xml:space="preserve">
+    <value>تاريخ الميلاد:</value>
+  </data>
+  <data name="LayoutControlItem41.Text" xml:space="preserve">
+    <value>رقم الرخصة:</value>
+  </data>
+  <data name="LayoutControlItem39.Text" xml:space="preserve">
+    <value>الجنسية:</value>
+  </data>
+  <data name="LayoutControlItem42.Text" xml:space="preserve">
+    <value>نوع الوثيقة:</value>
+  </data>
+  <data name="LayoutControlItem40.Text" xml:space="preserve">
+    <value>رقم الوثيقة (الهوية):</value>
+  </data>
+  <data name="LayoutControlGroup1.Text" xml:space="preserve">
+    <value>بيانات اضافية للسائق</value>
+  </data>
+  <data name="LayoutControlItem43.Text" xml:space="preserve">
+    <value>الاسم:</value>
+  </data>
+  <data name="LayoutControlItem46.Text" xml:space="preserve">
+    <value>تاريخ الانتهاء:</value>
+  </data>
+  <data name="LayoutControlItem47.Text" xml:space="preserve">
+    <value>تاريخ الميلاد:</value>
+  </data>
+  <data name="LayoutControlItem48.Text" xml:space="preserve">
+    <value>نوع الوثيقة:</value>
+  </data>
+  <data name="LayoutControlItem44.Text" xml:space="preserve">
+    <value>رقم الهوية:</value>
+  </data>
+  <data name="LayoutControlItem45.Text" xml:space="preserve">
+    <value>تاريخ الاصدار:</value>
+  </data>
+  <data name="LayoutControlGroup2.Text" xml:space="preserve">
+    <value>بيانات السائق الاضافي</value>
+  </data>
+  <data name="LayoutControlItem7.Text" xml:space="preserve">
+    <value>ملاحظات عند التسليم</value>
+  </data>
+  <data name="LayoutControlItem3.Text" xml:space="preserve">
+    <value>ملاحظات عند الاستلام</value>
+  </data>
+  <data name="LayoutControlGroup9.Text" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="LayoutControlGroup8.Text" xml:space="preserve">
+    <value>بيانات المركبة</value>
+  </data>
+  <data name="LayoutControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>994, 539</value>
+  </data>
+  <data name="LayoutControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LayoutControl3.Text" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl3.Name" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SimpleButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="SimpleButton4.Text" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Name" xml:space="preserve">
+    <value>SimpleButton4</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Parent" xml:space="preserve">
+    <value>LayoutControl3</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="BarManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="BarSubItem1.Caption" xml:space="preserve">
+    <value>ملف</value>
+  </data>
+  <data name="BarSubItem1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6guDwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItemDelete.Caption" xml:space="preserve">
+    <value>حذف السند</value>
+  </data>
+  <data name="BarButtonItemDelete.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6djTwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItemReceipt.Caption" xml:space="preserve">
+    <value>سند قبض</value>
+  </data>
+  <data name="BarButtonItemReceipt.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6xmTwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem2.Caption" xml:space="preserve">
+    <value>فتح ملف الزبون</value>
+  </data>
+  <data name="BarButtonItem2.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6frjwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarSubItem2.Caption" xml:space="preserve">
+    <value>تقارير</value>
+  </data>
+  <data name="BarSubItem2.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6ppTwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem1.Caption" xml:space="preserve">
+    <value>كشف حساب (الزبون)</value>
+  </data>
+  <data name="BarButtonItem1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOsDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
+        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5HcmVlbntmaWxsOiMwMzlD
+        MjM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQoJLnN0MXtkaXNwbGF5Om5vbmU7fQoJLnN0MntkaXNwbGF5OmlubGluZTtmaWxsOiMw
+        MzlDMjM7fQoJLnN0M3tkaXNwbGF5OmlubGluZTtmaWxsOiNEMTFDMUM7fQoJLnN0NHtkaXNwbGF5Omlu
+        bGluZTtmaWxsOiM3MjcyNzI7fQo8L3N0eWxlPg0KICA8ZyBpZD0iQ3VzdG9tZXJzIj4NCiAgICA8cGF0
+        aCBkPSJNMTAsOS45Yy0wLjEsMC41LDAuMiwwLjksMC40LDEuNHMtMC4xLDEuNywwLjksMS42YzAsMCww
+        LDAuMSwwLDAuMmMwLjYsMi4zLDIsNC45LDQuNyw0LjlzNC4yLTIuNiw0LjctNC45ICAgVjEzYzEsMC4x
+        LDAuNi0xLjEsMC45LTEuNmMwLjItMC41LDAuNC0wLjksMC4zLTEuNGMtMC4xLTAuNC0wLjQtMC40LTAu
+        NS0wLjNDMjMuMiw0LjgsMjAuMyw1LDIwLjMsNVMyMCwyLDE0LjgsMiAgIEMxMCwyLDkuNCw2LDEwLjUs
+        OS42QzEwLjQsOS42LDEwLjEsOS43LDEwLDkuOXogTTIwLDE4Yy0wLjgsMS41LTIuMSw0LTQsNHMtMy4y
+        LTIuNS00LTRjLTIuMywzLjUtOCwxLTgsOC41VjMwaDI0di0zLjUgICBDMjgsMTkuMSwyMi4zLDIxLjQs
+        MjAsMTh6IiBjbGFzcz0iR3JlZW4iIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarSubItem3.Caption" xml:space="preserve">
+    <value>ارسال رسالة</value>
+  </data>
+  <data name="BarSubItem3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6cpTwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem3.Caption" xml:space="preserve">
+    <value>رسالة استلام مركبة</value>
+  </data>
+  <data name="BarButtonItem3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6cvjwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem4.Caption" xml:space="preserve">
+    <value>رسالة تسليم مركبة</value>
+  </data>
+  <data name="BarButtonItem4.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu6cvjwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="Bar1.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="Bar3.Text" xml:space="preserve">
+    <value>Status bar</value>
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>994, 33</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 572</value>
+  </data>
+  <data name="barDockControlBottom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>994, 25</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 33</value>
+  </data>
+  <data name="barDockControlLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 539</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>994, 33</value>
+  </data>
+  <data name="barDockControlRight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 539</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>53</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>994, 597</value>
+  </data>
+  <data name="CarRentDoc.IconOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAABwDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9Cgku
+        R3JlZW57ZmlsbDojMDM5QzIzO30KCS5ZZWxsb3d7ZmlsbDojRkZCMTE1O30KCS5CbHVle2ZpbGw6IzEx
+        NzdENzt9CgkuUmVke2ZpbGw6I0QxMUMxQzt9Cjwvc3R5bGU+DQogIDxnIGlkPSJUYXhpIj4NCiAgICA8
+        cGF0aCBkPSJNMjQsNmgtNFY1YzAtMC41LTAuNC0xLTEtMWgtNmMtMC42LDAtMSwwLjUtMSwxdjFIOGwt
+        NCw4djl2MXYzYzAsMC41LDAuNCwxLDEsMWgyYzAuNiwwLDEtMC41LDEtMXYtM2gxNnYzICAgYzAsMC41
+        LDAuNCwxLDEsMWgyYzAuNiwwLDEtMC41LDEtMXYtM3YtMXYtOUwyNCw2eiBNMTAsMjBjLTEuMSwwLTIt
+        MC45LTItMmMwLTEuMSwwLjktMiwyLTJzMiwwLjksMiwyQzEyLDE5LjEsMTEuMSwyMCwxMCwyMHogICAg
+        TTIyLDIwYy0xLjEsMC0yLTAuOS0yLTJjMC0xLjEsMC45LTIsMi0yczIsMC45LDIsMkMyNCwxOS4xLDIz
+        LjEsMjAsMjIsMjB6IE02LjIsMTRsMy02aDEzLjVsMyw2SDYuMnoiIGNsYXNzPSJZZWxsb3ciIC8+DQog
+        IDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>سند تاجير مركبة</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn2.Name" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn4.Name" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryType.Name" xml:space="preserve">
+    <value>RepositoryType</value>
+  </data>
+  <data name="&gt;&gt;RepositoryType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn5.Name" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryModel.Name" xml:space="preserve">
+    <value>RepositoryModel</value>
+  </data>
+  <data name="&gt;&gt;RepositoryModel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn9.Name" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn16.Name" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn24.Name" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn24.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn6.Name" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn18.Name" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn8.Name" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryFulsType.Name" xml:space="preserve">
+    <value>RepositoryFulsType</value>
+  </data>
+  <data name="&gt;&gt;RepositoryFulsType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn37.Name" xml:space="preserve">
+    <value>TileViewColumn37</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn37.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn39.Name" xml:space="preserve">
+    <value>TileViewColumn39</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn39.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn40.Name" xml:space="preserve">
+    <value>TileViewColumn40</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn40.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn33.Name" xml:space="preserve">
+    <value>TileViewColumn33</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn33.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn32.Name" xml:space="preserve">
+    <value>TileViewColumn32</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn32.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn35.Name" xml:space="preserve">
+    <value>TileViewColumn35</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn35.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn36.Name" xml:space="preserve">
+    <value>TileViewColumn36</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn36.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositorySearchDriver.Name" xml:space="preserve">
+    <value>RepositorySearchDriver</value>
+  </data>
+  <data name="&gt;&gt;RepositorySearchDriver.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemSearchLookUpEdit1View.Name" xml:space="preserve">
+    <value>RepositoryItemSearchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColAccountKey2.Name" xml:space="preserve">
+    <value>ColAccountKey2</value>
+  </data>
+  <data name="&gt;&gt;ColAccountKey2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColFullName2.Name" xml:space="preserve">
+    <value>ColFullName2</value>
+  </data>
+  <data name="&gt;&gt;ColFullName2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileView1.Name" xml:space="preserve">
+    <value>TileView1</value>
+  </data>
+  <data name="&gt;&gt;TileView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Tile.TileView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn1.Name" xml:space="preserve">
+    <value>TileViewColumn1</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn3.Name" xml:space="preserve">
+    <value>TileViewColumn3</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn7.Name" xml:space="preserve">
+    <value>TileViewColumn7</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn10.Name" xml:space="preserve">
+    <value>TileViewColumn10</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn11.Name" xml:space="preserve">
+    <value>TileViewColumn11</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn12.Name" xml:space="preserve">
+    <value>TileViewColumn12</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn13.Name" xml:space="preserve">
+    <value>TileViewColumn13</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn14.Name" xml:space="preserve">
+    <value>TileViewColumn14</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn14.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn15.Name" xml:space="preserve">
+    <value>TileViewColumn15</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn15.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn17.Name" xml:space="preserve">
+    <value>TileViewColumn17</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn17.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositorySort.Name" xml:space="preserve">
+    <value>RepositorySort</value>
+  </data>
+  <data name="&gt;&gt;RepositorySort.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn19.Name" xml:space="preserve">
+    <value>TileViewColumn19</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn19.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryRepairAccount.Name" xml:space="preserve">
+    <value>RepositoryRepairAccount</value>
+  </data>
+  <data name="&gt;&gt;RepositoryRepairAccount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridView2.Name" xml:space="preserve">
+    <value>GridView2</value>
+  </data>
+  <data name="&gt;&gt;GridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn21.Name" xml:space="preserve">
+    <value>TileViewColumn21</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn21.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn22.Name" xml:space="preserve">
+    <value>TileViewColumn22</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn22.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryOpen.Name" xml:space="preserve">
+    <value>RepositoryOpen</value>
+  </data>
+  <data name="&gt;&gt;RepositoryOpen.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn23.Name" xml:space="preserve">
+    <value>TileViewColumn23</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn23.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryEdit.Name" xml:space="preserve">
+    <value>RepositoryEdit</value>
+  </data>
+  <data name="&gt;&gt;RepositoryEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn25.Name" xml:space="preserve">
+    <value>TileViewColumn25</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn25.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn26.Name" xml:space="preserve">
+    <value>TileViewColumn26</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn26.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn27.Name" xml:space="preserve">
+    <value>TileViewColumn27</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn27.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn28.Name" xml:space="preserve">
+    <value>TileViewColumn28</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn28.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn29.Name" xml:space="preserve">
+    <value>TileViewColumn29</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn29.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn30.Name" xml:space="preserve">
+    <value>TileViewColumn30</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn30.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn31.Name" xml:space="preserve">
+    <value>TileViewColumn31</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn31.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn20.Name" xml:space="preserve">
+    <value>TileViewColumn20</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn20.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCarOnOrpak.Name" xml:space="preserve">
+    <value>RepositoryCarOnOrpak</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCarOnOrpak.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridView3.Name" xml:space="preserve">
+    <value>GridView3</value>
+  </data>
+  <data name="&gt;&gt;GridView3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemMemoEdit1</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit2.Name" xml:space="preserve">
+    <value>RepositoryItemMemoEdit2</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ReferanceIDView.Name" xml:space="preserve">
+    <value>ReferanceIDView</value>
+  </data>
+  <data name="&gt;&gt;ReferanceIDView.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Tile.TileView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn38.Name" xml:space="preserve">
+    <value>TileViewColumn38</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn38.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CarIDView.Name" xml:space="preserve">
+    <value>CarIDView</value>
+  </data>
+  <data name="&gt;&gt;CarIDView.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Tile.TileView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn34.Name" xml:space="preserve">
+    <value>TileViewColumn34</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn34.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem19.Name" xml:space="preserve">
+    <value>LayoutControlItem19</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem20.Name" xml:space="preserve">
+    <value>LayoutControlItem20</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Name" xml:space="preserve">
+    <value>LayoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem12.Name" xml:space="preserve">
+    <value>LayoutControlItem12</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem21.Name" xml:space="preserve">
+    <value>LayoutControlItem21</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem21.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Name" xml:space="preserve">
+    <value>LayoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem17.Name" xml:space="preserve">
+    <value>LayoutControlItem17</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup6.Name" xml:space="preserve">
+    <value>LayoutControlGroup6</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem15.Name" xml:space="preserve">
+    <value>LayoutControlItem15</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem29.Name" xml:space="preserve">
+    <value>LayoutControlItem29</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem29.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem1.Name" xml:space="preserve">
+    <value>EmptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup4.Name" xml:space="preserve">
+    <value>LayoutControlGroup4</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem16.Name" xml:space="preserve">
+    <value>LayoutControlItem16</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem27.Name" xml:space="preserve">
+    <value>LayoutControlItem27</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem27.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem33.Name" xml:space="preserve">
+    <value>LayoutControlItem33</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem33.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem30.Name" xml:space="preserve">
+    <value>LayoutControlItem30</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem30.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TabbedControlGroup2.Name" xml:space="preserve">
+    <value>TabbedControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;TabbedControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroupRentData.Name" xml:space="preserve">
+    <value>LayoutControlGroupRentData</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroupRentData.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem31.Name" xml:space="preserve">
+    <value>LayoutControlItem31</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem31.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem10.Name" xml:space="preserve">
+    <value>LayoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem11.Name" xml:space="preserve">
+    <value>LayoutControlItem11</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Name" xml:space="preserve">
+    <value>LayoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Name" xml:space="preserve">
+    <value>LayoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem14.Name" xml:space="preserve">
+    <value>LayoutControlItem14</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem32.Name" xml:space="preserve">
+    <value>LayoutControlItem32</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem32.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem26.Name" xml:space="preserve">
+    <value>LayoutControlItem26</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem26.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem49.Name" xml:space="preserve">
+    <value>LayoutControlItem49</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem49.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroupVoucherData.Name" xml:space="preserve">
+    <value>LayoutControlGroupVoucherData</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroupVoucherData.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem4.Name" xml:space="preserve">
+    <value>EmptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem36.Name" xml:space="preserve">
+    <value>LayoutControlItem36</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem36.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem22.Name" xml:space="preserve">
+    <value>LayoutControlItem22</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem22.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem23.Name" xml:space="preserve">
+    <value>LayoutControlItem23</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem23.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem13.Name" xml:space="preserve">
+    <value>LayoutControlItem13</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Name" xml:space="preserve">
+    <value>LayoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem24.Name" xml:space="preserve">
+    <value>LayoutControlItem24</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Name" xml:space="preserve">
+    <value>LayoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Name" xml:space="preserve">
+    <value>LayoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Name" xml:space="preserve">
+    <value>EmptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem38.Name" xml:space="preserve">
+    <value>LayoutControlItem38</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem38.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem37.Name" xml:space="preserve">
+    <value>LayoutControlItem37</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem37.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem28.Name" xml:space="preserve">
+    <value>LayoutControlItem28</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem28.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem41.Name" xml:space="preserve">
+    <value>LayoutControlItem41</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem41.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem39.Name" xml:space="preserve">
+    <value>LayoutControlItem39</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem39.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem3.Name" xml:space="preserve">
+    <value>EmptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem42.Name" xml:space="preserve">
+    <value>LayoutControlItem42</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem42.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem40.Name" xml:space="preserve">
+    <value>LayoutControlItem40</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem40.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup2.Name" xml:space="preserve">
+    <value>LayoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem43.Name" xml:space="preserve">
+    <value>LayoutControlItem43</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem43.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem5.Name" xml:space="preserve">
+    <value>EmptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem46.Name" xml:space="preserve">
+    <value>LayoutControlItem46</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem46.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem47.Name" xml:space="preserve">
+    <value>LayoutControlItem47</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem47.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem48.Name" xml:space="preserve">
+    <value>LayoutControlItem48</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem48.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem44.Name" xml:space="preserve">
+    <value>LayoutControlItem44</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem44.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem45.Name" xml:space="preserve">
+    <value>LayoutControlItem45</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem45.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup9.Name" xml:space="preserve">
+    <value>LayoutControlGroup9</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem7.Name" xml:space="preserve">
+    <value>LayoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Name" xml:space="preserve">
+    <value>LayoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup8.Name" xml:space="preserve">
+    <value>LayoutControlGroup8</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem34.Name" xml:space="preserve">
+    <value>LayoutControlItem34</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem34.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem18.Name" xml:space="preserve">
+    <value>LayoutControlItem18</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem35.Name" xml:space="preserve">
+    <value>LayoutControlItem35</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem35.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem4.Name" xml:space="preserve">
+    <value>LayoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarManager1.Name" xml:space="preserve">
+    <value>BarManager1</value>
+  </data>
+  <data name="&gt;&gt;BarManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Bar1.Name" xml:space="preserve">
+    <value>Bar1</value>
+  </data>
+  <data name="&gt;&gt;Bar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem1.Name" xml:space="preserve">
+    <value>BarSubItem1</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItemDelete.Name" xml:space="preserve">
+    <value>BarButtonItemDelete</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItemDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItemReceipt.Name" xml:space="preserve">
+    <value>BarButtonItemReceipt</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItemReceipt.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem2.Name" xml:space="preserve">
+    <value>BarButtonItem2</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem2.Name" xml:space="preserve">
+    <value>BarSubItem2</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem1.Name" xml:space="preserve">
+    <value>BarButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem3.Name" xml:space="preserve">
+    <value>BarSubItem3</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem3.Name" xml:space="preserve">
+    <value>BarButtonItem3</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem4.Name" xml:space="preserve">
+    <value>BarButtonItem4</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Bar3.Name" xml:space="preserve">
+    <value>Bar3</value>
+  </data>
+  <data name="&gt;&gt;Bar3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CarRentDoc</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

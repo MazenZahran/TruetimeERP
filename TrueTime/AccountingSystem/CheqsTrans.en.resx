@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridColumn1.Caption" xml:space="preserve">
+    <value>Cheque ID</value>
+  </data>
+  <data name="GridColumn2.Caption" xml:space="preserve">
+    <value>Inward/Outward</value>
+  </data>
+  <data name="GridColumn3.Caption" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="GridColumn4.Caption" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="GridColumn5.Caption" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="GridColumn6.Caption" xml:space="preserve">
+    <value>Bank </value>
+  </data>
+  <data name="GridColumn7.Caption" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="GridColumn8.Caption" xml:space="preserve">
+    <value>Bank Account ID</value>
+  </data>
+  <data name="GridColumn9.Caption" xml:space="preserve">
+    <value>Reference </value>
+  </data>
+  <data name="GridColumn10.Caption" xml:space="preserve">
+    <value>Voucher ID</value>
+  </data>
+  <data name="GridColumn11.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="GridColumn12.Caption" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="GridColumn18.Caption" xml:space="preserve">
+    <value>Amount in Main Curr.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="EditorButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAhdEVYdFRpdGxlAEFwcGx5O09LO0NoZWNrO0JhcnM7
+        UmliYm9uO2RjyGgAAACqSURBVDhPpc6xDcJADAXQRFS0SJmARSiDREV2oWEQRmATsgINUyAkqJz/pTPy
+        6ewoB8XT3Tn5X25E5C/usEYxOF0vS7R6/6Wghxts+K4tYPgNAiO0NQU2zHMP+QYYrDh0uGGy4S3cYacf
+        kzBMGl7DA/jTC7RkNkx2gwE+oCVnsGGWZWH6FqSSI2iJCsOUFTglPIu1La+AWPKEQ3qHogLqzD1UFNRy
+        h8tJMwFYUmCqbEZGpQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="GridColumn20.Caption" xml:space="preserve">
+    <value> Account</value>
+  </data>
+  <data name="GridColumn22.Caption" xml:space="preserve">
+    <value>Reference ID</value>
+  </data>
+  <data name="GridColumn24.Caption" xml:space="preserve">
+    <value>Reference </value>
+  </data>
+  <data name="GridColumn28.Caption" xml:space="preserve">
+    <value>Reference  Account</value>
+  </data>
+  <data name="ColCheckNo.Caption" xml:space="preserve">
+    <value>Cheque ID</value>
+  </data>
+  <data name="ColCheckInOut.Caption" xml:space="preserve">
+    <value>Inward/Outward</value>
+  </data>
+  <data name="ColCheckStatus.Caption" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ColAccountBank.Caption" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="ColCheckDueDate.Caption" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="ColCheckCustBank.Caption" xml:space="preserve">
+    <value>Bank </value>
+  </data>
+  <data name="ColCheckCustBranch.Caption" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="ColCheckCustAccountId.Caption" xml:space="preserve">
+    <value>Bank Account ID</value>
+  </data>
+  <data name="ColReferanceName.Caption" xml:space="preserve">
+    <value>Reference </value>
+  </data>
+  <data name="ColDocID.Caption" xml:space="preserve">
+    <value>Voucher ID</value>
+  </data>
+  <data name="ColCheckAmount.Caption" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="ColCheckCurr.Caption" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="EditorButtonImageOptions2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAhdEVYdFRpdGxlAEFwcGx5O09LO0NoZWNrO0JhcnM7
+        UmliYm9uO2RjyGgAAACqSURBVDhPpc6xDcJADAXQRFS0SJmARSiDREV2oWEQRmATsgINUyAkqJz/pTPy
+        6ewoB8XT3Tn5X25E5C/usEYxOF0vS7R6/6Wghxts+K4tYPgNAiO0NQU2zHMP+QYYrDh0uGGy4S3cYacf
+        kzBMGl7DA/jTC7RkNkx2gwE+oCVnsGGWZWH6FqSSI2iJCsOUFTglPIu1La+AWPKEQ3qHogLqzD1UFNRy
+        h8tJMwFYUmCqbEZGpQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="GridColumn19.Caption" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="GridColumn21.Caption" xml:space="preserve">
+    <value>Reference ID</value>
+  </data>
+  <data name="GridColumn23.Caption" xml:space="preserve">
+    <value>Reference </value>
+  </data>
+  <data name="GridColumn25.Caption" xml:space="preserve">
+    <value>Reference  Account</value>
+  </data>
+  <data name="LayoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 0</value>
+  </data>
+  <data name="TextRefAccID.Properties.NullText" xml:space="preserve">
+    <value>Referance ID</value>
+  </data>
+  <data name="TextRefAccID.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Referance ID</value>
+  </data>
+  <data name="ChecKTahsel.Properties.Caption" xml:space="preserve">
+    <value>Cheques Collection</value>
+  </data>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="SimpleButton3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIwLjIsIFZlcnNpb249MjAuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMICAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzczNzM3NDt9Cgku
+        WWVsbG93e2ZpbGw6I0ZDQjAxQjt9CgkuR3JlZW57ZmlsbDojMTI5QzQ5O30KCS5CbHVle2ZpbGw6IzM4
+        N0NCNzt9CgkuUmVke2ZpbGw6I0QwMjEyNzt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntvcGFjaXR5OjAuMjU7fQoJLnN0M3tk
+        aXNwbGF5Om5vbmU7ZmlsbDojNzM3Mzc0O30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTI3LDRoLTN2MTBI
+        OFY0SDVDNC40LDQsNCw0LjQsNCw1djIyYzAsMC42LDAuNCwxLDEsMWgyMmMwLjYsMCwxLTAuNCwxLTFW
+        NUMyOCw0LjQsMjcuNiw0LDI3LDR6IE0yNCwyNEg4di02ICBoMTZWMjR6IE0xMCw0djhoMTBWNEgxMHog
+        TTE0LDEwaC0yVjZoMlYxMHoiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="SimpleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 499</value>
+  </data>
+  <data name="SimpleButton3.Text" xml:space="preserve">
+    <value>Save    F3</value>
+  </data>
+  <data name="TextDocManualNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 277</value>
+  </data>
+  <data name="Banks.Properties.NullText" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="Banks.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="GridColumn26.Caption" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="SearchReferance.Properties.NullText" xml:space="preserve">
+    <value>Referance</value>
+  </data>
+  <data name="SearchReferance.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Referance</value>
+  </data>
+  <data name="AccountForBank.Properties.NullText" xml:space="preserve">
+    <value>Account Bank</value>
+  </data>
+  <data name="AccountForBank.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Account Bank</value>
+  </data>
+  <data name="ColAccNo.Caption" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ColAccName.Caption" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="DocDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 303</value>
+  </data>
+  <data name="TextDocNotes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 329</value>
+  </data>
+  <data name="LayoutControlGroup3.Text" xml:space="preserve">
+    <value>Voucher Details</value>
+  </data>
+  <data name="LayoutControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 547</value>
+  </data>
+  <data name="DockPanel1_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 30</value>
+  </data>
+  <data name="DockPanel1_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 547</value>
+  </data>
+  <data name="DockPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DockPanel1.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cheques Transactions</value>
+  </data>
+</root>

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Colchk.Caption" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Colchk.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>925, 500</value>
+  </data>
+  <data name="GridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 0</value>
+  </data>
+  <data name="ColActive.Caption" xml:space="preserve">
+    <value>Status </value>
+  </data>
+  <data name="ColActive.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="ColEmployeeID.Caption" xml:space="preserve">
+    <value>ID </value>
+  </data>
+  <data name="ColEmployeeID.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="ColEmployeeName.Caption" xml:space="preserve">
+    <value>Name </value>
+  </data>
+  <data name="ColEmployeeName.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="ColDepartment.Caption" xml:space="preserve">
+    <value>Department </value>
+  </data>
+  <data name="ColDepartment.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="ColJobName.Caption" xml:space="preserve">
+    <value>Job Title </value>
+  </data>
+  <data name="ColJobName.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="ColBranch.Caption" xml:space="preserve">
+    <value>Branch </value>
+  </data>
+  <data name="ColBranch.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="GridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>660, 500</value>
+  </data>
+  <data name="LookUpEditLocations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 113</value>
+  </data>
+  <data name="LookUpEditLocations.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LookUpEditLocations.Properties.Columns11" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LookUpEditLocations.Properties.NullText" xml:space="preserve">
+    <value>Location </value>
+  </data>
+  <data name="LookUpEditLocations.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Location </value>
+  </data>
+  <data name="LookUpEditLocations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 20</value>
+  </data>
+  <data name="TextEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="TextEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <data name="TextDayNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 300</value>
+  </data>
+  <data name="TextDayNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="MemoDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 348</value>
+  </data>
+  <data name="MemoDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 27</value>
+  </data>
+  <data name="LookUpEditVocations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 324</value>
+  </data>
+  <data name="LookUpEditVocations.Properties.Columns1" xml:space="preserve">
+    <value>Vocation Type</value>
+  </data>
+  <data name="LookUpEditVocations.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="LookUpEditVocations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="TextVocationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 228</value>
+  </data>
+  <data name="TextVocationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="DateEditTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 276</value>
+  </data>
+  <data name="DateEditTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="DateEditFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 252</value>
+  </data>
+  <data name="DateEditFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAFhJREFUOE9j
+        +P//P0UYTEzOWr8XiP+DMJQPZqNjNLm9ID7MAFyKUMTQ5UB8+hgAw9jUYjUAH0ZXiyFICqa+ASA2MXjU
+        ADwGkIqRDdiOLkkE3g43gHz8nwEAvq7TCya3G6wAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 439</value>
+  </data>
+  <data name="SimpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 22</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>Execute&amp;Save </value>
+  </data>
+  <data name="ActiveCheckEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 137</value>
+  </data>
+  <data name="ActiveCheckEdit1.Properties.Caption" xml:space="preserve">
+    <value>Active </value>
+  </data>
+  <data name="ActiveCheckEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 20</value>
+  </data>
+  <data name="LookUpEditDepartment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 65</value>
+  </data>
+  <data name="LookUpEditDepartment.Properties.NullText" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="LookUpEditDepartment.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="LookUpEditDepartment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 20</value>
+  </data>
+  <data name="LookUpEditBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 89</value>
+  </data>
+  <data name="LookUpEditBranch.Properties.NullText" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="LookUpEditBranch.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="LookUpEditBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 20</value>
+  </data>
+  <data name="LookUpEditPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 41</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.NullText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="LookUpEditPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 20</value>
+  </data>
+  <data name="SimpleButtonRefresh.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA1dEVYdFRpdGxlAEFycm93O1JlY3VycmVuY2U7UmVm
+        cmVzaDtVcGRhdGU7UmVsb2FkO0V4Y2hhbmdlhrRdSAAAANJJREFUOE+lkrENwkAQBI1EATRg0YFzirDI
+        SMgdIkeQ0wQlkJKZjH5o4tl9/Z5O6B6BCUY67d7tv33fpJT+IhR/wYr+fBctGMEEngXW1OjlvlrAAhxA
+        qnADGxAGrEAPGHICA1gXWD+AQtooYF8aGGK68zugkFG6TA7pmjlEDR7ovAn9SVo0LCwk8IyPJoeP18sS
+        dfUQfz2uiuIgzcPm4tswdd/APdPgj+qkO9+H2Of5Bj4Srkgh72vcAYXYnA8gfCQKidiC3FsLIPOe8lxC
+        8XtS8wL/7IdaesUzOwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="SimpleButtonRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 171</value>
+  </data>
+  <data name="SimpleButtonRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 22</value>
+  </data>
+  <data name="SimpleButtonRefresh.Text" xml:space="preserve">
+    <value>Refresh </value>
+  </data>
+  <data name="LayoutControlItem9.Text" xml:space="preserve">
+    <value>Orederd On </value>
+  </data>
+  <data name="LayoutControlItem7.Text" xml:space="preserve">
+    <value>From </value>
+  </data>
+  <data name="LayoutControlItem8.Text" xml:space="preserve">
+    <value>To </value>
+  </data>
+  <data name="LayoutControlItem10.Text" xml:space="preserve">
+    <value>Vacation Type </value>
+  </data>
+  <data name="LayoutControlItem11.Text" xml:space="preserve">
+    <value>Note </value>
+  </data>
+  <data name="LayoutControlItem12.Text" xml:space="preserve">
+    <value>Tatal Days</value>
+  </data>
+  <data name="LayoutControlGroup2.Text" xml:space="preserve">
+    <value>Vacation Details </value>
+  </data>
+  <data name="LayoutControlGroup3.Text" xml:space="preserve">
+    <value>Search Options</value>
+  </data>
+  <data name="LayoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 471</value>
+  </data>
+  <data name="DockPanel1_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 26</value>
+  </data>
+  <data name="DockPanel1_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 471</value>
+  </data>
+  <data name="DockPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 500</value>
+  </data>
+  <data name="DockPanel1.Text" xml:space="preserve">
+    <value>Report Options</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Group Vacation </value>
+  </data>
+</root>

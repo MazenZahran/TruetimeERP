@@ -1,0 +1,49 @@
+USE [master]
+GO
+
+/****** Object:  LinkedServer [ORPAK]    Script Date: 08/03/2023 12:02:13 PM ******/
+EXEC master.dbo.sp_addlinkedserver @server = N'ORPAK', @srvproduct=N'SQLServer', @provider=N'SQLNCLI11', @datasrc=N'192.168.1.106\sqlexpress', @catalog=N'data'
+ /* For security reasons the linked server remote logins password is changed with ######## */
+EXEC master.dbo.sp_addlinkedsrvlogin @rmtsrvname=N'ORPAK',@useself=N'False',@locallogin=NULL,@rmtuser=N'sa',@rmtpassword='########'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'collation compatible', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'data access', @optvalue=N'true'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'dist', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'pub', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'rpc', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'rpc out', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'sub', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'connect timeout', @optvalue=N'0'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'collation name', @optvalue=null
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'lazy schema validation', @optvalue=N'false'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'query timeout', @optvalue=N'0'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'use remote collation', @optvalue=N'true'
+GO
+
+EXEC master.dbo.sp_serveroption @server=N'ORPAK', @optname=N'remote proc transaction promotion', @optvalue=N'true'
+GO
+
+

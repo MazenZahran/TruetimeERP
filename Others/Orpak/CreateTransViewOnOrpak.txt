@@ -1,0 +1,20 @@
+USE [DATA]
+GO
+
+/****** Object:  View [dbo].[TransView]    Script Date: 08/03/2023 12:48:41 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[TransView]
+AS
+SELECT        T.id, T.timestamp, T.product_code AS StockID, T.sale AS DocAmount, T.ppv AS Price, T.quantity, T.proxy_id AS SentToJournal, F.code AS FleetCode, F.phone AS Mobile, F.zip AS SendMessage, T.shift_id, F.name AS FleetName, 
+                         T.plate, T.product_name AS ItemName, case when F.state='' then 0 else F.state end AS MonthlyVoucher
+FROM            dbo.transactions AS T LEFT OUTER JOIN
+                         dbo.fleets AS F ON T.fleet_id = F.id
+WHERE        (T.type = 'CSTMR') AND (T.proxy_id = 0) And ( T.quantity <> 0 ) And ( T.sale <> 0 ) 
+GO
+
+

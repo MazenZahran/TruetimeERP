@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="23.2.4.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" PageWidth="850" PageHeight="1100" Version="23.2" Font="Arial, 9.75pt">
+  <Parameters>
+    <Item1 Ref="2" Visible="false" Description="ItemName" Name="ItemName" />
+    <Item2 Ref="3" Description="Barcode" Name="Barcode" />
+    <Item3 Ref="5" Description="Price" ValueInfo="0" Name="Price" Type="#Ref-4" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="6" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="7" ControlType="DetailBand" Name="Detail" />
+    <Item3 Ref="8" ControlType="BottomMarginBand" Name="BottomMargin" />
+  </Bands>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="9" LayoutItemType="Parameter" Parameter="#Ref-2" />
+    <Item2 Ref="10" LayoutItemType="Parameter" Parameter="#Ref-3" />
+  </ParameterPanelLayoutItems>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v23.2" Ref="4" Content="System.Decimal" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

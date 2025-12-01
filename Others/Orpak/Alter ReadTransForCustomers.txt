@@ -1,0 +1,223 @@
+USE [Truetime]
+GO
+
+/****** Object:  StoredProcedure [dbo].[ReadCSTMRTrans]    Script Date: 22/07/2025 11:48:45 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[ReadCSTMRTrans]  
+AS
+
+declare @starttime datetime = getdate()
+
+Select   [ID],[timestamp],StockID,DocAmount,Price,Quantity,
+       [SentToJournal],FleetCode,Mobile,SendMessage,shift_id,FleetName,plate,ItemName,MonthlyVoucher,SmsWithBalance
+INTO #TempTransTable
+from [ORPAK].[DATA].dbo.TransView where SentToJournal=0  order by ID desc ;
+
+
+Declare @TransInOrpakCount int;
+Set @TransInOrpakCount= (select COUNT(ID) from #TempTransTable);
+Declare @TransID INT;
+DECLARE @InputDateTime DATETIME;
+Declare @DocID int;
+DECLARE @DocCode  varchar(15);
+Declare @DocAmount float;
+Declare @DeviceName varchar(100);
+Declare @DocDate date;
+Declare @DocNote Nvarchar(100);
+Declare @DocNoteByAccount Nvarchar(100);
+Declare @WahreHouse int;
+Declare @ItemNo int;
+Declare @ItemNoOnTTS int;
+Declare @ItemAccount varchar(10);
+Declare @ItemName nvarchar(100);
+Declare @Unit int;
+Declare @PosNo int;
+Declare @DocID2 int;
+Declare @FleetsOnTTS int;
+Declare @ReferanceNo int;
+Declare @ReferanceName nvarchar(100);
+Declare @RefAccount varchar(10);
+Declare @ItemCount int;
+Declare @RefCount int;
+Declare @MobileNo varchar(20);
+Declare @SendMessage varchar(10);
+Declare @SMSText nvarchar(100);
+Declare @DebitBalance float;
+Declare @CreditBalance float;
+Declare @RefBalance int;
+Declare @LastVoucherForRef int;
+Declare @SmsWithBalance int;
+Declare @CompanyName nvarchar(1000);
+Set @WahreHouse=1;
+Set @PosNo=1 ;
+
+
+While (Select Count(*) From #TempTransTable) > 0
+Begin
+Set @DocNote=N'فاتورة محروقات شهرية';
+Set @DocID2=0;
+Set @LastVoucherForRef  = Null;
+Set @DocNoteByAccount='';
+
+Select Top 1 @TransID = [ID] From #TempTransTable order by id ;
+
+Set @ItemNo= ( Select StockID from #TempTransTable where ID=@TransID );
+Set @ItemCount = ( select count(ID) from Items where ItemNo=@ItemNo );
+if @ItemCount > 0 
+begin
+
+Set @ReferanceNo = ( Select FleetCode From #TempTransTable where ID=@TransID  );
+Set @SmsWithBalance = ( Select SmsWithBalance from #TempTransTable where ID=@TransID )
+Set @RefCount = ( select count(RefID) from Referencess where RefNo=@ReferanceNo );
+if @RefCount=0 
+begin
+Declare @OrpakOneVoucherEveryMonth bit
+Set @OrpakOneVoucherEveryMonth=(   select [SettingValue] from [dbo].[Settings] where [SettingName]='OrpakOneVoucherEveryMonth' );
+Insert into Referencess ( RefNo,RefName,RefMobile,RefType,RefAccID,PriceCategory,Active)  select fleetcode,FleetName,Mobile,2,'1104010000',1,1 from #TempTransTable where [ID]=@TransID ;
+end
+
+Set @ItemAccount = ( Select top(1) AccSales from Items where ItemNo=@ItemNo );
+Set @ItemName =  ( select top(1) ItemName from Items where ItemNo=@ItemNo  );
+Set @Unit = ( select top(1) main_unit from Items_units where item_id=@ItemNo );
+
+
+--Set @ReferanceName = ( select FleetName From #TempTransTable where ID=@TransID  );
+Set @ReferanceName = ( select RefName From Referencess where RefNo=@ReferanceNo  );
+Set @RefAccount = ( Select RefAccID from Referencess where RefNo=@ReferanceNo  );
+Set @DocAmount = ( Select DocAmount  From #TempTransTable where ID=@TransID  );
+Set @DeviceName = 'Orpak Server';
+
+SET @DocCode= ( select Right(NEWID(),15));
+
+
+Set @DocID2= (select shift_id from #TempTransTable where ID=@TransID );
+Set @DocDate = ( Select CONVERT(DATE, [timestamp]) from #TempTransTable where ID=@TransID ) ;
+Set @InputDateTime=( select GetDate()  );
+
+
+
+--Set @OrpakOneVoucherEveryMonth=(select Case when [OrpakOneVoucherEveryMonth] Is NULL then '0' else [OrpakOneVoucherEveryMonth] end as [OrpakOneVoucherEveryMonth]  from [dbo].[Referencess] where RefNo=@ReferanceNo );
+Set @OrpakOneVoucherEveryMonth = (select  [MonthlyVoucher]  from  #TempTransTable where ID=@TransID  )
+if @OrpakOneVoucherEveryMonth='1' 
+begin
+Set @LastVoucherForRef = ( Select top(1)  DocID   from Journal  where DocName=2 And Referance=@ReferanceNo and DocSort=99 and 	   DATEPART(month, DocDate) = DATEPART(month, @DocDate) And DATEPART(YEAR, DocDate) = DATEPART(YEAR, @DocDate) order by ID desc)
+Set @DocNoteByAccount=CONCAT(N'تعبئة الكترونية' , (Select CONCAT(ItemName,N'الكمية ',quantity,N'المركبة ' ,[plate],'/',[ItemName],'(',[timestamp],')') from #TempTransTable where ID=@TransID))  ;
+end
+
+if @OrpakOneVoucherEveryMonth='0'
+Begin
+Set @DocNote= CONCAT(N'تعبئة الكترونية' , (Select CONCAT(ItemName,N'الكمية ',quantity,N'المركبة ' ,[plate],'/',[ItemName],'(',[timestamp],')') from #TempTransTable where ID=@TransID))  ;
+End
+
+IF @LastVoucherForRef Is Null
+Begin 
+--Set @DocID=(Select IsNull(Max(DocID),0)+1 from Journal Where DocName=2 );
+SET @DocID = NEXT VALUE FOR dbo.SalesInvoiceSeq;
+End
+
+
+IF @LastVoucherForRef Is Not Null
+Begin 
+Set @DocID=@LastVoucherForRef
+Set @DocDate = ( Select top(1) DocDate from journal where DocName=2 And DocID=@LastVoucherForRef )
+Set @DocCode=( Select top(1) DocCode from Journal where DocName=2 And DocID=@LastVoucherForRef )
+Set @DocID2=0
+End
+
+Insert INTO Journal (
+					[DocID],[DocDate],[DocName],[DocStatus],[DocCostCenter],
+					[DebitAcc],[CredAcc],[AccountCurr],[DocCurrency],[DocAmount],[ExchangePrice],
+					[BaseCurrAmount],[BaseAmount],[DocSort],[InputUser],
+					[InputDateTime],[DocNotes],[StockID],[StockUnit],[StockQuantity],[StockQuantityByMainUnit],
+					[StockPrice],[StockItemPrice],[StockDebitWhereHouse],[StockCreditWhereHouse],[StockBarcode],
+					[PosNo],[DeviceName],[DocCode],Referance,ReferanceName,ItemName,DocID2,DocNoteByAccount,DocManualNo,OldTransID  ) 
+			Select 
+					 @DocID,@DocDate,2,3,1,
+					'0',@ItemAccount, 1 ,1 , DocAmount ,1 ,
+					DocAmount ,DocAmount ,99  ,1,
+					@InputDateTime,@DocNote ,StockID,@Unit,quantity ,quantity ,
+					Price, Price ,0 ,@WahreHouse ,'0',
+					@PosNo,@DeviceName,@DocCode,@ReferanceNo,@ReferanceName,@ItemName,@DocID2,@DocNoteByAccount ,0,@TransID From #TempTransTable where [ID] =@TransID;
+if @LastVoucherForRef Is Null
+begin
+Insert Into Journal ([DocID],DocDate,DocName,DocStatus,DocCostCenter,DebitAcc,
+				     CredAcc,AccountCurr,DocCurrency,DocAmount,ExchangePrice,BaseCurrAmount,
+					 BaseAmount,DocManualNo,InputUser,DeviceName,InputDateTime,DocNotes,
+					 Referance,ReferanceName,DocCode,DocID2,PosNo,[DocSort]) 
+			Values ( @DocID,@DocDate,2,3,1,@RefAccount,
+					 '0',1,1,@DocAmount,1,@DocAmount,
+					 @DocAmount,'',1,@DeviceName,@InputDateTime,@DocNote,
+					 @ReferanceNo,@ReferanceName,@DocCode,@DocID2,@PosNo,99
+			       )
+end
+if @LastVoucherForRef Is Not Null
+begin
+Update Journal Set DocAmount =@DocAmount+DocAmount,BaseAmount=BaseAmount+@DocAmount,BaseCurrAmount=BaseCurrAmount +@DocAmount,InputDateTime=@InputDateTime where CredAcc='0' And DocName=2 And DocID=@LastVoucherForRef ;
+end
+
+--if @OrpakOneVoucherEveryMonth='1' 
+--begin
+--end
+
+IF  @OrpakOneVoucherEveryMonth='1'
+Update Journal Set InputDateTime=@InputDateTime where DocName=2 And DocID=@LastVoucherForRef
+
+
+
+Update ORPAK.[DATA].DBO.transactions set proxy_id=1 where [ID]=@TransID;
+
+
+Set @SendMessage= ( select SendMessage from  #TempTransTable where ID=@TransID);
+if @SendMessage='1' 
+begin
+Set @DebitBalance = (Select IsNull(sum(BaseCurrAmount),0)   From [dbo].[Journal]   Where DocStatus<>0 And Referance=@ReferanceNo and CredAcc='0' and (DebitAcc = @RefAccount OR CredAcc=@RefAccount));
+Set @CreditBalance = (Select IsNull(sum(BaseCurrAmount),0) From [dbo].[Journal] Where DocStatus<>0 And Referance=@ReferanceNo and DebitAcc='0' and (DebitAcc = @RefAccount OR CredAcc= @RefAccount))
+Set @RefBalance=@DebitBalance-@CreditBalance
+	Set @MobileNo= ( select Mobile from  #TempTransTable where ID=@TransID);
+	Set @SMSText= CONCAT(N'Filling: ' , (Select CONCAT(DocAmount,'NIS,',' Car:' ,[plate],' ,',[ItemName],'(',[timestamp],')') from #TempTransTable where ID=@TransID))  ;
+
+	if @SmsWithBalance=1 
+	begin
+	Set @SMSText=Concat(@SMSText,',', 'Balance',':' ,'(',@RefBalance , ' NIS',')')
+	end
+
+	
+	DECLARE @win int
+	DECLARE @hr  int
+	DECLARE @text varchar(8000)
+	
+	--DECLARE @url varchar(255) = ( SELECT REPLACE([SettingValue], '#MobileNo#&msg=#Message#', '') from [dbo].[Settings] where SettingName='SMSAPI') +@MobileNo +'&msg='+ @SMSText;
+     --DECLARE @url varchar(255) = ( SELECT REPLACE([SettingValue], '#MobileNo#&body=#Message#', '') from [dbo].[Settings] where SettingName='SMSAPI') +@MobileNo +'&body='+ @SMSText;
+	--DECLARE @url varchar(255) = ( SELECT REPLACE([SettingValue], '#MobileNo#&body=#Message#', '') from [dbo].[Settings] where SettingName='SMSAPI') +@MobileNo +'&body='+ @SMSText;
+	--EXEC @hr=sp_OACreate 'WinHttp.WinHttpRequest.5.1',@win OUT
+	--IF @hr <> 0 EXEC sp_OAGetErrorInfo @win
+	--EXEC @hr=sp_OAMethod @win, 'Open',NULL,'GET',@url,'false'
+	--IF @hr <> 0 EXEC sp_OAGetErrorInfo @win
+	--EXEC @hr=sp_OAMethod @win,'Send'
+	--IF @hr <> 0 EXEC sp_OAGetErrorInfo @win
+	DECLARE @chatId NVARCHAR(MAX) = @MobileNo;
+	DECLARE @message NVARCHAR(MAX) = @SMSText;
+	EXEC [dbo].[SendWhatsAppMessage]  @chatId, @message;
+end
+
+Delete from #TempTransTable Where ID = @TransID
+
+end
+Else
+begin
+Delete from #TempTransTable Where ID = @TransID
+end
+
+declare @endtime datetime = getdate()
+declare @executionTime int = datediff(SECOND, @starttime, @endtime)
+Insert into OrpakReadCSTMRTransLogs (executionTime,StartTime,EndTime,TransInOrpakCount) Values (@executionTime,@starttime,@endtime,@TransInOrpakCount)
+End
+Drop Table  #TempTransTable 
+GO
+
+

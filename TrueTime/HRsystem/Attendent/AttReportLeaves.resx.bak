@@ -1,0 +1,2773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BandedGridView1.GroupSummary22" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RepositoryItemTimeSpanEdit1.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="DevExpress.Data.v23.2" name="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="BandedGridView1.GroupSummary12" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn4.Name" xml:space="preserve">
+    <value>BandedGridColumn4</value>
+  </data>
+  <data name="LeaveJobBand5.Name" xml:space="preserve">
+    <value>LeaveJobBand5</value>
+  </data>
+  <data name="LeaveBand3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBand6.Caption" xml:space="preserve">
+    <value>فترة السماح</value>
+  </data>
+  <data name="&gt;&gt;gridBand2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="gridBand3.Caption" xml:space="preserve">
+    <value>الوردية</value>
+  </data>
+  <data name="CollEmployeeName.Caption" xml:space="preserve">
+    <value>الموظف</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v23.2" name="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="RepositoryItemTimeSpanEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="colPictureEmp.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gridBand8.Width" type="System.Int32, mscorlib">
+    <value>522</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit3.Name" xml:space="preserve">
+    <value>RepositoryItemTimeEdit3</value>
+  </data>
+  <data name="&gt;&gt;DateEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand3.Name" xml:space="preserve">
+    <value>LeaveJobBand3</value>
+  </data>
+  <data name="BandedGridColumn12.Caption" xml:space="preserve">
+    <value>مغادرة2</value>
+  </data>
+  <data name="BandedGridColumn1.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemButtonEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemButtonEdit1</value>
+  </data>
+  <data name="LeaveJobBand5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColEmpID.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit3.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn19.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="TileViewItemElement4.Text" xml:space="preserve">
+    <value>colDepartment</value>
+  </data>
+  <data name="ColLateMinutes.Caption" xml:space="preserve">
+    <value>تاخير مسموح</value>
+  </data>
+  <data name="ColEmpID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn3.Name" xml:space="preserve">
+    <value>BandedGridColumn3</value>
+  </data>
+  <data name="LayoutControlItem4.Text" xml:space="preserve">
+    <value>من تاريخ</value>
+  </data>
+  <data name="ColLate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LeaveJobBand3.Name" xml:space="preserve">
+    <value>LeaveJobBand3</value>
+  </data>
+  <data name="BandedGridColumn26.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DateEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColTransOutID.Caption" xml:space="preserve">
+    <value>رقم حركة الخروج</value>
+  </data>
+  <data name="BandedGridColumn3.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridBand13.Name" xml:space="preserve">
+    <value>gridBand13</value>
+  </data>
+  <data name="SpinEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn17.Name" xml:space="preserve">
+    <value>BandedGridColumn17</value>
+  </data>
+  <data name="&gt;&gt;gridBand3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn20.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RadioGroup1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>952, 44</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary21" xml:space="preserve">
+    <value>BonusSpanAfterEnd</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary31" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ColDuration3.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Name" xml:space="preserve">
+    <value>SimpleButton4</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn5.Name" xml:space="preserve">
+    <value>BandedGridColumn5</value>
+  </data>
+  <data name="DateEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="BandedGridColumn25.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="gridBand7.Width" type="System.Int32, mscorlib">
+    <value>557</value>
+  </data>
+  <data name="&gt;&gt;gridBand7.Name" xml:space="preserve">
+    <value>gridBand7</value>
+  </data>
+  <data name="LeaveJobBand1.Name" xml:space="preserve">
+    <value>LeaveJobBand1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit10.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColTransDay.Caption" xml:space="preserve">
+    <value>اليوم</value>
+  </data>
+  <data name="&gt;&gt;SpinEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColStartTime.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColTransOutID.Name" xml:space="preserve">
+    <value>ColTransOutID</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn20.Name" xml:space="preserve">
+    <value>BandedGridColumn20</value>
+  </data>
+  <data name="BandedGridColumn6.Caption" xml:space="preserve">
+    <value>خروج1</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit2.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn24.Name" xml:space="preserve">
+    <value>BandedGridColumn24</value>
+  </data>
+  <data name="SearchLookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="gridBand4.Width" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="ColElapseTime.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn9.Caption" xml:space="preserve">
+    <value>خروج4</value>
+  </data>
+  <data name="&gt;&gt;ColDuration11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SearchLookUpEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="DateEdit2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="BandedGridColumn25.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn12.Name" xml:space="preserve">
+    <value>BandedGridColumn12</value>
+  </data>
+  <data name="colBranch.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAADV0RVh0VGl0
+        bGUAQXJyb3c7UmVjdXJyZW5jZTtSZWZyZXNoO1VwZGF0ZTtSZWxvYWQ7RXhjaGFuZ2WGtF1IAAADXElE
+        QVQ4TzWTa0iTURjHj1kLM+lCBdGHCKKrQVH0oagPUVmYaZHgFMsyapWarkxSc+qc97Y5k9JuKGHbvKVz
+        OjMz84NWXph2sVZphZpOnbepW8G/5yx94Mef930u55znOYclZdeyJNVz0ueMbF5sRrl3vFyfG6+oepeo
+        qrFJFPqWuMyK+1Ey7Qnyz+cxxAKZqlpK6swSlDWkzCnkZt5qye3K8pyCRhg/9WFwdArT9r8YsFjR9rEX
+        d/IbEZNWrvMNilkbKdWkpN2tA+UtdCSL459sSlRWD9S87sK41Y6hCRv6x6bRa5l26OD4DCxWG/SvPiIm
+        XTdpaPiE5JwXvIAL23/YX0A/2xpbvlPQHxi/DuBhUROuSYvgdykPUcmlKCh7h/fdwxiatKOrx0xqgzSr
+        hhdYxMIlhUF3adsWWrmTgpLvGOATpCw85p/i477La4V3YMpJoShHnfWoHqa+MfwamUK32QqJvIoXcGXi
+        hCJDU3sPfgxZ8VDbjBNnlYWbt3ssISdvFsdFKFIp1JVt6KaYbwOTMBHRqTpeYDETS4rN4oRiRBDh8cUI
+        jrjnQw7niZk/JGyeKCpfFnZLi9BbGoTGahDCidHgurT0/xHIXAm+4tJZXUy4EAsIx8gIHsj9q4jVs6wg
+        BCyFukl3AAkKA+Iy9YhO0+GG7BlCop+kUoDzqNVOwuYHh6l8I5PKcD2xBGIiXKIdpP+L+CXC2JQdwzS6
+        YequWteKAJEqm5xuvABPXrdh98qAyzklWn07zOM2VL78gKPC1AbyuTLeTVPfBIw/RvH2sxnyB/UQXswu
+        PR6Q6Ld+y941Xv4SofBCVimfQuvn3zB2WxAWp8E+zxtXqICA8S139Y7D0NyDTirSYTLjaUUrHUeHYHE+
+        aQV9t9D9GMR78udp3+CQr6yOknm/nFiktAy56iacufrIel/TjM6fFseOftLI+kdnHPqFvtu+jUD+uAFe
+        gYqhjTuObeNHIxjjI/I5na5y3+np7husrA2NVaOwqgOvjP14axpBfXsv8svbcT6yAAdPJb1c7354K6UJ
+        jghvO/LZuau5GSR8dHxcbge8b4o8/dNfewUqLcdPq+AZILfQlhv3eITzM/NR8pWdPPxmC5DNPVFuToSA
+        4AV58HJiGcEnwl/eXNysMfYPmLz5/h9uXTcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BandedGridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn26.Name" xml:space="preserve">
+    <value>BandedGridColumn26</value>
+  </data>
+  <data name="&gt;&gt;SpinEdit1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gridBand13.Caption" xml:space="preserve">
+    <value>مجموع المغادرات</value>
+  </data>
+  <data name="DateEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>699, 14</value>
+  </data>
+  <data name="ColTransDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Name" xml:space="preserve">
+    <value>SimpleButton1</value>
+  </data>
+  <data name="ColDuration2.Width" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="CheckEditAllows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 20</value>
+  </data>
+  <data name="&gt;&gt;ColTransInID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colBranch.Name" xml:space="preserve">
+    <value>colBranch</value>
+  </data>
+  <data name="BandedGridColumn8.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="BandedGridColumn1.Caption" xml:space="preserve">
+    <value>دخول1</value>
+  </data>
+  <data name="&gt;&gt;CheckEditCheckActive.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="ColTotalLeaves.Summary1" xml:space="preserve">
+    <value>TotalLeaves</value>
+  </data>
+  <data name="gridBand2.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn23.Name" xml:space="preserve">
+    <value>BandedGridColumn23</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDataBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary20" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary30" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LeaveBand4.Name" xml:space="preserve">
+    <value>LeaveBand4</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary10" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BandedGridColumn6.Name" xml:space="preserve">
+    <value>BandedGridColumn6</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary9" xml:space="preserve">
+    <value>LateSpan</value>
+  </data>
+  <data name="CheckEditCheckActive.Properties.Caption" xml:space="preserve">
+    <value>الموظفين الفاعلين فقط</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDuration2.Name" xml:space="preserve">
+    <value>ColDuration2</value>
+  </data>
+  <data name="BandedGridColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColElapseTimePlane.Summary3" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ColElapseTimePlane.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="gridBand3.Width" type="System.Int32, mscorlib">
+    <value>203</value>
+  </data>
+  <data name="ColPlaneID.Caption" xml:space="preserve">
+    <value>الوردية</value>
+  </data>
+  <data name="LeaveBand2.Name" xml:space="preserve">
+    <value>LeaveBand2</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary18" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EmployeesPositionsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SimpleButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 27</value>
+  </data>
+  <data name="&gt;&gt;colMobile1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AttReportLeaves2222</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDuration3.Name" xml:space="preserve">
+    <value>ColDuration3</value>
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LookUpEditBranch.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ColElapseTimePlane.Name" xml:space="preserve">
+    <value>ColElapseTimePlane</value>
+  </data>
+  <data name="LeaveJobBand2.Name" xml:space="preserve">
+    <value>LeaveJobBand2</value>
+  </data>
+  <data name="BandedGridColumn18.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LookUpEditBranch.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemButtonEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SimpleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 28</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Name" xml:space="preserve">
+    <value>LayoutControlItem6</value>
+  </data>
+  <data name="BandedGridColumn24.Caption" xml:space="preserve">
+    <value>فترة4</value>
+  </data>
+  <data name="ColTransDay.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDepartmentsTableAdapter.Type" xml:space="preserve">
+    <value>TrueTime.TrueTimeDataSetTableAdapters.EmployeesDepartmentsTableAdapter, Resources.DataSets.TrueTimeDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BandedGridColumn12.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ColElapseTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmployeesBranchesTableAdapter.Type" xml:space="preserve">
+    <value>TrueTime.TrueTimeDataSetTableAdapters.EmployeesBranchesTableAdapter, Resources.DataSets.TrueTimeDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ColDuration4.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="ColStartTimeReal.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="gridBand4.Caption" xml:space="preserve">
+    <value>تاخير صباحي / مسائي</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditPosition.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn15.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDataBindingSource.Name" xml:space="preserve">
+    <value>EmployeesDataBindingSource</value>
+  </data>
+  <data name="&gt;&gt;colPictureEmp.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CheckEditAllows.Name" xml:space="preserve">
+    <value>CheckEditAllows</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DateEdit2.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="BandedGridColumn17.Caption" xml:space="preserve">
+    <value>ع مغادرة2</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn7.Name" xml:space="preserve">
+    <value>BandedGridColumn7</value>
+  </data>
+  <data name="GridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DateEdit2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary27" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary17" xml:space="preserve">
+    <value>BonusSpanBeforeBeg</value>
+  </data>
+  <data name="LeaveBand1.Name" xml:space="preserve">
+    <value>LeaveBand1</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary8" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDuration4.Name" xml:space="preserve">
+    <value>ColDuration4</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary7" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary4" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary5" xml:space="preserve">
+    <value>ElapseTimePlane</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColElapseTimePlane.Summary1" xml:space="preserve">
+    <value>ElapseTimePlane</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary1" xml:space="preserve">
+    <value>ElapseTime</value>
+  </data>
+  <data name="&gt;&gt;GridBand6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn16.Name" xml:space="preserve">
+    <value>BandedGridColumn16</value>
+  </data>
+  <data name="SimpleButton2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAOdEVYdFRpdGxlAFByaW50ZXI7579hxQAAAsVJREFU
+        OE9tkvtLk1Ecxt/UzFvaT0F/g4ZEGv5UppUReYFQEcXLTLGU2eYszbvTqXNq5qVi4DUIiqKLKFaarlZq
+        m9KPKVm65tTN3NXLdD6d8+rWrA583i/ne57n4byHLwPAAVlujZ3jo809SjR1K3CnS4EmQmPnZ9RJ5TJy
+        ftBZz3r2bRjGvaFjAjbbDrYp2zvYYrFBLB2nAk9nPevZt2EYjzrpGGtYXLEQzNCQqtFZILr3kQq8nfV7
+        HnYdILgSfKrb5di0bmNBa4J62UwwQrVsQkWLjKr9CG4EF4IjwEV0X3auqXtKEZ9Vi4x8KdY2tqBaNGJu
+        0YB5jQFzhNTcNsSklKFWOqEskgxEUJ89wE3SoVxa0FoQmVSCZG4rTGtW/FjQ47taj1n1KktCViPOxwqg
+        XjKjsn1sifjc7QGHRA8UsFptiOOUIzxGgPBoQpQAYVF5CIvk4+xlPkIJMUm3ye22Udwsp072QenyKGv5
+        BIPZisFhJS7F8RESzsGp0DQEh6Yi6EwKTp5OQUQ0F/1DCuj067gpHqVOL3uAV0G9DJpfFnzTGDHLYiLX
+        JlVtYnv2PltJP1c4RJ0+9gBvXvUwptUGTE1rERRRuEfBP0xO6zA1o8W14tfUedgRkF36BoqvOgxPqiBs
+        lUNv3ETV4E9UDKhQ3KfCimEDwrYPeKuYx+iXBVy91U+dvo43SMjuHUnkPkJsVhfKmmXsf+pW16ElVbu6
+        hmUC7V+Ir8HFhHqEX6mgY+14AzoUngRfwlFBVd/7ooZ32GXEUfnCl3JyfoxwhOBF2J0D+skTvmJ4lS9I
+        jw2jh36Z4kBJdtMJpFUHSMiemrwJrpy8XiaV1/NnlOknt/w5uKXPkFPyFNlFT3C98DFy7oZgBnnIFAcj
+        Pf8hOPxepPF6kHKjG8m5XcTmFPA3GQ2BTHrd8ZpUUQCSqvxrEiv9/6sDwPwGK/xl0QSQ9TYAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="ColTotalLeaves.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="BandedGridColumn26.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="ColPlaneID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColDuration5.Name" xml:space="preserve">
+    <value>ColDuration5</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDepartmentsBindingSource.Name" xml:space="preserve">
+    <value>EmployeesDepartmentsBindingSource</value>
+  </data>
+  <data name="CheckEditCheckActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>929, 74</value>
+  </data>
+  <data name="ColElapseTime.Caption" xml:space="preserve">
+    <value>الفترة </value>
+  </data>
+  <data name="BandedGridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn14.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn14.Caption" xml:space="preserve">
+    <value>مغادرة4</value>
+  </data>
+  <data name="LeaveBand5.Width" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.NullValuePrompt" xml:space="preserve">
+    <value>اختر المسمى الوظيفي</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit1</value>
+  </data>
+  <data name="ColDuration11.Caption" xml:space="preserve">
+    <value>الفترة1</value>
+  </data>
+  <data name="BandedGridColumn13.Caption" xml:space="preserve">
+    <value>مغادرة3</value>
+  </data>
+  <data name="colMobile1.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="gridBand16.Caption" xml:space="preserve">
+    <value>مجموع م العمل</value>
+  </data>
+  <data name="ColElapseTime.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;colID.Name" xml:space="preserve">
+    <value>colID</value>
+  </data>
+  <data name="LookUpEditDepartment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
+  </data>
+  <data name="BandedGridColumn20.Caption" xml:space="preserve">
+    <value>ع مغادرة5</value>
+  </data>
+  <data name="SimpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAFJvbGU7NeaBLAAAA09JREFUOE91
+        k31MzHEcx7/dr5xc99R1pe4YJeThjyiaoka19LSVCtWZYZGnCstqPbiViknKlTTbSR1ZYs3TchazxaKW
+        eWgmdqrtKlNGGNXd2/f76/qPP977/fH7vV6fz/fz/X1ITbKaVLNsVREdTVWiilRuUZGKeA9yNs6DlMe6
+        k9Mxc0lZpBspDFNWp/pKPQghdtqNSgKAkOrtavLp1Y3/pv91C4O5kgjXGqNuG3KDXVqpQFgQ4jIjUP0T
+        ZBn+cI/Bwaei3J91N+/Hj4FSVGu8sdNXGkElHC/QJanyadta2nYwbXvJ2Th3ZXns3NW07XQKdzUe2YDB
+        F0Wwjp7BlDkLTy4E4FiAvJ0KHHkBhVs7r+WgOS8C+vS1qEldivqM9Wir3Anz61pYvxl42DJ8BJaBJPS3
+        r0ZBiOLPEsUsNZsFG9iD/q4rwEQvzVuaN7D+7oT1ZxuFG3n4e98BdDaFQJ/tia6GedAlOyPJR6yhAns2
+        7eb3Ty7YYJrfzylshPX7VVhGy/Ht/QHsC3TDyZR5uHXSAwP3pKjf64TUZZJiKpjNrkr7zHAc45870KbP
+        ReWhSGSFLcaPwTLadiYs/Ymw9K3DVK8XJnuk+Hyfw7WDImiWS2qpYA6756iWwliYeq6ioSgVXXdzMP6p
+        FJahY/yZpxj81gtTL6WY7BTA3CpAQ5oIyT7iSl6wL8DZvizGfezXyE3adhOsYxW0sg3+EMRXnoGHbgtg
+        MnDQJYoRs0iUSQVCGmJXGKoseXQxBdYvDGbTtrVtq9xrECIvWop3env06TnkBsksS51n+VGWI6Wb3ciW
+        FRJFSaRqZPRNGl/ZZPRH1Z750Ma7YtcqVyQvV6DpqCMGDAI8LBBi90ppN4WVrDopDndlD0H6Gnm4TrNg
+        YrhjDd/2kFGGVq0IdekiPK1wgPm6AO/qOBSHSyY3qB0TKCPkf6SiUCUxdexgEi7NT5ZwYpPLV2OpDOa7
+        HIbvCDBIwY+XOfScc8D5BLE12lOUTb+V0NjxArZVpscRxGRkRyJc6EKRKtNffrNwoxy6JDEu7XBC2WYJ
+        Dq+SjcR5O2XYYMFRP/n0MrGtyg92IXlBCpIbqGASOxr7bT5i9UFfWbxmmTgnxkvEloe9nM3eM3haAPIX
+        SE74K5aq5CkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;SpinEdit1.Name" xml:space="preserve">
+    <value>SpinEdit1</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDataTableAdapter.Name" xml:space="preserve">
+    <value>EmployeesDataTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditPosition.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ColBonusSpanِAfterEnd.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadioGroup1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 32</value>
+  </data>
+  <data name="CheckEditAllows.Properties.Caption" xml:space="preserve">
+    <value>اعتماد فترة السماح</value>
+  </data>
+  <data name="&gt;&gt;ColDuration3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridBand4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit10.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary26" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 96</value>
+  </data>
+  <data name="ColAddAndEdit.Caption" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn11.Name" xml:space="preserve">
+    <value>BandedGridColumn11</value>
+  </data>
+  <data name="BandedGridColumn26.Caption" xml:space="preserve">
+    <value>مجموع م العمل</value>
+  </data>
+  <data name="&gt;&gt;ColDuration11.Name" xml:space="preserve">
+    <value>ColDuration11</value>
+  </data>
+  <data name="CheckEditCheckActive.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="SimpleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;CheckEditCheckActive.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ColPlaneID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn25.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SearchLookUpEdit1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="ColDuration5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem4.Name" xml:space="preserve">
+    <value>LayoutControlItem4</value>
+  </data>
+  <data name="SimpleButton4.Text" xml:space="preserve">
+    <value>اضافة حركة دوام</value>
+  </data>
+  <data name="gridBand8.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditDepartment.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1View.Name" xml:space="preserve">
+    <value>SearchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Name" xml:space="preserve">
+    <value>LayoutControlItem8</value>
+  </data>
+  <data name="BandedGridColumn16.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v23.2" name="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="GridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v23.2">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;ColLateMinutes.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SpinEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 22</value>
+  </data>
+  <data name="&gt;&gt;ColTransDate.Name" xml:space="preserve">
+    <value>ColTransDate</value>
+  </data>
+  <data name="&gt;&gt;colBranch.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1.Name" xml:space="preserve">
+    <value>SearchLookUpEdit1</value>
+  </data>
+  <data name="colAttPlane.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="LayoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>تقرير المغادرات</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit10.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Caption" xml:space="preserve">
+    <value>دوام اضافي قبل</value>
+  </data>
+  <data name="&gt;&gt;ColEditedType.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridBand16.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="LookUpEditDepartment.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary25" xml:space="preserve">
+    <value>TotalLeaves</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary15" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="LookUpEditPosition.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;colID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DateEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit9.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colMobile1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColElapseTimePlane.Caption" xml:space="preserve">
+    <value>الفترة المطوبة</value>
+  </data>
+  <data name="SimpleButton4.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAANdEVYdFRpdGxlAFJlc3VtZTsw1a9vAAACgklEQVQ4
+        T3WSW08TQRiG+0u88A944YXeiIoKGomSqLHGgIByEAsJoCByCETEAAJCCS2nWjlUUQzRaIRgAUHwgBdo
+        YjQxHggHASktbFv21L5+M0sZbtzk2W92Z99nZmfGBMBk7f+Iu0+mUPfoPWp636HKNYnK7je42TmOcudr
+        lDpGUdQ2jMIWN/JtQ8hrGkRO4wBFYeKC+r4PCIXBCUegDsb/LkvdC1YMQc3Dt9AoPf/rG7pLzSiN24Hn
+        1lwShoVwm5SRXvWU7puCyp4JqHoIblcDrFdiUJO0F2XxO6GTdDuhCGRLudUvBOXOMchqCKOP7ahP3o3R
+        BjOGbHmQFZWLGZoeFpAkoaxPCEo6Rkigc2am3RhsyMTXyZdQNAoTkRqRMczFvUJQYH+FoKJheGwajh43
+        pj7PUx3GyPgnPjOZwrKmc1GE09ddQpBrHYS0oSHNUouo2DxUNI7xmpZVi4Cik9xgQwkZkDT+apcQZNOW
+        rAVVpFruYNeelC2Y0C9rnICsb8FkJ3I6hSCj+hm8fpXjCxisMUi6vokU1PgsI8RlO4WAbYlHUjhev4JV
+        oto1gdtd46igk1hGi1xMp/BG8xDymwbgpe+OWe4JQSJtycq6bCDJJGKoXMRgUh9vq/CsK1j2yYi93CEE
+        5qJe/pKzZpBQ8gDni1w4V9iDswVdOHPtPpao/89qEHMrQRxOaxeCU/ku6tgw8BosEiyw5KNK7QVidiWA
+        mb8SfixKiL7UKgQnaUXnPEHMM2iEBYKNxELsec4TwO/lAH4u+vF9QcKXWR/2J9mF4HiWkxbFgaOZDv5v
+        MRntOJLeTtNsw6HUVkRfbMHBlBYcSLZT0IaoCzbsS2ymKEz/AM6IRwuC4ZWaAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;ColTransDay.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SplashScreenManager1.Name" xml:space="preserve">
+    <value>SplashScreenManager1</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit9.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit9</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem7.Name" xml:space="preserve">
+    <value>LayoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditPosition.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="SimpleButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1030, 593</value>
+  </data>
+  <data name="gridBand13.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="RadioGroup1.EditValue" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit11.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ColEarlyMinutes.Name" xml:space="preserve">
+    <value>ColEarlyMinutes</value>
+  </data>
+  <data name="CheckEditAllows.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ColTransInID.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="BandedGridColumn2.Caption" xml:space="preserve">
+    <value>دخول2</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn22.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn22.Caption" xml:space="preserve">
+    <value>فترة2</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items4" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items5" xml:space="preserve">
+    <value>ترتيب حسب اليوم</value>
+  </data>
+  <data name="LeaveBand2.Caption" xml:space="preserve">
+    <value>مغادرة2</value>
+  </data>
+  <data name="BandedGridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;GridBand6.Name" xml:space="preserve">
+    <value>GridBand6</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items1" xml:space="preserve">
+    <value>تجميع حسب الاسم</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditBranch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items3" xml:space="preserve">
+    <value>تجميع حسب التاريخ</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colJobName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand4.Name" xml:space="preserve">
+    <value>LeaveJobBand4</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit12.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit12.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit11.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit11</value>
+  </data>
+  <data name="ColStartTimeReal.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;ColDuration2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SimpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;ColTransInID.Name" xml:space="preserve">
+    <value>ColTransInID</value>
+  </data>
+  <data name="TileViewItemElement2.Text" xml:space="preserve">
+    <value>colPictureEmp</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn15.Name" xml:space="preserve">
+    <value>BandedGridColumn15</value>
+  </data>
+  <data name="ColTransDate.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="LeaveBand3.Width" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColLate.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn19.Name" xml:space="preserve">
+    <value>BandedGridColumn19</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LeaveJobBand4.Width" type="System.Int32, mscorlib">
+    <value>225</value>
+  </data>
+  <data name="TileViewItemElement3.Text" xml:space="preserve">
+    <value>colBranch</value>
+  </data>
+  <data name="colDepartment.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary24" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit7.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary14" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColDuration2.Caption" xml:space="preserve">
+    <value>الفترة2</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="colAttPlane.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand2.Name" xml:space="preserve">
+    <value>LeaveBand2</value>
+  </data>
+  <data name="&gt;&gt;ColAddAndEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LayoutControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="LeaveJobBand5.Width" type="System.Int32, mscorlib">
+    <value>225</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="colEmployeeID.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridBand2.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem3.Name" xml:space="preserve">
+    <value>EmptySpaceItem3</value>
+  </data>
+  <data name="ColLate.Summary3" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BandedGridColumn17.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;gridBand4.Name" xml:space="preserve">
+    <value>gridBand4</value>
+  </data>
+  <data name="LeaveJobBand3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColEndTime.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="ColElapseTime.Summary1" xml:space="preserve">
+    <value>ElapseTime</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DateEdit2.Name" xml:space="preserve">
+    <value>DateEdit2</value>
+  </data>
+  <data name="&gt;&gt;ColEndTimeReal.Name" xml:space="preserve">
+    <value>ColEndTimeReal</value>
+  </data>
+  <data name="ColLate.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="RepositoryItemTimeEdit3.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;gridBand8.Name" xml:space="preserve">
+    <value>gridBand8</value>
+  </data>
+  <data name="&gt;&gt;GridBand1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColBonusSpanِAfterEnd.Name" xml:space="preserve">
+    <value>ColBonusSpanِAfterEnd</value>
+  </data>
+  <data name="ColTotalLeaves.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary16" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="DateEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn9.Name" xml:space="preserve">
+    <value>BandedGridColumn9</value>
+  </data>
+  <data name="&gt;&gt;CheckEditAllows.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Tile.TileView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RadioGroup1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="LookUpEditBranch.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="LeaveBand1.Width" type="System.Int32, mscorlib">
+    <value>304</value>
+  </data>
+  <data name="BandedGridColumn26.Summary3" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;DateEdit1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 635</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SearchLookUpEdit1.Properties.NullText" xml:space="preserve">
+    <value> اختر الموظف</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit4.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SimpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 28</value>
+  </data>
+  <data name="LeaveJobBand3.Width" type="System.Int32, mscorlib">
+    <value>225</value>
+  </data>
+  <data name="ColDuration2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckEditCheckActive.Properties.DisplayValueGrayed" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SimpleButton3.Text" xml:space="preserve">
+    <value>اضافة اجازة</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit6.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit6</value>
+  </data>
+  <data name="colEmployeeName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colJobName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColTotalLeaves.Name" xml:space="preserve">
+    <value>ColTotalLeaves</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit8.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Name" xml:space="preserve">
+    <value>LayoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Name" xml:space="preserve">
+    <value>LayoutControlItem3</value>
+  </data>
+  <data name="ColAddAndEdit.Width" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit11.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColDuration4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn24.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColEmpID.Name" xml:space="preserve">
+    <value>ColEmpID</value>
+  </data>
+  <data name="SimpleButton2.Text" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit8.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColLeaveSpan.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit5.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit4.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit4</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit8.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit8</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Name" xml:space="preserve">
+    <value>SimpleButton3</value>
+  </data>
+  <data name="SpinEdit1.EditValue" type="System.Decimal, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gridBand13.Name" xml:space="preserve">
+    <value>gridBand13</value>
+  </data>
+  <data name="colPictureEmp.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="ColEarlyMinutes.Caption" xml:space="preserve">
+    <value>مغادرة مسموحة</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem12.Name" xml:space="preserve">
+    <value>LayoutControlItem12</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary3" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn8.Name" xml:space="preserve">
+    <value>BandedGridColumn8</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LeaveJobBand1.Width" type="System.Int32, mscorlib">
+    <value>261</value>
+  </data>
+  <data name="ColEditedType.Caption" xml:space="preserve">
+    <value>حالة الحركة</value>
+  </data>
+  <data name="&gt;&gt;colJobName.Name" xml:space="preserve">
+    <value>colJobName</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem6.Name" xml:space="preserve">
+    <value>EmptySpaceItem6</value>
+  </data>
+  <data name="LookUpEditBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BandedGridColumn15.Caption" xml:space="preserve">
+    <value>مغادرة5</value>
+  </data>
+  <data name="SimpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 44</value>
+  </data>
+  <data name="LeaveJobBand5.Caption" xml:space="preserve">
+    <value>مغادرة عمل5</value>
+  </data>
+  <data name="&gt;&gt;gridBand3.Name" xml:space="preserve">
+    <value>gridBand3</value>
+  </data>
+  <data name="LeaveBand3.Caption" xml:space="preserve">
+    <value>مغددرة3</value>
+  </data>
+  <data name="SimpleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1020, 593</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colAttPlane.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColLate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SpinEdit1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="LeaveBand2.Width" type="System.Int32, mscorlib">
+    <value>253</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditBranch.Name" xml:space="preserve">
+    <value>LookUpEditBranch</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColTotalLeaves.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn26.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColTransDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit7.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="BandedGridColumn22.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="LeaveJobBand2.Caption" xml:space="preserve">
+    <value>مغادرة عمل2</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="ColTransOutID.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="gridBand2.Caption" xml:space="preserve">
+    <value>الدوام</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;ColAddAndEdit.Name" xml:space="preserve">
+    <value>ColAddAndEdit</value>
+  </data>
+  <data name="BandedGridColumn24.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="gridBand4.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand2.Name" xml:space="preserve">
+    <value>LeaveJobBand2</value>
+  </data>
+  <data name="DateEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem5.Name" xml:space="preserve">
+    <value>EmptySpaceItem5</value>
+  </data>
+  <data name="SimpleButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ColElapseTimePlane.Width" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="RepositoryItemTimeEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryItemTimeEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColDuration5.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit11.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditPosition.Name" xml:space="preserve">
+    <value>LookUpEditPosition</value>
+  </data>
+  <assembly alias="DevExpress.XtraGrid.v23.2" name="DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="GridBand1.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v23.2">
+    <value>Left</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit8.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SimpleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ColElapseTimePlane.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColStartTime.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;ColEarlyMinutes.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn26.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;EmployeesBranchesBindingSource.Name" xml:space="preserve">
+    <value>EmployeesBranchesBindingSource</value>
+  </data>
+  <data name="ColDuration4.Caption" xml:space="preserve">
+    <value>الفترة4</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn2.Name" xml:space="preserve">
+    <value>BandedGridColumn2</value>
+  </data>
+  <data name="ColElapseTime.Summary3" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BandedGridColumn18.Caption" xml:space="preserve">
+    <value>ع مغادرة3</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SearchLookUpEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value> اختر الموظف</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit2.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit2</value>
+  </data>
+  <data name="ColElapseTime.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn10.Name" xml:space="preserve">
+    <value>BandedGridColumn10</value>
+  </data>
+  <data name="colID.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;colDepartment.Name" xml:space="preserve">
+    <value>colDepartment</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn14.Name" xml:space="preserve">
+    <value>BandedGridColumn14</value>
+  </data>
+  <data name="colID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SimpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit10.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColEndTimeReal.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn18.Name" xml:space="preserve">
+    <value>BandedGridColumn18</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LookUpEditDepartment.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit9.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="SimpleButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LeaveJobBand2.Width" type="System.Int32, mscorlib">
+    <value>261</value>
+  </data>
+  <data name="BandedGridColumn23.Caption" xml:space="preserve">
+    <value>فترة3</value>
+  </data>
+  <data name="BandedGridColumn11.Caption" xml:space="preserve">
+    <value>مغادرة1</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn23.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn26.Summary1" xml:space="preserve">
+    <value>TotalJobLeaves</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn20.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;EmployeesPositionsTableAdapter.Type" xml:space="preserve">
+    <value>TrueTime.TrueTimeDataSetTableAdapters.EmployeesPositionsTableAdapter, Resources.DataSets.TrueTimeDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="colPictureEmp.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LayoutControlItem14.Text" xml:space="preserve">
+    <value>الحد الأقصى للمغادرات</value>
+  </data>
+  <data name="ColAddAndEdit.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn23.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn25.Caption" xml:space="preserve">
+    <value>فترة5</value>
+  </data>
+  <data name="LookUpEditDepartment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ColLeaveSpan.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary29" xml:space="preserve">
+    <value>TotalJobLeaves</value>
+  </data>
+  <data name="colEmployeeName.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="LeaveBand4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary19" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ColDuration3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SearchLookUpEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="gridBand3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn15.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit12.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit12</value>
+  </data>
+  <data name="BandedGridColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="SpinEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="CheckEditCheckActive.Properties.DisplayValueUnchecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;colPictureEmp.Name" xml:space="preserve">
+    <value>colPictureEmp</value>
+  </data>
+  <data name="BandedGridColumn15.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColElapseTime.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="colDepartment.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand1.Name" xml:space="preserve">
+    <value>LeaveBand1</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit3.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DateEdit1.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColEmpID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColTransOutID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="colBranch.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridBand5.Name" xml:space="preserve">
+    <value>gridBand5</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.Name" xml:space="preserve">
+    <value>RadioGroup1</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridBand1.Name" xml:space="preserve">
+    <value>GridBand1</value>
+  </data>
+  <data name="ColEndTimeReal.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gridBand8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Name" xml:space="preserve">
+    <value>LayoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDepartmentsTableAdapter.Name" xml:space="preserve">
+    <value>EmployeesDepartmentsTableAdapter</value>
+  </data>
+  <data name="BandedGridColumn10.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="colBranch.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colEmployeeName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryItemTimeEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridBand5.Name" xml:space="preserve">
+    <value>gridBand5</value>
+  </data>
+  <data name="&gt;&gt;gridBand16.Name" xml:space="preserve">
+    <value>gridBand16</value>
+  </data>
+  <data name="ColTransDay.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="BandedGridColumn19.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit7.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit7</value>
+  </data>
+  <data name="GridBand6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Name" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;CheckEditCheckActive.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gridBand13.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit5.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CollEmployeeName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ColStartTime.Name" xml:space="preserve">
+    <value>ColStartTime</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LayoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="DateEdit2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;DateEdit1.Name" xml:space="preserve">
+    <value>DateEdit1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="BandedGridView1.GroupSummary28" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColTotalLeaves.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridBand5.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LookUpEditBranch.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BandedGridColumn8.Caption" xml:space="preserve">
+    <value>خروج3</value>
+  </data>
+  <data name="ColPlaneID.Width" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit4.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="CheckEditCheckActive.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn14.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="LookUpEditPosition.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColLate.Caption" xml:space="preserve">
+    <value>فترة التاخير</value>
+  </data>
+  <data name="LookUpEditPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="LeaveJobBand3.Caption" xml:space="preserve">
+    <value>مغادرة عمل3</value>
+  </data>
+  <data name="LeaveJobBand4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit5.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit5</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColBonusSpanBeforeBeg.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SpinEdit1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem14.Name" xml:space="preserve">
+    <value>LayoutControlItem14</value>
+  </data>
+  <data name="ColTransDate.Caption" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="gridBand7.Caption" xml:space="preserve">
+    <value>المغادرات الشخصية</value>
+  </data>
+  <data name="ColEditedType.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="gridBand8.Name" xml:space="preserve">
+    <value>gridBand8</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LookUpEditDepartment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 14</value>
+  </data>
+  <data name="BandedGridColumn18.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BandedGridColumn21.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="GridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;BandedGridView1.Name" xml:space="preserve">
+    <value>BandedGridView1</value>
+  </data>
+  <data name="&gt;&gt;ColBonusSpanBeforeBeg.Name" xml:space="preserve">
+    <value>ColBonusSpanBeforeBeg</value>
+  </data>
+  <data name="ColEndTimeReal.Caption" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn22.Name" xml:space="preserve">
+    <value>BandedGridColumn22</value>
+  </data>
+  <data name="GridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1432, 483</value>
+  </data>
+  <data name="CheckEditCheckActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 20</value>
+  </data>
+  <data name="DateEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>892, 14</value>
+  </data>
+  <data name="ColEarlyMinutes.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditDepartment.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="colJobName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;GridBand1.Name" xml:space="preserve">
+    <value>GridBand1</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand4.Name" xml:space="preserve">
+    <value>LeaveBand4</value>
+  </data>
+  <data name="ColTotalLeaves.Caption" xml:space="preserve">
+    <value>مجموع المغادرات</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn1.Name" xml:space="preserve">
+    <value>BandedGridColumn1</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDepartmentsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeaveBand1.Caption" xml:space="preserve">
+    <value>مغادرة1</value>
+  </data>
+  <data name="SimpleButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="ColElapseTimePlane.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridBand7.Name" xml:space="preserve">
+    <value>gridBand7</value>
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Summary1" xml:space="preserve">
+    <value>BonusSpanBeforeBeg</value>
+  </data>
+  <data name="gridBand16.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemButtonEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TileViewItemElement1.Text" xml:space="preserve">
+    <value>colEmployeeName</value>
+  </data>
+  <data name="&gt;&gt;DateEdit2.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="colID.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LeaveJobBand1.Caption" xml:space="preserve">
+    <value>مغادرة عمل1</value>
+  </data>
+  <data name="gridBand4.Name" xml:space="preserve">
+    <value>gridBand4</value>
+  </data>
+  <data name="ColDuration11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn20.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Summary3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TrueTimeDataSet.Type" xml:space="preserve">
+    <value>TrueTime.TrueTimeDataSet, Resources.DataSets.TrueTimeDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EmployeesPositionsTableAdapter.Name" xml:space="preserve">
+    <value>EmployeesPositionsTableAdapter</value>
+  </data>
+  <data name="SearchLookUpEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1041, 14</value>
+  </data>
+  <data name="&gt;&gt;ColStartTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeEdit6.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem15.Name" xml:space="preserve">
+    <value>LayoutControlItem15</value>
+  </data>
+  <data name="gridBand5.Caption" xml:space="preserve">
+    <value>اضافي صباحي / مسائي</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Name" xml:space="preserve">
+    <value>GridControl1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="CheckEditAllows.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;ColElapseTimePlane.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn16.Caption" xml:space="preserve">
+    <value>ع مغادرة1</value>
+  </data>
+  <data name="BandedGridColumn21.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditDepartment.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colEmployeeID.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="colMobile1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;gridBand13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="gridBand2.Name" xml:space="preserve">
+    <value>gridBand2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem10.Name" xml:space="preserve">
+    <value>LayoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Name" xml:space="preserve">
+    <value>LayoutControlItem5</value>
+  </data>
+  <data name="RepositoryItemButtonEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Glyph</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Name" xml:space="preserve">
+    <value>LayoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;ColEndTimeReal.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColDuration3.Caption" xml:space="preserve">
+    <value>الفترة3</value>
+  </data>
+  <data name="ColEndTime.Caption" xml:space="preserve">
+    <value>نهاية الوردية</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Name" xml:space="preserve">
+    <value>LayoutControlItem9</value>
+  </data>
+  <data name="gridBand3.Name" xml:space="preserve">
+    <value>gridBand3</value>
+  </data>
+  <data name="&gt;&gt;EmployeesPositionsBindingSource.Name" xml:space="preserve">
+    <value>EmployeesPositionsBindingSource</value>
+  </data>
+  <data name="BandedGridColumn19.Caption" xml:space="preserve">
+    <value>ع مغادرة4</value>
+  </data>
+  <data name="BandedGridColumn19.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn22.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="ColLateMinutes.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="LeaveBand5.Name" xml:space="preserve">
+    <value>LeaveBand5</value>
+  </data>
+  <data name="GridBand1.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LayoutControl1.Text" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColLateMinutes.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn11.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="ColDuration5.Caption" xml:space="preserve">
+    <value>الفترة5</value>
+  </data>
+  <data name="colJobName.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LookUpEditBranch.Properties.NullText" xml:space="preserve">
+    <value>اختر الفرع</value>
+  </data>
+  <data name="LayoutControlItem5.Text" xml:space="preserve">
+    <value>الى تاريخ</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand1.Name" xml:space="preserve">
+    <value>LeaveJobBand1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem11.Name" xml:space="preserve">
+    <value>LayoutControlItem11</value>
+  </data>
+  <data name="SpinEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>735, 44</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColEmpID.Caption" xml:space="preserve">
+    <value>رقم الموظف</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColLeaveSpan.Summary1" xml:space="preserve">
+    <value>LeaveSpan</value>
+  </data>
+  <data name="ColLeaveSpan.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColLeaveSpan.Summary3" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;colDepartment.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridBand6.Name" xml:space="preserve">
+    <value>GridBand6</value>
+  </data>
+  <data name="BandedGridColumn9.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;gridBand7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColDuration4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit7.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit6.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="ColEndTime.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LeaveBand4.Width" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="GridBand6.Width" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="CheckEditCheckActive.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;gridBand16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CheckEditAllows.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="gridBand16.Name" xml:space="preserve">
+    <value>gridBand16</value>
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Summary3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit6.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn21.Name" xml:space="preserve">
+    <value>BandedGridColumn21</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem13.Name" xml:space="preserve">
+    <value>LayoutControlItem13</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColStartTimeReal.Caption" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="&gt;&gt;ColDuration5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SimpleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 44</value>
+  </data>
+  <data name="LayoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 635</value>
+  </data>
+  <data name="gridBand4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColDuration11.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DateEdit2.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Summary1" xml:space="preserve">
+    <value>BonusSpanAfterEnd</value>
+  </data>
+  <data name="LookUpEditDepartment.Properties.NullText" xml:space="preserve">
+    <value>اختر القسم</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LookUpEditBranch.Properties.NullValuePrompt" xml:space="preserve">
+    <value>اختر الفرع</value>
+  </data>
+  <data name="SearchLookUpEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ColLate.Summary2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BandedGridColumn7.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand5.Name" xml:space="preserve">
+    <value>LeaveBand5</value>
+  </data>
+  <data name="&gt;&gt;ColTotalLeaves.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SplashScreenManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSplashScreen.SplashScreenManager, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit9.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckEditAllows.Properties.DisplayValueGrayed" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LookUpEditDepartment.Name" xml:space="preserve">
+    <value>LookUpEditDepartment</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColEndTime.Name" xml:space="preserve">
+    <value>ColEndTime</value>
+  </data>
+  <data name="RepositoryItemTimeEdit2.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="BandedGridColumn21.Caption" xml:space="preserve">
+    <value>فترة1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="BandedGridColumn14.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DateEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ColTotalLeaves.Summary3" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="GridBand1.Caption" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit6.Name" xml:space="preserve">
+    <value>RepositoryItemTimeEdit6</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColTransOutID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ColEditedType.Name" xml:space="preserve">
+    <value>ColEditedType</value>
+  </data>
+  <data name="BandedGridView1.Appearance.GroupRow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="BandedGridColumn5.Caption" xml:space="preserve">
+    <value>دخول5</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn17.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn23.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="gridBand7.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="CollEmployeeName.Width" type="System.Int32, mscorlib">
+    <value>176</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit11.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="DateEdit1.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeID.Name" xml:space="preserve">
+    <value>colEmployeeID</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit12.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="LeaveBand5.Caption" xml:space="preserve">
+    <value>مغادرة5</value>
+  </data>
+  <data name="RadioGroup1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="colDepartment.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand5.Name" xml:space="preserve">
+    <value>LeaveJobBand5</value>
+  </data>
+  <data name="&gt;&gt;colEmployeeName.Name" xml:space="preserve">
+    <value>colEmployeeName</value>
+  </data>
+  <data name="LookUpEditBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="&gt;&gt;gridBand2.Name" xml:space="preserve">
+    <value>gridBand2</value>
+  </data>
+  <data name="&gt;&gt;colAttPlane.Name" xml:space="preserve">
+    <value>colAttPlane</value>
+  </data>
+  <data name="BandedGridColumn4.Caption" xml:space="preserve">
+    <value>دخول4</value>
+  </data>
+  <data name="&gt;&gt;ColElapseTime.Name" xml:space="preserve">
+    <value>ColElapseTime</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.Name" xml:space="preserve">
+    <value>SimpleButton2</value>
+  </data>
+  <data name="&gt;&gt;ColEndTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="BandedGridColumn17.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DateEdit1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="BandedGridColumn16.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LookUpEditDepartment.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColLate.Name" xml:space="preserve">
+    <value>ColLate</value>
+  </data>
+  <data name="&gt;&gt;gridBand5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LookUpEditBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 14</value>
+  </data>
+  <data name="&gt;&gt;ColLeaveSpan.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Name" xml:space="preserve">
+    <value>EmptySpaceItem2</value>
+  </data>
+  <data name="ColEarlyMinutes.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="colAttPlane.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit2.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;colMobile1.Name" xml:space="preserve">
+    <value>colMobile1</value>
+  </data>
+  <data name="LeaveBand3.Name" xml:space="preserve">
+    <value>LeaveBand3</value>
+  </data>
+  <data name="BandedGridColumn10.Caption" xml:space="preserve">
+    <value>خروج5</value>
+  </data>
+  <data name="CheckEditCheckActive.Properties.GlyphVerticalAlignment" type="DevExpress.Utils.VertAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="LookUpEditDepartment.Properties.NullValuePrompt" xml:space="preserve">
+    <value>اختر القسم</value>
+  </data>
+  <data name="LeaveBand4.Caption" xml:space="preserve">
+    <value>مغادرة4</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn24.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn25.Name" xml:space="preserve">
+    <value>BandedGridColumn25</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit2.Name" xml:space="preserve">
+    <value>RepositoryItemTimeEdit2</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ColPlaneID.Name" xml:space="preserve">
+    <value>ColPlaneID</value>
+  </data>
+  <data name="gridBand8.Caption" xml:space="preserve">
+    <value>مغادرات العمل</value>
+  </data>
+  <data name="LayoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="GridBand6.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBand1.Width" type="System.Int32, mscorlib">
+    <value>495</value>
+  </data>
+  <data name="LeaveJobBand4.Caption" xml:space="preserve">
+    <value>مغادرة عمل4</value>
+  </data>
+  <data name="BandedGridColumn7.Caption" xml:space="preserve">
+    <value>خروج2</value>
+  </data>
+  <data name="LayoutControlItem3.Text" xml:space="preserve">
+    <value>اسم الموظف</value>
+  </data>
+  <data name="ColBonusSpanBeforeBeg.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;ColStartTimeReal.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BandedGridColumn2.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="BandedGridColumn6.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;CollEmployeeName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="CheckEditAllows.Properties.GlyphVerticalAlignment" type="DevExpress.Utils.VertAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="ColLeaveSpan.Width" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit3.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit3</value>
+  </data>
+  <data name="&gt;&gt;ColLeaveSpan.Name" xml:space="preserve">
+    <value>ColLeaveSpan</value>
+  </data>
+  <data name="&gt;&gt;ColStartTimeReal.Name" xml:space="preserve">
+    <value>ColStartTimeReal</value>
+  </data>
+  <data name="BandedGridColumn13.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary23" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;EmployeesBranchesTableAdapter.Name" xml:space="preserve">
+    <value>EmployeesBranchesTableAdapter</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary13" xml:space="preserve">
+    <value>LeaveSpan</value>
+  </data>
+  <data name="ColTransInID.Caption" xml:space="preserve">
+    <value>رقم حركة الدخول</value>
+  </data>
+  <data name="&gt;&gt;EmployeesDataTableAdapter.Type" xml:space="preserve">
+    <value>TrueTime.TrueTimeDataSetTableAdapters.EmployeesDataTableAdapter, Resources.DataSets.TrueTimeDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CollEmployeeName.Name" xml:space="preserve">
+    <value>CollEmployeeName</value>
+  </data>
+  <data name="BandedGridColumn5.Width" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="gridBand5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColLeaveSpan.Caption" xml:space="preserve">
+    <value>مغادرة</value>
+  </data>
+  <data name="ColStartTime.Caption" xml:space="preserve">
+    <value>بداية الوردية</value>
+  </data>
+  <data name="&gt;&gt;EmployeesBranchesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn13.Name" xml:space="preserve">
+    <value>BandedGridColumn13</value>
+  </data>
+  <data name="&gt;&gt;CheckEditAllows.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="BandedGridColumn3.Caption" xml:space="preserve">
+    <value>دخول3</value>
+  </data>
+  <data name="colEmployeeID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Custom</value>
+  </data>
+  <data name="BandedGridColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LookUpEditBranch.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="colPictureEmp.Caption" xml:space="preserve">
+    <value>صورة</value>
+  </data>
+  <data name="RepositoryItemTimeSpanEdit12.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="ColLate.Summary1" xml:space="preserve">
+    <value>LateSpan</value>
+  </data>
+  <data name="&gt;&gt;LeaveBand3.Name" xml:space="preserve">
+    <value>LeaveBand3</value>
+  </data>
+  <data name="BandedGridColumn4.Width" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="CheckEditAllows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1083, 74</value>
+  </data>
+  <data name="gridBand5.Width" type="System.Int32, mscorlib">
+    <value>208</value>
+  </data>
+  <data name="LookUpEditPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 14</value>
+  </data>
+  <data name="BandedGridColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckEditAllows.Properties.DisplayValueChecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DateEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="ColBonusSpanِAfterEnd.Caption" xml:space="preserve">
+    <value>دوام اضافي بعد</value>
+  </data>
+  <data name="LookUpEditPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeSpanEdit10.Name" xml:space="preserve">
+    <value>RepositoryItemTimeSpanEdit10</value>
+  </data>
+  <data name="&gt;&gt;CheckEditCheckActive.Name" xml:space="preserve">
+    <value>CheckEditCheckActive</value>
+  </data>
+  <data name="LeaveBand5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridBand3.MinWidth" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemTimeEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemTimeEdit1</value>
+  </data>
+  <data name="ColTransInID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BandedGridColumn7.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn21.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LeaveJobBand4.Name" xml:space="preserve">
+    <value>LeaveJobBand4</value>
+  </data>
+  <data name="&gt;&gt;TrueTimeDataSet.Name" xml:space="preserve">
+    <value>TrueTimeDataSet</value>
+  </data>
+  <data name="BandedGridView1.GroupSummary11" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="CheckEditCheckActive.Properties.DisplayValueChecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SimpleButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ColTransDay.Name" xml:space="preserve">
+    <value>ColTransDay</value>
+  </data>
+  <data name="CheckEditAllows.Properties.DisplayValueUnchecked" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v23.2">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;LeaveJobBand4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.NullText" xml:space="preserve">
+    <value>اختر المسمى الوظيفي</value>
+  </data>
+  <data name="SimpleButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 27</value>
+  </data>
+  <data name="&gt;&gt;ColLateMinutes.Name" xml:space="preserve">
+    <value>ColLateMinutes</value>
+  </data>
+  <data name="&gt;&gt;BandedGridColumn26.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <metadata name="EmployeesDataBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>341, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="EmployeesDepartmentsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="EmployeesPositionsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>509, 56</value>
+  </metadata>
+  <metadata name="EmployeesBranchesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1002, 17</value>
+  </metadata>
+  <metadata name="EmployeesPositionsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>271, 56</value>
+  </metadata>
+  <metadata name="EmployeesDepartmentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1234, 17</value>
+  </metadata>
+  <metadata name="EmployeesBranchesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>764, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="TrueTimeDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>196, 17</value>
+  </metadata>
+  <metadata name="EmployeesDataTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>555, 17</value>
+  </metadata>
+</root>

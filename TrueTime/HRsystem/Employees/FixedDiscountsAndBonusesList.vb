@@ -1,0 +1,3 @@
+﻿Public Class FixedDiscountsAndBonusesList
+
+End Class

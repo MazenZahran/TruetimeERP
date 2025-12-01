@@ -1,0 +1,34 @@
+update u
+set u.StockPrice = s.Price1
+from [CareemaFood].[dbo].[OrdersAppJournal] u
+    inner join Items_units s on
+        u.StockID  = s.item_id and u.StockUnit=S.unit_id 
+  where doccode='inFpWI506Vpz8' or doccode='AfXSlXjeZ6zhk' or doccode='xGlWX2ZRXWdjI' or
+  doccode='HgGTPAeQYSVp9' or doccode='IBuJxWFKq84ck' or doccode='mfSB24nsAX85c' or 
+  doccode='YWKhgIRb1HTry' or doccode='9MMJ1Vh9LyoH5' or doccode='wtU3HdawcQXaL' or doccode='Gv9ZSe4PYMVBN' or doccode='ztBRo3H6jItSn' 
+
+
+  update [CareemaFood].[dbo].[OrdersAppJournal]
+  set DocAmount=StockPrice*StockQuantity 
+    where doccode='inFpWI506Vpz8' or doccode='AfXSlXjeZ6zhk' or doccode='xGlWX2ZRXWdjI' or
+  doccode='HgGTPAeQYSVp9' or doccode='IBuJxWFKq84ck' or doccode='mfSB24nsAX85c' or 
+  doccode='YWKhgIRb1HTry' or doccode='9MMJ1Vh9LyoH5' or doccode='wtU3HdawcQXaL' or doccode='Gv9ZSe4PYMVBN' or doccode='ztBRo3H6jItSn' 
+
+
+update J
+set J.StockPrice = IsNull(I.LastPurchasePrice,0),
+J.DocAmount=J.StockQuantity*IsNull(I.LastPurchasePrice,0),
+J.BaseAmount=IsNull(I.LastPurchasePrice,0)*StockQuantity,
+J.BaseCurrAmount=IsNull(I.LastPurchasePrice,0)*StockQuantity 
+from [CareemaFood].[dbo].Journal J
+    inner join Items I on
+        J.StockID  = I.ItemNo
+where J.StockID is not Null And ( DocCode='A7-349CDFC6A20C' or DocCode='9E-75CDAB3C0CFF' or DocCode='BB-D268630FE84D' )
+
+
+
+تصحيح الكميات في جدول journal
+select StockID,StockUnit,StockQuantity,StockQuantityByMainUnit,StockQuantity*IU.EquivalentToMain  
+from Journal J 
+left join Items_units IU on IU.item_id=J.StockID and J.StockUnit=IU.unit_id 	
+where J.StockID Is Not Null 

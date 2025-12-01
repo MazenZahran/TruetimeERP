@@ -1,0 +1,23 @@
+USE [to-me]
+Declare @BaseEmplID int
+Set @BaseEmplID=1
+
+select EmployeeID Into   #@Temp1 from EmployeesData where  EmployeeID <> @BaseEmplID
+
+declare @EmpID int
+
+while exists (select * from #@Temp1)
+begin
+  select top 1 @EmpID = EmployeeID    from #@Temp1    order by EmployeeID asc
+
+  Delete From [dbo].[EmployeePermissions]  Where EmployeeID=@EmpID 
+  Insert into [EmployeePermissions] ( EmployeeID,PageID,Allowd)
+  Select @EmpID,PageID,Allowd
+  FROM   [dbo].[EmployeePermissions] 
+  where EmployeeID=@BaseEmplID
+
+
+delete #@Temp1 where EmployeeID = @EmpID
+end
+
+drop table #@Temp1

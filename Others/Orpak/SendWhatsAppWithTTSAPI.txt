@@ -1,0 +1,52 @@
+USE [Truetime]
+GO
+
+/****** Object:  StoredProcedure [dbo].[SendWhatsAppMessage]    Script Date: 22/07/2025 11:26:21 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER PROCEDURE [dbo].[SendWhatsAppMessage]
+    @chatId NVARCHAR(MAX),
+    @message NVARCHAR(MAX)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @obj INT;
+    DECLARE @responseText NVARCHAR(MAX);
+    DECLARE @postData NVARCHAR(MAX);
+	Declare @url Varchar(MAX);
+	Set @url='http://whatsapi.truetime.top:5051/send'
+    -- Format data into JSON format
+    SET @postData = '{"accountId":"9959","chatId": "' + @chatId + '", "message": "' + @message + '"}';
+
+    -- Create MSXML2.ServerXMLHTTP object
+    EXEC sp_OACreate 'MSXML2.ServerXMLHTTP', @obj OUT;
+
+    -- Open connection to web service
+    EXEC sp_OAMethod @obj, 'open', NULL, 'POST', @url, 'false';
+
+    -- Set request headers
+    EXEC sp_OAMethod @obj, 'setRequestHeader', NULL, 'Content-Type', 'application/json';
+
+    -- Send POST data (body)
+    EXEC sp_OAMethod @obj, 'send', NULL, @postData;
+
+    -- Get response text
+    EXEC sp_OAGetProperty @obj, 'responseText', @responseText OUT;
+
+    -- Close MSXML2.ServerXMLHTTP object
+    EXEC sp_OADestroy @obj;
+
+	Insert into [dbo].[WhatsAppLogs] ([FileName],[Caption],MobileNo,Method,ResponseContent,Result,UserNo,DeviceName,RefName) Values ('TEXT',N'تعبئة محروقات',@chatId,'SendTextToWhatsApp',@responseText,1,1,'DeviceName',N'0')
+    -- Do something with the response
+    -- For example, print the response
+    PRINT @responseText;
+END
+GO
+
+

@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PdfViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BarButtonItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfViewer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfZoom500CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom25CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfCommentRibbonPage1.Name" xml:space="preserve">
+    <value>PdfCommentRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom500CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom500CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitVisibleZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetFitVisibleZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfNextPageBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom75CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom25CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextUnderlineBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RepositoryItemPageNumberEdit1.Mask.EditMask" xml:space="preserve">
+    <value>########;</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom125CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom125CheckItem1</value>
+  </data>
+  <data name="PdfImportFormDataBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFilePrintBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RibbonControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;PdfFormDataRibbonPage1.Name" xml:space="preserve">
+    <value>PdfFormDataRibbonPage1</value>
+  </data>
+  <data name="PdfZoom10CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfFilePrintBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFileSaveAsBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfPreviousPageBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFileSaveAsBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom500CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfNextPageBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom400CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextStrikethroughBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoom500CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom500CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfPreviousPageBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfPreviousPageBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFormDataBarPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFormDataBarPageGroup, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfTextHighlightBarItem1.Name" xml:space="preserve">
+    <value>PdfTextHighlightBarItem1</value>
+  </data>
+  <data name="PdfSetFitVisibleZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PdfSetPageNumberBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextStrikethroughBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>شاشة عرض الوثائق</value>
+  </data>
+  <data name="PdfZoom25CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfTextUnderlineBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextUnderlineBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomRibbonPageGroup1.Name" xml:space="preserve">
+    <value>PdfZoomRibbonPageGroup1</value>
+  </data>
+  <data name="PdfPreviousPageBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BarButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACV0RVh0VGl0
+        bGUAQXR0YWNoO0xldHRlcjtlLW1haWw7ZW1haWw7bWFpbDYyymcAAALZSURBVDhPjZP7S5NhFMfftCw3
+        TSEyKyKEooyw/yASCSLwFzPNkNTU1LyE96YmEy+lRllqP3QlKE3Na1pmXiapxFBRh25tqZu7OHVur5tz
+        W3N+e95lUiLSgQ/Pyzlfvuc8h+elAGwLEz7Xyn3PhFfyfcIq+KeulPqRlMNG/W/xVji5eDqcDn2s9g4q
+        CTkRWHzVO6RMTXK7/tSZcFjHcRM7CU572B7OJ4MfwtnloKsTe7/r8cD7YLl7sdc1O6in1fyeV++H8LKO
+        UDuIF4TBMQVKnw8go7gLKUUdOBZQguisNiQXfsat/HaEpbUgidvWa2/CLeuEUk3DumrDstEKg9EMWm8k
+        4i9kQsBiscLL/y4MhhXybYHVugrb2hriuW3M/LupwgoeOvvFaOeJYPm5Co3WhBkljcS8TyA6u9mRi/mQ
+        yudx+EIeqRtgNFkRk93MGLCo/HIedHozuvp/4MnrXvsEqlkt4nJaYbOtYV6zhEPnuRgTiOHplwvJlBx6
+        Mun1jEbGgE1xH/VgkTZhUk5jYFiGO8VNEEpUiLrdZL/W7ByNA7454PXx4XEuGwKRDDqDBaHJ9YyBK5X7
+        oBsa2gyJjEbfkAIfu4UorWxBWGo9zJZVqBb0SCqqwb6zHCQUVGFcooRGZ0ZwYg1j4EZllXZigdy7f1iJ
+        7oFpMo0ZwwIZQpJqsbxihVprhEKtg+D7DEZFckwrlzCvXcHlm9WMgTuVea8DokkNmjqEWCDOM7N6SKTz
+        SC9qRVD8O7uQITCuGpdiq+wExLyFf8Szr/YdpBW0o7Z1FGqNEVKlHtMKPSanaExI5jAmVGBknHSemCHL
+        U4E/MoXqxm9M56MEF4IjFZPZBLnaALFMD7FUB5F06Z9zA1JXL5oQ9Xv7ezeecmR6HS+W8wGxnBbEcJpx
+        g2w/OrMRUYTIdHISItMaEJHagPCUBoQmvGFeIGvDgIQzwZXgtgXum2ByLML//43bA+oXWsuIXCeg/SwA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PdfZoom100CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom400CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom400CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfExactZoomListBarSubItem1.Name" xml:space="preserve">
+    <value>PdfExactZoomListBarSubItem1</value>
+  </data>
+  <data name="PdfTextUnderlineBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RibbonControl1.ExpandCollapseItem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfFileRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFileRibbonPageGroup, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="BarButtonItem1.Caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PdfZoom50CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfImportFormDataBarItem1.Name" xml:space="preserve">
+    <value>PdfImportFormDataBarItem1</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACV0RVh0VGl0
+        bGUAQXR0YWNoO0xldHRlcjtlLW1haWw7ZW1haWw7bWFpbDYyymcAAALZSURBVDhPjZP7S5NhFMfftCw3
+        TSEyKyKEooyw/yASCSLwFzPNkNTU1LyE96YmEy+lRllqP3QlKE3Na1pmXiapxFBRh25tqZu7OHVur5tz
+        W3N+e95lUiLSgQ/Pyzlfvuc8h+elAGwLEz7Xyn3PhFfyfcIq+KeulPqRlMNG/W/xVji5eDqcDn2s9g4q
+        CTkRWHzVO6RMTXK7/tSZcFjHcRM7CU572B7OJ4MfwtnloKsTe7/r8cD7YLl7sdc1O6in1fyeV++H8LKO
+        UDuIF4TBMQVKnw8go7gLKUUdOBZQguisNiQXfsat/HaEpbUgidvWa2/CLeuEUk3DumrDstEKg9EMWm8k
+        4i9kQsBiscLL/y4MhhXybYHVugrb2hriuW3M/LupwgoeOvvFaOeJYPm5Co3WhBkljcS8TyA6u9mRi/mQ
+        yudx+EIeqRtgNFkRk93MGLCo/HIedHozuvp/4MnrXvsEqlkt4nJaYbOtYV6zhEPnuRgTiOHplwvJlBx6
+        Mun1jEbGgE1xH/VgkTZhUk5jYFiGO8VNEEpUiLrdZL/W7ByNA7454PXx4XEuGwKRDDqDBaHJ9YyBK5X7
+        oBsa2gyJjEbfkAIfu4UorWxBWGo9zJZVqBb0SCqqwb6zHCQUVGFcooRGZ0ZwYg1j4EZllXZigdy7f1iJ
+        7oFpMo0ZwwIZQpJqsbxihVprhEKtg+D7DEZFckwrlzCvXcHlm9WMgTuVea8DokkNmjqEWCDOM7N6SKTz
+        SC9qRVD8O7uQITCuGpdiq+wExLyFf8Szr/YdpBW0o7Z1FGqNEVKlHtMKPSanaExI5jAmVGBknHSemCHL
+        U4E/MoXqxm9M56MEF4IjFZPZBLnaALFMD7FUB5F06Z9zA1JXL5oQ9Xv7ezeecmR6HS+W8wGxnBbEcJpx
+        g2w/OrMRUYTIdHISItMaEJHagPCUBoQmvGFeIGvDgIQzwZXgtgXum2ByLML//43bA+oXWsuIXCeg/SwA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PdfZoom150CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfExactZoomListBarSubItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfSetActualSizeZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfViewer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PdfTextStrikethroughBarItem1.Name" xml:space="preserve">
+    <value>PdfTextStrikethroughBarItem1</value>
+  </data>
+  <data name="PdfExactZoomListBarSubItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom50CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomInBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoomInBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFileOpenBarItem1.Name" xml:space="preserve">
+    <value>PdfFileOpenBarItem1</value>
+  </data>
+  <data name="PdfSetPageNumberBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfFindTextBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetActualSizeZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetActualSizeZoomModeCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfBarController1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfBarController, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomInBarItem1.Name" xml:space="preserve">
+    <value>PdfZoomInBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfFileSaveAsBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFileSaveAsBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BarButtonItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfSetFitWidthZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoom125CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom125CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom125CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfCommentRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfCommentRibbonPage, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomOutBarItem1.Name" xml:space="preserve">
+    <value>PdfZoomOutBarItem1</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfNextPageBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfNextPageBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfTextCommentPageGroup1.Name" xml:space="preserve">
+    <value>PdfTextCommentPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.PdfViewer, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom400CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom400CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfBarController1.Name" xml:space="preserve">
+    <value>PdfBarController1</value>
+  </data>
+  <data name="PdfZoom200CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfSetFitWidthZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom75CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfSetFitVisibleZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom10CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfSetActualSizeZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AttachmentDispaly</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 158</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom150CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom150CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfNavigationRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfNavigationRibbonPageGroup, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoomOutBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfFindTextBarItem1.Name" xml:space="preserve">
+    <value>PdfFindTextBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfFileRibbonPageGroup1.Name" xml:space="preserve">
+    <value>PdfFileRibbonPageGroup1</value>
+  </data>
+  <data name="PdfTextStrikethroughBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom100CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom100CheckItem1</value>
+  </data>
+  <data name="PdfTextUnderlineBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfTextHighlightBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextHighlightBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFileOpenBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFileOpenBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.Name" xml:space="preserve">
+    <value>PdfViewer1</value>
+  </data>
+  <data name="RibbonControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom50CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom50CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitVisibleZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetFitVisibleZoomModeCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfTextUnderlineBarItem1.Name" xml:space="preserve">
+    <value>PdfTextUnderlineBarItem1</value>
+  </data>
+  <data name="PdfSetPageNumberBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom25CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom25CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfImportFormDataBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfImportFormDataBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom100CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoom75CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom75CheckItem1</value>
+  </data>
+  <data name="PdfExportFormDataBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitWidthZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetFitWidthZoomModeCheckItem1</value>
+  </data>
+  <data name="PdfZoom200CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="PdfFileOpenBarItem1.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyMC4yLCBWZXJzaW9uPTIwLjIu
+        My4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjIwLjIsIFZlcnNpb249MjAuMi4zLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtBwAAAA1BbGxvd0h0bWxUZXh0BEljb24MSW1hZ2VPcHRpb25z
+        CkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJBbGxvd0h0bWxUZXh0BFRleHQEBAQAAAABH0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAAE1N5c3RlbS5EcmF3aW5nLkljb24JAAAAKERldkV4cHJl
+        c3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9wdGlvbnMCAAAACAgBAgAAAAH2/////P///wIAAAAKCQsA
+        AAAAAAAAPAEAAAAGDAAAAA5FbWFpbCAoQ3RybCtFKQUIAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRp
+        cEl0ZW0HAAAADUFsbG93SHRtbFRleHQESWNvbgxJbWFnZU9wdGlvbnMKTGVmdEluZGVudAhNYXhXaWR0
+        aBJPd25lckFsbG93SHRtbFRleHQEVGV4dAQEBAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9v
+        bGVhbgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAoRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSXRl
+        bUltYWdlT3B0aW9ucwIAAAAICAECAAAAAfP////8////AgAAAAoJDgAAAAYAAAA8AQAAAAYPAAAADEVt
+        YWlsIEEgZmlsZQULAAAAKERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW1JbWFnZU9wdGlvbnMFAAAA
+        CEltYWdlVXJpDFN2Z0ltYWdlU2l6ZQlBbGlnbm1lbnQKSW1hZ2VJbmRleBNJbWFnZVRvVGV4dERpc3Rh
+        bmNlAQQEAAATU3lzdGVtLkRyYXdpbmcuU2l6ZQkAAAAmRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSW1h
+        Z2VBbGlnbm1lbnQCAAAACAgCAAAABhAAAAAABe////8TU3lzdGVtLkRyYXdpbmcuU2l6ZQIAAAAFd2lk
+        dGgGaGVpZ2h0AAAICAkAAAAAAAAAAAAAAAXu////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdl
+        QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAAAAAAP////8OAAAAAQ4AAAALAAAACRAAAAAB7f///+//
+        //8AAAAAAAAAAAHs////7v///wAAAAD/////DgAAAAs=
+</value>
+  </data>
+  <data name="&gt;&gt;PdfFormDataRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFormDataRibbonPage, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageLevelZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetPageLevelZoomModeCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfFindTextBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFindTextBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom25CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom25CheckItem1</value>
+  </data>
+  <data name="RepositoryItemPageNumberEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PdfZoom125CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfExportFormDataBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PdfZoomInBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfSetActualSizeZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom75CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom75CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomOutBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoomOutBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom75CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfSetFitVisibleZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom50CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom50CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFileSaveAsBarItem1.Name" xml:space="preserve">
+    <value>PdfFileSaveAsBarItem1</value>
+  </data>
+  <data name="RibbonControl1.ExpandCollapseItem.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="BarButtonItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="PdfNextPageBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom10CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom10CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl1.Name" xml:space="preserve">
+    <value>RibbonControl1</value>
+  </data>
+  <data name="PdfZoomOutBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfSetPageLevelZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFindTextBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfFormDataBarPageGroup1.Name" xml:space="preserve">
+    <value>PdfFormDataBarPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoomRibbonPageGroup, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfExactZoomListBarSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfExactZoomListBarSubItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfImportFormDataBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;RepositoryItemPageNumberEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemPageNumberEdit1</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="PdfFileSaveAsBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfFilePrintBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFilePrintBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfRibbonPage1.Name" xml:space="preserve">
+    <value>PdfRibbonPage1</value>
+  </data>
+  <data name="PdfPreviousPageBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfFilePrintBarItem1.Name" xml:space="preserve">
+    <value>PdfFilePrintBarItem1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RibbonControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 158</value>
+  </data>
+  <data name="PdfSetFitWidthZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoomInBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfNavigationRibbonPageGroup1.Name" xml:space="preserve">
+    <value>PdfNavigationRibbonPageGroup1</value>
+  </data>
+  <data name="PdfFindTextBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfNextPageBarItem1.Name" xml:space="preserve">
+    <value>PdfNextPageBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfTextStrikethroughBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextStrikethroughBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom150CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom400CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemPageNumberEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPageNumberEdit, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RibbonControl1.ExpandCollapseItem.SearchTags" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfExportFormDataBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoomOutBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfFindRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFindRibbonPageGroup, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom200CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom200CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom10CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom10CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom200CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.Caption" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PdfZoom400CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        QztNkPwXTMSUwcOhHa0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PdfZoom125CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RibbonControl1.ExpandCollapseItem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfPreviousPageBarItem1.Name" xml:space="preserve">
+    <value>PdfPreviousPageBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom150CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom150CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom200CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom200CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfSetPageLevelZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAs9JREFUOE/F0mtIU2EYB/A35wVNrAyRfQgyAg2TSoqyhDQvaDpT0kBqXtAgSYQt
+        Jaep4C3NVpZ5WaVpTqdd1SBqoFbiWKSipmBJ4S11bbrNbc7Nxb/3TD9Fn/rSh9954DnP/+Gc8x7S2DnW
+        09Q1BlrxqOMzGl6Oov7FCB4+G8H9p8MQtQ+htm0INa2DqG75hDuP5b2EEBYAwiDCehnMFgv1a8O6BaZN
+        OddbYDRbYDRZsEoZ1iwoq+ujKWI3cjaUyI7sI6RM9ME6ZDCt04FNRjP0VHRSKXSrJqwYKL3J2uvpn2QW
+        OFG2lA0pquqFfs1sHeQkFiMyoQgfh79BrTMhkluECG6h1fjkHF1iRHdFJUYzUvQ9EQGDxXvY3iT/lhQa
+        nRHLK0YsMbRGhMcXQKVZRRitSrUBy7TXKJFiuOo2JkpzYR6XQ/lKggeeuwaIoPy1deidfAKh564hNC4H
+        wbE5mFfpERQngHLZQOkgvpyBcRpe65dCXVkOZbUQQg+2hlwp7sS8Uo/AmKuYVWgxs6hFQFQWphY04OXW
+        YlGpRW9xIYYKMrEq7YCqJA+qojyIj/mCx3a9STLyn2N6QYs370fhH8WHfyQfJzg8zNFldY1dqLqQBFl2
+        BvSdEigEfCiy+Wg46I00t+0i+hFdSJqgHd9n1ZicWcbX6SV8mWKo8EOhgfCeGK35+ViRNGA+/RKVhjpv
+        L5zf4VxPw9usp5DMa+xOzWpBaqYYqVlipGQ240aNFG0dMgRyLqKmuhkibjpmkxNw13MvBGdidTTozoRj
+        nRxoIcSeYs516yZnxkCQT4V/KBec+GyExPCQ7heC004OTfQem7Jd63tLwuztiPV3/NPPSF8yFuQDfWIw
+        Dh2Pxv7D4fDw8mPe2ZVihdjaklMsFjlps+XvC+QHdpMnHu4o2emCBEfHChpyo5gnYwXQkD/N+VFHaWMj
+        NELLv6BZ5vo/F4D8Bq+Bgj5JWgHNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageNumberBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetPageNumberBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageLevelZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetPageLevelZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="BarButtonItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>966, 578</value>
+  </data>
+  <data name="&gt;&gt;PdfTextCommentPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextCommentPageGroup, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;RibbonControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PdfZoom500CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom150CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetActualSizeZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetActualSizeZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom100CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfFindRibbonPageGroup1.Name" xml:space="preserve">
+    <value>PdfFindRibbonPageGroup1</value>
+  </data>
+  <data name="PdfSetPageLevelZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfExactZoomListBarSubItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom10CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 420</value>
+  </data>
+  <data name="PdfZoom50CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfExportFormDataBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfExportFormDataBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom100CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom100CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem1.Name" xml:space="preserve">
+    <value>BarButtonItem1</value>
+  </data>
+  <data name="PdfImportFormDataBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFilePrintBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitWidthZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetFitWidthZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoomInBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageNumberBarItem1.Name" xml:space="preserve">
+    <value>PdfSetPageNumberBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfRibbonPage, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfExportFormDataBarItem1.Name" xml:space="preserve">
+    <value>PdfExportFormDataBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="PdfBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

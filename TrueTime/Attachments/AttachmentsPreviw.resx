@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PdfViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PdfViewer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfSetFitVisibleZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom25CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColEmployeeName.Name" xml:space="preserve">
+    <value>ColEmployeeName</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom500CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom500CheckItem1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PdfZoom500CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA1dEVYdFRpdGxlAEFycm93O1JlY3VycmVuY2U7UmVm
+        cmVzaDtVcGRhdGU7UmVsb2FkO0V4Y2hhbmdlhrRdSAAAANJJREFUOE+lkrENwkAQBI1EATRg0YFzirDI
+        SMgdIkeQ0wQlkJKZjH5o4tl9/Z5O6B6BCUY67d7tv33fpJT+IhR/wYr+fBctGMEEngXW1OjlvlrAAhxA
+        qnADGxAGrEAPGHICA1gXWD+AQtooYF8aGGK68zugkFG6TA7pmjlEDR7ovAn9SVo0LCwk8IyPJoeP18sS
+        dfUQfz2uiuIgzcPm4tswdd/APdPgj+qkO9+H2Of5Bj4Srkgh72vcAYXYnA8gfCQKidiC3FsLIPOe8lxC
+        8XtS8wL/7IdaesUzOwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="barDockControlRight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfZoom75CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom25CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom150CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom150CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="RepositoryItemPageNumberEdit1.Mask.EditMask" xml:space="preserve">
+    <value>########;</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom125CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom125CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="LayoutControl1.Text" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PdfZoom10CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PdfFileSaveAsBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColDocName.Name" xml:space="preserve">
+    <value>ColDocName</value>
+  </data>
+  <data name="PdfPreviousPageBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomInBarItem1.Name" xml:space="preserve">
+    <value>PdfZoomInBarItem1</value>
+  </data>
+  <data name="PdfFileSaveAsBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfBarController1.Name" xml:space="preserve">
+    <value>PdfBarController1</value>
+  </data>
+  <data name="PdfZoom500CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PdfNextPageBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfTextStrikethroughBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoom500CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom500CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfPreviousPageBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfPreviousPageBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom100CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom100CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Name" xml:space="preserve">
+    <value>LayoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PdfSetFitVisibleZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfPreviousPageBarItem1.Name" xml:space="preserve">
+    <value>PdfPreviousPageBarItem1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ColDocID.Name" xml:space="preserve">
+    <value>ColDocID</value>
+  </data>
+  <data name="ColEmployeeName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DockManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.DockManager, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="DockPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Name" xml:space="preserve">
+    <value>GridControl1</value>
+  </data>
+  <data name="&gt;&gt;PdfExactZoomListBarSubItem1.Name" xml:space="preserve">
+    <value>PdfExactZoomListBarSubItem1</value>
+  </data>
+  <data name="barDockControlBottom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;PdfTextUnderlineBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextUnderlineBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColDocSort1.Name" xml:space="preserve">
+    <value>ColDocSort1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="GridControl1.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v24.1">
+    <value>Default</value>
+  </data>
+  <data name="PdfZoom25CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="ColDocSort1.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="ColDocID.Width" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageNumberBarItem1.Name" xml:space="preserve">
+    <value>PdfSetPageNumberBarItem1</value>
+  </data>
+  <data name="LayoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 585</value>
+  </data>
+  <data name="PdfTextStrikethroughBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="ColDocID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColDocName.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;ColDocName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Name" xml:space="preserve">
+    <value>DockPanel1_Container</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Parent" xml:space="preserve">
+    <value>DockPanel1_Container</value>
+  </data>
+  <data name="SimpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 551</value>
+  </data>
+  <data name="GridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 535</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="PdfZoom150CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 614</value>
+  </data>
+  <data name="PdfTextStrikethroughBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="SimpleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;PdfTextStrikethroughBarItem1.Name" xml:space="preserve">
+    <value>PdfTextStrikethroughBarItem1</value>
+  </data>
+  <data name="PdfExactZoomListBarSubItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="DockPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom50CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Name" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="PdfExactZoomListBarSubItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="PdfSetPageNumberBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfFindTextBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFilePrintBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;ColDocID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfSetActualSizeZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetActualSizeZoomModeCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfBarController1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfBarController, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfFindTextBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 0</value>
+  </data>
+  <data name="&gt;&gt;PdfFileSaveAsBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFileSaveAsBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom125CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom125CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom125CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoomOutBarItem1.Name" xml:space="preserve">
+    <value>PdfZoomOutBarItem1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="GridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PdfNextPageBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfNextPageBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColDocSort1.Caption" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.PdfViewer, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SimpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="SimpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 22</value>
+  </data>
+  <data name="DockPanel1_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 585</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom400CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom400CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom200CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfSetFitWidthZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom75CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="GridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfViewer1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ColDocID.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PdfImportFormDataBarItem1.Name" xml:space="preserve">
+    <value>PdfImportFormDataBarItem1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AttachmentsPreviw</value>
+  </data>
+  <data name="&gt;&gt;GridView1.Name" xml:space="preserve">
+    <value>GridView1</value>
+  </data>
+  <data name="&gt;&gt;BarManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColEmployeeName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PdfViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 0</value>
+  </data>
+  <data name="PdfSetFitWidthZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="GridControl1.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v24.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PdfTextUnderlineBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom100CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfFindTextBarItem1.Name" xml:space="preserve">
+    <value>PdfFindTextBarItem1</value>
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom100CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom100CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v24.1" name="DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="GridControl1.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v24.1">
+    <value>Center</value>
+  </data>
+  <data name="PdfTextUnderlineBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PdfCommandBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfCommandBar, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColDocSort1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;PdfTextHighlightBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextHighlightBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFileOpenBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFileOpenBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.Name" xml:space="preserve">
+    <value>PdfViewer1</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfSetFitWidthZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitVisibleZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetFitVisibleZoomModeCheckItem1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="&gt;&gt;PdfTextUnderlineBarItem1.Name" xml:space="preserve">
+    <value>PdfTextUnderlineBarItem1</value>
+  </data>
+  <data name="PdfSetPageNumberBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom25CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom25CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoomOutBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoomOutBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LayoutControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfTextStrikethroughBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfTextStrikethroughBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom100CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColEmployeeName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom75CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom75CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;DockManager1.Name" xml:space="preserve">
+    <value>DockManager1</value>
+  </data>
+  <data name="ColEmployeeName.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitWidthZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetFitWidthZoomModeCheckItem1</value>
+  </data>
+  <data name="PdfZoom200CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfSetFitVisibleZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="DockPanel1_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PdfFindTextBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFindTextBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ColDocName.Caption" xml:space="preserve">
+    <value>الوثيقة</value>
+  </data>
+  <data name="PdfTextUnderlineBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom125CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfImportFormDataBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfExportFormDataBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PdfZoomInBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>تصفح الوثائق</value>
+  </data>
+  <data name="PdfSetActualSizeZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="GridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom75CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom75CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="LayoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 614</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Name" xml:space="preserve">
+    <value>LayoutControlGroup1</value>
+  </data>
+  <data name="PdfZoom75CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ColDocSort1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="PdfZoom125CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="DockPanel1.Text" xml:space="preserve">
+    <value>الوثائق</value>
+  </data>
+  <data name="PdfPreviousPageBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom50CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom50CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFileSaveAsBarItem1.Name" xml:space="preserve">
+    <value>PdfFileSaveAsBarItem1</value>
+  </data>
+  <data name="DockPanel1_Container.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="barDockControlTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfFilePrintBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="DockPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 614</value>
+  </data>
+  <data name="PdfNextPageBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom400CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom400CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom10CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom10CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom200CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom200CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoomOutBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfFindTextBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoomInBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoomInBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageLevelZoomModeCheckItem1.Name" xml:space="preserve">
+    <value>PdfSetPageLevelZoomModeCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfExactZoomListBarSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfExactZoomListBarSubItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfImportFormDataBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfImportFormDataBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfImportFormDataBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;GridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfFileSaveAsBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFilePrintBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfFilePrintBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="PdfPreviousPageBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LayoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;PdfSetActualSizeZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetActualSizeZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfFilePrintBarItem1.Name" xml:space="preserve">
+    <value>PdfFilePrintBarItem1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="DockPanel1_Container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfZoomInBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfSetFitVisibleZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetFitVisibleZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom25CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom25CheckItem1</value>
+  </data>
+  <data name="PdfZoomOutBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PdfZoom150CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfFilePrintBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemPageNumberEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPageNumberEdit, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfZoom400CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Name" xml:space="preserve">
+    <value>DockPanel1</value>
+  </data>
+  <data name="PdfExportFormDataBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;BarManager1.Name" xml:space="preserve">
+    <value>BarManager1</value>
+  </data>
+  <data name="PdfZoomOutBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="LayoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;PdfTextHighlightBarItem1.Name" xml:space="preserve">
+    <value>PdfTextHighlightBarItem1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom200CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom200CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom10CheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfZoom10CheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PdfZoom200CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="PdfZoom400CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        QztNkPwXTMSUwcOhHa0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PdfSetActualSizeZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom50CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfImportFormDataBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RepositoryItemPageNumberEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PdfSetPageLevelZoomModeCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfSetPageLevelZoomModeCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="ColDocName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAs9JREFUOE/F0mtIU2EYB/A35wVNrAyRfQgyAg2TSoqyhDQvaDpT0kBqXtAgSYQt
+        Jaep4C3NVpZ5WaVpTqdd1SBqoFbiWKSipmBJ4S11bbrNbc7Nxb/3TD9Fn/rSh9954DnP/+Gc8x7S2DnW
+        09Q1BlrxqOMzGl6Oov7FCB4+G8H9p8MQtQ+htm0INa2DqG75hDuP5b2EEBYAwiDCehnMFgv1a8O6BaZN
+        OddbYDRbYDRZsEoZ1iwoq+ujKWI3cjaUyI7sI6RM9ME6ZDCt04FNRjP0VHRSKXSrJqwYKL3J2uvpn2QW
+        OFG2lA0pquqFfs1sHeQkFiMyoQgfh79BrTMhkluECG6h1fjkHF1iRHdFJUYzUvQ9EQGDxXvY3iT/lhQa
+        nRHLK0YsMbRGhMcXQKVZRRitSrUBy7TXKJFiuOo2JkpzYR6XQ/lKggeeuwaIoPy1deidfAKh564hNC4H
+        wbE5mFfpERQngHLZQOkgvpyBcRpe65dCXVkOZbUQQg+2hlwp7sS8Uo/AmKuYVWgxs6hFQFQWphY04OXW
+        YlGpRW9xIYYKMrEq7YCqJA+qojyIj/mCx3a9STLyn2N6QYs370fhH8WHfyQfJzg8zNFldY1dqLqQBFl2
+        BvSdEigEfCiy+Wg46I00t+0i+hFdSJqgHd9n1ZicWcbX6SV8mWKo8EOhgfCeGK35+ViRNGA+/RKVhjpv
+        L5zf4VxPw9usp5DMa+xOzWpBaqYYqVlipGQ240aNFG0dMgRyLqKmuhkibjpmkxNw13MvBGdidTTozoRj
+        nRxoIcSeYs516yZnxkCQT4V/KBec+GyExPCQ7heC004OTfQem7Jd63tLwuztiPV3/NPPSF8yFuQDfWIw
+        Dh2Pxv7D4fDw8mPe2ZVihdjaklMsFjlps+XvC+QHdpMnHu4o2emCBEfHChpyo5gnYwXQkD/N+VFHaWMj
+        NELLv6BZ5vo/F4D8Bq+Bgj5JWgHNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="PdfExportFormDataBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageNumberBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetPageNumberBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColDocID.Caption" xml:space="preserve">
+    <value>رقم الوثيقة</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 0</value>
+  </data>
+  <data name="&gt;&gt;PdfZoom150CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom150CheckItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetPageLevelZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetPageLevelZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1029, 614</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PdfFileOpenBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1003, 0</value>
+  </data>
+  <data name="PdfZoom500CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom400CheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfZoom150CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="ColEmployeeName.Caption" xml:space="preserve">
+    <value>ألحساب</value>
+  </data>
+  <data name="&gt;&gt;PdfFileOpenBarItem1.Name" xml:space="preserve">
+    <value>PdfFileOpenBarItem1</value>
+  </data>
+  <data name="PdfNextPageBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PdfZoom100CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 614</value>
+  </data>
+  <data name="PdfSetPageLevelZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfExactZoomListBarSubItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Parent" xml:space="preserve">
+    <value>DockPanel1</value>
+  </data>
+  <data name="PdfViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 614</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemPageNumberEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemPageNumberEdit1</value>
+  </data>
+  <data name="&gt;&gt;PdfCommandBar1.Name" xml:space="preserve">
+    <value>PdfCommandBar1</value>
+  </data>
+  <data name="&gt;&gt;PdfExportFormDataBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfExportFormDataBarItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="PdfSetPageNumberBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PdfZoom10CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Name" xml:space="preserve">
+    <value>LayoutControlItem1</value>
+  </data>
+  <data name="PdfZoom10CheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfNextPageBarItem1.Name" xml:space="preserve">
+    <value>PdfNextPageBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfSetFitWidthZoomModeCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Bars.PdfSetFitWidthZoomModeCheckItem, DevExpress.XtraPdfViewer.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ColDocName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PdfZoomInBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="GridControl1.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;PdfZoom50CheckItem1.Name" xml:space="preserve">
+    <value>PdfZoom50CheckItem1</value>
+  </data>
+  <data name="PdfSetActualSizeZoomModeCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PdfTextHighlightBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ColDocSort1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Name" xml:space="preserve">
+    <value>SimpleButton1</value>
+  </data>
+  <data name="PdfZoom50CheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;PdfExportFormDataBarItem1.Name" xml:space="preserve">
+    <value>PdfExportFormDataBarItem1</value>
+  </data>
+  <data name="&gt;&gt;PdfViewer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="BarManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>152, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DockManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="PdfBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>277, 17</value>
+  </metadata>
+</root>

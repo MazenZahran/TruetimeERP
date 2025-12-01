@@ -1,0 +1,1020 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ColAttStatus.Caption" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ColAttStatus.Summary2" xml:space="preserve">
+    <value>Attendance {0}</value>
+  </data>
+  <data name="ColAttStatus.Summary6" xml:space="preserve">
+    <value>Vacations {0}</value>
+  </data>
+  <data name="ColAttStatus.Summary9" xml:space="preserve">
+    <value>Holidays {0}</value>
+  </data>
+  <data name="ColAttStatus.Summary13" xml:space="preserve">
+    <value>Absence {0}</value>
+  </data>
+  <data name="ColLeavesHoursNIS.Caption" xml:space="preserve">
+    <value>Leaves Amount</value>
+  </data>
+  <data name="ColTransDate.Caption" xml:space="preserve">
+    <value>Date </value>
+  </data>
+  <data name="ColBonusHours.Caption" xml:space="preserve">
+    <value>Overtime</value>
+  </data>
+  <data name="ColLeavesHours.Caption" xml:space="preserve">
+    <value>Leaves</value>
+  </data>
+  <data name="ColVoc.Caption" xml:space="preserve">
+    <value>Vacation</value>
+  </data>
+  <data name="ColStartTime.Caption" xml:space="preserve">
+    <value>Shift Start</value>
+  </data>
+  <data name="GridBand1.Caption" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="ColEmpID.Caption" xml:space="preserve">
+    <value>Emp. ID</value>
+  </data>
+  <data name="ColSalaryAccountNo.Caption" xml:space="preserve">
+    <value>Emp. Id</value>
+  </data>
+  <data name="CollEmployeeName.Caption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ColTransDay.Caption" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="ColEditedType.Caption" xml:space="preserve">
+    <value>Trans. Status</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ColAddAndEdit.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAt0RVh0VGl0
+        bGUARWRpdDtlNaxEAAAAoklEQVQ4T5XOMRKCMBAFUOg8EY1nwNJT0FrL0GKnh8mxvADq/5kssy4Lky1e
+        Jsn8v0nTTynqBi9oefYCR1j+FnmIFzryABlATy/k4cv3spchHxhs0KO/LUNmGLi3YUuX7ZBMhy2vnL8N
+        a04XtKoy/R2K6jLZi1CZ9CFcJtmcIVwmLlc4wQihMnF5QwIZUl0mLgvwVRnSwSa4h4v+9oWX9VLzA+bc
+        zQR+JeoKAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ColEditedTypeOut.Caption" xml:space="preserve">
+    <value>Edit\Exit</value>
+  </data>
+  <data name="gridBand2.Caption" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="ColStartTimeReal.Caption" xml:space="preserve">
+    <value>From </value>
+  </data>
+  <data name="ColEndTimeReal.Caption" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ColAttendentDays.Caption" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="ColRequiredDailyHoures.Caption" xml:space="preserve">
+    <value>Required Hours</value>
+  </data>
+  <data name="ColEnglishStatus.Summary2" xml:space="preserve">
+    <value>Attendance {0}</value>
+  </data>
+  <data name="ColEnglishStatus.Summary6" xml:space="preserve">
+    <value>Vacations {0}</value>
+  </data>
+  <data name="ColEnglishStatus.Summary9" xml:space="preserve">
+    <value>Holidays {0}</value>
+  </data>
+  <data name="ColEnglishStatus.Summary13" xml:space="preserve">
+    <value>Absences {0}</value>
+  </data>
+  <data name="ColRestDailyHoures.Caption" xml:space="preserve">
+    <value>Rest Period</value>
+  </data>
+  <data name="ColVocationDays.Caption" xml:space="preserve">
+    <value>Vacations</value>
+  </data>
+  <data name="ColBonusPerHour.Caption" xml:space="preserve">
+    <value>Bonus Factor</value>
+  </data>
+  <data name="gridBand3.Caption" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="ColPlaneID.Caption" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="ColEndTime.Caption" xml:space="preserve">
+    <value>Shift End</value>
+  </data>
+  <data name="ColMissedDuration.Caption" xml:space="preserve">
+    <value>Leaves</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridBand3.Width" type="System.Int32, mscorlib">
+    <value>348</value>
+  </data>
+  <data name="gridBand4.Caption" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="gridBand5.Caption" xml:space="preserve">
+    <value>Additions</value>
+  </data>
+  <data name="GridBand6.Caption" xml:space="preserve">
+    <value>Allowance Span</value>
+  </data>
+  <data name="gridBand7.Caption" xml:space="preserve">
+    <value>Periods</value>
+  </data>
+  <data name="LeaveBand1.Caption" xml:space="preserve">
+    <value>Period 1</value>
+  </data>
+  <data name="BandedGridColumn1.Caption" xml:space="preserve">
+    <value>Check In 1</value>
+  </data>
+  <data name="BandedGridColumn6.Caption" xml:space="preserve">
+    <value>Check Out 1</value>
+  </data>
+  <data name="ColDuration11.Caption" xml:space="preserve">
+    <value>Period 1</value>
+  </data>
+  <data name="LeaveBand2.Caption" xml:space="preserve">
+    <value>Priod 2</value>
+  </data>
+  <data name="BandedGridColumn2.Caption" xml:space="preserve">
+    <value>Check In 2 </value>
+  </data>
+  <data name="BandedGridColumn7.Caption" xml:space="preserve">
+    <value>Check Out 2</value>
+  </data>
+  <data name="ColDuration2.Caption" xml:space="preserve">
+    <value>Period 2</value>
+  </data>
+  <data name="LeaveBand2.Width" type="System.Int32, mscorlib">
+    <value>305</value>
+  </data>
+  <data name="LeaveBand3.Caption" xml:space="preserve">
+    <value>Period 3</value>
+  </data>
+  <data name="BandedGridColumn3.Caption" xml:space="preserve">
+    <value>Check In 3</value>
+  </data>
+  <data name="BandedGridColumn8.Caption" xml:space="preserve">
+    <value>Check Out 3</value>
+  </data>
+  <data name="ColDuration3.Caption" xml:space="preserve">
+    <value>Period 3</value>
+  </data>
+  <data name="LeaveBand3.Width" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="LeaveBand4.Caption" xml:space="preserve">
+    <value>Period 4</value>
+  </data>
+  <data name="BandedGridColumn4.Caption" xml:space="preserve">
+    <value>Check In 4</value>
+  </data>
+  <data name="BandedGridColumn9.Caption" xml:space="preserve">
+    <value>Check Out 4</value>
+  </data>
+  <data name="ColDuration4.Caption" xml:space="preserve">
+    <value>Period 4</value>
+  </data>
+  <data name="LeaveBand4.Width" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="LeaveBand5.Caption" xml:space="preserve">
+    <value>Period 5</value>
+  </data>
+  <data name="BandedGridColumn5.Caption" xml:space="preserve">
+    <value>Check In 5</value>
+  </data>
+  <data name="BandedGridColumn10.Caption" xml:space="preserve">
+    <value>Check Out 5</value>
+  </data>
+  <data name="ColDuration5.Caption" xml:space="preserve">
+    <value>Period 5</value>
+  </data>
+  <data name="LeaveBand5.Width" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="LeaveJobBand1.Caption" xml:space="preserve">
+    <value>Work Leaving  1</value>
+  </data>
+  <data name="LeaveJobBand2.Caption" xml:space="preserve">
+    <value>Work Leaving  2</value>
+  </data>
+  <data name="LeaveJobBand3.Caption" xml:space="preserve">
+    <value>Work Leaving  3</value>
+  </data>
+  <data name="gridBand13.Caption" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="ColTotalDurations.Caption" xml:space="preserve">
+    <value>Total Period</value>
+  </data>
+  <data name="ColNetDurations.Caption" xml:space="preserve">
+    <value>Net Period</value>
+  </data>
+  <data name="gridBand16.Caption" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="gridBand9.Caption" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="ColSalaryPerHour.Caption" xml:space="preserve">
+    <value>Slary Per Hour</value>
+  </data>
+  <data name="ColMonthlySalary.Caption" xml:space="preserve">
+    <value>Monthly Salary</value>
+  </data>
+  <data name="ColDailyTransport.Caption" xml:space="preserve">
+    <value>Transportation</value>
+  </data>
+  <data name="Colpayment.Caption" xml:space="preserve">
+    <value>Deductions</value>
+  </data>
+  <data name="ColAdditions.Caption" xml:space="preserve">
+    <value>Bonuses</value>
+  </data>
+  <data name="ColBonusHoursNIS.Caption" xml:space="preserve">
+    <value>Amount of Overtime</value>
+  </data>
+  <data name="ColAbsentDaysAmount.Caption" xml:space="preserve">
+    <value>Absence Amount</value>
+  </data>
+  <data name="ColNetSalaryNew.Caption" xml:space="preserve">
+    <value>Net Salary</value>
+  </data>
+  <data name="ColMonthlySalaryPerDay.Caption" xml:space="preserve">
+    <value>Daily Salary</value>
+  </data>
+  <data name="ColNetSalary.Caption" xml:space="preserve">
+    <value>Net Salary1</value>
+  </data>
+  <data name="ColTransInID.Caption" xml:space="preserve">
+    <value>Chk In. Id</value>
+  </data>
+  <data name="ColTransOutID.Caption" xml:space="preserve">
+    <value>Chk Out Id</value>
+  </data>
+  <data name="ColAbsentDays.Caption" xml:space="preserve">
+    <value>Absence</value>
+  </data>
+  <data name="ColOffDays.Caption" xml:space="preserve">
+    <value>Off Days</value>
+  </data>
+  <data name="GridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1117, 758</value>
+  </data>
+  <data name="CheckEditCheckActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 532</value>
+  </data>
+  <data name="CheckEditCheckActive.Properties.Caption" xml:space="preserve">
+    <value>Active Emp. Only</value>
+  </data>
+  <data name="CheckEditCheckActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="SearchDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 282</value>
+  </data>
+  <data name="BarSubItem1.Caption" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="BarSubItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABh0RVh0VGl0
+        bGUAT3BlbjtPcGVuRG9jdW1lbnQ7fYnAFAAAAH5JREFUOE9j+P//P0UYqyApmOHdkaL/ODBIDiemiwF4
+        McUGADHYJTADnsIESMUgAmTAUiCWgrJJwXdhBqQCcRSUTQqeDzNADYhnQdmk4DiQATD/34QKkoLlQBrJ
+        9j8QgwORXP/PA2KwAapATJb/gRhuwC2oIClYDogpzY3/GQDxQullJmiKmAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BarSubItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABh0RVh0VGl0
+        bGUAT3BlbjtPcGVuRG9jdW1lbnQ7fYnAFAAAAVBJREFUWEfF1DFKBEEQBdAVRExMPIEgeAGNDM08wIKB
+        N9hkMTQQPICYmBsYmBrtCdbICygIhkZrqJjY/pLuZnrqz8xil2XwYPr3dP9iB3YUQvhXNPREQ0809ERD
+        TzT0RENPKnibn4QlqbO/oQJS1EWdHcLOqKBV0kedHcLOqKBVYk31qYAcMtPuEipgBw39fAaR+opy0Xj5
+        Jb38F1JfUS6wmQa4ha3G2tJj6usbYApHjbWl69TXN8A+XDbWliapr2uAT1iH+7i2tpv6ugZ4gDX4iGtL
+        77Ca+roGuIK9+GxNftXcV5SL+NIxTOKztQvIfUW5iC/twE18tjaG3FeUC2wuYAWegF1QS/5bcl9RLrA5
+        g034AnZBjVeQjtxXlAtsnsMhsAtq3cHgAFJ+BuyCWqcwOMA2yGdgF9Q6gKUGeAZ2Qa0N6B/AGw090dAT
+        Df2E0TczcPg57WAk2QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BarButtonItem9.Caption" xml:space="preserve">
+    <value>Open Employee File</value>
+  </data>
+  <data name="BarButtonItem3.Caption" xml:space="preserve">
+    <value>Additional processing and departures</value>
+  </data>
+  <data name="BarButtonItem6.Caption" xml:space="preserve">
+    <value>Add deduction</value>
+  </data>
+  <data name="BarButtonItem5.Caption" xml:space="preserve">
+    <value>Add bonus</value>
+  </data>
+  <data name="BarButtonItem7.Caption" xml:space="preserve">
+    <value>Save report data</value>
+  </data>
+  <data name="BarSubItem2.Caption" xml:space="preserve">
+    <value>Report options</value>
+  </data>
+  <data name="BarSubItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAArdEVYdFRpdGxlAFNldHVwO0N1c3RvbWl6O0Rlc2ln
+        bjtTZXR0aW5nO1Byb3BlcnQ4H7UhAAAAvklEQVQ4T62TMQ7DIAxFc4woysqSJcpBeqZIHXuUnqAX6p45
+        C/0P4ciDhwg6PAnbny9jYMg5hzyenySOSoo0cC0kGsXk4lXkyurykxgt9psRvsUmZvESZ4U1OWpo0BYT
+        72qFO6At3RaDaoJ7JI7YbJ83oEUTfMUulgprclafLwMFTJuBcU4T7CYwyLk6WvYkClwTSYZlgiUwoBOr
+        m/b4i0HfEZygbYjOoP0aleh7SAr6nrIzaftMERLd+M55+AHESXAXw39ssQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BarSubItem2.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAArdEVYdFRpdGxlAFNldHVwO0N1c3RvbWl6O0Rlc2ln
+        bjtTZXR0aW5nO1Byb3BlcnQ4H7UhAAABzElEQVRYR8WWS07DQBBEswIkYAE3YkkkLgJHYMcJ+G7gEnwk
+        4AzAno9YorCEG5gqyx61O9WOnUnw4kXWTHV1xZ+ZGRVFMSjlz97RY192wQQUFbzmmNKG5ASwzW0IpQ3J
+        CeCb1yhtSFuAFXACXsE5WAV2XjUnVsMa1tLjGNDTzocBKLwG1vge0HAL7FdjCs5RQy1r7Bw9GyGiAKfA
+        FtY8gR83pqDm2Y3V0Dv1igK8A1W8CD5A6hUFuASqeBFcgdQrCrAGHoAyyIGejZc5CkAYInqO8/AC/JfU
+        GmAb/AJlRm7BDtio4PUdUFpCL3o2+rQFOADKiBwCVUM4p2oIPRt6G8Cv7RH8lw0TAe+OqrWUe4cN0KU5
+        4a32DT3UqFrPxAZQAsUm8A091KjaKZYVgC+lqp3CBhjiEXzbAGMOmMkIvmC+oafLS/gFxjaA598/Q8+s
+        hegG8FavV/C67Z/3Xoi4bHL5VGbzwGW981JM4TI2o/pQk3pFAQbfjj+BKl4E9E69ogDRkYzPMfdIdgZS
+        ryjArENp2yfKuexDKaGQx/I3cAH8G2yNLVbDGtbSo9exvAuqOVHakJwAau/gUq60ITkB/N5Rru1AaUNS
+        gOEoRn8K5LVvQjKRrgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BarButtonItem1.Caption" xml:space="preserve">
+    <value>Additional processing and departures</value>
+  </data>
+  <data name="BarButtonItem2.Caption" xml:space="preserve">
+    <value>View work leave</value>
+  </data>
+  <data name="BarButtonItem4.Caption" xml:space="preserve">
+    <value>Show employee details</value>
+  </data>
+  <data name="BarButtonItem8.Caption" xml:space="preserve">
+    <value>Add Filter Machine Name</value>
+  </data>
+  <data name="BarSubItem3.Caption" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="BarSubItem3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIxLjIsIFZlcnNpb249MjEuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEcCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iUXVpY2tfUHJpbnQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcg
+        MCAwIDMyIDMyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5CbGFja3tmaWxsOiM3MjcyNzI7
+        fQo8L3N0eWxlPg0KICA8cGF0aCBkPSJNMTAsMmgxMnY4aDJWMEg4djEwaDJWMnogTTI4LDhoLTJ2M2Mw
+        LDAuNi0wLjQsMS0xLDFIN2MtMC42LDAtMS0wLjQtMS0xVjhINGMtMS4xLDAtMiwwLjktMiwydjEyICBj
+        MCwxLjEsMC45LDIsMiwyaDR2NmgxNnYtNmg0YzEuMSwwLDItMC45LDItMlYxMEMzMCw4LjksMjkuMSw4
+        LDI4LDh6IE0yMiwyMnYydjRIMTB2LTR2LTJ2LTRoMTJWMjJ6IE0yMCwyNGgtOHYyaDhWMjR6IE0yMCwy
+        MGgtOHYyICBoOFYyMHoiIGNsYXNzPSJCbGFjayIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem11.Caption" xml:space="preserve">
+    <value>Print Report</value>
+  </data>
+  <data name="BarButtonItem11.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIxLjIsIFZlcnNpb249MjEuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAE8DAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9Cgku
+        WWVsbG93e2ZpbGw6I0ZGQjExNTt9CgkuQmx1ZXtmaWxsOiMxMTc3RDc7fQoJLlJlZHtmaWxsOiNEMTFD
+        MUM7fQoJLldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7Zmls
+        bDojNzI3MjcyO30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuNzU7fQo8L3N0eWxl
+        Pg0KICA8ZyBpZD0iRGVmYXVsdFByaW50ZXIiPg0KICAgIDxwYXRoIGQ9Ik04LDE2SDZWNmg4djJIOFYx
+        NnogTTI2LDE4djhjMCwxLjEtMC45LDItMiwyaC00djRINnYtNEgyYy0xLjEsMC0yLTAuOS0yLTJWMTZj
+        MC0xLjEsMC45LTIsMi0yaDJ2MyAgIGMwLDAuNiwwLjQsMSwxLDFIMjZ6IE0xOCwyMkg4djhoMTBWMjJ6
+        IiBjbGFzcz0iQmxhY2siIC8+DQogICAgPHBhdGggZD0iTTMxLDBIMTdjLTAuNSwwLTEsMC41LTEsMXYx
+        NGMwLDAuNSwwLjUsMSwxLDFoMTRjMC41LDAsMS0wLjUsMS0xVjFDMzIsMC41LDMxLjUsMCwzMSwweiBN
+        MzAsNWwtOCw4bC00LTRWNiAgIGw0LDRsOC04VjV6IiBjbGFzcz0iR3JlZW4iIC8+DQogIDwvZz4NCjwv
+        c3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem13.Caption" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="BarButtonItem13.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIxLjIsIFZlcnNpb249MjEuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKIDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzczNzM3NDt9Cgku
+        WWVsbG93e2ZpbGw6I0ZDQjAxQjt9CgkuR3JlZW57ZmlsbDojMTI5QzQ5O30KCS5CbHVle2ZpbGw6IzM4
+        N0NCNzt9CgkuUmVke2ZpbGw6I0QwMjEyNzt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntvcGFjaXR5OjAuMjU7fQoJLnN0M3tk
+        aXNwbGF5Om5vbmU7ZmlsbDojNzM3Mzc0O30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTIxLjUsMjhIMjBI
+        NlY0aDE0djVjMCwwLjYsMC40LDEsMSwxaDV2MTMuNWwyLDJWOWwtNy03SDVDNC40LDIsNCwyLjQsNCwz
+        djI2YzAsMC42LDAuNCwxLDEsMWgxOC41TDIxLjUsMjh6ICAiIGNsYXNzPSJCbGFjayIgLz4NCiAgPHBh
+        dGggZD0iTTE4LDEzLjljMy4zLDAsNiwyLjcsNiw2YzAsMS4yLTAuNCwyLjMtMSwzLjNsNC42LDQuNmMw
+        LjUsMC41LDAuNSwxLjMsMCwxLjdjLTAuNSwwLjUtMS4zLDAuNS0xLjcsMEwyMS4zLDI1ICBjLTAuOSww
+        LjYtMi4xLDEtMy4zLDFjLTMuMywwLTYtMi43LTYtNkMxMS45LDE2LjYsMTQuNiwxMy45LDE4LDEzLjl6
+        IE0xOCwyNGMyLjIsMCw0LTEuOCw0LTRzLTEuOC00LTQtNHMtNCwxLjgtNCw0UzE1LjgsMjQsMTgsMjR6
+        ICAiIGNsYXNzPSJCbHVlIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="BarButtonItem12.Caption" xml:space="preserve">
+    <value>Print Settings</value>
+  </data>
+  <data name="BarButtonItem12.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIxLjIsIFZlcnNpb249MjEuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMEFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iUHJpbnQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMy
+        IDMyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5CbGFja3tmaWxsOiM3MjcyNzI7fQoJLkdy
+        ZWVue2ZpbGw6IzAzOUMyMzt9Cjwvc3R5bGU+DQogIDxwYXRoIGQ9Ik0yNSwwYy0zLjksMC03LDMuMS03
+        LDdjMCwzLjksMy4xLDcsNyw3YzMuOSwwLDctMy4xLDctN0MzMiwzLjEsMjguOSwwLDI1LDB6IE0yNiwx
+        MmgtMnYtMmgyVjEyeiBNMjcuOSw1LjUgIGMtMC4xLDAuMi0wLjEsMC41LTAuMiwwLjZjLTAuMSwwLjIt
+        MC4yLDAuMy0wLjMsMC41QzI3LjIsNi44LDI3LjEsNi45LDI3LDdjLTAuMSwwLjEtMC4zLDAuMi0wLjQs
+        MC4zYy0wLjEsMC4xLTAuMywwLjItMC40LDAuMyAgYy0wLjEsMC4xLTAuMiwwLjMtMC4zLDAuNGMtMC4x
+        LDAuMi0wLjEsMC4zLTAuMiwwLjVWOWgtMS43VjguNWMwLTAuMywwLjEtMC42LDAuMS0wLjhjMC4xLTAu
+        MiwwLjItMC40LDAuMy0wLjYgIGMwLjEtMC4yLDAuMi0wLjMsMC4zLTAuNGMwLjEtMC4xLDAuMi0wLjIs
+        MC40LTAuNGMwLjEtMC4xLDAuMi0wLjIsMC4zLTAuM2MwLjEtMC4xLDAuMi0wLjIsMC4zLTAuM2MwLjEt
+        MC4xLDAuMS0wLjIsMC4yLTAuNCAgYzAtMC4xLDAuMS0wLjMsMC4xLTAuNWMwLTAuNC0wLjEtMC43LTAu
+        My0wLjljLTAuMi0wLjItMC40LTAuMy0wLjgtMC4zYy0wLjIsMC0wLjQsMC0wLjYsMC4xQzI0LjMsMy45
+        LDI0LjEsNCwyNCw0LjEgIGMtMC4xLDAuMi0wLjIsMC4zLTAuMiwwLjZjMCwwLjEsMCwwLjIsMCwwLjNI
+        MjJjMC0wLjQsMC4xLTAuNywwLjItMWMwLjEtMC40LDAuMy0wLjgsMC42LTEuMWMwLjMtMC4zLDAuNi0w
+        LjUsMC45LTAuNyAgQzI0LjEsMi4xLDI0LjUsMiwyNC45LDJjMC42LDAsMS4xLDAuMSwxLjUsMC4zYzAu
+        NCwwLjIsMC43LDAuNCwwLjksMC43YzAuMiwwLjMsMC40LDAuNiwwLjUsMC45QzI3LjksNC4xLDI4LDQu
+        NCwyOCw0LjcgIEMyOCw1LDI4LDUuMywyNy45LDUuNXoiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPHBhdGgg
+        ZD0iTTE2LDIwaC02djJoNlYyMHogTTE2LDI0aC02djJoNlYyNHogTTI1LDE2Yy0yLjEsMC00LjEtMC44
+        LTUuNy0ySDVjLTAuNiwwLTEtMC40LTEtMXYtM0gyYy0xLjEsMC0yLDAuOS0yLDIgIHYxMGMwLDEuMSww
+        LjksMiwyLDJoNHY2aDE0di02aDRjMS4xLDAsMi0wLjksMi0ydi02LjFDMjUuNywxNiwyNS4zLDE2LDI1
+        LDE2eiBNMTgsMjhIOFYxOGgxMFYyOHogTTgsNGg4LjVjMC4zLTAuNywwLjYtMS40LDEtMkg2ICB2MTBo
+        MlY0eiIgY2xhc3M9IkJsYWNrIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="BarButtonItem10.Caption" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="BarButtonItem10.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIxLjIsIFZlcnNpb249MjEuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAADcFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9Cgku
+        V2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTowLjI7fQo8L3N0eWxlPg0KICA8cGF0aCBk
+        PSJNMjYsMjZIOHYtOEg2djljMCwwLjUsMC41LDEsMSwxaDIwYzAuNSwwLDEtMC41LDEtMXYtOWgtMlYy
+        NnoiIGNsYXNzPSJCbGFjayIgLz4NCiAgPHBhdGggZD0iTTgsNGgxOHY2aDJWM2MwLTAuNS0wLjUtMS0x
+        LTFIN0M2LjUsMiw2LDIuNSw2LDN2N2gyVjR6IiBjbGFzcz0iQmxhY2siIC8+DQogIDxwYXRoIGQ9Ik0y
+        OSw4SDVDNC40LDgsNCw4LjQsNCw5djEwYzAsMC42LDAuNCwxLDEsMWgyNGMwLjYsMCwxLTAuNCwxLTFW
+        OUMzMCw4LjQsMjkuNiw4LDI5LDh6IE0xMS41LDExLjdoLTJWMThIOCAgdi02LjNINnYtMS40aDUuNVYx
+        MS43eiBNMTguMiwxOGwtMS4yLTIuNWMwLTAuMS0wLjEtMC4zLTAuMS0wLjVoMGMwLDAuMS0wLjEsMC4z
+        LTAuMiwwLjVMMTUuNSwxOGgtMS45bDIuMi0zLjlsLTItMy45aDEuOWwxLDIuMyAgYzAuMSwwLjIsMC4x
+        LDAuNCwwLjIsMC43aDBjMC0wLjIsMC4xLTAuNCwwLjItMC43bDEuMS0yLjNIMjBMMTgsMTQuMWwyLjEs
+        My45SDE4LjJ6IE0yOCwxMS43aC0yVjE4aC0xLjZ2LTYuM2gtMnYtMS40SDI4VjExLjd6IiBjbGFzcz0i
+        QmxhY2siIC8+DQogIDxnIGNsYXNzPSJzdDAiPg0KICAgIDxwYXRoIGQ9Ik0yOSw4SDVDNC40LDgsNCw4
+        LjQsNCw5djEwYzAsMC42LDAuNCwxLDEsMWgyNGMwLjYsMCwxLTAuNCwxLTFWOUMzMCw4LjQsMjkuNiw4
+        LDI5LDh6IE0xMS41LDExLjdoLTJWMThIOCAgIHYtNi4zSDZ2LTEuNGg1LjVWMTEuN3ogTTE4LjIsMThs
+        LTEuMi0yLjVjMC0wLjEtMC4xLTAuMy0wLjEtMC41aDBjMCwwLjEtMC4xLDAuMy0wLjIsMC41TDE1LjUs
+        MThoLTEuOWwyLjItMy45bC0yLTMuOWgxLjlsMSwyLjMgICBjMC4xLDAuMiwwLjEsMC40LDAuMiwwLjdo
+        MGMwLTAuMiwwLjEtMC40LDAuMi0wLjdsMS4xLTIuM0gyMEwxOCwxNC4xbDIuMSwzLjlIMTguMnogTTI4
+        LDExLjdoLTJWMThoLTEuNnYtNi4zaC0ydi0xLjRIMjhWMTEuN3oiIGNsYXNzPSJXaGl0ZSIgLz4NCiAg
+        PC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="BarSubItem4.Caption" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="BarButtonItem14.Caption" xml:space="preserve">
+    <value>Send The Report To Employee</value>
+  </data>
+  <data name="BarButtonItem15.Caption" xml:space="preserve">
+    <value>Send Report To Custom Number</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1458, 24</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 782</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1458, 0</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 758</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1458, 24</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 758</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1458, 782</value>
+  </data>
+  <data name="DockPanel1_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 26</value>
+  </data>
+  <data name="DockPanel1_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 729</value>
+  </data>
+  <data name="DockPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 758</value>
+  </data>
+  <data name="DockPanel1.Text" xml:space="preserve">
+    <value>Report Options</value>
+  </data>
+  <data name="AttRawatebByHouresRequired.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
+        bGUARXhwb3J0O1R4dDtFeHBvcnRUb1R4dDte6TgJAAACjElEQVQ4T2WTW08TURRGucstKv4ciUEJUAyX
+        ttBCS4stlJa0FigBJIDaBEUoGknUB27xxScgJCQmJBoTEUygvPvqD1DovTPTmZbPfc4ppugkazozybf2
+        PvucFtFVTJQQpURZnvICKv6BfSsGUMRgV0lo4+Tg5eYpGMubYYQ2wlgmltZPiRMsroWxuHqMF6snmH93
+        cMgkhYKy0HoYF/TGoZvggpO7JCeYf/udpSoLBeULa8c8JCtZSERaFqQkjZOUskgQajaH4MohS1UXCiqY
+        lQlSsghchngwlUU8rSFGZLQc5l59ZamaK4LgyjfeblJSkUyrVE37G2JEUyoihJLJ4fPRz/8E12bJytYZ
+        mArCP/kEvsAsPKOP4PJNwjkcgM01CovTB5PdA4PFhU6zE21dduj0fdxQOb30hQtGJp9SFY0jKyrMFEjL
+        Geh7BqizDO4b7YgmFETjMs5jMu62dnNB1fizT8jShP0Tc7AN+CGTwNzvQbfNjbSUQYfZgUQyg1aDDS2d
+        FkR42IQGnVEI/MF9LvCOz/BWWXWT3Q2D1YXnoTc0SAXBhdfUshVN7T2IRGUKd+NOs4ELqr2PP0LLXvB1
+        9zq8kGQVRusQ9L2sdQVtxn7EkjKaO3rR2GbGeVRCQ4sR9c16LqjxzOxBoy0aejiFnv5hIeDDotZTonW2
+        blb9HrV+FpF59fomIagdnN6DSoJB7wQfnKjuRLvpAR+crlO0zqrz1ltE+HZjhxA4Jnb5IUnQnsfpHMRo
+        z/neJ1Scx1WcxRX8jin4Rezu/2ChusJzUGn1fTiwB3bQN7YD9msb24Z1dJvet2AdoWe/wOLfQpf7/RFl
+        rhwk9leuIq4TN4ibeeoKuJWHPdcSpUKAoj+d4GjE2k4iBwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Salaries By Required Hours</value>
+  </data>
+  <data name="SearchDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 24</value>
+  </data>
+  <data name="RadioGroup3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 52</value>
+  </data>
+  <data name="RadioGroup3.Properties.Items1" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="RadioGroup3.Properties.Items3" xml:space="preserve">
+    <value>Current month</value>
+  </data>
+  <data name="RadioGroup3.Properties.Items5" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="RadioGroup3.Properties.Items7" xml:space="preserve">
+    <value>Current Month</value>
+  </data>
+  <data name="RadioGroup3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 59</value>
+  </data>
+  <data name="CheckShowColMaxBonusHoures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 732</value>
+  </data>
+  <data name="CheckShowColMaxBonusHoures.Properties.Caption" xml:space="preserve">
+    <value>Calc. overtime max houres</value>
+  </data>
+  <data name="CheckShowColMaxBonusHoures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="GridControlVocations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 819</value>
+  </data>
+  <data name="GridColumn5.Caption" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="GridColumn6.Caption" xml:space="preserve">
+    <value>Vocation</value>
+  </data>
+  <data name="GridControlVocations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="GridControlDiscounts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 843</value>
+  </data>
+  <data name="GridControlDiscounts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="GridControlAdds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 795</value>
+  </data>
+  <data name="GridControlAdds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="CheckShowEmployeeIfNoTrans.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 707</value>
+  </data>
+  <data name="CheckShowEmployeeIfNoTrans.Properties.Caption" xml:space="preserve">
+    <value>Has Transactions only</value>
+  </data>
+  <data name="CheckShowEmployeeIfNoTrans.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="CheckVocations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 682</value>
+  </data>
+  <data name="CheckVocations.Properties.Caption" xml:space="preserve">
+    <value>Vocations</value>
+  </data>
+  <data name="CheckVocations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="CheckShowDawamTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 657</value>
+  </data>
+  <data name="CheckShowDawamTab.Properties.Caption" xml:space="preserve">
+    <value>Show Attendance Data</value>
+  </data>
+  <data name="CheckShowDawamTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="SimpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAADJ0RVh0VGl0
+        bGUAR3JhbmRUb3RhbHNPblJvd3NDb2x1bW5zUGl2b3RUYWJsZTtEb2N1bWVudDv4LiySAAABTUlEQVQ4
+        T4WT3UoCURRGVdSbLqJn6aUiiCKCkKiQiCIKCoOgbryICowiKiLoppugnxeJwiwdx/nd7TXoROM5KCzO
+        cL413+w5ODkRyekvXzt9Odg/e5NR4OFzX3Jvv6Cwd/wscSwSRrEVcjz8bEFxu/4kQRhLvfGa0vOjdJ2c
+        uklyPPxsQWnj8FGFSFwvtEKOh58tKFdrD+IHkTi9MJ1gcM3KBOR4+EMFK7v34qnQcQMr5HjGgqWdO33X
+        v6fDj+OnKxOQ4xkLKlu3yXu2Op4VcjxjweLmtXRVaLa9dILBNSsTkOMZCxbWr/SwAvn87lkhxzMWzK9d
+        iqMHxZMGfLTcfys5nrFgrnqRnPT7l2uFHM9UUJpdPU/+ru2ub4UcDz9bUJyunBzNLDdkFHj42YKCUlbG
+        lHFlwgD75HhDH1OeTaWolBSkLOyT4/U/Z8n9Asn6mbqTYcZpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="SimpleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 903</value>
+  </data>
+  <data name="SimpleButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="SimpleButton3.Text" xml:space="preserve">
+    <value>Print Salary Slip</value>
+  </data>
+  <data name="CheckEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 632</value>
+  </data>
+  <data name="CheckEdit1.Properties.Caption" xml:space="preserve">
+    <value>Auto Fit</value>
+  </data>
+  <data name="CheckEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="CheckEditRestTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 607</value>
+  </data>
+  <data name="CheckEditRestTime.Properties.Caption" xml:space="preserve">
+    <value>Deduct Rest Period</value>
+  </data>
+  <data name="CheckEditRestTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="RadioGroup2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 310</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items1" xml:space="preserve">
+    <value>Detailed</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items3" xml:space="preserve">
+    <value>Grouped </value>
+  </data>
+  <data name="RadioGroup2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 34</value>
+  </data>
+  <data name="CheckCalcVocationsAtOffDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 582</value>
+  </data>
+  <data name="CheckCalcVocationsAtOffDay.Properties.Caption" xml:space="preserve">
+    <value>Vacation on Off Day if included in Vacation</value>
+  </data>
+  <data name="CheckCalcVocationsAtOffDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="CheckElapseOnVocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 557</value>
+  </data>
+  <data name="CheckElapseOnVocation.Properties.Caption" xml:space="preserve">
+    <value>Attendance Period =0 in Vacation Day</value>
+  </data>
+  <data name="CheckElapseOnVocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 21</value>
+  </data>
+  <data name="SimpleButtonAddVocations.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAALdEVYdFRpdGxlAFJvbGU7NeaBLAAAA09JREFUOE91
+        k31MzHEcx7/dr5xc99R1pe4YJeThjyiaoka19LSVCtWZYZGnCstqPbiViknKlTTbSR1ZYs3TchazxaKW
+        eWgmdqrtKlNGGNXd2/f76/qPP977/fH7vV6fz/fz/X1ITbKaVLNsVREdTVWiilRuUZGKeA9yNs6DlMe6
+        k9Mxc0lZpBspDFNWp/pKPQghdtqNSgKAkOrtavLp1Y3/pv91C4O5kgjXGqNuG3KDXVqpQFgQ4jIjUP0T
+        ZBn+cI/Bwaei3J91N+/Hj4FSVGu8sdNXGkElHC/QJanyadta2nYwbXvJ2Th3ZXns3NW07XQKdzUe2YDB
+        F0Wwjp7BlDkLTy4E4FiAvJ0KHHkBhVs7r+WgOS8C+vS1qEldivqM9Wir3Anz61pYvxl42DJ8BJaBJPS3
+        r0ZBiOLPEsUsNZsFG9iD/q4rwEQvzVuaN7D+7oT1ZxuFG3n4e98BdDaFQJ/tia6GedAlOyPJR6yhAns2
+        7eb3Ty7YYJrfzylshPX7VVhGy/Ht/QHsC3TDyZR5uHXSAwP3pKjf64TUZZJiKpjNrkr7zHAc45870KbP
+        ReWhSGSFLcaPwTLadiYs/Ymw9K3DVK8XJnuk+Hyfw7WDImiWS2qpYA6756iWwliYeq6ioSgVXXdzMP6p
+        FJahY/yZpxj81gtTL6WY7BTA3CpAQ5oIyT7iSl6wL8DZvizGfezXyE3adhOsYxW0sg3+EMRXnoGHbgtg
+        MnDQJYoRs0iUSQVCGmJXGKoseXQxBdYvDGbTtrVtq9xrECIvWop3env06TnkBsksS51n+VGWI6Wb3ciW
+        FRJFSaRqZPRNGl/ZZPRH1Z750Ma7YtcqVyQvV6DpqCMGDAI8LBBi90ppN4WVrDopDndlD0H6Gnm4TrNg
+        YrhjDd/2kFGGVq0IdekiPK1wgPm6AO/qOBSHSyY3qB0TKCPkf6SiUCUxdexgEi7NT5ZwYpPLV2OpDOa7
+        HIbvCDBIwY+XOfScc8D5BLE12lOUTb+V0NjxArZVpscRxGRkRyJc6EKRKtNffrNwoxy6JDEu7XBC2WYJ
+        Dq+SjcR5O2XYYMFRP/n0MrGtyg92IXlBCpIbqGASOxr7bT5i9UFfWbxmmTgnxkvEloe9nM3eM3haAPIX
+        SE74K5aq5CkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButtonAddVocations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 769</value>
+  </data>
+  <data name="SimpleButtonAddVocations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 22</value>
+  </data>
+  <data name="SimpleButtonAddVocations.Text" xml:space="preserve">
+    <value>Add Vacation</value>
+  </data>
+  <data name="SimpleButton2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAx0RVh0VGl0
+        bGUAUHJpbnQ7yDYy6gAAAr9JREFUOE99k9lPU1EQxssW2URwSXz1xT9AIT4ZUCTyAEoiEAJxARIUTBCK
+        CilFgqzFlD0YJAEjJL4ZiQQkYpEaAlIK+IYSEVq7UAp0B0rbz5lr0JQHT/LL3HPuzDdn5s4VAfgLrYD2
+        V+qJzsEFdA7OC3QQ7QNqgZa+L5PkE+wX47cRiYJIAF6fD16vDx7G48M+4d73Qt6vYqcjfjF+G5EoRN43
+        KwSZLTvY2HYROzBtO7Hr9kD2Yoadwg7FCCuACCLCZb0zQjbjppNwwEDWYHbCtbOP+u4pjoghgolAQliB
+        jT3KpI7Br3N54i4UVb7E7p4H+g07dCYHYYPWZIfduYd88XNkFTRSKer5qtbRZIrlpKKQtoHFdSNlySxo
+        QB45OVxuaI02rBmt0BisWCO2bLvIKWpBSo4EepMTTb0qE8WGskCovH+BygFSsiXILmyB1bGHVb0FP3UW
+        rOi2BbgfN/IakHi9RPCt7Z7lciJYILyhZw5utxfpd6qQmPaQnIhrTBkuM6liXEoRI4FIzSoTfKWtQj+i
+        WCCyunOasrrxXqFGcvoDXEjMRVxCLmLjb+N8/C2cu3gTscSVlCKMjM/CSv141DTJAtEsEFXxTAnDlhM/
+        DDasCNjp2mR1duHs4FywdK6nL1P8dJwFjrNAdGm9At91ViwumxGXLPkvC8sbWNJYUSgdY4ETLBBz/8kH
+        zH0zQzGvRW3XFCy2PdSN/ULNqBbSYS0eD61ikwaL342rVqFa2kB++QgLnGSByMx7/VM5xa+Rcbcf1e1K
+        YQqrhjWQvNOg/O0axG9WYdpyobpNiaSMOlzNkiEhTTpNsUITeRj44RRxRir/hHVyXqc6GZ4Po5kmkmyl
+        fIKzniVOE8eI4MP/QlhpzbCyovkjKpoVBFnZAQqU1Ax9Jp8Ivxi/zZ/bRBLcXa6P4Zsx/HyUCPoXA9Fv
+        k15uVlve/joAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 903</value>
+  </data>
+  <data name="SimpleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="SimpleButton2.Text" xml:space="preserve">
+    <value>Print  (F12)</value>
+  </data>
+  <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA1dEVYdFRpdGxlAEFycm93O1JlY3VycmVuY2U7UmVm
+        cmVzaDtVcGRhdGU7UmVsb2FkO0V4Y2hhbmdlhrRdSAAAANJJREFUOE+lkrENwkAQBI1EATRg0YFzirDI
+        SMgdIkeQ0wQlkJKZjH5o4tl9/Z5O6B6BCUY67d7tv33fpJT+IhR/wYr+fBctGMEEngXW1OjlvlrAAhxA
+        qnADGxAGrEAPGHICA1gXWD+AQtooYF8aGGK68zugkFG6TA7pmjlEDR7ovAn9SVo0LCwk8IyPJoeP18sS
+        dfUQfz2uiuIgzcPm4tswdd/APdPgj+qkO9+H2Of5Bj4Srkgh72vcAYXYnA8gfCQKidiC3FsLIPOe8lxC
+        8XtS8wL/7IdaesUzOwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="SimpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 877</value>
+  </data>
+  <data name="SimpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 22</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>Refresh (F5)</value>
+  </data>
+  <data name="SpinEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 504</value>
+  </data>
+  <data name="SpinEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 24</value>
+  </data>
+  <data name="SpinEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 476</value>
+  </data>
+  <data name="SpinEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 24</value>
+  </data>
+  <data name="RadioGroup1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 393</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items1" xml:space="preserve">
+    <value>Name </value>
+  </data>
+  <data name="RadioGroup1.Properties.Items3" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items5" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="RadioGroup1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 34</value>
+  </data>
+  <data name="LookUpEditDepartment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 254</value>
+  </data>
+  <data name="LookUpEditDepartment.Properties.NullText" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="LookUpEditDepartment.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="LookUpEditDepartment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 24</value>
+  </data>
+  <data name="DateEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 143</value>
+  </data>
+  <data name="DateEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 24</value>
+  </data>
+  <data name="LookUpEditPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 198</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.NullText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="LookUpEditPosition.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="LookUpEditPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 24</value>
+  </data>
+  <data name="LookUpEditBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 226</value>
+  </data>
+  <data name="LookUpEditBranch.Properties.NullText" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="LookUpEditBranch.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="LookUpEditBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 24</value>
+  </data>
+  <data name="SearchLookUpEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="SearchLookUpEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="SearchLookUpEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 24</value>
+  </data>
+  <data name="DateEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 115</value>
+  </data>
+  <data name="DateEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 24</value>
+  </data>
+  <data name="LayoutControlGroup4.Text" xml:space="preserve">
+    <value>Group By</value>
+  </data>
+  <data name="LayoutControlItem8.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="LayoutControlShowWorkLeaves.Text" xml:space="preserve">
+    <value>Number of work breaks:</value>
+  </data>
+  <data name="LayoutControlGroup5.Text" xml:space="preserve">
+    <value>Report Options</value>
+  </data>
+  <data name="LayoutControlItem4.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="LayoutControlItem2.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="LayoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 729</value>
+  </data>
+</root>

@@ -1,0 +1,9 @@
+SELECT   TOP (200) ID, DocID, DocDate, DocName, DebitAcc, CredAcc, AccountCurr, DocCurrency, DocAmount, ExchangePrice, BaseCurrAmount, BaseAmount, DocSort, Referance, DocManualNo, 
+                         DocMultiCurrency, InputUser, InputDateTime, ModifiedUser, ModifiedDateTime, DocAuditDate, DocAuditUser, DocNotes, StockID, StockUnit, StockQuantity, StockQuantityByMainUnit, 
+                         StockPrice, StockItemPrice, StockDebitWhereHouse, StockCreditWhereHouse, StockDriver, StockCarNo, SalesPerson, CheckNo, CheckInOut, CheckStatus, CheckDueDate, 
+                         CheckCustBank, CheckCustBranch, CheckCustAccountId, AccountBank, DeleteUser, DeleteDateTime, CurrentUserID, ReferanceName, DocCode, CheckCode, ItemName, 
+                         DocCheckTransID, TransNoInJournal, ShiftID, DocNoteByAccount, StockDiscount, StockBarcode, PosNo, DeviceName, OrderStatus, ItemStatus, ApprovedQuantity, LastDocCode, 
+                         LastDataName, DeliverDate, Color, Measure, VoucherDiscount, ItemVAT, StockDebitShelve, StockCreditShelve, ItemNo2, OrderID, Produced, DocID2, DocDueDate, VoucherCounter, 
+                         AuditNote, TarteebID, PaidStatus, PaidAmount, PaidByDocID, LastPurchasePrice, BatchID, BatchNo, DocTags, POSVoucherPayType, HasAttachment
+FROM         Journal
+WHERE     (AccountCurr = 2) AND (BaseAmount = BaseCurrAmount) AND (DocStatus <> 0) AND (DocAmount = BaseCurrAmount) AND (DocCurrency = 1)

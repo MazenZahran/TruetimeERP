@@ -1,0 +1,27 @@
+'تعريف زبون
+BEGIN TRANSACTION
+SET DEADLOCK_PRIORITY HIGH
+update indexes set id=id+1 where name='fleets'
+Declare @FleetdID int;
+Set @FleetdID = ( select id from indexes where name='fleets' )
+INSERT INTO fleets
+    (id, name, status, code, default_rule, address, phone, fax,email, contact, acctyp, available_amount,min_allowed, update_timestamp, use_pin_code, opos_prompt_for_plate, opos_prompt_for_odometer, block_if_pin_retries_fail, do_odo_reasonability_check, auth_pin_from, nr_pin_retries, max_odo_delta_allowed, nr_odo_retries, line_of_credit, opos_prompt_for_engine_hours, address2,city,state,zip,user_data1,user_data2,user_data3,user_data4,user_data5,price_list_id, last_sequence,prompt_always_for_viu)
+values(@FleetdID, 'test fleet name from sql', 2, 8585, 200000000, '', '0597505029', '', '', '', 0, 0.000000, 0.000000, '', 0, 0, 0, 0, 1, 2, 0, 0, 0, 0.000000, 0, '', '', '1', '1', '', '', '', '', '', 0, 0, 0)
+COMMIT
+
+BEGIN TRANSACTION
+SET DEADLOCK_PRIORITY HIGH
+update indexes set id=id+1 where name='depts'
+COMMIT
+
+BEGIN TRANSACTION
+SET DEADLOCK_PRIORITY HIGH
+Declare @DepID int;
+Set @DepID= ( select id from indexes where name='depts' )
+delete from depts where id=@DepID
+
+insert into depts
+    (id, name, fleet_id, status, code, default_rule, address,phone, fax,email, contact, use_pin_code, opos_prompt_for_plate, opos_prompt_for_odometer, block_if_pin_retries_fail, do_odo_reasonability_check, auth_pin_from,nr_pin_retries, max_odo_delta_allowed, nr_odo_retries, black_white_type, opos_prompt_for_engine_hours, address2, city, state, zip, user_data1, user_data2, user_data3, user_data4, user_data5,price_list_id,prompt_always_for_viu)
+values
+    (@DepID, 'Default', @FleetdID, 2, 1, 200000000, '', '', '', '', '', 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 0, '', '', '', '', '', '', '', '', '', 0, 0)
+COMMIT

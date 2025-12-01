@@ -1,0 +1,2696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="DockManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1354, 554</value>
+  </data>
+  <data name="PivotGridField1.Caption" xml:space="preserve">
+    <value>وارد/صادر</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PivotGridField1.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField1.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="PivotGridField2.Caption" xml:space="preserve">
+    <value>تاريخ الإستحقاق</value>
+  </data>
+  <data name="PivotGridField2.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField2.Width" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="PivotGridField3.Caption" xml:space="preserve">
+    <value>الحساب البنكي</value>
+  </data>
+  <data name="PivotGridField3.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField3.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="PivotGridField4.Caption" xml:space="preserve">
+    <value>حالة الشيك</value>
+  </data>
+  <data name="PivotGridField4.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField4.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="PivotGridField5.Caption" xml:space="preserve">
+    <value>مبلغ الشيك</value>
+  </data>
+  <data name="PivotGridField5.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField5.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="PivotGridField6.Caption" xml:space="preserve">
+    <value>العملة</value>
+  </data>
+  <data name="PivotGridField6.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField6.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="PivotGridField7.Caption" xml:space="preserve">
+    <value>المبلغ NIS</value>
+  </data>
+  <data name="PivotGridField7.MinWidth" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PivotGridField7.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="PivotGridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 95</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PivotGridControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PivotGridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>897, 388</value>
+  </data>
+  <data name="PivotGridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PivotGridControl1.Name" xml:space="preserve">
+    <value>PivotGridControl1</value>
+  </data>
+  <data name="&gt;&gt;PivotGridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridControl, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridControl1.Parent" xml:space="preserve">
+    <value>LayoutControl2</value>
+  </data>
+  <data name="&gt;&gt;PivotGridControl1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>تاريخ الإستحقاق</value>
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value>المبلغ NIS</value>
+  </data>
+  <data name="ChartControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 61</value>
+  </data>
+  <data name="ChartControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ChartControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>897, 422</value>
+  </data>
+  <data name="ChartControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ChartControl1.Name" xml:space="preserve">
+    <value>ChartControl1</value>
+  </data>
+  <data name="&gt;&gt;ChartControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartControl1.Parent" xml:space="preserve">
+    <value>LayoutControl2</value>
+  </data>
+  <data name="&gt;&gt;ChartControl1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SimpleButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 61</value>
+  </data>
+  <data name="SimpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="SimpleButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 28</value>
+  </data>
+  <data name="SimpleButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="SimpleButton4.Text" xml:space="preserve">
+    <value>عرض البيانات</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Name" xml:space="preserve">
+    <value>SimpleButton4</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Parent" xml:space="preserve">
+    <value>LayoutControl2</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>203, 17</value>
+  </metadata>
+  <data name="كشفبحركةالشيكToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="كشفبحركةالشيكToolStripMenuItem.Text" xml:space="preserve">
+    <value>كشف بحركة الشيك</value>
+  </data>
+  <data name="تغييرحالةشيكToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="تغييرحالةشيكToolStripMenuItem.Text" xml:space="preserve">
+    <value>تعديل بيانات الشيك</value>
+  </data>
+  <data name="ContextMenuStrip1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 70</value>
+  </data>
+  <data name="&gt;&gt;ContextMenuStrip1.Name" xml:space="preserve">
+    <value>ContextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;ContextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GridControlList.EmbeddedNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="GridControlList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 61</value>
+  </data>
+  <data name="GridView1.AppearancePrint.HeaderPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 6.75pt</value>
+  </data>
+  <data name="GridView1.AppearancePrint.Row.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 6.75pt</value>
+  </data>
+  <data name="ColCheckNo.Caption" xml:space="preserve">
+    <value>رقم الشيك</value>
+  </data>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ColCheckNo.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v24.1">
+    <value>Count</value>
+  </data>
+  <data name="ColCheckNo.Summary1" xml:space="preserve">
+    <value>CheckNo</value>
+  </data>
+  <data name="ColCheckNo.Summary2" xml:space="preserve">
+    <value>عدد الشيكات: {0}</value>
+  </data>
+  <data name="ColCheckNo.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColCheckNo.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ColCheckNo.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="ColCheckInOut.Caption" xml:space="preserve">
+    <value>وارد/صادر</value>
+  </data>
+  <data name="RepositoryCheckStatus.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColCheckStatus.Caption" xml:space="preserve">
+    <value>حالة الشيك</value>
+  </data>
+  <data name="ColCheckStatus.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColCheckStatus.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ColCheckStatus.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="ColAccountBank.Caption" xml:space="preserve">
+    <value>حساب البنك</value>
+  </data>
+  <data name="ColAccountBank.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="ColCheckDueDate.Caption" xml:space="preserve">
+    <value>تاريخ الاستحقاق</value>
+  </data>
+  <data name="ColCheckDueDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColCheckDueDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ColCheckDueDate.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="ColCheckCustBank.Caption" xml:space="preserve">
+    <value>البنك</value>
+  </data>
+  <data name="ColCheckCustBank.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="ColCheckCustBranch.Caption" xml:space="preserve">
+    <value>الفرع</value>
+  </data>
+  <data name="ColCheckCustBranch.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="ColCheckCustAccountId.Caption" xml:space="preserve">
+    <value>رقم حساب البنك</value>
+  </data>
+  <data name="ColCheckCustAccountId.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColCheckCustAccountId.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ColCheckCustAccountId.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="ColReferanceName.Caption" xml:space="preserve">
+    <value>المرجع</value>
+  </data>
+  <data name="ColReferanceName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColReferanceName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ColReferanceName.Width" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="ColDocID.Caption" xml:space="preserve">
+    <value>رقم السند</value>
+  </data>
+  <data name="ColDocID.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="ColDocAmount.Caption" xml:space="preserve">
+    <value>مبلغ الشيك</value>
+  </data>
+  <data name="ColDocAmount.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v24.1">
+    <value>Sum</value>
+  </data>
+  <data name="ColDocAmount.Summary1" xml:space="preserve">
+    <value>CheckAmount</value>
+  </data>
+  <data name="ColDocAmount.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="ColDocAmount.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColDocAmount.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ColDocAmount.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="ColCurrCode.Caption" xml:space="preserve">
+    <value>العملة</value>
+  </data>
+  <data name="ColCurrCode.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColCurrCode.VisibleIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ColCurrCode.Width" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="ColCheckBaseAmount.Caption" xml:space="preserve">
+    <value>المبلغ رئيسية</value>
+  </data>
+  <data name="ColCheckBaseAmount.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v24.1">
+    <value>Sum</value>
+  </data>
+  <data name="ColCheckBaseAmount.Summary1" xml:space="preserve">
+    <value>CheckBaseAmount</value>
+  </data>
+  <data name="ColCheckBaseAmount.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="ColCheckBaseAmount.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColCheckBaseAmount.VisibleIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ColCheckBaseAmount.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="ColCheckCode.Caption" xml:space="preserve">
+    <value>CheckCode</value>
+  </data>
+  <data name="ColCheckCode.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="ColRelatedReferanceName.Caption" xml:space="preserve">
+    <value>مجيير لـ</value>
+  </data>
+  <data name="ColRelatedReferanceName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColRelatedReferanceName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ColRelatedReferanceName.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="ColBankAccountName.Caption" xml:space="preserve">
+    <value>الحساب البنكي</value>
+  </data>
+  <data name="ColBankAccountName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColBankAccountName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ColBankAccountName.Width" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="GridColumn1.Caption" xml:space="preserve">
+    <value>البنك</value>
+  </data>
+  <data name="GridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GridColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="GridColumn1.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="ColNotes.Caption" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="ColNotes.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColNotes.VisibleIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ColNotes.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="ColCheckID.Caption" xml:space="preserve">
+    <value>CheckID</value>
+  </data>
+  <data name="ColCheckID.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="GridColumn2.Caption" xml:space="preserve">
+    <value>الحساب التابع</value>
+  </data>
+  <data name="GridView1.GroupPanelText" xml:space="preserve">
+    <value>تجميع حسب ...</value>
+  </data>
+  <data name="GridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v24.1">
+    <value>Count</value>
+  </data>
+  <data name="GridView1.GroupSummary1" xml:space="preserve">
+    <value>CheckNo</value>
+  </data>
+  <data name="GridView1.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="GridView1.GroupSummary3" xml:space="preserve">
+    <value>( عدد الشيكات: {0:N0} )</value>
+  </data>
+  <data name="GridView1.GroupSummary4" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v24.1">
+    <value>Sum</value>
+  </data>
+  <data name="GridView1.GroupSummary5" xml:space="preserve">
+    <value>CheckAmount</value>
+  </data>
+  <data name="GridView1.GroupSummary6" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="GridView1.GroupSummary7" xml:space="preserve">
+    <value>( المجموع: {0:N0} )</value>
+  </data>
+  <data name="RepositoryBranch.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="RepositoryBranch.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="GridControlList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>897, 422</value>
+  </data>
+  <data name="GridControlList.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GridControlList.Name" xml:space="preserve">
+    <value>GridControlList</value>
+  </data>
+  <data name="&gt;&gt;GridControlList.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridControlList.Parent" xml:space="preserve">
+    <value>LayoutControl2</value>
+  </data>
+  <data name="&gt;&gt;GridControlList.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="LayoutControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LayoutControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 39</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Glyph</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons1" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EditorButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABR0RVh0VGl0
+        bGUAUHJpbnQ7UHJpbnRlcjti43w7AAAAdUlEQVQ4T8WSSwqAMAxEe0EvJXOkLgQPFyk0GsfUhCI4MNBF
+        8vJrEZGiBiAZ25zzoYBI3wMA7L21NEBjW66dewZwW1x6iUOAne3NI8CU/wHoyV1AJI5vgMqAZd1cO4DK
+        26V6T/WY6yd6AK7MHYSAN4WAjG3OAVIW7+MYjQSiAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons5" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons6" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons8" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Glyph</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons9" xml:space="preserve">
+    <value>نسخ</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons10" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons11" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons12" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EditorButtonImageOptions2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
+        bGUARXhwb3J0O1R4dDtFeHBvcnRUb1R4dDte6TgJAAACm0lEQVQ4T2WT7UtTURzHj6bmE5X9OUlYos7w
+        YZtuurnZptPJ1tSJmqjVwDKdSUL1wid60ysVQQiEItA00Pm+t/0BqXu4u88P+8Y518WyCx/u5cL38/ud
+        c36HEEKKCCHFhJAbhJCSK0oLKLsG/VcEgFDoUxzfOD18s3kGytJmAvGNBJY2ElhcP8Pi+ikW1hJYWD3B
+        69VTzH04PKKSQkFJfD2BHGCSy5NjGHkMk7n3P2iqvFBQOr92wkKSrEOUdQiSCS9qjKyogxN1qLqB2MoR
+        TVUWCsqolQp4yQzkQyzI68gIGtKCBkUzMLt8QFNV/whiK99Zu1lRRVZQwYna3xAlxatI8ipkxcDX41//
+        CW7OLB+wdUYnY4hMPEc4OoPgyFMEwhPwD0XhCYzA5Q/D4Q3C5gqg3elHS4cXFmsPM5RPLX5jguGJF5AV
+        jSHJKpzeIARJgbWrD1lBwSO7FylORioj4TIt4UFzJxNUjL38At3IITI+C09fBJKiwdkbRKdnEIKooM3p
+        A5dV0GzzoKndhSQLO1BnsZuCSGyfCUJj06xVWt3hHYTNHcCr+DtwvIzY/FtYrG40tHYhmZJQZ+nE/UYb
+        E1SGnn2GpufYurt9IYiSCrt7ANZu2rqMFnsv0lkJjW3dqG9x4jIloq7JjtpGKxNUBaf3oGkGBp5Moqt3
+        yBSwzfKB483W6bpp9YfNDlwkJVa9tsEUVPdP7UHVDPSHxtnGmdX9aHU8ZhtnaTdbp9VZ601m+F59mynw
+        je+yIeEEev4q0rxqnj2n4jKj4iIj4zwt43daxu7+TxqqKZyDcnf406E3uoOe0R3Qt2d0G+6RbfSMbsE9
+        vA13xMQV2ULH4Mfj64NEr3IFIeQWIeQ2IeTOFTUF3L2CflfTq58X/AGd4GjEb5zVLgAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons13" xml:space="preserve">
+    <value>نسخ البيانات ك نص</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons14" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="TabbedControlGroup1.CustomHeaderButtons15" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AllCheksGroup.Text" xml:space="preserve">
+    <value>الشيكات</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons1" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAndEVYdFRpdGxlAFJlZnJlc2g7UmVwZWF0O0JhcnM7
+        UmliYm9uO1JlbG9hZM1N9ukAAADSSURBVDhPpZIxDsIwDEWLxAG4QMUNunOILzYW9o6oE+y+BEdgZas3
+        7sMlgn7lRG6aFhWGL0X+9osTuwohVP9oElirdIBoVA3RDqI9RN8mnhmjN+TNATYQvUA0zOgJ0cMcYAdR
+        GOQG0RaiexPPLwepS4CzJRAyeqf5jYN0I4AV+VaRAyyPndDvE6BQPIEUvKRFk8XXx327dIlvj6NisM1b
+        Nz+HDB36BM6ZBj+qKQA8JD3PJ3BJOKIIycd4cpBUl9/AJYmQko7fNjF2sn6Vf9UksFYf/+yHWpeypj8A
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons2" type="DevExpress.XtraBars.Docking2010.ButtonStyle, DevExpress.Utils.v24.1">
+    <value>PushButton</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons4" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons6" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons7" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons8" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons9" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons10" xml:space="preserve">
+    <value>refresh</value>
+  </data>
+  <data name="PivotGroup.CustomHeaderButtons11" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="PivotGroup.Text" xml:space="preserve">
+    <value>تحليلي</value>
+  </data>
+  <data name="ChartGroup.Text" xml:space="preserve">
+    <value>رسم بياني</value>
+  </data>
+  <data name="LayoutControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>961, 515</value>
+  </data>
+  <data name="LayoutControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LayoutControl2.Text" xml:space="preserve">
+    <value>LayoutControl2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl2.Name" xml:space="preserve">
+    <value>LayoutControl2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SimpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAx0RVh0VGl0
+        bGUAUHJpbnQ7yDYy6gAAAstJREFUOE99k91L01EYx4+WpGamvUC33fQHlNKVaC3Ji5lCKqJYqWBpYDot
+        RWdivhvzHcUEFyp0F0miSTZzIZo6tTtLMnXtxb3o3n6bm9u+8RwalBce+HAO5/d8v885z+85DAALwBgL
+        6hpWzfSMrqJndIXTPbqCrhEVp33o6yxj7OR/miMGJ7qGVfD5/fD5/PASXj8OvX54Dn2QyZco6NRxBiGy
+        oUUuMllcMO47Ydx3wbAv4MDjReurBQoKO6LhI4iyM8bCWwcXeDa9WYDe7IDOLEBnEuB0HaKxb44U0XQN
+        xlhwQBzcPKBM7B79tpwn6UVR9WscuL3QGu3QGBzQGGxQG+ywC27kS/qRWdAMmVy1UtMxmfQ3KQvpHFnb
+        1ZsEZBQ0IU/SD4fTA7Xehm29FTs6K7Z1VuzZDpBd1A5xdhW0BgEtg0sGxlgoGYTK5KugIc6qQlZhO6wO
+        N7a0FvzSWLCp2edQPe7mNUGUUsJj6/sW6TqnySC8aWAZHo8PaQ9qIEothyilHKI7RBluEskS3BBLkCCW
+        IDmzjMdKO3g9IskgorZnHlaHBx8UKiSlPcF1US5iE3IRE38f1+Lv4WpcDmLicnBLXISJ6UVYBTeetsyS
+        QRQZRFa+VEK3J+CnzoZNjh2bGhs2NXa+F9jns8YGrVlA8YtpMjhHBlGljQr80FixtmFCbFLVsaxuGLG+
+        Y0WhdIoMzpNB9OPnH7H83QTFihr1vXOw2NxomPqNukk1pONqPBvbgtni4t+ml7awtG5EfsUEGVzgNch4
+        JJ/LLn6D9Idy1HYpeRfWjO+g6v0OKt5tQ/J2C4Y9J2o7lUhMb8DtzFYkpErnA0WkZqDFRcbYZansM3b3
+        nNg1CxzqD73JwbuxWjZDWa8wxi4xxs7yjjzS12GldePKyrZPqGxTgM+tARQoqRv7Qv/+uMdEp4n4W126
+        H0EnI2h9hmL+1fwBk15uVquRqDwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 406</value>
+  </data>
+  <data name="SimpleButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="SimpleButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 28</value>
+  </data>
+  <data name="SimpleButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="SimpleButton3.Text" xml:space="preserve">
+    <value>طباعة    </value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Name" xml:space="preserve">
+    <value>SimpleButton3</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ComboBoxInOut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="ComboBoxInOut.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="ComboBoxInOut.Properties.Items" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="ComboBoxInOut.Properties.Items1" xml:space="preserve">
+    <value>Out</value>
+  </data>
+  <data name="ComboBoxInOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 28</value>
+  </data>
+  <data name="ComboBoxInOut.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxInOut.Name" xml:space="preserve">
+    <value>ComboBoxInOut</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxInOut.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxInOut.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxInOut.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAndEVYdFRpdGxlAFJlZnJlc2g7UmVwZWF0O0JhcnM7
+        UmliYm9uO1JlbG9hZM1N9ukAAADSSURBVDhPpZIxDsIwDEWLxAG4QMUNunOILzYW9o6oE+y+BEdgZas3
+        7sMlgn7lRG6aFhWGL0X+9osTuwohVP9oElirdIBoVA3RDqI9RN8mnhmjN+TNATYQvUA0zOgJ0cMcYAdR
+        GOQG0RaiexPPLwepS4CzJRAyeqf5jYN0I4AV+VaRAyyPndDvE6BQPIEUvKRFk8XXx327dIlvj6NisM1b
+        Nz+HDB36BM6ZBj+qKQA8JD3PJ3BJOKIIycd4cpBUl9/AJYmQko7fNjF2sn6Vf9UksFYf/+yHWpeypj8A
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 372</value>
+  </data>
+  <data name="SimpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 28</value>
+  </data>
+  <data name="SimpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>تحديث     F5</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Name" xml:space="preserve">
+    <value>SimpleButton1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LayoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LayoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="LayoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 450</value>
+  </data>
+  <data name="LayoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LayoutControl1.Text" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Name" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Parent" xml:space="preserve">
+    <value>DockPanel1_Container</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DockPanel1_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 38</value>
+  </data>
+  <data name="DockPanel1_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 450</value>
+  </data>
+  <data name="DockPanel1_Container.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Name" xml:space="preserve">
+    <value>DockPanel1_Container</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Parent" xml:space="preserve">
+    <value>DockPanel1</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DockPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1105, 63</value>
+  </data>
+  <data name="DockPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 491</value>
+  </data>
+  <data name="DockPanel1.Text" xml:space="preserve">
+    <value>خيارات التقرير</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Name" xml:space="preserve">
+    <value>DockPanel1</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <metadata name="BarManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>518, 17</value>
+  </metadata>
+  <data name="SelectSeriesRepositoryItemComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SelectSeriesRepositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="SelectSeriesRepositoryItemComboBox1.Items" xml:space="preserve">
+    <value>Series 1</value>
+  </data>
+  <data name="SelectSeriesRepositoryItemComboBox1.Items1" xml:space="preserve">
+    <value>Series 2</value>
+  </data>
+  <data name="SelectSeriesRepositoryItemComboBox1.Items2" xml:space="preserve">
+    <value>Series 3</value>
+  </data>
+  <data name="ChangeSeriesViewRepositoryItemComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ChangeSeriesViewRepositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="SelectAxisMeasureUnitRepositoryItemComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SelectAxisMeasureUnitRepositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="SelectPeriodRepositoryItemComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SelectPeriodRepositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="BarSubItem1.Caption" xml:space="preserve">
+    <value>ملف</value>
+  </data>
+  <data name="BarSubItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAArdEVYdFRpdGxlAE9wZW47Rm9sZGVyO0JhcnM7Umli
+        Ym9uO1N0YW5kYXJkO0xvYWTxw8RjAAAAcUlEQVQ4T6WS0Q3AIAgFWdBlnIHRnIcVnsGmjYK2RT/uh3gX
+        QyAAdIIbRHGDKMTMiZkxQedOsGjAikPECpavwIonvBvAceDez59AW+aMVWAQpOQkJWNBsgF9/CY4+kBY
+        7n+wJUvJ1yXuyi1gLyuKG0SpsJjCM4jrAmMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BarButtonItem1.Caption" xml:space="preserve">
+    <value>عرض خيارات الرسم البياني</value>
+  </data>
+  <data name="BarButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAPdEVYdFRpdGxlAENoYXJ0O0JhcvfAgcwAAABMSURB
+        VDhPY/j//z8DJRhDABsuWz79PwzfSHahswEgDVQ34EayC4gGYwwN6Lhs+fQBMODdkaL/MAw1BG4AiE99
+        A3ybdvyH4VEDhqIBAAQryf40dGHuAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Bar1.Text" xml:space="preserve">
+    <value>Custom 12</value>
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1354, 39</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 554</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1354, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1354, 39</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 515</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 515</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>قائمة الشيكات</value>
+  </data>
+  <data name="&gt;&gt;DockManager1.Name" xml:space="preserve">
+    <value>DockManager1</value>
+  </data>
+  <data name="&gt;&gt;DockManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.DockManager, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Name" xml:space="preserve">
+    <value>LayoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem1.Name" xml:space="preserve">
+    <value>EmptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Name" xml:space="preserve">
+    <value>LayoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Name" xml:space="preserve">
+    <value>LayoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;كشفبحركةالشيكToolStripMenuItem.Name" xml:space="preserve">
+    <value>كشفبحركةالشيكToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;كشفبحركةالشيكToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;تغييرحالةشيكToolStripMenuItem.Name" xml:space="preserve">
+    <value>تغييرحالةشيكToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;تغييرحالةشيكToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GridView1.Name" xml:space="preserve">
+    <value>GridView1</value>
+  </data>
+  <data name="&gt;&gt;GridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckNo.Name" xml:space="preserve">
+    <value>ColCheckNo</value>
+  </data>
+  <data name="&gt;&gt;ColCheckNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckInOut.Name" xml:space="preserve">
+    <value>ColCheckInOut</value>
+  </data>
+  <data name="&gt;&gt;ColCheckInOut.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCheckStatus.Name" xml:space="preserve">
+    <value>RepositoryCheckStatus</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCheckStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckStatus.Name" xml:space="preserve">
+    <value>ColCheckStatus</value>
+  </data>
+  <data name="&gt;&gt;ColCheckStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColAccountBank.Name" xml:space="preserve">
+    <value>ColAccountBank</value>
+  </data>
+  <data name="&gt;&gt;ColAccountBank.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckDueDate.Name" xml:space="preserve">
+    <value>ColCheckDueDate</value>
+  </data>
+  <data name="&gt;&gt;ColCheckDueDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCustBank.Name" xml:space="preserve">
+    <value>ColCheckCustBank</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCustBank.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCustBranch.Name" xml:space="preserve">
+    <value>ColCheckCustBranch</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCustBranch.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCustAccountId.Name" xml:space="preserve">
+    <value>ColCheckCustAccountId</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCustAccountId.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColReferanceName.Name" xml:space="preserve">
+    <value>ColReferanceName</value>
+  </data>
+  <data name="&gt;&gt;ColReferanceName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDocID.Name" xml:space="preserve">
+    <value>ColDocID</value>
+  </data>
+  <data name="&gt;&gt;ColDocID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDocAmount.Name" xml:space="preserve">
+    <value>ColDocAmount</value>
+  </data>
+  <data name="&gt;&gt;ColDocAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCurrCode.Name" xml:space="preserve">
+    <value>ColCurrCode</value>
+  </data>
+  <data name="&gt;&gt;ColCurrCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckBaseAmount.Name" xml:space="preserve">
+    <value>ColCheckBaseAmount</value>
+  </data>
+  <data name="&gt;&gt;ColCheckBaseAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCode.Name" xml:space="preserve">
+    <value>ColCheckCode</value>
+  </data>
+  <data name="&gt;&gt;ColCheckCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColRelatedReferanceName.Name" xml:space="preserve">
+    <value>ColRelatedReferanceName</value>
+  </data>
+  <data name="&gt;&gt;ColRelatedReferanceName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColBankAccountName.Name" xml:space="preserve">
+    <value>ColBankAccountName</value>
+  </data>
+  <data name="&gt;&gt;ColBankAccountName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridColumn1.Name" xml:space="preserve">
+    <value>GridColumn1</value>
+  </data>
+  <data name="&gt;&gt;GridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColNotes.Name" xml:space="preserve">
+    <value>ColNotes</value>
+  </data>
+  <data name="&gt;&gt;ColNotes.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCheckID.Name" xml:space="preserve">
+    <value>ColCheckID</value>
+  </data>
+  <data name="&gt;&gt;ColCheckID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridColumn2.Name" xml:space="preserve">
+    <value>GridColumn2</value>
+  </data>
+  <data name="&gt;&gt;GridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryBranch.Name" xml:space="preserve">
+    <value>RepositoryBranch</value>
+  </data>
+  <data name="&gt;&gt;RepositoryBranch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField1.Name" xml:space="preserve">
+    <value>PivotGridField1</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField2.Name" xml:space="preserve">
+    <value>PivotGridField2</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField3.Name" xml:space="preserve">
+    <value>PivotGridField3</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField3.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField4.Name" xml:space="preserve">
+    <value>PivotGridField4</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField4.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField5.Name" xml:space="preserve">
+    <value>PivotGridField5</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField5.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField6.Name" xml:space="preserve">
+    <value>PivotGridField6</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField6.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField7.Name" xml:space="preserve">
+    <value>PivotGridField7</value>
+  </data>
+  <data name="&gt;&gt;PivotGridField7.Type" xml:space="preserve">
+    <value>DevExpress.XtraPivotGrid.PivotGridField, DevExpress.XtraPivotGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Name" xml:space="preserve">
+    <value>LayoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TabbedControlGroup1.Name" xml:space="preserve">
+    <value>TabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;TabbedControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PivotGroup.Name" xml:space="preserve">
+    <value>PivotGroup</value>
+  </data>
+  <data name="&gt;&gt;PivotGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Name" xml:space="preserve">
+    <value>LayoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem7.Name" xml:space="preserve">
+    <value>LayoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Name" xml:space="preserve">
+    <value>EmptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AllCheksGroup.Name" xml:space="preserve">
+    <value>AllCheksGroup</value>
+  </data>
+  <data name="&gt;&gt;AllCheksGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Name" xml:space="preserve">
+    <value>LayoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartGroup.Name" xml:space="preserve">
+    <value>ChartGroup</value>
+  </data>
+  <data name="&gt;&gt;ChartGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Name" xml:space="preserve">
+    <value>LayoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartBarController1.Name" xml:space="preserve">
+    <value>ChartBarController1</value>
+  </data>
+  <data name="&gt;&gt;ChartBarController1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartBarController, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateBarBaseItem1.Name" xml:space="preserve">
+    <value>CreateBarBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateBarBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateBarBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown8.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown8</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown8.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarManager1.Name" xml:space="preserve">
+    <value>BarManager1</value>
+  </data>
+  <data name="&gt;&gt;BarManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartTypeBar1.Name" xml:space="preserve">
+    <value>ChartTypeBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartTypeBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartTypeBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateLineBaseItem1.Name" xml:space="preserve">
+    <value>CreateLineBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateLineBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateLineBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown9.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown9</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown9.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreatePieBaseItem1.Name" xml:space="preserve">
+    <value>CreatePieBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreatePieBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreatePieBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown10.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown10</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown10.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateRotatedBarBaseItem1.Name" xml:space="preserve">
+    <value>CreateRotatedBarBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateRotatedBarBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateRotatedBarBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown11.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown11</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown11.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateAreaBaseItem1.Name" xml:space="preserve">
+    <value>CreateAreaBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateAreaBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateAreaBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown12.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown12</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown12.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateOtherSeriesTypesBaseItem1.Name" xml:space="preserve">
+    <value>CreateOtherSeriesTypesBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateOtherSeriesTypesBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateOtherSeriesTypesBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown13.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown13</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown13.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartAppearanceBar1.Name" xml:space="preserve">
+    <value>ChartAppearanceBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartAppearanceBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartAppearanceBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChangePaletteGalleryBaseItem1.Name" xml:space="preserve">
+    <value>ChangePaletteGalleryBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;ChangePaletteGalleryBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChangePaletteGalleryBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown14.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown14</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown14.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChangeAppearanceGalleryBaseBarManagerItem1.Name" xml:space="preserve">
+    <value>ChangeAppearanceGalleryBaseBarManagerItem1</value>
+  </data>
+  <data name="&gt;&gt;ChangeAppearanceGalleryBaseBarManagerItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChangeAppearanceGalleryBaseBarManagerItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown15.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown15</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown15.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartDesignerBar1.Name" xml:space="preserve">
+    <value>ChartDesignerBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartDesignerBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartDesignerBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RunDesignerChartItem1.Name" xml:space="preserve">
+    <value>RunDesignerChartItem1</value>
+  </data>
+  <data name="&gt;&gt;RunDesignerChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.RunDesignerChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartTemplatesBar1.Name" xml:space="preserve">
+    <value>ChartTemplatesBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartTemplatesBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartTemplatesBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SaveAsTemplateChartItem1.Name" xml:space="preserve">
+    <value>SaveAsTemplateChartItem1</value>
+  </data>
+  <data name="&gt;&gt;SaveAsTemplateChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SaveAsTemplateChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LoadTemplateChartItem1.Name" xml:space="preserve">
+    <value>LoadTemplateChartItem1</value>
+  </data>
+  <data name="&gt;&gt;LoadTemplateChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.LoadTemplateChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartPrintExportBar1.Name" xml:space="preserve">
+    <value>ChartPrintExportBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartPrintExportBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartPrintExportBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PrintPreviewChartItem1.Name" xml:space="preserve">
+    <value>PrintPreviewChartItem1</value>
+  </data>
+  <data name="&gt;&gt;PrintPreviewChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.PrintPreviewChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;PrintChartItem1.Name" xml:space="preserve">
+    <value>PrintChartItem1</value>
+  </data>
+  <data name="&gt;&gt;PrintChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.PrintChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateExportBaseItem1.Name" xml:space="preserve">
+    <value>CreateExportBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateExportBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateExportBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToPDFChartItem1.Name" xml:space="preserve">
+    <value>ExportToPDFChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToPDFChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToPDFChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToHTMLChartItem1.Name" xml:space="preserve">
+    <value>ExportToHTMLChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToHTMLChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToHTMLChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToMHTChartItem1.Name" xml:space="preserve">
+    <value>ExportToMHTChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToMHTChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToMHTChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToXLSChartItem1.Name" xml:space="preserve">
+    <value>ExportToXLSChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToXLSChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToXLSChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToXLSXChartItem1.Name" xml:space="preserve">
+    <value>ExportToXLSXChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToXLSXChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToXLSXChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToRTFChartItem1.Name" xml:space="preserve">
+    <value>ExportToRTFChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToRTFChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToRTFChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CreateExportToImageBaseItem1.Name" xml:space="preserve">
+    <value>CreateExportToImageBaseItem1</value>
+  </data>
+  <data name="&gt;&gt;CreateExportToImageBaseItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.CreateExportToImageBaseItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToBMPChartItem1.Name" xml:space="preserve">
+    <value>ExportToBMPChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToBMPChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToBMPChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToGIFChartItem1.Name" xml:space="preserve">
+    <value>ExportToGIFChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToGIFChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToGIFChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToJPEGChartItem1.Name" xml:space="preserve">
+    <value>ExportToJPEGChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToJPEGChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToJPEGChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToPNGChartItem1.Name" xml:space="preserve">
+    <value>ExportToPNGChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToPNGChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToPNGChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ExportToTIFFChartItem1.Name" xml:space="preserve">
+    <value>ExportToTIFFChartItem1</value>
+  </data>
+  <data name="&gt;&gt;ExportToTIFFChartItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ExportToTIFFChartItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartFinancialSeriesBar1.Name" xml:space="preserve">
+    <value>ChartFinancialSeriesBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartFinancialSeriesBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartFinancialSeriesBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SelectSeriesBarItem1.Name" xml:space="preserve">
+    <value>SelectSeriesBarItem1</value>
+  </data>
+  <data name="&gt;&gt;SelectSeriesBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SelectSeriesBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SelectSeriesRepositoryItemComboBox1.Name" xml:space="preserve">
+    <value>SelectSeriesRepositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;SelectSeriesRepositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SelectSeriesRepositoryItemComboBox, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChangeSeriesViewBarItem1.Name" xml:space="preserve">
+    <value>ChangeSeriesViewBarItem1</value>
+  </data>
+  <data name="&gt;&gt;ChangeSeriesViewBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChangeSeriesViewBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChangeSeriesViewRepositoryItemComboBox1.Name" xml:space="preserve">
+    <value>ChangeSeriesViewRepositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;ChangeSeriesViewRepositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChangeSeriesViewRepositoryItemComboBox, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartFinancialIndicatorsBar1.Name" xml:space="preserve">
+    <value>ChartFinancialIndicatorsBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartFinancialIndicatorsBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartFinancialIndicatorsBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DrawTrendLineIndicatorBarItem1.Name" xml:space="preserve">
+    <value>DrawTrendLineIndicatorBarItem1</value>
+  </data>
+  <data name="&gt;&gt;DrawTrendLineIndicatorBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.DrawTrendLineIndicatorBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DrawFibonacciArcsIndicatorBarItem1.Name" xml:space="preserve">
+    <value>DrawFibonacciArcsIndicatorBarItem1</value>
+  </data>
+  <data name="&gt;&gt;DrawFibonacciArcsIndicatorBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.DrawFibonacciArcsIndicatorBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DrawFibonacciFansIndicatorBarItem1.Name" xml:space="preserve">
+    <value>DrawFibonacciFansIndicatorBarItem1</value>
+  </data>
+  <data name="&gt;&gt;DrawFibonacciFansIndicatorBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.DrawFibonacciFansIndicatorBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DrawFibonacciRetracementIndicatorBarItem1.Name" xml:space="preserve">
+    <value>DrawFibonacciRetracementIndicatorBarItem1</value>
+  </data>
+  <data name="&gt;&gt;DrawFibonacciRetracementIndicatorBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.DrawFibonacciRetracementIndicatorBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RemoveIndicatorBarItem1.Name" xml:space="preserve">
+    <value>RemoveIndicatorBarItem1</value>
+  </data>
+  <data name="&gt;&gt;RemoveIndicatorBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.RemoveIndicatorBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddIndicatorBarItem1.Name" xml:space="preserve">
+    <value>AddIndicatorBarItem1</value>
+  </data>
+  <data name="&gt;&gt;AddIndicatorBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.AddIndicatorBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown16.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown16</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown16.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartAnnotationsBar1.Name" xml:space="preserve">
+    <value>ChartAnnotationsBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartAnnotationsBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartAnnotationsBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddTextAnnotationBarItem1.Name" xml:space="preserve">
+    <value>AddTextAnnotationBarItem1</value>
+  </data>
+  <data name="&gt;&gt;AddTextAnnotationBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.AddTextAnnotationBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddImageAnnotationBarItem1.Name" xml:space="preserve">
+    <value>AddImageAnnotationBarItem1</value>
+  </data>
+  <data name="&gt;&gt;AddImageAnnotationBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.AddImageAnnotationBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartFinancialAxisBar1.Name" xml:space="preserve">
+    <value>ChartFinancialAxisBar1</value>
+  </data>
+  <data name="&gt;&gt;ChartFinancialAxisBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartFinancialAxisBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SelectAxisMeasureUnitBarItem1.Name" xml:space="preserve">
+    <value>SelectAxisMeasureUnitBarItem1</value>
+  </data>
+  <data name="&gt;&gt;SelectAxisMeasureUnitBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SelectAxisMeasureUnitBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SelectAxisMeasureUnitRepositoryItemComboBox1.Name" xml:space="preserve">
+    <value>SelectAxisMeasureUnitRepositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;SelectAxisMeasureUnitRepositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SelectAxisMeasureUnitRepositoryItemComboBox, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SelectPeriodBarItem1.Name" xml:space="preserve">
+    <value>SelectPeriodBarItem1</value>
+  </data>
+  <data name="&gt;&gt;SelectPeriodBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SelectPeriodBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SelectPeriodRepositoryItemComboBox1.Name" xml:space="preserve">
+    <value>SelectPeriodRepositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;SelectPeriodRepositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.SelectPeriodRepositoryItemComboBox, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChartAnnotationsBar2.Name" xml:space="preserve">
+    <value>ChartAnnotationsBar2</value>
+  </data>
+  <data name="&gt;&gt;ChartAnnotationsBar2.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.ChartAnnotationsBar, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddVerticalConstantLineBarItem1.Name" xml:space="preserve">
+    <value>AddVerticalConstantLineBarItem1</value>
+  </data>
+  <data name="&gt;&gt;AddVerticalConstantLineBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.AddVerticalConstantLineBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;AddHorizontalConstantLineBarItem1.Name" xml:space="preserve">
+    <value>AddHorizontalConstantLineBarItem1</value>
+  </data>
+  <data name="&gt;&gt;AddHorizontalConstantLineBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.UI.AddHorizontalConstantLineBarItem, DevExpress.XtraCharts.v24.1.UI, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Bar1.Name" xml:space="preserve">
+    <value>Bar1</value>
+  </data>
+  <data name="&gt;&gt;Bar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem1.Name" xml:space="preserve">
+    <value>BarSubItem1</value>
+  </data>
+  <data name="&gt;&gt;BarSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem1.Name" xml:space="preserve">
+    <value>BarButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown1.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown1</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown2.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown2</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown3.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown3</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown4.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown4</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown5.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown5</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown6.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown6</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown7.Name" xml:space="preserve">
+    <value>CommandBarGalleryDropDown7</value>
+  </data>
+  <data name="&gt;&gt;CommandBarGalleryDropDown7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Commands.CommandBarGalleryDropDown, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CheqsList</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <metadata name="ChartBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>359, 17</value>
+  </metadata>
+  <data name="CreateBarChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Column</value>
+  </data>
+  <data name="CreateBarChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories by using vertical rectangles.
+
+Use it when the order of categories is not important or for displaying item counts such as a histogram.</value>
+  </data>
+  <data name="CreateBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories by using vertical rectangles.
+
+Use it when the order of categories is not important or for displaying item counts such as a histogram.</value>
+  </data>
+  <data name="CreateFullStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Column</value>
+  </data>
+  <data name="CreateFullStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Compare the percentage that each value contributes to a total across categories by using vertical rectangles.
+
+Use it to emphasize the proportion of each data series.</value>
+  </data>
+  <data name="CreateFullStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare the percentage that each value contributes to a total across categories by using vertical rectangles.
+
+Use it to emphasize the proportion of each data series.</value>
+  </data>
+  <data name="CreateSideBySideFullStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>Clustered 100% Stacked Column</value>
+  </data>
+  <data name="CreateSideBySideFullStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Column and Clustered Column chart types, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateSideBySideFullStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Column and Clustered Column chart types, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateSideBySideStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Stacked Column</value>
+  </data>
+  <data name="CreateSideBySideStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Column and Clustered Column chart types, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateSideBySideStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Column and Clustered Column chart types, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Column</value>
+  </data>
+  <data name="CreateStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories by using vertical rectangles.
+
+Use it to emphasize the total across series for one category.</value>
+  </data>
+  <data name="CreateStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories by using vertical rectangles.
+
+Use it to emphasize the total across series for one category.</value>
+  </data>
+  <data name="CreateWaterfallChartItem2.Caption" xml:space="preserve">
+    <value>Waterfall</value>
+  </data>
+  <data name="CreateWaterfallChartItem2.Description" xml:space="preserve">
+    <value>A Waterfall chart displays a sequence of bars that indicate positive or negative changes.</value>
+  </data>
+  <data name="CreateWaterfallChartItem2.Hint" xml:space="preserve">
+    <value>A Waterfall chart displays a sequence of bars that indicate positive or negative changes.</value>
+  </data>
+  <data name="CreateBar3DChartItem2.Caption" xml:space="preserve">
+    <value>3-D Clustered Column</value>
+  </data>
+  <data name="CreateBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories and display clustered columns in 3-D format.</value>
+  </data>
+  <data name="CreateBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories and display clustered columns in 3-D format.</value>
+  </data>
+  <data name="CreateFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Column in 3-D</value>
+  </data>
+  <data name="CreateFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories and display 100% stacked columns in 3-D format.</value>
+  </data>
+  <data name="CreateFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories and display 100% stacked columns in 3-D format.</value>
+  </data>
+  <data name="CreateManhattanBarChartItem2.Caption" xml:space="preserve">
+    <value>3-D Column</value>
+  </data>
+  <data name="CreateManhattanBarChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories and across series on three axes.
+
+Use it when the categories and series are equally important.</value>
+  </data>
+  <data name="CreateManhattanBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories and across series on three axes.
+
+Use it when the categories and series are equally important.</value>
+  </data>
+  <data name="CreateSideBySideFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered 100% Stacked Column in 3-D</value>
+  </data>
+  <data name="CreateSideBySideFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Column and Clustered Column chart types in 3-D format, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateSideBySideFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Column and Clustered Column chart types in 3-D format, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateSideBySideStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Stacked Column in 3-D</value>
+  </data>
+  <data name="CreateSideBySideStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Column and Clustered Column chart types in 3-D format, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateSideBySideStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Column and Clustered Column chart types in 3-D format, so that you can stack different columns, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Column in 3-D</value>
+  </data>
+  <data name="CreateStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories and display stacked columns in 3-D format.</value>
+  </data>
+  <data name="CreateStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories and display stacked columns in 3-D format.</value>
+  </data>
+  <data name="CreateCylinderBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Cylinder</value>
+  </data>
+  <data name="CreateCylinderBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories.</value>
+  </data>
+  <data name="CreateCylinderBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories.</value>
+  </data>
+  <data name="CreateCylinderFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Cylinder</value>
+  </data>
+  <data name="CreateCylinderFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories.</value>
+  </data>
+  <data name="CreateCylinderFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories.</value>
+  </data>
+  <data name="CreateCylinderManhattanBarChartItem2.Caption" xml:space="preserve">
+    <value>3-D Cylinder</value>
+  </data>
+  <data name="CreateCylinderManhattanBarChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories and across series and display a cylinder chart on three axes.</value>
+  </data>
+  <data name="CreateCylinderManhattanBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories and across series and display a cylinder chart on three axes.</value>
+  </data>
+  <data name="CreateCylinderSideBySideFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered 100% Stacked Cylinder</value>
+  </data>
+  <data name="CreateCylinderSideBySideFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Cylinder and Clustered Cylinder chart types, so that you can stack different cylinders, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateCylinderSideBySideFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Cylinder and Clustered Cylinder chart types, so that you can stack different cylinders, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateCylinderSideBySideStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Stacked Cylinder</value>
+  </data>
+  <data name="CreateCylinderSideBySideStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Cylinder and Clustered Cylinder chart types, so that you can stack different cylinders, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateCylinderSideBySideStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Cylinder and Clustered Cylinder chart types, so that you can stack different cylinders, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateCylinderStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Cylinder</value>
+  </data>
+  <data name="CreateCylinderStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories.</value>
+  </data>
+  <data name="CreateCylinderStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories.</value>
+  </data>
+  <data name="CreateConeBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Cone</value>
+  </data>
+  <data name="CreateConeBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories.</value>
+  </data>
+  <data name="CreateConeBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories.</value>
+  </data>
+  <data name="CreateConeFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Cone</value>
+  </data>
+  <data name="CreateConeFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories.</value>
+  </data>
+  <data name="CreateConeFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories.</value>
+  </data>
+  <data name="CreateConeManhattanBarChartItem2.Caption" xml:space="preserve">
+    <value>3-D Cone</value>
+  </data>
+  <data name="CreateConeManhattanBarChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories and across series and display a cone chart on three axes.</value>
+  </data>
+  <data name="CreateConeManhattanBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories and across series and display a cone chart on three axes.</value>
+  </data>
+  <data name="CreateConeSideBySideFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered 100% Stacked Cone</value>
+  </data>
+  <data name="CreateConeSideBySideFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Cone and Clustered Cone chart types, so that you can stack different cones, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateConeSideBySideFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Cone and Clustered Cone chart types, so that you can stack different cones, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateConeSideBySideStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Stacked Cone</value>
+  </data>
+  <data name="CreateConeSideBySideStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Cone and Clustered Cone chart types, so that you can stack different cones, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateConeSideBySideStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Cone and Clustered Cone chart types, so that you can stack different cones, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateConeStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Cone</value>
+  </data>
+  <data name="CreateConeStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories.</value>
+  </data>
+  <data name="CreateConeStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories.</value>
+  </data>
+  <data name="CreatePyramidBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Pyramid</value>
+  </data>
+  <data name="CreatePyramidBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories.</value>
+  </data>
+  <data name="CreatePyramidBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories.</value>
+  </data>
+  <data name="CreatePyramidFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Pyramid</value>
+  </data>
+  <data name="CreatePyramidFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories.</value>
+  </data>
+  <data name="CreatePyramidFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the percentage each value contributes to a total across categories.</value>
+  </data>
+  <data name="CreatePyramidManhattanBarChartItem2.Caption" xml:space="preserve">
+    <value>3-D Pyramid</value>
+  </data>
+  <data name="CreatePyramidManhattanBarChartItem2.Description" xml:space="preserve">
+    <value>Compare values across categories and across series and display a pyramid chart on three axes.</value>
+  </data>
+  <data name="CreatePyramidManhattanBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare values across categories and across series and display a pyramid chart on three axes.</value>
+  </data>
+  <data name="CreatePyramidSideBySideFullStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered 100% Stacked Pyramid</value>
+  </data>
+  <data name="CreatePyramidSideBySideFullStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Pyramid and Clustered Pyramid chart types, so that you can stack different pyramids, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreatePyramidSideBySideFullStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Pyramid and Clustered Pyramid chart types, so that you can stack different pyramids, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreatePyramidSideBySideStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Stacked Pyramid</value>
+  </data>
+  <data name="CreatePyramidSideBySideStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Pyramid and Clustered Pyramid chart types, so that you can stack different pyramids, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreatePyramidSideBySideStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Pyramid and Clustered Pyramid chart types, so that you can stack different pyramids, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreatePyramidStackedBar3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Pyramid</value>
+  </data>
+  <data name="CreatePyramidStackedBar3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories.</value>
+  </data>
+  <data name="CreatePyramidStackedBar3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories.</value>
+  </data>
+  <data name="CreateLineChartItem2.Caption" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="CreateLineChartItem2.Description" xml:space="preserve">
+    <value>Displays trend overtime (dates, years) or ordered categories. Useful when there are many data points and the order is important.</value>
+  </data>
+  <data name="CreateLineChartItem2.Hint" xml:space="preserve">
+    <value>Displays trend overtime (dates, years) or ordered categories. Useful when there are many data points and the order is important.</value>
+  </data>
+  <data name="CreateFullStackedLineChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Line</value>
+  </data>
+  <data name="CreateFullStackedLineChartItem2.Description" xml:space="preserve">
+    <value>Displays the trend of the percentage each value contributes over time or ordered categories.</value>
+  </data>
+  <data name="CreateFullStackedLineChartItem2.Hint" xml:space="preserve">
+    <value>Displays the trend of the percentage each value contributes over time or ordered categories.</value>
+  </data>
+  <data name="CreateScatterLineChartItem2.Caption" xml:space="preserve">
+    <value>Scatter Line</value>
+  </data>
+  <data name="CreateScatterLineChartItem2.Description" xml:space="preserve">
+    <value>Displays series points in the same order as they appear in the collection.</value>
+  </data>
+  <data name="CreateScatterLineChartItem2.Hint" xml:space="preserve">
+    <value>Displays series points in the same order as they appear in the collection.</value>
+  </data>
+  <data name="CreateSplineChartItem2.Caption" xml:space="preserve">
+    <value>Spline</value>
+  </data>
+  <data name="CreateSplineChartItem2.Description" xml:space="preserve">
+    <value>Plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateSplineChartItem2.Hint" xml:space="preserve">
+    <value>Plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStackedLineChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Line</value>
+  </data>
+  <data name="CreateStackedLineChartItem2.Description" xml:space="preserve">
+    <value>Displays the trend of the contribution of each value over time or ordered categories.</value>
+  </data>
+  <data name="CreateStackedLineChartItem2.Hint" xml:space="preserve">
+    <value>Displays the trend of the contribution of each value over time or ordered categories.</value>
+  </data>
+  <data name="CreateStepLineChartItem2.Caption" xml:space="preserve">
+    <value>Step Line</value>
+  </data>
+  <data name="CreateStepLineChartItem2.Description" xml:space="preserve">
+    <value>Show to what extent values have changed for different points in the same series.</value>
+  </data>
+  <data name="CreateStepLineChartItem2.Hint" xml:space="preserve">
+    <value>Show to what extent values have changed for different points in the same series.</value>
+  </data>
+  <data name="CreateLine3DChartItem2.Caption" xml:space="preserve">
+    <value>3-D Line</value>
+  </data>
+  <data name="CreateLine3DChartItem2.Description" xml:space="preserve">
+    <value>Displays each row or column of data as a 3-D ribbon on three axes.</value>
+  </data>
+  <data name="CreateLine3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays each row or column of data as a 3-D ribbon on three axes.</value>
+  </data>
+  <data name="CreateFullStackedLine3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Line in 3-D</value>
+  </data>
+  <data name="CreateFullStackedLine3DChartItem2.Description" xml:space="preserve">
+    <value>Displays all series stacked and is useful when it is necessary to compare how much each series adds to the total aggregate value for specific arguments (as percents).</value>
+  </data>
+  <data name="CreateFullStackedLine3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays all series stacked and is useful when it is necessary to compare how much each series adds to the total aggregate value for specific arguments (as percents).</value>
+  </data>
+  <data name="CreateSpline3DChartItem2.Caption" xml:space="preserve">
+    <value>3-D Spline</value>
+  </data>
+  <data name="CreateSpline3DChartItem2.Description" xml:space="preserve">
+    <value>Plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateSpline3DChartItem2.Hint" xml:space="preserve">
+    <value>Plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStackedLine3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Line in 3-D</value>
+  </data>
+  <data name="CreateStackedLine3DChartItem2.Description" xml:space="preserve">
+    <value>Displays all points from different series in a stacked manner and is useful when it is necessary to compare how much each series adds to the total aggregate value for specific arguments.</value>
+  </data>
+  <data name="CreateStackedLine3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays all points from different series in a stacked manner and is useful when it is necessary to compare how much each series adds to the total aggregate value for specific arguments.</value>
+  </data>
+  <data name="CreateStepLine3DChartItem2.Caption" xml:space="preserve">
+    <value>Step Line in 3-D</value>
+  </data>
+  <data name="CreateStepLine3DChartItem2.Description" xml:space="preserve">
+    <value>Show to what extent values have changed for different points in the same series.</value>
+  </data>
+  <data name="CreateStepLine3DChartItem2.Hint" xml:space="preserve">
+    <value>Show to what extent values have changed for different points in the same series.</value>
+  </data>
+  <data name="CreatePieChartItem2.Caption" xml:space="preserve">
+    <value>Pie</value>
+  </data>
+  <data name="CreatePieChartItem2.Description" xml:space="preserve">
+    <value>Displays the contribution of each value to a total.
+
+Use it when the values can be added together or when you have only one data series and all values are positive.</value>
+  </data>
+  <data name="CreatePieChartItem2.Hint" xml:space="preserve">
+    <value>Displays the contribution of each value to a total.
+
+Use it when the values can be added together or when you have only one data series and all values are positive.</value>
+  </data>
+  <data name="CreateDoughnutChartItem2.Caption" xml:space="preserve">
+    <value>Doughnut</value>
+  </data>
+  <data name="CreateDoughnutChartItem2.Description" xml:space="preserve">
+    <value>Displays the contribution of each value to a total like a pie chart, but it can contain multiple series.</value>
+  </data>
+  <data name="CreateDoughnutChartItem2.Hint" xml:space="preserve">
+    <value>Displays the contribution of each value to a total like a pie chart, but it can contain multiple series.</value>
+  </data>
+  <data name="CreateNestedDoughnutChartItem2.Caption" xml:space="preserve">
+    <value>Nested Doughnut</value>
+  </data>
+  <data name="CreateNestedDoughnutChartItem2.Description" xml:space="preserve">
+    <value>Displays the contribution of each value to a total while comparing series with one doughnut nested in another one.</value>
+  </data>
+  <data name="CreateNestedDoughnutChartItem2.Hint" xml:space="preserve">
+    <value>Displays the contribution of each value to a total while comparing series with one doughnut nested in another one.</value>
+  </data>
+  <data name="CreatePie3DChartItem2.Caption" xml:space="preserve">
+    <value>Pie in 3-D</value>
+  </data>
+  <data name="CreatePie3DChartItem2.Description" xml:space="preserve">
+    <value>Displays the contribution of each value to a total.</value>
+  </data>
+  <data name="CreatePie3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays the contribution of each value to a total.</value>
+  </data>
+  <data name="CreateDoughnut3DChartItem2.Caption" xml:space="preserve">
+    <value>Doughnut in 3-D</value>
+  </data>
+  <data name="CreateDoughnut3DChartItem2.Description" xml:space="preserve">
+    <value>Compare the percentage values of different point arguments in the same series, and illustrate these values as easy to understand pie slices, but with a hole in its center.</value>
+  </data>
+  <data name="CreateDoughnut3DChartItem2.Hint" xml:space="preserve">
+    <value>Compare the percentage values of different point arguments in the same series, and illustrate these values as easy to understand pie slices, but with a hole in its center.</value>
+  </data>
+  <data name="CreateRotatedBarChartItem2.Caption" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="CreateRotatedBarChartItem2.Description" xml:space="preserve">
+    <value>Insert a bar chart.
+
+Bar charts are the best chart type for comparing multiple values.</value>
+  </data>
+  <data name="CreateRotatedBarChartItem2.Hint" xml:space="preserve">
+    <value>Insert a bar chart.
+
+Bar charts are the best chart type for comparing multiple values.</value>
+  </data>
+  <data name="CreateRotatedFullStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Bar</value>
+  </data>
+  <data name="CreateRotatedFullStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Displays horizontal rectangles to compare the percentage each value contributes to a total across categories.
+
+Use it when the series point values contain durations or when the category text is long.</value>
+  </data>
+  <data name="CreateRotatedFullStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Displays horizontal rectangles to compare the percentage each value contributes to a total across categories.
+
+Use it when the series point values contain durations or when the category text is long.</value>
+  </data>
+  <data name="CreateRotatedSideBySideFullStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>Clustered 100% Stacked Bar</value>
+  </data>
+  <data name="CreateRotatedSideBySideFullStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Bar and Clustered Bar chart types, so you can stack different bars, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateRotatedSideBySideFullStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the 100% Stacked Bar and Clustered Bar chart types, so you can stack different bars, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateRotatedSideBySideStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Stacked Bar</value>
+  </data>
+  <data name="CreateRotatedSideBySideStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Bar and Clustered Bar chart types, so that you can stack different bars, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateRotatedSideBySideStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Combine the advantages of both the Stacked Bar and Clustered Bar chart types, so that you can stack different bars, and combine them into groups across the same axis value.</value>
+  </data>
+  <data name="CreateRotatedStackedBarChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Bar</value>
+  </data>
+  <data name="CreateRotatedStackedBarChartItem2.Description" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories by using horizontal rectangles.</value>
+  </data>
+  <data name="CreateRotatedStackedBarChartItem2.Hint" xml:space="preserve">
+    <value>Compare the contribution of each value to a total across categories by using horizontal rectangles.</value>
+  </data>
+  <data name="CreateAreaChartItem2.Caption" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="CreateAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays the trend of values over time or categories.</value>
+  </data>
+  <data name="CreateAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays the trend of values over time or categories.</value>
+  </data>
+  <data name="CreateFullStackedAreaChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Area</value>
+  </data>
+  <data name="CreateFullStackedAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays the trend of the percentage each value contributes over time or categories.
+
+Use it to emphasize the trend in the proportion of each series.</value>
+  </data>
+  <data name="CreateFullStackedAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays the trend of the percentage each value contributes over time or categories.
+
+Use it to emphasize the trend in the proportion of each series.</value>
+  </data>
+  <data name="CreateFullStackedSplineAreaChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Spline Area</value>
+  </data>
+  <data name="CreateFullStackedSplineAreaChartItem2.Description" xml:space="preserve">
+    <value>Behave similar to 100% Stacked Area, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateFullStackedSplineAreaChartItem2.Hint" xml:space="preserve">
+    <value>Behave similar to 100% Stacked Area, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateFullStackedStepAreaChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Step Area</value>
+  </data>
+  <data name="CreateFullStackedStepAreaChartItem2.Description" xml:space="preserve">
+    <value>Behaves similarly to the 100% Stacked Area Chart but connects data points using horizontal and vertical lines.</value>
+  </data>
+  <data name="CreateFullStackedStepAreaChartItem2.Hint" xml:space="preserve">
+    <value>Behaves similarly to the 100% Stacked Area Chart but connects data points using horizontal and vertical lines.</value>
+  </data>
+  <data name="CreateSplineAreaChartItem2.Caption" xml:space="preserve">
+    <value>Spline Area</value>
+  </data>
+  <data name="CreateSplineAreaChartItem2.Description" xml:space="preserve">
+    <value>Behave similar to Area Chart but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateSplineAreaChartItem2.Hint" xml:space="preserve">
+    <value>Behave similar to Area Chart but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStackedAreaChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Area</value>
+  </data>
+  <data name="CreateStackedAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays the trend of the contribution of each value over time or categories.
+
+Use it to emphasize the trend in the total across series for one category.</value>
+  </data>
+  <data name="CreateStackedAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays the trend of the contribution of each value over time or categories.
+
+Use it to emphasize the trend in the total across series for one category.</value>
+  </data>
+  <data name="CreateStackedStepAreaChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Step Area</value>
+  </data>
+  <data name="CreateStackedStepAreaChartItem2.Description" xml:space="preserve">
+    <value>Behaves similarly to the Stacked Area Chart but connects data points using horizontal and vertical lines.</value>
+  </data>
+  <data name="CreateStackedStepAreaChartItem2.Hint" xml:space="preserve">
+    <value>Behaves similarly to the Stacked Area Chart but connects data points using horizontal and vertical lines.</value>
+  </data>
+  <data name="CreateStackedSplineAreaChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Spline Area</value>
+  </data>
+  <data name="CreateStackedSplineAreaChartItem2.Description" xml:space="preserve">
+    <value>Behave similar to Stacked Area Chart but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStackedSplineAreaChartItem2.Hint" xml:space="preserve">
+    <value>Behave similar to Stacked Area Chart but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStepAreaChartItem2.Caption" xml:space="preserve">
+    <value>Step Area</value>
+  </data>
+  <data name="CreateStepAreaChartItem2.Description" xml:space="preserve">
+    <value>Show how much values have changed for different points of the same series.</value>
+  </data>
+  <data name="CreateStepAreaChartItem2.Hint" xml:space="preserve">
+    <value>Show how much values have changed for different points of the same series.</value>
+  </data>
+  <data name="CreateArea3DChartItem2.Caption" xml:space="preserve">
+    <value>3-D Area</value>
+  </data>
+  <data name="CreateArea3DChartItem2.Description" xml:space="preserve">
+    <value>Displays data as filled areas on a diagram, with each data point displayed as a peak or hollow in the area.
+
+Use it when you need to show trends for several series on the same diagram, and also show the relationship of the parts to the whole.</value>
+  </data>
+  <data name="CreateArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays data as filled areas on a diagram, with each data point displayed as a peak or hollow in the area.
+
+Use it when you need to show trends for several series on the same diagram, and also show the relationship of the parts to the whole.</value>
+  </data>
+  <data name="CreateFullStackedArea3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Area in 3-D</value>
+  </data>
+  <data name="CreateFullStackedArea3DChartItem2.Description" xml:space="preserve">
+    <value>Displays data as areas on a diagram, so that the value of each data point is stacked with all the other corresponding data points' values.
+
+Use it for comparing the percentage values of several series for the same point arguments.</value>
+  </data>
+  <data name="CreateFullStackedArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays data as areas on a diagram, so that the value of each data point is stacked with all the other corresponding data points' values.
+
+Use it for comparing the percentage values of several series for the same point arguments.</value>
+  </data>
+  <data name="CreateFullStackedSplineArea3DChartItem2.Caption" xml:space="preserve">
+    <value>100% Stacked Spline Area in 3-D</value>
+  </data>
+  <data name="CreateFullStackedSplineArea3DChartItem2.Description" xml:space="preserve">
+    <value>Behave similar to 100% Stacked Area Chart in 3D, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateFullStackedSplineArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Behave similar to 100% Stacked Area Chart in 3D, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateSplineArea3DChartItem2.Caption" xml:space="preserve">
+    <value>Spline Area in 3-D</value>
+  </data>
+  <data name="CreateSplineArea3DChartItem2.Description" xml:space="preserve">
+    <value>Behave similar to 3D Area Chart, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateSplineArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Behave similar to 3D Area Chart, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStackedArea3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Area in 3-D</value>
+  </data>
+  <data name="CreateStackedArea3DChartItem2.Description" xml:space="preserve">
+    <value>Displays series as areas on a diagram, so that the value of each data point is aggregated with the underlying data points' values.</value>
+  </data>
+  <data name="CreateStackedArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays series as areas on a diagram, so that the value of each data point is aggregated with the underlying data points' values.</value>
+  </data>
+  <data name="CreateStackedSplineArea3DChartItem2.Caption" xml:space="preserve">
+    <value>Stacked Spline Area in 3-D</value>
+  </data>
+  <data name="CreateStackedSplineArea3DChartItem2.Description" xml:space="preserve">
+    <value>Behave similar to Stacked Area in 3D chart, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStackedSplineArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Behave similar to Stacked Area in 3D chart, but plot a fitted curve through each data point in a series.</value>
+  </data>
+  <data name="CreateStepArea3DChartItem2.Caption" xml:space="preserve">
+    <value>Step Area in 3-D</value>
+  </data>
+  <data name="CreateStepArea3DChartItem2.Description" xml:space="preserve">
+    <value>Show to what extent values have changed for different points in the same series.</value>
+  </data>
+  <data name="CreateStepArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Show to what extent values have changed for different points in the same series.</value>
+  </data>
+  <data name="CreatePointChartItem2.Caption" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="CreatePointChartItem2.Description" xml:space="preserve">
+    <value>Use it when it's necessary to show stand-alone data points on the same chart plot.</value>
+  </data>
+  <data name="CreatePointChartItem2.Hint" xml:space="preserve">
+    <value>Use it when it's necessary to show stand-alone data points on the same chart plot.</value>
+  </data>
+  <data name="CreateBubbleChartItem2.Caption" xml:space="preserve">
+    <value>Bubble</value>
+  </data>
+  <data name="CreateBubbleChartItem2.Description" xml:space="preserve">
+    <value>Resemble a Scatter chart, but compare sets of three values instead of two. The third value determines the size of the bubble marker.</value>
+  </data>
+  <data name="CreateBubbleChartItem2.Hint" xml:space="preserve">
+    <value>Resemble a Scatter chart, but compare sets of three values instead of two. The third value determines the size of the bubble marker.</value>
+  </data>
+  <data name="CreateFunnelChartItem2.Caption" xml:space="preserve">
+    <value>Funnel</value>
+  </data>
+  <data name="CreateFunnelChartItem2.Description" xml:space="preserve">
+    <value>Displays a wide area that indicates the total point value at the top. Other areas are proportionally smaller.
+
+Use it to display stages in a sales process, show the amount of potential revenue for each stage, or identify potential problem areas in an organization's sales processes.</value>
+  </data>
+  <data name="CreateFunnelChartItem2.Hint" xml:space="preserve">
+    <value>Displays a wide area that indicates the total point value at the top. Other areas are proportionally smaller.
+
+Use it to display stages in a sales process, show the amount of potential revenue for each stage, or identify potential problem areas in an organization's sales processes.</value>
+  </data>
+  <data name="CreateFunnel3DChartItem2.Caption" xml:space="preserve">
+    <value>3-D Funnel</value>
+  </data>
+  <data name="CreateFunnel3DChartItem2.Description" xml:space="preserve">
+    <value>Displays a wide area at the top, indicating the total points' value, while other areas are proportionally smaller.
+
+Use it when it is necessary to represent stages in a sales process, show the amount of potential revenue for each stage, as well as identify potential problem areas in an organization's sales processes.</value>
+  </data>
+  <data name="CreateFunnel3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays a wide area at the top, indicating the total points' value, while other areas are proportionally smaller.
+
+Use it when it is necessary to represent stages in a sales process, show the amount of potential revenue for each stage, as well as identify potential problem areas in an organization's sales processes.</value>
+  </data>
+  <data name="CreateStockChartItem2.Caption" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="CreateStockChartItem2.Description" xml:space="preserve">
+    <value>Show variation in stock prices over the course of a day. The Open and Close prices are represented by left and right lines on each point, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
+  <data name="CreateStockChartItem2.Hint" xml:space="preserve">
+    <value>Show variation in stock prices over the course of a day. The Open and Close prices are represented by left and right lines on each point, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
+  <data name="CreateCandleStickChartItem2.Caption" xml:space="preserve">
+    <value>Candle Stick</value>
+  </data>
+  <data name="CreateCandleStickChartItem2.Description" xml:space="preserve">
+    <value>Show the variation in the price of stock over the course of a day. The Open and Close prices are represented by a filled rectangle, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
+  <data name="CreateCandleStickChartItem2.Hint" xml:space="preserve">
+    <value>Show the variation in the price of stock over the course of a day. The Open and Close prices are represented by a filled rectangle, and the Low and High prices are represented by the bottom and top values of the vertical line which is shown at each point.</value>
+  </data>
+  <data name="CreateRadarPointChartItem2.Caption" xml:space="preserve">
+    <value>Radar Point</value>
+  </data>
+  <data name="CreateRadarPointChartItem2.Description" xml:space="preserve">
+    <value>Show points from two or more different series on the same points arguments on a circular grid that has multiple axes along which data can be plotted.</value>
+  </data>
+  <data name="CreateRadarPointChartItem2.Hint" xml:space="preserve">
+    <value>Show points from two or more different series on the same points arguments on a circular grid that has multiple axes along which data can be plotted.</value>
+  </data>
+  <data name="CreateRadarLineChartItem2.Caption" xml:space="preserve">
+    <value>Radar Line</value>
+  </data>
+  <data name="CreateRadarLineChartItem2.Description" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same points arguments on a circular grid that has multiple axes along which data can be plotted.</value>
+  </data>
+  <data name="CreateRadarLineChartItem2.Hint" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same points arguments on a circular grid that has multiple axes along which data can be plotted.</value>
+  </data>
+  <data name="CreateRadarAreaChartItem2.Caption" xml:space="preserve">
+    <value>Radar Area</value>
+  </data>
+  <data name="CreateRadarAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays series as filled area on a circular grid that has multiple axes along which data can be plotted.</value>
+  </data>
+  <data name="CreateRadarAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays series as filled area on a circular grid that has multiple axes along which data can be plotted.</value>
+  </data>
+  <data name="CreateRadarRangeAreaChartItem2.Caption" xml:space="preserve">
+    <value>Radar Range Area</value>
+  </data>
+  <data name="CreateRadarRangeAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays series on a circular diagram on the basis of angles as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateRadarRangeAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays series on a circular diagram on the basis of angles as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateScatterRadarLineChartItem2.Caption" xml:space="preserve">
+    <value>Scatter Radar Line</value>
+  </data>
+  <data name="CreateScatterRadarLineChartItem2.Description" xml:space="preserve">
+    <value>Displays data as a line on a circular grid that has multiple axis along which data can be plotted. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
+  </data>
+  <data name="CreateScatterRadarLineChartItem2.Hint" xml:space="preserve">
+    <value>Displays data as a line on a circular grid that has multiple axis along which data can be plotted. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
+  </data>
+  <data name="CreatePolarPointChartItem2.Caption" xml:space="preserve">
+    <value>Polar Point</value>
+  </data>
+  <data name="CreatePolarPointChartItem2.Description" xml:space="preserve">
+    <value>Show points from two or more different series on the same circular diagram on the basis of angles.</value>
+  </data>
+  <data name="CreatePolarPointChartItem2.Hint" xml:space="preserve">
+    <value>Show points from two or more different series on the same circular diagram on the basis of angles.</value>
+  </data>
+  <data name="CreatePolarLineChartItem2.Caption" xml:space="preserve">
+    <value>Polar Line</value>
+  </data>
+  <data name="CreatePolarLineChartItem2.Description" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same points arguments on a circular diagram on the basis of angles.</value>
+  </data>
+  <data name="CreatePolarLineChartItem2.Hint" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same points arguments on a circular diagram on the basis of angles.</value>
+  </data>
+  <data name="CreatePolarAreaChartItem2.Caption" xml:space="preserve">
+    <value>Polar Area</value>
+  </data>
+  <data name="CreatePolarAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays series as filled area on a circular diagram on the basis of angles.</value>
+  </data>
+  <data name="CreatePolarAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays series as filled area on a circular diagram on the basis of angles.</value>
+  </data>
+  <data name="CreatePolarRangeAreaChartItem2.Caption" xml:space="preserve">
+    <value>Polar Range Area</value>
+  </data>
+  <data name="CreatePolarRangeAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays series on a circular diagram as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreatePolarRangeAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays series on a circular diagram as filled areas, defined by data points with two values that are minimum and maximum limits. Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateScatterPolarLineChartItem2.Caption" xml:space="preserve">
+    <value>Scatter Polar Line</value>
+  </data>
+  <data name="CreateScatterPolarLineChartItem2.Description" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same point arguments on a circular diagram on the basis of angles. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
+  </data>
+  <data name="CreateScatterPolarLineChartItem2.Hint" xml:space="preserve">
+    <value>Show trends for several series and compare their values for the same point arguments on a circular diagram on the basis of angles. The series points are drawn in the circular grid in the same order that they have in the series point collection.</value>
+  </data>
+  <data name="CreateRangeBarChartItem2.Caption" xml:space="preserve">
+    <value>Range Column</value>
+  </data>
+  <data name="CreateRangeBarChartItem2.Description" xml:space="preserve">
+    <value>Displays vertical columns along the Y-axis (the axis of values). Each column represents a range of data for each argument value.</value>
+  </data>
+  <data name="CreateRangeBarChartItem2.Hint" xml:space="preserve">
+    <value>Displays vertical columns along the Y-axis (the axis of values). Each column represents a range of data for each argument value.</value>
+  </data>
+  <data name="CreateSideBySideRangeBarChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Range Column</value>
+  </data>
+  <data name="CreateSideBySideRangeBarChartItem2.Description" xml:space="preserve">
+    <value>Show activity columns from different series grouped by their arguments. Each column represents a range of data with two values for each argument value.</value>
+  </data>
+  <data name="CreateSideBySideRangeBarChartItem2.Hint" xml:space="preserve">
+    <value>Show activity columns from different series grouped by their arguments. Each column represents a range of data with two values for each argument value.</value>
+  </data>
+  <data name="CreateRangeAreaChartItem2.Caption" xml:space="preserve">
+    <value>Range Area</value>
+  </data>
+  <data name="CreateRangeAreaChartItem2.Description" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateRangeAreaChartItem2.Hint" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateRangeArea3DChartItem2.Caption" xml:space="preserve">
+    <value>Range Area in 3-D</value>
+  </data>
+  <data name="CreateRangeArea3DChartItem2.Description" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateRangeArea3DChartItem2.Hint" xml:space="preserve">
+    <value>Displays series as filled areas on a diagram, defined by data points with two values that are minimum and maximum limits.
+
+Use it when you need to accentuate the delta between the start and end values.</value>
+  </data>
+  <data name="CreateGanttChartItem2.Caption" xml:space="preserve">
+    <value>Gantt</value>
+  </data>
+  <data name="CreateGanttChartItem2.Description" xml:space="preserve">
+    <value>Track different activities during the time frame.</value>
+  </data>
+  <data name="CreateGanttChartItem2.Hint" xml:space="preserve">
+    <value>Track different activities during the time frame.</value>
+  </data>
+  <data name="CreateSideBySideGanttChartItem2.Caption" xml:space="preserve">
+    <value>Clustered Gantt</value>
+  </data>
+  <data name="CreateSideBySideGanttChartItem2.Description" xml:space="preserve">
+    <value>Displays horizontal bars along the time axis. Each bar represents a separate event with the start and end values, hence these charts are used to track different activities during the time frame.
+
+Use it when it's necessary to show activity bars from different series one above another, to compare their duration.</value>
+  </data>
+  <data name="CreateSideBySideGanttChartItem2.Hint" xml:space="preserve">
+    <value>Displays horizontal bars along the time axis. Each bar represents a separate event with the start and end values, hence these charts are used to track different activities during the time frame.
+
+Use it when it's necessary to show activity bars from different series one above another, to compare their duration.</value>
+  </data>
+  <data name="CreateBoxPlotChartItem2.Caption" xml:space="preserve">
+    <value>BoxPlot</value>
+  </data>
+  <data name="CreateBoxPlotChartItem2.Description" xml:space="preserve">
+    <value>The Box Plot  chart is used to analyze statistic-driven data points. To draw a Box Plot point, pass the Min, Quartile1, Median, Quartile3, and Max parameters. You can also display a set of Outliers and a Mean value.</value>
+  </data>
+  <data name="CreateBoxPlotChartItem2.Hint" xml:space="preserve">
+    <value>The Box Plot  chart is used to analyze statistic-driven data points. To draw a Box Plot point, pass the Min, Quartile1, Median, Quartile3, and Max parameters. You can also display a set of Outliers and a Mean value.</value>
+  </data>
+</root>

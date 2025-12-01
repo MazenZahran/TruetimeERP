@@ -1,0 +1,73 @@
+use [Truetime]
+select EmployeeID 
+Into   #@Temp1 from EmployeesData where EmployeeID <> 1
+select * from #@Temp1
+declare @EmpID int
+
+while exists (select * from #@Temp1)
+begin
+    select top 1 @EmpID = EmployeeID
+    from #@Temp1
+    order by EmployeeID asc
+
+  Insert into [AttPlaneForPeriod] ( [AttTransDate],[PlaneID],[EmpID],[StartTime],[EndTime],[Location],[Notes],[LateMinutes],[EarlyMinutes],[ShiftRest],[BonusBefore],[BonusAfter],[InputDateTime])
+  Select [AttTransDate],[PlaneID],@EmpID,[StartTime],
+		 [EndTime],[Location],[Notes],[LateMinutes],[EarlyMinutes],
+		 [ShiftRest],[BonusBefore],[BonusAfter],[InputDateTime] 
+  FROM   [dbo].[AttPlaneForPeriod] 
+  where [EmpID]=1
+
+
+    delete #@Temp1
+    where EmployeeID = @EmpID
+end
+drop table #@Temp1
+
+
+
+
+
+
+
+فحص الموظفين الذين لا يوجد لهم وردية
+SELECT EmployeeID,EmployeeName
+FROM EmployeesData
+WHERE Active = 1  And ProcessType=1  and NOT EXISTS (
+SELECT 1
+EmpID From [To-Me].[dbo].[AttPlaneForPeriod]
+WHERE [AttPlaneForPeriod].EmpID = EmployeesData.EmployeeID 
+);
+
+
+
+
+
+
+
+
+
+Declare @BaseEmplID int
+Set @BaseEmplID=211
+
+select EmployeeID 
+Into   #@Temp1 from EmployeesData where EmployeeID in (220,223,203,210,226,230,234,241,221,247,248,250,229,254,412,256,258,259) And EmployeeID <> @BaseEmplID
+
+declare @EmpID int
+
+while exists (select * from #@Temp1)
+begin
+  select top 1 @EmpID = EmployeeID    from #@Temp1    order by EmployeeID asc
+
+  Delete From [dbo].[AttPlaneForPeriod]  Where EmpID=@EmpID 
+  Insert into [AttPlaneForPeriod] ( [AttTransDate],[PlaneID],[EmpID],[StartTime],[EndTime],[Location],[Notes],[LateMinutes],[EarlyMinutes],[ShiftRest],[BonusBefore],[BonusAfter],[InputDateTime])
+  Select [AttTransDate],[PlaneID],@EmpID,[StartTime],
+		 [EndTime],[Location],[Notes],[LateMinutes],[EarlyMinutes],
+		 [ShiftRest],[BonusBefore],[BonusAfter],[InputDateTime] 
+  FROM   [dbo].[AttPlaneForPeriod] 
+  where [EmpID]=@BaseEmplID
+
+
+    delete #@Temp1
+    where EmployeeID = @EmpID
+end
+drop table #@Temp1

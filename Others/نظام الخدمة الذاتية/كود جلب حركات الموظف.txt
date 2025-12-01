@@ -1,0 +1,31 @@
+
+-- كود عرض حركات الدوام للموظف 
+DROP TABLE IF EXISTS #TempDates;
+Declare @UserID int =  2
+DECLARE @StartDate DATE = '2023-05-01';
+DECLARE @EndDate DATE = '2023-05-04';
+
+Declare @In datetime ; Declare @Out datetime
+CREATE TABLE #TempDates ([Date] DATE,[UserID] int,[In] datetime,[Out] datetime);
+WITH DateRange AS
+(
+    SELECT @StartDate AS [Date]
+    UNION ALL
+    SELECT DATEADD(day, 1, [Date])
+    FROM DateRange
+    WHERE [Date] < @EndDate
+)
+INSERT INTO #TempDates ([Date],[UserID],[In],[Out])
+SELECT [Date],@UserID,
+	(select top(1) CHECKTIME  from AttCHECKINOUT A where USERID=@UserID and A.[CHECKTYPE]='I' COLLATE Latin1_General_CS_AS  and Convert(Date,A.CHECKTIME) =  [Date]   order by CHECKTIME  ),
+	(select top(1) CHECKTIME  from AttCHECKINOUT A where USERID=@UserID and A.[CHECKTYPE]='O' COLLATE Latin1_General_CS_AS  and A.CHECKTIME between dateadd(HOUR,0,convert(datetime,[Date])) and dateadd(HOUR,30,convert(datetime,[Date])) order by CHECKTIME desc ) 
+FROM DateRange;
+SELECT [Date],[UserID],[In],[Out],
+FORMAT(DATEADD(MINUTE,DATEDIFF(MINUTE, [In], [Out]), '00:00'), 'HH:mm') AS TimeSpan
+FROM #TempDates;
+
+SELECT FORMAT(
+    DATEADD(MINUTE, SUM(DATEDIFF(MINUTE, [In], [Out])), '00:00'),
+    'HH:mm'
+) AS TotalTime
+FROM #TempDates

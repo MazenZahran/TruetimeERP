@@ -1,0 +1,513 @@
+
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (27, N'27', N'البنك الوطني')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (37, N'37', N'بنك الاردن')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (43, N'43', N'البنك الاهلي الاردني')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (49, N'49', N'البنك العربي')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (66, N'66', N'بنك القاهرة عمان')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (67, N'67', N'البنك العقاري المصري')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (71, N'71', N'البنك التجاري الاردني ')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (73, N'73', N'البنك الاسلامي العربي')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (76, N'76', N'بنك الاستثمار الفلسطيني')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (78, N'78', N'مصرف الصفا')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (81, N'81', N'البنك الاسلامي الفلسطيني')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (82, N'82', N'بنك القدس ')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (84, N'84', N'بنك الاسكان للتجارة والتمويل')
+GO
+INSERT [dbo].[Bank] ([ID], [BankNo], [BankName]) VALUES (89, N'89', N'بنك فلسطين')
+GO
+SET IDENTITY_INSERT [dbo].[BankBranche] ON 
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (1, N'444', N'Bethlehem بيت لحم ', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (2, N'423', N'جنين Jenin', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (3, N'445', N'قلقيلية  Qalqilia', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (4, N'442', N'الخليل Hebron', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (5, N'446', N'Yatta يطا', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (6, N'455', N'دروا Dura', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (7, N'449', N'الحرس Haras', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (8, N'448', N'Bethany العيزرية', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (9, N'424', N'البيرة  Al-Bireh', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (10, N'454', N'بيتونيا  Beitunia', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (11, N'456', N'الماصيون Al-Masyoun ', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (12, N'447', N'رام الله Ramallah', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (13, N'422', N'طولكرم  Tulkarm', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (14, N'451', N'Attil عتيل', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (15, N'441', N'خانيونس khan Younis', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (16, N'452', N'النصيرات Nussirat', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (17, N'453', N'الرمال   AL-Remal ', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (18, N'421', N'غزة  Gaza', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (19, N'443', N'نابلس  Nablus', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (20, N'450', N'نابلس شارع فيصل Nablus Faysal Street', 73)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (21, N'428', N'بيت جالا Beit Jala ', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (22, N'484', N'Bethlehem بيت لحم ', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (23, N'473', N'جنين Jenin', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (24, N'488', N'شارع حيفا Haifa Street', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (25, N'480', N'قلقيلية  Qalqilia', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (26, N'430', N'Salfeet  سلفيت ', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (27, N'478', N'اريحا  Jericho', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (28, N'472', N'الخليل Hebron', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (29, N'482', N'Ras Al Jura راس الجورة', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (30, N'426', N'Bethany العيزرية', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (31, N'429', N'رام الله Ramallah', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (32, N'474', N'الماصيون Al-Masyoun ', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (33, N'475', N'البيرة  Al-Bireh', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (34, N'487', N'البيرة البلد Al-Bireh Al-balad', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (35, N'470', N'طوباس Tubas', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (36, N'471', N'Attil عتيل', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (37, N'477', N'طولكرم  Tulkarm', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (38, N'485', N'Jabalia جباليا', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (39, N'481', N'خانيونس khan Younis', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (40, N'486', N'رفح Rafah', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (41, N'479', N'الرمال   AL-Remal ', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (42, N'483', N'النصيرات Nussirat', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (43, N'425', N'غزة  Gaza', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (44, N'427', N'نابلس  Nablus', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (45, N'476', N'رفيديا Rafidiya', 82)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (46, N'853', N'Bethlehem بيت لحم ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (47, N'866', N'الخضر Al-Khader', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (48, N'883', N'بيت جالا Beit Jala ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (49, N'854', N'Jenin  جنين ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (50, N'876', N'قباطية Qabatiya', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (51, N'856', N'قلقيلية  Qalqilia', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (52, N'872', N' بديا Bedia ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (53, N'873', N'Salfit  سلفيت ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (54, N'879', N'اريحا  Jericho', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (55, N'858', N'الخليل Hebron', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (56, N'867', N'الشلالة   Al Shallala ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (57, N'868', N'دورا  Dura', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (58, N'882', N'Ein Sara عين سارة', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (59, N'886', N'يطا  Yatta', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (60, N'861', N'الرام Al Ram', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (61, N'862', N'Bethany العيزرية', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (62, N'885', N'Bedo بدو', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (63, N'852', N'البيرة  Al-Bireh', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (64, N'857', N'الماصيون  Al-Masyoun ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (65, N'863', N'بيرزيت Birziet', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (66, N'864', N'البلد Al Balad ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (67, N'865', N'Al-Manara المنارة', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (68, N'875', N'الارسال  Al-Irsal', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (69, N'887', N'Lakasa Mall لاكاسا مول', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (70, N'884', N'بيتونيا  Beitunia', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (71, N'874', N'طوباس Tubas', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (72, N'855', N'طولكرم  Tulkarm', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (73, N'871', N'طولكرم البلد Tulkarem Al-Balad ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (74, N'859', N'خانيونس Khanyonis', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (75, N'878', N'الرمال  Al Rimal', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (76, N'880', N'غزة  Gaza', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (77, N'851', N'نابلس  Nablus', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (78, N'869', N'عسكرAskar   ', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (79, N'870', N'رفيديا Rafidiya', 49)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (80, N'881', N'Bethlehem بيت لحم ', 67)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (81, N'885', N'رام الله Ramallah', 67)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (82, N'884', N'البيرة  Al-Bireh', 67)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (83, N'888', N'غزة  Gaza', 67)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (84, N'882', N'نابلس   Nablus', 67)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (85, N'828', N'بيت لحم Bethlehem', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (86, N'823', N'Jenin  جنين ', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (87, N'831', N'قباطية Qabatiya', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (88, N'830', N'عرابة Arabba', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (89, N'824', N'الخليل Hebron', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (90, N'834', N'ضاحية البريد Daheyat Al-Bareed', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (91, N'825', N'الرام Al Ram', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (92, N'826', N'Bethany العيزرية', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (93, N'821', N'رام الله Ramallah', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (94, N'827', N'رام الله -المنطقة الصناعية Ramallah Industrial Zone', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (95, N'835', N'الطيرة Al-Tira', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (96, N'833', N'الارسال  Al-Irsal', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (97, N'829', N'طولكرم Tulkarm', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (98, N'839', N'غزة  Gaza', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (99, N'840', N'النصر Al Nasir', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (100, N'822', N'نابلس   Nablus', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (101, N'832', N'رفيديا Rafidiya', 37)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (102, N'807', N'بيت لحم Bethlehem', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (103, N'820', N'ساحة المهد Al Mahd Square', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (104, N'804', N'شارع حيفا Haifa St.', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (105, N'808', N'قلقيلية  Qalqilia', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (106, N'809', N'اريحا  Jericho', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (107, N'803', N'الشلالة   Al Shallaleh ', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (108, N'811', N'وادي التفاح   Wadi Al-Tuffah', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (109, N'821', N'عين سارة Ain Sara', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (110, N'800', N'الماصيون    Al-Masyoun ', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (111, N'802', N'الاهلية Al Ahliya', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (112, N'805', N'Al Irsal St. شارع الارسال', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (113, N'806', N'طولكرم Tulkarm', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (114, N'817', N'دير البلح    Deir Al Balah', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (115, N'815', N'خانيونس khan Younis', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (116, N'818', N'رفح Rafah', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (117, N'816', N'السرايا  Al-Saraya', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (118, N'819', N'الرمال  Al Rimal', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (119, N'801', N'نابلس   Nablus', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (120, N'810', N'شارع فيصل Faisal St.', 66)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (121, N'409', N'Bethlehem بيت لحم ', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (122, N'408', N'Jenin  جنين ', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (123, N'404', N'الخليل Hebron', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (124, N'405', N'حلحول Halhoul', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (125, N'410', N'يطا  Yatta', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (126, N'412', N'الظاهرية Al-Dhahiriy', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (127, N'401', N'رام الله Ramallah', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (128, N'406', N'بيرزيت Birziet', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (129, N'411', N'ترمسعيا Turmus Ayya', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (130, N'413', N'الماصيون    Al-Masyoun ', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (131, N'415', N'طولكرم Tulkarm', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (132, N'407', N'خانيونس khan Younis', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (133, N'402', N'غزة  Gaza', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (134, N'403', N'نابلس  Nablus', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (135, N'414', N'رفيديا Rafidiya', 84)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (136, N'894', N'Bethlehem بيت لحم ', 71)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (137, N'895', N'Jenin  جنين ', 71)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (138, N'896', N'الرام Al Ram', 71)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (139, N'893', N'رام الله Ramallah', 71)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (140, N'892', N'طولكرم Tulkarm', 71)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (141, N'891', N'نابلس  Nablus', 71)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (142, N'847', N'Beit Sahor بيت ساحور', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (143, N'844', N'Bethlehem بيت لحم ', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (144, N'846', N'جنين Jenin', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (145, N'845', N'السلام  Al-salam', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (146, N'840', N'الادارة الاقليمية Regional Managemant ', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (147, N'850', N'Betonia بيتونيا ', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (148, N'849', N'الماصيون Al-Masyoun ', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (149, N'843', N'رام الله Ramallah', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (150, N'848', N'طولكرم Tulkarm', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (151, N'841', N'نابلس  Nablus', 43)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (152, N'450', N'Bethlehem بيت لحم ', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (153, N'449', N'Jenin  جنين ', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (154, N'474', N'Qabatia قباطية', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (155, N'466', N'قلقيلية  Qalqilia', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (156, N'469', N'Salfit  سلفيت ', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (157, N'456', N'اريحا  Jericho', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (158, N'447', N'الخليل Hebron', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (159, N'472', N'دورا Dura', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (160, N'461', N'Tarqumia ترقوميا', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (161, N'470', N'ابوديس Abu Dies', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (162, N'459', N'ضاحية البريد Daheyat Al-Bareed', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (163, N'483', N'الرام Al Ram', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (164, N'458', N'رام الله Ramallah', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (165, N'471', N'الماصيون Al-Masyoun ', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (166, N'481', N'رام الله - القصبة Ramallah - Qasabah ', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (167, N'475', N'البيرة  Al-bireh', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (168, N'468', N'طوباس Tubas', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (169, N'467', N'طولكرم Tulkarm', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (170, N'453', N'جباليا Jabaliya', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (171, N'460', N'دير البلح  Deir Al Balah', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (172, N'452', N'خانيونس khanyounis', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (173, N'455', N'رفح  Rafah', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (174, N'446', N'النصر  Naser', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (175, N'448', N'النصيرات Nussirat', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (176, N'451', N'الفرع الرئيسي- عمر المختارMain Branch-Omar Mokhtar ', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (177, N'454', N'الرمال  Remal', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (178, N'457', N'نابلس  Nablus', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (179, N'484', N'رفيديا Rafidiya', 89)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (180, N'007', N'Bethlehem بيت لحم ', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (181, N'004', N'Jenin  جنين ', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (182, N'002', N'Ein Sara عين سارة', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (183, N'006', N'ضاحية البريد Daheyat Al-Bareed', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (184, N'005', N'البيرة  Al-bireh', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (185, N'001', N'الماصيون  Al-Masyoun ', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (186, N'003', N'نابلس Nablus', 78)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (187, N'838', N'بيت لحم  Bethlehem ', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (188, N'842', N'Jenin  جنين ', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (189, N'850', N'قلقيلية  Qalqilia', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (190, N'851', N'بديا Biddya', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (191, N'848', N'اريحا  Jericho', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (192, N'832', N'Ras Al Jura راس الجورة', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (193, N'839', N'وادي التفاح Wadi al-Tuffah', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (194, N'852', N'Idna اذنا', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (195, N'854', N'دورا  Dura', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (196, N'840', N'Bethany العيزرية', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (197, N'836', N'الماصيون  Al-Masyoun ', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (198, N'843', N'البيرة  Al-bireh', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (199, N'853', N'رام الله Ramallah', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (200, N'849', N'طوباس Tubas', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (201, N'846', N'طولكرم Tulkarm', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (202, N'837', N'جباليا Jabaliya', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (203, N'847', N'دير البلح  Deir Al Balah', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (204, N'834', N'خانيونس khan Younis', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (205, N'841', N'رفح Rafah', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (206, N'831', N'غزة  Gaza', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (207, N'835', N'Al-Nusirat النصيرات', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (208, N'845', N'النصر Al Nasir', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (209, N'833', N'نابلس  Nablus', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (210, N'844', N'المنتزه Al Muntazah', 81)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (211, N'411', N'بيت لحم  Bethlehem ', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (212, N'901', N'Jenin  جنين ', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (213, N'897', N'اريحا  Jericho', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (214, N'412', N'الخليل Hebron', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (215, N'899', N'البيرة  Al-bireh', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (216, N'900', N'بيتونيا  Beitunia', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (217, N'902', N'الارسال  Al-Irsal', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (218, N'903', N'طولكرم Tulkarm', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (219, N'896', N'غزة  Gaza', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (220, N'898', N'نابلس  Nablus', 76)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (221, N'007', N'بيت لحم  Bethlehem ', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (222, N'013', N'عرابة Arabba', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (223, N'001', N'Jenin  جنين ', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (224, N'003', N'الخليل Hebron', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (225, N'005', N'دورا  Dura', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (226, N'008', N'الرام Al Ram', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (227, N'012', N'Hezma حزما', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (228, N'020', N'Bethany العيزرية', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (229, N'015', N'ضاحية البريد Daheyat Al-Bareed', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (230, N'004', N'رام الله Ramallah', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (231, N'006', N'الماصيون Al-Masyoun ', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (232, N'009', N'فرع ميدان الشهيد ياسر عرفات Meidan Al Shaheed Yaser Araffat', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (233, N'011', N'دير جرير Deir Jarir', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (234, N'016', N'Yafa Street شارع يافا', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (235, N'017', N'روابي Rawabi', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (236, N'019', N'Singel سنجل', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (237, N'018', N'طولكرم Tulkarm', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (238, N'002', N'نابلس  Nablus', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (239, N'010', N'عقربا Aqraba', 27)
+GO
+INSERT [dbo].[BankBranche] ([ID], [BranchNo], [BranchName], [BankID]) VALUES (240, N'014', N'رفيديا Rafidiya', 27)
+GO
+SET IDENTITY_INSERT [dbo].[BankBranche] OFF
+GO

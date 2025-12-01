@@ -1,0 +1,2407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TileViewColumn2.Caption" xml:space="preserve">
+    <value>رقم المركبة</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TileViewColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TileViewColumn4.Caption" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="RepositoryType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v23.2" name="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="RepositoryType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryType.Columns" xml:space="preserve">
+    <value>CarTypeID</value>
+  </data>
+  <data name="RepositoryType.Columns1" xml:space="preserve">
+    <value>Name1</value>
+  </data>
+  <data name="RepositoryType.Columns2" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <assembly alias="DevExpress.Data.v23.2" name="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="RepositoryType.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryType.Columns5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryType.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.Columns9" xml:space="preserve">
+    <value>CarType</value>
+  </data>
+  <data name="RepositoryType.Columns10" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="RepositoryType.Columns11" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryType.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryType.Columns14" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryType.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryType.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryType.NullText" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="TileViewColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TileViewColumn5.Caption" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="RepositoryModel.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryModel.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryModel.Columns" xml:space="preserve">
+    <value>CarModel</value>
+  </data>
+  <data name="RepositoryModel.Columns1" xml:space="preserve">
+    <value>الموديل</value>
+  </data>
+  <data name="RepositoryModel.Columns2" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryModel.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryModel.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryModel.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.Columns9" xml:space="preserve">
+    <value>CarModelID</value>
+  </data>
+  <data name="RepositoryModel.Columns10" xml:space="preserve">
+    <value>Name4</value>
+  </data>
+  <data name="RepositoryModel.Columns11" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryModel.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryModel.Columns14" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryModel.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryModel.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryModel.NullText" xml:space="preserve">
+    <value>الموديل</value>
+  </data>
+  <data name="TileViewColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="TileViewColumn9.Caption" xml:space="preserve">
+    <value>السائق</value>
+  </data>
+  <data name="TileViewColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="TileViewColumn16.Caption" xml:space="preserve">
+    <value>صورة المركبة</value>
+  </data>
+  <data name="TileViewColumn16.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn16.VisibleIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="TileViewColumn24.Caption" xml:space="preserve">
+    <value>تاريخ الترخيص</value>
+  </data>
+  <data name="TileViewColumn24.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn24.VisibleIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="TileViewColumn6.Caption" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="TileViewColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TileViewColumn18.Caption" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="TileViewColumn18.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn18.VisibleIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="TileViewColumn18.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TileViewColumn8.Caption" xml:space="preserve">
+    <value>المحروقات</value>
+  </data>
+  <data name="RepositoryFulsType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryFulsType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryFulsType.Items" xml:space="preserve">
+    <value>سولار</value>
+  </data>
+  <data name="RepositoryFulsType.Items1" xml:space="preserve">
+    <value>بنزين</value>
+  </data>
+  <data name="TileViewColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn8.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TileViewColumn31.Caption" xml:space="preserve">
+    <value>المدة</value>
+  </data>
+  <data name="TileViewColumn31.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn31.VisibleIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="TileViewColumn31.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="TileViewColumn32.Caption" xml:space="preserve">
+    <value>تاريخ التاجير</value>
+  </data>
+  <data name="TileViewColumn32.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn32.VisibleIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="TileViewColumn32.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="RepositorySearchDriver.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositorySearchDriver.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositorySearchDriver.NullText" xml:space="preserve">
+    <value>السائق</value>
+  </data>
+  <data name="ColAccountKey2.Caption" xml:space="preserve">
+    <value>رقم الحساب</value>
+  </data>
+  <data name="ColAccountKey2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColAccountKey2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ColFullName2.Caption" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="ColFullName2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColFullName2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="Accounts1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>299, 17</value>
+  </metadata>
+  <metadata name="DockManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1053, 480</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="GridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 0</value>
+  </data>
+  <data name="ColCarID.Caption" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="CARNO.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="CARNO.AppearanceCell.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="CARNO.Caption" xml:space="preserve">
+    <value>رقم المركبة</value>
+  </data>
+  <data name="CARNO.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v23.2">
+    <value>Count</value>
+  </data>
+  <data name="CARNO.Summary1" xml:space="preserve">
+    <value>CARNO</value>
+  </data>
+  <data name="CARNO.Summary2" xml:space="preserve">
+    <value>عدد المركبات {}</value>
+  </data>
+  <data name="CARNO.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CARNO.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="CARNO.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="ColChassiNoCar.Caption" xml:space="preserve">
+    <value>رقم الشاصي</value>
+  </data>
+  <data name="ColMarkaCar.Caption" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="ColMarkaCar.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColMarkaCar.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ColMarkaCar.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="ColModelCar.Caption" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="ColModelCar.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColModelCar.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ColModelCar.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="ColYearCar.Caption" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="ColYearCar.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColYearCar.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ColYearCar.Width" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="ColColorCar.Caption" xml:space="preserve">
+    <value>اللون</value>
+  </data>
+  <data name="ColFuelsCar.Caption" xml:space="preserve">
+    <value>المحروقات</value>
+  </data>
+  <data name="ColDriverID.Caption" xml:space="preserve">
+    <value>الزبون</value>
+  </data>
+  <data name="ColDriverID.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColDriverID.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ColDriverID.Width" type="System.Int32, mscorlib">
+    <value>166</value>
+  </data>
+  <data name="ColDatePurchase.Caption" xml:space="preserve">
+    <value>تاريخ الشراء</value>
+  </data>
+  <data name="ColCostCar.Caption" xml:space="preserve">
+    <value>تكلفة المركبة</value>
+  </data>
+  <data name="ColVender.Caption" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="ColDateSale.Caption" xml:space="preserve">
+    <value>تاريخ البيع</value>
+  </data>
+  <data name="ColSaleCar.Caption" xml:space="preserve">
+    <value>مبغ البيع</value>
+  </data>
+  <data name="ColCustomer.Caption" xml:space="preserve">
+    <value>الزبون</value>
+  </data>
+  <data name="ColPicture.Caption" xml:space="preserve">
+    <value>صورة المركبة</value>
+  </data>
+  <data name="ColSortCar.Caption" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="RepositorySort.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositorySort.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <metadata name="CarsSortBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 56</value>
+  </metadata>
+  <data name="RepositorySort.NullText" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="ColSortCar.Width" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="Colactive.Caption" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="Colactive.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Colactive.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Colactive.Width" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="ColAccountKey.Caption" xml:space="preserve">
+    <value>حساب الصيانة</value>
+  </data>
+  <data name="RepositoryRepairAccount.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryRepairAccount.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryRepairAccount.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColOrpakCar.Caption" xml:space="preserve">
+    <value>المركبة على اورباك</value>
+  </data>
+  <data name="RepositoryCarOnOrpak.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryCarOnOrpak.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryCarOnOrpak.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ColBegSpedometaer.Caption" xml:space="preserve">
+    <value>عداد المركبة وقت الشراء</value>
+  </data>
+  <data name="ColEdit.Caption" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="RepositoryEdit.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryEdit.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Glyph</value>
+  </data>
+  <data name="RepositoryEdit.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RepositoryEdit.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryEdit.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryEdit.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EditorButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAt0RVh0VGl0
+        bGUARWRpdDtlNaxEAAAAoklEQVQ4T5XOMRKCMBAFUOg8EY1nwNJT0FrL0GKnh8mxvADq/5kssy4Lky1e
+        Jsn8v0nTTynqBi9oefYCR1j+FnmIFzryABlATy/k4cv3spchHxhs0KO/LUNmGLi3YUuX7ZBMhy2vnL8N
+        a04XtKoy/R2K6jLZi1CZ9CFcJtmcIVwmLlc4wQihMnF5QwIZUl0mLgvwVRnSwSa4h4v+9oWX9VLzA+bc
+        zQR+JeoKAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="RepositoryEdit.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryEdit.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="ColEdit.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="ColTarkhesEndDate.Caption" xml:space="preserve">
+    <value>تاريخ الترخيص</value>
+  </data>
+  <data name="ColTarkhesEndDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColTarkhesEndDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ColTarkhesEndDate.Width" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="ColInsuranceEndDate.Caption" xml:space="preserve">
+    <value>تاريخ التامين</value>
+  </data>
+  <data name="ColInsuranceEndDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColInsuranceEndDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ColInsuranceEndDate.Width" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="ColCarVolume.Caption" xml:space="preserve">
+    <value>السعة</value>
+  </data>
+  <data name="ColRegPerson.Caption" xml:space="preserve">
+    <value>مسجلة بإسم</value>
+  </data>
+  <data name="ColTeboGraphDate.Caption" xml:space="preserve">
+    <value>تيبوجراف</value>
+  </data>
+  <data name="ColCarDetails.Caption" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="ColInsuranceCompany.Caption" xml:space="preserve">
+    <value>شركة التامين</value>
+  </data>
+  <data name="ColInsuranceCompany.Width" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="ColOpen.Caption" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+  <data name="RepositoryOpen.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryOpen.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Glyph</value>
+  </data>
+  <data name="RepositoryOpen.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RepositoryOpen.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryOpen.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryOpen.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EditorButtonImageOptions2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABh0RVh0VGl0
+        bGUAT3BlbjtPcGVuRG9jdW1lbnQ7fYnAFAAAAH5JREFUOE9j+P//P0UYqyApmOHdkaL/ODBIDiemiwF4
+        McUGADHYJTADnsIESMUgAmTAUiCWgrJJwXdhBqQCcRSUTQqeDzNADYhnQdmk4DiQATD/34QKkoLlQBrJ
+        9j8QgwORXP/PA2KwAapATJb/gRhuwC2oIClYDogpzY3/GQDxQullJmiKmAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="RepositoryOpen.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RepositoryOpen.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="ColOpen.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColOpen.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ColOpen.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="ColCarPeriod.Caption" xml:space="preserve">
+    <value>المدة</value>
+  </data>
+  <data name="ColCarPeriod.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="ColDocStartDate.Caption" xml:space="preserve">
+    <value>تاريخ التسليم</value>
+  </data>
+  <data name="ColDocStartDate.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="GridColumn1.Caption" xml:space="preserve">
+    <value>مركز التكلفة</value>
+  </data>
+  <data name="RepositoryCostCenter.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryCostCenter.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns" xml:space="preserve">
+    <value>CostID</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns1" xml:space="preserve">
+    <value>Name1</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns2" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryCostCenter.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns7" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns8" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns9" xml:space="preserve">
+    <value>CostName</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns10" xml:space="preserve">
+    <value>Name2</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns11" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns12" type="DevExpress.Utils.FormatType, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepositoryCostCenter.Columns14" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns15" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns16" type="DevExpress.Data.ColumnSortOrder, DevExpress.Data.v23.2">
+    <value>None</value>
+  </data>
+  <data name="RepositoryCostCenter.Columns17" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v23.2">
+    <value>Default</value>
+  </data>
+  <data name="GridColumn1.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="GridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 480</value>
+  </data>
+  <data name="GridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TileViewColumn1.Caption" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="TileViewColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TileViewColumn3.Caption" xml:space="preserve">
+    <value>رقم الشاصي</value>
+  </data>
+  <data name="TileViewColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TileViewColumn7.Caption" xml:space="preserve">
+    <value>اللون</value>
+  </data>
+  <data name="TileViewColumn7.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn7.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TileViewColumn10.Caption" xml:space="preserve">
+    <value>تاريخ الشراء</value>
+  </data>
+  <data name="TileViewColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn10.VisibleIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="TileViewColumn11.Caption" xml:space="preserve">
+    <value>تكلفة المركبة</value>
+  </data>
+  <data name="TileViewColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn11.VisibleIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TileViewColumn12.Caption" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="TileViewColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn12.VisibleIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="TileViewColumn13.Caption" xml:space="preserve">
+    <value>تاريخ البيع</value>
+  </data>
+  <data name="TileViewColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn13.VisibleIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="TileViewColumn14.Caption" xml:space="preserve">
+    <value>مبغ البيع</value>
+  </data>
+  <data name="TileViewColumn14.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn14.VisibleIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="TileViewColumn15.Caption" xml:space="preserve">
+    <value>الزبون</value>
+  </data>
+  <data name="TileViewColumn15.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn15.VisibleIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TileViewColumn17.Caption" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="TileViewColumn17.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn17.VisibleIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="TileViewColumn19.Caption" xml:space="preserve">
+    <value>حساب الصيانة</value>
+  </data>
+  <data name="TileViewColumn19.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn19.VisibleIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="TileViewColumn20.Caption" xml:space="preserve">
+    <value>المركبة على اورباك</value>
+  </data>
+  <data name="TileViewColumn20.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn20.VisibleIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="TileViewColumn21.Caption" xml:space="preserve">
+    <value>عداد المركبة وقت الشراء</value>
+  </data>
+  <data name="TileViewColumn21.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn21.VisibleIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="TileViewColumn22.Caption" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+  <data name="TileViewColumn22.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn22.VisibleIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="TileViewColumn22.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TileViewColumn23.Caption" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="TileViewColumn23.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn23.VisibleIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="TileViewColumn23.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TileViewColumn25.Caption" xml:space="preserve">
+    <value>تاريخ التامين</value>
+  </data>
+  <data name="TileViewColumn25.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn25.VisibleIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="TileViewColumn26.Caption" xml:space="preserve">
+    <value>السعة</value>
+  </data>
+  <data name="TileViewColumn26.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn26.VisibleIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="TileViewColumn27.Caption" xml:space="preserve">
+    <value>مسجلة بإسم</value>
+  </data>
+  <data name="TileViewColumn27.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn27.VisibleIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="TileViewColumn28.Caption" xml:space="preserve">
+    <value>تيبوجراف</value>
+  </data>
+  <data name="TileViewColumn28.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn28.VisibleIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="TileViewColumn29.Caption" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="TileViewColumn29.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn29.VisibleIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="TileViewColumn30.Caption" xml:space="preserve">
+    <value>مؤجر</value>
+  </data>
+  <data name="TileViewColumn30.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TileViewColumn30.VisibleIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="TileViewColumn30.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="resource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAAB
+        AAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEB
+        AgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwM
+        DP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDP/AABEIADsBpQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJ
+        Cgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKC
+        CQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImK
+        kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T1
+        9vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncA
+        AQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
+        RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+        tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO8ooor/
+        AC7P9QAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAM0UUUAFGc0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaAC
+        jNFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+        FFFFABRRRQAUUUUAFGKKKADGKKKKACiiigAooooAKKKKACiijNABRRuozQAUUUUAFFFFABRRRQAUUUUA
+        FFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="TileViewItemElement1.Text" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="resource.Font1" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement2.Text" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="resource.Font2" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement3.Text" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="resource.Font3" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 15.75pt, style=Bold</value>
+  </data>
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAXYAAAA5CAYAAAAiJwBoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAANxJREFUeF7t1EERADAQA6FKi39TVx87PLDA23YAdIgdIEbsADFiB4gRO0CM2AFi
+        xA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aA
+        GLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgd
+        IEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDpOw+WJNvumBx
+        RHQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="TileViewItemElement4.Text" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="TileViewItemElement5.Text" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="resource.Font4" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement6.Text" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="resource.Font5" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement7.Text" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="resource.Font6" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement8.Text" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="resource.Font7" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement9.Text" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="resource.Font8" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement10.Text" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="resource.Font9" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement11.Text" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="TileViewItemElement12.Text" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="resource.Font10" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement13.Text" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="resource.Font11" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="resource.Image2" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAAB
+        AAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEB
+        AgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwM
+        DP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDP/AABEIADsBpQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJ
+        Cgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKC
+        CQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImK
+        kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T1
+        9vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncA
+        AQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
+        RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+        tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO8ooor/
+        AC7P9QAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAM0UUUAFGc0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaAC
+        jNFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+        FFFFABRRRQAUUUUAFGKKKADGKKKKACiiigAooooAKKKKACiijNABRRuozQAUUUUAFFFFABRRRQAUUUUA
+        FFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="TileViewItemElement14.Text" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="resource.Font12" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement15.Text" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="resource.Font13" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement16.Text" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="resource.Font14" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 15.75pt, style=Bold</value>
+  </data>
+  <data name="resource.Image3" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAXYAAAA5CAYAAAAiJwBoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAANxJREFUeF7t1EERADAQA6FKi39TVx87PLDA23YAdIgdIEbsADFiB4gRO0CM2AFi
+        xA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aA
+        GLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgd
+        IEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDpOw+WJNvumBx
+        RHQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="TileViewItemElement17.Text" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="TileViewItemElement18.Text" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="resource.Font15" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement19.Text" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="resource.Font16" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement20.Text" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="resource.Font17" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement21.Text" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="resource.Font18" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement22.Text" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="resource.Font19" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement23.Text" xml:space="preserve">
+    <value>موديل</value>
+  </data>
+  <data name="resource.Font20" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement24.Text" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="TileViewItemElement25.Text" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="resource.Font21" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement26.Text" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="resource.Font22" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="resource.Image4" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAAB
+        AAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEB
+        AgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwM
+        DP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDP/AABEIADsBpQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJ
+        Cgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKC
+        CQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImK
+        kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T1
+        9vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncA
+        AQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
+        RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+        tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO8ooor/
+        AC7P9QAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+        ACiiigAooooAKKKKACiiigAooooAM0UUUAFGc0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaAC
+        jNFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+        FFFFABRRRQAUUUUAFGKKKADGKKKKACiiigAooooAKKKKACiijNABRRuozQAUUUUAFFFFABRRRQAUUUUA
+        FFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="TileViewItemElement27.Text" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="resource.Font23" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement28.Text" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="resource.Font24" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement29.Text" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="resource.Font25" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 15.75pt, style=Bold</value>
+  </data>
+  <data name="resource.Image5" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAXYAAAA5CAYAAAAiJwBoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAANxJREFUeF7t1EERADAQA6FKi39TVx87PLDA23YAdIgdIEbsADFiB4gRO0CM2AFi
+        xA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aA
+        GLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgd
+        IEbsADFiB4gRO0CM2AFixA4QI3aAGLEDxIgdIEbsADFiB4gRO0CM2AFixA4QI3aAGLEDpOw+WJNvumBx
+        RHQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="TileViewItemElement30.Text" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="TileViewItemElement31.Text" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="resource.Font26" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement32.Text" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="TileViewItemElement33.Text" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="resource.Font27" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement34.Text" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="resource.Font28" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement35.Text" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="resource.Font29" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement36.Text" xml:space="preserve">
+    <value>الترخيص:</value>
+  </data>
+  <data name="TileViewItemElement37.Text" xml:space="preserve">
+    <value>TileViewColumn31</value>
+  </data>
+  <data name="resource.Font30" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement38.Text" xml:space="preserve">
+    <value>الاستلام:</value>
+  </data>
+  <data name="resource.Font31" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="TileViewItemElement39.Text" xml:space="preserve">
+    <value>TileViewColumn32</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Name" xml:space="preserve">
+    <value>GridControl1</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GridControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SimpleButton4.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAbdEVYdFRpdGxlAEFkZDtQbHVzO0JhcnM7UmliYm9u
+        O5UGMy8AAABgSURBVDhP3YxRCoAwDEN3QS/lqbxdtNKUTDJEHAh+vNGl6WsAXmFDsqwbkphtx4bkR4Kc
+        bceGRAUjzofFp0wVFPEnWrzk1e0CJfMS6I7ME4w4Sp1Ad8SGhII4/kZwD9oOmV+r+RzWkL4AAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 303</value>
+  </data>
+  <data name="SimpleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="SimpleButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 28</value>
+  </data>
+  <data name="SimpleButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="SimpleButton4.Text" xml:space="preserve">
+    <value>اضافة مركبة جديدة</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Name" xml:space="preserve">
+    <value>SimpleButton4</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SimpleButton3.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAOdEVYdFRpdGxlAFByaW50ZXI7579hxQAAAr9JREFU
+        OE99k9lPU1EQxssW2URwSXz1xT9AIT4ZUCTyAEoiEAJxARIUTBCKCilFgqzFlD0YJAEjJL4ZiQQkYpEa
+        AlIK+IYSEVq7UAp0B0rbz5lr0JQHT/LL3HPuzDdn5s4VAfgLrYD2V+qJzsEFdA7OC3QQ7QNqgZa+L5Pk
+        E+wX47cRiYJIAF6fD16vDx7G48M+4d73Qt6vYqcjfjF+G5EoRN43KwSZLTvY2HYROzBtO7Hr9kD2Yoad
+        wg7FCCuACCLCZb0zQjbjppNwwEDWYHbCtbOP+u4pjoghgolAQliBjT3KpI7Br3N54i4UVb7E7p4H+g07
+        dCYHYYPWZIfduYd88XNkFTRSKer5qtbRZIrlpKKQtoHFdSNlySxoQB45OVxuaI02rBmt0BisWCO2bLvI
+        KWpBSo4EepMTTb0qE8WGskCovH+BygFSsiXILmyB1bGHVb0FP3UWrOi2BbgfN/IakHi9RPCt7Z7lciJY
+        ILyhZw5utxfpd6qQmPaQnIhrTBkuM6liXEoRI4FIzSoTfKWtQj+iWCCyunOasrrxXqFGcvoDXEjMRVxC
+        LmLjb+N8/C2cu3gTscSVlCKMjM/CSv141DTJAtEsEFXxTAnDlhM/DDasCNjp2mR1duHs4FywdK6nL1P8
+        dJwFjrNAdGm9At91ViwumxGXLPkvC8sbWNJYUSgdY4ETLBBz/8kHzH0zQzGvRW3XFCy2PdSN/ULNqBbS
+        YS0eD61ikwaL342rVqFa2kB++QgLnGSByMx7/VM5xa+Rcbcf1e1KYQqrhjWQvNOg/O0axG9WYdpyobpN
+        iaSMOlzNkiEhTTpNsUITeRj44RRxRir/hHVyXqc6GZ4Po5kmkmylfIKzniVOE8eI4MP/QlhpzbCyovkj
+        KpoVBFnZAQqU1Ax9Jp8Ivxi/zZ/bRBLcXa6P4Zsx/HyUCPoXA9Fvk15uVlve/joAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 335</value>
+  </data>
+  <data name="SimpleButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 28</value>
+  </data>
+  <data name="SimpleButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="SimpleButton3.Text" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Name" xml:space="preserve">
+    <value>SimpleButton3</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="RadioGroup2.EditValue" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioGroup2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 88</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items1" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items3" xml:space="preserve">
+    <value>غير فعال</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items4" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioGroup2.Properties.Items5" xml:space="preserve">
+    <value>اظهار الكل</value>
+  </data>
+  <data name="RadioGroup2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 102</value>
+  </data>
+  <data name="RadioGroup2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup2.Name" xml:space="preserve">
+    <value>RadioGroup2</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup2.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SimpleButton2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
+        bGUATGVnZW5kO0NoYXJ0O0xpc3SwL5DUAAACP0lEQVQ4T42S70tTYRTHH+yH/fgzoojeRfRXBEVIUZBE
+        oBATl66kkOl0TVdb6mw5W1mYyYpIK2OShUskdZoJQfhiL4Y/XuXaXNa2u+3efTvnuduYStGFzz3nPvec
+        zz3P5RFe32zgwbM5bMXr+zeeweBHIUQZCebwtyvH0G07OfQOBkGCHYITvpbajQhba7F49SJiG2nEfhIy
+        KpIoPUdlVKBpOfQMzLBgp/A8nZHWkNmAlXvtWLh8XhazoKp+ALbu97jJuMZgJVigksDdP8WCXcLdPy0F
+        89XnMHvpLKYrK/QvxRUkFXUbvJ5Vc3A9/qQLuinRyBCN50fkWMwV/CjEErKqho6HkyzYLTr7JuVItc9X
+        YfAt48L90KbiIusKIgTnmawGR++ELnB6J6DSSFVPwmh5u4oK17diU2VNH5qcozA7/TA7KDr8UpLOaLD3
+        jLOgXNzyBOSeTnd8xUn7Ak7Y5mVRhASJVHYLqnynpFX5Y6Wgzf1BjhSJp4qNkXXOifzaGuVr+cjPKRJY
+        Ot+xYI9o7RpDmgQrd48j3HUMi5YjRYHeWGguiFJI0jS8HRLsFc13RqHQnkLtR7H86BS+NBzWi2MpnKn2
+        oMH2hngtuUb5d1rn7dywj+iCxtt+OdJn0yEEjQcxVXOAmvWv8Z5/l/wDznn9VzIrxSTYJ663jcgDkuCD
+        UlIsG6iQ4YYCG4mMxNQyrAuMTS/GTdZXkLQOyxf1eeokQ6iz6FyxvNRpHoKh0RcgQTlBh4FNm9n/H1Cz
+        KPsD0Ff61Zq9OVsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SimpleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 367</value>
+  </data>
+  <data name="SimpleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 28</value>
+  </data>
+  <data name="SimpleButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="SimpleButton2.Text" xml:space="preserve">
+    <value>الثوابت</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.Name" xml:space="preserve">
+    <value>SimpleButton2</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="SearchLookUpEditModel.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SearchLookUpEditModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 31</value>
+  </data>
+  <data name="SearchLookUpEditModel.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="SearchLookUpEditModel.Properties.NullText" xml:space="preserve">
+    <value>موديل المركبة</value>
+  </data>
+  <data name="SearchLookUpEditModel.Properties.NullValuePrompt" xml:space="preserve">
+    <value>موديل المركبة</value>
+  </data>
+  <data name="colModel.Caption" xml:space="preserve">
+    <value>الموديل</value>
+  </data>
+  <data name="colModel.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colModel.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SearchLookUpEditModel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 28</value>
+  </data>
+  <data name="SearchLookUpEditModel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditModel.Name" xml:space="preserve">
+    <value>SearchLookUpEditModel</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditModel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditModel.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditModel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="SearchLookUpEditMarka.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 31</value>
+  </data>
+  <data name="SearchLookUpEditMarka.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <data name="SearchLookUpEditMarka.Properties.NullText" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="SearchLookUpEditMarka.Properties.NullValuePrompt" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="colMarka.Caption" xml:space="preserve">
+    <value>نوع المركبة</value>
+  </data>
+  <data name="colMarka.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colMarka.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SearchLookUpEditMarka.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 28</value>
+  </data>
+  <data name="SearchLookUpEditMarka.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditMarka.Name" xml:space="preserve">
+    <value>SearchLookUpEditMarka</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditMarka.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditMarka.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditMarka.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="SearchLookUpEditCar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="SearchLookUpEditCar.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v23.2">
+    <value>Combo</value>
+  </data>
+  <metadata name="CarsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>547, 56</value>
+  </metadata>
+  <data name="SearchLookUpEditCar.Properties.NullText" xml:space="preserve">
+    <value>المركبة</value>
+  </data>
+  <data name="SearchLookUpEditCar.Properties.NullValuePrompt" xml:space="preserve">
+    <value>المركبة</value>
+  </data>
+  <data name="colCARNO.Caption" xml:space="preserve">
+    <value>المركبة</value>
+  </data>
+  <data name="colCARNO.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCARNO.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SearchLookUpEditCar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 28</value>
+  </data>
+  <data name="SearchLookUpEditCar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditCar.Name" xml:space="preserve">
+    <value>SearchLookUpEditCar</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditCar.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEditCar.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="RadioGroup1.EditValue" xml:space="preserve">
+    <value>Cards</value>
+  </data>
+  <data name="RadioGroup1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 12</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items1" xml:space="preserve">
+    <value>عرض جدول</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items2" xml:space="preserve">
+    <value>Cards</value>
+  </data>
+  <data name="RadioGroup1.Properties.Items3" xml:space="preserve">
+    <value>عرض بطاقات</value>
+  </data>
+  <data name="RadioGroup1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 72</value>
+  </data>
+  <data name="RadioGroup1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.Name" xml:space="preserve">
+    <value>RadioGroup1</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;RadioGroup1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA1dEVYdFRpdGxlAEFycm93O1JlY3VycmVuY2U7UmVm
+        cmVzaDtVcGRhdGU7UmVsb2FkO0V4Y2hhbmdlhrRdSAAAANJJREFUOE+lkrENwkAQBI1EATRg0YFzirDI
+        SMgdIkeQ0wQlkJKZjH5o4tl9/Z5O6B6BCUY67d7tv33fpJT+IhR/wYr+fBctGMEEngXW1OjlvlrAAhxA
+        qnADGxAGrEAPGHICA1gXWD+AQtooYF8aGGK68zugkFG6TA7pmjlEDR7ovAn9SVo0LCwk8IyPJoeP18sS
+        dfUQfz2uiuIgzcPm4tswdd/APdPgj+qkO9+H2Of5Bj4Srkgh72vcAYXYnA8gfCQKidiC3FsLIPOe8lxC
+        8XtS8wL/7IdaesUzOwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="SimpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 399</value>
+  </data>
+  <data name="SimpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 28</value>
+  </data>
+  <data name="SimpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="SimpleButton1.Text" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Name" xml:space="preserve">
+    <value>SimpleButton1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;SimpleButton1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="LayoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LayoutControlItem2.Text" xml:space="preserve">
+    <value>المركبة</value>
+  </data>
+  <data name="LayoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="LayoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 439</value>
+  </data>
+  <data name="LayoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LayoutControl1.Text" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Name" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.Parent" xml:space="preserve">
+    <value>DockPanel1_Container</value>
+  </data>
+  <data name="&gt;&gt;LayoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DockPanel1_Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="DockPanel1_Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 439</value>
+  </data>
+  <data name="DockPanel1_Container.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Name" xml:space="preserve">
+    <value>DockPanel1_Container</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.Parent" xml:space="preserve">
+    <value>DockPanel1</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1_Container.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DockPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DockPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 480</value>
+  </data>
+  <data name="DockPanel1.Text" xml:space="preserve">
+    <value>فلتر</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Name" xml:space="preserve">
+    <value>DockPanel1</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DockPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>المركبات</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn2.Name" xml:space="preserve">
+    <value>TileViewColumn2</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn4.Name" xml:space="preserve">
+    <value>TileViewColumn4</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryType.Name" xml:space="preserve">
+    <value>RepositoryType</value>
+  </data>
+  <data name="&gt;&gt;RepositoryType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn5.Name" xml:space="preserve">
+    <value>TileViewColumn5</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryModel.Name" xml:space="preserve">
+    <value>RepositoryModel</value>
+  </data>
+  <data name="&gt;&gt;RepositoryModel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn9.Name" xml:space="preserve">
+    <value>TileViewColumn9</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn16.Name" xml:space="preserve">
+    <value>TileViewColumn16</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn24.Name" xml:space="preserve">
+    <value>TileViewColumn24</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn24.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn6.Name" xml:space="preserve">
+    <value>TileViewColumn6</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn18.Name" xml:space="preserve">
+    <value>TileViewColumn18</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn8.Name" xml:space="preserve">
+    <value>TileViewColumn8</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryFulsType.Name" xml:space="preserve">
+    <value>RepositoryFulsType</value>
+  </data>
+  <data name="&gt;&gt;RepositoryFulsType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn31.Name" xml:space="preserve">
+    <value>TileViewColumn31</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn31.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn32.Name" xml:space="preserve">
+    <value>TileViewColumn32</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn32.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositorySearchDriver.Name" xml:space="preserve">
+    <value>RepositorySearchDriver</value>
+  </data>
+  <data name="&gt;&gt;RepositorySearchDriver.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemSearchLookUpEdit1View.Name" xml:space="preserve">
+    <value>RepositoryItemSearchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColAccountKey2.Name" xml:space="preserve">
+    <value>ColAccountKey2</value>
+  </data>
+  <data name="&gt;&gt;ColAccountKey2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColFullName2.Name" xml:space="preserve">
+    <value>ColFullName2</value>
+  </data>
+  <data name="&gt;&gt;ColFullName2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Accounts1BindingSource.Name" xml:space="preserve">
+    <value>Accounts1BindingSource</value>
+  </data>
+  <data name="&gt;&gt;Accounts1BindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DockManager1.Name" xml:space="preserve">
+    <value>DockManager1</value>
+  </data>
+  <data name="&gt;&gt;DockManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Docking.DockManager, DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit3View.Name" xml:space="preserve">
+    <value>SearchLookUpEdit3View</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit3View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colModel.Name" xml:space="preserve">
+    <value>colModel</value>
+  </data>
+  <data name="&gt;&gt;colModel.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit2View.Name" xml:space="preserve">
+    <value>SearchLookUpEdit2View</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit2View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colMarka.Name" xml:space="preserve">
+    <value>colMarka</value>
+  </data>
+  <data name="&gt;&gt;colMarka.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CarsBindingSource.Name" xml:space="preserve">
+    <value>CarsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;CarsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1View.Name" xml:space="preserve">
+    <value>SearchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;SearchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colCARNO.Name" xml:space="preserve">
+    <value>colCARNO</value>
+  </data>
+  <data name="&gt;&gt;colCARNO.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Name" xml:space="preserve">
+    <value>LayoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Name" xml:space="preserve">
+    <value>LayoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Name" xml:space="preserve">
+    <value>LayoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Name" xml:space="preserve">
+    <value>LayoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem4.Name" xml:space="preserve">
+    <value>LayoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Name" xml:space="preserve">
+    <value>LayoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Name" xml:space="preserve">
+    <value>EmptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Name" xml:space="preserve">
+    <value>LayoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Name" xml:space="preserve">
+    <value>LayoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem10.Name" xml:space="preserve">
+    <value>LayoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Name" xml:space="preserve">
+    <value>LayoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CarsSortBindingSource.Name" xml:space="preserve">
+    <value>CarsSortBindingSource</value>
+  </data>
+  <data name="&gt;&gt;CarsSortBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GridView1.Name" xml:space="preserve">
+    <value>GridView1</value>
+  </data>
+  <data name="&gt;&gt;GridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCarID.Name" xml:space="preserve">
+    <value>ColCarID</value>
+  </data>
+  <data name="&gt;&gt;ColCarID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;CARNO.Name" xml:space="preserve">
+    <value>CARNO</value>
+  </data>
+  <data name="&gt;&gt;CARNO.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit2.Name" xml:space="preserve">
+    <value>RepositoryItemMemoEdit2</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColChassiNoCar.Name" xml:space="preserve">
+    <value>ColChassiNoCar</value>
+  </data>
+  <data name="&gt;&gt;ColChassiNoCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColMarkaCar.Name" xml:space="preserve">
+    <value>ColMarkaCar</value>
+  </data>
+  <data name="&gt;&gt;ColMarkaCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColModelCar.Name" xml:space="preserve">
+    <value>ColModelCar</value>
+  </data>
+  <data name="&gt;&gt;ColModelCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColYearCar.Name" xml:space="preserve">
+    <value>ColYearCar</value>
+  </data>
+  <data name="&gt;&gt;ColYearCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColColorCar.Name" xml:space="preserve">
+    <value>ColColorCar</value>
+  </data>
+  <data name="&gt;&gt;ColColorCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColFuelsCar.Name" xml:space="preserve">
+    <value>ColFuelsCar</value>
+  </data>
+  <data name="&gt;&gt;ColFuelsCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDriverID.Name" xml:space="preserve">
+    <value>ColDriverID</value>
+  </data>
+  <data name="&gt;&gt;ColDriverID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDatePurchase.Name" xml:space="preserve">
+    <value>ColDatePurchase</value>
+  </data>
+  <data name="&gt;&gt;ColDatePurchase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCostCar.Name" xml:space="preserve">
+    <value>ColCostCar</value>
+  </data>
+  <data name="&gt;&gt;ColCostCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColVender.Name" xml:space="preserve">
+    <value>ColVender</value>
+  </data>
+  <data name="&gt;&gt;ColVender.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDateSale.Name" xml:space="preserve">
+    <value>ColDateSale</value>
+  </data>
+  <data name="&gt;&gt;ColDateSale.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColSaleCar.Name" xml:space="preserve">
+    <value>ColSaleCar</value>
+  </data>
+  <data name="&gt;&gt;ColSaleCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCustomer.Name" xml:space="preserve">
+    <value>ColCustomer</value>
+  </data>
+  <data name="&gt;&gt;ColCustomer.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColPicture.Name" xml:space="preserve">
+    <value>ColPicture</value>
+  </data>
+  <data name="&gt;&gt;ColPicture.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColSortCar.Name" xml:space="preserve">
+    <value>ColSortCar</value>
+  </data>
+  <data name="&gt;&gt;ColSortCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositorySort.Name" xml:space="preserve">
+    <value>RepositorySort</value>
+  </data>
+  <data name="&gt;&gt;RepositorySort.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Colactive.Name" xml:space="preserve">
+    <value>Colactive</value>
+  </data>
+  <data name="&gt;&gt;Colactive.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColAccountKey.Name" xml:space="preserve">
+    <value>ColAccountKey</value>
+  </data>
+  <data name="&gt;&gt;ColAccountKey.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryRepairAccount.Name" xml:space="preserve">
+    <value>RepositoryRepairAccount</value>
+  </data>
+  <data name="&gt;&gt;RepositoryRepairAccount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridView2.Name" xml:space="preserve">
+    <value>GridView2</value>
+  </data>
+  <data name="&gt;&gt;GridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColOrpakCar.Name" xml:space="preserve">
+    <value>ColOrpakCar</value>
+  </data>
+  <data name="&gt;&gt;ColOrpakCar.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCarOnOrpak.Name" xml:space="preserve">
+    <value>RepositoryCarOnOrpak</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCarOnOrpak.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridView3.Name" xml:space="preserve">
+    <value>GridView3</value>
+  </data>
+  <data name="&gt;&gt;GridView3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColBegSpedometaer.Name" xml:space="preserve">
+    <value>ColBegSpedometaer</value>
+  </data>
+  <data name="&gt;&gt;ColBegSpedometaer.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColEdit.Name" xml:space="preserve">
+    <value>ColEdit</value>
+  </data>
+  <data name="&gt;&gt;ColEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryEdit.Name" xml:space="preserve">
+    <value>RepositoryEdit</value>
+  </data>
+  <data name="&gt;&gt;RepositoryEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColTarkhesEndDate.Name" xml:space="preserve">
+    <value>ColTarkhesEndDate</value>
+  </data>
+  <data name="&gt;&gt;ColTarkhesEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColInsuranceEndDate.Name" xml:space="preserve">
+    <value>ColInsuranceEndDate</value>
+  </data>
+  <data name="&gt;&gt;ColInsuranceEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCarVolume.Name" xml:space="preserve">
+    <value>ColCarVolume</value>
+  </data>
+  <data name="&gt;&gt;ColCarVolume.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColRegPerson.Name" xml:space="preserve">
+    <value>ColRegPerson</value>
+  </data>
+  <data name="&gt;&gt;ColRegPerson.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColTeboGraphDate.Name" xml:space="preserve">
+    <value>ColTeboGraphDate</value>
+  </data>
+  <data name="&gt;&gt;ColTeboGraphDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCarDetails.Name" xml:space="preserve">
+    <value>ColCarDetails</value>
+  </data>
+  <data name="&gt;&gt;ColCarDetails.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColInsuranceCompany.Name" xml:space="preserve">
+    <value>ColInsuranceCompany</value>
+  </data>
+  <data name="&gt;&gt;ColInsuranceCompany.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit1.Name" xml:space="preserve">
+    <value>RepositoryItemMemoEdit1</value>
+  </data>
+  <data name="&gt;&gt;RepositoryItemMemoEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColOpen.Name" xml:space="preserve">
+    <value>ColOpen</value>
+  </data>
+  <data name="&gt;&gt;ColOpen.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryOpen.Name" xml:space="preserve">
+    <value>RepositoryOpen</value>
+  </data>
+  <data name="&gt;&gt;RepositoryOpen.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColCarPeriod.Name" xml:space="preserve">
+    <value>ColCarPeriod</value>
+  </data>
+  <data name="&gt;&gt;ColCarPeriod.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ColDocStartDate.Name" xml:space="preserve">
+    <value>ColDocStartDate</value>
+  </data>
+  <data name="&gt;&gt;ColDocStartDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GridColumn1.Name" xml:space="preserve">
+    <value>GridColumn1</value>
+  </data>
+  <data name="&gt;&gt;GridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCostCenter.Name" xml:space="preserve">
+    <value>RepositoryCostCenter</value>
+  </data>
+  <data name="&gt;&gt;RepositoryCostCenter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileView1.Name" xml:space="preserve">
+    <value>TileView1</value>
+  </data>
+  <data name="&gt;&gt;TileView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Tile.TileView, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn1.Name" xml:space="preserve">
+    <value>TileViewColumn1</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn3.Name" xml:space="preserve">
+    <value>TileViewColumn3</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn7.Name" xml:space="preserve">
+    <value>TileViewColumn7</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn10.Name" xml:space="preserve">
+    <value>TileViewColumn10</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn11.Name" xml:space="preserve">
+    <value>TileViewColumn11</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn12.Name" xml:space="preserve">
+    <value>TileViewColumn12</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn13.Name" xml:space="preserve">
+    <value>TileViewColumn13</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn14.Name" xml:space="preserve">
+    <value>TileViewColumn14</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn14.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn15.Name" xml:space="preserve">
+    <value>TileViewColumn15</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn15.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn17.Name" xml:space="preserve">
+    <value>TileViewColumn17</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn17.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn19.Name" xml:space="preserve">
+    <value>TileViewColumn19</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn19.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn20.Name" xml:space="preserve">
+    <value>TileViewColumn20</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn20.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn21.Name" xml:space="preserve">
+    <value>TileViewColumn21</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn21.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn22.Name" xml:space="preserve">
+    <value>TileViewColumn22</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn22.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn23.Name" xml:space="preserve">
+    <value>TileViewColumn23</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn23.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn25.Name" xml:space="preserve">
+    <value>TileViewColumn25</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn25.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn26.Name" xml:space="preserve">
+    <value>TileViewColumn26</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn26.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn27.Name" xml:space="preserve">
+    <value>TileViewColumn27</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn27.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn28.Name" xml:space="preserve">
+    <value>TileViewColumn28</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn28.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn29.Name" xml:space="preserve">
+    <value>TileViewColumn29</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn29.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn30.Name" xml:space="preserve">
+    <value>TileViewColumn30</value>
+  </data>
+  <data name="&gt;&gt;TileViewColumn30.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.TileViewColumn, DevExpress.XtraGrid.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CarsListCards</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

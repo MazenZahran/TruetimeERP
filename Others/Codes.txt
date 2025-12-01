@@ -1,0 +1,84 @@
+-----------------------------------------------------------
+Loop through selected rows
+Dim selectedRowHandles As Integer() = gridView1.GetSelectedRows()  
+
+For i As Integer = 0 To selectedRowHandles.Length - 1  
+    Dim value As Object = gridView1.GetRowCellValue(selectedRowHandles(i), "FieldName")  
+Next  
+-----------------------------------------------------------
+In SqlServer , Insert Check In , Check Out Records For All Employees
+INSERT INTO AttCHECKINOUT (USERID,[CHECKTYPE],[SENSORID],[sn], CHECKTIME)
+SELECT EmployeesData.EmployeeID,'I',1,'Manual', DATEADD(HOUR, 8, DateList.Date) AS CHECKTIME
+FROM EmployeesData
+CROSS JOIN (
+    SELECT DATEADD(DAY, number, '2024-01-01') AS Date
+    FROM master..spt_values
+    WHERE type = 'P'
+    AND DATEADD(DAY, number, '2024-01-01') <= '2024-01-28'
+) AS DateList
+WHERE DATEPART(WEEKDAY, DateList.Date) != 6 And EmployeesData.Active=1
+-----------------------------------------------------------
+In Sql Server , Reset OurAccounting Data
+  use [TruetimeDemo]
+  update EmployeesData set EmployeeName=concat(N'موظف',EmployeeID )
+  update EmployeesData set Mobile1='0597505029'
+  update Referencess set RefName=CONCAT(N'ذمة',RefNo)
+  update Items set ItemName=CONCAT(N'صنف',ItemNo)
+  update [dbo].Journal set ReferanceName= CONCAT( N'ذمة',Referance)
+  update [dbo].[JournalBeforeUpdate] set ReferanceName= CONCAT( N'ذمة',Referance) 
+  update [dbo].[OrdersJournal] set ReferanceName= CONCAT( N'ذمة',Referance)  
+  update [dbo].Journal set ItemName= CONCAT( N'صنف ',StockID)
+  update [dbo].Journal set DocNotes= CONCAT( N'ملاحظات ',Referance)
+  update Referencess set RefMobile='0597505029'
+  Update [dbo].[AttRawatebArchive] set EmployeeName=Concat(N'موظف',' ' , EmployeeID  )
+-----------------------------------------------------------
+
+دمج الموظفين او تصحيح رقم وظيفي ل موظف
+  update [Vocations] set EmployeeID=163 where EmployeeID=200526163
+  Update [AttCHECKINOUT] set USERID=163 where USERID=200526163
+  Update [AttEmployeePayments] Set EmployeeID=163 where EmployeeID=200526163
+  Update [AttEmployeeAdditions] Set EmployeeID=163 where EmployeeID=200526163
+  Update [AttRawatebArchive] Set EmployeeID=163 where EmployeeID=200526163
+-----------------------------------------------------------
+كود لاعادة ترقيم السندات عن طريق استخدام sequnces
+DECLARE 
+    @inputDT   DATETIME,   -- or DATETIME2, whatever your column type is
+    @newID     BIGINT;
+
+-- 1) Cursor over each distinct InputDateTime
+DECLARE dt_cur CURSOR LOCAL FAST_FORWARD FOR
+SELECT DISTINCT InputDateTime
+FROM   dbo.Journal
+WHERE DocDate Between '2025-05-01' AND '2025-05-07' And DocName=2;
+
+OPEN dt_cur;
+FETCH NEXT FROM dt_cur INTO @inputDT;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    -- 2) Get one new sequence value
+    SET @newID = NEXT VALUE FOR dbo.SalesInvoiceSeq;
+
+    -- 3) Update all rows with this same InputDateTime
+    UPDATE dbo.Journal
+    SET 
+        DocID   = @newID
+      -- , DocCode = 'SI-' + RIGHT('000000' + CAST(@newID AS VARCHAR(10)), 6)
+    WHERE InputDateTime = @inputDT;
+
+    FETCH NEXT FROM dt_cur INTO @inputDT;
+END
+
+CLOSE dt_cur;
+DEALLOCATE dt_cur;
+-----------------------------------------------------------
+كود تعديل كميات الاصناف حسب الصنف الرئيسي في جدول journal
+ UPDATE 
+    j
+SET 
+    j.StockQuantityByMainUnit  = iu.EquivalentToMain * j.StockQuantity 
+FROM 
+    [dbo].[Journal] j
+     JOIN [dbo].Items_units IU ON j.StockID=IU.item_id and j.StockUnit=iu.unit_id
+	 where StockID is not NULL and StockID <> 0
+-----------------------------------------------------------

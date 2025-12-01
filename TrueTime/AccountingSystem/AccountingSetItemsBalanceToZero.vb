@@ -1,0 +1,3 @@
+﻿Public Class AccountingSetItemsBalanceToZero
+
+End Class

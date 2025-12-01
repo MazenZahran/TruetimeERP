@@ -1,0 +1,38 @@
+CREATE PROCEDURE [dbo].[SendWhatsAppMessage]
+    @chatId NVARCHAR(MAX),
+    @message NVARCHAR(MAX)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @obj INT;
+    DECLARE @responseText NVARCHAR(MAX);
+    DECLARE @postData NVARCHAR(MAX);
+	Declare @url Varchar(MAX);
+	Set @url='https://api.green-api.com/waInstance7103903885/sendMessage/83ac2143e09b4d45831e7b7423ae5a2c4bed9c1bed394c2389'
+    -- Format data into JSON format
+    SET @postData = '{"chatId": "' + @chatId + '", "message": "' + @message + '"}';
+
+    -- Create MSXML2.ServerXMLHTTP object
+    EXEC sp_OACreate 'MSXML2.ServerXMLHTTP', @obj OUT;
+
+    -- Open connection to web service
+    EXEC sp_OAMethod @obj, 'open', NULL, 'POST', @url, 'false';
+
+    -- Set request headers
+    EXEC sp_OAMethod @obj, 'setRequestHeader', NULL, 'Content-Type', 'application/json';
+
+    -- Send POST data (body)
+    EXEC sp_OAMethod @obj, 'send', NULL, @postData;
+
+    -- Get response text
+    EXEC sp_OAGetProperty @obj, 'responseText', @responseText OUT;
+
+    -- Close MSXML2.ServerXMLHTTP object
+    EXEC sp_OADestroy @obj;
+
+    -- Do something with the response
+    -- For example, print the response
+    PRINT @responseText;
+END
+GO

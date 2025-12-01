@@ -1,0 +1,88 @@
+ALTER TABLE `apittsacctemp` CHANGE `الرقم التسلسلي` `increID` INT(11) NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `رقم السند` `DocID` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `التاريخ` `DocDate` DATE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `اسم السند` `DocName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `حالة السند` `DocStatus` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `مركزالتكلفة` `CostName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `الحساب` `Account` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `العملة` `DocCurrency` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `المبلغ` `DocAmount` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `سعر الصرف` `ExchangePrice` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `المبلغ بالعملة الرئيسية` `BaseCurrAmount` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `المبلغ حسب عملة الحساب` `BaseAmount` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `اسم الذمة` `RefName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `اسم المستخدم` `InputUser` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `تاريخ ووقت الادخال` `InputDateTime` DATE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `الصنف` `ItemName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `الوحدة` `UnitName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `السعر` `StockPrice` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `الخصم على الصنف` `StockDiscount` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `الخصم على الفاتورة` `VoucherDiscount` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `مندوب مبيعات` `SalesMan` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `رقم الشيك` `CheckNo` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `مبلغ الشيك` `CheckAmount` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `مبلغ الشيك حسب العملة الرئيسية` `CheckBaseAmount` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `تاريخ الاستحقاق` `CheckDueDate` DATE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `حالة الشيك` `CheckStatus` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `شيك وارد صادر` `CheckInOut` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `اسم الجهاز مدخل بيانات` `DeviceName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `الضريبة على الصنف` `ItemVAT` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `الكمية` `StockQuantity` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `كمية الداخل` `QIn` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `كمية الخارج` `QOut` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `مستودع الداخل` `InWarehouse` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `مستودع الخارج` `OutWahrehouse` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `مجموعة الصنف` `GroupName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `العلامة التجارية` `TradeMarkName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE `تصنيف الصنف` `CategoryName` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `سعر الشراء` `LastPurchasePrice` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `رقم السند اليدوي` `DocManualNo` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+
+
+
+ALTER TABLE `apittsacctemp` CHANGE  `increID` `الرقم التسلسلي` INT(11) NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `DocID` `رقم السند` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `DocDate` `التاريخ` DATE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `DocName` `اسم السند` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `DocStatus` `حالة السند` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `CostName` `مركزالتكلفة` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `Account` `الحساب` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `DocCurrency` `العملة` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `DocAmount` `المبلغ` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `ExchangePrice` `سعر الصرف` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `BaseCurrAmount` `المبلغ بالعملة الرئيسية` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `BaseAmount` `المبلغ حسب عملة الحساب` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `RefName` `اسم الذمة` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `InputUser` `اسم المستخدم` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `InputDateTime` `تاريخ ووقت الادخال` DATE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `ItemName` `الصنف` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `UnitName` `الوحدة` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `StockPrice` `السعر` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `StockDiscount` `الخصم على الصنف` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `VoucherDiscount` `الخصم على الفاتورة` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `SalesMan` `مندوب مبيعات` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `CheckNo` `رقم الشيك` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `CheckAmount` `مبلغ الشيك` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `CheckBaseAmount` `مبلغ الشيك حسب العملة الرئيسية` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `CheckDueDate` `تاريخ الاستحقاق` DATE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `CheckStatus` `حالة الشيك` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `CheckInOut` `شيك وارد صادر` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `DeviceName` `اسم الجهاز مدخل بيانات` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `ItemVAT` `الضريبة على الصنف` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `StockQuantity` `الكمية` DOUBLE NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `QIn` `كمية الداخل` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `QOut` `كمية الخارج` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE `InWarehouse` `مستودع الداخل`  VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `OutWahrehouse` `مستودع الخارج` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `GroupName` `مجموعة الصنف` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `TradeMarkName` `العلامة التجارية` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `apittsacctemp` CHANGE  `CategoryName` `تصنيف الصنف` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `LastPurchasePrice` `سعر الشراء` DOUBLE NULL DEFAULT NULL; 
+ALTER TABLE `apittsacctemp` CHANGE  `DocManualNo` `رقم السند اليدوي` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 
+
+
+
+
+
+
+
