@@ -4834,6 +4834,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="UpdatesQueries.txt" />
     <None Include="Resources\whatsapp_48px.png" />
     <None Include="Resources\cashier.png" />
     <None Include="Resources\add-32.png" />
