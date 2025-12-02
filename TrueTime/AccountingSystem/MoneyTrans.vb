@@ -840,24 +840,40 @@ Public Class MoneyTrans
 
             If sendWhatsappAfterSave = True Then
                 Dim docTypeName As String = If(Me.DocName.EditValue = 3, "سند صرف", "سند قبض")
+                Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
+
                 Dim whatsappMessage As String = String.Format(
-                "✅ *تم {0}*{1}{1}" &
-                "📄 نوع السند: {2}{1}" &
-                "🔢 رقم السند: {3}{1}" &
-                "📅 التاريخ: {4}{1}" &
-                "👤 المستخدم: {5}{1}" &
-                "💰 الحساب: {6}{1}" &
-                "💵 المبلغ: {7}",
-                If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
-                Environment.NewLine,
-                docTypeName,
-                _DocID,
-                DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
-                GlobalVariables.EmployeeName,
-                CashAccount.Text,
-                FormatNumber(TotalDocAmount.EditValue, 2))
-                SendSMSMessage(CStr("120363422414893307"), whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
+       "✅ *تم {0} السند بنجاح*{1}" &
+       "{1}📄 *نوع السند:* {2}" &
+       "{1}🔢 *رقم السند:* {3}" &
+       "{1}📅 *التاريخ:* {4}" &
+       "{1}👤 *المستخدم:* {5}" &
+       "{1}💰 *الحساب:* {6}" &
+       "{1}💵 *نقداً:* {7}" &
+       "{1}💳 *شيكات:* {8}" &
+       "{1}💲 *الإجمالي:* {9}" &
+       "{1}--------------------------------- \n",
+       If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
+       Environment.NewLine,
+       docTypeName,
+       _DocID,
+       DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
+       GlobalVariables.EmployeeName,
+       CashAccount.Text,
+       DocCashAmount.Text,
+       DocCheqsAmount.Text,
+       FormatNumber(TotalDocAmount.EditValue, 2))
+
+                Dim numberList() As String = Numbers.Split("-"c)
+
+                For Each num As String In numberList
+                    Dim trimmedNum As String = num.Trim()
+                    If Not String.IsNullOrEmpty(trimmedNum) Then
+                        SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
+                    End If
+                Next
             End If
+
 
             'CoptToClip(JournalTable)
             Referance.EditValue = 0

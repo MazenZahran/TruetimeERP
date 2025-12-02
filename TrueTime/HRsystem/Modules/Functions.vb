@@ -3540,7 +3540,6 @@ EE:
             Case "WhatsApp"
                 ' Escape message text for JSON (replace quotes and newlines)
                 Dim _CompanyData = GetCompanyData()
-                sms += " للمراجعة  " & _CompanyData.CompanyNameForWhattsUp & _CompanyData.CompanyMobile
                 Dim safeMessage As String = sms.Replace("""", "\""").Replace(vbCrLf, "\n").Replace(Environment.NewLine, "\n")
                 Dim URL As String = GetWhatsAppURLString(False)
                 Dim RequestBody As String = ""
@@ -4088,6 +4087,18 @@ GG:
             End Try
         End If
     End Sub
+
+    Public Function GetNumbersForReseiptsVoucherMsgs() As String
+        Dim _Numbers As String = ""
+        Try
+            Dim Sql As New SQLControl
+            Sql.SqlTrueAccountingRunQuery("select IsNull(SettingValue,0) as SettingValue from Settings where SettingName='NumbersForReseiptsVoucherMsgs'")
+            _Numbers = Sql.SQLDS.Tables(0).Rows(0).Item("SettingValue")
+        Catch ex As Exception
+            _Numbers = ""
+        End Try
+        Return _Numbers
+    End Function
     Public Function VocationInsert(_type As Integer, _emp As Integer, _from As DateTime, _to As DateTime, _days As Decimal, _note As String, _docdate As Date, _source As String, _hours As String) As Integer
         Dim _VocID As Integer = 0
         Dim DateFrom As String = Format(_from, "yyyy-MM-dd")
