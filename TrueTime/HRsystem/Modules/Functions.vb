@@ -4646,7 +4646,7 @@ Public Module GlobalVariables
     Public _ItemColorIDsGlobal As List(Of String)
     Public _ItemMeasureIDsGlobal As List(Of String)
     Public _HRSystemIsConnectedWithAccountingSystem As Boolean = False
-    Public GetCRMServices As Boolean = False
+    Public GetCRMServices As Boolean = True
     Public ReadOnly connectionString As String = My.Settings.TrueTimeConnectionString
     Public _UserType As String
     Public ttsSystemsAPI As String = "https://ttssystemsapi.truetime.ps/api/"
