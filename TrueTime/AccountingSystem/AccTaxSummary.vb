@@ -30,9 +30,16 @@
                 Dim totalReturnPurchases As Decimal = Convert.ToDecimal(sql.SQLDS.Tables(0).Rows(0).Item("totalReturnPurchases"))
                 Dim totalDebitNotes As Decimal = Convert.ToDecimal(sql.SQLDS.Tables(0).Rows(0).Item("totalDebitNotes"))
                 Dim totalCreditNotes As Decimal = Convert.ToDecimal(sql.SQLDS.Tables(0).Rows(0).Item("totalCreditNotes"))
+                Dim netPurchases As Decimal = totalPurchases - totalReturnPurchases - totalDebitNotes
+                Dim netSales As Decimal = totalSales - totalReturnSales - totalCreditNotes
                 Me.TextTotalSales.EditValue = totalSales
                 Me.TextTotalReturnSales.EditValue = totalReturnSales
+                Me.TextTotalPurchases.EditValue = totalPurchases
                 Me.TextTotalReturnPurchases.EditValue = totalReturnPurchases
+                Me.TextTotalDebits.EditValue = totalDebitNotes
+                Me.TextTotalCredits.EditValue = totalCreditNotes
+                Me.TextNetSales.EditValue = netSales
+                Me.TextNetPurchases.EditValue = netPurchases
             End If
         End If
     End Sub

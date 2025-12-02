@@ -12,6 +12,7 @@ Public Class PosOpenCloseShift
     Dim _NetSales As Decimal
     Dim _EmployeeName As String
     Dim _POSName As String
+
     Private Sub PosOpenCloseShift_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'TextBegBalance.Properties.Mask.EditMask = "#,##0.0 NIS"
@@ -290,8 +291,10 @@ Public Class PosOpenCloseShift
                 report.ExportToPdf("ShiftReport.pdf")
                 SendDailyReport(_StartDateTime, _EndDateTime)
 
+                If PrintPosReport() Then
+                    report.Print()
+                End If
 
-                report.Print()
                 'report.ShowPreview()
                 ' Application.Restart()
 
@@ -569,7 +572,19 @@ Public Class PosOpenCloseShift
         End Try
         Return _IsOpen
     End Function
-
+    Private Function PrintPosReport() As Boolean
+        Dim sql As New SQLControl
+        Dim _PrintPosReport As Boolean
+        Try
+            sql.SqlTrueAccountingRunQuery(" Select [SettingValue]
+                                    From [dbo].[Settings]
+                                    where  [SettingName]='POS_PrintClosedShiftReport' ")
+            _PrintPosReport = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))
+        Catch ex As Exception
+            _PrintPosReport = False
+        End Try
+        Return _PrintPosReport
+    End Function
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
         PosPrintVoucherEmpty()
     End Sub

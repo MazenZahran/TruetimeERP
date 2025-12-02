@@ -81,11 +81,12 @@ Partial Public Class StockInvoiceReport
         Dim RelationColumnInfo2 As DevExpress.DataAccess.Sql.RelationColumnInfo = New DevExpress.DataAccess.Sql.RelationColumnInfo()
         Dim Sorting1 As DevExpress.DataAccess.Sql.Sorting = New DevExpress.DataAccess.Sql.Sorting()
         Dim ColumnExpression19 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
-        Dim XrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary3 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary4 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary5 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary6 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+        Dim XrSummary7 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+        Dim XrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrWatermark1 As DevExpress.XtraReports.UI.XRWatermark = New DevExpress.XtraReports.UI.XRWatermark()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
         Me.XrTable3 = New DevExpress.XtraReports.UI.XRTable()
@@ -205,6 +206,8 @@ Partial Public Class StockInvoiceReport
         Me.BarcodePrint = New DevExpress.XtraReports.Parameters.Parameter()
         Me.CreditWhereHouseName = New DevExpress.XtraReports.Parameters.Parameter()
         Me.DebitWahreHouseName = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel9 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.XrTable3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1209,7 +1212,7 @@ Partial Public Class StockInvoiceReport
         '
         'GroupFooterBand2
         '
-        Me.GroupFooterBand2.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel30, Me.XrLabel31, Me.XrLabelCurrencyBalance, Me.XrLabelBalance, Me.XrLabelTextForBalance, Me.XrLabel50, Me.XrLabel49, Me.XrLabel48, Me.XrLabel47, Me.XrLabel46, Me.XrLabel45, Me.XrLabel35, Me.XrLabel34, Me.XrLabel29, Me.XrLabel28, Me.XrLabel5, Me.XrLabel42, Me.XrLabel4, Me.XrLabel3})
+        Me.GroupFooterBand2.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel9, Me.XrLabel8, Me.XrLabel30, Me.XrLabel31, Me.XrLabelCurrencyBalance, Me.XrLabelBalance, Me.XrLabelTextForBalance, Me.XrLabel50, Me.XrLabel49, Me.XrLabel48, Me.XrLabel47, Me.XrLabel46, Me.XrLabel45, Me.XrLabel35, Me.XrLabel34, Me.XrLabel29, Me.XrLabel28, Me.XrLabel5, Me.XrLabel42, Me.XrLabel4, Me.XrLabel3})
         Me.GroupFooterBand2.HeightF = 167.3155!
         Me.GroupFooterBand2.Level = 1
         Me.GroupFooterBand2.Name = "GroupFooterBand2"
@@ -1217,7 +1220,7 @@ Partial Public Class StockInvoiceReport
         'XrLabelCurrencyBalance
         '
         Me.XrLabelCurrencyBalance.CanGrow = False
-        Me.XrLabelCurrencyBalance.LocationFloat = New DevExpress.Utils.PointFloat(272.0398!, 31.99997!)
+        Me.XrLabelCurrencyBalance.LocationFloat = New DevExpress.Utils.PointFloat(272.0398!, 47.99995!)
         Me.XrLabelCurrencyBalance.Name = "XrLabelCurrencyBalance"
         Me.XrLabelCurrencyBalance.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabelCurrencyBalance.SizeF = New System.Drawing.SizeF(41.96149!, 16.0!)
@@ -1231,7 +1234,7 @@ Partial Public Class StockInvoiceReport
         'XrLabelBalance
         '
         Me.XrLabelBalance.CanGrow = False
-        Me.XrLabelBalance.LocationFloat = New DevExpress.Utils.PointFloat(187.5682!, 31.99997!)
+        Me.XrLabelBalance.LocationFloat = New DevExpress.Utils.PointFloat(187.5682!, 47.99995!)
         Me.XrLabelBalance.Name = "XrLabelBalance"
         Me.XrLabelBalance.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabelBalance.SizeF = New System.Drawing.SizeF(84.47157!, 16.0!)
@@ -1244,7 +1247,7 @@ Partial Public Class StockInvoiceReport
         '
         'XrLabelTextForBalance
         '
-        Me.XrLabelTextForBalance.LocationFloat = New DevExpress.Utils.PointFloat(11.52649!, 31.99997!)
+        Me.XrLabelTextForBalance.LocationFloat = New DevExpress.Utils.PointFloat(11.52649!, 47.99995!)
         Me.XrLabelTextForBalance.Name = "XrLabelTextForBalance"
         Me.XrLabelTextForBalance.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabelTextForBalance.SizeF = New System.Drawing.SizeF(176.0417!, 16.0!)
@@ -1261,8 +1264,8 @@ Partial Public Class StockInvoiceReport
         Me.XrLabel50.SizeF = New System.Drawing.SizeF(82.05084!, 16.0!)
         Me.XrLabel50.StyleName = "TotalData3"
         Me.XrLabel50.StylePriority.UseTextAlignment = False
-        XrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
-        Me.XrLabel50.Summary = XrSummary2
+        XrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+        Me.XrLabel50.Summary = XrSummary3
         Me.XrLabel50.Text = "XrLabel4"
         Me.XrLabel50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
         Me.XrLabel50.TextFormatString = "{0:n2}"
@@ -1309,8 +1312,8 @@ Partial Public Class StockInvoiceReport
         Me.XrLabel46.SizeF = New System.Drawing.SizeF(82.05085!, 16.0!)
         Me.XrLabel46.StyleName = "TotalData3"
         Me.XrLabel46.StylePriority.UseTextAlignment = False
-        XrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
-        Me.XrLabel46.Summary = XrSummary3
+        XrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+        Me.XrLabel46.Summary = XrSummary4
         Me.XrLabel46.Text = "XrLabel4"
         Me.XrLabel46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
         Me.XrLabel46.TextFormatString = "{0:n2}"
@@ -1335,8 +1338,8 @@ Partial Public Class StockInvoiceReport
         Me.XrLabel35.SizeF = New System.Drawing.SizeF(84.47157!, 16.0!)
         Me.XrLabel35.StyleName = "TotalData3"
         Me.XrLabel35.StylePriority.UseTextAlignment = False
-        XrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
-        Me.XrLabel35.Summary = XrSummary4
+        XrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+        Me.XrLabel35.Summary = XrSummary5
         Me.XrLabel35.Text = "XrLabel4"
         Me.XrLabel35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
         Me.XrLabel35.TextFormatString = "{0:n}"
@@ -1370,8 +1373,8 @@ Partial Public Class StockInvoiceReport
         Me.XrLabel28.SizeF = New System.Drawing.SizeF(84.47157!, 16.0!)
         Me.XrLabel28.StyleName = "TotalData3"
         Me.XrLabel28.StylePriority.UseTextAlignment = False
-        XrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
-        Me.XrLabel28.Summary = XrSummary5
+        XrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+        Me.XrLabel28.Summary = XrSummary6
         Me.XrLabel28.Text = "XrLabel4"
         Me.XrLabel28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
         Me.XrLabel28.TextFormatString = "{0:n}"
@@ -1404,8 +1407,8 @@ Partial Public Class StockInvoiceReport
         Me.XrLabel4.SizeF = New System.Drawing.SizeF(82.05083!, 16.0!)
         Me.XrLabel4.StyleName = "TotalData3"
         Me.XrLabel4.StylePriority.UseTextAlignment = False
-        XrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
-        Me.XrLabel4.Summary = XrSummary6
+        XrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+        Me.XrLabel4.Summary = XrSummary7
         Me.XrLabel4.Text = "XrLabel4"
         Me.XrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
         Me.XrLabel4.TextFormatString = "{0:n2}"
@@ -1620,6 +1623,32 @@ Partial Public Class StockInvoiceReport
         Me.DebitWahreHouseName.Name = "DebitWahreHouseName"
         Me.DebitWahreHouseName.Visible = False
         '
+        'XrLabel8
+        '
+        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(12.64026!, 31.99997!)
+        Me.XrLabel8.Name = "XrLabel8"
+        Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel8.SizeF = New System.Drawing.SizeF(175.1668!, 16.0!)
+        Me.XrLabel8.StyleName = "TotalCaption3"
+        Me.XrLabel8.Text = "مجموع خصم الاصناف:"
+        '
+        'XrLabel9
+        '
+        Me.XrLabel9.CanGrow = False
+        Me.XrLabel9.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([StockDiscount])")})
+        Me.XrLabel9.LocationFloat = New DevExpress.Utils.PointFloat(187.8071!, 31.99997!)
+        Me.XrLabel9.Name = "XrLabel9"
+        Me.XrLabel9.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel9.SizeF = New System.Drawing.SizeF(84.47157!, 16.0!)
+        Me.XrLabel9.StyleName = "TotalData3"
+        Me.XrLabel9.StylePriority.UseTextAlignment = False
+        XrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+        Me.XrLabel9.Summary = XrSummary2
+        Me.XrLabel9.Text = "XrLabel4"
+        Me.XrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
+        Me.XrLabel9.TextFormatString = "{0:n}"
+        Me.XrLabel9.WordWrap = False
+        '
         'StockInvoiceReport
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.ReportHeaderBand1, Me.GroupHeaderBand2, Me.GroupFooterBand1, Me.GroupFooterBand2})
@@ -1758,4 +1787,6 @@ Partial Public Class StockInvoiceReport
     Friend WithEvents XrLabelCurrency As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrTableCellBonus As DevExpress.XtraReports.UI.XRTableCell
     Friend WithEvents XrTableCellBonusLabel As DevExpress.XtraReports.UI.XRTableCell
+    Friend WithEvents XrLabel9 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel8 As DevExpress.XtraReports.UI.XRLabel
 End Class

@@ -116,9 +116,9 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=server1.truetime.ps\SQLEXPRESSTTS,90;Initial Catalog=BrotherForCarPar"& _ 
-            "ts;User ID=tts_user;Password=Customer@20!8@pass;Max Pool Size=200;Connect Timeou"& _ 
-            "t=0;TrustServerCertificate=True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MAZENLAPTOP\SQLEXPRESS01;Initial Catalog=alquds;User ID=tts_user;Pass"& _ 
+            "word=Customer@20!8@pass;Max Pool Size=200;Connect Timeout=0;TrustServerCertifica"& _ 
+            "te=True")>  _
         Public ReadOnly Property TrueTimeConnectionString() As String
             Get
                 Return CType(Me("TrueTimeConnectionString"),String)

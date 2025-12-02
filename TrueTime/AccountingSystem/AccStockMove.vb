@@ -1167,8 +1167,8 @@ Public Class AccStockMove
             ' سنستخدم حساب المبيعات العادي.
             '-----------------------------
             Dim itemData = GetItemsData(stockId, False)
-            R("DebitAcc") = itemData.AccSales
-            R("CredAcc") = "0"
+            R("CredAcc") = itemData.AccSales
+            R("DebitAcc") = "0"
 
             '-----------------------------
             ' العملة
@@ -1232,7 +1232,8 @@ Public Class AccStockMove
             R("StockPrice") = price
             R("StockDiscount") = lineDisc
 
-            R("StockDebitWhereHouse") = 0   ' لا يوجد مخزن في طلبية
+            R("StockDebitWhereHouse") = 0
+            R("StockCreditWhereHouse") = StockCreditWhereHouse.EditValue
 
             ' معلومات إضافية
             R("ItemName") = GridView1.GetRowCellValue(i, "ItemName")
@@ -1245,9 +1246,19 @@ Public Class AccStockMove
             R("Referance") = ctx.Referance
             R("ReferanceName") = TextReferanceName.Text
 
-            R("Color") = If(IsDBNull(GridView1.GetRowCellValue(i, "Color")),
-                        0, GridView1.GetRowCellValue(i, "Color"))
-            R("Measure") = GridView1.GetRowCellValue(i, "Measure")
+            Dim colorVal As Object = GridView1.GetRowCellValue(i, "Color")
+            If colorVal Is Nothing OrElse IsDBNull(colorVal) Then
+                R("Color") = 0
+            Else
+                R("Color") = Convert.ToInt32(colorVal)
+            End If
+
+            Dim measureVal As Object = GridView1.GetRowCellValue(i, "Measure")
+            If measureVal Is Nothing OrElse IsDBNull(measureVal) Then
+                R("Measure") = 0
+            Else
+                R("Measure") = Convert.ToInt32(measureVal)
+            End If
 
             R("BatchID") = GridView1.GetRowCellValue(i, "BatchID")
             R("BatchNo") = GridView1.GetRowCellValue(i, "BatchNo")
@@ -1279,8 +1290,8 @@ Public Class AccStockMove
             creditRow("DocCostCenter") = If(String.IsNullOrWhiteSpace(LookCostCenter.Text),
                                         1, LookCostCenter.EditValue)
 
-            creditRow("DebitAcc") = "0"
-            creditRow("CredAcc") = AccountForRefranace.EditValue  ' حساب العميل
+            creditRow("CredAcc") = "0"
+            creditRow("DebitAcc") = AccountForRefranace.EditValue  ' حساب العميل
 
             creditRow("AccountCurr") = GetFinancialAccountsData(creditRow("CredAcc")).Currency
             creditRow("DocCurrency") = DocCurrency.EditValue
