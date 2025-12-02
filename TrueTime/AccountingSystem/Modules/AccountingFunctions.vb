@@ -4530,6 +4530,33 @@ WHERE R.RefNo = @RefNo;
                 SqlString += " and CredAcc <> '0'"
                 sql.SqlTrueAccountingRunQuery(SqlString)
                 _OtherAccount = sql.SQLDS.Tables(0).Rows(0).Item("CredAcc")
+            Case 11
+                SqlString += " and DebitAcc <> '0'"
+                sql.SqlTrueAccountingRunQuery(SqlString)
+                _OtherAccount = "1104010000"
+        End Select
+
+        Return _OtherAccount
+    End Function
+    Private Function GetOtherAccountByDocCode(DocName As Integer, DocCode As String) As String
+        Dim sql As New SQLControl
+        Dim SqlString As String
+        Dim _OtherAccount As String = "0"
+        SqlString = "  Select DISTINCT DocID,DocDate,DocName,DocStatus,DocCostCenter,DebitAcc,CredAcc,DocCurrency,DocAmount,ExchangePrice,BaseCurrAmount,BaseAmount,DocSort,Referance,[DocManualNo],InputUser,DocNotes from  journal
+                       Where   DocCode= '" & DocCode & "' and DocName=" & DocName
+        Select Case DocName
+            Case 4, 2, 13, 18, 9
+                SqlString += " and DebitAcc <> '0'"
+                sql.SqlTrueAccountingRunQuery(SqlString)
+                _OtherAccount = sql.SQLDS.Tables(0).Rows(0).Item("DebitAcc")
+            Case 3, 1, 12, 17, 8
+                SqlString += " and CredAcc <> '0'"
+                sql.SqlTrueAccountingRunQuery(SqlString)
+                _OtherAccount = sql.SQLDS.Tables(0).Rows(0).Item("CredAcc")
+            Case 11
+                SqlString += " and DebitAcc <> '0'"
+                sql.SqlTrueAccountingRunQuery(SqlString)
+                _OtherAccount = "1104010000"
         End Select
 
         Return _OtherAccount
@@ -4644,29 +4671,7 @@ WHERE R.RefNo = @RefNo;
         End If
         Return (_StockDebitWhereHouse, _StockCreditWhereHouse)
     End Function
-    Private Function GetOtherAccountByDocCode(DocName As Integer, DocCode As String) As String
-        Dim sql As New SQLControl
-        Dim SqlString As String
-        Dim _OtherAccount As String = "0"
-        SqlString = "  Select DISTINCT DocID,DocDate,DocName,DocStatus,DocCostCenter,DebitAcc,CredAcc,DocCurrency,DocAmount,ExchangePrice,BaseCurrAmount,BaseAmount,DocSort,Referance,[DocManualNo],InputUser,DocNotes from  journal
-                       Where   DocCode= '" & DocCode & "' and DocName=" & DocName
-        Select Case DocName
-            Case 4, 2, 13, 18, 9
-                SqlString += " and DebitAcc <> '0'"
-                sql.SqlTrueAccountingRunQuery(SqlString)
-                _OtherAccount = sql.SQLDS.Tables(0).Rows(0).Item("DebitAcc")
-            Case 3, 1, 12, 17, 8
-                SqlString += " and CredAcc <> '0'"
-                sql.SqlTrueAccountingRunQuery(SqlString)
-                _OtherAccount = sql.SQLDS.Tables(0).Rows(0).Item("CredAcc")
-            Case 11
-                SqlString += " and DebitAcc <> '0'"
-                sql.SqlTrueAccountingRunQuery(SqlString)
-                _OtherAccount = "1104010000"
-        End Select
 
-        Return _OtherAccount
-    End Function
 
     Public Function PostDocument(DocCode As String, DocData As String) As Boolean
         Dim Sql As New SQLControl

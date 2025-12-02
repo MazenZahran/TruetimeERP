@@ -12841,3 +12841,28 @@ ALTER TABLE [dbo].[POSHoldJournal] ADD TaxDate  Date ;
 Go
 ALTER TABLE [dbo].[JournalBeforeUpdate] ADD TaxDate  Date  ;
 Go
+
+
+
+
+
+ALTER TABLE [dbo].[JournalBeforeUpdate] Add  [TarteebID] int NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [TarteebID] int NULL
+Go
+ALTER TABLE [dbo].[JournalBeforeUpdate] Add [OldTransID] int NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [OldTransID] int NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [DispatchQuantity] float NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [DispatchStockQuantityByMainUnit] float NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [DispatchVoucherID] int NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [SubAccount] int NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [BaseItemPrice] float NULL
+Go
+ALTER TABLE [dbo].[OrdersJournal] Add  [CashCustomerId] int NULL
+Go
