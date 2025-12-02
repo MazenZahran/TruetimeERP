@@ -9901,7 +9901,7 @@ SET @DocCode= ( select Right(NEWID(),15));
 SET @InputDateTime= (select CONVERT(char(10), GetDate(),126) + ' ' + convert(VARCHAR(8), GETDATE(), 14))
 --SET @DocDate= (select CONVERT(char(10), GetDate(),126))
 --Set @DocID=(Select IsNull(Max(DocID),0)+1 from Journal Where DocName=19 )
-SET @DocID = NEXT VALUE FOR dbo.ProductionEntrySeq;
+SET @DocID = NEXT VALUE FOR dbo.ProductionVoucherSeq;
 Set @ItemEquivalent= (Select EquivalentToMain from  [dbo].[Items_units]  where item_id=@ItemNo And unit_id= @Unit )
 Insert INTO JournalTemp (
 [DocID],[DocDate],[DocName],[DocStatus],[DocCostCenter],
@@ -12865,4 +12865,7 @@ Go
 ALTER TABLE [dbo].[OrdersJournal] Add  [BaseItemPrice] float NULL
 Go
 ALTER TABLE [dbo].[OrdersJournal] Add  [CashCustomerId] int NULL
+Go
+
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('POS_PrintClosedShiftReport','True',N' في نقطة البيع، طباعة تقرير اغلاق الوردية ','POS')
 Go
