@@ -1357,6 +1357,12 @@
     <Compile Include="HRsystem\Settings\FrmUserAccessPermissions.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HRsystem\Settings\LinkWhatsAppForm.Designer.vb">
+      <DependentUpon>LinkWhatsAppForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HRsystem\Settings\LinkWhatsAppForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HRsystem\Settings\NotificationViewer.Designer.vb">
       <DependentUpon>NotificationViewer.vb</DependentUpon>
     </Compile>

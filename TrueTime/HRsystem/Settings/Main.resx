@@ -1210,6 +1210,25 @@
         qNBDhsVRoYcMi6NCD5nnQ/k8le7L/fq7PPy+5La/P+iRJEnSHj87VKAB/gKy6QAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="BarSubItem2.Caption" xml:space="preserve">
+    <value>الشيكات الصادرة</value>
+  </data>
+  <data name="BarSubItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAnFJREFUaEPtlM9r02AYx4t4X5rRanWKO3hQ/HHWW+KmsHZLvE1R8GL/AAVFkppV
+        ULbhRazouk50Q5hHd/DkRc+K4GGiWKe2zU47KIoH577yZsvr9qTS1KXtG8gHPrDC89LP071JLBYREREh
+        DLqNF7oN6FUc0ao46vwt2ucantNuDj8guLSbQwdFlXZz6KCo0m4OHRRV2s2hg6JKuzl0kLnrYRWpyS8d
+        kX037Wl6gZ4HnVuAfTftaXoBEaXdHDrYDrXKMjIfviM9v4RM+Qf02opnhkq7OXSQ2bJnYGIB2wtvkbz5
+        DHLeQDw3iMSN+0jd+8hnxHwGip9Xw8efQs5fhGT2QTJVx+7rtzcsIN4zUFtB5v1XHH5cQjz3N5yZuKbh
+        xOtK8FcoMNfiD82WNoS7Hnh0B0MLP73n6ki7OXQwMBvEd4+k0f+yDK3623u2jrSbQwcDcS3+4OyEJ3z9
+        r++8gejZf0i7OXRw0zb45Zl7iyMYmF/ydfddaTeHDm5KH/Fy/hK23XqDVPGT920V1Gv0vwwgvnOvUR/x
+        7rXx+9BSaTeHDjZtG+KZtJuj26jSYd868d9aHq/ZqNBuzslFpHUbNXqooW2KZ22ajQHaHQhdxrELNJpr
+        qFMxy9pCzwjDzsLwXHJsyBsejvjTT3pnsuidziI5TpYQPT5+9fjl3VPn4Cwwk8We6fPg/wnR4907L1v9
+        oEskRgfnQhHv6ixRWl2i5+6ZdzHL2krPCAONX7/EjsLwq1DGh+rO19VQJoWOl6+o+yVTWfaEhyGeIRnK
+        WU94WOIZstm3TzLUX6GMd4kbyinJUMpdhroomUouVPERERERLeMPnYjsVPHG1jMAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="BarButtonItem93.Caption" xml:space="preserve">
     <value>استعلام الشيكات الواردة</value>
   </data>
@@ -1304,69 +1323,6 @@
         DQo8L3N2Zz4L
 </value>
   </data>
-  <data name="BarButtonItem196.Caption" xml:space="preserve">
-    <value>إعادة شيك مجير</value>
-  </data>
-  <data name="BarButtonItem196.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOcCAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
-        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KPC9z
-        dHlsZT4NCiAgPHBhdGggZD0iTTEwLjQsMTUuNmMtMC41LTAuMy0wLjUtMC44LDAtMS4xTDIwLDcuMlY0
-        LjZjMC0wLjYtMC40LTAuOC0wLjktMC41TDYuNCwxNC41Yy0wLjUsMC4zLTAuNSwwLjcsMCwxLjEgIGwx
-        Mi43LDEwLjNjMC41LDAuMywwLjksMC4xLDAuOS0wLjV2LTIuNkwxMC40LDE1LjZ6IiBjbGFzcz0iQmx1
-        ZSIgLz4NCiAgPHBhdGggZD0iTTE0LjQsMTQuNWMtMC41LDAuMy0wLjUsMC44LDAsMS4xbDE0LjcsMTAu
-        M2MwLjUsMC4zLDAuOSwwLjEsMC45LTAuNVY0LjZjMC0wLjYtMC40LTAuOC0wLjktMC41TDE0LjQsMTQu
-        NXoiIGNsYXNzPSJCbHVlIiAvPg0KICA8cGF0aCBkPSJNMywyNkgxYy0wLjYsMC0xLTAuNC0xLTFWNWMw
-        LTAuNiwwLjQtMSwxLTFoMmMwLjYsMCwxLDAuNCwxLDF2MjBDNCwyNS42LDMuNiwyNiwzLDI2eiIgY2xh
-        c3M9IkJsdWUiIC8+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="BarButtonItem85.Caption" xml:space="preserve">
-    <value>سحب شيك نقدا</value>
-  </data>
-  <data name="BarButtonItem85.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAI8CAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
-        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
-        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuR3JlZW57ZmlsbDojMDM5
-        QzIzO30KCS5CbHVle2ZpbGw6IzExNzdENzt9Cjwvc3R5bGU+DQogIDxnIGlkPSJDYXNoVm91Y2hlciI+
-        DQogICAgPHBvbHlnb24gcG9pbnRzPSIyNiwyIDIsMiAyLDYgMiwxMiA2LDEyIDYsNiAyNiw2IDI2LDEy
-        IDMwLDEyIDMwLDIgICIgY2xhc3M9IkJsYWNrIiAvPg0KICAgIDxwYXRoIGQ9Ik04LDI4djJoNHYtMmgy
-        djJoNHYtMmgydjJoNHYtMlY4SDhWMjh6IE0xMiwxMmg4djJoLThWMTJ6IE0xMiwxNmg4djJoLThWMTZ6
-        IE0xMiwyMGg4djJoLThWMjB6IiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
-</value>
-  </data>
-  <data name="BarSubItem2.Caption" xml:space="preserve">
-    <value>الشيكات الصادرة</value>
-  </data>
-  <data name="BarSubItem2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAnFJREFUaEPtlM9r02AYx4t4X5rRanWKO3hQ/HHWW+KmsHZLvE1R8GL/AAVFkppV
-        ULbhRazouk50Q5hHd/DkRc+K4GGiWKe2zU47KIoH577yZsvr9qTS1KXtG8gHPrDC89LP071JLBYREREh
-        DLqNF7oN6FUc0ao46vwt2ucantNuDj8guLSbQwdFlXZz6KCo0m4OHRRV2s2hg6JKuzl0kLnrYRWpyS8d
-        kX037Wl6gZ4HnVuAfTftaXoBEaXdHDrYDrXKMjIfviM9v4RM+Qf02opnhkq7OXSQ2bJnYGIB2wtvkbz5
-        DHLeQDw3iMSN+0jd+8hnxHwGip9Xw8efQs5fhGT2QTJVx+7rtzcsIN4zUFtB5v1XHH5cQjz3N5yZuKbh
-        xOtK8FcoMNfiD82WNoS7Hnh0B0MLP73n6ki7OXQwMBvEd4+k0f+yDK3623u2jrSbQwcDcS3+4OyEJ3z9
-        r++8gejZf0i7OXRw0zb45Zl7iyMYmF/ydfddaTeHDm5KH/Fy/hK23XqDVPGT920V1Gv0vwwgvnOvUR/x
-        7rXx+9BSaTeHDjZtG+KZtJuj26jSYd868d9aHq/ZqNBuzslFpHUbNXqooW2KZ22ajQHaHQhdxrELNJpr
-        qFMxy9pCzwjDzsLwXHJsyBsejvjTT3pnsuidziI5TpYQPT5+9fjl3VPn4Cwwk8We6fPg/wnR4907L1v9
-        oEskRgfnQhHv6ixRWl2i5+6ZdzHL2krPCAONX7/EjsLwq1DGh+rO19VQJoWOl6+o+yVTWfaEhyGeIRnK
-        WU94WOIZstm3TzLUX6GMd4kbyinJUMpdhroomUouVPERERERLeMPnYjsVPHG1jMAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="BarButtonItem98.Caption" xml:space="preserve">
     <value>استعلام الشيكات الصادرة</value>
   </data>
@@ -1402,52 +1358,6 @@
         Y2l0eTowLjU7fQo8L3N0eWxlPg0KICA8ZyBpZD0iVHJlZW1hcEJvdHRvbVJpZ2h0VG9wTGVmdERpcmVj
         dGlvbiI+DQogICAgPHBhdGggZD0iTTQsNGgxNGwtNS42LDUuNkwyOCwyNS4yTDI1LjIsMjhMOS42LDEy
         LjRMNCwxOEM0LDE4LDQsMy45LDQsNHoiIGNsYXNzPSJCbHVlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="BarButtonItem270.Caption" xml:space="preserve">
-    <value>ارجاع شيك صادر من البنك الى المورد</value>
-  </data>
-  <data name="BarButtonItem270.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAWdEVYdFRpdGxlAFVuZG87QXJyb3c7RWRpdDvLXPEn
-        AAAApklEQVQ4T6WSsQ3CMBBFMwdSxBBUDPHXoM4ESNxEdPkdY1DSZwmjH52RieNgk+LJl3/WU852F0Lo
-        9pAFrWRBK58CxiuMWkUP4wDjCOPkqFam3rxvKQguOcN49+811NOeVYF4+vqA8QLj0VGtLEr6kkC8YDwl
-        I0WURcmwJRDpmaToT9QffwlKEo2j3rQU1LJbUByhhsPWIdZyK11jC/Nr/BL8Sxa08gaQil7eox2J+AAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="BarButtonItem270.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAWdEVYdFRpdGxlAFVuZG87QXJyb3c7RWRpdDvLXPEn
-        AAABRElEQVRYR8WVvY3CQBCFKQCJdkgoYTqgAjIggeCQbkQRVEE8dEJGARdchERm9E4GLTOL9oe9cfBJ
-        9tv5efbO2qOu60ZDYgRvjOCNEbwxgjdG8OblhlhSTIllQyxHYjkTy7UH19Cwhhid96TWwIxYDsTySyxd
-        AsQgFjm6TtLATicQy6J/Qt0oBXKQW2QAiaGJLbHcIsVzQS5qFBl4mID7WPMTsaz6vZ704Boa1nQ8ajzf
-        RK4B8KPuL8SyJpaxfq0BWEMMYsNcbMffTJQY0M3nkYbvQKw2gcGsNoCn0k1SICesgdMxrTWwjzRIge3Q
-        M7GpNQBiRzQFBjOscfzEQI0JnI4w//ypgVITOKJh7jVloDWDGyjegtYUD2FLqo5hS6o+RC1ZKgNZn+LW
-        fD+GL/dn9B98Zf+Oh8AI3hjBGyN4YwRvjODNHU84zshIchd7AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="BarButtonItem303.Caption" xml:space="preserve">
-    <value>استرجاع شيك من مورد</value>
-  </data>
-  <data name="BarButtonItem303.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIkCAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
-        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
-        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuQmx1ZXtmaWxsOiMxMTc3
-        RDc7fQoJLldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7b3Bh
-        Y2l0eTowLjc1O30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuMjU7fQoJLnN0M3tm
-        aWxsOiNGRkIxMTU7fQo8L3N0eWxlPg0KICA8ZyAvPg0KICA8ZyBpZD0iVW5kb18xXyI+DQogICAgPHBh
-        dGggZD0iTTE0LDEyVjkuNlY2TDQsMTZsMTAsMTB2LTZjNy43LDAsMTQsMi43LDE0LDZDMjgsMTguMywy
-        MS43LDEyLDE0LDEyeiIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
   <data name="BarButtonItem100.Caption" xml:space="preserve">
@@ -2660,6 +2570,29 @@
         djE5YzAsMC41LDAuNSwxLDEsMWgxNXYtMkgyVjEweiIgY2xhc3M9IkJsYWNrIiAvPg0KPC9zdmc+Cw==
 </value>
   </data>
+  <data name="BarButtonItem196.Caption" xml:space="preserve">
+    <value>إعادة شيك مجير</value>
+  </data>
+  <data name="BarButtonItem196.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOcCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KPC9z
+        dHlsZT4NCiAgPHBhdGggZD0iTTEwLjQsMTUuNmMtMC41LTAuMy0wLjUtMC44LDAtMS4xTDIwLDcuMlY0
+        LjZjMC0wLjYtMC40LTAuOC0wLjktMC41TDYuNCwxNC41Yy0wLjUsMC4zLTAuNSwwLjcsMCwxLjEgIGwx
+        Mi43LDEwLjNjMC41LDAuMywwLjksMC4xLDAuOS0wLjV2LTIuNkwxMC40LDE1LjZ6IiBjbGFzcz0iQmx1
+        ZSIgLz4NCiAgPHBhdGggZD0iTTE0LjQsMTQuNWMtMC41LDAuMy0wLjUsMC44LDAsMS4xbDE0LjcsMTAu
+        M2MwLjUsMC4zLDAuOSwwLjEsMC45LTAuNVY0LjZjMC0wLjYtMC40LTAuOC0wLjktMC41TDE0LjQsMTQu
+        NXoiIGNsYXNzPSJCbHVlIiAvPg0KICA8cGF0aCBkPSJNMywyNkgxYy0wLjYsMC0xLTAuNC0xLTFWNWMw
+        LTAuNiwwLjQtMSwxLTFoMmMwLjYsMCwxLDAuNCwxLDF2MjBDNCwyNS42LDMuNiwyNiwzLDI2eiIgY2xh
+        c3M9IkJsdWUiIC8+DQo8L3N2Zz4L
+</value>
+  </data>
   <data name="BarButtonItem197.Caption" xml:space="preserve">
     <value>تقرير ربح الأصناف</value>
   </data>
@@ -2835,6 +2768,25 @@
         Cjwvc3ZnPgs=
 </value>
   </data>
+  <data name="BarButtonItemShelfContains.Caption" xml:space="preserve">
+    <value>محتويات رف</value>
+  </data>
+  <data name="BarButtonItemShelfContains.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQdEVYdFRpdGxlAEdyaWQ7Q2FyZDuRESn+AAAANklE
+        QVQ4T2P4//8/AyUYQ4BUzODbtOM/HoxXftQAhAFkY6q5AENipBmAnrZJxRgCpGIMAVIxABf9l4Wv/PwH
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BarButtonItemShelfContains.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQdEVYdFRpdGxlAEdyaWQ7Q2FyZDuRESn+AAAAUUlE
+        QVRYR+3OsQkAIAxEURd0KadyuwgpUsQmGPCaX/wUgYM3zGwo8zPXtpe6WwAAAAAIgDI/WVetuwUAAACA
+        ACjzk3XVulsAAAAACICy6/G7A9ZjlSt0ixC/AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="BarButtonItem208.Caption" xml:space="preserve">
     <value>الأرصدة بالمستودع</value>
   </data>
@@ -2895,25 +2847,6 @@
         /S9wSUa9DTgb+X/y4CHt/wC6VIn9dfAFgwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="BarButtonItemShelfContains.Caption" xml:space="preserve">
-    <value>محتويات رف</value>
-  </data>
-  <data name="BarButtonItemShelfContains.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQdEVYdFRpdGxlAEdyaWQ7Q2FyZDuRESn+AAAANklE
-        QVQ4T2P4//8/AyUYQ4BUzODbtOM/HoxXftQAhAFkY6q5AENipBmAnrZJxRgCpGIMAVIxABf9l4Wv/PwH
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="BarButtonItemShelfContains.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQdEVYdFRpdGxlAEdyaWQ7Q2FyZDuRESn+AAAAUUlE
-        QVRYR+3OsQkAIAxEURd0KadyuwgpUsQmGPCaX/wUgYM3zGwo8zPXtpe6WwAAAAAIgDI/WVetuwUAAACA
-        ACjzk3XVulsAAAAACICy6/G7A9ZjlSt0ixC/AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="BarButtonItemBalanceOnShelves.Caption" xml:space="preserve">
     <value>رصيد الصنف حسب الرف</value>
   </data>
@@ -2968,6 +2901,24 @@
         NCj5c9+HrxrxF/25/Kr5BzkUSXihAXISAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="BarButtonItem3.Caption" xml:space="preserve">
+    <value>ملخص الدخل</value>
+  </data>
+  <data name="BarButtonItem3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
+        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
+        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
+        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu+JhjwvdGV4dD4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
   <data name="BarButtonItem210.Caption" xml:space="preserve">
     <value>رصيد صنف حسب المستودع</value>
   </data>
@@ -2989,68 +2940,6 @@
         Pg0KICA8cGF0aCBkPSJNMywzMGgyNmMwLjUsMCwxLTAuNSwxLTFWOGgtMnYxMkgxMlY4aC0ydjIwSDRW
         OEgydjIxQzIsMjkuNSwyLjUsMzAsMywzMHogTTEyLDIyaDE2djZIMTJWMjJ6IiBjbGFzcz0iQmxhY2si
         IC8+DQo8L3N2Zz4L
-</value>
-  </data>
-  <data name="BarButtonInternalOrders.Caption" xml:space="preserve">
-    <value>الطلبيات الداخلية</value>
-  </data>
-  <data name="BarButtonInternalOrders.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABZ0RVh0VGl0
-        bGUAU29ydDtSZXZlcnNTb3J0O0sjVgMAAABmSURBVDhPpZBRCsAgDEO94C41eqjdLmPFFkknGP14YIN9
-        kDYA7YQSqJRAJR/X/QTo+GxmATo+zwSxnBJFwMuOKuAKkoBrbN1gX0BVXPDNw9IogCooKII/Sf5fFXCF
-        uUClBColUHkBwQWYS5Mde2kAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="BarButtonInternalOrders.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABZ0RVh0VGl0
-        bGUAU29ydDtSZXZlcnNTb3J0O0sjVgMAAAFRSURBVFhH7ZM9igJBEEa9n1RmbGpkoIlmQvFdwMQLeIk6
-        meD4M0tJt7RVrT0LY22yC49lvqF4D9FJ3/eTv8QN0bghGjdE44Zo3BCNG2oQy5pYemKBfQfA0he8vLO3
-        ihssxLIglnsKUHZhAcQyN/LM9usBxDIjlmsSlhF5W30tgFimxHJOoq7yCWiERi2tZKyAUyHfG/mmjLCS
-        sQJUcCGWQ/H8ID3niM5Kxgq4EcvRBD0DyggrGSXAUgvIWMl/QHiAMiTA3mTcUONTAIAbgGMjYKPP9lZx
-        Q41GgIouAA5vAh5yAJ29VdxQoxFwygIAexOQ5VcAd3uruKFGI2AK4FxElAFPOYClvVXcUKMRoMySSIUq
-        K+X6f/Xui+iGGgMClLmRZ7affgluqDEwQFmYiF353t4qbqjxiwBlneT69/LO3ipuiMYN0bghGjdE44Zo
-        3BDND4mJ3N+zYgo1AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="BarItemBalanceByBatchNo.Caption" xml:space="preserve">
-    <value>ارصدة الاصناف حسب الباتش</value>
-  </data>
-  <data name="BarItemBalanceByBatchNo.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
-        bGUASGlkZTtIaWRlUHJvZHVjdDuzWYYwAAAAW0lEQVQ4T6WQQQ4AMQgC/f9nfKJN92QAG8ke5oLNQBpV
-        FX+gwCUys5B7wGzie9iNTbDiJaA2xSjYIpusBWh0ocBFTr0HzCbo05pgxUtAbYpRsEU2WQvQ6EKBywEA
-        Vu/D12VZXQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="BarItemBalanceByBatchNo.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
-        bGUASGlkZTtIaWRlUHJvZHVjdDuzWYYwAAAA0UlEQVRYR8WTUQrFMAgEe//L5IgpQnmUWR8qBvsxFBZx
-        J2l77b2vL5FgGgmmkcBYa+1/cLaLBMZTZk/yE6BYBvZ0BcqwJxTwcsyU4L6WwCkkMDICPF0G7osEXDjb
-        RQKDH0/0IXWQwGDpFwJy9dOvwMrk9G8BimVgT1egDHtCAS/HTAnuawmcQgIjI8DTZeC+SMCFs10kmEaC
-        aSQweO3jr+Apk//4LUCxDOzpCpRhTyjg5ZgpwX0tgVNIYGQEeLoM3BcJuHC2iwTTSDCNBNNIMM0Na6Sp
-        eeo4uRMAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="BarButtonItem3.Caption" xml:space="preserve">
-    <value>ملخص الدخل</value>
-  </data>
-  <data name="BarButtonItem3.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAK4BAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXIxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAz
-        MiAzMiI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CgkJLkJsdWUKCQl7CgkJCWZpbGw6IzcyNzI3
-        MjsgCgkJCWZvbnQtZmFtaWx5OidkeC1mb250LWljb25zJzsgCgkJCWZvbnQtc2l6ZTozMnB4OwoJCX0K
-        CTwvc3R5bGU+DQogIDx0ZXh0IHg9IjBweCIgeT0iMzJweCIgY2xhc3M9IkJsdWUiPu+JhjwvdGV4dD4N
-        Cjwvc3ZnPgs=
 </value>
   </data>
   <data name="BarButtonItem211.Caption" xml:space="preserve">
@@ -3163,27 +3052,6 @@
         QmCC
 </value>
   </data>
-  <data name="BarButtonItem232.Caption" xml:space="preserve">
-    <value>تفاصيل حركات المبيعات والمشتريات</value>
-  </data>
-  <data name="BarButtonItem232.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACV0RVh0VGl0
-        bGUAU2FsZXNTdW1tYXJ5O1ByaW50U2FsZXNTdW1tYXJ5O/+dIlYAAABpSURBVDhPY/j//z8DJRjOaGlp
-        +U8KxmoAsWBgDPBt2gHGIEC0AciaiDYAlyb6GUACwG7AwYMHUTAI3Eh2QcF4DcAGsBkAY2MYQKwLoGzi
-        XIANkGQAuguQMOHMhAcwoBhACEP9jsIGGQAAADksORNa9qgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="BarButtonItem232.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACV0RVh0VGl0
-        bGUAU2FsZXNTdW1tYXJ5O1ByaW50U2FsZXNTdW1tYXJ5O/+dIlYAAADXSURBVFhH7ZNLCsMwDERzuG57
-        it6k6EhZFLLyLXoblwYH1BnZiT91KLXggaPg0YtxJu/9dCbU6A01ekMNRER8DZiHUAMJIUU1BIZAkYCI
-        LOoWNxFQeQvOswT0b9RaYH3OFqgBM3HergC+L6FGoDk4bwgMgd8RyC3cnyMw46YjAtf7Y2Ur3B+YcR4J
-        WMQE9FBLAHMsqGGhBWJD/0cgsygLoYaFFnDOEe963i4ffE0gVpaAWlNmsQB+feoEwpryqgRyqqsAnoCC
-        8ooEUiRqaiJwFH3htvWewAsAlSYgWaIHuAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="BarButtonItemItemsTransOnShelves.Caption" xml:space="preserve">
     <value>تفاصيل حركات الأصناف حسب الرف</value>
   </data>
@@ -3203,38 +3071,6 @@
         QBcJ0iRIk6Dwtcc/AUtXA/iDnWCPO+Aae9wBcuEOe6wBXSQoLF0N4HUn2GMN6CJBmgRpEhS+9vgnYOlq
         AH+wE+xxB1xjjztALtxhjzWgiwSFpasBvO4Ee6wBXSRIkyBNgjQJ0r7Fdo8qHExrtQAAAABJRU5ErkJg
         gg==
-</value>
-  </data>
-  <data name="BarButtonItem287.Caption" xml:space="preserve">
-    <value>أصناف لم تتحرك من فترة</value>
-  </data>
-  <data name="BarButtonItem287.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAARdEVYdFRpdGxlAFBhdXNlO1N0b3A7O4p6PAAAAW1J
-        REFUOE+tk8Erw2Ech1+098DZH0GtpKSUWmm1ZCsXuyE5ODhsDsQmVkamiKRNLSlqMzmozXZY0WpNmIO0
-        JmqKyMhKjUQffdm3prefk6d+9fS8b5/T+xPiH6nwRs0BX8xy54tZ8t6oJUTtp1tC1OiM7pS6QtVKpAP5
-        YgZPr1mQU+NOjc7KuoJuabcdhY8LHF7PgJzaH11Bzu+YkH9PI5mbAjm1P7qC9ASNuH07QOLKBXIe0OgK
-        0r3RhlwxjP3LcZDzgEZXkJNrBmRfgohnx0DOAxpdQTpWW3H27EcsMwJyHuAeObeVdwU5vNyC9OMiAidW
-        kPMA982jzvKuIO0LzUjdT2M9ZQY5D2h0BTnoaULixgl/0gRyHtDoCnLA3Yh4bgi+hBHkPKDRFWS/q+Fz
-        67gXc3sGkPMA+fZpH2bDv7qCrstWN9rt0D/0OPUFq71+gp8yOTU6oztaT7lSCFEthKgtfTX8M5WcO92h
-        u998AWVqK0r4gt+7AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="BarButtonItem287.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAARdEVYdFRpdGxlAFBhdXNlO1N0b3A7O4p6PAAAAkBJ
-        REFUWEftlu1rzXEYxn/SvPFa+RuESJKkeWgty5mX8kIiUR5KqEMz1jDP0vEwR5taWlFaahlnrRlmHSK0
-        FzZtnC0Pp5ZWC01rXbqv9l3rPnWfuulo5aqrX9d91dXn9+4bAYj+pXMOhXbOYbL4i9Lb/wGmJcCM66nY
-        5WRreTbZWg75SpZ7no7S2x6AmbUPY/gx/nXSkuWep6P0tgeg6GrLeoyMZ/B88DQtWe55OkpvewBmJZrL
-        MDzWg/RADS1Z7nk6Sm+7AC7dW4ehsTfoypygJQcAo6P0tgvg/N1SZH+l0fmhmpYcAIyO0tsugDN3SvBp
-        9BGe9FfRkgOA0VF62wVQ07gWmZ8t6OirpCUHAKOj9LYLoLphNfq+N6H9/RFacgAwOkpvuwCO1RejZ6QR
-        bb2HackBwOgove0CqLixEt3D9Ui9i9OSA4DRUXrbBRC/tgKvv11B09ttaO7eDckBYGp3+9XGqR2lt10A
-        BxPL8XLoAm692EBLDgBGR+ltF8C+i8uQzp5EQzpGSw4ARkfpbRfA3rNL0fn5KG52ldGSA4DRUXrbBbDr
-        1BJ0DMZR96yUlhwAjI7S2y6AHccXo+3jfiSfltCSA4DRUXrbBbC9ahFS/XtQ+3gNLTkAGB2lt10AWysX
-        4n7vTiTai3HuwSpIDgBGR+ltD0DRpgPz6jYfmv9lS8WCUflKDg8So6P0tgdAnlezoyiaE0XR3ImvZD7J
-        jI7S2x4AeWDKIP94wpL5KDU6Sm97AP5Ient6ABTKOYdC+ze9zuKdqkWfSwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="BarSubItem13.Caption" xml:space="preserve">
@@ -3782,6 +3618,27 @@
         LjYsMC40LDEsMSwxaDEyYzAuNiwwLDEtMC40LDEtMVY5QzE0LDguNCwxMy42LDgsMTMsOHogTTEyLDEy
         SDQuOGwzLDNsLTMsMyAgSDEydjJIMnYtMmwzLTNsLTMtM3YtMmgxMFYxMnoiIGNsYXNzPSJZZWxsb3ci
         IC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="BarButtonItem232.Caption" xml:space="preserve">
+    <value>تفاصيل حركات المبيعات والمشتريات</value>
+  </data>
+  <data name="BarButtonItem232.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACV0RVh0VGl0
+        bGUAU2FsZXNTdW1tYXJ5O1ByaW50U2FsZXNTdW1tYXJ5O/+dIlYAAABpSURBVDhPY/j//z8DJRjOaGlp
+        +U8KxmoAsWBgDPBt2gHGIEC0AciaiDYAlyb6GUACwG7AwYMHUTAI3Eh2QcF4DcAGsBkAY2MYQKwLoGzi
+        XIANkGQAuguQMOHMhAcwoBhACEP9jsIGGQAAADksORNa9qgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BarButtonItem232.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACV0RVh0VGl0
+        bGUAU2FsZXNTdW1tYXJ5O1ByaW50U2FsZXNTdW1tYXJ5O/+dIlYAAADXSURBVFhH7ZNLCsMwDERzuG57
+        it6k6EhZFLLyLXoblwYH1BnZiT91KLXggaPg0YtxJu/9dCbU6A01ekMNRER8DZiHUAMJIUU1BIZAkYCI
+        LOoWNxFQeQvOswT0b9RaYH3OFqgBM3HergC+L6FGoDk4bwgMgd8RyC3cnyMw46YjAtf7Y2Ur3B+YcR4J
+        WMQE9FBLAHMsqGGhBWJD/0cgsygLoYaFFnDOEe963i4ffE0gVpaAWlNmsQB+feoEwpryqgRyqqsAnoCC
+        8ooEUiRqaiJwFH3htvWewAsAlSYgWaIHuAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="BarButtonItem233.Caption" xml:space="preserve">
@@ -10174,12 +10031,6 @@
   <data name="&gt;&gt;BarSubItem21.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;BarButtonItem285.Name" xml:space="preserve">
-    <value>BarButtonItem285</value>
-  </data>
-  <data name="&gt;&gt;BarButtonItem285.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;BarButtonItemRCCIInsentives.Name" xml:space="preserve">
     <value>BarButtonItemRCCIInsentives</value>
   </data>
@@ -10208,6 +10059,30 @@
     <value>BarButtonItem16</value>
   </data>
   <data name="&gt;&gt;BarButtonItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Statickey_.Name" xml:space="preserve">
+    <value>Statickey_</value>
+  </data>
+  <data name="&gt;&gt;Statickey_.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Statickey.Name" xml:space="preserve">
+    <value>Statickey</value>
+  </data>
+  <data name="&gt;&gt;Statickey.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;mnuWhatsApp.Name" xml:space="preserve">
+    <value>mnuWhatsApp</value>
+  </data>
+  <data name="&gt;&gt;mnuWhatsApp.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem285.Name" xml:space="preserve">
+    <value>BarButtonItem285</value>
+  </data>
+  <data name="&gt;&gt;BarButtonItem285.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RibbonMiniToolbar1.Name" xml:space="preserve">
@@ -11710,16 +11585,10 @@
   <data name="&gt;&gt;PopupMenu6.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;Statickey_.Name" xml:space="preserve">
-    <value>Statickey_</value>
+  <data name="&gt;&gt;btnOpenLinkWhatsApp.Name" xml:space="preserve">
+    <value>btnOpenLinkWhatsApp</value>
   </data>
-  <data name="&gt;&gt;Statickey_.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;Statickey.Name" xml:space="preserve">
-    <value>Statickey</value>
-  </data>
-  <data name="&gt;&gt;Statickey.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnOpenLinkWhatsApp.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
@@ -12036,6 +11905,29 @@
         LDIwLDE2LDIweiIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
 </value>
   </data>
+  <data name="BarButtonInternalOrders.Caption" xml:space="preserve">
+    <value>الطلبيات الداخلية</value>
+  </data>
+  <data name="BarButtonInternalOrders.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABZ0RVh0VGl0
+        bGUAU29ydDtSZXZlcnNTb3J0O0sjVgMAAABmSURBVDhPpZBRCsAgDEO94C41eqjdLmPFFkknGP14YIN9
+        kDYA7YQSqJRAJR/X/QTo+GxmATo+zwSxnBJFwMuOKuAKkoBrbN1gX0BVXPDNw9IogCooKII/Sf5fFXCF
+        uUClBColUHkBwQWYS5Mde2kAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BarButtonInternalOrders.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABZ0RVh0VGl0
+        bGUAU29ydDtSZXZlcnNTb3J0O0sjVgMAAAFRSURBVFhH7ZM9igJBEEa9n1RmbGpkoIlmQvFdwMQLeIk6
+        meD4M0tJt7RVrT0LY22yC49lvqF4D9FJ3/eTv8QN0bghGjdE44Zo3BCNG2oQy5pYemKBfQfA0he8vLO3
+        ihssxLIglnsKUHZhAcQyN/LM9usBxDIjlmsSlhF5W30tgFimxHJOoq7yCWiERi2tZKyAUyHfG/mmjLCS
+        sQJUcCGWQ/H8ID3niM5Kxgq4EcvRBD0DyggrGSXAUgvIWMl/QHiAMiTA3mTcUONTAIAbgGMjYKPP9lZx
+        Q41GgIouAA5vAh5yAJ29VdxQoxFwygIAexOQ5VcAd3uruKFGI2AK4FxElAFPOYClvVXcUKMRoMySSIUq
+        K+X6f/Xui+iGGgMClLmRZ7affgluqDEwQFmYiF353t4qbqjxiwBlneT69/LO3ipuiMYN0bghGjdE44Zo
+        3BDND4mJ3N+zYgo1AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="BarButtonItem265.Caption" xml:space="preserve">
     <value>BarButtonItem265</value>
   </data>
@@ -12110,6 +12002,31 @@
   </data>
   <data name="BarButtonItem269.Caption" xml:space="preserve">
     <value>المجموعات الفرعية</value>
+  </data>
+  <data name="BarButtonItem270.Caption" xml:space="preserve">
+    <value>ارجاع شيك صادر من البنك الى المورد</value>
+  </data>
+  <data name="BarButtonItem270.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAWdEVYdFRpdGxlAFVuZG87QXJyb3c7RWRpdDvLXPEn
+        AAAApklEQVQ4T6WSsQ3CMBBFMwdSxBBUDPHXoM4ESNxEdPkdY1DSZwmjH52RieNgk+LJl3/WU852F0Lo
+        9pAFrWRBK58CxiuMWkUP4wDjCOPkqFam3rxvKQguOcN49+811NOeVYF4+vqA8QLj0VGtLEr6kkC8YDwl
+        I0WURcmwJRDpmaToT9QffwlKEo2j3rQU1LJbUByhhsPWIdZyK11jC/Nr/BL8Sxa08gaQil7eox2J+AAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BarButtonItem270.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAWdEVYdFRpdGxlAFVuZG87QXJyb3c7RWRpdDvLXPEn
+        AAABRElEQVRYR8WVvY3CQBCFKQCJdkgoYTqgAjIggeCQbkQRVEE8dEJGARdchERm9E4GLTOL9oe9cfBJ
+        9tv5efbO2qOu60ZDYgRvjOCNEbwxgjdG8OblhlhSTIllQyxHYjkTy7UH19Cwhhid96TWwIxYDsTySyxd
+        AsQgFjm6TtLATicQy6J/Qt0oBXKQW2QAiaGJLbHcIsVzQS5qFBl4mID7WPMTsaz6vZ704Boa1nQ8ajzf
+        RK4B8KPuL8SyJpaxfq0BWEMMYsNcbMffTJQY0M3nkYbvQKw2gcGsNoCn0k1SICesgdMxrTWwjzRIge3Q
+        M7GpNQBiRzQFBjOscfzEQI0JnI4w//ypgVITOKJh7jVloDWDGyjegtYUD2FLqo5hS6o+RC1ZKgNZn+LW
+        fD+GL/dn9B98Zf+Oh8AI3hjBGyN4YwRvjODNHU84zshIchd7AAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="BarButtonItem271.Caption" xml:space="preserve">
     <value>أرصدة مراكز التكلفة</value>
@@ -12404,6 +12321,27 @@
         Hp/JM99UJUpVDQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="BarItemBalanceByBatchNo.Caption" xml:space="preserve">
+    <value>ارصدة الاصناف حسب الباتش</value>
+  </data>
+  <data name="BarItemBalanceByBatchNo.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
+        bGUASGlkZTtIaWRlUHJvZHVjdDuzWYYwAAAAW0lEQVQ4T6WQQQ4AMQgC/f9nfKJN92QAG8ke5oLNQBpV
+        FX+gwCUys5B7wGzie9iNTbDiJaA2xSjYIpusBWh0ocBFTr0HzCbo05pgxUtAbYpRsEU2WQvQ6EKBywEA
+        Vu/D12VZXQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BarItemBalanceByBatchNo.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
+        bGUASGlkZTtIaWRlUHJvZHVjdDuzWYYwAAAA0UlEQVRYR8WTUQrFMAgEe//L5IgpQnmUWR8qBvsxFBZx
+        J2l77b2vL5FgGgmmkcBYa+1/cLaLBMZTZk/yE6BYBvZ0BcqwJxTwcsyU4L6WwCkkMDICPF0G7osEXDjb
+        RQKDH0/0IXWQwGDpFwJy9dOvwMrk9G8BimVgT1egDHtCAS/HTAnuawmcQgIjI8DTZeC+SMCFs10kmEaC
+        aSQweO3jr+Apk//4LUCxDOzpCpRhTyjg5ZgpwX0tgVNIYGQEeLoM3BcJuHC2iwTTSDCNBNNIMM0Na6Sp
+        eeo4uRMAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="BarButtonItem284.Caption" xml:space="preserve">
     <value>اصدار الرواتب</value>
   </data>
@@ -12474,6 +12412,59 @@
         IlJlZCIgLz4NCiAgICA8cmVjdCB4PSIxMiIgeT0iMTYiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiBjbGFz
         cz0iR3JlZW4iIC8+DQogICAgPHJlY3QgeD0iMjIiIHk9IjE2IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIg
         Y2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="BarButtonItem85.Caption" xml:space="preserve">
+    <value>سحب شيك نقدا</value>
+  </data>
+  <data name="BarButtonItem85.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAI8CAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
+        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuR3JlZW57ZmlsbDojMDM5
+        QzIzO30KCS5CbHVle2ZpbGw6IzExNzdENzt9Cjwvc3R5bGU+DQogIDxnIGlkPSJDYXNoVm91Y2hlciI+
+        DQogICAgPHBvbHlnb24gcG9pbnRzPSIyNiwyIDIsMiAyLDYgMiwxMiA2LDEyIDYsNiAyNiw2IDI2LDEy
+        IDMwLDEyIDMwLDIgICIgY2xhc3M9IkJsYWNrIiAvPg0KICAgIDxwYXRoIGQ9Ik04LDI4djJoNHYtMmgy
+        djJoNHYtMmgydjJoNHYtMlY4SDhWMjh6IE0xMiwxMmg4djJoLThWMTJ6IE0xMiwxNmg4djJoLThWMTZ6
+        IE0xMiwyMGg4djJoLThWMjB6IiBjbGFzcz0iQmxhY2siIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="BarButtonItem287.Caption" xml:space="preserve">
+    <value>أصناف لم تتحرك من فترة</value>
+  </data>
+  <data name="BarButtonItem287.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAARdEVYdFRpdGxlAFBhdXNlO1N0b3A7O4p6PAAAAW1J
+        REFUOE+tk8Erw2Ech1+098DZH0GtpKSUWmm1ZCsXuyE5ODhsDsQmVkamiKRNLSlqMzmozXZY0WpNmIO0
+        JmqKyMhKjUQffdm3prefk6d+9fS8b5/T+xPiH6nwRs0BX8xy54tZ8t6oJUTtp1tC1OiM7pS6QtVKpAP5
+        YgZPr1mQU+NOjc7KuoJuabcdhY8LHF7PgJzaH11Bzu+YkH9PI5mbAjm1P7qC9ASNuH07QOLKBXIe0OgK
+        0r3RhlwxjP3LcZDzgEZXkJNrBmRfgohnx0DOAxpdQTpWW3H27EcsMwJyHuAeObeVdwU5vNyC9OMiAidW
+        kPMA982jzvKuIO0LzUjdT2M9ZQY5D2h0BTnoaULixgl/0gRyHtDoCnLA3Yh4bgi+hBHkPKDRFWS/q+Fz
+        67gXc3sGkPMA+fZpH2bDv7qCrstWN9rt0D/0OPUFq71+gp8yOTU6oztaT7lSCFEthKgtfTX8M5WcO92h
+        u998AWVqK0r4gt+7AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BarButtonItem287.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAARdEVYdFRpdGxlAFBhdXNlO1N0b3A7O4p6PAAAAkBJ
+        REFUWEftlu1rzXEYxn/SvPFa+RuESJKkeWgty5mX8kIiUR5KqEMz1jDP0vEwR5taWlFaahlnrRlmHSK0
+        FzZtnC0Pp5ZWC01rXbqv9l3rPnWfuulo5aqrX9d91dXn9+4bAYj+pXMOhXbOYbL4i9Lb/wGmJcCM66nY
+        5WRreTbZWg75SpZ7no7S2x6AmbUPY/gx/nXSkuWep6P0tgeg6GrLeoyMZ/B88DQtWe55OkpvewBmJZrL
+        MDzWg/RADS1Z7nk6Sm+7AC7dW4ehsTfoypygJQcAo6P0tgvg/N1SZH+l0fmhmpYcAIyO0tsugDN3SvBp
+        9BGe9FfRkgOA0VF62wVQ07gWmZ8t6OirpCUHAKOj9LYLoLphNfq+N6H9/RFacgAwOkpvuwCO1RejZ6QR
+        bb2HackBwOgove0CqLixEt3D9Ui9i9OSA4DRUXrbBRC/tgKvv11B09ttaO7eDckBYGp3+9XGqR2lt10A
+        BxPL8XLoAm692EBLDgBGR+ltF8C+i8uQzp5EQzpGSw4ARkfpbRfA3rNL0fn5KG52ldGSA4DRUXrbBbDr
+        1BJ0DMZR96yUlhwAjI7S2y6AHccXo+3jfiSfltCSA4DRUXrbBbC9ahFS/XtQ+3gNLTkAGB2lt10AWysX
+        4n7vTiTai3HuwSpIDgBGR+ltD0DRpgPz6jYfmv9lS8WCUflKDg8So6P0tgdAnlezoyiaE0XR3ImvZD7J
+        jI7S2x4AeWDKIP94wpL5KDU6Sm97AP5Ient6ABTKOYdC+ze9zuKdqkWfSwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="BarButtonItems.Caption" xml:space="preserve">
@@ -13220,6 +13211,27 @@
         Hp/JM99UJUpVDQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="BarButtonItem303.Caption" xml:space="preserve">
+    <value>استرجاع شيك من مورد</value>
+  </data>
+  <data name="BarButtonItem303.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIkCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
+        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuQmx1ZXtmaWxsOiMxMTc3
+        RDc7fQoJLldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7b3Bh
+        Y2l0eTowLjc1O30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuMjU7fQoJLnN0M3tm
+        aWxsOiNGRkIxMTU7fQo8L3N0eWxlPg0KICA8ZyAvPg0KICA8ZyBpZD0iVW5kb18xXyI+DQogICAgPHBh
+        dGggZD0iTTE0LDEyVjkuNlY2TDQsMTZsMTAsMTB2LTZjNy43LDAsMTQsMi43LDE0LDZDMjgsMTguMywy
+        MS43LDEyLDE0LDEyeiIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
   <data name="BarButtonItem304.Caption" xml:space="preserve">
     <value>العلاوات والخصميات الثابتة</value>
   </data>
@@ -13426,9 +13438,6 @@
         Hp/JM99UJUpVDQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="BarButtonItem309.Caption" xml:space="preserve">
-    <value>المقبوضات والمصروفات</value>
-  </data>
   <data name="BarButtonItemQuickAddNewItem.Caption" xml:space="preserve">
     <value>تعريف صنف</value>
   </data>
@@ -13530,8 +13539,8 @@
   <data name="BarSubItem21.Caption" xml:space="preserve">
     <value>الارساليات</value>
   </data>
-  <data name="BarButtonItem285.Caption" xml:space="preserve">
-    <value>بيانات استخدام WhatsApp</value>
+  <data name="BarButtonItem309.Caption" xml:space="preserve">
+    <value>المقبوضات والمصروفات</value>
   </data>
   <data name="BarButtonItemRCCIInsentives.Caption" xml:space="preserve">
     <value>ضريبة الحوافز</value>
@@ -13632,6 +13641,75 @@
   <data name="Statickey_.Caption" xml:space="preserve">
     <value>Conkey</value>
   </data>
+  <data name="mnuWhatsApp.Caption" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="BarButtonItem285.Caption" xml:space="preserve">
+    <value>بيانات الاستخدام</value>
+  </data>
+  <data name="BarButtonItem285.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnOpenLinkWhatsApp.Caption" xml:space="preserve">
+    <value>ربط الواتساب</value>
+  </data>
+  <data name="BarButtonItem76.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS42
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAGICAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5Z
+        ZWxsb3d7ZmlsbDojRkZCMTE1O30KCS5CbGFja3tmaWxsOiM3MjcyNzI7fQoJLkdyZWVue2ZpbGw6IzAz
+        OUMyMzt9CgkuUmVke2ZpbGw6I0QxMUMxQzt9Cgkuc3Qwe29wYWNpdHk6MC43NTt9Cgkuc3Qxe29wYWNp
+        dHk6MC41O30KPC9zdHlsZT4NCiAgPGcgaWQ9IkFkZENpcmNsZWQiPg0KICAgIDxwYXRoIGQ9Ik0xNiw0
+        QzkuNCw0LDQsOS40LDQsMTZzNS40LDEyLDEyLDEyczEyLTUuNCwxMi0xMlMyMi42LDQsMTYsNHogTTI0
+        LDE4aC02djZoLTR2LTZIOHYtNGg2VjhoNHY2aDZWMTh6IiBjbGFzcz0iR3JlZW4iIC8+DQogIDwvZz4N
+        Cjwvc3ZnPgs=
+</value>
+  </data>
   <data name="RibbonControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -13644,6 +13722,120 @@
   <metadata name="PopupMenu8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 54</value>
   </metadata>
+  <data name="RibbonPageCategory2.Text" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="FinancialPageCategory.Text" xml:space="preserve">
+    <value>النظام المالي</value>
+  </data>
+  <data name="RibbonPageEmployees.Text" xml:space="preserve">
+    <value>ملفات الموظفين</value>
+  </data>
+  <data name="RibbonPageGroupAttendanceReports.Text" xml:space="preserve">
+    <value>التقارير</value>
+  </data>
+  <data name="RibbonPageGroupIssueAttReport.Text" xml:space="preserve">
+    <value>اصدار تقرير الدوام</value>
+  </data>
+  <data name="RibbonPageGroupSyncZenHR.Text" xml:space="preserve">
+    <value>Sync. with ZenHR</value>
+  </data>
+  <data name="RibbonPageGroup12.Text" xml:space="preserve">
+    <value>Self Service</value>
+  </data>
+  <data name="RibbonPageGroup42.Text" xml:space="preserve">
+    <value>JIRA</value>
+  </data>
+  <data name="RibbonPageReports.Text" xml:space="preserve">
+    <value>ادارة الدوام</value>
+  </data>
+  <data name="Ijazat.Text" xml:space="preserve">
+    <value>الاجازات</value>
+  </data>
+  <data name="Rawateb.Text" xml:space="preserve">
+    <value> الرواتب</value>
+  </data>
+  <data name="ManagmentRibbonPageCategory.Text" xml:space="preserve">
+    <value>النظام الاداري</value>
+  </data>
+  <data name="RibbonPageGroup36.Text" xml:space="preserve">
+    <value> اعدادات النظام</value>
+  </data>
+  <data name="RibbonPageGroup35.Text" xml:space="preserve">
+    <value>نظام SMS</value>
+  </data>
+  <data name="RibbonPageGroup30.Text" xml:space="preserve">
+    <value>عمليات خاصة </value>
+  </data>
+  <data name="RibbonPageGroup28.Text" xml:space="preserve">
+    <value>الصلاحيات</value>
+  </data>
+  <data name="RibbonDeleteData.Text" xml:space="preserve">
+    <value>حذف البيانات</value>
+  </data>
+  <data name="RibbonPageGroup15.Text" xml:space="preserve">
+    <value>لغة النظام</value>
+  </data>
+  <data name="RibbonPageGroup14.Text" xml:space="preserve">
+    <value>الفروع</value>
+  </data>
+  <data name="RibbonPageGroup3.Text" xml:space="preserve">
+    <value>لوحة التحكم</value>
+  </data>
+  <data name="RibbonPageGroup24.Text" xml:space="preserve">
+    <value>المظهر</value>
+  </data>
+  <data name="RibbonPageSettings.Text" xml:space="preserve">
+    <value>الاعدادات</value>
+  </data>
+  <data name="SettingsPageCategory.Text" xml:space="preserve">
+    <value>الاعدادات</value>
+  </data>
+  <data name="RepositoryItemCalcEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryItemCalcEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryItemImageEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryItemImageEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryItemDateEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RepositoryItemDateEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RepositoryItemDateEdit1.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="RibbonControl.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="RibbonControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1454, 201</value>
+  </data>
+  <data name="RibbonControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl.Name" xml:space="preserve">
+    <value>RibbonControl</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RibbonControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RibbonEmployeesPage.Text" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
   <data name="RibbonPageGroup19.Text" xml:space="preserve">
     <value>نظام المهام</value>
   </data>
@@ -13653,11 +13845,8 @@
   <data name="RibbonPageGroup8.Text" xml:space="preserve">
     <value>RibbonPageGroup8</value>
   </data>
-  <data name="RibbonEmployeesPage.Text" xml:space="preserve">
-    <value>الرئيسية</value>
-  </data>
-  <data name="RibbonPageCategory2.Text" xml:space="preserve">
-    <value>الرئيسية</value>
+  <data name="FinancialFiles.Text" xml:space="preserve">
+    <value>ملفات</value>
   </data>
   <data name="RibbonPageGroupItems.Text" xml:space="preserve">
     <value>المخزون والخدمات</value>
@@ -13665,8 +13854,8 @@
   <data name="RibbonPageGroupReferances.Text" xml:space="preserve">
     <value>زبائن،موردين،موظفين</value>
   </data>
-  <data name="FinancialFiles.Text" xml:space="preserve">
-    <value>ملفات</value>
+  <data name="FinancialDocuments.Text" xml:space="preserve">
+    <value>سندات</value>
   </data>
   <data name="RibbonPageGroup44.Text" xml:space="preserve">
     <value>المبيعات</value>
@@ -13686,8 +13875,8 @@
   <data name="RibbonPageGroupTaqseet.Text" xml:space="preserve">
     <value>الأقساط</value>
   </data>
-  <data name="FinancialDocuments.Text" xml:space="preserve">
-    <value>سندات</value>
+  <data name="FinancialReports.Text" xml:space="preserve">
+    <value>تقارير</value>
   </data>
   <data name="FinancialReferancesReports.Text" xml:space="preserve">
     <value>تقارير الذمم</value>
@@ -13704,14 +13893,14 @@
   <data name="RibbonPageDashBoareds.Text" xml:space="preserve">
     <value>DashBoards</value>
   </data>
-  <data name="FinancialReports.Text" xml:space="preserve">
-    <value>تقارير</value>
+  <data name="RibbonPage3.Text" xml:space="preserve">
+    <value>نظام الحجوزات</value>
   </data>
   <data name="RibbonPageGroup39.Text" xml:space="preserve">
     <value>الحجوزات</value>
   </data>
-  <data name="RibbonPage3.Text" xml:space="preserve">
-    <value>نظام الحجوزات</value>
+  <data name="RibbonPageOther.Text" xml:space="preserve">
+    <value>بنود اضافية</value>
   </data>
   <data name="RibbonPageGroupPosSystem.Text" xml:space="preserve">
     <value>نقاط البيع</value>
@@ -13795,128 +13984,17 @@
   <data name="RibbonPageGroup20.Text" xml:space="preserve">
     <value>شلش</value>
   </data>
-  <data name="RibbonPageOther.Text" xml:space="preserve">
-    <value>بنود اضافية</value>
-  </data>
-  <data name="FinancialPageCategory.Text" xml:space="preserve">
-    <value>النظام المالي</value>
-  </data>
   <data name="RibbonPageGroup1.Text" xml:space="preserve">
     <value>الملفات</value>
   </data>
   <data name="RibbonPageGroup18.Text" xml:space="preserve">
     <value>الثوابت</value>
   </data>
-  <data name="RibbonPageEmployees.Text" xml:space="preserve">
-    <value>ملفات الموظفين</value>
-  </data>
-  <data name="RibbonPageGroupAttendanceReports.Text" xml:space="preserve">
-    <value>التقارير</value>
-  </data>
-  <data name="RibbonPageGroupIssueAttReport.Text" xml:space="preserve">
-    <value>اصدار تقرير الدوام</value>
-  </data>
-  <data name="RibbonPageGroupSyncZenHR.Text" xml:space="preserve">
-    <value>Sync. with ZenHR</value>
-  </data>
-  <data name="RibbonPageGroup12.Text" xml:space="preserve">
-    <value>Self Service</value>
-  </data>
-  <data name="RibbonPageGroup42.Text" xml:space="preserve">
-    <value>JIRA</value>
-  </data>
-  <data name="RibbonPageReports.Text" xml:space="preserve">
-    <value>ادارة الدوام</value>
-  </data>
-  <data name="Ijazat.Text" xml:space="preserve">
-    <value>الاجازات</value>
-  </data>
   <data name="RibbonPageGroup29.Text" xml:space="preserve">
     <value>CAPE</value>
   </data>
   <data name="RibbonPageGroup6.Text" xml:space="preserve">
     <value>الرواتب</value>
-  </data>
-  <data name="Rawateb.Text" xml:space="preserve">
-    <value> الرواتب</value>
-  </data>
-  <data name="ManagmentRibbonPageCategory.Text" xml:space="preserve">
-    <value>النظام الاداري</value>
-  </data>
-  <data name="RibbonPageGroup36.Text" xml:space="preserve">
-    <value> اعدادات النظام</value>
-  </data>
-  <data name="RibbonPageGroup35.Text" xml:space="preserve">
-    <value>نظام SMS</value>
-  </data>
-  <data name="RibbonPageGroup30.Text" xml:space="preserve">
-    <value>عمليات خاصة </value>
-  </data>
-  <data name="RibbonPageGroup28.Text" xml:space="preserve">
-    <value>الصلاحيات</value>
-  </data>
-  <data name="RibbonDeleteData.Text" xml:space="preserve">
-    <value>حذف البيانات</value>
-  </data>
-  <data name="RibbonPageGroup15.Text" xml:space="preserve">
-    <value>لغة النظام</value>
-  </data>
-  <data name="RibbonPageGroup14.Text" xml:space="preserve">
-    <value>الفروع</value>
-  </data>
-  <data name="RibbonPageGroup3.Text" xml:space="preserve">
-    <value>لوحة التحكم</value>
-  </data>
-  <data name="RibbonPageGroup24.Text" xml:space="preserve">
-    <value>المظهر</value>
-  </data>
-  <data name="RibbonPageSettings.Text" xml:space="preserve">
-    <value>الاعدادات</value>
-  </data>
-  <data name="SettingsPageCategory.Text" xml:space="preserve">
-    <value>الاعدادات</value>
-  </data>
-  <data name="RepositoryItemCalcEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RepositoryItemCalcEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
-    <value>Combo</value>
-  </data>
-  <data name="RepositoryItemImageEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RepositoryItemImageEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
-    <value>Combo</value>
-  </data>
-  <data name="RepositoryItemDateEdit1.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RepositoryItemDateEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
-    <value>Combo</value>
-  </data>
-  <data name="RepositoryItemDateEdit1.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
-    <value>Combo</value>
-  </data>
-  <data name="RibbonControl.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="RibbonControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1454, 201</value>
-  </data>
-  <data name="RibbonControl.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RibbonControl.Name" xml:space="preserve">
-    <value>RibbonControl</value>
-  </data>
-  <data name="&gt;&gt;RibbonControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;RibbonControl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;RibbonControl.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="BarStaticCurrentUser.Caption" xml:space="preserve">
     <value> اسم المستخدم</value>

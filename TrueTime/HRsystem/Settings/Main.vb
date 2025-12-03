@@ -99,6 +99,11 @@ Public Class Main
 
         Timer1.Start()
 
+        If LogInMenue.HasWhatsAppPackage Then
+            btnOpenLinkWhatsApp.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+            mnuWhatsApp.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+        End If
+
     End Sub
     Private _NotificationNo As Integer = 1
     Private Sub ribbon_CustomDrawItem(ByVal sender As Object, ByVal e As BarItemCustomDrawEventArgs) Handles RibbonControl.CustomDrawItem
@@ -4169,6 +4174,22 @@ Public Class Main
         End If
     End Sub
 
+    Private Sub btnOpenLinkWhatsApp_ItemClick(sender As Object, e As ItemClickEventArgs) Handles btnOpenLinkWhatsApp.ItemClick
+        Dim child As Form = Nothing
+        For Each f As Form In MdiChildren
+            If TypeOf f Is LinkWhatsAppForm Then
+                child = f
+                Exit For
+            End If
+        Next f
+        If child Is Nothing Then
+            child = New LinkWhatsAppForm()
+            child.MdiParent = Me
+            child.Show()
+        Else
+            child.Activate()
+        End If
+    End Sub
 End Class
 
 
