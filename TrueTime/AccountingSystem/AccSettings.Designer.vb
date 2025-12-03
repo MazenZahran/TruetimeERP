@@ -21,6 +21,7 @@ Partial Class AccSettings
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AccSettings))
+        Dim PushTransition1 As DevExpress.Utils.Animation.PushTransition = New DevExpress.Utils.Animation.PushTransition()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.ComboRoundMethod = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.POSNumbersToSendClosedShift = New DevExpress.XtraEditors.TextEdit()
@@ -72,6 +73,7 @@ Partial Class AccSettings
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.LayoutControl2 = New DevExpress.XtraLayout.LayoutControl()
+        Me.TextVATDefaultPercentage = New DevExpress.XtraEditors.TextEdit()
         Me.ComboCostingMethodInProduction = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.CheckShowColBalanceInJournal = New DevExpress.XtraEditors.CheckEdit()
         Me.SendSmsFromDocuments = New DevExpress.XtraEditors.CheckEdit()
@@ -91,7 +93,6 @@ Partial Class AccSettings
         Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
         Me.LayoutControlItem34 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem41 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem47 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -99,6 +100,9 @@ Partial Class AccSettings
         Me.LayoutControlItem52 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.EmptySpaceItem3 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.EmptySpaceItem2 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.EmptySpaceItem5 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.LayoutVATDefaultPercentage = New DevExpress.XtraLayout.LayoutControlItem()
         Me.CheckConnectedWIthTrueTime = New DevExpress.XtraEditors.CheckEdit()
         Me.PictureQR = New DevExpress.XtraEditors.PictureEdit()
         Me.SearchReferancesSalaryAccount = New DevExpress.XtraEditors.SearchLookUpEdit()
@@ -107,10 +111,17 @@ Partial Class AccSettings
         Me.ColAccName = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ComboScaleComNo = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.CheckCostCenters = New DevExpress.XtraEditors.CheckEdit()
-        Me.XtraScrollableControl1 = New DevExpress.XtraEditors.XtraScrollableControl()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.XtraScrollableControl1 = New DevExpress.XtraEditors.XtraScrollableControl()
+        Me.ChkSendWhenSave = New DevExpress.XtraEditors.CheckEdit()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.TabbedControlGroup1 = New DevExpress.XtraLayout.TabbedControlGroup()
+        Me.lcgVouchersSend = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem61 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlGroup5 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -139,10 +150,6 @@ Partial Class AccSettings
         Me.LayoutControlItem56 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlGroup6 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem21 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.EmptySpaceItem8 = New DevExpress.XtraLayout.EmptySpaceItem()
@@ -176,9 +183,10 @@ Partial Class AccSettings
         Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.XtraFolderBrowserDialog1 = New DevExpress.XtraEditors.XtraFolderBrowserDialog(Me.components)
-        Me.TextVATDefaultPercentage = New DevExpress.XtraEditors.TextEdit()
-        Me.LayoutVATDefaultPercentage = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.EmptySpaceItem5 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.WorkspaceManager1 = New DevExpress.Utils.WorkspaceManager(Me.components)
+        Me.EmptySpaceItem6 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.txtNumbersForSend = New DevExpress.XtraEditors.TextEdit()
+        Me.LayoutControlItem62 = New DevExpress.XtraLayout.LayoutControlItem()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
         CType(Me.ComboRoundMethod.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -226,6 +234,7 @@ Partial Class AccSettings
         CType(Me.RepositoryItemSearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl2.SuspendLayout()
+        CType(Me.TextVATDefaultPercentage.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboCostingMethodInProduction.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckShowColBalanceInJournal.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SendSmsFromDocuments.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -245,7 +254,6 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem34, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem41, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem47, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -253,14 +261,24 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem52, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutVATDefaultPercentage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckConnectedWIthTrueTime.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureQR.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SearchReferancesSalaryAccount.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComboScaleComNo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckCostCenters.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChkSendWhenSave.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lcgVouchersSend, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem61, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -289,10 +307,6 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem56, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -324,9 +338,9 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextVATDefaultPercentage.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutVATDefaultPercentage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumbersForSend.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
@@ -378,8 +392,10 @@ Partial Class AccSettings
         Me.LayoutControl1.Controls.Add(Me.SearchReferancesSalaryAccount)
         Me.LayoutControl1.Controls.Add(Me.ComboScaleComNo)
         Me.LayoutControl1.Controls.Add(Me.CheckCostCenters)
-        Me.LayoutControl1.Controls.Add(Me.XtraScrollableControl1)
         Me.LayoutControl1.Controls.Add(Me.SimpleButton1)
+        Me.LayoutControl1.Controls.Add(Me.XtraScrollableControl1)
+        Me.LayoutControl1.Controls.Add(Me.ChkSendWhenSave)
+        Me.LayoutControl1.Controls.Add(Me.txtNumbersForSend)
         resources.ApplyResources(Me.LayoutControl1, "LayoutControl1")
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(450, 80, 650, 400)
@@ -761,6 +777,16 @@ Partial Class AccSettings
         Me.LayoutControl2.OptionsView.RightToLeftMirroringApplied = True
         Me.LayoutControl2.Root = Me.LayoutControlGroup4
         '
+        'TextVATDefaultPercentage
+        '
+        resources.ApplyResources(Me.TextVATDefaultPercentage, "TextVATDefaultPercentage")
+        Me.TextVATDefaultPercentage.Name = "TextVATDefaultPercentage"
+        Me.TextVATDefaultPercentage.Properties.MaskSettings.Set("MaskManagerType", GetType(DevExpress.Data.Mask.NumericMaskManager))
+        Me.TextVATDefaultPercentage.Properties.MaskSettings.Set("mask", "f")
+        Me.TextVATDefaultPercentage.Properties.MaxLength = 50
+        Me.TextVATDefaultPercentage.Properties.UseMaskAsDisplayFormat = CType(resources.GetObject("TextVATDefaultPercentage.Properties.UseMaskAsDisplayFormat"), Boolean)
+        Me.TextVATDefaultPercentage.StyleController = Me.LayoutControl2
+        '
         'ComboCostingMethodInProduction
         '
         resources.ApplyResources(Me.ComboCostingMethodInProduction, "ComboCostingMethodInProduction")
@@ -909,14 +935,6 @@ Partial Class AccSettings
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem10.TextVisible = False
         '
-        'EmptySpaceItem2
-        '
-        Me.EmptySpaceItem2.AllowHotTrack = False
-        Me.EmptySpaceItem2.Location = New System.Drawing.Point(0, 348)
-        Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
-        Me.EmptySpaceItem2.Size = New System.Drawing.Size(920, 42)
-        Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
-        '
         'LayoutControlItem34
         '
         Me.LayoutControlItem34.Control = Me.AlertWhenItemQuantityLessThanBalanceInVouchers
@@ -978,6 +996,36 @@ Partial Class AccSettings
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
         Me.EmptySpaceItem3.Size = New System.Drawing.Size(511, 34)
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'EmptySpaceItem2
+        '
+        Me.EmptySpaceItem2.AllowHotTrack = False
+        Me.EmptySpaceItem2.Location = New System.Drawing.Point(0, 348)
+        Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(920, 42)
+        Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'EmptySpaceItem5
+        '
+        Me.EmptySpaceItem5.AllowHotTrack = False
+        Me.EmptySpaceItem5.Location = New System.Drawing.Point(0, 314)
+        Me.EmptySpaceItem5.Name = "EmptySpaceItem5"
+        Me.EmptySpaceItem5.Size = New System.Drawing.Size(657, 34)
+        Me.EmptySpaceItem5.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'LayoutVATDefaultPercentage
+        '
+        Me.LayoutVATDefaultPercentage.Control = Me.TextVATDefaultPercentage
+        resources.ApplyResources(Me.LayoutVATDefaultPercentage, "LayoutVATDefaultPercentage")
+        Me.LayoutVATDefaultPercentage.Location = New System.Drawing.Point(657, 314)
+        Me.LayoutVATDefaultPercentage.MaxSize = New System.Drawing.Size(263, 34)
+        Me.LayoutVATDefaultPercentage.MinSize = New System.Drawing.Size(263, 34)
+        Me.LayoutVATDefaultPercentage.Name = "LayoutVATDefaultPercentage"
+        Me.LayoutVATDefaultPercentage.Size = New System.Drawing.Size(263, 34)
+        Me.LayoutVATDefaultPercentage.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
+        Me.LayoutVATDefaultPercentage.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
+        Me.LayoutVATDefaultPercentage.TextSize = New System.Drawing.Size(123, 13)
+        Me.LayoutVATDefaultPercentage.TextToControlDistance = 5
         '
         'CheckConnectedWIthTrueTime
         '
@@ -1041,11 +1089,6 @@ Partial Class AccSettings
         Me.CheckCostCenters.Properties.Caption = resources.GetString("CheckCostCenters.Properties.Caption")
         Me.CheckCostCenters.StyleController = Me.LayoutControl1
         '
-        'XtraScrollableControl1
-        '
-        resources.ApplyResources(Me.XtraScrollableControl1, "XtraScrollableControl1")
-        Me.XtraScrollableControl1.Name = "XtraScrollableControl1"
-        '
         'SimpleButton1
         '
         Me.SimpleButton1.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
@@ -1054,6 +1097,18 @@ Partial Class AccSettings
         resources.ApplyResources(Me.SimpleButton1, "SimpleButton1")
         Me.SimpleButton1.Name = "SimpleButton1"
         Me.SimpleButton1.StyleController = Me.LayoutControl1
+        '
+        'XtraScrollableControl1
+        '
+        resources.ApplyResources(Me.XtraScrollableControl1, "XtraScrollableControl1")
+        Me.XtraScrollableControl1.Name = "XtraScrollableControl1"
+        '
+        'ChkSendWhenSave
+        '
+        resources.ApplyResources(Me.ChkSendWhenSave, "ChkSendWhenSave")
+        Me.ChkSendWhenSave.Name = "ChkSendWhenSave"
+        Me.ChkSendWhenSave.Properties.Caption = resources.GetString("ChkSendWhenSave.Properties.Caption")
+        Me.ChkSendWhenSave.StyleController = Me.LayoutControl1
         '
         'Root
         '
@@ -1068,10 +1123,62 @@ Partial Class AccSettings
         '
         Me.TabbedControlGroup1.Location = New System.Drawing.Point(0, 0)
         Me.TabbedControlGroup1.Name = "TabbedControlGroup1"
-        Me.TabbedControlGroup1.SelectedTabPage = Me.LayoutControlGroup3
+        Me.TabbedControlGroup1.SelectedTabPage = Me.lcgVouchersSend
         Me.TabbedControlGroup1.Size = New System.Drawing.Size(984, 483)
-        Me.TabbedControlGroup1.TabPages.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup3, Me.LayoutControlGroup2, Me.LayoutControlGroup5, Me.LayoutControlGroup6, Me.LayoutControlGroup7, Me.LayoutControlGroup8})
+        Me.TabbedControlGroup1.TabPages.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup3, Me.LayoutControlGroup2, Me.LayoutControlGroup5, Me.LayoutControlGroup6, Me.LayoutControlGroup7, Me.LayoutControlGroup8, Me.lcgVouchersSend})
         resources.ApplyResources(Me.TabbedControlGroup1, "TabbedControlGroup1")
+        '
+        'lcgVouchersSend
+        '
+        Me.lcgVouchersSend.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem61, Me.EmptySpaceItem6, Me.LayoutControlItem62})
+        Me.lcgVouchersSend.Location = New System.Drawing.Point(0, 0)
+        Me.lcgVouchersSend.Name = "lcgVouchersSend"
+        Me.lcgVouchersSend.Size = New System.Drawing.Size(952, 422)
+        resources.ApplyResources(Me.lcgVouchersSend, "lcgVouchersSend")
+        Me.lcgVouchersSend.TextLocation = DevExpress.Utils.Locations.Left
+        '
+        'LayoutControlItem61
+        '
+        Me.LayoutControlItem61.Control = Me.ChkSendWhenSave
+        Me.LayoutControlItem61.Location = New System.Drawing.Point(315, 0)
+        Me.LayoutControlItem61.Name = "LayoutControlItem61"
+        Me.LayoutControlItem61.Size = New System.Drawing.Size(637, 28)
+        Me.LayoutControlItem61.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem61.TextVisible = False
+        '
+        'LayoutControlGroup3
+        '
+        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem8})
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(952, 422)
+        resources.ApplyResources(Me.LayoutControlGroup3, "LayoutControlGroup3")
+        '
+        'LayoutControlItem8
+        '
+        Me.LayoutControlItem8.Control = Me.LayoutControl2
+        Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem8.Name = "LayoutControlItem8"
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(952, 422)
+        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem8.TextVisible = False
+        '
+        'LayoutControlGroup2
+        '
+        resources.ApplyResources(Me.LayoutControlGroup2, "LayoutControlGroup2")
+        Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem9})
+        Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
+        Me.LayoutControlGroup2.Size = New System.Drawing.Size(952, 422)
+        '
+        'LayoutControlItem9
+        '
+        Me.LayoutControlItem9.Control = Me.GridRefTypes
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem9.Name = "LayoutControlItem9"
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(952, 422)
+        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem9.TextVisible = False
         '
         'LayoutControlGroup5
         '
@@ -1104,25 +1211,25 @@ Partial Class AccSettings
         Me.LayoutControlItem16.Control = Me.PosPrinterSize
         Me.LayoutControlItem16.Location = New System.Drawing.Point(220, 68)
         Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Size = New System.Drawing.Size(339, 34)
+        Me.LayoutControlItem16.Size = New System.Drawing.Size(356, 34)
         resources.ApplyResources(Me.LayoutControlItem16, "LayoutControlItem16")
         Me.LayoutControlItem16.TextSize = New System.Drawing.Size(209, 13)
         '
         'LayoutControlItem28
         '
         Me.LayoutControlItem28.Control = Me.PosCloseShiftPassword
-        Me.LayoutControlItem28.Location = New System.Drawing.Point(559, 102)
+        Me.LayoutControlItem28.Location = New System.Drawing.Point(576, 102)
         Me.LayoutControlItem28.Name = "LayoutControlItem28"
-        Me.LayoutControlItem28.Size = New System.Drawing.Size(393, 34)
+        Me.LayoutControlItem28.Size = New System.Drawing.Size(376, 34)
         resources.ApplyResources(Me.LayoutControlItem28, "LayoutControlItem28")
         Me.LayoutControlItem28.TextSize = New System.Drawing.Size(209, 13)
         '
         'LayoutControlItem31
         '
         Me.LayoutControlItem31.Control = Me.PosVoucherQueryLimit
-        Me.LayoutControlItem31.Location = New System.Drawing.Point(559, 136)
+        Me.LayoutControlItem31.Location = New System.Drawing.Point(576, 136)
         Me.LayoutControlItem31.Name = "LayoutControlItem31"
-        Me.LayoutControlItem31.Size = New System.Drawing.Size(393, 34)
+        Me.LayoutControlItem31.Size = New System.Drawing.Size(376, 34)
         resources.ApplyResources(Me.LayoutControlItem31, "LayoutControlItem31")
         Me.LayoutControlItem31.TextSize = New System.Drawing.Size(209, 13)
         '
@@ -1131,7 +1238,7 @@ Partial Class AccSettings
         Me.LayoutControlItem48.Control = Me.PosNumberOfCopies
         Me.LayoutControlItem48.Location = New System.Drawing.Point(220, 136)
         Me.LayoutControlItem48.Name = "LayoutControlItem48"
-        Me.LayoutControlItem48.Size = New System.Drawing.Size(339, 34)
+        Me.LayoutControlItem48.Size = New System.Drawing.Size(356, 34)
         resources.ApplyResources(Me.LayoutControlItem48, "LayoutControlItem48")
         Me.LayoutControlItem48.TextSize = New System.Drawing.Size(209, 13)
         '
@@ -1182,7 +1289,7 @@ Partial Class AccSettings
         Me.LayoutControlItem29.Control = Me.PosCloseShiftPassword2
         Me.LayoutControlItem29.Location = New System.Drawing.Point(220, 102)
         Me.LayoutControlItem29.Name = "LayoutControlItem29"
-        Me.LayoutControlItem29.Size = New System.Drawing.Size(339, 34)
+        Me.LayoutControlItem29.Size = New System.Drawing.Size(356, 34)
         resources.ApplyResources(Me.LayoutControlItem29, "LayoutControlItem29")
         Me.LayoutControlItem29.TextSize = New System.Drawing.Size(209, 13)
         '
@@ -1191,106 +1298,106 @@ Partial Class AccSettings
         Me.LayoutControlItem55.Control = Me.XtraScrollableControl1
         Me.LayoutControlItem55.Location = New System.Drawing.Point(0, 248)
         Me.LayoutControlItem55.Name = "LayoutControlItem55"
-        Me.LayoutControlItem55.Size = New System.Drawing.Size(9, 174)
+        Me.LayoutControlItem55.Size = New System.Drawing.Size(10, 174)
         Me.LayoutControlItem55.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem55.TextVisible = False
         '
         'LayoutControlItem30
         '
         Me.LayoutControlItem30.Control = Me.PosAllowChangeItemPrice
-        Me.LayoutControlItem30.Location = New System.Drawing.Point(480, 276)
+        Me.LayoutControlItem30.Location = New System.Drawing.Point(479, 276)
         Me.LayoutControlItem30.Name = "LayoutControlItem30"
-        Me.LayoutControlItem30.Size = New System.Drawing.Size(472, 28)
+        Me.LayoutControlItem30.Size = New System.Drawing.Size(473, 28)
         Me.LayoutControlItem30.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem30.TextVisible = False
         '
         'LayoutControlItem44
         '
         Me.LayoutControlItem44.Control = Me.PosUseScales
-        Me.LayoutControlItem44.Location = New System.Drawing.Point(480, 360)
+        Me.LayoutControlItem44.Location = New System.Drawing.Point(479, 360)
         Me.LayoutControlItem44.Name = "LayoutControlItem44"
-        Me.LayoutControlItem44.Size = New System.Drawing.Size(472, 34)
+        Me.LayoutControlItem44.Size = New System.Drawing.Size(473, 34)
         Me.LayoutControlItem44.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem44.TextVisible = False
         '
         'LayoutControlItem45
         '
         Me.LayoutControlItem45.Control = Me.PosShowRadialMenu
-        Me.LayoutControlItem45.Location = New System.Drawing.Point(480, 304)
+        Me.LayoutControlItem45.Location = New System.Drawing.Point(479, 304)
         Me.LayoutControlItem45.Name = "LayoutControlItem45"
-        Me.LayoutControlItem45.Size = New System.Drawing.Size(472, 28)
+        Me.LayoutControlItem45.Size = New System.Drawing.Size(473, 28)
         Me.LayoutControlItem45.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem45.TextVisible = False
         '
         'LayoutControlItem49
         '
         Me.LayoutControlItem49.Control = Me.PosUseVoucherCounterInsteadVoucherNo
-        Me.LayoutControlItem49.Location = New System.Drawing.Point(480, 332)
+        Me.LayoutControlItem49.Location = New System.Drawing.Point(479, 332)
         Me.LayoutControlItem49.Name = "LayoutControlItem49"
-        Me.LayoutControlItem49.Size = New System.Drawing.Size(472, 28)
+        Me.LayoutControlItem49.Size = New System.Drawing.Size(473, 28)
         Me.LayoutControlItem49.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem49.TextVisible = False
         '
         'LayoutControlItem27
         '
         Me.LayoutControlItem27.Control = Me.CheckPOSuseShelves
-        Me.LayoutControlItem27.Location = New System.Drawing.Point(480, 248)
+        Me.LayoutControlItem27.Location = New System.Drawing.Point(479, 248)
         Me.LayoutControlItem27.Name = "LayoutControlItem27"
-        Me.LayoutControlItem27.Size = New System.Drawing.Size(472, 28)
+        Me.LayoutControlItem27.Size = New System.Drawing.Size(473, 28)
         Me.LayoutControlItem27.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem27.TextVisible = False
         '
         'LayoutControlItem14
         '
         Me.LayoutControlItem14.Control = Me.CheckOpenCashOnSave
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(9, 248)
+        Me.LayoutControlItem14.Location = New System.Drawing.Point(10, 248)
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(471, 28)
+        Me.LayoutControlItem14.Size = New System.Drawing.Size(469, 28)
         Me.LayoutControlItem14.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem14.TextVisible = False
         '
         'LayoutControlItem42
         '
         Me.LayoutControlItem42.Control = Me.PosPrintReferanceBalance
-        Me.LayoutControlItem42.Location = New System.Drawing.Point(9, 276)
+        Me.LayoutControlItem42.Location = New System.Drawing.Point(10, 276)
         Me.LayoutControlItem42.Name = "LayoutControlItem42"
-        Me.LayoutControlItem42.Size = New System.Drawing.Size(471, 28)
+        Me.LayoutControlItem42.Size = New System.Drawing.Size(469, 28)
         Me.LayoutControlItem42.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem42.TextVisible = False
         '
         'LayoutControlItem46
         '
         Me.LayoutControlItem46.Control = Me.PosPostVouchers
-        Me.LayoutControlItem46.Location = New System.Drawing.Point(9, 304)
+        Me.LayoutControlItem46.Location = New System.Drawing.Point(10, 304)
         Me.LayoutControlItem46.Name = "LayoutControlItem46"
-        Me.LayoutControlItem46.Size = New System.Drawing.Size(471, 28)
+        Me.LayoutControlItem46.Size = New System.Drawing.Size(469, 28)
         Me.LayoutControlItem46.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem46.TextVisible = False
         '
         'LayoutControlItem43
         '
         Me.LayoutControlItem43.Control = Me.PosAllowChangeDeleteItemInVoucher
-        Me.LayoutControlItem43.Location = New System.Drawing.Point(9, 332)
+        Me.LayoutControlItem43.Location = New System.Drawing.Point(10, 332)
         Me.LayoutControlItem43.Name = "LayoutControlItem43"
-        Me.LayoutControlItem43.Size = New System.Drawing.Size(471, 28)
+        Me.LayoutControlItem43.Size = New System.Drawing.Size(469, 28)
         Me.LayoutControlItem43.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem43.TextVisible = False
         '
         'LayoutControlItem57
         '
         Me.LayoutControlItem57.Control = Me.AllowCampaginsOnPOS
-        Me.LayoutControlItem57.Location = New System.Drawing.Point(480, 394)
+        Me.LayoutControlItem57.Location = New System.Drawing.Point(479, 394)
         Me.LayoutControlItem57.Name = "LayoutControlItem57"
-        Me.LayoutControlItem57.Size = New System.Drawing.Size(472, 28)
+        Me.LayoutControlItem57.Size = New System.Drawing.Size(473, 28)
         Me.LayoutControlItem57.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem57.TextVisible = False
         '
         'LayoutControlItem59
         '
         Me.LayoutControlItem59.Control = Me.POSCheckSendClosedShiftToMobile
-        Me.LayoutControlItem59.Location = New System.Drawing.Point(663, 204)
+        Me.LayoutControlItem59.Location = New System.Drawing.Point(662, 204)
         Me.LayoutControlItem59.Name = "LayoutControlItem59"
-        Me.LayoutControlItem59.Size = New System.Drawing.Size(289, 34)
+        Me.LayoutControlItem59.Size = New System.Drawing.Size(290, 34)
         Me.LayoutControlItem59.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem59.TextVisible = False
         '
@@ -1299,25 +1406,25 @@ Partial Class AccSettings
         Me.LayoutControlItem60.Control = Me.POSNumbersToSendClosedShift
         Me.LayoutControlItem60.Location = New System.Drawing.Point(220, 204)
         Me.LayoutControlItem60.Name = "LayoutControlItem60"
-        Me.LayoutControlItem60.Size = New System.Drawing.Size(443, 34)
+        Me.LayoutControlItem60.Size = New System.Drawing.Size(442, 34)
         Me.LayoutControlItem60.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem60.TextVisible = False
         '
         'LayoutControlItem56
         '
         Me.LayoutControlItem56.Control = Me.PosAllowMergeItems
-        Me.LayoutControlItem56.Location = New System.Drawing.Point(9, 394)
+        Me.LayoutControlItem56.Location = New System.Drawing.Point(10, 394)
         Me.LayoutControlItem56.Name = "LayoutControlItem56"
-        Me.LayoutControlItem56.Size = New System.Drawing.Size(471, 28)
+        Me.LayoutControlItem56.Size = New System.Drawing.Size(469, 28)
         Me.LayoutControlItem56.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem56.TextVisible = False
         '
         'LayoutControlItem5
         '
         Me.LayoutControlItem5.Control = Me.ComboScaleComNo
-        Me.LayoutControlItem5.Location = New System.Drawing.Point(9, 360)
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(10, 360)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(471, 34)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(469, 34)
         resources.ApplyResources(Me.LayoutControlItem5, "LayoutControlItem5")
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(209, 13)
         '
@@ -1325,44 +1432,10 @@ Partial Class AccSettings
         '
         Me.LayoutControlItem7.Control = Me.ComboRoundMethod
         resources.ApplyResources(Me.LayoutControlItem7, "LayoutControlItem7")
-        Me.LayoutControlItem7.Location = New System.Drawing.Point(559, 68)
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(576, 68)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(393, 34)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(376, 34)
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(209, 13)
-        '
-        'LayoutControlGroup3
-        '
-        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem8})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(952, 422)
-        resources.ApplyResources(Me.LayoutControlGroup3, "LayoutControlGroup3")
-        '
-        'LayoutControlItem8
-        '
-        Me.LayoutControlItem8.Control = Me.LayoutControl2
-        Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(952, 422)
-        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem8.TextVisible = False
-        '
-        'LayoutControlGroup2
-        '
-        resources.ApplyResources(Me.LayoutControlGroup2, "LayoutControlGroup2")
-        Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem9})
-        Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(952, 422)
-        '
-        'LayoutControlItem9
-        '
-        Me.LayoutControlItem9.Control = Me.GridRefTypes
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(952, 422)
-        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem9.TextVisible = False
         '
         'LayoutControlGroup6
         '
@@ -1499,9 +1572,9 @@ Partial Class AccSettings
         'LayoutControlItem25
         '
         Me.LayoutControlItem25.Control = Me.ComboFirstColInDocuments
-        Me.LayoutControlItem25.Location = New System.Drawing.Point(598, 56)
+        Me.LayoutControlItem25.Location = New System.Drawing.Point(597, 56)
         Me.LayoutControlItem25.Name = "LayoutControlItem25"
-        Me.LayoutControlItem25.Size = New System.Drawing.Size(354, 34)
+        Me.LayoutControlItem25.Size = New System.Drawing.Size(355, 34)
         resources.ApplyResources(Me.LayoutControlItem25, "LayoutControlItem25")
         Me.LayoutControlItem25.TextSize = New System.Drawing.Size(209, 13)
         '
@@ -1527,9 +1600,9 @@ Partial Class AccSettings
         'LayoutControlItem37
         '
         Me.LayoutControlItem37.Control = Me.TextBottomMargine
-        Me.LayoutControlItem37.Location = New System.Drawing.Point(452, 0)
+        Me.LayoutControlItem37.Location = New System.Drawing.Point(451, 0)
         Me.LayoutControlItem37.Name = "LayoutControlItem37"
-        Me.LayoutControlItem37.Size = New System.Drawing.Size(224, 34)
+        Me.LayoutControlItem37.Size = New System.Drawing.Size(225, 34)
         resources.ApplyResources(Me.LayoutControlItem37, "LayoutControlItem37")
         Me.LayoutControlItem37.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
         Me.LayoutControlItem37.TextSize = New System.Drawing.Size(74, 13)
@@ -1538,7 +1611,7 @@ Partial Class AccSettings
         'LayoutControlItem38
         '
         Me.LayoutControlItem38.Control = Me.TextRightMargine
-        Me.LayoutControlItem38.Location = New System.Drawing.Point(226, 0)
+        Me.LayoutControlItem38.Location = New System.Drawing.Point(225, 0)
         Me.LayoutControlItem38.Name = "LayoutControlItem38"
         Me.LayoutControlItem38.Size = New System.Drawing.Size(226, 34)
         resources.ApplyResources(Me.LayoutControlItem38, "LayoutControlItem38")
@@ -1551,7 +1624,7 @@ Partial Class AccSettings
         Me.LayoutControlItem40.Control = Me.TextLeftMargine
         Me.LayoutControlItem40.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem40.Name = "LayoutControlItem40"
-        Me.LayoutControlItem40.Size = New System.Drawing.Size(226, 34)
+        Me.LayoutControlItem40.Size = New System.Drawing.Size(225, 34)
         resources.ApplyResources(Me.LayoutControlItem40, "LayoutControlItem40")
         Me.LayoutControlItem40.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
         Me.LayoutControlItem40.TextSize = New System.Drawing.Size(59, 13)
@@ -1562,7 +1635,7 @@ Partial Class AccSettings
         Me.EmptySpaceItem7.AllowHotTrack = False
         Me.EmptySpaceItem7.Location = New System.Drawing.Point(0, 56)
         Me.EmptySpaceItem7.Name = "EmptySpaceItem7"
-        Me.EmptySpaceItem7.Size = New System.Drawing.Size(598, 34)
+        Me.EmptySpaceItem7.Size = New System.Drawing.Size(597, 34)
         Me.EmptySpaceItem7.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem36
@@ -1653,37 +1726,33 @@ Partial Class AccSettings
         '
         resources.ApplyResources(Me.XtraFolderBrowserDialog1, "XtraFolderBrowserDialog1")
         '
-        'TextVATDefaultPercentage
+        'WorkspaceManager1
         '
-        resources.ApplyResources(Me.TextVATDefaultPercentage, "TextVATDefaultPercentage")
-        Me.TextVATDefaultPercentage.Name = "TextVATDefaultPercentage"
-        Me.TextVATDefaultPercentage.Properties.MaskSettings.Set("MaskManagerType", GetType(DevExpress.Data.Mask.NumericMaskManager))
-        Me.TextVATDefaultPercentage.Properties.MaskSettings.Set("mask", "f")
-        Me.TextVATDefaultPercentage.Properties.MaxLength = 50
-        Me.TextVATDefaultPercentage.Properties.UseMaskAsDisplayFormat = CType(resources.GetObject("TextEdit1.Properties.UseMaskAsDisplayFormat"), Boolean)
-        Me.TextVATDefaultPercentage.StyleController = Me.LayoutControl2
+        Me.WorkspaceManager1.TargetControl = Me
+        Me.WorkspaceManager1.TransitionType = PushTransition1
         '
-        'LayoutVATDefaultPercentage
+        'EmptySpaceItem6
         '
-        Me.LayoutVATDefaultPercentage.Control = Me.TextVATDefaultPercentage
-        resources.ApplyResources(Me.LayoutVATDefaultPercentage, "LayoutVATDefaultPercentage")
-        Me.LayoutVATDefaultPercentage.Location = New System.Drawing.Point(657, 314)
-        Me.LayoutVATDefaultPercentage.MaxSize = New System.Drawing.Size(263, 34)
-        Me.LayoutVATDefaultPercentage.MinSize = New System.Drawing.Size(263, 34)
-        Me.LayoutVATDefaultPercentage.Name = "LayoutVATDefaultPercentage"
-        Me.LayoutVATDefaultPercentage.Size = New System.Drawing.Size(263, 34)
-        Me.LayoutVATDefaultPercentage.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutVATDefaultPercentage.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
-        Me.LayoutVATDefaultPercentage.TextSize = New System.Drawing.Size(123, 13)
-        Me.LayoutVATDefaultPercentage.TextToControlDistance = 5
+        Me.EmptySpaceItem6.AllowHotTrack = False
+        Me.EmptySpaceItem6.Location = New System.Drawing.Point(0, 0)
+        Me.EmptySpaceItem6.Name = "EmptySpaceItem6"
+        Me.EmptySpaceItem6.Size = New System.Drawing.Size(315, 422)
+        Me.EmptySpaceItem6.TextSize = New System.Drawing.Size(0, 0)
         '
-        'EmptySpaceItem5
+        'txtNumbersForSend
         '
-        Me.EmptySpaceItem5.AllowHotTrack = False
-        Me.EmptySpaceItem5.Location = New System.Drawing.Point(0, 314)
-        Me.EmptySpaceItem5.Name = "EmptySpaceItem5"
-        Me.EmptySpaceItem5.Size = New System.Drawing.Size(657, 34)
-        Me.EmptySpaceItem5.TextSize = New System.Drawing.Size(0, 0)
+        resources.ApplyResources(Me.txtNumbersForSend, "txtNumbersForSend")
+        Me.txtNumbersForSend.Name = "txtNumbersForSend"
+        Me.txtNumbersForSend.StyleController = Me.LayoutControl1
+        '
+        'LayoutControlItem62
+        '
+        Me.LayoutControlItem62.Control = Me.txtNumbersForSend
+        Me.LayoutControlItem62.Location = New System.Drawing.Point(315, 28)
+        Me.LayoutControlItem62.Name = "LayoutControlItem62"
+        Me.LayoutControlItem62.Size = New System.Drawing.Size(637, 394)
+        resources.ApplyResources(Me.LayoutControlItem62, "LayoutControlItem62")
+        Me.LayoutControlItem62.TextSize = New System.Drawing.Size(209, 13)
         '
         'AccSettings
         '
@@ -1739,6 +1808,7 @@ Partial Class AccSettings
         CType(Me.RepositoryItemSearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControl2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl2.ResumeLayout(False)
+        CType(Me.TextVATDefaultPercentage.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboCostingMethodInProduction.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckShowColBalanceInJournal.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SendSmsFromDocuments.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1758,7 +1828,6 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem34, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem41, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem47, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1766,14 +1835,24 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem52, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutVATDefaultPercentage, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckConnectedWIthTrueTime.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureQR.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SearchReferancesSalaryAccount.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SearchLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComboScaleComNo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckCostCenters.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChkSendWhenSave.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lcgVouchersSend, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem61, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1802,10 +1881,6 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem56, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1837,9 +1912,9 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextVATDefaultPercentage.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutVATDefaultPercentage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtNumbersForSend.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2002,4 +2077,11 @@ Partial Class AccSettings
     Friend WithEvents TextVATDefaultPercentage As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LayoutVATDefaultPercentage As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents EmptySpaceItem5 As DevExpress.XtraLayout.EmptySpaceItem
+    Friend WithEvents lcgVouchersSend As DevExpress.XtraLayout.LayoutControlGroup
+    Friend WithEvents ChkSendWhenSave As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents LayoutControlItem61 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents WorkspaceManager1 As DevExpress.Utils.WorkspaceManager
+    Friend WithEvents EmptySpaceItem6 As DevExpress.XtraLayout.EmptySpaceItem
+    Friend WithEvents txtNumbersForSend As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LayoutControlItem62 As DevExpress.XtraLayout.LayoutControlItem
 End Class

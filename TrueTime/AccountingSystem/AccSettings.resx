@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ComboRoundMethod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 129</value>
+    <value>608, 129</value>
   </data>
   <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="ComboRoundMethod.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
@@ -144,7 +144,7 @@
     <value>RoundToLowestHalf</value>
   </data>
   <data name="ComboRoundMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 28</value>
+    <value>145, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ComboRoundMethod.TabIndex" type="System.Int32, mscorlib">
@@ -170,7 +170,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="POSNumbersToSendClosedShift.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 28</value>
+    <value>436, 28</value>
   </data>
   <data name="POSNumbersToSendClosedShift.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -215,7 +215,7 @@
     <value>5</value>
   </data>
   <data name="POSCheckSendClosedShiftToMobile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>695, 265</value>
+    <value>694, 265</value>
   </data>
   <data name="POSCheckSendClosedShiftToMobile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -224,7 +224,7 @@
     <value>ارسال اغلاق الوردية على الواتس:</value>
   </data>
   <data name="POSCheckSendClosedShiftToMobile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 22</value>
+    <value>284, 22</value>
   </data>
   <data name="POSCheckSendClosedShiftToMobile.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -266,7 +266,7 @@
     <value>7</value>
   </data>
   <data name="AllowCampaginsOnPOS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 455</value>
+    <value>511, 455</value>
   </data>
   <data name="AllowCampaginsOnPOS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -275,7 +275,7 @@
     <value>تفعيل الحملات في نقاط البيع</value>
   </data>
   <data name="AllowCampaginsOnPOS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 22</value>
+    <value>467, 22</value>
   </data>
   <data name="AllowCampaginsOnPOS.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -293,7 +293,7 @@
     <value>8</value>
   </data>
   <data name="PosAllowMergeItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 455</value>
+    <value>42, 455</value>
   </data>
   <data name="PosAllowMergeItems.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -302,7 +302,7 @@
     <value>دمج الأصناف</value>
   </data>
   <data name="PosAllowMergeItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 22</value>
+    <value>463, 22</value>
   </data>
   <data name="PosAllowMergeItems.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -407,13 +407,13 @@
     <value>12</value>
   </data>
   <data name="PosUseVoucherCounterInsteadVoucherNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 393</value>
+    <value>511, 393</value>
   </data>
   <data name="PosUseVoucherCounterInsteadVoucherNo.Properties.Caption" xml:space="preserve">
     <value>تصفير رقم الفاتورة عند اغلاق الوردية</value>
   </data>
   <data name="PosUseVoucherCounterInsteadVoucherNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 22</value>
+    <value>467, 22</value>
   </data>
   <data name="PosUseVoucherCounterInsteadVoucherNo.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -434,7 +434,7 @@
     <value>252, 197</value>
   </data>
   <data name="PosNumberOfCopies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 28</value>
+    <value>125, 28</value>
   </data>
   <data name="PosNumberOfCopies.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -452,13 +452,13 @@
     <value>14</value>
   </data>
   <data name="PosPostVouchers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 365</value>
+    <value>42, 365</value>
   </data>
   <data name="PosPostVouchers.Properties.Caption" xml:space="preserve">
     <value>ترحيل فواتير نقطة البيع</value>
   </data>
   <data name="PosPostVouchers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 22</value>
+    <value>463, 22</value>
   </data>
   <data name="PosPostVouchers.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -476,13 +476,13 @@
     <value>15</value>
   </data>
   <data name="PosShowRadialMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 365</value>
+    <value>511, 365</value>
   </data>
   <data name="PosShowRadialMenu.Properties.Caption" xml:space="preserve">
     <value>استخدام قائمة الحسابات في نقطة البيع واستخدام F12 </value>
   </data>
   <data name="PosShowRadialMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 22</value>
+    <value>467, 22</value>
   </data>
   <data name="PosShowRadialMenu.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -500,13 +500,13 @@
     <value>16</value>
   </data>
   <data name="PosUseScales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 421</value>
+    <value>511, 421</value>
   </data>
   <data name="PosUseScales.Properties.Caption" xml:space="preserve">
     <value>استخدام الميزان في نقطة البيع</value>
   </data>
   <data name="PosUseScales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 22</value>
+    <value>467, 22</value>
   </data>
   <data name="PosUseScales.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -524,13 +524,13 @@
     <value>17</value>
   </data>
   <data name="PosAllowChangeDeleteItemInVoucher.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 393</value>
+    <value>42, 393</value>
   </data>
   <data name="PosAllowChangeDeleteItemInVoucher.Properties.Caption" xml:space="preserve">
     <value>السماح بحذف صنف من الفاتورة</value>
   </data>
   <data name="PosAllowChangeDeleteItemInVoucher.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 22</value>
+    <value>463, 22</value>
   </data>
   <data name="PosAllowChangeDeleteItemInVoucher.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -548,13 +548,13 @@
     <value>18</value>
   </data>
   <data name="PosPrintReferanceBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 337</value>
+    <value>42, 337</value>
   </data>
   <data name="PosPrintReferanceBalance.Properties.Caption" xml:space="preserve">
     <value>طباعة رصيد الزبون بالفاتورة</value>
   </data>
   <data name="PosPrintReferanceBalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 22</value>
+    <value>463, 22</value>
   </data>
   <data name="PosPrintReferanceBalance.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -575,7 +575,7 @@
     <value>48, 384</value>
   </data>
   <data name="TextLeftMargine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 28</value>
+    <value>155, 28</value>
   </data>
   <data name="TextLeftMargine.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -614,7 +614,7 @@
     <value>21</value>
   </data>
   <data name="TextRightMargine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 384</value>
+    <value>273, 384</value>
   </data>
   <data name="TextRightMargine.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 28</value>
@@ -635,10 +635,10 @@
     <value>22</value>
   </data>
   <data name="TextBottomMargine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>500, 384</value>
+    <value>499, 384</value>
   </data>
   <data name="TextBottomMargine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 28</value>
+    <value>140, 28</value>
   </data>
   <data name="TextBottomMargine.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -755,13 +755,13 @@
     <value>0</value>
   </data>
   <data name="PosVoucherQueryLimit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 197</value>
+    <value>608, 197</value>
   </data>
   <data name="PosVoucherQueryLimit.Properties.NullText" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="PosVoucherQueryLimit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 28</value>
+    <value>145, 28</value>
   </data>
   <data name="PosVoucherQueryLimit.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -779,13 +779,13 @@
     <value>28</value>
   </data>
   <data name="PosAllowChangeItemPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 337</value>
+    <value>511, 337</value>
   </data>
   <data name="PosAllowChangeItemPrice.Properties.Caption" xml:space="preserve">
     <value>السماح بتعديل سعر الصنف في نقطة البيع</value>
   </data>
   <data name="PosAllowChangeItemPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 22</value>
+    <value>467, 22</value>
   </data>
   <data name="PosAllowChangeItemPrice.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -806,7 +806,7 @@
     <value>252, 163</value>
   </data>
   <data name="PosCloseShiftPassword2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 28</value>
+    <value>125, 28</value>
   </data>
   <data name="PosCloseShiftPassword2.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -824,10 +824,10 @@
     <value>30</value>
   </data>
   <data name="PosCloseShiftPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 163</value>
+    <value>608, 163</value>
   </data>
   <data name="PosCloseShiftPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 28</value>
+    <value>145, 28</value>
   </data>
   <data name="PosCloseShiftPassword.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -845,13 +845,13 @@
     <value>31</value>
   </data>
   <data name="CheckPOSuseShelves.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 309</value>
+    <value>511, 309</value>
   </data>
   <data name="CheckPOSuseShelves.Properties.Caption" xml:space="preserve">
     <value>تفعيل بند الرف في نقطة البيع</value>
   </data>
   <data name="CheckPOSuseShelves.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 22</value>
+    <value>467, 22</value>
   </data>
   <data name="CheckPOSuseShelves.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -941,7 +941,7 @@
     <value>35</value>
   </data>
   <data name="ComboFirstColInDocuments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>630, 117</value>
+    <value>629, 117</value>
   </data>
   <data name="ComboFirstColInDocuments.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
     <value>Combo</value>
@@ -959,7 +959,7 @@
     <value>BarCode+StockID</value>
   </data>
   <data name="ComboFirstColInDocuments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 28</value>
+    <value>124, 28</value>
   </data>
   <data name="ComboFirstColInDocuments.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -1028,7 +1028,7 @@
     <value>252, 129</value>
   </data>
   <data name="PosPrinterSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 28</value>
+    <value>125, 28</value>
   </data>
   <data name="PosPrinterSize.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -1070,13 +1070,13 @@
     <value>40</value>
   </data>
   <data name="CheckOpenCashOnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 309</value>
+    <value>42, 309</value>
   </data>
   <data name="CheckOpenCashOnSave.Properties.Caption" xml:space="preserve">
     <value>فتح الكاش عند عملية الحفظ</value>
   </data>
   <data name="CheckOpenCashOnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 22</value>
+    <value>463, 22</value>
   </data>
   <data name="CheckOpenCashOnSave.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1234,7 +1234,7 @@
   <data name="TextVATDefaultPercentage.Location" type="System.Drawing.Point, System.Drawing">
     <value>673, 330</value>
   </data>
-  <data name="TextEdit1.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+  <data name="TextVATDefaultPercentage.Properties.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="TextVATDefaultPercentage.Size" type="System.Drawing.Size, System.Drawing">
@@ -1253,7 +1253,7 @@
     <value>LayoutControl2</value>
   </data>
   <data name="&gt;&gt;TextVATDefaultPercentage.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="ComboCostingMethodInProduction.Location" type="System.Drawing.Point, System.Drawing">
     <value>527, 296</value>
@@ -1691,7 +1691,7 @@
     <value>48</value>
   </data>
   <data name="ComboScaleComNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 421</value>
+    <value>42, 421</value>
   </data>
   <data name="ComboScaleComNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -1718,7 +1718,7 @@
     <value>6</value>
   </data>
   <data name="ComboScaleComNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 28</value>
+    <value>238, 28</value>
   </data>
   <data name="ComboScaleComNo.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1762,30 +1762,6 @@
   <data name="&gt;&gt;CheckCostCenters.ZOrder" xml:space="preserve">
     <value>50</value>
   </data>
-  <data name="XtraScrollableControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 309</value>
-  </data>
-  <data name="XtraScrollableControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="XtraScrollableControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>3, 168</value>
-  </data>
-  <data name="XtraScrollableControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;XtraScrollableControl1.Name" xml:space="preserve">
-    <value>XtraScrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;XtraScrollableControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraScrollableControl, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;XtraScrollableControl1.Parent" xml:space="preserve">
-    <value>LayoutControl1</value>
-  </data>
-  <data name="&gt;&gt;XtraScrollableControl1.ZOrder" xml:space="preserve">
-    <value>51</value>
-  </data>
   <data name="SimpleButton1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -1821,7 +1797,76 @@
     <value>LayoutControl1</value>
   </data>
   <data name="&gt;&gt;SimpleButton1.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="XtraScrollableControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 309</value>
+  </data>
+  <data name="XtraScrollableControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="XtraScrollableControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>4, 168</value>
+  </data>
+  <data name="XtraScrollableControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;XtraScrollableControl1.Name" xml:space="preserve">
+    <value>XtraScrollableControl1</value>
+  </data>
+  <data name="&gt;&gt;XtraScrollableControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraScrollableControl, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;XtraScrollableControl1.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;XtraScrollableControl1.ZOrder" xml:space="preserve">
     <value>52</value>
+  </data>
+  <data name="ChkSendWhenSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 61</value>
+  </data>
+  <data name="ChkSendWhenSave.Properties.Caption" xml:space="preserve">
+    <value>إرسال عبر الواتس عند حفظ السند</value>
+  </data>
+  <data name="ChkSendWhenSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>631, 22</value>
+  </data>
+  <data name="ChkSendWhenSave.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;ChkSendWhenSave.Name" xml:space="preserve">
+    <value>ChkSendWhenSave</value>
+  </data>
+  <data name="&gt;&gt;ChkSendWhenSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ChkSendWhenSave.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ChkSendWhenSave.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="txtNumbersForSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 89</value>
+  </data>
+  <data name="txtNumbersForSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 28</value>
+  </data>
+  <data name="txtNumbersForSend.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;txtNumbersForSend.Name" xml:space="preserve">
+    <value>txtNumbersForSend</value>
+  </data>
+  <data name="&gt;&gt;txtNumbersForSend.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtNumbersForSend.Parent" xml:space="preserve">
+    <value>LayoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNumbersForSend.ZOrder" xml:space="preserve">
+    <value>54</value>
   </data>
   <data name="LayoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1831,6 +1876,12 @@
   </data>
   <data name="LayoutControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
+  </data>
+  <data name="LayoutControlItem62.Text" xml:space="preserve">
+    <value>الأرقام التي سيتم الإرسال لها: </value>
+  </data>
+  <data name="lcgVouchersSend.Text" xml:space="preserve">
+    <value>إعدادات إرسال السندات</value>
   </data>
   <data name="LayoutControlGroup3.Text" xml:space="preserve">
     <value>الاعدادات العامة</value>
@@ -1958,6 +2009,9 @@
   <data name="XtraFolderBrowserDialog1.SelectedPath" xml:space="preserve">
     <value>XtraFolderBrowserDialog1</value>
   </data>
+  <metadata name="WorkspaceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>296, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2079,12 +2133,6 @@
   <data name="&gt;&gt;LayoutControlItem10.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;EmptySpaceItem2.Name" xml:space="preserve">
-    <value>EmptySpaceItem2</value>
-  </data>
-  <data name="&gt;&gt;EmptySpaceItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;LayoutControlItem34.Name" xml:space="preserve">
     <value>LayoutControlItem34</value>
   </data>
@@ -2127,6 +2175,24 @@
   <data name="&gt;&gt;EmptySpaceItem3.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Name" xml:space="preserve">
+    <value>EmptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem5.Name" xml:space="preserve">
+    <value>EmptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutVATDefaultPercentage.Name" xml:space="preserve">
+    <value>LayoutVATDefaultPercentage</value>
+  </data>
+  <data name="&gt;&gt;LayoutVATDefaultPercentage.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;SearchLookUpEdit1View.Name" xml:space="preserve">
     <value>SearchLookUpEdit1View</value>
   </data>
@@ -2156,6 +2222,42 @@
   </data>
   <data name="&gt;&gt;TabbedControlGroup1.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgVouchersSend.Name" xml:space="preserve">
+    <value>lcgVouchersSend</value>
+  </data>
+  <data name="&gt;&gt;lcgVouchersSend.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem61.Name" xml:space="preserve">
+    <value>LayoutControlItem61</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem61.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup3.Name" xml:space="preserve">
+    <value>LayoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Name" xml:space="preserve">
+    <value>LayoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup2.Name" xml:space="preserve">
+    <value>LayoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Name" xml:space="preserve">
+    <value>LayoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;LayoutControlGroup5.Name" xml:space="preserve">
     <value>LayoutControlGroup5</value>
@@ -2323,30 +2425,6 @@
     <value>LayoutControlItem7</value>
   </data>
   <data name="&gt;&gt;LayoutControlItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlGroup3.Name" xml:space="preserve">
-    <value>LayoutControlGroup3</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlItem8.Name" xml:space="preserve">
-    <value>LayoutControlItem8</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlGroup2.Name" xml:space="preserve">
-    <value>LayoutControlGroup2</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlItem9.Name" xml:space="preserve">
-    <value>LayoutControlItem9</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlItem9.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;LayoutControlGroup6.Name" xml:space="preserve">
@@ -2547,17 +2625,23 @@
   <data name="&gt;&gt;XtraFolderBrowserDialog1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.XtraFolderBrowserDialog, DevExpress.XtraDialogs.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;LayoutVATDefaultPercentage.Name" xml:space="preserve">
-    <value>LayoutVATDefaultPercentage</value>
+  <data name="&gt;&gt;WorkspaceManager1.Name" xml:space="preserve">
+    <value>WorkspaceManager1</value>
   </data>
-  <data name="&gt;&gt;LayoutVATDefaultPercentage.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;WorkspaceManager1.Type" xml:space="preserve">
+    <value>DevExpress.Utils.WorkspaceManager, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;EmptySpaceItem5.Name" xml:space="preserve">
-    <value>EmptySpaceItem5</value>
+  <data name="&gt;&gt;EmptySpaceItem6.Name" xml:space="preserve">
+    <value>EmptySpaceItem6</value>
   </data>
-  <data name="&gt;&gt;EmptySpaceItem5.Type" xml:space="preserve">
+  <data name="&gt;&gt;EmptySpaceItem6.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem62.Name" xml:space="preserve">
+    <value>LayoutControlItem62</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem62.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AccSettings</value>

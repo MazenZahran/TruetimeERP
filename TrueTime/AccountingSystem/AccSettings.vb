@@ -170,6 +170,10 @@ Public Class AccSettings
                             Me.ComboRoundMethod.Text = CStr(_SettingValue)
                         Case "Accounting_VATdefaultPercentage"
                             Me.TextVATDefaultPercentage.Text = CDec(_SettingValue)
+                        Case "NumbersForReseiptsVoucherMsgs"
+                            txtNumbersForSend.Text = _SettingValue
+                        Case "SendWhatsappAfterSaveForMoneyTrans"
+                            Me.ChkSendWhenSave.Checked = CBool(_SettingValue)
                     End Select
                 Next
             End With
@@ -1245,6 +1249,26 @@ Public Class AccSettings
                                                   SettingValue=N'" & Me.TextVATDefaultPercentage.Text & "'
                                                   Where SettingName='Accounting_VATdefaultPercentage'")
             GlobalVariables.VATDefaultPercentage = CDec(Me.TextVATDefaultPercentage.Text)
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+        Try
+            Dim Sql As New SQLControl
+            Sql.SqlTrueAccountingRunQuery("Update [dbo].[Settings] Set 
+                                                  SettingValue=N'" & Me.txtNumbersForSend.Text & "'
+                                                  Where SettingName='NumbersForReseiptsVoucherMsgs'")
+            GlobalVariables.VATDefaultPercentage = CDec(Me.txtNumbersForSend.Text)
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+        Try
+            Dim Sql As New SQLControl
+            Sql.SqlTrueAccountingRunQuery("Update [dbo].[Settings] Set 
+                                                  SettingValue=N'" & Me.ChkSendWhenSave.Checked & "'
+                                                  Where SettingName='SendWhatsappAfterSaveForMoneyTrans'")
+            GlobalVariables.VATDefaultPercentage = CDec(Me.ChkSendWhenSave.Checked)
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

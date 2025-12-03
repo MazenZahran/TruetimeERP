@@ -30,7 +30,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>01.01.55.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -1063,6 +1063,12 @@
       <DependentUpon>VouchersAudit.vb</DependentUpon>
     </Compile>
     <Compile Include="AccountingSystem\VouchersAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountingSystem\VouchersSettings.Designer.vb">
+      <DependentUpon>VouchersSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingSystem\VouchersSettings.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AccountingSystem\WarehouseManager.Designer.vb">
@@ -3652,6 +3658,9 @@
     <EmbeddedResource Include="AccountingSystem\VouchersAudit.resx">
       <DependentUpon>VouchersAudit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AccountingSystem\VouchersSettings.resx">
+      <DependentUpon>VouchersSettings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AccountingSystem\WarehouseManager.resx">
       <DependentUpon>WarehouseManager.vb</DependentUpon>
     </EmbeddedResource>
@@ -3909,6 +3918,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccountingSystem\MoneyTransList.resx">
       <DependentUpon>MoneyTransList.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountingSystem\OrdersList.resx">
       <DependentUpon>OrdersList.vb</DependentUpon>

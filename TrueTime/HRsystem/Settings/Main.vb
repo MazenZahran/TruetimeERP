@@ -3047,6 +3047,40 @@ Public Class Main
         End If
     End Sub
 
+    Private Sub btnFinansialSettings_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnFinansialSettings.ItemClick
+        Dim child As Form = Nothing
+        For Each f As Form In MdiChildren
+            If TypeOf f Is AccSettings Then
+                child = f
+                Exit For
+            End If
+        Next f
+        If child Is Nothing Then
+            child = New AccSettings()
+            child.MdiParent = Me
+            child.Show()
+        Else
+            child.Activate()
+        End If
+    End Sub
+
+    Private Sub btnVouchersSettings_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnVouchersSettings.ItemClick
+        Dim child As Form = Nothing
+        For Each f As Form In MdiChildren
+            If TypeOf f Is VouchersSettings Then
+                child = f
+                Exit For
+            End If
+        Next f
+        If child Is Nothing Then
+            child = New VouchersSettings()
+            child.MdiParent = Me
+            child.Show()
+        Else
+            child.Activate()
+        End If
+    End Sub
+
     Private Sub BarButtonItem207_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem207.ItemClick
         Dim child As Form = Nothing
         For Each f As Form In MdiChildren
