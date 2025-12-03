@@ -2472,6 +2472,7 @@ Public Class AccStockMove
                         .LayoutSendDocumentByWhatsApp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
                     ElseIf ctx.DocNameID = 10 OrElse ctx.DocNameID = 11 Then
                         .TextDocData.Text = "OrdersJournal"
+                        .LayoutSendDocumentByWhatsApp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
                     End If
 
                     If ctx.DocNameID = 1 Then
@@ -3025,9 +3026,8 @@ WHERE DocName = @DocName AND DocID = @DocID;
                 .LayoutSendDocumentByWhatsApp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
 
             ElseIf ctx.DocNameID = 11 Or ctx.DocNameID = 10 Then
-
                 .TextDocData.Text = "OrdersJournal"
-
+                .LayoutSendDocumentByWhatsApp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
             End If
 
             ' زر إصدار سند القبض أو الصرف بعد الحفظ
