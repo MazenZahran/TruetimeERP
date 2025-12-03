@@ -581,6 +581,7 @@ Public Class AccStockMove
         Public Property DocDataTableName As String    ' "dbo.Journal" أو "dbo.OrdersJournal"
         Public Property JournalTable As DataTable
         Public Property TaxDate As Date
+        Public Property OrderStatus As Integer
     End Class
 
     Private Function PrepareDocumentContext(_WithAction As String) As DocumentContext
@@ -722,7 +723,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '--- Cost Center
             Dim cc = GridView1.GetRowCellValue(i, "DocCostCenter")
@@ -840,7 +841,7 @@ Public Class AccStockMove
 
                 Dim R As DataRow = JT.NewRow()
                 FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                                ctx.InputDateTime, ctx.ModifiedDateTime)
+                                ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
                 R("DocCostCenter") = If(String.IsNullOrWhiteSpace(LookCostCenter.Text),
                                     1, LookCostCenter.EditValue)
@@ -879,7 +880,7 @@ Public Class AccStockMove
         '============================================================
         Dim creditRow As DataRow = JT.NewRow()
         FillCommonDocFields(creditRow, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                        ctx.InputDateTime, ctx.ModifiedDateTime)
+                        ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
         creditRow("DocCostCenter") =
         If(String.IsNullOrWhiteSpace(LookCostCenter.Text), 1, LookCostCenter.EditValue)
@@ -939,7 +940,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '--- Cost Center
             Dim cc = GridView1.GetRowCellValue(i, "DocCostCenter")
@@ -1060,7 +1061,7 @@ Public Class AccStockMove
 
                 Dim R As DataRow = JT.NewRow()
                 FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                                ctx.InputDateTime, ctx.ModifiedDateTime)
+                                ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
                 R("DocCostCenter") = If(String.IsNullOrWhiteSpace(LookCostCenter.Text),
                                     1, LookCostCenter.EditValue)
@@ -1099,7 +1100,7 @@ Public Class AccStockMove
         '============================================================
         Dim debitRow As DataRow = JT.NewRow()
         FillCommonDocFields(debitRow, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                        ctx.InputDateTime, ctx.ModifiedDateTime)
+                        ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
         debitRow("DocCostCenter") =
         If(String.IsNullOrWhiteSpace(LookCostCenter.Text), 1, LookCostCenter.EditValue)
@@ -1153,7 +1154,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '-----------------------------
             ' Cost Center
@@ -1285,7 +1286,7 @@ Public Class AccStockMove
 
             Dim creditRow As DataRow = JT.NewRow()
             FillCommonDocFields(creditRow, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             creditRow("DocCostCenter") = If(String.IsNullOrWhiteSpace(LookCostCenter.Text),
                                         1, LookCostCenter.EditValue)
@@ -1338,7 +1339,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '--- مركز الكلفة
             Dim cc = GridView1.GetRowCellValue(i, "DocCostCenter")
@@ -1462,7 +1463,7 @@ Public Class AccStockMove
 
                 Dim R As DataRow = JT.NewRow()
                 FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                                ctx.InputDateTime, ctx.ModifiedDateTime)
+                                ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
                 R("DocCostCenter") =
                 If(String.IsNullOrWhiteSpace(LookCostCenter.Text), 1, LookCostCenter.EditValue)
@@ -1505,7 +1506,7 @@ Public Class AccStockMove
         '============================================================
         Dim creditRow As DataRow = JT.NewRow()
         FillCommonDocFields(creditRow, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                        ctx.InputDateTime, ctx.ModifiedDateTime)
+                        ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
         creditRow("DocCostCenter") =
         If(String.IsNullOrWhiteSpace(LookCostCenter.Text), 1, LookCostCenter.EditValue)
@@ -1567,7 +1568,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '-----------------------------
             ' Cost Center
@@ -1682,7 +1683,7 @@ Public Class AccStockMove
         '============================================================
         Dim creditRow As DataRow = JT.NewRow()
         FillCommonDocFields(creditRow, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                        ctx.InputDateTime, ctx.ModifiedDateTime)
+                        ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
         creditRow("DocCostCenter") = If(String.IsNullOrWhiteSpace(LookCostCenter.Text),
                                     1, LookCostCenter.EditValue)
@@ -1735,7 +1736,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '--- Cost Center
             Dim cc = GridView1.GetRowCellValue(i, "DocCostCenter")
@@ -1855,7 +1856,7 @@ Public Class AccStockMove
 
                 Dim R As DataRow = JT.NewRow()
                 FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                                ctx.InputDateTime, ctx.ModifiedDateTime)
+                                ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
                 R("DocCostCenter") = If(String.IsNullOrWhiteSpace(LookCostCenter.Text),
                                     1, LookCostCenter.EditValue)
@@ -1897,7 +1898,7 @@ Public Class AccStockMove
         '============================================================
         Dim debitRow As DataRow = JT.NewRow()
         FillCommonDocFields(debitRow, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                        ctx.InputDateTime, ctx.ModifiedDateTime)
+                        ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
         debitRow("DocCostCenter") =
         If(String.IsNullOrWhiteSpace(LookCostCenter.Text), 1, LookCostCenter.EditValue)
@@ -1957,7 +1958,7 @@ Public Class AccStockMove
 
             Dim R As DataRow = JT.NewRow()
             FillCommonDocFields(R, ctx.DocStatus, ctx.InputUser, ctx.DeviceName,
-                            ctx.InputDateTime, ctx.ModifiedDateTime)
+                            ctx.InputDateTime, ctx.ModifiedDateTime, ctx.OrderStatus)
 
             '---------------------------
             ' Cost Center
@@ -3101,7 +3102,8 @@ WHERE DocName = @DocName AND DocID = @DocID;
                                 inputUser As Integer,
                                 deviceName As String,
                                 inputDateTime As String,
-                                modifiedDateTime As String)
+                                modifiedDateTime As String,
+                                orderStatus As Integer)
 
         row("DocID") = 0
         row("DocDate") = DocDate.DateTime.Date
@@ -3131,6 +3133,8 @@ WHERE DocName = @DocName AND DocID = @DocID;
 
         row("DocCode") = Me.DocCode.Text
         row("DeviceName") = deviceName
+
+        row("OrderStatus") = orderStatus
 
         ' اختياري: لو أردت تعبئته من الآن
         ' row("HasAttachment") = CheckIfDocumentHasAttachment(Me.DocCode.Text)
