@@ -1,4 +1,6 @@
-﻿Imports DevExpress.Utils
+﻿Imports DevExpress.CodeParser
+Imports DevExpress.CodeParser.CodeStyle.Formatting.Rules.LineBreaks
+Imports DevExpress.Utils
 Imports DevExpress.Utils.Behaviors.Common
 Imports DevExpress.Utils.Win
 Imports DevExpress.XtraEditors
@@ -23,7 +25,9 @@ Public Class MoneyTrans
     Public _DocTagsToOpen As String
     Private showWarningForCashAccount As Boolean = False
     Private sendWhatsappAfterSave As Boolean = False
-
+    Dim SendStatus As Boolean = False
+    Dim Phones As String = ""
+    Dim FormName As String = ""
     Private Sub MoneyTrans_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextDocManualNo.Select()
         LoadSettings()
@@ -836,47 +840,47 @@ Public Class MoneyTrans
             End If
 
 
-
+            GenerateMessage(Me.DocName.EditValue, "WhenEdit", DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"))
 
             If sendWhatsappAfterSave = True Then
-                Dim docTypeName As String = If(Me.DocName.EditValue = 3, "سند صرف", "سند قبض")
-                Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
+                '         Dim docTypeName As String = If(Me.DocName.EditValue = 3, "سند صرف", "سند قبض")
+                '         Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
 
-                Dim whatsappMessage As String = String.Format(
-       "✅ *تم {0} السند بنجاح*{1}" &
-       "{1}📄 *نوع السند:* {2}" &
-       "{1}🔢 *رقم السند:* {3}" &
-       "{1}📅 *التاريخ:* {4}" &
-       "{1}👤 *المستخدم:* {5}" &
-       "{1}💰 *الحساب:* {6}" &
-       "{1}💵 *نقداً:* {7}" &
-       "{1}💳 *شيكات:* {8}" &
-       "{1}💲 *الإجمالي:* {9}" &
-       "{1}--------------------------------- \n",
-       If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
-       Environment.NewLine,
-       docTypeName,
-       _DocID,
-       DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
-       GlobalVariables.EmployeeName,
-       CashAccount.Text,
-       DocCashAmount.Text,
-       DocCheqsAmount.Text,
-       FormatNumber(TotalDocAmount.EditValue, 2))
+                '         Dim whatsappMessage As String = String.Format(
+                '"✅ *تم {0} السند بنجاح*{1}" &
+                '"{1}📄 *نوع السند:* {2}" &
+                '"{1}🔢 *رقم السند:* {3}" &
+                '"{1}📅 *التاريخ:* {4}" &
+                '"{1}👤 *المستخدم:* {5}" &
+                '"{1}💰 *الحساب:* {6}" &
+                '"{1}💵 *نقداً:* {7}" &
+                '"{1}💳 *شيكات:* {8}" &
+                '"{1}💲 *الإجمالي:* {9}" &
+                '"{1}--------------------------------- \n",
+                'If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
+                'Environment.NewLine,
+                'docTypeName,
+                '_DocID,
+                'DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
+                'GlobalVariables.EmployeeName,
+                'CashAccount.Text,
+                'DocCashAmount.Text,
+                'DocCheqsAmount.Text,
+                'FormatNumber(TotalDocAmount.EditValue, 2))
 
-                Dim numberList() As String = Numbers.Split("-"c)
+                '         Dim numberList() As String = Numbers.Split("-"c)
 
-                For Each num As String In numberList
-                    Dim trimmedNum As String = num.Trim()
-                    If Not String.IsNullOrEmpty(trimmedNum) Then
-                        SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
-                    End If
-                Next
+                '         For Each num As String In numberList
+                '             Dim trimmedNum As String = num.Trim()
+                '             If Not String.IsNullOrEmpty(trimmedNum) Then
+                '                 SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
+                '             End If
+                '         Next
             End If
 
 
-            'CoptToClip(JournalTable)
-            Referance.EditValue = 0
+                'CoptToClip(JournalTable)
+                Referance.EditValue = 0
             TextDocNotes.Text = ""
             TextDocManualNo.Text = ""
             TextReferanceName.Text = ""
@@ -1947,4 +1951,35 @@ Public Class MoneyTrans
 
         End Try
     End Sub
+
+    Public Function GenerateMessage(FormID As Integer, _Type As String, _LogDateTime As String)
+        Dim _txtType As String = ""
+        Try
+
+            If _Type = "WhenEdit" Then _txtType = "تعديل"
+
+
+            Dim Sql As New SQLControl
+            Sql.SqlTrueAccountingRunQuery("SELECT " & _Type & " FROM NotificationsForms WHERE FormID = " & FormID & " ;
+                                                   SELECT Phones FROM NotificationsForms WHERE FormID = " & FormID & ";
+                                                   SELECT NameAr FROM SystemForms WHERE FormID = " & FormID)
+            SendStatus = Sql.SQLDS.Tables(0).Rows(0).Item(_Type)
+            Phones = Sql.SQLDS.Tables(1).Rows(0).Item("Phones")
+            FormName = Sql.SQLDS.Tables(2).Rows(0).Item("NameAr")
+        Catch ex As Exception
+            SendStatus = False
+        End Try
+
+        If SendStatus = True Then
+            Dim PhonesList() As String = Phones.Split(","c)
+
+            For Each phoneNum As String In PhonesList
+                Dim trimmedNum As String = phoneNum.Trim()
+                If Not String.IsNullOrEmpty(trimmedNum) Then
+                    Dim whatsappMessage As String = "تم " & " " & _txtType & " " & FormName & " بواسطة " & GlobalVariables.EmployeeName & " في " & _LogDateTime
+                    SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
+                End If
+            Next
+        End If
+    End Function
 End Class

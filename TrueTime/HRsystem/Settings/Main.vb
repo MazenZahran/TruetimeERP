@@ -3067,13 +3067,13 @@ Public Class Main
     Private Sub btnVouchersSettings_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnVouchersSettings.ItemClick
         Dim child As Form = Nothing
         For Each f As Form In MdiChildren
-            If TypeOf f Is VouchersSettings Then
+            If TypeOf f Is NotificationsCenter Then
                 child = f
                 Exit For
             End If
         Next f
         If child Is Nothing Then
-            child = New VouchersSettings()
+            child = New NotificationsCenter()
             child.MdiParent = Me
             child.Show()
         Else
