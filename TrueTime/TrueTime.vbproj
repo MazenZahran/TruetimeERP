@@ -1023,6 +1023,12 @@
     <Compile Include="AccountingSystem\Shalash\ShalashInternalOrderA4.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="AccountingSystem\ShortcutsForm.Designer.vb">
+      <DependentUpon>ShortcutsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingSystem\ShortcutsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AccountingSystem\Subscriptions\SubScriptionIn.Designer.vb">
       <DependentUpon>SubScriptionIn.vb</DependentUpon>
     </Compile>
@@ -3627,6 +3633,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccountingSystem\Shalash\ShalashInternalOrderA4.resx">
       <DependentUpon>ShalashInternalOrderA4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountingSystem\ShortcutsForm.resx">
+      <DependentUpon>ShortcutsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountingSystem\StockOrderReport.resx">
       <DependentUpon>StockOrderReport.vb</DependentUpon>

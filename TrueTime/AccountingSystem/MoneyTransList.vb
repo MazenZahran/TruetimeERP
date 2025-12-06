@@ -10,6 +10,7 @@ Imports DevExpress.XtraSplashScreen
 
 Public Class MoneyTransList
 
+    Public Property InitialDocName As Integer = 0
 
     Private Sub NewDocument()
 
@@ -422,6 +423,11 @@ Public Class MoneyTransList
         'Dim DateFrom As DateTime = New DateTime(Format(Today, "yyyy"), Format(Today, "MM"), 1)
         'Me.DateEditFrom.DateTime = DateFrom
         'Me.DateEditTo.DateTime = New DateTime(Format(Today, "yyyy"), 12, 31)
+
+        If InitialDocName <> 0 Then
+            TextEditDocName.EditValue = InitialDocName
+        End If
+
         RadioGroup1.EditValue = 100
         RefreshList()
         'Me.RepositoryItemTextEdit1.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.True

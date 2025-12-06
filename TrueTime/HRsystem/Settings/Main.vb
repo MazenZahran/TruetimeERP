@@ -373,7 +373,148 @@ Public Class Main
             Else
                 RibbonDeleteData.Visible = True
             End If
+        Else
+            CheckAndOpenFormByShortcut(e)
         End If
+    End Sub
+
+    Private Sub CheckAndOpenFormByShortcut(e As KeyEventArgs)
+        Try
+            If e.KeyCode = Keys.ControlKey OrElse e.KeyCode = Keys.ShiftKey OrElse
+               e.KeyCode = Keys.Menu OrElse e.KeyCode = Keys.LWin OrElse
+               e.KeyCode = Keys.RWin OrElse e.KeyCode = Keys.Alt Then
+                Return
+            End If
+
+            Dim shortcutText As String = ""
+
+            If e.Control Then
+                shortcutText = "Ctrl"
+            End If
+
+            If e.Alt Then
+                If shortcutText <> "" Then shortcutText &= "+"
+                shortcutText &= "Alt"
+            End If
+
+            If e.Shift Then
+                If shortcutText <> "" Then shortcutText &= "+"
+                shortcutText &= "Shift"
+            End If
+
+            If e.KeyCode <> Keys.None Then
+                If shortcutText <> "" Then shortcutText &= "+"
+                shortcutText &= e.KeyCode.ToString()
+            Else
+                Return
+            End If
+
+            Dim sql As New SQLControl
+            Dim sqlString As String = "SELECT FormID, NameEn FROM SystemForms WHERE ShortCut = N'" & shortcutText.Replace("'", "''") & "'"
+            sql.SqlTrueTimeRunQuery(sqlString)
+
+            If sql.SQLDS.Tables(0).Rows.Count > 0 Then
+                Dim formIDObj As Object = sql.SQLDS.Tables(0).Rows(0).Item("FormID")
+                Dim formName As String = sql.SQLDS.Tables(0).Rows(0).Item("NameEn").ToString()
+
+                Dim formID As Integer = 0
+                If formIDObj IsNot Nothing AndAlso Not IsDBNull(formIDObj) Then
+                    Integer.TryParse(formIDObj.ToString(), formID)
+                End If
+
+                OpenFormByName(formName, formID)
+
+                e.Handled = True
+                e.SuppressKeyPress = True
+            End If
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub OpenFormByName(formName As String, formID As Integer)
+        Try
+            Dim formType As Type = Type.GetType("TrueTime." & formName)
+
+            If formType IsNot Nothing Then
+                Dim child As Form = Nothing
+                For Each f As Form In MdiChildren
+                    If f.GetType() Is formType Then
+                        Try
+                            Dim initialDocProp = f.GetType().GetProperty("InitialDocName")
+                            If initialDocProp IsNot Nothing Then
+                                Dim currentFormIDObj = initialDocProp.GetValue(f)
+                                If currentFormIDObj IsNot Nothing Then
+                                    Dim currentFormID As Integer = 0
+                                    If Integer.TryParse(currentFormIDObj.ToString(), currentFormID) Then
+                                        If currentFormID = formID Then
+                                            child = f
+                                            Exit For
+                                        End If
+                                    End If
+                                End If
+                            Else
+                                Dim docNameProp = f.GetType().GetProperty("TextEditDocName")
+                                If docNameProp IsNot Nothing Then
+                                    Dim textEdit = docNameProp.GetValue(f)
+                                    If textEdit IsNot Nothing Then
+                                        Dim editValueProp = textEdit.GetType().GetProperty("EditValue")
+                                        If editValueProp IsNot Nothing Then
+                                            Dim currentFormIDObj = editValueProp.GetValue(textEdit)
+                                            If currentFormIDObj IsNot Nothing Then
+                                                Dim currentFormID As Integer = 0
+                                                If Integer.TryParse(currentFormIDObj.ToString(), currentFormID) Then
+                                                    If currentFormID = formID Then
+                                                        child = f
+                                                        Exit For
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                    End If
+                                Else
+                                    child = f
+                                    Exit For
+                                End If
+                            End If
+                        Catch
+                        End Try
+                    End If
+                Next
+
+                If child Is Nothing Then
+                    child = CType(Activator.CreateInstance(formType), Form)
+
+                    Try
+                        Dim initialDocProp = child.GetType().GetProperty("InitialDocName")
+                        If initialDocProp IsNot Nothing Then
+                            initialDocProp.SetValue(child, formID)
+                        End If
+                    Catch ex As Exception
+                        Try
+                            Dim textEditProp = child.GetType().GetProperty("TextEditDocName")
+                            If textEditProp IsNot Nothing Then
+                                Dim textEdit = textEditProp.GetValue(child)
+                                If textEdit IsNot Nothing Then
+                                    Dim editValueProp = textEdit.GetType().GetProperty("EditValue")
+                                    If editValueProp IsNot Nothing Then
+                                        editValueProp.SetValue(textEdit, formID)
+                                    End If
+                                End If
+                            End If
+                        Catch
+                        End Try
+                    End Try
+
+                    child.MdiParent = Me
+                    child.Show()
+                Else
+                    child.Activate()
+                End If
+            End If
+
+        Catch ex As Exception
+        End Try
     End Sub
 
     ' Helper: read a Boolean setting with a default value if not found
@@ -3081,6 +3222,24 @@ Public Class Main
         End If
     End Sub
 
+
+    Private Sub btnShortCut_ItemClick(sender As Object, e As ItemClickEventArgs) Handles btnShortCut.ItemClick
+        Dim child As Form = Nothing
+        For Each f As Form In MdiChildren
+            If TypeOf f Is ShortcutsForm Then
+                child = f
+                Exit For
+            End If
+        Next f
+        If child Is Nothing Then
+            child = New ShortcutsForm()
+            child.MdiParent = Me
+            child.Show()
+        Else
+            child.Activate()
+        End If
+    End Sub
+
     Private Sub BarButtonItem207_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem207.ItemClick
         Dim child As Form = Nothing
         For Each f As Form In MdiChildren
@@ -4224,6 +4383,7 @@ Public Class Main
             child.Activate()
         End If
     End Sub
+
 End Class
 
 
