@@ -154,12 +154,12 @@ Partial Class NotificationsCenter
         '
         'GridColumn4
         '
-        Me.GridColumn4.Caption = "اضافة"
+        Me.GridColumn4.Caption = "عند الإضافة"
         Me.GridColumn4.ColumnEdit = Me.WhenAdd
         Me.GridColumn4.FieldName = "WhenAdd"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 3
+        Me.GridColumn4.VisibleIndex = 5
         '
         'WhenAdd
         '
@@ -168,12 +168,12 @@ Partial Class NotificationsCenter
         '
         'GridColumn5
         '
-        Me.GridColumn5.Caption = "تعديل"
+        Me.GridColumn5.Caption = "عند التعديل"
         Me.GridColumn5.ColumnEdit = Me.WhenEdit
         Me.GridColumn5.FieldName = "WhenEdit"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 4
+        Me.GridColumn5.VisibleIndex = 3
         '
         'WhenEdit
         '
@@ -182,12 +182,12 @@ Partial Class NotificationsCenter
         '
         'GridColumn6
         '
-        Me.GridColumn6.Caption = "حذف"
+        Me.GridColumn6.Caption = "عند الحذف"
         Me.GridColumn6.ColumnEdit = Me.WhenDelete
         Me.GridColumn6.FieldName = "WhenDelete"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 5
+        Me.GridColumn6.VisibleIndex = 4
         '
         'WhenDelete
         '

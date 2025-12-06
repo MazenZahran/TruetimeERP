@@ -2235,6 +2235,18 @@
   <data name="&gt;&gt;LayoutControlItem61.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;EmptySpaceItem6.Name" xml:space="preserve">
+    <value>EmptySpaceItem6</value>
+  </data>
+  <data name="&gt;&gt;EmptySpaceItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem62.Name" xml:space="preserve">
+    <value>LayoutControlItem62</value>
+  </data>
+  <data name="&gt;&gt;LayoutControlItem62.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;LayoutControlGroup3.Name" xml:space="preserve">
     <value>LayoutControlGroup3</value>
   </data>
@@ -2630,18 +2642,6 @@
   </data>
   <data name="&gt;&gt;WorkspaceManager1.Type" xml:space="preserve">
     <value>DevExpress.Utils.WorkspaceManager, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;EmptySpaceItem6.Name" xml:space="preserve">
-    <value>EmptySpaceItem6</value>
-  </data>
-  <data name="&gt;&gt;EmptySpaceItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlItem62.Name" xml:space="preserve">
-    <value>LayoutControlItem62</value>
-  </data>
-  <data name="&gt;&gt;LayoutControlItem62.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AccSettings</value>

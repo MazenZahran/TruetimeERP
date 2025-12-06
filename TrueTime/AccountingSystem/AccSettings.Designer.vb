@@ -114,10 +114,13 @@ Partial Class AccSettings
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.XtraScrollableControl1 = New DevExpress.XtraEditors.XtraScrollableControl()
         Me.ChkSendWhenSave = New DevExpress.XtraEditors.CheckEdit()
+        Me.txtNumbersForSend = New DevExpress.XtraEditors.TextEdit()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.TabbedControlGroup1 = New DevExpress.XtraLayout.TabbedControlGroup()
         Me.lcgVouchersSend = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem61 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.EmptySpaceItem6 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.LayoutControlItem62 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
@@ -184,9 +187,6 @@ Partial Class AccSettings
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.XtraFolderBrowserDialog1 = New DevExpress.XtraEditors.XtraFolderBrowserDialog(Me.components)
         Me.WorkspaceManager1 = New DevExpress.Utils.WorkspaceManager(Me.components)
-        Me.EmptySpaceItem6 = New DevExpress.XtraLayout.EmptySpaceItem()
-        Me.txtNumbersForSend = New DevExpress.XtraEditors.TextEdit()
-        Me.LayoutControlItem62 = New DevExpress.XtraLayout.LayoutControlItem()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
         CType(Me.ComboRoundMethod.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -271,10 +271,13 @@ Partial Class AccSettings
         CType(Me.ComboScaleComNo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CheckCostCenters.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChkSendWhenSave.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumbersForSend.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lcgVouchersSend, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem61, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -338,9 +341,6 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtNumbersForSend.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
@@ -1110,6 +1110,12 @@ Partial Class AccSettings
         Me.ChkSendWhenSave.Properties.Caption = resources.GetString("ChkSendWhenSave.Properties.Caption")
         Me.ChkSendWhenSave.StyleController = Me.LayoutControl1
         '
+        'txtNumbersForSend
+        '
+        resources.ApplyResources(Me.txtNumbersForSend, "txtNumbersForSend")
+        Me.txtNumbersForSend.Name = "txtNumbersForSend"
+        Me.txtNumbersForSend.StyleController = Me.LayoutControl1
+        '
         'Root
         '
         Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
@@ -1145,6 +1151,23 @@ Partial Class AccSettings
         Me.LayoutControlItem61.Size = New System.Drawing.Size(637, 28)
         Me.LayoutControlItem61.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem61.TextVisible = False
+        '
+        'EmptySpaceItem6
+        '
+        Me.EmptySpaceItem6.AllowHotTrack = False
+        Me.EmptySpaceItem6.Location = New System.Drawing.Point(0, 0)
+        Me.EmptySpaceItem6.Name = "EmptySpaceItem6"
+        Me.EmptySpaceItem6.Size = New System.Drawing.Size(315, 422)
+        Me.EmptySpaceItem6.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'LayoutControlItem62
+        '
+        Me.LayoutControlItem62.Control = Me.txtNumbersForSend
+        Me.LayoutControlItem62.Location = New System.Drawing.Point(315, 28)
+        Me.LayoutControlItem62.Name = "LayoutControlItem62"
+        Me.LayoutControlItem62.Size = New System.Drawing.Size(637, 394)
+        resources.ApplyResources(Me.LayoutControlItem62, "LayoutControlItem62")
+        Me.LayoutControlItem62.TextSize = New System.Drawing.Size(209, 13)
         '
         'LayoutControlGroup3
         '
@@ -1731,29 +1754,6 @@ Partial Class AccSettings
         Me.WorkspaceManager1.TargetControl = Me
         Me.WorkspaceManager1.TransitionType = PushTransition1
         '
-        'EmptySpaceItem6
-        '
-        Me.EmptySpaceItem6.AllowHotTrack = False
-        Me.EmptySpaceItem6.Location = New System.Drawing.Point(0, 0)
-        Me.EmptySpaceItem6.Name = "EmptySpaceItem6"
-        Me.EmptySpaceItem6.Size = New System.Drawing.Size(315, 422)
-        Me.EmptySpaceItem6.TextSize = New System.Drawing.Size(0, 0)
-        '
-        'txtNumbersForSend
-        '
-        resources.ApplyResources(Me.txtNumbersForSend, "txtNumbersForSend")
-        Me.txtNumbersForSend.Name = "txtNumbersForSend"
-        Me.txtNumbersForSend.StyleController = Me.LayoutControl1
-        '
-        'LayoutControlItem62
-        '
-        Me.LayoutControlItem62.Control = Me.txtNumbersForSend
-        Me.LayoutControlItem62.Location = New System.Drawing.Point(315, 28)
-        Me.LayoutControlItem62.Name = "LayoutControlItem62"
-        Me.LayoutControlItem62.Size = New System.Drawing.Size(637, 394)
-        resources.ApplyResources(Me.LayoutControlItem62, "LayoutControlItem62")
-        Me.LayoutControlItem62.TextSize = New System.Drawing.Size(209, 13)
-        '
         'AccSettings
         '
         resources.ApplyResources(Me, "$this")
@@ -1845,10 +1845,13 @@ Partial Class AccSettings
         CType(Me.ComboScaleComNo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CheckCostCenters.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChkSendWhenSave.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtNumbersForSend.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lcgVouchersSend, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem61, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1912,9 +1915,6 @@ Partial Class AccSettings
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtNumbersForSend.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
