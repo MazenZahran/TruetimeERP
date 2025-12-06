@@ -1006,4 +1006,8 @@ Public Class SalaryPosted
     Private Sub BarSendAttSheetsForEmployees_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarSendAttSheetsForEmployees.ItemClick
         PrintAttSheets()
     End Sub
+
+    Private Sub BarButtonItem9_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem9.ItemClick
+
+    End Sub
 End Class

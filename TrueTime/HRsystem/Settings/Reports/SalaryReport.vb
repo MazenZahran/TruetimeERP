@@ -125,6 +125,17 @@ Public Class SalaryReport
             Dim SqlString As String
             SqlString = " select SettingValue From Settings where SettingName ='HR_ShowBonusAmountInInSalarySlip'"
             sql.SqlTrueTimeRunQuery(SqlString)
+            XrLabelBonusAmount.Visible = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))
+            XrLabelBonusAmountParameters.Visible = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))
+        Catch ex As Exception
+            XrLabelBonusAmount.Visible = True
+            XrLabelBonusAmountParameters.Visible = True
+        End Try
+
+        Try
+            Dim SqlString As String
+            SqlString = " select SettingValue From Settings where SettingName ='HR_ShowBonusHouresInSalarySlip'"
+            sql.SqlTrueTimeRunQuery(SqlString)
             XrLabelBonusHours.Visible = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))
             XrLabelBonusHoursParameters.Visible = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))
         Catch ex As Exception
@@ -135,7 +146,7 @@ Public Class SalaryReport
 
         Try
             Dim SqlString As String
-            SqlString = " select SettingValue From Settings where SettingName ='HR_ShowBonusAmountInInSalarySlip'"
+            SqlString = " select SettingValue From Settings where SettingName ='HR_ShowAdditionsAmountInSalarySlip'"
             sql.SqlTrueTimeRunQuery(SqlString)
             XrLabelAdditionsAmount.Visible = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))
             XrLabelAdditionsParameters.Visible = CBool(sql.SQLDS.Tables(0).Rows(0).Item("SettingValue"))

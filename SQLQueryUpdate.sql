@@ -8778,7 +8778,7 @@ INSERT [dbo].[BarcodePrinterSettings] ([ID], [FormName], [PageWidth], [PageHeigh
 GO
 INSERT [dbo].[BarcodePrinterSettings] ([ID], [FormName], [PageWidth], [PageHeight], [BottomMargin], [TopMargin], [RightMargin], [LeftMargin], [ShowPrice], [IsDefault], [DefaultPrinter]) VALUES (10, N'30*15 3C', CAST(100.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), 1, 0, N'')
 GO
-INSERT [dbo].[BarcodePrinterSettings] ([ID], [FormName], [PageWidth], [PageHeight], [BottomMargin], [TopMargin], [RightMargin], [LeftMargin], [ShowPrice], [IsDefault], [DefaultPrinter]) VALUES (10, N'60*40 Label', CAST(60.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), 1, 0, N'')
+INSERT [dbo].[BarcodePrinterSettings] ([ID], [FormName], [PageWidth], [PageHeight], [BottomMargin], [TopMargin], [RightMargin], [LeftMargin], [ShowPrice], [IsDefault], [DefaultPrinter]) VALUES (11, N'60*40 Label', CAST(60.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), CAST(0.00 AS Decimal(18, 2)), 1, 0, N'')
 GO
 ALTER TABLE [dbo].[BarcodePrinterSettings] ADD  CONSTRAINT [DF_BarcodePrinterSettings_PageWidth]  DEFAULT ((0)) FOR [PageWidth]
 GO
@@ -10879,7 +10879,7 @@ Go
 ------------------------------
 -- ترحيل سند القبض والصرف من الويب --
 ------------------------------
-CREATE OR ALTER PROCEDURE [dbo].[BuildReceiptFromWEB]
+ALTER   PROCEDURE [dbo].[BuildReceiptFromWEB]
     @ReferanceNo int,
     @DocDate date,
     @DocNameID int,
@@ -10956,7 +10956,7 @@ BEGIN
             @DeviceName, '0', '', '0', '1900-01-01', 
             @UserID, @ReferanceNo, @ReferanceName, '0', '0', '0', 
             0, @DocCode, '', '1', N'', 
-            1, N'', N'0'
+            1, N'', @UserID
         );
 
         IF EXISTS (SELECT 1 FROM @ChequesDetails)
@@ -10980,7 +10980,7 @@ BEGIN
                 @UserID, @InputDateTime, @ModifiedDateTime, 
                 @DeviceName, ChequeNo, 'OUT', '1', ChequeDueDate, 
                 @UserID, @ReferanceNo, @ReferanceName, ChequeBank, ChequeBankBranch, ChequeAccountNo, 
-                BankAccount, @DocCode, (SELECT RIGHT(NEWID(), 15)), '1', N'', 1, N'', N'0'
+                BankAccount, @DocCode, (SELECT RIGHT(NEWID(), 15)), '1', N'', 1, N'', @UserID
             FROM @ChequesDetails C
             LEFT JOIN BanksAccounts B ON B.ID = C.BankAccount;
         END;
@@ -11007,7 +11007,7 @@ BEGIN
             @DeviceName, '0', '', '0', '1900-01-01', 
             @UserID, @ReferanceNo, @ReferanceName, '0', '0', '0', 
             '', @DocCode, '', '1', N'', 
-            1, N'', N'0'
+            1, N'', @UserID
         );
 
         -- Post Cheks To Cheks Table 
@@ -11047,7 +11047,7 @@ BEGIN
             @DeviceName, '0', '', '0', '1900-01-01', 
             @UserID, @ReferanceNo, @ReferanceName, '0', '0', '0', 
             '', @DocCode, '', '1', N'', 
-            1, N'', N'0'
+            1, N'', @UserID
         );
 
         IF EXISTS (SELECT 1 FROM @ChequesDetails)
@@ -11071,7 +11071,7 @@ BEGIN
                 @UserID, @InputDateTime, @ModifiedDateTime, 
                 @DeviceName, ChequeNo, 'IN', '3', ChequeDueDate, 
                 @UserID, @ReferanceNo, @ReferanceName, ChequeBank, ChequeBankBranch, ChequeAccountNo, 
-                BankAccount, @DocCode, (SELECT RIGHT(NEWID(), 15)), '1', N'', 1, N'', N'0'
+                BankAccount, @DocCode, (SELECT RIGHT(NEWID(), 15)), '1', N'', 1, N'', @UserID
             FROM @ChequesDetails;
         END;
 
@@ -11097,7 +11097,7 @@ BEGIN
             @DeviceName, '0', '', '0', '1900-01-01', 
             @UserID, @ReferanceNo, @ReferanceName, '0', '0', '0', 
             '', @DocCode, '', '1', N'', 
-            1, N'', N'0'
+            1, N'', @UserID
         );
 
         -- Post Cheks To Cheks Table 
@@ -11244,14 +11244,15 @@ Go
 ALTER TABLE [EmployeesData] ADD NeedsGPS bit DEFAULT 0;
 Go
 
-Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowBonusAmountInInSalarySlip','False',N' عرض حقل ساعات الاضافي في قسيمة الراتب ','HR')
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowBonusAmountInInSalarySlip','True',N' عرض حقل ساعات الاضافي في قسيمة الراتب ','HR')
 Go
-Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowBonusHouresInSalarySlip','False',N' عرض حقل مبلغ البونص في قسيمة الراتب ','HR')
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowBonusHouresInSalarySlip','True',N' عرض حقل مبلغ الاضافي في قسيمة الراتب ','HR')
 Go
-Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowLeavesHouresInSalarySlip','False',N' عرض حقل ساعات المغادرات والتاخير في قسيمة الراتب ','HR')
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowLeavesHouresInSalarySlip','True',N' عرض حقل ساعات المغادرات والتاخير في قسيمة الراتب ','HR')
 Go
-Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowLeavesAmountInSalarySlip','False',N' عرض حقل مبلغ المغادرات والتاخير في قسيمة الراتب ','HR')
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('HR_ShowLeavesAmountInSalarySlip','True',N' عرض حقل مبلغ المغادرات والتاخير في قسيمة الراتب ','HR')
 Go
+
 Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('POS_SendRefBalanceInsteadRefDebitWhenSendWhatsAppMessage','False',N' ارسال رصيد الذمة عند ارسال رسالة الواتس في نقطة البيع عند القبض والصرف ','POS')
 Go
 Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('POS_SendSMSWhenTheItemNotDefined','False',N' ارسال رسالة عند ختم صنف غير معرف على نقطة البيع ','POS')
@@ -12446,7 +12447,7 @@ Go
 
 
 ALTER TABLE [dbo].[ItemsGroups]
-ADD VisibleInSalesApp  Bit  Not NULL CONSTRAINT DF_ItemsGroups_VisibleInSalesApp  DEFAULT (0) WITH VALUES;
+ADD VisibleInSalesApp  Bit  Not NULL CONSTRAINT DF_ItemsGroups_VisibleInSalesApp  DEFAULT (1) WITH VALUES;
 Go
 
 Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('POS_PosShowImagesInItemsView','True',N' عرض صور الاصناف في نقطة البيع ','POS')
@@ -12869,3 +12870,60 @@ Go
 
 Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,[SettingTerm]) values ('POS_PrintClosedShiftReport','True',N' في نقطة البيع، طباعة تقرير اغلاق الوردية ','POS')
 Go
+
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,SettingTerm) values ('HR_ShowAdditionsAmountInSalarySlip','True',N' عرض حقل مبلغ الاضافات في قسيمة الراتب ','HR')
+Go
+
+
+Insert Into [dbo].[Settings] (SettingName,SettingValue,SettingDescription,SettingTerm) values ('Accounting_PostVouchersFromSalesApp','True',N' ترحيل الفاتورة من نظام المندوبين ','Accounting')
+Go
+
+
+INSERT INTO Settings (SettingName,SettingValue, SettingDescription, SettingTerm) VALUES (N'NumbersForReseiptsVoucherMsgs',N'', N'الأرقام التي ستصلها رسالة واتساب عند إضافة سند قبض / صرف', 'POS')
+GO
+
+ALTER TABLE EmployeesData ADD CanEditCustomer bit DEFAULT 0;
+GO
+
+ALTER TABLE EmployeesData ADD CanMakeOrders bit DEFAULT 0
+GO
+
+ALTER TABLE EmployeesData ADD [CanUpdatePriceToLastestSellingPrice] bit DEFAULT 0
+GO
+
+CREATE TABLE ReferencesVisits (
+    VisitId INT IDENTITY(1,1) PRIMARY KEY,
+    EmpId INT,
+    RefNo INT,
+    Longitude DECIMAL(10,6),
+    Latitude DECIMAL(10,6),
+    VisitTime DATETIME,
+    VisitType NVARCHAR(50),
+	Notes NVARCHAR(MAX)
+);
+GO
+
+CREATE TABLE [dbo].[VisitServices](
+    [VisitServiceId] [int] IDENTITY(1,1) NOT NULL,
+    [VisitId] [int] NOT NULL,
+    [ServiceId] [nvarchar](max) NOT NULL,
+    [ServiceNote] [nvarchar](max) NULL,
+    [DateCreated] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[VisitServiceId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[VisitServices] ADD  DEFAULT (getdate()) FOR [DateCreated]
+GO
+
+ALTER TABLE [dbo].[VisitServices]  WITH CHECK ADD  CONSTRAINT [FK_VisitServices_Visits] FOREIGN KEY([VisitId])
+REFERENCES [dbo].[Visits] ([VisitId])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[VisitServices] CHECK CONSTRAINT [FK_VisitServices_Visits]
+GO
+

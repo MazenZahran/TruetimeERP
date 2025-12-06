@@ -254,6 +254,7 @@ Partial Class SalaryPosted
         Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItemChart = New DevExpress.XtraLayout.LayoutControlItem()
         Me.ChartBarController1 = New DevExpress.XtraCharts.UI.ChartBarController(Me.components)
+        Me.BarButtonItem9 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.RepositoryItemHyperHouresNetLeaves, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemHyperLeavesAmount, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -426,8 +427,8 @@ Partial Class SalaryPosted
         Me.BarManager1.DockControls.Add(Me.barDockControlRight)
         Me.BarManager1.DockManager = Me.DockManager1
         Me.BarManager1.Form = Me
-        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarSubItem1, Me.BarSubItem2, Me.BarButtonItem1, Me.BarButtonItemPrintSalaryDocument, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarSubItem3, Me.BarButtonItem5, Me.SelectSeriesBarItem1, Me.ChangeSeriesViewBarItem1, Me.DrawTrendLineIndicatorBarItem1, Me.DrawFibonacciArcsIndicatorBarItem1, Me.DrawFibonacciFansIndicatorBarItem1, Me.DrawFibonacciRetracementIndicatorBarItem1, Me.RemoveIndicatorBarItem1, Me.AddIndicatorBarItem1, Me.AddTextAnnotationBarItem1, Me.AddImageAnnotationBarItem1, Me.SelectAxisMeasureUnitBarItem1, Me.SelectPeriodBarItem1, Me.AddVerticalConstantLineBarItem1, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarSubItem4, Me.BarButtonItem8, Me.BarButtonItemDelete, Me.BarBtnAddNote, Me.BarButtonShowNotePreview, Me.BarButtonItem2, Me.BarButtonCopyAsTXT, Me.BarSubItem5, Me.BarButtonItem10, Me.BarButtonItem11, Me.BarSendAttSheetsForEmployees})
-        Me.BarManager1.MaxItemId = 37
+        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarSubItem1, Me.BarSubItem2, Me.BarButtonItem1, Me.BarButtonItemPrintSalaryDocument, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarSubItem3, Me.BarButtonItem5, Me.SelectSeriesBarItem1, Me.ChangeSeriesViewBarItem1, Me.DrawTrendLineIndicatorBarItem1, Me.DrawFibonacciArcsIndicatorBarItem1, Me.DrawFibonacciFansIndicatorBarItem1, Me.DrawFibonacciRetracementIndicatorBarItem1, Me.RemoveIndicatorBarItem1, Me.AddIndicatorBarItem1, Me.AddTextAnnotationBarItem1, Me.AddImageAnnotationBarItem1, Me.SelectAxisMeasureUnitBarItem1, Me.SelectPeriodBarItem1, Me.AddVerticalConstantLineBarItem1, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarSubItem4, Me.BarButtonItem8, Me.BarButtonItemDelete, Me.BarBtnAddNote, Me.BarButtonShowNotePreview, Me.BarButtonItem2, Me.BarButtonCopyAsTXT, Me.BarSubItem5, Me.BarButtonItem10, Me.BarButtonItem11, Me.BarSendAttSheetsForEmployees, Me.BarButtonItem9})
+        Me.BarManager1.MaxItemId = 38
         Me.BarManager1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.SelectSeriesRepositoryItemComboBox1, Me.ChangeSeriesViewRepositoryItemComboBox1, Me.SelectAxisMeasureUnitRepositoryItemComboBox1, Me.SelectPeriodRepositoryItemComboBox1})
         '
         'Bar1
@@ -556,7 +557,7 @@ Partial Class SalaryPosted
         Me.BarSubItem3.Id = 7
         Me.BarSubItem3.ImageOptions.Image = CType(resources.GetObject("BarSubItem3.ImageOptions.Image"), System.Drawing.Image)
         Me.BarSubItem3.ImageOptions.LargeImage = CType(resources.GetObject("BarSubItem3.ImageOptions.LargeImage"), System.Drawing.Image)
-        Me.BarSubItem3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem5), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem6), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonShowNotePreview)})
+        Me.BarSubItem3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem5), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem6), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonShowNotePreview), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem9)})
         Me.BarSubItem3.Name = "BarSubItem3"
         Me.BarSubItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         '
@@ -2332,6 +2333,13 @@ Partial Class SalaryPosted
         Me.ChartBarController1.BarItems.Add(Me.AddVerticalConstantLineBarItem1)
         Me.ChartBarController1.Control = Me.ChartControl1
         '
+        'BarButtonItem9
+        '
+        resources.ApplyResources(Me.BarButtonItem9, "BarButtonItem9")
+        Me.BarButtonItem9.Id = 37
+        Me.BarButtonItem9.ImageOptions.SvgImage = CType(resources.GetObject("BarButtonItem9.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BarButtonItem9.Name = "BarButtonItem9"
+        '
         'SalaryPosted
         '
         resources.ApplyResources(Me, "$this")
@@ -2617,4 +2625,5 @@ Partial Class SalaryPosted
     Friend WithEvents BandedGridColumn7 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
     Friend WithEvents gridBandAttendance As DevExpress.XtraGrid.Views.BandedGrid.GridBand
     Friend WithEvents BarSendAttSheetsForEmployees As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem9 As DevExpress.XtraBars.BarButtonItem
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports DevExpress
 Imports DevExpress.XtraEditors
 
 ' ====================================================================================================
@@ -201,8 +202,106 @@ Public Class DocumentOpener
     ''' </summary>
     Private Function HandleAppJournalDocument(docCode As String, dataName As String,
                                              docName As Integer, openFrom As String) As String
-        ' الكود الموجود في الـ Case "OrdersAppJournal"
-        ' (يمكن نقله هنا أو تبسيطه)
-        Return "Success"
+        Try
+            Dim form As New AccStockMove()
+            Dim docData = GetDocDataByDocCode(docCode, dataName)
+
+            With form
+                ' حالة المستند والألوان
+                .DocStatus.EditValue = docData.DocStatus
+                If .DocStatus.EditValue = 2 OrElse .DocStatus.EditValue = 3 Then
+                    .DocStatus.BackColor = Color.Red
+                End If
+
+                ' البيانات الأساسية
+                .DocID.EditValue = docData.DocID
+                .DocName.EditValue = docData.DocName
+                .DocDate.DateTime = CDate(docData.DocDate)
+                .DocManualNo.Text = docData.DocManualNo
+                .DocSort.EditValue = docData.DocSort
+                .Referance.EditValue = docData.Referance
+                .TextReferanceName.EditValue = docData.ReferanceName
+                .DocNotes.Text = docData.DocNotes
+                .BarInputUser.Caption = docData.InputUser
+
+                ' تحميل جدول التفاصيل
+                Dim firstTable As DataTable = GetDocDataTableFromAppSystem(docData.DocName, docCode).FirstTable
+                If firstTable IsNot Nothing Then
+                    .JournalGridControl.DataSource = firstTable
+                    .TextVoucherDiscount.EditValue = Convert.ToDecimal(firstTable.Compute("SUM(VoucherDiscount)", String.Empty))
+                End If
+
+                ' البيانات الإضافية
+                .RepositoryUnit.DataSource = GetAllItemsUnits()
+                .StockCreditWhereHouse.EditValue = GetWhareHouseByDocCode(docData.DocName, docCode).WahreHouse
+                .AccountForRefranace.EditValue = GetOtherAccountByDocCode(docData.DocName, docCode)
+
+                ' إعدادات النموذج
+                .Text = "طلبية مبيعات موبايل"
+                .BarBarConvertToSalesVoucher.Visibility = XtraBars.BarItemVisibility.Always
+                .BarSubItemSetItemPrices.Visibility = XtraBars.BarItemVisibility.Never
+                .DocCurrency.EditValue = 1
+                .ExchangePrice.Text = "1"
+                .TextOpenFrom.Text = openFrom
+                .DocCode.Text = docData.DocCode
+                .TextEditDocSource.Text = "OrdersAppJournal"
+
+                ' إعدادات الرؤية
+                .LayoutControlSave.Visibility = XtraLayout.Utils.LayoutVisibility.Never
+                .BarButtonItemDelete.Visibility = XtraLayout.Utils.LayoutVisibility.Never
+                .LayoutDeliverDate.Visibility = XtraLayout.Utils.LayoutVisibility.Always
+                .LayoutControlItemApprove.Visibility = XtraLayout.Utils.LayoutVisibility.Always
+                .LayoutControlItemApproveToVoucher.Visibility = XtraLayout.Utils.LayoutVisibility.Always
+                .LayoutOrderStatus.Visibility = XtraLayout.Utils.LayoutVisibility.Never
+
+                If docData.DocStatus = 0 Then
+                    .LayoutCancellAppDoc.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
+                Else
+                    .LayoutCancellAppDoc.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+                End If
+
+                If docData.OrderStatus = 1 Then
+                    .LayoutControlItemApprove.Visibility = XtraLayout.Utils.LayoutVisibility.Never
+                End If
+
+                ' إعدادات القراءة فقط
+                .GridView1.OptionsBehavior.Editable = False
+                .DocManualNo.ReadOnly = True
+                .DocDate.ReadOnly = True
+                .DocCurrency.ReadOnly = True
+                .Referance.ReadOnly = True
+                .LookCostCenter.ReadOnly = True
+                .TextReferanceName.ReadOnly = True
+                .StockDebitWhereHouse.ReadOnly = True
+                .StockCreditWhereHouse.ReadOnly = True
+                .DocNotes.ReadOnly = True
+                .AccountForRefranace.ReadOnly = True
+                .DateDeliverDate.ReadOnly = True
+                .SalesPerson.ReadOnly = True
+                .TextVoucherDiscount.ReadOnly = True
+
+                ' بيانات الموبايل
+                .BarDeviceName.Caption = docData.DeviceName
+                .TextOrderStatus.Text = docData.OrderStatus
+                .DateDeliverDate.DateTime = CDate(docData.DeliverDate)
+                .BarDocCode.Caption = docData.DocCode
+                .HyperLinkEdit1.Text = "Mobile Application, from Device :" & docData.DeviceName
+                .SalesPerson.EditValue = docData.SalesPerson
+                ._DocTagsToOpen = docData.DocTags
+
+                ' معالجة DocCode
+                If .DocCode.Text = "0" Then
+                    .DocCode.Text = CreateRandomCode()
+                End If
+
+                .Show()
+            End With
+
+            Return "Success"
+
+        Catch ex As Exception
+            MsgBoxShowError("خطأ في فتح مستند الموبايل: " & ex.Message)
+            Return "Error: " & ex.Message
+        End Try
     End Function
 End Class

@@ -525,6 +525,10 @@ Partial Class POSRestCashier
         Me.LayoutControlItemAllGroups = New DevExpress.XtraLayout.LayoutControlItem()
         Me.SplitterItem1 = New DevExpress.XtraLayout.SplitterItem()
         Me.TabbedControlGroupAllScreens = New DevExpress.XtraLayout.TabbedControlGroup()
+        Me.TabCashCustomers = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem33 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.TabLayoutControlGroupItemsTab = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItemItems = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -566,10 +570,6 @@ Partial Class POSRestCashier
         Me.TabTables = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem54 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem56 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.TabCashCustomers = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem33 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.TabCustomersCarsParts = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem57 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem58 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -737,6 +737,10 @@ Partial Class POSRestCashier
         CType(Me.LayoutControlItemAllGroups, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabbedControlGroupAllScreens, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TabCashCustomers, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem33, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabLayoutControlGroupItemsTab, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItemItems, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -778,10 +782,6 @@ Partial Class POSRestCashier
         CType(Me.TabTables, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem54, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem56, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TabCashCustomers, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem33, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabCustomersCarsParts, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem57, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem58, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1091,7 +1091,7 @@ Partial Class POSRestCashier
         GridLevelNode1.RelationName = "Level1"
         GridLevelNode2.RelationName = "Level2"
         Me.GridPosVoucher.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1, GridLevelNode2})
-        Me.GridPosVoucher.Location = New System.Drawing.Point(8, 295)
+        Me.GridPosVoucher.Location = New System.Drawing.Point(12, 305)
         Me.GridPosVoucher.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GridPosVoucher.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(55, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.GridPosVoucher.LookAndFeel.SkinName = "DevExpress Style"
@@ -1100,7 +1100,7 @@ Partial Class POSRestCashier
         Me.GridPosVoucher.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GridPosVoucher.Name = "GridPosVoucher"
         Me.GridPosVoucher.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemSpinEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemButtonEdit2})
-        Me.GridPosVoucher.Size = New System.Drawing.Size(854, 125)
+        Me.GridPosVoucher.Size = New System.Drawing.Size(563, 112)
         Me.GridPosVoucher.TabIndex = 4
         Me.GridPosVoucher.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1, Me.TileView2})
         '
@@ -1508,11 +1508,11 @@ Partial Class POSRestCashier
         GridLevelNode4.LevelTemplate = Me.TileViewWithoutImages
         GridLevelNode4.RelationName = "Level2"
         Me.GridItems.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode3, GridLevelNode4})
-        Me.GridItems.Location = New System.Drawing.Point(-94, 134)
+        Me.GridItems.Location = New System.Drawing.Point(24, 138)
         Me.GridItems.MainView = Me.WinExplorerViewItems
         Me.GridItems.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GridItems.Name = "GridItems"
-        Me.GridItems.Size = New System.Drawing.Size(548, 543)
+        Me.GridItems.Size = New System.Drawing.Size(682, 551)
         Me.GridItems.TabIndex = 13
         Me.GridItems.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.TileViewWithoutImages, Me.WinExplorerViewItems, Me.TileViewWithImages})
         '
@@ -2452,7 +2452,7 @@ Partial Class POSRestCashier
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(935, 278, 650, 400)
         Me.LayoutControl1.OptionsView.RightToLeftMirroringApplied = True
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(870, 746)
+        Me.LayoutControl1.Size = New System.Drawing.Size(587, 746)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
@@ -2460,9 +2460,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton10.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.SimpleButton10.Appearance.Options.UseBackColor = True
-        Me.SimpleButton10.Location = New System.Drawing.Point(8, 694)
+        Me.SimpleButton10.Location = New System.Drawing.Point(12, 692)
         Me.SimpleButton10.Name = "SimpleButton10"
-        Me.SimpleButton10.Size = New System.Drawing.Size(854, 42)
+        Me.SimpleButton10.Size = New System.Drawing.Size(563, 42)
         Me.SimpleButton10.StyleController = Me.LayoutControl1
         Me.SimpleButton10.TabIndex = 46
         Me.SimpleButton10.Text = "خيارات الدفع " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F5"
@@ -2471,38 +2471,38 @@ Partial Class POSRestCashier
         '
         Me.BtnPrintKitchen.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary
         Me.BtnPrintKitchen.Appearance.Options.UseBackColor = True
-        Me.BtnPrintKitchen.Location = New System.Drawing.Point(8, 602)
+        Me.BtnPrintKitchen.Location = New System.Drawing.Point(12, 600)
         Me.BtnPrintKitchen.Name = "BtnPrintKitchen"
-        Me.BtnPrintKitchen.Size = New System.Drawing.Size(146, 42)
+        Me.BtnPrintKitchen.Size = New System.Drawing.Size(94, 42)
         Me.BtnPrintKitchen.StyleController = Me.LayoutControl1
         Me.BtnPrintKitchen.TabIndex = 45
         Me.BtnPrintKitchen.Text = "طباعة" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "المطبخ"
         '
         'TextShassiNumber
         '
-        Me.TextShassiNumber.Location = New System.Drawing.Point(17, 158)
+        Me.TextShassiNumber.Location = New System.Drawing.Point(24, 162)
         Me.TextShassiNumber.MenuManager = Me.BarManager1
         Me.TextShassiNumber.Name = "TextShassiNumber"
         Me.TextShassiNumber.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextShassiNumber.Properties.Appearance.Options.UseFont = True
-        Me.TextShassiNumber.Size = New System.Drawing.Size(539, 42)
+        Me.TextShassiNumber.Size = New System.Drawing.Size(239, 42)
         Me.TextShassiNumber.StyleController = Me.LayoutControl1
         Me.TextShassiNumber.TabIndex = 44
         '
         'TextCarNumber
         '
-        Me.TextCarNumber.Location = New System.Drawing.Point(637, 158)
+        Me.TextCarNumber.Location = New System.Drawing.Point(349, 162)
         Me.TextCarNumber.MenuManager = Me.BarManager1
         Me.TextCarNumber.Name = "TextCarNumber"
         Me.TextCarNumber.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextCarNumber.Properties.Appearance.Options.UseFont = True
-        Me.TextCarNumber.Size = New System.Drawing.Size(137, 42)
+        Me.TextCarNumber.Size = New System.Drawing.Size(132, 42)
         Me.TextCarNumber.StyleController = Me.LayoutControl1
         Me.TextCarNumber.TabIndex = 43
         '
         'SearchTables
         '
-        Me.SearchTables.Location = New System.Drawing.Point(17, 245)
+        Me.SearchTables.Location = New System.Drawing.Point(24, 253)
         Me.SearchTables.MenuManager = Me.BarManager1
         Me.SearchTables.Name = "SearchTables"
         Me.SearchTables.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
@@ -2510,7 +2510,7 @@ Partial Class POSRestCashier
         Me.SearchTables.Properties.NullText = ""
         Me.SearchTables.Properties.PopupView = Me.SearchLookUpEdit1View
         Me.SearchTables.Properties.ValueMember = "TableID"
-        Me.SearchTables.Size = New System.Drawing.Size(557, 36)
+        Me.SearchTables.Size = New System.Drawing.Size(327, 36)
         Me.SearchTables.StyleController = Me.LayoutControl1
         Me.SearchTables.TabIndex = 42
         '
@@ -2545,7 +2545,7 @@ Partial Class POSRestCashier
         Me.LabelControlTableName.Appearance.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Information
         Me.LabelControlTableName.Appearance.Options.UseFont = True
         Me.LabelControlTableName.Appearance.Options.UseForeColor = True
-        Me.LabelControlTableName.Location = New System.Drawing.Point(815, 245)
+        Me.LabelControlTableName.Location = New System.Drawing.Point(525, 253)
         Me.LabelControlTableName.Name = "LabelControlTableName"
         Me.LabelControlTableName.Size = New System.Drawing.Size(38, 19)
         Me.LabelControlTableName.StyleController = Me.LayoutControl1
@@ -2557,9 +2557,9 @@ Partial Class POSRestCashier
         Me.BtnSaveAsItlaf.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.BtnSaveAsItlaf.Appearance.Options.UseBackColor = True
         Me.BtnSaveAsItlaf.ImageOptions.SvgImage = CType(resources.GetObject("BtnSaveAsItlaf.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.BtnSaveAsItlaf.Location = New System.Drawing.Point(8, 648)
+        Me.BtnSaveAsItlaf.Location = New System.Drawing.Point(12, 646)
         Me.BtnSaveAsItlaf.Name = "BtnSaveAsItlaf"
-        Me.BtnSaveAsItlaf.Size = New System.Drawing.Size(364, 42)
+        Me.BtnSaveAsItlaf.Size = New System.Drawing.Size(238, 42)
         Me.BtnSaveAsItlaf.StyleController = Me.LayoutControl1
         Me.BtnSaveAsItlaf.TabIndex = 40
         Me.BtnSaveAsItlaf.Text = "اتلاف"
@@ -2569,9 +2569,9 @@ Partial Class POSRestCashier
         Me.BtnSaveAsGift.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.BtnSaveAsGift.Appearance.Options.UseBackColor = True
         Me.BtnSaveAsGift.ImageOptions.SvgImage = CType(resources.GetObject("BtnSaveAsGift.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.BtnSaveAsGift.Location = New System.Drawing.Point(374, 648)
+        Me.BtnSaveAsGift.Location = New System.Drawing.Point(254, 646)
         Me.BtnSaveAsGift.Name = "BtnSaveAsGift"
-        Me.BtnSaveAsGift.Size = New System.Drawing.Size(488, 42)
+        Me.BtnSaveAsGift.Size = New System.Drawing.Size(321, 42)
         Me.BtnSaveAsGift.StyleController = Me.LayoutControl1
         Me.BtnSaveAsGift.TabIndex = 39
         Me.BtnSaveAsGift.Text = "هدايا"
@@ -2589,10 +2589,10 @@ Partial Class POSRestCashier
         '
         Me.SimpleButtonPrint.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.SimpleButtonPrint.Appearance.Options.UseBackColor = True
-        Me.SimpleButtonPrint.Location = New System.Drawing.Point(8, 556)
+        Me.SimpleButtonPrint.Location = New System.Drawing.Point(12, 554)
         Me.SimpleButtonPrint.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SimpleButtonPrint.Name = "SimpleButtonPrint"
-        Me.SimpleButtonPrint.Size = New System.Drawing.Size(242, 42)
+        Me.SimpleButtonPrint.Size = New System.Drawing.Size(157, 42)
         Me.SimpleButtonPrint.StyleController = Me.LayoutControl1
         Me.SimpleButtonPrint.TabIndex = 36
         Me.SimpleButtonPrint.Text = "طباعة" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F4"
@@ -2601,9 +2601,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButtonPaidMethods.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.SimpleButtonPaidMethods.Appearance.Options.UseBackColor = True
-        Me.SimpleButtonPaidMethods.Location = New System.Drawing.Point(252, 556)
+        Me.SimpleButtonPaidMethods.Location = New System.Drawing.Point(173, 554)
         Me.SimpleButtonPaidMethods.Name = "SimpleButtonPaidMethods"
-        Me.SimpleButtonPaidMethods.Size = New System.Drawing.Size(244, 42)
+        Me.SimpleButtonPaidMethods.Size = New System.Drawing.Size(159, 42)
         Me.SimpleButtonPaidMethods.StyleController = Me.LayoutControl1
         Me.SimpleButtonPaidMethods.TabIndex = 35
         Me.SimpleButtonPaidMethods.Text = "خيارات الدفع " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F5"
@@ -2612,9 +2612,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton11.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger
         Me.SimpleButton11.Appearance.Options.UseBackColor = True
-        Me.SimpleButton11.Location = New System.Drawing.Point(483, 602)
+        Me.SimpleButton11.Location = New System.Drawing.Point(327, 600)
         Me.SimpleButton11.Name = "SimpleButton11"
-        Me.SimpleButton11.Size = New System.Drawing.Size(132, 42)
+        Me.SimpleButton11.Size = New System.Drawing.Size(85, 42)
         Me.SimpleButton11.StyleController = Me.LayoutControl1
         Me.SimpleButton11.TabIndex = 34
         Me.SimpleButton11.Text = "خصم" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F6"
@@ -2623,9 +2623,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButtonSave.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.SimpleButtonSave.Appearance.Options.UseBackColor = True
-        Me.SimpleButtonSave.Location = New System.Drawing.Point(498, 556)
+        Me.SimpleButtonSave.Location = New System.Drawing.Point(336, 554)
         Me.SimpleButtonSave.Name = "SimpleButtonSave"
-        Me.SimpleButtonSave.Size = New System.Drawing.Size(364, 42)
+        Me.SimpleButtonSave.Size = New System.Drawing.Size(239, 42)
         Me.SimpleButtonSave.StyleController = Me.LayoutControl1
         Me.SimpleButtonSave.TabIndex = 32
         Me.SimpleButtonSave.Text = "حفظ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F3"
@@ -2634,9 +2634,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton8.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning
         Me.SimpleButton8.Appearance.Options.UseBackColor = True
-        Me.SimpleButton8.Location = New System.Drawing.Point(317, 602)
+        Me.SimpleButton8.Location = New System.Drawing.Point(217, 600)
         Me.SimpleButton8.Name = "SimpleButton8"
-        Me.SimpleButton8.Size = New System.Drawing.Size(164, 42)
+        Me.SimpleButton8.Size = New System.Drawing.Size(106, 42)
         Me.SimpleButton8.StyleController = Me.LayoutControl1
         Me.SimpleButton8.TabIndex = 30
         Me.SimpleButton8.Text = "ملاحظات" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F7"
@@ -2645,9 +2645,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton7.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger
         Me.SimpleButton7.Appearance.Options.UseBackColor = True
-        Me.SimpleButton7.Location = New System.Drawing.Point(156, 602)
+        Me.SimpleButton7.Location = New System.Drawing.Point(110, 600)
         Me.SimpleButton7.Name = "SimpleButton7"
-        Me.SimpleButton7.Size = New System.Drawing.Size(159, 42)
+        Me.SimpleButton7.Size = New System.Drawing.Size(103, 42)
         Me.SimpleButton7.StyleController = Me.LayoutControl1
         Me.SimpleButton7.TabIndex = 29
         Me.SimpleButton7.Text = "مردودات" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F8"
@@ -2656,9 +2656,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButtonHold.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary
         Me.SimpleButtonHold.Appearance.Options.UseBackColor = True
-        Me.SimpleButtonHold.Location = New System.Drawing.Point(617, 602)
+        Me.SimpleButtonHold.Location = New System.Drawing.Point(416, 600)
         Me.SimpleButtonHold.Name = "SimpleButtonHold"
-        Me.SimpleButtonHold.Size = New System.Drawing.Size(245, 42)
+        Me.SimpleButtonHold.Size = New System.Drawing.Size(159, 42)
         Me.SimpleButtonHold.StyleController = Me.LayoutControl1
         Me.SimpleButtonHold.TabIndex = 28
         Me.SimpleButtonHold.Text = "تعليق" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "F9"
@@ -2703,7 +2703,7 @@ Partial Class POSRestCashier
         'TextTotalQuantity
         '
         Me.TextTotalQuantity.EditValue = "0"
-        Me.TextTotalQuantity.Location = New System.Drawing.Point(8, 454)
+        Me.TextTotalQuantity.Location = New System.Drawing.Point(12, 452)
         Me.TextTotalQuantity.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextTotalQuantity.Name = "TextTotalQuantity"
         Me.TextTotalQuantity.Properties.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue
@@ -2715,7 +2715,7 @@ Partial Class POSRestCashier
         Me.TextTotalQuantity.Properties.Appearance.Options.UseTextOptions = True
         Me.TextTotalQuantity.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextTotalQuantity.Properties.ReadOnly = True
-        Me.TextTotalQuantity.Size = New System.Drawing.Size(180, 36)
+        Me.TextTotalQuantity.Size = New System.Drawing.Size(117, 36)
         Me.TextTotalQuantity.StyleController = Me.LayoutControl1
         Me.TextTotalQuantity.TabIndex = 22
         '
@@ -2755,7 +2755,7 @@ Partial Class POSRestCashier
         'TextVoucherDiscount2
         '
         Me.TextVoucherDiscount2.EditValue = CType(0, Short)
-        Me.TextVoucherDiscount2.Location = New System.Drawing.Point(190, 454)
+        Me.TextVoucherDiscount2.Location = New System.Drawing.Point(133, 452)
         Me.TextVoucherDiscount2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextVoucherDiscount2.Name = "TextVoucherDiscount2"
         Me.TextVoucherDiscount2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2771,14 +2771,14 @@ Partial Class POSRestCashier
         Me.TextVoucherDiscount2.Properties.MaskSettings.Set("mask", "f")
         Me.TextVoucherDiscount2.Properties.ReadOnly = True
         Me.TextVoucherDiscount2.Properties.UseMaskAsDisplayFormat = True
-        Me.TextVoucherDiscount2.Size = New System.Drawing.Size(181, 36)
+        Me.TextVoucherDiscount2.Size = New System.Drawing.Size(117, 36)
         Me.TextVoucherDiscount2.StyleController = Me.LayoutControl1
         Me.TextVoucherDiscount2.TabIndex = 19
         '
         'TextVoucherDiscount
         '
         Me.TextVoucherDiscount.EditValue = CType(0, Short)
-        Me.TextVoucherDiscount.Location = New System.Drawing.Point(373, 454)
+        Me.TextVoucherDiscount.Location = New System.Drawing.Point(254, 452)
         Me.TextVoucherDiscount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextVoucherDiscount.Name = "TextVoucherDiscount"
         Me.TextVoucherDiscount.Properties.Appearance.BackColor = System.Drawing.Color.DarkSalmon
@@ -2791,14 +2791,14 @@ Partial Class POSRestCashier
         Me.TextVoucherDiscount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TextVoucherDiscount.Properties.ReadOnly = True
         Me.TextVoucherDiscount.Properties.UseMaskAsDisplayFormat = True
-        Me.TextVoucherDiscount.Size = New System.Drawing.Size(181, 36)
+        Me.TextVoucherDiscount.Size = New System.Drawing.Size(117, 36)
         Me.TextVoucherDiscount.StyleController = Me.LayoutControl1
         Me.TextVoucherDiscount.TabIndex = 19
         '
         'TexVouchertAmountAfterDiscount
         '
         Me.TexVouchertAmountAfterDiscount.EditValue = CType(0, Short)
-        Me.TexVouchertAmountAfterDiscount.Location = New System.Drawing.Point(8, 494)
+        Me.TexVouchertAmountAfterDiscount.Location = New System.Drawing.Point(12, 492)
         Me.TexVouchertAmountAfterDiscount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TexVouchertAmountAfterDiscount.Name = "TexVouchertAmountAfterDiscount"
         Me.TexVouchertAmountAfterDiscount.Properties.Appearance.BackColor = System.Drawing.Color.Black
@@ -2811,14 +2811,14 @@ Partial Class POSRestCashier
         Me.TexVouchertAmountAfterDiscount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TexVouchertAmountAfterDiscount.Properties.ReadOnly = True
         Me.TexVouchertAmountAfterDiscount.Properties.UseMaskAsDisplayFormat = True
-        Me.TexVouchertAmountAfterDiscount.Size = New System.Drawing.Size(854, 58)
+        Me.TexVouchertAmountAfterDiscount.Size = New System.Drawing.Size(563, 58)
         Me.TexVouchertAmountAfterDiscount.StyleController = Me.LayoutControl1
         Me.TexVouchertAmountAfterDiscount.TabIndex = 18
         '
         'TexVouchertAmountBeforeDiscount
         '
         Me.TexVouchertAmountBeforeDiscount.EditValue = CType(0, Short)
-        Me.TexVouchertAmountBeforeDiscount.Location = New System.Drawing.Point(556, 454)
+        Me.TexVouchertAmountBeforeDiscount.Location = New System.Drawing.Point(375, 452)
         Me.TexVouchertAmountBeforeDiscount.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TexVouchertAmountBeforeDiscount.Name = "TexVouchertAmountBeforeDiscount"
         Me.TexVouchertAmountBeforeDiscount.Properties.Appearance.BackColor = System.Drawing.Color.LightBlue
@@ -2830,19 +2830,19 @@ Partial Class POSRestCashier
         Me.TexVouchertAmountBeforeDiscount.Properties.Appearance.Options.UseTextOptions = True
         Me.TexVouchertAmountBeforeDiscount.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.TexVouchertAmountBeforeDiscount.Properties.ReadOnly = True
-        Me.TexVouchertAmountBeforeDiscount.Size = New System.Drawing.Size(306, 36)
+        Me.TexVouchertAmountBeforeDiscount.Size = New System.Drawing.Size(200, 36)
         Me.TexVouchertAmountBeforeDiscount.StyleController = Me.LayoutControl1
         Me.TexVouchertAmountBeforeDiscount.TabIndex = 18
         '
         'TextReferanceNo
         '
-        Me.TextReferanceNo.Location = New System.Drawing.Point(8, 60)
+        Me.TextReferanceNo.Location = New System.Drawing.Point(12, 62)
         Me.TextReferanceNo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextReferanceNo.Name = "TextReferanceNo"
         Me.TextReferanceNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextReferanceNo.Properties.Appearance.Options.UseFont = True
         Me.TextReferanceNo.Properties.ReadOnly = True
-        Me.TextReferanceNo.Size = New System.Drawing.Size(68, 48)
+        Me.TextReferanceNo.Size = New System.Drawing.Size(66, 48)
         Me.TextReferanceNo.StyleController = Me.LayoutControl1
         Me.TextReferanceNo.TabIndex = 17
         '
@@ -2882,7 +2882,7 @@ Partial Class POSRestCashier
         'TextReferanceName
         '
         Me.TextReferanceName.EditValue = "زبون نقدي"
-        Me.TextReferanceName.Location = New System.Drawing.Point(78, 60)
+        Me.TextReferanceName.Location = New System.Drawing.Point(82, 62)
         Me.TextReferanceName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextReferanceName.Name = "TextReferanceName"
         EditorButtonImageOptions3.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter
@@ -2892,18 +2892,18 @@ Partial Class POSRestCashier
         EditorButtonImageOptions5.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter
         EditorButtonImageOptions5.SvgImage = CType(resources.GetObject("EditorButtonImageOptions5.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.TextReferanceName.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "ذمم", -1, True, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "اختر زبون", "Debit", Nothing, DevExpress.Utils.ToolTipAnchor.[Default]), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "زبون نقدي", -1, True, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "زبون نقدي", "CashCustomer", Nothing, DevExpress.Utils.ToolTipAnchor.[Default]), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "نقدا", -1, True, True, False, EditorButtonImageOptions5, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "بيع نقدي", "Cash", Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
-        Me.TextReferanceName.Size = New System.Drawing.Size(784, 63)
+        Me.TextReferanceName.Size = New System.Drawing.Size(493, 63)
         Me.TextReferanceName.StyleController = Me.LayoutControl1
         Me.TextReferanceName.TabIndex = 37
         '
         'txtBarcode
         '
-        Me.txtBarcode.Location = New System.Drawing.Point(8, 10)
+        Me.txtBarcode.Location = New System.Drawing.Point(12, 12)
         Me.txtBarcode.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtBarcode.Name = "txtBarcode"
         EditorButtonImageOptions6.SvgImage = CType(resources.GetObject("EditorButtonImageOptions6.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.txtBarcode.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions6, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject21, SerializableAppearanceObject22, SerializableAppearanceObject23, SerializableAppearanceObject24, "البحث عن صنف", "Barcode", Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
-        Me.txtBarcode.Size = New System.Drawing.Size(854, 46)
+        Me.txtBarcode.Size = New System.Drawing.Size(563, 46)
         Me.txtBarcode.StyleController = Me.LayoutControl1
         Me.txtBarcode.TabIndex = 6
         '
@@ -3015,7 +3015,7 @@ Partial Class POSRestCashier
         Me.Root.GroupBordersVisible = False
         Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem10, Me.LayoutControlItem15, Me.LayoutControlItem3, Me.EmptySpaceItem2, Me.SimpleSeparator1, Me.LayoutControlItem30, Me.LayoutControlItem13, Me.LayoutControlItem22, Me.LayoutControlItemPrint, Me.LayoutItemSaveButtom, Me.LayoutControlPaidOptions, Me.LayoutControlItem5, Me.LayoutControlItem32, Me.LayoutBtnAsGift, Me.LayoutBtnAsItlaf, Me.LayoutControlItem2, Me.LayoutControlGroupCar, Me.LayoutControlHoldVoucher, Me.LayoutControlItem34, Me.LayoutControlItem31, Me.LayoutControlItem29, Me.LayoutControlItemPrintKitchen, Me.LayoutControlGroupTable, Me.LayoutControlItem59})
         Me.Root.Name = "Root"
-        Me.Root.Size = New System.Drawing.Size(870, 746)
+        Me.Root.Size = New System.Drawing.Size(587, 746)
         Me.Root.TextVisible = False
         '
         'LayoutControlItem10
@@ -3024,9 +3024,9 @@ Partial Class POSRestCashier
         Me.LayoutControlItem10.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.LayoutControlItem10.Control = Me.TextVoucherDiscount2
         Me.LayoutControlItem10.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(182, 429)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(121, 424)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(183, 55)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(121, 56)
         Me.LayoutControlItem10.Text = "خصم الفاتورة:"
         Me.LayoutControlItem10.TextLocation = DevExpress.Utils.Locations.Top
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(70, 13)
@@ -3038,9 +3038,9 @@ Partial Class POSRestCashier
         Me.LayoutControlItem15.Control = Me.TextVoucherDiscount
         Me.LayoutControlItem15.CustomizationFormText = " "
         Me.LayoutControlItem15.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(365, 429)
+        Me.LayoutControlItem15.Location = New System.Drawing.Point(242, 424)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(183, 55)
+        Me.LayoutControlItem15.Size = New System.Drawing.Size(121, 56)
         Me.LayoutControlItem15.Text = " خصم الأصناف:"
         Me.LayoutControlItem15.TextLocation = DevExpress.Utils.Locations.Top
         Me.LayoutControlItem15.TextSize = New System.Drawing.Size(70, 13)
@@ -3048,37 +3048,37 @@ Partial Class POSRestCashier
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.GridPosVoucher
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 285)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 293)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(856, 129)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(567, 116)
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem3.TextVisible = False
         '
         'EmptySpaceItem2
         '
         Me.EmptySpaceItem2.AllowHotTrack = False
-        Me.EmptySpaceItem2.Location = New System.Drawing.Point(0, 415)
+        Me.EmptySpaceItem2.Location = New System.Drawing.Point(0, 410)
         Me.EmptySpaceItem2.MaxSize = New System.Drawing.Size(0, 14)
         Me.EmptySpaceItem2.MinSize = New System.Drawing.Size(10, 14)
         Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
-        Me.EmptySpaceItem2.Size = New System.Drawing.Size(856, 14)
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(567, 14)
         Me.EmptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
         'SimpleSeparator1
         '
         Me.SimpleSeparator1.AllowHotTrack = False
-        Me.SimpleSeparator1.Location = New System.Drawing.Point(0, 414)
+        Me.SimpleSeparator1.Location = New System.Drawing.Point(0, 409)
         Me.SimpleSeparator1.Name = "SimpleSeparator1"
-        Me.SimpleSeparator1.Size = New System.Drawing.Size(856, 1)
+        Me.SimpleSeparator1.Size = New System.Drawing.Size(567, 1)
         '
         'LayoutControlItem30
         '
         Me.LayoutControlItem30.Control = Me.TexVouchertAmountAfterDiscount
         Me.LayoutControlItem30.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.LayoutControlItem30.Location = New System.Drawing.Point(0, 484)
+        Me.LayoutControlItem30.Location = New System.Drawing.Point(0, 480)
         Me.LayoutControlItem30.Name = "LayoutControlItem30"
-        Me.LayoutControlItem30.Size = New System.Drawing.Size(856, 62)
+        Me.LayoutControlItem30.Size = New System.Drawing.Size(567, 62)
         Me.LayoutControlItem30.Text = "الصافي للدفع:"
         Me.LayoutControlItem30.TextLocation = DevExpress.Utils.Locations.Right
         Me.LayoutControlItem30.TextSize = New System.Drawing.Size(0, 0)
@@ -3091,9 +3091,9 @@ Partial Class POSRestCashier
         Me.LayoutControlItem13.Control = Me.TexVouchertAmountBeforeDiscount
         Me.LayoutControlItem13.CustomizationFormText = " "
         Me.LayoutControlItem13.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(548, 429)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(363, 424)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(308, 55)
+        Me.LayoutControlItem13.Size = New System.Drawing.Size(204, 56)
         Me.LayoutControlItem13.Text = " المجموع:"
         Me.LayoutControlItem13.TextLocation = DevExpress.Utils.Locations.Top
         Me.LayoutControlItem13.TextSize = New System.Drawing.Size(70, 13)
@@ -3104,9 +3104,9 @@ Partial Class POSRestCashier
         Me.LayoutControlItem22.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.LayoutControlItem22.Control = Me.TextTotalQuantity
         Me.LayoutControlItem22.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.LayoutControlItem22.Location = New System.Drawing.Point(0, 429)
+        Me.LayoutControlItem22.Location = New System.Drawing.Point(0, 424)
         Me.LayoutControlItem22.Name = "LayoutControlItem22"
-        Me.LayoutControlItem22.Size = New System.Drawing.Size(182, 55)
+        Me.LayoutControlItem22.Size = New System.Drawing.Size(121, 56)
         Me.LayoutControlItem22.Text = "مجموع الكميات:"
         Me.LayoutControlItem22.TextLocation = DevExpress.Utils.Locations.Top
         Me.LayoutControlItem22.TextSize = New System.Drawing.Size(70, 13)
@@ -3114,27 +3114,27 @@ Partial Class POSRestCashier
         'LayoutControlItemPrint
         '
         Me.LayoutControlItemPrint.Control = Me.SimpleButtonPrint
-        Me.LayoutControlItemPrint.Location = New System.Drawing.Point(0, 546)
+        Me.LayoutControlItemPrint.Location = New System.Drawing.Point(0, 542)
         Me.LayoutControlItemPrint.Name = "LayoutControlItemPrint"
-        Me.LayoutControlItemPrint.Size = New System.Drawing.Size(244, 46)
+        Me.LayoutControlItemPrint.Size = New System.Drawing.Size(161, 46)
         Me.LayoutControlItemPrint.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemPrint.TextVisible = False
         '
         'LayoutItemSaveButtom
         '
         Me.LayoutItemSaveButtom.Control = Me.SimpleButtonSave
-        Me.LayoutItemSaveButtom.Location = New System.Drawing.Point(490, 546)
+        Me.LayoutItemSaveButtom.Location = New System.Drawing.Point(324, 542)
         Me.LayoutItemSaveButtom.Name = "LayoutItemSaveButtom"
-        Me.LayoutItemSaveButtom.Size = New System.Drawing.Size(366, 46)
+        Me.LayoutItemSaveButtom.Size = New System.Drawing.Size(243, 46)
         Me.LayoutItemSaveButtom.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutItemSaveButtom.TextVisible = False
         '
         'LayoutControlPaidOptions
         '
         Me.LayoutControlPaidOptions.Control = Me.SimpleButtonPaidMethods
-        Me.LayoutControlPaidOptions.Location = New System.Drawing.Point(244, 546)
+        Me.LayoutControlPaidOptions.Location = New System.Drawing.Point(161, 542)
         Me.LayoutControlPaidOptions.Name = "LayoutControlPaidOptions"
-        Me.LayoutControlPaidOptions.Size = New System.Drawing.Size(246, 46)
+        Me.LayoutControlPaidOptions.Size = New System.Drawing.Size(163, 46)
         Me.LayoutControlPaidOptions.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlPaidOptions.TextVisible = False
         '
@@ -3143,7 +3143,7 @@ Partial Class POSRestCashier
         Me.LayoutControlItem5.Control = Me.txtBarcode
         Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(856, 50)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(567, 50)
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem5.TextVisible = False
         '
@@ -3153,7 +3153,7 @@ Partial Class POSRestCashier
         Me.LayoutControlItem32.Location = New System.Drawing.Point(70, 50)
         Me.LayoutControlItem32.MinSize = New System.Drawing.Size(268, 67)
         Me.LayoutControlItem32.Name = "LayoutControlItem32"
-        Me.LayoutControlItem32.Size = New System.Drawing.Size(786, 67)
+        Me.LayoutControlItem32.Size = New System.Drawing.Size(497, 67)
         Me.LayoutControlItem32.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem32.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem32.TextVisible = False
@@ -3161,18 +3161,18 @@ Partial Class POSRestCashier
         'LayoutBtnAsGift
         '
         Me.LayoutBtnAsGift.Control = Me.BtnSaveAsGift
-        Me.LayoutBtnAsGift.Location = New System.Drawing.Point(366, 638)
+        Me.LayoutBtnAsGift.Location = New System.Drawing.Point(242, 634)
         Me.LayoutBtnAsGift.Name = "LayoutBtnAsGift"
-        Me.LayoutBtnAsGift.Size = New System.Drawing.Size(490, 46)
+        Me.LayoutBtnAsGift.Size = New System.Drawing.Size(325, 46)
         Me.LayoutBtnAsGift.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutBtnAsGift.TextVisible = False
         '
         'LayoutBtnAsItlaf
         '
         Me.LayoutBtnAsItlaf.Control = Me.BtnSaveAsItlaf
-        Me.LayoutBtnAsItlaf.Location = New System.Drawing.Point(0, 638)
+        Me.LayoutBtnAsItlaf.Location = New System.Drawing.Point(0, 634)
         Me.LayoutBtnAsItlaf.Name = "LayoutBtnAsItlaf"
-        Me.LayoutBtnAsItlaf.Size = New System.Drawing.Size(366, 46)
+        Me.LayoutBtnAsItlaf.Size = New System.Drawing.Size(242, 46)
         Me.LayoutBtnAsItlaf.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutBtnAsItlaf.TextVisible = False
         '
@@ -3196,14 +3196,14 @@ Partial Class POSRestCashier
         Me.LayoutControlGroupCar.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItemCarNo, Me.LayoutControlItemChassiNo})
         Me.LayoutControlGroupCar.Location = New System.Drawing.Point(0, 117)
         Me.LayoutControlGroupCar.Name = "LayoutControlGroupCar"
-        Me.LayoutControlGroupCar.Size = New System.Drawing.Size(856, 87)
+        Me.LayoutControlGroupCar.Size = New System.Drawing.Size(567, 91)
         Me.LayoutControlGroupCar.Text = "بيانات المركبة"
         Me.LayoutControlGroupCar.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
         '
         'LayoutControlItemCarNo
         '
         Me.LayoutControlItemCarNo.Control = Me.TextCarNumber
-        Me.LayoutControlItemCarNo.Location = New System.Drawing.Point(620, 0)
+        Me.LayoutControlItemCarNo.Location = New System.Drawing.Point(325, 0)
         Me.LayoutControlItemCarNo.MaxSize = New System.Drawing.Size(218, 46)
         Me.LayoutControlItemCarNo.MinSize = New System.Drawing.Size(218, 46)
         Me.LayoutControlItemCarNo.Name = "LayoutControlItemCarNo"
@@ -3218,52 +3218,52 @@ Partial Class POSRestCashier
         Me.LayoutControlItemChassiNo.Control = Me.TextShassiNumber
         Me.LayoutControlItemChassiNo.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItemChassiNo.Name = "LayoutControlItemChassiNo"
-        Me.LayoutControlItemChassiNo.Size = New System.Drawing.Size(620, 46)
+        Me.LayoutControlItemChassiNo.Size = New System.Drawing.Size(325, 46)
         Me.LayoutControlItemChassiNo.Text = "رقم الشاصي:"
         Me.LayoutControlItemChassiNo.TextSize = New System.Drawing.Size(70, 13)
         '
         'LayoutControlHoldVoucher
         '
         Me.LayoutControlHoldVoucher.Control = Me.SimpleButtonHold
-        Me.LayoutControlHoldVoucher.Location = New System.Drawing.Point(609, 592)
+        Me.LayoutControlHoldVoucher.Location = New System.Drawing.Point(404, 588)
         Me.LayoutControlHoldVoucher.Name = "LayoutControlHoldVoucher"
-        Me.LayoutControlHoldVoucher.Size = New System.Drawing.Size(247, 46)
+        Me.LayoutControlHoldVoucher.Size = New System.Drawing.Size(163, 46)
         Me.LayoutControlHoldVoucher.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlHoldVoucher.TextVisible = False
         '
         'LayoutControlItem34
         '
         Me.LayoutControlItem34.Control = Me.SimpleButton11
-        Me.LayoutControlItem34.Location = New System.Drawing.Point(475, 592)
+        Me.LayoutControlItem34.Location = New System.Drawing.Point(315, 588)
         Me.LayoutControlItem34.Name = "LayoutControlItem34"
-        Me.LayoutControlItem34.Size = New System.Drawing.Size(134, 46)
+        Me.LayoutControlItem34.Size = New System.Drawing.Size(89, 46)
         Me.LayoutControlItem34.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem34.TextVisible = False
         '
         'LayoutControlItem31
         '
         Me.LayoutControlItem31.Control = Me.SimpleButton8
-        Me.LayoutControlItem31.Location = New System.Drawing.Point(309, 592)
+        Me.LayoutControlItem31.Location = New System.Drawing.Point(205, 588)
         Me.LayoutControlItem31.Name = "LayoutControlItem31"
-        Me.LayoutControlItem31.Size = New System.Drawing.Size(166, 46)
+        Me.LayoutControlItem31.Size = New System.Drawing.Size(110, 46)
         Me.LayoutControlItem31.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem31.TextVisible = False
         '
         'LayoutControlItem29
         '
         Me.LayoutControlItem29.Control = Me.SimpleButton7
-        Me.LayoutControlItem29.Location = New System.Drawing.Point(148, 592)
+        Me.LayoutControlItem29.Location = New System.Drawing.Point(98, 588)
         Me.LayoutControlItem29.Name = "LayoutControlItem29"
-        Me.LayoutControlItem29.Size = New System.Drawing.Size(161, 46)
+        Me.LayoutControlItem29.Size = New System.Drawing.Size(107, 46)
         Me.LayoutControlItem29.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem29.TextVisible = False
         '
         'LayoutControlItemPrintKitchen
         '
         Me.LayoutControlItemPrintKitchen.Control = Me.BtnPrintKitchen
-        Me.LayoutControlItemPrintKitchen.Location = New System.Drawing.Point(0, 592)
+        Me.LayoutControlItemPrintKitchen.Location = New System.Drawing.Point(0, 588)
         Me.LayoutControlItemPrintKitchen.Name = "LayoutControlItemPrintKitchen"
-        Me.LayoutControlItemPrintKitchen.Size = New System.Drawing.Size(148, 46)
+        Me.LayoutControlItemPrintKitchen.Size = New System.Drawing.Size(98, 46)
         Me.LayoutControlItemPrintKitchen.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemPrintKitchen.TextVisible = False
         Me.LayoutControlItemPrintKitchen.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
@@ -3272,18 +3272,18 @@ Partial Class POSRestCashier
         '
         Me.LayoutControlGroupTable.GroupStyle = DevExpress.Utils.GroupStyle.Light
         Me.LayoutControlGroupTable.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItemTableName, Me.EmptySpaceItem5, Me.LayoutControlItemTables})
-        Me.LayoutControlGroupTable.Location = New System.Drawing.Point(0, 204)
+        Me.LayoutControlGroupTable.Location = New System.Drawing.Point(0, 208)
         Me.LayoutControlGroupTable.Name = "LayoutControlGroupTable"
-        Me.LayoutControlGroupTable.Size = New System.Drawing.Size(856, 81)
+        Me.LayoutControlGroupTable.Size = New System.Drawing.Size(567, 85)
         Me.LayoutControlGroupTable.Text = "بيانات الطاولة"
         Me.LayoutControlGroupTable.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
         '
         'LayoutControlItemTableName
         '
         Me.LayoutControlItemTableName.Control = Me.LabelControlTableName
-        Me.LayoutControlItemTableName.Location = New System.Drawing.Point(798, 0)
+        Me.LayoutControlItemTableName.Location = New System.Drawing.Point(501, 0)
         Me.LayoutControlItemTableName.Name = "LayoutControlItemTableName"
-        Me.LayoutControlItemTableName.Size = New System.Drawing.Size(40, 40)
+        Me.LayoutControlItemTableName.Size = New System.Drawing.Size(42, 40)
         Me.LayoutControlItemTableName.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemTableName.TextVisible = False
         Me.LayoutControlItemTableName.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
@@ -3291,9 +3291,9 @@ Partial Class POSRestCashier
         'EmptySpaceItem5
         '
         Me.EmptySpaceItem5.AllowHotTrack = False
-        Me.EmptySpaceItem5.Location = New System.Drawing.Point(638, 0)
+        Me.EmptySpaceItem5.Location = New System.Drawing.Point(413, 0)
         Me.EmptySpaceItem5.Name = "EmptySpaceItem5"
-        Me.EmptySpaceItem5.Size = New System.Drawing.Size(160, 40)
+        Me.EmptySpaceItem5.Size = New System.Drawing.Size(88, 40)
         Me.EmptySpaceItem5.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItemTables
@@ -3301,7 +3301,7 @@ Partial Class POSRestCashier
         Me.LayoutControlItemTables.Control = Me.SearchTables
         Me.LayoutControlItemTables.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItemTables.Name = "LayoutControlItemTables"
-        Me.LayoutControlItemTables.Size = New System.Drawing.Size(638, 40)
+        Me.LayoutControlItemTables.Size = New System.Drawing.Size(413, 40)
         Me.LayoutControlItemTables.Text = "نقل ل طاولة "
         Me.LayoutControlItemTables.TextSize = New System.Drawing.Size(70, 13)
         Me.LayoutControlItemTables.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
@@ -3309,9 +3309,9 @@ Partial Class POSRestCashier
         'LayoutControlItem59
         '
         Me.LayoutControlItem59.Control = Me.SimpleButton10
-        Me.LayoutControlItem59.Location = New System.Drawing.Point(0, 684)
+        Me.LayoutControlItem59.Location = New System.Drawing.Point(0, 680)
         Me.LayoutControlItem59.Name = "LayoutControlItem59"
-        Me.LayoutControlItem59.Size = New System.Drawing.Size(856, 46)
+        Me.LayoutControlItem59.Size = New System.Drawing.Size(567, 46)
         Me.LayoutControlItem59.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem59.TextVisible = False
         '
@@ -3321,9 +3321,9 @@ Partial Class POSRestCashier
         Me.SimpleButton4.Appearance.Options.UseBackColor = True
         Me.SimpleButton4.ImageOptions.Image = Global.TrueTime.My.Resources.Resources.close_window_32px
         Me.SimpleButton4.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
-        Me.SimpleButton4.Location = New System.Drawing.Point(-103, 10)
+        Me.SimpleButton4.Location = New System.Drawing.Point(12, 12)
         Me.SimpleButton4.Name = "SimpleButton4"
-        Me.SimpleButton4.Size = New System.Drawing.Size(77, 41)
+        Me.SimpleButton4.Size = New System.Drawing.Size(75, 41)
         Me.SimpleButton4.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton4.TabIndex = 14
         Me.SimpleButton4.ToolTip = "الخروج من النظام"
@@ -3338,10 +3338,10 @@ Partial Class POSRestCashier
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.DropDownButton2)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.SimpleButton4)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.SimpleButton3)
-        Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.GridItems)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.BtnClose)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.BtnAddNewCashCustomer)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.GridControlCashCustomers)
+        Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.GridItems)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.SimpleButton1)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.GridControlCarsParts)
         Me.ItemsAndGroupsLayoutControl.Controls.Add(Me.GridControlTableLocations)
@@ -3383,16 +3383,16 @@ Partial Class POSRestCashier
         Me.ItemsAndGroupsLayoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(1070, 192, 650, 400)
         Me.ItemsAndGroupsLayoutControl.OptionsView.RightToLeftMirroringApplied = True
         Me.ItemsAndGroupsLayoutControl.Root = Me.LayoutControlItemsAndGroups
-        Me.ItemsAndGroupsLayoutControl.Size = New System.Drawing.Size(583, 746)
+        Me.ItemsAndGroupsLayoutControl.Size = New System.Drawing.Size(866, 746)
         Me.ItemsAndGroupsLayoutControl.TabIndex = 0
         Me.ItemsAndGroupsLayoutControl.Text = "LayoutControl6"
         '
         'BtnCalculater
         '
         Me.BtnCalculater.ImageOptions.SvgImage = CType(resources.GetObject("BtnCalculater.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.BtnCalculater.Location = New System.Drawing.Point(139, 10)
+        Me.BtnCalculater.Location = New System.Drawing.Point(254, 12)
         Me.BtnCalculater.Name = "BtnCalculater"
-        Me.BtnCalculater.Size = New System.Drawing.Size(78, 42)
+        Me.BtnCalculater.Size = New System.Drawing.Size(76, 42)
         Me.BtnCalculater.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.BtnCalculater.TabIndex = 49
         '
@@ -3402,7 +3402,7 @@ Partial Class POSRestCashier
         Me.LabelControlModeName.Appearance.ForeColor = System.Drawing.Color.Silver
         Me.LabelControlModeName.Appearance.Options.UseFont = True
         Me.LabelControlModeName.Appearance.Options.UseForeColor = True
-        Me.LabelControlModeName.Location = New System.Drawing.Point(418, 56)
+        Me.LabelControlModeName.Location = New System.Drawing.Point(673, 58)
         Me.LabelControlModeName.Name = "LabelControlModeName"
         Me.LabelControlModeName.Size = New System.Drawing.Size(45, 24)
         Me.LabelControlModeName.StyleController = Me.ItemsAndGroupsLayoutControl
@@ -3412,9 +3412,9 @@ Partial Class POSRestCashier
         'SimpleButton16
         '
         Me.SimpleButton16.ImageOptions.SvgImage = CType(resources.GetObject("SimpleButton16.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.SimpleButton16.Location = New System.Drawing.Point(61, 10)
+        Me.SimpleButton16.Location = New System.Drawing.Point(176, 12)
         Me.SimpleButton16.Name = "SimpleButton16"
-        Me.SimpleButton16.Size = New System.Drawing.Size(76, 42)
+        Me.SimpleButton16.Size = New System.Drawing.Size(74, 42)
         Me.SimpleButton16.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton16.TabIndex = 43
         '
@@ -3422,9 +3422,9 @@ Partial Class POSRestCashier
         '
         Me.BtnBackFromHoldVouchers.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.BtnBackFromHoldVouchers.Appearance.Options.UseBackColor = True
-        Me.BtnBackFromHoldVouchers.Location = New System.Drawing.Point(273, 10)
+        Me.BtnBackFromHoldVouchers.Location = New System.Drawing.Point(554, 12)
         Me.BtnBackFromHoldVouchers.Name = "BtnBackFromHoldVouchers"
-        Me.BtnBackFromHoldVouchers.Size = New System.Drawing.Size(109, 40)
+        Me.BtnBackFromHoldVouchers.Size = New System.Drawing.Size(107, 40)
         Me.BtnBackFromHoldVouchers.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.BtnBackFromHoldVouchers.TabIndex = 42
         Me.BtnBackFromHoldVouchers.Text = "TakeAway"
@@ -3433,9 +3433,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton15.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary
         Me.SimpleButton15.Appearance.Options.UseBackColor = True
-        Me.SimpleButton15.Location = New System.Drawing.Point(384, 10)
+        Me.SimpleButton15.Location = New System.Drawing.Point(665, 12)
         Me.SimpleButton15.Name = "SimpleButton15"
-        Me.SimpleButton15.Size = New System.Drawing.Size(119, 40)
+        Me.SimpleButton15.Size = New System.Drawing.Size(117, 40)
         Me.SimpleButton15.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton15.TabIndex = 41
         Me.SimpleButton15.Text = "الصالة"
@@ -3453,10 +3453,10 @@ Partial Class POSRestCashier
         Me.DropDownButton2.DropDownControl = Me.PopupMenu1
         Me.DropDownButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter
         Me.DropDownButton2.ImageOptions.SvgImage = CType(resources.GetObject("DropDownButton2.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.DropDownButton2.Location = New System.Drawing.Point(505, 10)
+        Me.DropDownButton2.Location = New System.Drawing.Point(786, 12)
         Me.DropDownButton2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DropDownButton2.Name = "DropDownButton2"
-        Me.DropDownButton2.Size = New System.Drawing.Size(70, 41)
+        Me.DropDownButton2.Size = New System.Drawing.Size(68, 41)
         Me.DropDownButton2.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.DropDownButton2.TabIndex = 4
         '
@@ -3477,10 +3477,10 @@ Partial Class POSRestCashier
         Me.SimpleButton3.ImageOptions.Image = Global.TrueTime.My.Resources.Resources.minimize_window_32px
         Me.SimpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.SimpleButton3.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full
-        Me.SimpleButton3.Location = New System.Drawing.Point(-24, 10)
+        Me.SimpleButton3.Location = New System.Drawing.Point(91, 12)
         Me.SimpleButton3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(83, 41)
+        Me.SimpleButton3.Size = New System.Drawing.Size(81, 41)
         Me.SimpleButton3.StyleController = Me.ItemsAndGroupsLayoutControl
         ToolTipTitleItem1.ImageOptions.Image = CType(resources.GetObject("resource.Image"), System.Drawing.Image)
         ToolTipTitleItem1.Text = "تصغير الشاشة"
@@ -3495,9 +3495,9 @@ Partial Class POSRestCashier
         '
         Me.BtnClose.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.BtnClose.Appearance.Options.UseBackColor = True
-        Me.BtnClose.Location = New System.Drawing.Point(-94, 667)
+        Me.BtnClose.Location = New System.Drawing.Point(24, 680)
         Me.BtnClose.Name = "BtnClose"
-        Me.BtnClose.Size = New System.Drawing.Size(109, 42)
+        Me.BtnClose.Size = New System.Drawing.Size(134, 42)
         Me.BtnClose.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.BtnClose.TabIndex = 48
         Me.BtnClose.Text = "رجوع"
@@ -3506,21 +3506,21 @@ Partial Class POSRestCashier
         '
         Me.BtnAddNewCashCustomer.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.BtnAddNewCashCustomer.Appearance.Options.UseBackColor = True
-        Me.BtnAddNewCashCustomer.Location = New System.Drawing.Point(17, 667)
+        Me.BtnAddNewCashCustomer.Location = New System.Drawing.Point(162, 680)
         Me.BtnAddNewCashCustomer.Name = "BtnAddNewCashCustomer"
-        Me.BtnAddNewCashCustomer.Size = New System.Drawing.Size(437, 42)
+        Me.BtnAddNewCashCustomer.Size = New System.Drawing.Size(544, 42)
         Me.BtnAddNewCashCustomer.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.BtnAddNewCashCustomer.TabIndex = 47
         Me.BtnAddNewCashCustomer.Text = "اضافة زبون جديد"
         '
         'GridControlCashCustomers
         '
-        Me.GridControlCashCustomers.Location = New System.Drawing.Point(-94, 134)
+        Me.GridControlCashCustomers.Location = New System.Drawing.Point(24, 138)
         Me.GridControlCashCustomers.MainView = Me.GridViewCashCustomer
         Me.GridControlCashCustomers.MenuManager = Me.BarManager1
         Me.GridControlCashCustomers.Name = "GridControlCashCustomers"
         Me.GridControlCashCustomers.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemButtonEdit3, Me.RepositoryEditCashCustomer})
-        Me.GridControlCashCustomers.Size = New System.Drawing.Size(548, 529)
+        Me.GridControlCashCustomers.Size = New System.Drawing.Size(682, 538)
         Me.GridControlCashCustomers.TabIndex = 46
         Me.GridControlCashCustomers.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewCashCustomer})
         '
@@ -3632,20 +3632,20 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton1.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.SimpleButton1.Appearance.Options.UseBackColor = True
-        Me.SimpleButton1.Location = New System.Drawing.Point(-94, 667)
+        Me.SimpleButton1.Location = New System.Drawing.Point(24, 680)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(548, 42)
+        Me.SimpleButton1.Size = New System.Drawing.Size(682, 42)
         Me.SimpleButton1.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton1.TabIndex = 51
         Me.SimpleButton1.Text = "رجوع"
         '
         'GridControlCarsParts
         '
-        Me.GridControlCarsParts.Location = New System.Drawing.Point(-94, 134)
+        Me.GridControlCarsParts.Location = New System.Drawing.Point(24, 138)
         Me.GridControlCarsParts.MainView = Me.GridView3
         Me.GridControlCarsParts.MenuManager = Me.BarManager1
         Me.GridControlCarsParts.Name = "GridControlCarsParts"
-        Me.GridControlCarsParts.Size = New System.Drawing.Size(548, 529)
+        Me.GridControlCarsParts.Size = New System.Drawing.Size(682, 538)
         Me.GridControlCarsParts.TabIndex = 50
         Me.GridControlCarsParts.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
         '
@@ -3703,11 +3703,11 @@ Partial Class POSRestCashier
         '
         'GridControlTableLocations
         '
-        Me.GridControlTableLocations.Location = New System.Drawing.Point(-94, 134)
+        Me.GridControlTableLocations.Location = New System.Drawing.Point(24, 138)
         Me.GridControlTableLocations.MainView = Me.TileViewTablesLocations
         Me.GridControlTableLocations.MenuManager = Me.BarManager1
         Me.GridControlTableLocations.Name = "GridControlTableLocations"
-        Me.GridControlTableLocations.Size = New System.Drawing.Size(548, 72)
+        Me.GridControlTableLocations.Size = New System.Drawing.Size(682, 72)
         Me.GridControlTableLocations.TabIndex = 44
         Me.GridControlTableLocations.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.TileViewTablesLocations})
         '
@@ -3759,11 +3759,11 @@ Partial Class POSRestCashier
         '
         'GridControlHoldVouchers
         '
-        Me.GridControlHoldVouchers.Location = New System.Drawing.Point(-94, 210)
+        Me.GridControlHoldVouchers.Location = New System.Drawing.Point(24, 214)
         Me.GridControlHoldVouchers.MainView = Me.TileViewHoldVouchers
         Me.GridControlHoldVouchers.MenuManager = Me.BarManager1
         Me.GridControlHoldVouchers.Name = "GridControlHoldVouchers"
-        Me.GridControlHoldVouchers.Size = New System.Drawing.Size(548, 499)
+        Me.GridControlHoldVouchers.Size = New System.Drawing.Size(682, 508)
         Me.GridControlHoldVouchers.TabIndex = 40
         Me.GridControlHoldVouchers.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.TileViewHoldVouchers})
         '
@@ -3865,17 +3865,17 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton9.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger
         Me.SimpleButton9.Appearance.Options.UseBackColor = True
-        Me.SimpleButton9.Location = New System.Drawing.Point(179, 671)
+        Me.SimpleButton9.Location = New System.Drawing.Point(365, 684)
         Me.SimpleButton9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SimpleButton9.Name = "SimpleButton9"
-        Me.SimpleButton9.Size = New System.Drawing.Size(275, 38)
+        Me.SimpleButton9.Size = New System.Drawing.Size(341, 38)
         Me.SimpleButton9.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton9.TabIndex = 19
         Me.SimpleButton9.Text = "الغاء"
         '
         'TextTotalWithPriceAndPortions
         '
-        Me.TextTotalWithPriceAndPortions.Location = New System.Drawing.Point(-94, 623)
+        Me.TextTotalWithPriceAndPortions.Location = New System.Drawing.Point(24, 636)
         Me.TextTotalWithPriceAndPortions.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextTotalWithPriceAndPortions.MenuManager = Me.BarManager1
         Me.TextTotalWithPriceAndPortions.Name = "TextTotalWithPriceAndPortions"
@@ -3890,13 +3890,13 @@ Partial Class POSRestCashier
         Me.TextTotalWithPriceAndPortions.Properties.MaskSettings.Set("mask", "c")
         Me.TextTotalWithPriceAndPortions.Properties.ReadOnly = True
         Me.TextTotalWithPriceAndPortions.Properties.UseMaskAsDisplayFormat = True
-        Me.TextTotalWithPriceAndPortions.Size = New System.Drawing.Size(137, 44)
+        Me.TextTotalWithPriceAndPortions.Size = New System.Drawing.Size(180, 44)
         Me.TextTotalWithPriceAndPortions.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.TextTotalWithPriceAndPortions.TabIndex = 18
         '
         'TextItemPriceInPortionScreen
         '
-        Me.TextItemPriceInPortionScreen.Location = New System.Drawing.Point(268, 623)
+        Me.TextItemPriceInPortionScreen.Location = New System.Drawing.Point(476, 636)
         Me.TextItemPriceInPortionScreen.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextItemPriceInPortionScreen.MenuManager = Me.BarManager1
         Me.TextItemPriceInPortionScreen.Name = "TextItemPriceInPortionScreen"
@@ -3911,7 +3911,7 @@ Partial Class POSRestCashier
         Me.TextItemPriceInPortionScreen.Properties.MaskSettings.Set("mask", "c")
         Me.TextItemPriceInPortionScreen.Properties.ReadOnly = True
         Me.TextItemPriceInPortionScreen.Properties.UseMaskAsDisplayFormat = True
-        Me.TextItemPriceInPortionScreen.Size = New System.Drawing.Size(155, 44)
+        Me.TextItemPriceInPortionScreen.Size = New System.Drawing.Size(199, 44)
         Me.TextItemPriceInPortionScreen.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.TextItemPriceInPortionScreen.TabIndex = 17
         '
@@ -3919,17 +3919,17 @@ Partial Class POSRestCashier
         '
         Me.SimpleButtonAdditions.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.SimpleButtonAdditions.Appearance.Options.UseBackColor = True
-        Me.SimpleButtonAdditions.Location = New System.Drawing.Point(-94, 671)
+        Me.SimpleButtonAdditions.Location = New System.Drawing.Point(24, 684)
         Me.SimpleButtonAdditions.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SimpleButtonAdditions.Name = "SimpleButtonAdditions"
-        Me.SimpleButtonAdditions.Size = New System.Drawing.Size(271, 38)
+        Me.SimpleButtonAdditions.Size = New System.Drawing.Size(337, 38)
         Me.SimpleButtonAdditions.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButtonAdditions.TabIndex = 16
         Me.SimpleButtonAdditions.Text = "اعتماد"
         '
         'TextAdditionsPrice
         '
-        Me.TextAdditionsPrice.Location = New System.Drawing.Point(86, 623)
+        Me.TextAdditionsPrice.Location = New System.Drawing.Point(249, 636)
         Me.TextAdditionsPrice.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextAdditionsPrice.MenuManager = Me.BarManager1
         Me.TextAdditionsPrice.Name = "TextAdditionsPrice"
@@ -3944,19 +3944,19 @@ Partial Class POSRestCashier
         Me.TextAdditionsPrice.Properties.MaskSettings.Set("mask", "c")
         Me.TextAdditionsPrice.Properties.ReadOnly = True
         Me.TextAdditionsPrice.Properties.UseMaskAsDisplayFormat = True
-        Me.TextAdditionsPrice.Size = New System.Drawing.Size(135, 44)
+        Me.TextAdditionsPrice.Size = New System.Drawing.Size(178, 44)
         Me.TextAdditionsPrice.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.TextAdditionsPrice.TabIndex = 15
         '
         'GridPortions
         '
         Me.GridPortions.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GridPortions.Location = New System.Drawing.Point(-94, 170)
+        Me.GridPortions.Location = New System.Drawing.Point(24, 174)
         Me.GridPortions.MainView = Me.TileView1
         Me.GridPortions.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GridPortions.MenuManager = Me.BarManager1
         Me.GridPortions.Name = "GridPortions"
-        Me.GridPortions.Size = New System.Drawing.Size(548, 449)
+        Me.GridPortions.Size = New System.Drawing.Size(682, 458)
         Me.GridPortions.TabIndex = 12
         Me.GridPortions.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.TileView1})
         '
@@ -4058,10 +4058,10 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton2.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger
         Me.SimpleButton2.Appearance.Options.UseBackColor = True
-        Me.SimpleButton2.Location = New System.Drawing.Point(-94, 667)
+        Me.SimpleButton2.Location = New System.Drawing.Point(24, 680)
         Me.SimpleButton2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(548, 42)
+        Me.SimpleButton2.Size = New System.Drawing.Size(682, 42)
         Me.SimpleButton2.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton2.TabIndex = 33
         Me.SimpleButton2.Text = "الغاء"
@@ -4069,12 +4069,12 @@ Partial Class POSRestCashier
         'GridControlUnitsForItem
         '
         Me.GridControlUnitsForItem.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GridControlUnitsForItem.Location = New System.Drawing.Point(-94, 170)
+        Me.GridControlUnitsForItem.Location = New System.Drawing.Point(24, 174)
         Me.GridControlUnitsForItem.MainView = Me.TileViewControlUnitsForItem
         Me.GridControlUnitsForItem.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GridControlUnitsForItem.MenuManager = Me.BarManager1
         Me.GridControlUnitsForItem.Name = "GridControlUnitsForItem"
-        Me.GridControlUnitsForItem.Size = New System.Drawing.Size(548, 493)
+        Me.GridControlUnitsForItem.Size = New System.Drawing.Size(682, 502)
         Me.GridControlUnitsForItem.TabIndex = 32
         Me.GridControlUnitsForItem.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.TileViewControlUnitsForItem})
         '
@@ -4187,9 +4187,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton6.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.SimpleButton6.Appearance.Options.UseBackColor = True
-        Me.SimpleButton6.Location = New System.Drawing.Point(-94, 134)
+        Me.SimpleButton6.Location = New System.Drawing.Point(24, 138)
         Me.SimpleButton6.Name = "SimpleButton6"
-        Me.SimpleButton6.Size = New System.Drawing.Size(110, 42)
+        Me.SimpleButton6.Size = New System.Drawing.Size(135, 42)
         Me.SimpleButton6.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton6.TabIndex = 38
         Me.SimpleButton6.Text = "جدول الحركات"
@@ -4197,7 +4197,7 @@ Partial Class POSRestCashier
         'ChartControlSalesByGroups
         '
         Me.ChartControlSalesByGroups.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-        Me.ChartControlSalesByGroups.Location = New System.Drawing.Point(-94, 507)
+        Me.ChartControlSalesByGroups.Location = New System.Drawing.Point(24, 517)
         Me.ChartControlSalesByGroups.Name = "ChartControlSalesByGroups"
         Series1.ArgumentDataMember = "GroupName"
         Series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -4211,7 +4211,7 @@ Partial Class POSRestCashier
         Me.ChartControlSalesByGroups.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series1}
         SideBySideBarSeriesView1.ColorEach = True
         Me.ChartControlSalesByGroups.SeriesTemplate.View = SideBySideBarSeriesView1
-        Me.ChartControlSalesByGroups.Size = New System.Drawing.Size(548, 202)
+        Me.ChartControlSalesByGroups.Size = New System.Drawing.Size(682, 205)
         Me.ChartControlSalesByGroups.TabIndex = 31
         ChartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12.0!)
         ChartTitle1.Text = "المبيعات حسب مجموعة الصنف"
@@ -4228,7 +4228,7 @@ Partial Class POSRestCashier
         XyDiagram1.Rotated = True
         Me.ChartControlSalesByDayName.Diagram = XyDiagram1
         Me.ChartControlSalesByDayName.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ChartControlSalesByDayName.Location = New System.Drawing.Point(-94, 180)
+        Me.ChartControlSalesByDayName.Location = New System.Drawing.Point(24, 184)
         Me.ChartControlSalesByDayName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ChartControlSalesByDayName.Name = "ChartControlSalesByDayName"
         Series2.ArgumentDataMember = "DayName"
@@ -4242,7 +4242,7 @@ Partial Class POSRestCashier
         Me.ChartControlSalesByDayName.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series2}
         SideBySideBarSeriesView3.Animation = BarSlideAnimation1
         Me.ChartControlSalesByDayName.SeriesTemplate.View = SideBySideBarSeriesView3
-        Me.ChartControlSalesByDayName.Size = New System.Drawing.Size(271, 156)
+        Me.ChartControlSalesByDayName.Size = New System.Drawing.Size(337, 159)
         Me.ChartControlSalesByDayName.TabIndex = 30
         ChartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12.0!)
         ChartTitle2.Text = "المبيعات حسب اليوم"
@@ -4256,7 +4256,7 @@ Partial Class POSRestCashier
         XyDiagram2.AxisY.VisibleInPanesSerializable = "-1"
         Me.ChartControlMonthly.Diagram = XyDiagram2
         Me.ChartControlMonthly.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ChartControlMonthly.Location = New System.Drawing.Point(179, 180)
+        Me.ChartControlMonthly.Location = New System.Drawing.Point(365, 184)
         Me.ChartControlMonthly.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ChartControlMonthly.Name = "ChartControlMonthly"
         Series3.ArgumentDataMember = "MonthOfYear"
@@ -4267,7 +4267,7 @@ Partial Class POSRestCashier
         SideBySideBarSeriesView4.ColorEach = True
         Series3.View = SideBySideBarSeriesView4
         Me.ChartControlMonthly.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series3}
-        Me.ChartControlMonthly.Size = New System.Drawing.Size(275, 156)
+        Me.ChartControlMonthly.Size = New System.Drawing.Size(341, 159)
         Me.ChartControlMonthly.TabIndex = 29
         ChartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12.0!)
         ChartTitle3.Text = "المبيعات الشهرية"
@@ -4278,10 +4278,10 @@ Partial Class POSRestCashier
         '
         Me.btnRefreshSalesDataThisYear.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.btnRefreshSalesDataThisYear.Appearance.Options.UseBackColor = True
-        Me.btnRefreshSalesDataThisYear.Location = New System.Drawing.Point(18, 134)
+        Me.btnRefreshSalesDataThisYear.Location = New System.Drawing.Point(163, 138)
         Me.btnRefreshSalesDataThisYear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRefreshSalesDataThisYear.Name = "btnRefreshSalesDataThisYear"
-        Me.btnRefreshSalesDataThisYear.Size = New System.Drawing.Size(101, 42)
+        Me.btnRefreshSalesDataThisYear.Size = New System.Drawing.Size(124, 42)
         Me.btnRefreshSalesDataThisYear.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.btnRefreshSalesDataThisYear.TabIndex = 28
         Me.btnRefreshSalesDataThisYear.Text = "السنة الحالية"
@@ -4290,10 +4290,10 @@ Partial Class POSRestCashier
         '
         Me.btnRefreshSalesDataLastMonth.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary
         Me.btnRefreshSalesDataLastMonth.Appearance.Options.UseBackColor = True
-        Me.btnRefreshSalesDataLastMonth.Location = New System.Drawing.Point(121, 134)
+        Me.btnRefreshSalesDataLastMonth.Location = New System.Drawing.Point(291, 138)
         Me.btnRefreshSalesDataLastMonth.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRefreshSalesDataLastMonth.Name = "btnRefreshSalesDataLastMonth"
-        Me.btnRefreshSalesDataLastMonth.Size = New System.Drawing.Size(108, 42)
+        Me.btnRefreshSalesDataLastMonth.Size = New System.Drawing.Size(133, 42)
         Me.btnRefreshSalesDataLastMonth.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.btnRefreshSalesDataLastMonth.TabIndex = 27
         Me.btnRefreshSalesDataLastMonth.Text = "الشهر الماضي"
@@ -4302,10 +4302,10 @@ Partial Class POSRestCashier
         '
         Me.btnRefreshSalesDataThisMonth.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.btnRefreshSalesDataThisMonth.Appearance.Options.UseBackColor = True
-        Me.btnRefreshSalesDataThisMonth.Location = New System.Drawing.Point(231, 134)
+        Me.btnRefreshSalesDataThisMonth.Location = New System.Drawing.Point(428, 138)
         Me.btnRefreshSalesDataThisMonth.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRefreshSalesDataThisMonth.Name = "btnRefreshSalesDataThisMonth"
-        Me.btnRefreshSalesDataThisMonth.Size = New System.Drawing.Size(89, 42)
+        Me.btnRefreshSalesDataThisMonth.Size = New System.Drawing.Size(110, 42)
         Me.btnRefreshSalesDataThisMonth.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.btnRefreshSalesDataThisMonth.TabIndex = 26
         Me.btnRefreshSalesDataThisMonth.Text = "هذا الشهر"
@@ -4314,10 +4314,10 @@ Partial Class POSRestCashier
         '
         Me.btnRefreshSalesDataYesterday.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary
         Me.btnRefreshSalesDataYesterday.Appearance.Options.UseBackColor = True
-        Me.btnRefreshSalesDataYesterday.Location = New System.Drawing.Point(322, 134)
+        Me.btnRefreshSalesDataYesterday.Location = New System.Drawing.Point(542, 138)
         Me.btnRefreshSalesDataYesterday.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRefreshSalesDataYesterday.Name = "btnRefreshSalesDataYesterday"
-        Me.btnRefreshSalesDataYesterday.Size = New System.Drawing.Size(64, 42)
+        Me.btnRefreshSalesDataYesterday.Size = New System.Drawing.Size(79, 42)
         Me.btnRefreshSalesDataYesterday.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.btnRefreshSalesDataYesterday.TabIndex = 25
         Me.btnRefreshSalesDataYesterday.Text = "أمس"
@@ -4326,10 +4326,10 @@ Partial Class POSRestCashier
         '
         Me.btnRefreshSalesDataToday.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question
         Me.btnRefreshSalesDataToday.Appearance.Options.UseBackColor = True
-        Me.btnRefreshSalesDataToday.Location = New System.Drawing.Point(388, 134)
+        Me.btnRefreshSalesDataToday.Location = New System.Drawing.Point(625, 138)
         Me.btnRefreshSalesDataToday.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRefreshSalesDataToday.Name = "btnRefreshSalesDataToday"
-        Me.btnRefreshSalesDataToday.Size = New System.Drawing.Size(66, 42)
+        Me.btnRefreshSalesDataToday.Size = New System.Drawing.Size(81, 42)
         Me.btnRefreshSalesDataToday.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.btnRefreshSalesDataToday.TabIndex = 24
         Me.btnRefreshSalesDataToday.Text = "اليوم"
@@ -4341,7 +4341,7 @@ Partial Class POSRestCashier
         XyDiagram3.AxisY.VisibleInPanesSerializable = "-1"
         Me.ChartControlDailySalesThisMonth.Diagram = XyDiagram3
         Me.ChartControlDailySalesThisMonth.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ChartControlDailySalesThisMonth.Location = New System.Drawing.Point(-94, 342)
+        Me.ChartControlDailySalesThisMonth.Location = New System.Drawing.Point(24, 349)
         Me.ChartControlDailySalesThisMonth.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ChartControlDailySalesThisMonth.Name = "ChartControlDailySalesThisMonth"
         Series4.ArgumentDataMember = "DaysOfMonth"
@@ -4352,7 +4352,7 @@ Partial Class POSRestCashier
         SideBySideBarSeriesView5.ColorEach = True
         Series4.View = SideBySideBarSeriesView5
         Me.ChartControlDailySalesThisMonth.SeriesSerializable = New DevExpress.XtraCharts.Series() {Series4}
-        Me.ChartControlDailySalesThisMonth.Size = New System.Drawing.Size(271, 160)
+        Me.ChartControlDailySalesThisMonth.Size = New System.Drawing.Size(337, 163)
         Me.ChartControlDailySalesThisMonth.TabIndex = 23
         ChartTitle4.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12.0!)
         ChartTitle4.Text = "المبيعات خلال الشهر الحالي"
@@ -4366,7 +4366,7 @@ Partial Class POSRestCashier
         XyDiagram4.AxisY.VisibleInPanesSerializable = "-1"
         Me.ChartControlSalesByHoures.Diagram = XyDiagram4
         Me.ChartControlSalesByHoures.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
-        Me.ChartControlSalesByHoures.Location = New System.Drawing.Point(179, 342)
+        Me.ChartControlSalesByHoures.Location = New System.Drawing.Point(365, 349)
         Me.ChartControlSalesByHoures.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ChartControlSalesByHoures.Name = "ChartControlSalesByHoures"
         Series5.ArgumentDataMember = "HourOfDay"
@@ -4382,7 +4382,7 @@ Partial Class POSRestCashier
         BarGrowUpAnimation1.PointOrder = DevExpress.XtraCharts.PointAnimationOrder.Random
         SideBySideBarSeriesView7.Animation = BarGrowUpAnimation1
         Me.ChartControlSalesByHoures.SeriesTemplate.View = SideBySideBarSeriesView7
-        Me.ChartControlSalesByHoures.Size = New System.Drawing.Size(275, 159)
+        Me.ChartControlSalesByHoures.Size = New System.Drawing.Size(341, 162)
         Me.ChartControlSalesByHoures.TabIndex = 20
         ChartTitle5.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12.0!)
         ChartTitle5.Text = "المبيعات بالساعة"
@@ -4393,9 +4393,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton14.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger
         Me.SimpleButton14.Appearance.Options.UseBackColor = True
-        Me.SimpleButton14.Location = New System.Drawing.Point(-94, 134)
+        Me.SimpleButton14.Location = New System.Drawing.Point(24, 138)
         Me.SimpleButton14.Name = "SimpleButton14"
-        Me.SimpleButton14.Size = New System.Drawing.Size(107, 76)
+        Me.SimpleButton14.Size = New System.Drawing.Size(105, 76)
         Me.SimpleButton14.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton14.TabIndex = 39
         Me.SimpleButton14.Text = "رجوع"
@@ -4404,9 +4404,9 @@ Partial Class POSRestCashier
         '
         Me.SimpleButton5.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
         Me.SimpleButton5.Appearance.Options.UseBackColor = True
-        Me.SimpleButton5.Location = New System.Drawing.Point(112, 134)
+        Me.SimpleButton5.Location = New System.Drawing.Point(260, 138)
         Me.SimpleButton5.Name = "SimpleButton5"
-        Me.SimpleButton5.Size = New System.Drawing.Size(92, 76)
+        Me.SimpleButton5.Size = New System.Drawing.Size(90, 76)
         Me.SimpleButton5.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.SimpleButton5.TabIndex = 37
         Me.SimpleButton5.Text = "تحديث"
@@ -4414,35 +4414,35 @@ Partial Class POSRestCashier
         'DateEditTo
         '
         Me.DateEditTo.EditValue = Nothing
-        Me.DateEditTo.Location = New System.Drawing.Point(206, 134)
+        Me.DateEditTo.Location = New System.Drawing.Point(354, 138)
         Me.DateEditTo.MenuManager = Me.BarManager1
         Me.DateEditTo.Name = "DateEditTo"
         Me.DateEditTo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.DateEditTo.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateEditTo.Size = New System.Drawing.Size(193, 36)
+        Me.DateEditTo.Size = New System.Drawing.Size(297, 36)
         Me.DateEditTo.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.DateEditTo.TabIndex = 36
         '
         'DateEditFrom
         '
         Me.DateEditFrom.EditValue = Nothing
-        Me.DateEditFrom.Location = New System.Drawing.Point(206, 174)
+        Me.DateEditFrom.Location = New System.Drawing.Point(354, 178)
         Me.DateEditFrom.MenuManager = Me.BarManager1
         Me.DateEditFrom.Name = "DateEditFrom"
         Me.DateEditFrom.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.DateEditFrom.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateEditFrom.Size = New System.Drawing.Size(193, 36)
+        Me.DateEditFrom.Size = New System.Drawing.Size(297, 36)
         Me.DateEditFrom.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.DateEditFrom.TabIndex = 35
         '
         'GridControlPosVouchers
         '
         Me.GridControlPosVouchers.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.GridControlPosVouchers.Location = New System.Drawing.Point(-94, 214)
+        Me.GridControlPosVouchers.Location = New System.Drawing.Point(24, 218)
         Me.GridControlPosVouchers.MainView = Me.GridView2
         Me.GridControlPosVouchers.Name = "GridControlPosVouchers"
         Me.GridControlPosVouchers.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemHyperLinkEditVoucherNo, Me.RepositoryItemDocName})
-        Me.GridControlPosVouchers.Size = New System.Drawing.Size(548, 495)
+        Me.GridControlPosVouchers.Size = New System.Drawing.Size(682, 504)
         Me.GridControlPosVouchers.TabIndex = 34
         Me.GridControlPosVouchers.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -4674,10 +4674,10 @@ Partial Class POSRestCashier
         '
         Me.SidePanel5.Controls.Add(Me.ZoomTrackGroups)
         Me.SidePanel5.Controls.Add(Me.GridItemsGroups)
-        Me.SidePanel5.Location = New System.Drawing.Point(475, 56)
+        Me.SidePanel5.Location = New System.Drawing.Point(732, 58)
         Me.SidePanel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SidePanel5.Name = "SidePanel5"
-        Me.SidePanel5.Size = New System.Drawing.Size(100, 663)
+        Me.SidePanel5.Size = New System.Drawing.Size(122, 676)
         Me.SidePanel5.TabIndex = 11
         Me.SidePanel5.Text = "SidePanel5"
         '
@@ -4685,11 +4685,11 @@ Partial Class POSRestCashier
         '
         Me.ZoomTrackGroups.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.ZoomTrackGroups.EditValue = 50
-        Me.ZoomTrackGroups.Location = New System.Drawing.Point(0, 625)
+        Me.ZoomTrackGroups.Location = New System.Drawing.Point(0, 638)
         Me.ZoomTrackGroups.MenuManager = Me.BarManager1
         Me.ZoomTrackGroups.Name = "ZoomTrackGroups"
         Me.ZoomTrackGroups.Properties.Maximum = 100
-        Me.ZoomTrackGroups.Size = New System.Drawing.Size(100, 38)
+        Me.ZoomTrackGroups.Size = New System.Drawing.Size(122, 38)
         Me.ZoomTrackGroups.TabIndex = 1
         Me.ZoomTrackGroups.Value = 50
         Me.ZoomTrackGroups.Visible = False
@@ -4702,7 +4702,7 @@ Partial Class POSRestCashier
         Me.GridItemsGroups.MainView = Me.TileViewGroups
         Me.GridItemsGroups.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GridItemsGroups.Name = "GridItemsGroups"
-        Me.GridItemsGroups.Size = New System.Drawing.Size(100, 663)
+        Me.GridItemsGroups.Size = New System.Drawing.Size(122, 676)
         Me.GridItemsGroups.TabIndex = 0
         Me.GridItemsGroups.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.TileViewGroups})
         '
@@ -4817,12 +4817,12 @@ Partial Class POSRestCashier
         'ZoomTrackItems
         '
         Me.ZoomTrackItems.EditValue = 50
-        Me.ZoomTrackItems.Location = New System.Drawing.Point(-94, 681)
+        Me.ZoomTrackItems.Location = New System.Drawing.Point(24, 693)
         Me.ZoomTrackItems.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ZoomTrackItems.MenuManager = Me.BarManager1
         Me.ZoomTrackItems.Name = "ZoomTrackItems"
         Me.ZoomTrackItems.Properties.Maximum = 100
-        Me.ZoomTrackItems.Size = New System.Drawing.Size(548, 38)
+        Me.ZoomTrackItems.Size = New System.Drawing.Size(682, 38)
         Me.ZoomTrackItems.StyleController = Me.ItemsAndGroupsLayoutControl
         Me.ZoomTrackItems.TabIndex = 5
         Me.ZoomTrackItems.Value = 50
@@ -4867,40 +4867,75 @@ Partial Class POSRestCashier
         Me.LayoutControlItemsAndGroups.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItemAllGroups, Me.SplitterItem1, Me.TabbedControlGroupAllScreens, Me.LayoutControlItem16, Me.LayoutControlItem19, Me.LayoutControlItem18, Me.EmptySpaceItem1, Me.LayoutControlItemTablesModeButton, Me.LayoutControlItemCashModeButton, Me.LayoutControlItem55, Me.LayoutControlItemTitle, Me.EmptySpaceItemTitle, Me.LayoutControlItem35})
         Me.LayoutControlItemsAndGroups.Name = "Root"
         Me.LayoutControlItemsAndGroups.ShowInCustomizationForm = False
-        Me.LayoutControlItemsAndGroups.Size = New System.Drawing.Size(694, 729)
+        Me.LayoutControlItemsAndGroups.Size = New System.Drawing.Size(866, 746)
         Me.LayoutControlItemsAndGroups.TextVisible = False
         '
         'LayoutControlItemAllGroups
         '
         Me.LayoutControlItemAllGroups.Control = Me.SidePanel5
-        Me.LayoutControlItemAllGroups.Location = New System.Drawing.Point(578, 46)
+        Me.LayoutControlItemAllGroups.Location = New System.Drawing.Point(720, 46)
         Me.LayoutControlItemAllGroups.Name = "LayoutControlItemAllGroups"
-        Me.LayoutControlItemAllGroups.Size = New System.Drawing.Size(102, 667)
+        Me.LayoutControlItemAllGroups.Size = New System.Drawing.Size(126, 680)
         Me.LayoutControlItemAllGroups.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemAllGroups.TextVisible = False
         '
         'SplitterItem1
         '
         Me.SplitterItem1.AllowHotTrack = True
-        Me.SplitterItem1.Location = New System.Drawing.Point(568, 46)
+        Me.SplitterItem1.Location = New System.Drawing.Point(710, 46)
         Me.SplitterItem1.Name = "SplitterItem1"
-        Me.SplitterItem1.Size = New System.Drawing.Size(10, 667)
+        Me.SplitterItem1.Size = New System.Drawing.Size(10, 680)
         '
         'TabbedControlGroupAllScreens
         '
         Me.TabbedControlGroupAllScreens.Location = New System.Drawing.Point(0, 74)
         Me.TabbedControlGroupAllScreens.Name = "TabbedControlGroupAllScreens"
-        Me.TabbedControlGroupAllScreens.SelectedTabPage = Me.TabLayoutControlGroupItemsTab
+        Me.TabbedControlGroupAllScreens.SelectedTabPage = Me.TabCashCustomers
         Me.TabbedControlGroupAllScreens.ShowInCustomizationForm = False
-        Me.TabbedControlGroupAllScreens.Size = New System.Drawing.Size(568, 639)
+        Me.TabbedControlGroupAllScreens.Size = New System.Drawing.Size(710, 652)
         Me.TabbedControlGroupAllScreens.TabPages.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.TabLayoutControlGroupItemsTab, Me.TabLayoutControlGroupAdditionsTab, Me.TabDailyReport, Me.TabUnitsForItem, Me.TabDailyReportGrid, Me.TabTables, Me.TabCashCustomers, Me.TabCustomersCarsParts})
+        '
+        'TabCashCustomers
+        '
+        Me.TabCashCustomers.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem6, Me.LayoutControlItem20, Me.LayoutControlItem33})
+        Me.TabCashCustomers.Location = New System.Drawing.Point(0, 0)
+        Me.TabCashCustomers.Name = "TabCashCustomers"
+        Me.TabCashCustomers.Size = New System.Drawing.Size(686, 588)
+        Me.TabCashCustomers.Text = "زبون نقدي"
+        '
+        'LayoutControlItem6
+        '
+        Me.LayoutControlItem6.Control = Me.GridControlCashCustomers
+        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem6.Name = "LayoutControlItem6"
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(686, 542)
+        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem6.TextVisible = False
+        '
+        'LayoutControlItem20
+        '
+        Me.LayoutControlItem20.Control = Me.BtnAddNewCashCustomer
+        Me.LayoutControlItem20.Location = New System.Drawing.Point(138, 542)
+        Me.LayoutControlItem20.Name = "LayoutControlItem20"
+        Me.LayoutControlItem20.Size = New System.Drawing.Size(548, 46)
+        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem20.TextVisible = False
+        '
+        'LayoutControlItem33
+        '
+        Me.LayoutControlItem33.Control = Me.BtnClose
+        Me.LayoutControlItem33.Location = New System.Drawing.Point(0, 542)
+        Me.LayoutControlItem33.Name = "LayoutControlItem33"
+        Me.LayoutControlItem33.Size = New System.Drawing.Size(138, 46)
+        Me.LayoutControlItem33.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem33.TextVisible = False
         '
         'TabLayoutControlGroupItemsTab
         '
         Me.TabLayoutControlGroupItemsTab.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItemItems, Me.LayoutControlItem9})
         Me.TabLayoutControlGroupItemsTab.Location = New System.Drawing.Point(0, 0)
         Me.TabLayoutControlGroupItemsTab.Name = "TabLayoutControlGroupItemsTab"
-        Me.TabLayoutControlGroupItemsTab.Size = New System.Drawing.Size(550, 579)
+        Me.TabLayoutControlGroupItemsTab.Size = New System.Drawing.Size(686, 588)
         Me.TabLayoutControlGroupItemsTab.Text = "الاصناف"
         '
         'LayoutControlItemItems
@@ -4908,16 +4943,16 @@ Partial Class POSRestCashier
         Me.LayoutControlItemItems.Control = Me.GridItems
         Me.LayoutControlItemItems.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItemItems.Name = "LayoutControlItemItems"
-        Me.LayoutControlItemItems.Size = New System.Drawing.Size(550, 547)
+        Me.LayoutControlItemItems.Size = New System.Drawing.Size(686, 555)
         Me.LayoutControlItemItems.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemItems.TextVisible = False
         '
         'LayoutControlItem9
         '
         Me.LayoutControlItem9.Control = Me.ZoomTrackItems
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 547)
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 555)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(550, 32)
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(686, 33)
         Me.LayoutControlItem9.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem9.TextVisible = False
         Me.LayoutControlItem9.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInCustomization
@@ -4927,7 +4962,7 @@ Partial Class POSRestCashier
         Me.TabLayoutControlGroupAdditionsTab.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItemsPortions, Me.LayoutControlItem38, Me.LayoutControlItem36, Me.LayoutControlItem39, Me.LayoutControlItem37, Me.LayoutControlItem40, Me.SimpleLabelItemItemName})
         Me.TabLayoutControlGroupAdditionsTab.Location = New System.Drawing.Point(0, 0)
         Me.TabLayoutControlGroupAdditionsTab.Name = "TabLayoutControlGroupAdditionsTab"
-        Me.TabLayoutControlGroupAdditionsTab.Size = New System.Drawing.Size(550, 579)
+        Me.TabLayoutControlGroupAdditionsTab.Size = New System.Drawing.Size(686, 588)
         Me.TabLayoutControlGroupAdditionsTab.Text = "الاضافات"
         Me.TabLayoutControlGroupAdditionsTab.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInCustomization
         '
@@ -4936,16 +4971,16 @@ Partial Class POSRestCashier
         Me.LayoutControlItemsPortions.Control = Me.GridPortions
         Me.LayoutControlItemsPortions.Location = New System.Drawing.Point(0, 36)
         Me.LayoutControlItemsPortions.Name = "LayoutControlItemsPortions"
-        Me.LayoutControlItemsPortions.Size = New System.Drawing.Size(550, 453)
+        Me.LayoutControlItemsPortions.Size = New System.Drawing.Size(686, 462)
         Me.LayoutControlItemsPortions.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemsPortions.TextVisible = False
         '
         'LayoutControlItem38
         '
         Me.LayoutControlItem38.Control = Me.TextItemPriceInPortionScreen
-        Me.LayoutControlItem38.Location = New System.Drawing.Point(362, 489)
+        Me.LayoutControlItem38.Location = New System.Drawing.Point(452, 498)
         Me.LayoutControlItem38.Name = "LayoutControlItem38"
-        Me.LayoutControlItem38.Size = New System.Drawing.Size(188, 48)
+        Me.LayoutControlItem38.Size = New System.Drawing.Size(234, 48)
         Me.LayoutControlItem38.Text = "السعر"
         Me.LayoutControlItem38.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
         Me.LayoutControlItem38.TextSize = New System.Drawing.Size(26, 13)
@@ -4954,9 +4989,9 @@ Partial Class POSRestCashier
         'LayoutControlItem36
         '
         Me.LayoutControlItem36.Control = Me.TextAdditionsPrice
-        Me.LayoutControlItem36.Location = New System.Drawing.Point(180, 489)
+        Me.LayoutControlItem36.Location = New System.Drawing.Point(225, 498)
         Me.LayoutControlItem36.Name = "LayoutControlItem36"
-        Me.LayoutControlItem36.Size = New System.Drawing.Size(182, 48)
+        Me.LayoutControlItem36.Size = New System.Drawing.Size(227, 48)
         Me.LayoutControlItem36.Text = "الاضافات"
         Me.LayoutControlItem36.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
         Me.LayoutControlItem36.TextSize = New System.Drawing.Size(40, 13)
@@ -4965,9 +5000,9 @@ Partial Class POSRestCashier
         'LayoutControlItem39
         '
         Me.LayoutControlItem39.Control = Me.TextTotalWithPriceAndPortions
-        Me.LayoutControlItem39.Location = New System.Drawing.Point(0, 489)
+        Me.LayoutControlItem39.Location = New System.Drawing.Point(0, 498)
         Me.LayoutControlItem39.Name = "LayoutControlItem39"
-        Me.LayoutControlItem39.Size = New System.Drawing.Size(180, 48)
+        Me.LayoutControlItem39.Size = New System.Drawing.Size(225, 48)
         Me.LayoutControlItem39.Text = "المجموع"
         Me.LayoutControlItem39.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize
         Me.LayoutControlItem39.TextSize = New System.Drawing.Size(36, 13)
@@ -4976,11 +5011,11 @@ Partial Class POSRestCashier
         'LayoutControlItem37
         '
         Me.LayoutControlItem37.Control = Me.SimpleButtonAdditions
-        Me.LayoutControlItem37.Location = New System.Drawing.Point(0, 537)
+        Me.LayoutControlItem37.Location = New System.Drawing.Point(0, 546)
         Me.LayoutControlItem37.MaxSize = New System.Drawing.Size(0, 42)
         Me.LayoutControlItem37.MinSize = New System.Drawing.Size(38, 42)
         Me.LayoutControlItem37.Name = "LayoutControlItem37"
-        Me.LayoutControlItem37.Size = New System.Drawing.Size(273, 42)
+        Me.LayoutControlItem37.Size = New System.Drawing.Size(341, 42)
         Me.LayoutControlItem37.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem37.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem37.TextVisible = False
@@ -4988,11 +5023,11 @@ Partial Class POSRestCashier
         'LayoutControlItem40
         '
         Me.LayoutControlItem40.Control = Me.SimpleButton9
-        Me.LayoutControlItem40.Location = New System.Drawing.Point(273, 537)
+        Me.LayoutControlItem40.Location = New System.Drawing.Point(341, 546)
         Me.LayoutControlItem40.MaxSize = New System.Drawing.Size(0, 42)
         Me.LayoutControlItem40.MinSize = New System.Drawing.Size(60, 42)
         Me.LayoutControlItem40.Name = "LayoutControlItem40"
-        Me.LayoutControlItem40.Size = New System.Drawing.Size(277, 42)
+        Me.LayoutControlItem40.Size = New System.Drawing.Size(345, 42)
         Me.LayoutControlItem40.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem40.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem40.TextVisible = False
@@ -5010,7 +5045,7 @@ Partial Class POSRestCashier
         Me.SimpleLabelItemItemName.OptionsPrint.AppearanceItem.Options.UseFont = True
         Me.SimpleLabelItemItemName.OptionsPrint.AppearanceItemText.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleLabelItemItemName.OptionsPrint.AppearanceItemText.Options.UseFont = True
-        Me.SimpleLabelItemItemName.Size = New System.Drawing.Size(550, 36)
+        Me.SimpleLabelItemItemName.Size = New System.Drawing.Size(686, 36)
         Me.SimpleLabelItemItemName.TextSize = New System.Drawing.Size(368, 32)
         '
         'TabDailyReport
@@ -5018,78 +5053,78 @@ Partial Class POSRestCashier
         Me.TabDailyReport.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem25, Me.LayoutControlItem42, Me.LayoutControlItem41, Me.LayoutControlItem43, Me.LayoutControlItem44, Me.LayoutControlItem45, Me.LayoutControlItem46, Me.LayoutControlItem27, Me.LayoutControlItem47, Me.SimpleSeparator2, Me.SimpleSeparator3, Me.LayoutControlItem7, Me.LayoutControlItem52, Me.SimpleSeparator4, Me.SimpleSeparator5})
         Me.TabDailyReport.Location = New System.Drawing.Point(0, 0)
         Me.TabDailyReport.Name = "TabDailyReport"
-        Me.TabDailyReport.Size = New System.Drawing.Size(550, 579)
+        Me.TabDailyReport.Size = New System.Drawing.Size(686, 588)
         Me.TabDailyReport.Text = "المبيعات بالساعة"
         '
         'LayoutControlItem25
         '
         Me.LayoutControlItem25.Control = Me.ChartControlSalesByHoures
-        Me.LayoutControlItem25.Location = New System.Drawing.Point(273, 208)
+        Me.LayoutControlItem25.Location = New System.Drawing.Point(341, 211)
         Me.LayoutControlItem25.Name = "LayoutControlItem25"
-        Me.LayoutControlItem25.Size = New System.Drawing.Size(277, 163)
+        Me.LayoutControlItem25.Size = New System.Drawing.Size(345, 166)
         Me.LayoutControlItem25.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem25.TextVisible = False
         '
         'LayoutControlItem42
         '
         Me.LayoutControlItem42.Control = Me.ChartControlDailySalesThisMonth
-        Me.LayoutControlItem42.Location = New System.Drawing.Point(0, 208)
+        Me.LayoutControlItem42.Location = New System.Drawing.Point(0, 211)
         Me.LayoutControlItem42.Name = "LayoutControlItem42"
-        Me.LayoutControlItem42.Size = New System.Drawing.Size(273, 164)
+        Me.LayoutControlItem42.Size = New System.Drawing.Size(341, 167)
         Me.LayoutControlItem42.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem42.TextVisible = False
         '
         'LayoutControlItem41
         '
         Me.LayoutControlItem41.Control = Me.btnRefreshSalesDataToday
-        Me.LayoutControlItem41.Location = New System.Drawing.Point(482, 0)
+        Me.LayoutControlItem41.Location = New System.Drawing.Point(601, 0)
         Me.LayoutControlItem41.Name = "LayoutControlItem41"
-        Me.LayoutControlItem41.Size = New System.Drawing.Size(68, 46)
+        Me.LayoutControlItem41.Size = New System.Drawing.Size(85, 46)
         Me.LayoutControlItem41.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem41.TextVisible = False
         '
         'LayoutControlItem43
         '
         Me.LayoutControlItem43.Control = Me.btnRefreshSalesDataYesterday
-        Me.LayoutControlItem43.Location = New System.Drawing.Point(416, 0)
+        Me.LayoutControlItem43.Location = New System.Drawing.Point(518, 0)
         Me.LayoutControlItem43.Name = "LayoutControlItem43"
-        Me.LayoutControlItem43.Size = New System.Drawing.Size(66, 46)
+        Me.LayoutControlItem43.Size = New System.Drawing.Size(83, 46)
         Me.LayoutControlItem43.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem43.TextVisible = False
         '
         'LayoutControlItem44
         '
         Me.LayoutControlItem44.Control = Me.btnRefreshSalesDataThisMonth
-        Me.LayoutControlItem44.Location = New System.Drawing.Point(325, 0)
+        Me.LayoutControlItem44.Location = New System.Drawing.Point(404, 0)
         Me.LayoutControlItem44.Name = "LayoutControlItem44"
-        Me.LayoutControlItem44.Size = New System.Drawing.Size(91, 46)
+        Me.LayoutControlItem44.Size = New System.Drawing.Size(114, 46)
         Me.LayoutControlItem44.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem44.TextVisible = False
         '
         'LayoutControlItem45
         '
         Me.LayoutControlItem45.Control = Me.btnRefreshSalesDataLastMonth
-        Me.LayoutControlItem45.Location = New System.Drawing.Point(215, 0)
+        Me.LayoutControlItem45.Location = New System.Drawing.Point(267, 0)
         Me.LayoutControlItem45.Name = "LayoutControlItem45"
-        Me.LayoutControlItem45.Size = New System.Drawing.Size(110, 46)
+        Me.LayoutControlItem45.Size = New System.Drawing.Size(137, 46)
         Me.LayoutControlItem45.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem45.TextVisible = False
         '
         'LayoutControlItem46
         '
         Me.LayoutControlItem46.Control = Me.btnRefreshSalesDataThisYear
-        Me.LayoutControlItem46.Location = New System.Drawing.Point(112, 0)
+        Me.LayoutControlItem46.Location = New System.Drawing.Point(139, 0)
         Me.LayoutControlItem46.Name = "LayoutControlItem46"
-        Me.LayoutControlItem46.Size = New System.Drawing.Size(103, 46)
+        Me.LayoutControlItem46.Size = New System.Drawing.Size(128, 46)
         Me.LayoutControlItem46.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem46.TextVisible = False
         '
         'LayoutControlItem27
         '
         Me.LayoutControlItem27.Control = Me.ChartControlMonthly
-        Me.LayoutControlItem27.Location = New System.Drawing.Point(273, 46)
+        Me.LayoutControlItem27.Location = New System.Drawing.Point(341, 46)
         Me.LayoutControlItem27.Name = "LayoutControlItem27"
-        Me.LayoutControlItem27.Size = New System.Drawing.Size(277, 160)
+        Me.LayoutControlItem27.Size = New System.Drawing.Size(345, 163)
         Me.LayoutControlItem27.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem27.TextVisible = False
         '
@@ -5098,30 +5133,30 @@ Partial Class POSRestCashier
         Me.LayoutControlItem47.Control = Me.ChartControlSalesByDayName
         Me.LayoutControlItem47.Location = New System.Drawing.Point(0, 46)
         Me.LayoutControlItem47.Name = "LayoutControlItem47"
-        Me.LayoutControlItem47.Size = New System.Drawing.Size(273, 160)
+        Me.LayoutControlItem47.Size = New System.Drawing.Size(341, 163)
         Me.LayoutControlItem47.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem47.TextVisible = False
         '
         'SimpleSeparator2
         '
         Me.SimpleSeparator2.AllowHotTrack = False
-        Me.SimpleSeparator2.Location = New System.Drawing.Point(0, 207)
+        Me.SimpleSeparator2.Location = New System.Drawing.Point(0, 210)
         Me.SimpleSeparator2.Name = "SimpleSeparator2"
-        Me.SimpleSeparator2.Size = New System.Drawing.Size(550, 1)
+        Me.SimpleSeparator2.Size = New System.Drawing.Size(686, 1)
         '
         'SimpleSeparator3
         '
         Me.SimpleSeparator3.AllowHotTrack = False
-        Me.SimpleSeparator3.Location = New System.Drawing.Point(0, 206)
+        Me.SimpleSeparator3.Location = New System.Drawing.Point(0, 209)
         Me.SimpleSeparator3.Name = "SimpleSeparator3"
-        Me.SimpleSeparator3.Size = New System.Drawing.Size(550, 1)
+        Me.SimpleSeparator3.Size = New System.Drawing.Size(686, 1)
         '
         'LayoutControlItem7
         '
         Me.LayoutControlItem7.Control = Me.ChartControlSalesByGroups
-        Me.LayoutControlItem7.Location = New System.Drawing.Point(0, 373)
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(0, 379)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(550, 206)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(686, 209)
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem7.TextVisible = False
         '
@@ -5130,30 +5165,30 @@ Partial Class POSRestCashier
         Me.LayoutControlItem52.Control = Me.SimpleButton6
         Me.LayoutControlItem52.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem52.Name = "LayoutControlItem52"
-        Me.LayoutControlItem52.Size = New System.Drawing.Size(112, 46)
+        Me.LayoutControlItem52.Size = New System.Drawing.Size(139, 46)
         Me.LayoutControlItem52.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem52.TextVisible = False
         '
         'SimpleSeparator4
         '
         Me.SimpleSeparator4.AllowHotTrack = False
-        Me.SimpleSeparator4.Location = New System.Drawing.Point(0, 372)
+        Me.SimpleSeparator4.Location = New System.Drawing.Point(0, 378)
         Me.SimpleSeparator4.Name = "SimpleSeparator4"
-        Me.SimpleSeparator4.Size = New System.Drawing.Size(550, 1)
+        Me.SimpleSeparator4.Size = New System.Drawing.Size(686, 1)
         '
         'SimpleSeparator5
         '
         Me.SimpleSeparator5.AllowHotTrack = False
-        Me.SimpleSeparator5.Location = New System.Drawing.Point(273, 371)
+        Me.SimpleSeparator5.Location = New System.Drawing.Point(341, 377)
         Me.SimpleSeparator5.Name = "SimpleSeparator5"
-        Me.SimpleSeparator5.Size = New System.Drawing.Size(277, 1)
+        Me.SimpleSeparator5.Size = New System.Drawing.Size(345, 1)
         '
         'TabUnitsForItem
         '
         Me.TabUnitsForItem.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem24, Me.SimpleLabelUnitsForItem, Me.LayoutControlItem26})
         Me.TabUnitsForItem.Location = New System.Drawing.Point(0, 0)
         Me.TabUnitsForItem.Name = "TabUnitsForItem"
-        Me.TabUnitsForItem.Size = New System.Drawing.Size(550, 579)
+        Me.TabUnitsForItem.Size = New System.Drawing.Size(686, 588)
         Me.TabUnitsForItem.Text = "وحدات الصنف"
         Me.TabUnitsForItem.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
         '
@@ -5162,7 +5197,7 @@ Partial Class POSRestCashier
         Me.LayoutControlItem24.Control = Me.GridControlUnitsForItem
         Me.LayoutControlItem24.Location = New System.Drawing.Point(0, 36)
         Me.LayoutControlItem24.Name = "LayoutControlItem24"
-        Me.LayoutControlItem24.Size = New System.Drawing.Size(550, 497)
+        Me.LayoutControlItem24.Size = New System.Drawing.Size(686, 506)
         Me.LayoutControlItem24.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem24.TextVisible = False
         '
@@ -5175,15 +5210,15 @@ Partial Class POSRestCashier
         Me.SimpleLabelUnitsForItem.AppearanceItemCaption.Options.UseForeColor = True
         Me.SimpleLabelUnitsForItem.Location = New System.Drawing.Point(0, 0)
         Me.SimpleLabelUnitsForItem.Name = "SimpleLabelUnitsForItem"
-        Me.SimpleLabelUnitsForItem.Size = New System.Drawing.Size(550, 36)
+        Me.SimpleLabelUnitsForItem.Size = New System.Drawing.Size(686, 36)
         Me.SimpleLabelUnitsForItem.TextSize = New System.Drawing.Size(368, 32)
         '
         'LayoutControlItem26
         '
         Me.LayoutControlItem26.Control = Me.SimpleButton2
-        Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 533)
+        Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 542)
         Me.LayoutControlItem26.Name = "LayoutControlItem26"
-        Me.LayoutControlItem26.Size = New System.Drawing.Size(550, 46)
+        Me.LayoutControlItem26.Size = New System.Drawing.Size(686, 46)
         Me.LayoutControlItem26.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem26.TextVisible = False
         '
@@ -5192,7 +5227,7 @@ Partial Class POSRestCashier
         Me.TabDailyReportGrid.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem48, Me.LayoutControlItem50, Me.LayoutControlItem49, Me.LayoutControlItem53, Me.EmptySpaceItem3, Me.LayoutControlItem51})
         Me.TabDailyReportGrid.Location = New System.Drawing.Point(0, 0)
         Me.TabDailyReportGrid.Name = "TabDailyReportGrid"
-        Me.TabDailyReportGrid.Size = New System.Drawing.Size(550, 579)
+        Me.TabDailyReportGrid.Size = New System.Drawing.Size(686, 588)
         Me.TabDailyReportGrid.Text = "جدول المبيعات"
         '
         'LayoutControlItem48
@@ -5200,16 +5235,16 @@ Partial Class POSRestCashier
         Me.LayoutControlItem48.Control = Me.GridControlPosVouchers
         Me.LayoutControlItem48.Location = New System.Drawing.Point(0, 80)
         Me.LayoutControlItem48.Name = "LayoutControlItem48"
-        Me.LayoutControlItem48.Size = New System.Drawing.Size(550, 499)
+        Me.LayoutControlItem48.Size = New System.Drawing.Size(686, 508)
         Me.LayoutControlItem48.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem48.TextVisible = False
         '
         'LayoutControlItem50
         '
         Me.LayoutControlItem50.Control = Me.DateEditTo
-        Me.LayoutControlItem50.Location = New System.Drawing.Point(300, 0)
+        Me.LayoutControlItem50.Location = New System.Drawing.Point(330, 0)
         Me.LayoutControlItem50.Name = "LayoutControlItem50"
-        Me.LayoutControlItem50.Size = New System.Drawing.Size(250, 40)
+        Me.LayoutControlItem50.Size = New System.Drawing.Size(356, 40)
         Me.LayoutControlItem50.Text = "الى تاريخ"
         Me.LayoutControlItem50.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
         Me.LayoutControlItem50.TextLocation = DevExpress.Utils.Locations.Right
@@ -5219,9 +5254,9 @@ Partial Class POSRestCashier
         'LayoutControlItem49
         '
         Me.LayoutControlItem49.Control = Me.DateEditFrom
-        Me.LayoutControlItem49.Location = New System.Drawing.Point(300, 40)
+        Me.LayoutControlItem49.Location = New System.Drawing.Point(330, 40)
         Me.LayoutControlItem49.Name = "LayoutControlItem49"
-        Me.LayoutControlItem49.Size = New System.Drawing.Size(250, 40)
+        Me.LayoutControlItem49.Size = New System.Drawing.Size(356, 40)
         Me.LayoutControlItem49.Text = "من تاريخ"
         Me.LayoutControlItem49.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
         Me.LayoutControlItem49.TextLocation = DevExpress.Utils.Locations.Right
@@ -5245,13 +5280,13 @@ Partial Class POSRestCashier
         Me.EmptySpaceItem3.AllowHotTrack = False
         Me.EmptySpaceItem3.Location = New System.Drawing.Point(109, 0)
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(97, 80)
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(127, 80)
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem51
         '
         Me.LayoutControlItem51.Control = Me.SimpleButton5
-        Me.LayoutControlItem51.Location = New System.Drawing.Point(206, 0)
+        Me.LayoutControlItem51.Location = New System.Drawing.Point(236, 0)
         Me.LayoutControlItem51.MaxSize = New System.Drawing.Size(94, 0)
         Me.LayoutControlItem51.MinSize = New System.Drawing.Size(94, 24)
         Me.LayoutControlItem51.Name = "LayoutControlItem51"
@@ -5265,7 +5300,7 @@ Partial Class POSRestCashier
         Me.TabTables.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem54, Me.LayoutControlItem56})
         Me.TabTables.Location = New System.Drawing.Point(0, 0)
         Me.TabTables.Name = "TabTables"
-        Me.TabTables.Size = New System.Drawing.Size(550, 579)
+        Me.TabTables.Size = New System.Drawing.Size(686, 588)
         Me.TabTables.Text = "الصالة"
         '
         'LayoutControlItem54
@@ -5273,7 +5308,7 @@ Partial Class POSRestCashier
         Me.LayoutControlItem54.Control = Me.GridControlHoldVouchers
         Me.LayoutControlItem54.Location = New System.Drawing.Point(0, 76)
         Me.LayoutControlItem54.Name = "LayoutControlItem54"
-        Me.LayoutControlItem54.Size = New System.Drawing.Size(550, 503)
+        Me.LayoutControlItem54.Size = New System.Drawing.Size(686, 512)
         Me.LayoutControlItem54.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem54.TextVisible = False
         '
@@ -5284,45 +5319,10 @@ Partial Class POSRestCashier
         Me.LayoutControlItem56.MaxSize = New System.Drawing.Size(0, 76)
         Me.LayoutControlItem56.MinSize = New System.Drawing.Size(102, 76)
         Me.LayoutControlItem56.Name = "LayoutControlItem56"
-        Me.LayoutControlItem56.Size = New System.Drawing.Size(550, 76)
+        Me.LayoutControlItem56.Size = New System.Drawing.Size(686, 76)
         Me.LayoutControlItem56.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem56.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem56.TextVisible = False
-        '
-        'TabCashCustomers
-        '
-        Me.TabCashCustomers.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem6, Me.LayoutControlItem20, Me.LayoutControlItem33})
-        Me.TabCashCustomers.Location = New System.Drawing.Point(0, 0)
-        Me.TabCashCustomers.Name = "TabCashCustomers"
-        Me.TabCashCustomers.Size = New System.Drawing.Size(550, 579)
-        Me.TabCashCustomers.Text = "زبون نقدي"
-        '
-        'LayoutControlItem6
-        '
-        Me.LayoutControlItem6.Control = Me.GridControlCashCustomers
-        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(550, 533)
-        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem6.TextVisible = False
-        '
-        'LayoutControlItem20
-        '
-        Me.LayoutControlItem20.Control = Me.BtnAddNewCashCustomer
-        Me.LayoutControlItem20.Location = New System.Drawing.Point(111, 533)
-        Me.LayoutControlItem20.Name = "LayoutControlItem20"
-        Me.LayoutControlItem20.Size = New System.Drawing.Size(439, 46)
-        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem20.TextVisible = False
-        '
-        'LayoutControlItem33
-        '
-        Me.LayoutControlItem33.Control = Me.BtnClose
-        Me.LayoutControlItem33.Location = New System.Drawing.Point(0, 533)
-        Me.LayoutControlItem33.Name = "LayoutControlItem33"
-        Me.LayoutControlItem33.Size = New System.Drawing.Size(111, 46)
-        Me.LayoutControlItem33.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem33.TextVisible = False
         '
         'TabCustomersCarsParts
         '
@@ -5330,7 +5330,7 @@ Partial Class POSRestCashier
         Me.TabCustomersCarsParts.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem57, Me.LayoutControlItem58})
         Me.TabCustomersCarsParts.Location = New System.Drawing.Point(0, 0)
         Me.TabCustomersCarsParts.Name = "TabCustomersCarsParts"
-        Me.TabCustomersCarsParts.Size = New System.Drawing.Size(550, 579)
+        Me.TabCustomersCarsParts.Size = New System.Drawing.Size(686, 588)
         Me.TabCustomersCarsParts.Text = "قطع المركبة"
         '
         'LayoutControlItem57
@@ -5338,16 +5338,16 @@ Partial Class POSRestCashier
         Me.LayoutControlItem57.Control = Me.GridControlCarsParts
         Me.LayoutControlItem57.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem57.Name = "LayoutControlItem57"
-        Me.LayoutControlItem57.Size = New System.Drawing.Size(550, 533)
+        Me.LayoutControlItem57.Size = New System.Drawing.Size(686, 542)
         Me.LayoutControlItem57.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem57.TextVisible = False
         '
         'LayoutControlItem58
         '
         Me.LayoutControlItem58.Control = Me.SimpleButton1
-        Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 533)
+        Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 542)
         Me.LayoutControlItem58.Name = "LayoutControlItem58"
-        Me.LayoutControlItem58.Size = New System.Drawing.Size(550, 46)
+        Me.LayoutControlItem58.Size = New System.Drawing.Size(686, 46)
         Me.LayoutControlItem58.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem58.TextVisible = False
         '
@@ -5378,7 +5378,7 @@ Partial Class POSRestCashier
         'LayoutControlItem18
         '
         Me.LayoutControlItem18.Control = Me.DropDownButton2
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(608, 0)
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(774, 0)
         Me.LayoutControlItem18.MaxSize = New System.Drawing.Size(72, 45)
         Me.LayoutControlItem18.MinSize = New System.Drawing.Size(72, 45)
         Me.LayoutControlItem18.Name = "LayoutControlItem18"
@@ -5392,13 +5392,13 @@ Partial Class POSRestCashier
         Me.EmptySpaceItem1.AllowHotTrack = False
         Me.EmptySpaceItem1.Location = New System.Drawing.Point(322, 0)
         Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Size = New System.Drawing.Size(54, 46)
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(220, 46)
         Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItemTablesModeButton
         '
         Me.LayoutControlItemTablesModeButton.Control = Me.SimpleButton15
-        Me.LayoutControlItemTablesModeButton.Location = New System.Drawing.Point(487, 0)
+        Me.LayoutControlItemTablesModeButton.Location = New System.Drawing.Point(653, 0)
         Me.LayoutControlItemTablesModeButton.MaxSize = New System.Drawing.Size(121, 44)
         Me.LayoutControlItemTablesModeButton.MinSize = New System.Drawing.Size(121, 44)
         Me.LayoutControlItemTablesModeButton.Name = "LayoutControlItemTablesModeButton"
@@ -5411,7 +5411,7 @@ Partial Class POSRestCashier
         'LayoutControlItemCashModeButton
         '
         Me.LayoutControlItemCashModeButton.Control = Me.BtnBackFromHoldVouchers
-        Me.LayoutControlItemCashModeButton.Location = New System.Drawing.Point(376, 0)
+        Me.LayoutControlItemCashModeButton.Location = New System.Drawing.Point(542, 0)
         Me.LayoutControlItemCashModeButton.MaxSize = New System.Drawing.Size(111, 44)
         Me.LayoutControlItemCashModeButton.MinSize = New System.Drawing.Size(111, 44)
         Me.LayoutControlItemCashModeButton.Name = "LayoutControlItemCashModeButton"
@@ -5436,9 +5436,9 @@ Partial Class POSRestCashier
         'LayoutControlItemTitle
         '
         Me.LayoutControlItemTitle.Control = Me.LabelControlModeName
-        Me.LayoutControlItemTitle.Location = New System.Drawing.Point(521, 46)
+        Me.LayoutControlItemTitle.Location = New System.Drawing.Point(661, 46)
         Me.LayoutControlItemTitle.Name = "LayoutControlItemTitle"
-        Me.LayoutControlItemTitle.Size = New System.Drawing.Size(47, 28)
+        Me.LayoutControlItemTitle.Size = New System.Drawing.Size(49, 28)
         Me.LayoutControlItemTitle.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItemTitle.TextVisible = False
         Me.LayoutControlItemTitle.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
@@ -5448,7 +5448,7 @@ Partial Class POSRestCashier
         Me.EmptySpaceItemTitle.AllowHotTrack = False
         Me.EmptySpaceItemTitle.Location = New System.Drawing.Point(0, 46)
         Me.EmptySpaceItemTitle.Name = "EmptySpaceItemTitle"
-        Me.EmptySpaceItemTitle.Size = New System.Drawing.Size(521, 28)
+        Me.EmptySpaceItemTitle.Size = New System.Drawing.Size(661, 28)
         Me.EmptySpaceItemTitle.TextSize = New System.Drawing.Size(0, 0)
         Me.EmptySpaceItemTitle.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
         '
@@ -5486,10 +5486,10 @@ Partial Class POSRestCashier
         Me.SidePanel1.Appearance.Options.UseBorderColor = True
         Me.SidePanel1.Controls.Add(Me.LayoutControl1)
         Me.SidePanel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.SidePanel1.Location = New System.Drawing.Point(583, 0)
+        Me.SidePanel1.Location = New System.Drawing.Point(866, 0)
         Me.SidePanel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SidePanel1.Name = "SidePanel1"
-        Me.SidePanel1.Size = New System.Drawing.Size(871, 746)
+        Me.SidePanel1.Size = New System.Drawing.Size(588, 746)
         Me.SidePanel1.TabIndex = 7
         Me.SidePanel1.Text = "SidePanel1"
         '
@@ -5693,6 +5693,10 @@ Partial Class POSRestCashier
         CType(Me.LayoutControlItemAllGroups, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabbedControlGroupAllScreens, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TabCashCustomers, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem33, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabLayoutControlGroupItemsTab, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItemItems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -5734,10 +5738,6 @@ Partial Class POSRestCashier
         CType(Me.TabTables, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem54, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem56, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TabCashCustomers, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem33, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabCustomersCarsParts, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem57, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem58, System.ComponentModel.ISupportInitialize).EndInit()

@@ -4540,7 +4540,7 @@ WHERE R.RefNo = @RefNo;
 
         Return _OtherAccount
     End Function
-    Private Function GetOtherAccountByDocCode(DocName As Integer, DocCode As String) As String
+    Public Function GetOtherAccountByDocCode(DocName As Integer, DocCode As String) As String
         Dim sql As New SQLControl
         Dim SqlString As String
         Dim _OtherAccount As String = "0"

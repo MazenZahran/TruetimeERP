@@ -4886,6 +4886,16 @@ Public Class POSRestCashier
                     End If
                 End With
             Case "CashCustomer"
+                TextReferanceNo.Text = "0"
+                TextReferanceName.Text = ""
+                My.Forms.POSRestCashier.Text = "فاتورة مبيعات"
+                TextOtherAccountNo.Caption = GlobalVariables._DefaultBaseCashAccount
+                TextOtherAccountName.Caption = GetFinancialAccountsData(_DefaultBaseCashAccount).AccName
+                TextReferanceName.Text = "زبون نقدي"
+                Dim sql As New SQLControl
+                Dim sqlString As String
+                sqlString = " Update POSJournal Set Referance=0,ReferanceName=N'زبون نقدي' where DocCode='" & DocCode.Text & "' and PosNo=" & Me.BarPosNo.Caption
+                sql.SqlTrueAccountingRunQuery(sqlString)
 
                 _previousTabPage = TabbedControlGroupAllScreens.SelectedTabPage
                 TabbedControlGroupAllScreens.SelectedTabPage = TabCashCustomers
