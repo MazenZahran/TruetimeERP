@@ -843,52 +843,27 @@ Public Class MoneyTrans
             If _DocLogName = "Update" Then EventForWhatsMsg = "WhenEdit"
             If _DocLogName = "Insert" Then EventForWhatsMsg = "WhenAdd"
 
-            GenerateMessage(Me.DocName.EditValue, EventForWhatsMsg, DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"), DocCashAmount.Text, DocCheqsAmount.Text, TotalDocAmount.EditValue, CashAccount.Text, _DocID)
 
-            '     If sendWhatsappAfterSave = True Then
-            '         Dim docTypeName As String = If(Me.DocName.EditValue = 3, "سند صرف", "سند قبض")
-            '         Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
+            Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
 
-            '         Dim whatsappMessage As String = String.Format(
-            '"✅ *تم {0} السند بنجاح*{1}" &
-            '"{1}📄 *نوع السند:* {2}" &
-            '"{1}🔢 *رقم السند:* {3}" &
-            '"{1}📅 *التاريخ:* {4}" &
-            '"{1}👤 *المستخدم:* {5}" &
-            '"{1}💰 *الحساب:* {6}" &
-            '"{1}💵 *نقداً:* {7}" &
-            '"{1}💳 *شيكات:* {8}" &
-            '"{1}💲 *الإجمالي:* {9}" &
-            '"{1}--------------------------------- \n",
-            'If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
-            'Environment.NewLine,
-            'docTypeName,
-            '_DocID,
-            'DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
-            'GlobalVariables.EmployeeName,
-            'CashAccount.Text,
-            'DocCashAmount.Text,
-            'DocCheqsAmount.Text,
-            'FormatNumber(TotalDocAmount.EditValue, 2))
+            Dim whatsappMessage As String = String.Format(
+    "🔢 *رقم السند:* {0}\n" &
+    "💵 *نقداً:* {1}\n" &
+    "💳 *شيكات:* {2}\n" &
+    "💲 *الإجمالي:* {3}\n" &
+    "---------------------------------",
+    _DocID,
+    DocCashAmount.Text,
+    DocCheqsAmount.Text,
+    FormatNumber(TotalDocAmount.EditValue, 2))
 
-            '         Dim numberList() As String = Numbers.Split("-"c)
-
-            '         For Each num As String In numberList
-            '             Dim trimmedNum As String = num.Trim()
-            '             If Not String.IsNullOrEmpty(trimmedNum) Then
-            '                 SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
-            '             End If
-            '         Next
-            '     End If
-
-
+            GenerateMessage(Me.DocName.EditValue, EventForWhatsMsg, whatsappMessage, Me.DocName.EditValue)
             'CoptToClip(JournalTable)
             Referance.EditValue = 0
                 TextDocNotes.Text = ""
                 TextDocManualNo.Text = ""
-                TextReferanceName.Text = ""
-                AccountForRefranace.EditValue = 0
-                DocCashAmount.EditValue = 0
+            AccountForRefranace.EditValue = 0
+            DocCashAmount.EditValue = 0
                 _DocTagsToOpen = ""
                 '  TexCashAmount.Text = "0"
                 'LoadDefault()
@@ -1955,13 +1930,16 @@ Public Class MoneyTrans
         End Try
     End Sub
 
-    Public Function GenerateMessage(FormID As Integer, _Type As String, _LogDateTime As String, Optional _DocCashAmount As String = "", Optional _DocCheqsAmount As String = "", Optional _TotalDocAmount As String = "", Optional _CashAccount As String = "", Optional _DocID As String = "")
+    Public Function GenerateMessage(FormID As Integer, _Type As String, _AddetionalMsg As String, Optional _DocId As String = "")
         Dim _txtType As String = ""
         Try
 
             If _Type = "WhenEdit" Then _txtType = "تعديل"
             If _Type = "WhenDelete" Then _txtType = "حدف"
             If _Type = "WhenAdd" Then _txtType = "إضافة"
+
+
+            If _Type = "WhenEdit" Then _AddetionalMsg = "رقم السند: " & _DocId
 
 
             Dim Sql As New SQLControl
@@ -1982,29 +1960,30 @@ Public Class MoneyTrans
                 For Each phoneNum As String In PhonesList
                     Dim trimmedNum As String = phoneNum.Trim()
                     If Not String.IsNullOrEmpty(trimmedNum) Then
-                        Dim whatsappMessage As String = "✅ *قام " & GlobalVariables.EmployeeName & " ب" & _txtType & " " & FormName & "*\n\n"
+                        Dim whatsappMessage As String = "✅ *قام المستخدم " & GlobalVariables.EmployeeName & " ب" & _txtType & " " & FormName & "*\n\n"
 
                         'If Not String.IsNullOrEmpty(_CashAccount) Then
                         '    whatsappMessage &= "💰 *من الحساب:- " & _CashAccount & "* \n\n"
                         'End If
 
-                        If Not String.IsNullOrEmpty(_DocID) Then
-                            whatsappMessage &= "📄 *رقم السند:- " & _DocID & "* \n\n"
-                        End If
+                        'If Not String.IsNullOrEmpty(_DocID) Then
+                        '    whatsappMessage &= "📄 *رقم السند:- " & _DocID & "* \n\n"
+                        'End If
 
-                        If Not String.IsNullOrEmpty(_DocCashAmount) Then
-                            whatsappMessage &= "• نقداً: " & _DocCashAmount & "\n"
-                        End If
+                        'If Not String.IsNullOrEmpty(_DocCashAmount) Then
+                        '    whatsappMessage &= "• نقداً: " & _DocCashAmount & "\n"
+                        'End If
 
-                        If Not String.IsNullOrEmpty(_DocCheqsAmount) And _DocCheqsAmount <> "0.00" Then
-                            whatsappMessage &= "• شيكات: " & _DocCheqsAmount & "\n"
-                        End If
+                        'If Not String.IsNullOrEmpty(_DocCheqsAmount) And _DocCheqsAmount <> "0.00" Then
+                        '    whatsappMessage &= "• شيكات: " & _DocCheqsAmount & "\n"
+                        'End If
 
-                        If Not String.IsNullOrEmpty(_TotalDocAmount) Then
-                            whatsappMessage &= "• الإجمالي: " & FormatNumber(_TotalDocAmount, 2) & "\n"
-                        End If
+                        'If Not String.IsNullOrEmpty(_TotalDocAmount) Then
+                        '    whatsappMessage &= "• الإجمالي: " & FormatNumber(_TotalDocAmount, 2) & "\n"
+                        'End If
 
-                        whatsappMessage &= "\n🕒 " & DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm")
+                        whatsappMessage &= _AddetionalMsg & "\n"
+                        whatsappMessage &= "\n🕒 " & DateTime.Now.ToString("yyyy-MM-dd HH:mm")
 
                         SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
                     End If

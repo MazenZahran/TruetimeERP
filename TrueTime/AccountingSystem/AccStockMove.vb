@@ -15,6 +15,7 @@ Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraLayout
 Imports DevExpress.XtraReports.UI
 Imports DevExpress.XtraSplashScreen
+Imports Microsoft.Graph
 
 
 Public Class AccStockMove
@@ -2439,7 +2440,161 @@ Public Class AccStockMove
             End If
 
             '========================================================
-            ' 11) ما بعد الحفظ (لا يوجد كود حساس للتوازن هنا)
+            ' 11) بناء رسالة WhatsApp بعد نجاح الحفظ
+            '========================================================
+            Dim messageBuilder As New System.Text.StringBuilder()
+
+            messageBuilder.AppendLine("╔════════════════════════╗")
+
+            Select Case ctx.DocNameID
+                Case 1
+                    messageBuilder.AppendLine("║  📦 فاتورة مشتريات رقم: " & ctx.DocID)
+                Case 2
+                    messageBuilder.AppendLine("║  🧾 فاتورة مبيعات رقم: " & ctx.DocID)
+                Case 8
+                    messageBuilder.AppendLine("║  📥 سند ادخال رقم: " & ctx.DocID)
+                Case 9
+                    messageBuilder.AppendLine("║  📤 سند اخراج رقم: " & ctx.DocID)
+                Case 10
+                    messageBuilder.AppendLine("║  🛒 طلبية شراء رقم: " & ctx.DocID)
+                Case 11
+                    messageBuilder.AppendLine("║  🛍️ طلبية بيع رقم: " & ctx.DocID)
+                Case 12
+                    messageBuilder.AppendLine("║  ↩️ مردودات مبيعات رقم: " & ctx.DocID)
+                Case 13
+                    messageBuilder.AppendLine("║  ↩️ مردودات مشتريات رقم: " & ctx.DocID)
+                Case 16
+                    messageBuilder.AppendLine("║  🔄 سند تحويل داخلي رقم: " & ctx.DocID)
+                Case Else
+                    messageBuilder.AppendLine("║  📄 فاتورة رقم: " & ctx.DocID)
+            End Select
+
+            messageBuilder.AppendLine("╚════════════════════════╝")
+            messageBuilder.AppendLine("")
+            messageBuilder.AppendLine("👤 الزبون: " & Me.TextReferanceName.Text)
+
+            If Not String.IsNullOrEmpty(Me.DocManualNo.Text) Then
+                messageBuilder.AppendLine("🔖 رقم يدوي: " & Me.DocManualNo.Text)
+            End If
+
+            messageBuilder.AppendLine("📋 التفاصيل:")
+
+            Dim totalQuantity As Decimal = 0
+            Dim totalAmount As Decimal = 0
+            Dim totalBeforeDiscount As Decimal = 0
+            Dim itemCounter As Integer = 0
+
+            For i As Integer = 0 To GridView1.RowCount - 1
+                Try
+                    Dim itemNameObj = GridView1.GetRowCellValue(i, "ItemName")
+                    Dim quantityObj = GridView1.GetRowCellValue(i, "StockQuantity")
+                    Dim priceObj = GridView1.GetRowCellValue(i, "StockPrice")
+                    Dim amountObj = GridView1.GetRowCellValue(i, "DocAmount")
+
+                    If itemNameObj Is Nothing OrElse IsDBNull(itemNameObj) OrElse
+                       quantityObj Is Nothing OrElse IsDBNull(quantityObj) OrElse
+                       priceObj Is Nothing OrElse IsDBNull(priceObj) OrElse
+                       amountObj Is Nothing OrElse IsDBNull(amountObj) Then
+                        Continue For
+                    End If
+
+                    Dim itemName As String = itemNameObj.ToString()
+                    Dim quantity As Decimal = CDec(quantityObj)
+                    Dim price As Decimal = CDec(priceObj)
+                    Dim amount As Decimal = CDec(amountObj)
+                    Dim unitObj = GridView1.GetRowCellValue(i, "StockUnit")
+                    Dim bonusObj = GridView1.GetRowCellValue(i, "BonusQuantity")
+                    Dim discountObj = GridView1.GetRowCellValue(i, "StockDiscount")
+
+                    Dim unitName As String = ""
+                    Dim bonusQty As Decimal = 0
+                    Dim itemDiscount As Decimal = 0
+
+                    If unitObj IsNot Nothing AndAlso Not IsDBNull(unitObj) Then
+                        Try
+                            Dim unitId As Integer = CInt(unitObj)
+                            Dim unitSql As New SQLControl
+                            unitSql.SqlTrueAccountingRunQuery("SELECT name FROM Units WHERE id = " & unitId)
+                            If unitSql.SQLDS.Tables(0).Rows.Count > 0 Then
+                                unitName = unitSql.SQLDS.Tables(0).Rows(0)("name").ToString()
+                            End If
+                        Catch
+                        End Try
+                    End If
+
+                    If bonusObj IsNot Nothing AndAlso Not IsDBNull(bonusObj) Then
+                        bonusQty = CDec(bonusObj)
+                    End If
+
+                    If discountObj IsNot Nothing AndAlso Not IsDBNull(discountObj) Then
+                        itemDiscount = CDec(discountObj)
+                    End If
+
+                    itemCounter += 1
+
+                    messageBuilder.AppendLine("")
+                    messageBuilder.AppendLine("▸ " & itemCounter.ToString() & ". " & itemName)
+
+                    If Not String.IsNullOrEmpty(unitName) Then
+                        messageBuilder.AppendLine("   ├─ الكمية: " & quantity.ToString("N2") & " " & unitName)
+                    Else
+                        messageBuilder.AppendLine("   ├─ الكمية: " & quantity.ToString("N2"))
+                    End If
+
+                    If bonusQty > 0 Then
+                        If Not String.IsNullOrEmpty(unitName) Then
+                            messageBuilder.AppendLine("   ├─ 🎁 بونص: " & bonusQty.ToString("N2") & " " & unitName)
+                        Else
+                            messageBuilder.AppendLine("   ├─ 🎁 بونص: " & bonusQty.ToString("N2"))
+                        End If
+                    End If
+
+                    messageBuilder.AppendLine("   ├─ السعر: " & price.ToString("N2"))
+
+                    If itemDiscount > 0 Then
+                        messageBuilder.AppendLine("   ├─ 🏷️ خصم: -" & itemDiscount.ToString("N2"))
+                    End If
+
+                    messageBuilder.AppendLine("   └─ المبلغ: *" & amount.ToString("N2") & "*")
+
+                    totalQuantity += quantity
+                    totalAmount += amount
+                    totalBeforeDiscount += (quantity * price)
+                Catch ex As Exception
+                    Continue For
+                End Try
+            Next
+
+            messageBuilder.AppendLine("")
+            messageBuilder.AppendLine("━━━━━━━━━━━━━━━━━━━━━━━━━")
+            messageBuilder.AppendLine("")
+            messageBuilder.AppendLine("• عدد الأصناف: " & itemCounter.ToString())
+            messageBuilder.AppendLine("• إجمالي الكمية: " & Convert.ToDecimal(totalQuantity).ToString("N2"))
+
+            If Not IsNothing(Me.TextTotalDocAmount.EditValue) AndAlso
+               Not IsNothing(Me.TextVoucherDiscount.EditValue) AndAlso
+               Me.TextVoucherDiscount.EditValue > 0 Then
+                Dim amountBeforeDiscount As Decimal = CDec(Me.TextTotalDocAmount.EditValue) + CDec(Me.TextVoucherDiscount.EditValue)
+                messageBuilder.AppendLine("• المبلغ قبل الخصم: " & amountBeforeDiscount.ToString("N2"))
+            End If
+
+            If Not IsNothing(TextVoucherDiscount.EditValue) AndAlso TextVoucherDiscount.EditValue > 0 Then
+                messageBuilder.AppendLine("• 💰 خصم الفاتورة: -" & Convert.ToDecimal(TextVoucherDiscount.EditValue).ToString("N2"))
+            End If
+
+            messageBuilder.AppendLine("")
+            If Not IsNothing(TextTotalDocAmount.EditValue) Then
+                messageBuilder.AppendLine(" 💵 *مبلغ الفاتورة* :" & Convert.ToDecimal(TextTotalDocAmount.EditValue).ToString("N2"))
+            End If
+
+            If Not String.IsNullOrEmpty(Me.DocNotes.Text) Then
+                messageBuilder.AppendLine("")
+                messageBuilder.AppendLine("📝 ملاحظات:")
+                messageBuilder.AppendLine(Me.DocNotes.Text)
+            End If
+
+            '========================================================
+            ' 12) ما بعد الحفظ (لا يوجد كود حساس للتوازن هنا)
             '========================================================
             If ctx.DocLogName = "Update" Then EventForWhatsMsg = "WhenEdit"
             If ctx.DocLogName = "Insert" Then EventForWhatsMsg = "WhenAdd"
@@ -2451,7 +2606,7 @@ Public Class AccStockMove
                      ctx.DocLogName,
                      ctx.LogDetails,
                      ctx.LogDateTime)
-            MoneyTrans.GenerateMessage(ctx.DocNameID, EventForWhatsMsg, ctx.LogDateTime, Me.TextTotalDocAmount.EditValue, "", "", "", ctx.DocID)
+            MoneyTrans.GenerateMessage(ctx.DocNameID, EventForWhatsMsg, messageBuilder.ToString(), ctx.DocIDForLog)
 
             ' حالة خاصة: موافقة طلبية وتحويلها إلى سند
             If _WithAction = "ApproveOrderToVoucher" Then

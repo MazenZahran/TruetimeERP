@@ -1985,6 +1985,7 @@ CheckStatus, CheckAmount as DocAmount   ,CheckCurr as DocCurrency ,CheckBaseAmou
 
     Public Function DeleteDoc(DocName As Integer, DocID As Integer, DocCode As String, SoftDelete As Boolean) As Boolean
         Dim _Deleted As Boolean
+        Dim _MsgWhatsApp As String = ""
         Dim _AllowDelete As Boolean
         Dim _DocStatus As Integer
         Dim SqlString As String
@@ -2064,7 +2065,8 @@ CheckStatus, CheckAmount as DocAmount   ,CheckCurr as DocCurrency ,CheckBaseAmou
             Dim _LogDateTime As String = Format(Now(), "yyyy-MM-dd HH:mm:ss")
             CreateDocLog("Document", DocCode, DocName, DocID, "Delete", "Delete Document", _LogDateTime)
             MsgBoxShowSuccess(" تم الغاء السند بنجاح ")
-            MoneyTrans.GenerateMessage(DocName, "WhenDelete", DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"), "", "", "", "", DocID)
+            _MsgWhatsApp = "🔢 رقم السند: *" & DocID & "*"
+            MoneyTrans.GenerateMessage(DocName, "WhenDelete", _MsgWhatsApp)
 
         End If
 
