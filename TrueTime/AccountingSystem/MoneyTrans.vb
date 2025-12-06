@@ -28,6 +28,7 @@ Public Class MoneyTrans
     Dim SendStatus As Boolean = False
     Dim Phones As String = ""
     Dim FormName As String = ""
+    Dim EventForWhatsMsg As String = ""
     Private Sub MoneyTrans_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextDocManualNo.Select()
         LoadSettings()
@@ -839,93 +840,95 @@ Public Class MoneyTrans
                 SendSMSMessage(CStr("120363418450142475"), " دفعة بقيمة  " & Me.TotalDocAmount.EditValue & " الى " & Me.TextReferanceName.Text & " بتاريخ " & _LogDateTime & " المستخدم " & GlobalVariables.EmployeeName, "WhatsApp", True, Me.TextReferanceName.Text)
             End If
 
+            If _DocLogName = "Update" Then EventForWhatsMsg = "WhenEdit"
+            If _DocLogName = "Insert" Then EventForWhatsMsg = "WhenAdd"
 
-            GenerateMessage(Me.DocName.EditValue, "WhenEdit", DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"))
+            GenerateMessage(Me.DocName.EditValue, EventForWhatsMsg, DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"), DocCashAmount.Text, DocCheqsAmount.Text, TotalDocAmount.EditValue, CashAccount.Text, _DocID)
 
-            If sendWhatsappAfterSave = True Then
-                '         Dim docTypeName As String = If(Me.DocName.EditValue = 3, "سند صرف", "سند قبض")
-                '         Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
+            '     If sendWhatsappAfterSave = True Then
+            '         Dim docTypeName As String = If(Me.DocName.EditValue = 3, "سند صرف", "سند قبض")
+            '         Dim Numbers As String = Functions.GetNumbersForReseiptsVoucherMsgs()
 
-                '         Dim whatsappMessage As String = String.Format(
-                '"✅ *تم {0} السند بنجاح*{1}" &
-                '"{1}📄 *نوع السند:* {2}" &
-                '"{1}🔢 *رقم السند:* {3}" &
-                '"{1}📅 *التاريخ:* {4}" &
-                '"{1}👤 *المستخدم:* {5}" &
-                '"{1}💰 *الحساب:* {6}" &
-                '"{1}💵 *نقداً:* {7}" &
-                '"{1}💳 *شيكات:* {8}" &
-                '"{1}💲 *الإجمالي:* {9}" &
-                '"{1}--------------------------------- \n",
-                'If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
-                'Environment.NewLine,
-                'docTypeName,
-                '_DocID,
-                'DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
-                'GlobalVariables.EmployeeName,
-                'CashAccount.Text,
-                'DocCashAmount.Text,
-                'DocCheqsAmount.Text,
-                'FormatNumber(TotalDocAmount.EditValue, 2))
+            '         Dim whatsappMessage As String = String.Format(
+            '"✅ *تم {0} السند بنجاح*{1}" &
+            '"{1}📄 *نوع السند:* {2}" &
+            '"{1}🔢 *رقم السند:* {3}" &
+            '"{1}📅 *التاريخ:* {4}" &
+            '"{1}👤 *المستخدم:* {5}" &
+            '"{1}💰 *الحساب:* {6}" &
+            '"{1}💵 *نقداً:* {7}" &
+            '"{1}💳 *شيكات:* {8}" &
+            '"{1}💲 *الإجمالي:* {9}" &
+            '"{1}--------------------------------- \n",
+            'If(DocStatus.EditValue = -1, "حفظ", "تعديل"),
+            'Environment.NewLine,
+            'docTypeName,
+            '_DocID,
+            'DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"),
+            'GlobalVariables.EmployeeName,
+            'CashAccount.Text,
+            'DocCashAmount.Text,
+            'DocCheqsAmount.Text,
+            'FormatNumber(TotalDocAmount.EditValue, 2))
 
-                '         Dim numberList() As String = Numbers.Split("-"c)
+            '         Dim numberList() As String = Numbers.Split("-"c)
 
-                '         For Each num As String In numberList
-                '             Dim trimmedNum As String = num.Trim()
-                '             If Not String.IsNullOrEmpty(trimmedNum) Then
-                '                 SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
-                '             End If
-                '         Next
-            End If
+            '         For Each num As String In numberList
+            '             Dim trimmedNum As String = num.Trim()
+            '             If Not String.IsNullOrEmpty(trimmedNum) Then
+            '                 SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
+            '             End If
+            '         Next
+            '     End If
 
 
-                'CoptToClip(JournalTable)
-                Referance.EditValue = 0
-            TextDocNotes.Text = ""
-            TextDocManualNo.Text = ""
-            TextReferanceName.Text = ""
-            AccountForRefranace.EditValue = 0
-            DocCashAmount.EditValue = 0
-            _DocTagsToOpen = ""
-            '  TexCashAmount.Text = "0"
-            'LoadDefault()
-            DeleteFromJournalTemp(DocName.Text, Me.DocCode.Text)
-            If GlobalPosVariables._PlayBeep = True Then
-                My.Computer.Audio.Play(My.Resources.CashSound, AudioPlayMode.Background)
-                'AlertControl1.Show(Me, "Sample caption", "Sample notification text")
+            'CoptToClip(JournalTable)
+            Referance.EditValue = 0
+                TextDocNotes.Text = ""
+                TextDocManualNo.Text = ""
+                TextReferanceName.Text = ""
+                AccountForRefranace.EditValue = 0
+                DocCashAmount.EditValue = 0
+                _DocTagsToOpen = ""
+                '  TexCashAmount.Text = "0"
+                'LoadDefault()
+                DeleteFromJournalTemp(DocName.Text, Me.DocCode.Text)
+                If GlobalPosVariables._PlayBeep = True Then
+                    My.Computer.Audio.Play(My.Resources.CashSound, AudioPlayMode.Background)
+                    'AlertControl1.Show(Me, "Sample caption", "Sample notification text")
 
-            End If
-            If GlobalVariables._ShowActionMenueAfterSaveDocuments = True Then
-                Dim F As New SavePrintPostDocument
-                With F
-                    .TextDocCode.Text = Me.DocCode.Text
-                    .TextDocData.Text = "Journal"
-                    .LayoutSendDocumentByWhatsApp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
-                    .LayoutPayVoucher.Visibility = Utils.LayoutVisibility.Always
-                    If .ShowDialog() <> DialogResult.OK Then
-                        If _ForceCloseAfterSaved = True Then
-                            Me.Close()
-                        Else
-                            If Me.DocStatus.EditValue = -1 Then
-                                LoadDefault()
-                            Else
+                End If
+                If GlobalVariables._ShowActionMenueAfterSaveDocuments = True Then
+                    Dim F As New SavePrintPostDocument
+                    With F
+                        .TextDocCode.Text = Me.DocCode.Text
+                        .TextDocData.Text = "Journal"
+                        .LayoutSendDocumentByWhatsApp.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
+                        .LayoutPayVoucher.Visibility = Utils.LayoutVisibility.Always
+                        If .ShowDialog() <> DialogResult.OK Then
+                            If _ForceCloseAfterSaved = True Then
                                 Me.Close()
+                            Else
+                                If Me.DocStatus.EditValue = -1 Then
+                                    LoadDefault()
+                                Else
+                                    Me.Close()
+                                End If
                             End If
                         End If
-                    End If
 
-                End With
+                    End With
+                End If
+                'Dim _string As String = " مازن زهران <br> مازن زهران     بلع رصيده  <br> مازن زهران  <br>  مازن زهران "
+                '_string += " مازن زهران <br> مازن زهران     بلع رصيده  <br> مازن زهران  <br>  مازن زهران "
+                '_string.Replace("<br>", Environment.NewLine)
+                'Dim aInfo As New AlertInfo("Sample notification", "تم حغظ السند بنجاح")
+                'aInfo.ImageOptions.SvgImage = My.Forms.Main.SvgImageCollection1(0)
+
+                'My.Forms.Main.AlertControl1.Show(My.Forms.Main, aInfo)
+
             End If
-            'Dim _string As String = " مازن زهران <br> مازن زهران     بلع رصيده  <br> مازن زهران  <br>  مازن زهران "
-            '_string += " مازن زهران <br> مازن زهران     بلع رصيده  <br> مازن زهران  <br>  مازن زهران "
-            '_string.Replace("<br>", Environment.NewLine)
-            'Dim aInfo As New AlertInfo("Sample notification", "تم حغظ السند بنجاح")
-            'aInfo.ImageOptions.SvgImage = My.Forms.Main.SvgImageCollection1(0)
-
-            'My.Forms.Main.AlertControl1.Show(My.Forms.Main, aInfo)
-
-        End If
-        Me.DocDate.Focus()
+            Me.DocDate.Focus()
 
         'DeleteFromJournalTemp(DocName.Text, Me.DocCode.Text)
         ' ProgressBarControl1.PerformStep()
@@ -1952,11 +1955,13 @@ Public Class MoneyTrans
         End Try
     End Sub
 
-    Public Function GenerateMessage(FormID As Integer, _Type As String, _LogDateTime As String)
+    Public Function GenerateMessage(FormID As Integer, _Type As String, _LogDateTime As String, Optional _DocCashAmount As String = "", Optional _DocCheqsAmount As String = "", Optional _TotalDocAmount As String = "", Optional _CashAccount As String = "", Optional _DocID As String = "")
         Dim _txtType As String = ""
         Try
 
             If _Type = "WhenEdit" Then _txtType = "تعديل"
+            If _Type = "WhenDelete" Then _txtType = "حدف"
+            If _Type = "WhenAdd" Then _txtType = "إضافة"
 
 
             Dim Sql As New SQLControl
@@ -1970,16 +1975,43 @@ Public Class MoneyTrans
             SendStatus = False
         End Try
 
-        If SendStatus = True Then
-            Dim PhonesList() As String = Phones.Split(","c)
+        Try
+            If SendStatus = True Then
+                Dim PhonesList() As String = Phones.Split(","c)
 
-            For Each phoneNum As String In PhonesList
-                Dim trimmedNum As String = phoneNum.Trim()
-                If Not String.IsNullOrEmpty(trimmedNum) Then
-                    Dim whatsappMessage As String = "تم " & " " & _txtType & " " & FormName & " بواسطة " & GlobalVariables.EmployeeName & " في " & _LogDateTime
-                    SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
-                End If
-            Next
-        End If
+                For Each phoneNum As String In PhonesList
+                    Dim trimmedNum As String = phoneNum.Trim()
+                    If Not String.IsNullOrEmpty(trimmedNum) Then
+                        Dim whatsappMessage As String = "✅ *قام " & GlobalVariables.EmployeeName & " ب" & _txtType & " " & FormName & "*\n\n"
+
+                        'If Not String.IsNullOrEmpty(_CashAccount) Then
+                        '    whatsappMessage &= "💰 *من الحساب:- " & _CashAccount & "* \n\n"
+                        'End If
+
+                        If Not String.IsNullOrEmpty(_DocID) Then
+                            whatsappMessage &= "📄 *رقم السند:- " & _DocID & "* \n\n"
+                        End If
+
+                        If Not String.IsNullOrEmpty(_DocCashAmount) Then
+                            whatsappMessage &= "• نقداً: " & _DocCashAmount & "\n"
+                        End If
+
+                        If Not String.IsNullOrEmpty(_DocCheqsAmount) And _DocCheqsAmount <> "0.00" Then
+                            whatsappMessage &= "• شيكات: " & _DocCheqsAmount & "\n"
+                        End If
+
+                        If Not String.IsNullOrEmpty(_TotalDocAmount) Then
+                            whatsappMessage &= "• الإجمالي: " & FormatNumber(_TotalDocAmount, 2) & "\n"
+                        End If
+
+                        whatsappMessage &= "\n🕒 " & DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm")
+
+                        SendSMSMessage(trimmedNum, whatsappMessage, "WhatsApp", True, Me.TextReferanceName.Text)
+                    End If
+                Next
+            End If
+        Catch ex As Exception
+
+        End Try
     End Function
 End Class

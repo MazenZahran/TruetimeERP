@@ -33,7 +33,7 @@ Public Class AccStockMove
     Public _DocTagsToOpen As String
     Public _TempPercentage As Decimal = 0D
     Public askBeforeClose As Boolean = True
-
+    Dim EventForWhatsMsg As String = ""
     Public Sub CreateTempTable()
         Dim PlaneTable As New DataTable
 
@@ -2441,7 +2441,8 @@ Public Class AccStockMove
             '========================================================
             ' 11) ما بعد الحفظ (لا يوجد كود حساس للتوازن هنا)
             '========================================================
-
+            If ctx.DocLogName = "Update" Then EventForWhatsMsg = "WhenEdit"
+            If ctx.DocLogName = "Insert" Then EventForWhatsMsg = "WhenAdd"
             ' Log السند
             CreateDocLog("Document",
                      ctx.DocCode,
@@ -2450,6 +2451,7 @@ Public Class AccStockMove
                      ctx.DocLogName,
                      ctx.LogDetails,
                      ctx.LogDateTime)
+            MoneyTrans.GenerateMessage(ctx.DocNameID, EventForWhatsMsg, ctx.LogDateTime, Me.TextTotalDocAmount.EditValue, "", "", "", ctx.DocID)
 
             ' حالة خاصة: موافقة طلبية وتحويلها إلى سند
             If _WithAction = "ApproveOrderToVoucher" Then

@@ -2064,6 +2064,8 @@ CheckStatus, CheckAmount as DocAmount   ,CheckCurr as DocCurrency ,CheckBaseAmou
             Dim _LogDateTime As String = Format(Now(), "yyyy-MM-dd HH:mm:ss")
             CreateDocLog("Document", DocCode, DocName, DocID, "Delete", "Delete Document", _LogDateTime)
             MsgBoxShowSuccess(" تم الغاء السند بنجاح ")
+            MoneyTrans.GenerateMessage(DocName, "WhenDelete", DateTime.Parse(_LogDateTime).ToString("yyyy-MM-dd HH:mm"), "", "", "", "", DocID)
+
         End If
 
         Return _Deleted
