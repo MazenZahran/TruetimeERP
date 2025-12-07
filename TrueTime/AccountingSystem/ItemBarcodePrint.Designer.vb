@@ -29,8 +29,6 @@ Partial Class ItemBarcodePrint
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SearchFormName = New DevExpress.XtraEditors.SearchLookUpEdit()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DocumentViewer1 = New DevExpress.XtraPrinting.Preview.DocumentViewer()
         Me.txtPrice = New DevExpress.XtraEditors.TextEdit()
         Me.BtnPrint = New DevExpress.XtraEditors.SimpleButton()
@@ -53,6 +51,8 @@ Partial Class ItemBarcodePrint
         Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
         CType(Me.TxtUnitName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -181,22 +181,6 @@ Partial Class ItemBarcodePrint
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = False
         Me.GridView1.OptionsView.ShowGroupPanel = False
-        '
-        'GridColumn3
-        '
-        Me.GridColumn3.Caption = "ID"
-        Me.GridColumn3.FieldName = "ID"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Width = 64
-        '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "النموذج"
-        Me.GridColumn4.FieldName = "FormName"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 0
-        Me.GridColumn4.Width = 64
         '
         'DocumentViewer1
         '
@@ -397,6 +381,22 @@ Partial Class ItemBarcodePrint
         Me.LayoutControlItem9.Size = New System.Drawing.Size(215, 34)
         Me.LayoutControlItem9.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem9.TextVisible = False
+        '
+        'GridColumn3
+        '
+        Me.GridColumn3.Caption = "ID"
+        Me.GridColumn3.FieldName = "ID"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.Width = 64
+        '
+        'GridColumn4
+        '
+        Me.GridColumn4.Caption = "النموذج"
+        Me.GridColumn4.FieldName = "FormName"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 0
+        Me.GridColumn4.Width = 64
         '
         'ItemBarcodePrint
         '

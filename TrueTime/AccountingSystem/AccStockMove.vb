@@ -790,6 +790,8 @@ Public Class AccStockMove
                             0D, GridView1.GetRowCellValue(i, "BonusQuantity")))
             Dim bonusMain = CDec(If(IsDBNull(GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")),
                             0D, GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")))
+            R("BonusQuantity") = bonus
+            R("BonusQuantityByMainUnit") = bonusMain
 
             Dim qtyMain = CDec(GridView1.GetRowCellValue(i, "StockQuantityByMainUnit"))
 
@@ -1009,6 +1011,8 @@ Public Class AccStockMove
                             0D, GridView1.GetRowCellValue(i, "BonusQuantity")))
             Dim bonusMain = CDec(If(IsDBNull(GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")),
                             0D, GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")))
+            R("BonusQuantity") = bonus
+            R("BonusQuantityByMainUnit") = bonusMain
 
             Dim qtyMain = CDec(GridView1.GetRowCellValue(i, "StockQuantityByMainUnit"))
 
@@ -1227,6 +1231,8 @@ Public Class AccStockMove
             Dim bonusMain = CDec(If(IsDBNull(GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")),
                             0D, GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")))
             Dim qtyMain = CDec(GridView1.GetRowCellValue(i, "StockQuantityByMainUnit"))
+            R("BonusQuantity") = bonus
+            R("BonusQuantityByMainUnit") = bonusMain
 
             R("StockQuantity") = qty + bonus
             R("StockQuantityByMainUnit") = qtyMain + bonusMain
@@ -1411,6 +1417,8 @@ Public Class AccStockMove
                             0D, GridView1.GetRowCellValue(i, "BonusQuantity")))
             Dim bonusMain = CDec(If(IsDBNull(GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")),
                             0D, GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")))
+            R("BonusQuantity") = bonus
+            R("BonusQuantityByMainUnit") = bonusMain
 
             Dim qtyMain = CDec(GridView1.GetRowCellValue(i, "StockQuantityByMainUnit"))
 
@@ -1637,6 +1645,9 @@ Public Class AccStockMove
                             0D, GridView1.GetRowCellValue(i, "BonusQuantity")))
             Dim bonusMain = CDec(If(IsDBNull(GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")),
                             0D, GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")))
+            R("BonusQuantity") = bonus
+            R("BonusQuantityByMainUnit") = bonusMain
+
             Dim qtyMain = CDec(GridView1.GetRowCellValue(i, "StockQuantityByMainUnit"))
 
             R("StockQuantity") = qty + bonus
@@ -1803,6 +1814,8 @@ Public Class AccStockMove
                             0D, GridView1.GetRowCellValue(i, "BonusQuantity")))
             Dim bonusMain = CDec(If(IsDBNull(GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")),
                             0D, GridView1.GetRowCellValue(i, "BonusQuantityByMainUnit")))
+            R("BonusQuantity") = bonus
+            R("BonusQuantityByMainUnit") = bonusMain
 
             Dim qtyMain = CDec(GridView1.GetRowCellValue(i, "StockQuantityByMainUnit"))
 

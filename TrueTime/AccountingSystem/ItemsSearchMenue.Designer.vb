@@ -172,7 +172,7 @@ Partial Class ItemsSearchMenue
         Me.SearchControl1.Properties.Client = Me.GridControlItems
         Me.SearchControl1.Properties.NullValuePrompt = "ابحث عن ..."
         Me.SearchControl1.Properties.ShowMRUButton = True
-        Me.SearchControl1.Size = New System.Drawing.Size(1041, 38)
+        Me.SearchControl1.Size = New System.Drawing.Size(1042, 38)
         Me.SearchControl1.StyleController = Me.LayoutControl1
         Me.SearchControl1.TabIndex = 12
         '
@@ -637,7 +637,7 @@ Partial Class ItemsSearchMenue
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
         Me.LayoutControlItem5.Size = New System.Drawing.Size(1083, 44)
         Me.LayoutControlItem5.Text = "بحث"
-        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(20, 13)
+        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(19, 13)
         '
         'LayoutEditMode
         '

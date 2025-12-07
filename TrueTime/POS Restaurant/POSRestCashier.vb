@@ -2292,7 +2292,8 @@ Public Class POSRestCashier
         Dim _DocStatus As Integer = If(posPostVouchers, 3, 1)
 
         ' Set shelf ID for special cases
-        Dim _Shelf As Integer = If(shalashCo, 1397, 0)
+        'Dim _Shelf As Integer = If(shalashCo, 1397, 0)
+        Dim _Shelf As Integer = 1397
 
         ' Get payment amounts
         Dim __paidamount As Decimal = If(Not IsNothing(Me.TextPaidAmount.EditValue), Me.TextPaidAmount.EditValue, 0)
@@ -5766,7 +5767,8 @@ ORDER BY InputDateTime DESC; "
         Dim _DocStatus As Integer = If(posPostVouchers, 3, 1)
 
         ' Set shelf ID for special cases
-        Dim _Shelf As Integer = If(shalashCo, 1397, 0)
+        'Dim _Shelf As Integer = If(shalashCo, 1397, 0)
+        Dim _Shelf As Integer = 1397
 
         ' Get payment amounts
         Dim __paidamount As Decimal = totalPaid

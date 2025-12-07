@@ -16,7 +16,7 @@ Public Class PrintItemBarcodeForShalash
     Private Sub BtnPrint_Click(sender As Object, e As EventArgs) Handles BtnPrint.Click
 
         Try
-            If IsBarcodeLinked(Me.TxtItemNo.Text, Me.TxtBarcode.Text) Then
+            If IsBarcodeLinked(Me.TxtItemNo.Text, Me.TxtBarcode.Text) AndAlso GlobalVariables._Shalash Then
                 MsgBoxShowSuccess(" لا يمكن طباعة الباكود ")
                 Exit Sub
             End If

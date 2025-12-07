@@ -19,6 +19,7 @@ Partial Public Class ShalashInternal
     'Do  not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim XrWatermark1 As DevExpress.XtraReports.UI.XRWatermark = New DevExpress.XtraReports.UI.XRWatermark()
         Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
         Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
@@ -34,6 +35,7 @@ Partial Public Class ShalashInternal
         Me.XrLabelVoucherNo = New DevExpress.XtraReports.UI.XRLabel()
         Me.ReportFooter = New DevExpress.XtraReports.UI.ReportFooterBand()
         Me.XrLabelUserName = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'TopMargin
@@ -51,8 +53,8 @@ Partial Public Class ShalashInternal
         'Detail
         '
         Me.Detail.BorderWidth = 0.2!
-        Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel6, Me.XrLabel7, Me.XrLabel1, Me.XrLabel2, Me.XrLabel3, Me.XrLabel4})
-        Me.Detail.HeightF = 76.8737!
+        Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel8, Me.XrLabel6, Me.XrLabel7, Me.XrLabel1, Me.XrLabel2, Me.XrLabel3, Me.XrLabel4})
+        Me.Detail.HeightF = 107.0399!
         Me.Detail.MultiColumn.Mode = DevExpress.XtraReports.UI.MultiColumnMode.UseColumnCount
         Me.Detail.Name = "Detail"
         Me.Detail.StylePriority.UseBorderWidth = False
@@ -60,7 +62,7 @@ Partial Public Class ShalashInternal
         'XrLabel6
         '
         Me.XrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-        Me.XrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(176.0149!, 52.12412!)
+        Me.XrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(176.0149!, 82.29035!)
         Me.XrLabel6.Multiline = True
         Me.XrLabel6.Name = "XrLabel6"
         Me.XrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
@@ -73,7 +75,7 @@ Partial Public Class ShalashInternal
         'XrLabel7
         '
         Me.XrLabel7.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-        Me.XrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(11.25037!, 52.12411!)
+        Me.XrLabel7.LocationFloat = New DevExpress.Utils.PointFloat(30.20839!, 82.29036!)
         Me.XrLabel7.Multiline = True
         Me.XrLabel7.Name = "XrLabel7"
         Me.XrLabel7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
@@ -88,11 +90,11 @@ Partial Public Class ShalashInternal
         Me.XrLabel1.BorderWidth = 0.2!
         Me.XrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ItemName]")})
         Me.XrLabel1.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
-        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(9.542047!, 0!)
+        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(30.20843!, 0!)
         Me.XrLabel1.Multiline = True
         Me.XrLabel1.Name = "XrLabel1"
         Me.XrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100.0!)
-        Me.XrLabel1.SizeF = New System.Drawing.SizeF(285.4579!, 22.0!)
+        Me.XrLabel1.SizeF = New System.Drawing.SizeF(264.7915!, 22.0!)
         Me.XrLabel1.StylePriority.UseBorderWidth = False
         Me.XrLabel1.StylePriority.UseFont = False
         Me.XrLabel1.StylePriority.UsePadding = False
@@ -106,7 +108,7 @@ Partial Public Class ShalashInternal
         Me.XrLabel2.BorderWidth = 0.2!
         Me.XrLabel2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Quantity]")})
         Me.XrLabel2.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
-        Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(46.66705!, 52.12412!)
+        Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(65.62506!, 82.29036!)
         Me.XrLabel2.Multiline = True
         Me.XrLabel2.Name = "XrLabel2"
         Me.XrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100.0!)
@@ -126,11 +128,11 @@ Partial Public Class ShalashInternal
         Me.XrLabel3.BorderWidth = 0.2!
         Me.XrLabel3.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ItemNo2]")})
         Me.XrLabel3.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
-        Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(11.70878!, 21.99999!)
+        Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(30.20839!, 21.99999!)
         Me.XrLabel3.Multiline = True
         Me.XrLabel3.Name = "XrLabel3"
         Me.XrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100.0!)
-        Me.XrLabel3.SizeF = New System.Drawing.SizeF(283.2911!, 24.74957!)
+        Me.XrLabel3.SizeF = New System.Drawing.SizeF(264.7915!, 24.74957!)
         Me.XrLabel3.StylePriority.UseBorders = False
         Me.XrLabel3.StylePriority.UseBorderWidth = False
         Me.XrLabel3.StylePriority.UseFont = False
@@ -145,7 +147,7 @@ Partial Public Class ShalashInternal
         Me.XrLabel4.BorderWidth = 0.2!
         Me.XrLabel4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StockCreditShelve]")})
         Me.XrLabel4.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
-        Me.XrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(206.7504!, 52.12412!)
+        Me.XrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(206.7504!, 82.29035!)
         Me.XrLabel4.Multiline = True
         Me.XrLabel4.Name = "XrLabel4"
         Me.XrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 0, 2, 0, 100.0!)
@@ -174,10 +176,10 @@ Partial Public Class ShalashInternal
         Me.XrLabel5.CanGrow = False
         Me.XrLabel5.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Now()")})
         Me.XrLabel5.Font = New DevExpress.Drawing.DXFont("Arial", 8.25!, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
-        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(11.7088!, 22.66776!)
+        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(30.20844!, 22.66777!)
         Me.XrLabel5.Name = "XrLabel5"
         Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel5.SizeF = New System.Drawing.SizeF(148.9152!, 22.66777!)
+        Me.XrLabel5.SizeF = New System.Drawing.SizeF(130.4156!, 22.66777!)
         Me.XrLabel5.StylePriority.UseFont = False
         Me.XrLabel5.StylePriority.UseTextAlignment = False
         Me.XrLabel5.Text = "XrLabel5"
@@ -229,21 +231,40 @@ Partial Public Class ShalashInternal
         Me.XrLabelUserName.Borders = DevExpress.XtraPrinting.BorderSide.None
         Me.XrLabelUserName.CanGrow = False
         Me.XrLabelUserName.Font = New DevExpress.Drawing.DXFont("Arial", 8.25!, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point, New DevExpress.Drawing.DXFontAdditionalProperty() {New DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", CType(0, Byte))})
-        Me.XrLabelUserName.LocationFloat = New DevExpress.Utils.PointFloat(10.00037!, 0!)
+        Me.XrLabelUserName.LocationFloat = New DevExpress.Utils.PointFloat(30.20841!, 0!)
         Me.XrLabelUserName.Name = "XrLabelUserName"
         Me.XrLabelUserName.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabelUserName.SizeF = New System.Drawing.SizeF(294.9997!, 26.29025!)
+        Me.XrLabelUserName.SizeF = New System.Drawing.SizeF(274.7917!, 26.29025!)
         Me.XrLabelUserName.StylePriority.UseBorders = False
         Me.XrLabelUserName.StylePriority.UseFont = False
         Me.XrLabelUserName.StylePriority.UseTextAlignment = False
         Me.XrLabelUserName.Text = "User:"
         Me.XrLabelUserName.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
         '
+        'XrLabel8
+        '
+        Me.XrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
+        Me.XrLabel8.BorderWidth = 0.2!
+        Me.XrLabel8.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StockBarcode]")})
+        Me.XrLabel8.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
+        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(30.20846!, 46.74956!)
+        Me.XrLabel8.Multiline = True
+        Me.XrLabel8.Name = "XrLabel8"
+        Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100.0!)
+        Me.XrLabel8.SizeF = New System.Drawing.SizeF(264.7915!, 24.74957!)
+        Me.XrLabel8.StylePriority.UseBorders = False
+        Me.XrLabel8.StylePriority.UseBorderWidth = False
+        Me.XrLabel8.StylePriority.UseFont = False
+        Me.XrLabel8.StylePriority.UsePadding = False
+        Me.XrLabel8.StylePriority.UseTextAlignment = False
+        Me.XrLabel8.Text = "XrTableCell3"
+        Me.XrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+        '
         'ShalashInternal
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.TopMargin, Me.BottomMargin, Me.Detail, Me.ReportHeader, Me.ReportFooter})
         Me.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
-        Me.Margins = New DevExpress.Drawing.DXMargins(0, 6, 2, 14)
+        Me.Margins = New DevExpress.Drawing.DXMargins(0!, 6.0!, 2.0!, 14.0!)
         Me.PageWidth = 311
         Me.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom
         Me.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes
@@ -252,7 +273,9 @@ Partial Public Class ShalashInternal
         Me.ShowPrintMarginsWarning = False
         Me.ShowPrintStatusDialog = False
         Me.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
-        Me.Version = "21.2"
+        Me.Version = "24.1"
+        XrWatermark1.Id = "Watermark1"
+        Me.Watermarks.AddRange(New DevExpress.XtraPrinting.Drawing.Watermark() {XrWatermark1})
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
     End Sub
@@ -272,4 +295,5 @@ Partial Public Class ShalashInternal
     Friend WithEvents XrLabel2 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel3 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel4 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel8 As DevExpress.XtraReports.UI.XRLabel
 End Class

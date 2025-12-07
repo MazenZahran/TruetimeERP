@@ -71,7 +71,7 @@ Partial Class PrintItemBarcodeForShalash
         Me.TxtBarcode.Location = New System.Drawing.Point(16, 50)
         Me.TxtBarcode.Name = "TxtBarcode"
         Me.TxtBarcode.Properties.ReadOnly = True
-        Me.TxtBarcode.Size = New System.Drawing.Size(335, 28)
+        Me.TxtBarcode.Size = New System.Drawing.Size(337, 28)
         Me.TxtBarcode.StyleController = Me.LayoutControl1
         Me.TxtBarcode.TabIndex = 9
         '
@@ -80,7 +80,7 @@ Partial Class PrintItemBarcodeForShalash
         Me.TxtItemNo.Location = New System.Drawing.Point(16, 16)
         Me.TxtItemNo.Name = "TxtItemNo"
         Me.TxtItemNo.Properties.ReadOnly = True
-        Me.TxtItemNo.Size = New System.Drawing.Size(335, 28)
+        Me.TxtItemNo.Size = New System.Drawing.Size(337, 28)
         Me.TxtItemNo.StyleController = Me.LayoutControl1
         Me.TxtItemNo.TabIndex = 8
         '
@@ -156,7 +156,7 @@ Partial Class PrintItemBarcodeForShalash
         Me.LayoutControlItem2.Size = New System.Drawing.Size(406, 65)
         Me.LayoutControlItem2.Text = "الكمية"
         Me.LayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(49, 13)
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(47, 13)
         '
         'LayoutControlItem3
         '
@@ -183,7 +183,7 @@ Partial Class PrintItemBarcodeForShalash
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
         Me.LayoutControlItem5.Size = New System.Drawing.Size(406, 34)
         Me.LayoutControlItem5.Text = "رقم الصنف"
-        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(49, 13)
+        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(47, 13)
         '
         'LayoutControlItem6
         '
@@ -192,7 +192,7 @@ Partial Class PrintItemBarcodeForShalash
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
         Me.LayoutControlItem6.Size = New System.Drawing.Size(406, 34)
         Me.LayoutControlItem6.Text = "الباركود"
-        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(49, 13)
+        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(47, 13)
         Me.LayoutControlItem6.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInCustomization
         '
         'PrintItemBarcodeForShalash

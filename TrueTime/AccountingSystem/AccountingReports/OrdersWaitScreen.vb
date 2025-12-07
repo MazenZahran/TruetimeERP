@@ -216,7 +216,9 @@ Public Class OrdersWaitScreen
                         End If
                     End If
                     If GetItemBalance(_ItemNo, _WareHouseID) <= 0 Then
-                        SendSMSMessage("120363402134953527", _ItemName & " " & _ItemNo2 & " " & " رصيد الصنف انتهى في مستودع  " & _WareHouseName, "WhatsApp", True, "")
+                        If GlobalVariables._Shalash Then
+                            SendSMSMessage("120363402134953527", _ItemName & " " & _ItemNo2 & " " & " رصيد الصنف انتهى في مستودع  " & _WareHouseName, "WhatsApp", True, "")
+                        End If
                     End If
                 Next
                 If J > 0 Then
@@ -343,7 +345,7 @@ Public Class OrdersWaitScreen
         If _SelectedPage = "TileBarByMotor" Or _SelectedPage = "TileBarBybicycle" Then
             Dim Sql As New SQLControl
             Dim sqlstring As String
-            sqlstring = " Select [DocID],J.[ItemName],I.ItemNo2,DocName,J.InputDateTime,
+            sqlstring = " Select [DocID],J.[ItemName],I.ItemNo2,DocName,J.InputDateTime,StockBarcode,
 [StockQuantity] as Quantity , S.ShelfCode as StockCreditShelve,J.ItemNo2
 [DocCode],D.EmployeeName as UserName
 From [dbo].[Journal] J 
@@ -368,10 +370,11 @@ Where 1=1 and DocName=16 "
 
             If _WareHouseID = 3 Then
                 report.ExportToPdf("Document.pdf")
-                'SendFileToWhatsAppGroup(CStr("120363419397314141"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName) ' طلبيات مستودع POS
-                SendFileToWhatsApp(CStr("120363419397314141"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "0") ' طلبيات مستودع POS
+                If GlobalVariables._Shalash Then
+                    SendFileToWhatsApp(CStr("120363419397314141"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "0") ' طلبيات مستودع POS
+                End If
             Else
-                Dim isInstalled As Boolean = PrinterSettings.InstalledPrinters.Cast(Of String)().Any(Function(p) p = _Printer)
+                    Dim isInstalled As Boolean = PrinterSettings.InstalledPrinters.Cast(Of String)().Any(Function(p) p = _Printer)
                 If isInstalled Then
                     printTool.Print(printerName:=_Printer)
                     'printTool.Print(printerName:=_Printer)
@@ -380,8 +383,10 @@ Where 1=1 and DocName=16 "
                 End If
 
                 report.ExportToPdf("Document.pdf")
-                'SendFileToWhatsAppGroup(CStr("120363400317275471"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName) ' طلبيات مستودع رئيسي
-                SendFileToWhatsApp(CStr("120363400317275471"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "") ' طلبيات مستودع رئيسي
+                If GlobalVariables._Shalash Then
+                    SendFileToWhatsApp(CStr("120363400317275471"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "") ' طلبيات مستودع رئيسي
+                End If
+
             End If
 
         ElseIf _SelectedPage = "TileBarOrderByCar" Then
@@ -413,8 +418,10 @@ Where 1=1 and DocName=16 "
 
             If _WareHouseID = 3 Then
                 report.ExportToPdf("Document.pdf")
-                'SendFileToWhatsApp(CStr("120363402134953527"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "")
-                SendFileToWhatsApp(CStr("120363402134953527"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "")
+                If GlobalVariables._Shalash Then
+                    SendFileToWhatsApp(CStr("120363402134953527"), "Document.pdf", 1, "طلبية" & ":" & "-" & _WareHouseName, "")
+                End If
+
             Else
                 printTool.ShowPreview() ' تم تاجيل الطباعة بسبب مشكلة في الطباعة عند شلش
             End If
