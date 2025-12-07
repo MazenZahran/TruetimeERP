@@ -41,6 +41,7 @@ Partial Class NotificationsCenter
         Me.TabbedControlGroup1 = New DevExpress.XtraLayout.TabbedControlGroup()
         Me.lcgNotifications = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.SimpleLabelItem1 = New DevExpress.XtraLayout.SimpleLabelItem()
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +57,7 @@ Partial Class NotificationsCenter
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lcgNotifications, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SimpleLabelItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,11 +77,11 @@ Partial Class NotificationsCenter
         '
         'TblNotificationsForms
         '
-        Me.TblNotificationsForms.Location = New System.Drawing.Point(32, 61)
+        Me.TblNotificationsForms.Location = New System.Drawing.Point(32, 80)
         Me.TblNotificationsForms.MainView = Me.GridView1
         Me.TblNotificationsForms.Name = "TblNotificationsForms"
         Me.TblNotificationsForms.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryFormName, Me.WhenAdd, Me.WhenEdit, Me.WhenDelete})
-        Me.TblNotificationsForms.Size = New System.Drawing.Size(804, 410)
+        Me.TblNotificationsForms.Size = New System.Drawing.Size(804, 391)
         Me.TblNotificationsForms.TabIndex = 6
         Me.TblNotificationsForms.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -98,17 +100,15 @@ Partial Class NotificationsCenter
         Me.GridColumn1.FieldName = "id"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsColumn.ReadOnly = True
-        Me.GridColumn1.Visible = True
-        Me.GridColumn1.VisibleIndex = 0
         '
         'GridColumn2
         '
-        Me.GridColumn2.Caption = "اسم الفورم"
+        Me.GridColumn2.Caption = "السند"
         Me.GridColumn2.ColumnEdit = Me.RepositoryFormName
         Me.GridColumn2.FieldName = "FormID"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.VisibleIndex = 0
         '
         'RepositoryFormName
         '
@@ -146,11 +146,11 @@ Partial Class NotificationsCenter
         '
         'GridColumn3
         '
-        Me.GridColumn3.Caption = "ارقم الجوالات"
+        Me.GridColumn3.Caption = "أرقام الواتساب"
         Me.GridColumn3.FieldName = "Phones"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 2
+        Me.GridColumn3.VisibleIndex = 1
         '
         'GridColumn4
         '
@@ -159,7 +159,7 @@ Partial Class NotificationsCenter
         Me.GridColumn4.FieldName = "WhenAdd"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 5
+        Me.GridColumn4.VisibleIndex = 4
         '
         'WhenAdd
         '
@@ -173,7 +173,7 @@ Partial Class NotificationsCenter
         Me.GridColumn5.FieldName = "WhenEdit"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 3
+        Me.GridColumn5.VisibleIndex = 2
         '
         'WhenEdit
         '
@@ -187,7 +187,7 @@ Partial Class NotificationsCenter
         Me.GridColumn6.FieldName = "WhenDelete"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 4
+        Me.GridColumn6.VisibleIndex = 3
         '
         'WhenDelete
         '
@@ -200,11 +200,11 @@ Partial Class NotificationsCenter
         Me.btnSave.Appearance.ForeColor = System.Drawing.Color.White
         Me.btnSave.Appearance.Options.UseBackColor = True
         Me.btnSave.Appearance.Options.UseForeColor = True
-        Me.btnSave.ImageOptions.SvgImage = CType(resources.GetObject("btnSave.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.btnSave.ImageOptions.Image = Global.TrueTime.My.Resources.Resources.add_32
         Me.btnSave.Location = New System.Drawing.Point(16, 493)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btnSave.Size = New System.Drawing.Size(206, 38)
+        Me.btnSave.Size = New System.Drawing.Size(137, 38)
         Me.btnSave.StyleController = Me.LayoutControl1
         Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "حفظ"
@@ -229,7 +229,7 @@ Partial Class NotificationsCenter
         'lcgNotifications
         '
         Me.lcgNotifications.CustomizationFormText = "الإشعارات"
-        Me.lcgNotifications.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1})
+        Me.lcgNotifications.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.SimpleLabelItem1})
         Me.lcgNotifications.Location = New System.Drawing.Point(0, 0)
         Me.lcgNotifications.Name = "lcgNotifications"
         Me.lcgNotifications.Size = New System.Drawing.Size(810, 416)
@@ -238,27 +238,40 @@ Partial Class NotificationsCenter
         'LayoutControlItem1
         '
         Me.LayoutControlItem1.Control = Me.TblNotificationsForms
-        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 19)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(810, 416)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(810, 397)
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem1.TextVisible = False
+        '
+        'SimpleLabelItem1
+        '
+        Me.SimpleLabelItem1.AllowHotTrack = False
+        Me.SimpleLabelItem1.Location = New System.Drawing.Point(0, 0)
+        Me.SimpleLabelItem1.Name = "SimpleLabelItem1"
+        Me.SimpleLabelItem1.Size = New System.Drawing.Size(810, 19)
+        Me.SimpleLabelItem1.Text = "يمكنك التحكم بالاشعارات والتنبيهات عند ادخال/تعديل/حذف سند ، يمكن إضافة عدة ارقام" &
+    " واتس أب بينها فاصلة (,) " & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.SimpleLabelItem1.TextSize = New System.Drawing.Size(510, 13)
         '
         'LayoutControlItem2
         '
         Me.LayoutControlItem2.Control = Me.btnSave
         Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 477)
+        Me.LayoutControlItem2.MaxSize = New System.Drawing.Size(143, 44)
+        Me.LayoutControlItem2.MinSize = New System.Drawing.Size(143, 44)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(212, 44)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(143, 44)
+        Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem2.TextVisible = False
         '
         'EmptySpaceItem1
         '
         Me.EmptySpaceItem1.AllowHotTrack = False
-        Me.EmptySpaceItem1.Location = New System.Drawing.Point(212, 477)
+        Me.EmptySpaceItem1.Location = New System.Drawing.Point(143, 477)
         Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Size = New System.Drawing.Size(630, 44)
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(699, 44)
         Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
         '
         'NotificationsCenter
@@ -267,6 +280,7 @@ Partial Class NotificationsCenter
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(868, 547)
         Me.Controls.Add(Me.LayoutControl1)
+        Me.IconOptions.SvgImage = CType(resources.GetObject("NotificationsCenter.IconOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.Name = "NotificationsCenter"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Text = "مركز الإشعارات"
@@ -283,6 +297,7 @@ Partial Class NotificationsCenter
         CType(Me.TabbedControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lcgNotifications, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SimpleLabelItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -312,4 +327,5 @@ Partial Class NotificationsCenter
     Friend WithEvents WhenDelete As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
     Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents EmptySpaceItem1 As DevExpress.XtraLayout.EmptySpaceItem
+    Friend WithEvents SimpleLabelItem1 As DevExpress.XtraLayout.SimpleLabelItem
 End Class

@@ -196,7 +196,6 @@ LogInCont:
             My.Forms.Main.BarButtonItem223.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
             My.Forms.Main.RibbonPageGroup28.Visible = False
             'My.Forms.Main.RibbonPageGroup6.Visible = False
-            My.Forms.Main.RibbonPageGroup3.Visible = False
             My.Forms.Main.BarButtonEmployeesEdit.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
             My.Forms.Main.RibbonPageGroupIssueAttReport.Visible = False
             My.Forms.EmployeesEdit.SalaryTab.Visible = False
@@ -244,7 +243,6 @@ LogInCont:
             My.Forms.Main.BarButtonItem223.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
             My.Forms.Main.RibbonPageGroup28.Visible = False
             My.Forms.Main.Ijazat.Visible = False
-            My.Forms.Main.RibbonPageGroup3.Visible = False
             My.Forms.Main.BarButtonEmployeesEdit.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
             My.Forms.Main.RibbonPageGroupAttendanceReports.Visible = False
             'My.Forms.Main.RibbonPageSettings.Visible = False
@@ -641,8 +639,11 @@ LogInCont:
                     .RibbonPageFinancialStatment.Visible = True
                     .RibbonPageGroupItems.Visible = True
                     .RibbonPageGroup5.Visible = True
-                    .BarButtonItemFinancialSettings.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+                    .btnFinansialSettings.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
                     .RibbonPageGroupReferances.Visible = True
+                    .btnVouchersSettings.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+                    .btnShortCut.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+
 
                 Case 8931 ' Rawateb
                     SetBaseAttendancePermissions()
@@ -748,6 +749,7 @@ LogInCont:
                     .BarButtonItemRCCIInsentives.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
                 Case 9185 'whatsapp
                     .BarButtonItem285.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
+                    .btnOpenLinkWhatsApp.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
                     HasWhatsAppPackage = True
                     Debug.WriteLine($"HasWhatsAppPackage: {HasWhatsAppPackage}")
                     .RibbonPageOther.Visible = True

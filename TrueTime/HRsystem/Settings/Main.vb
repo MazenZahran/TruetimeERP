@@ -65,9 +65,6 @@ Public Class Main
             BarButtonCostCenter.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         End If
 
-        If FinancialFiles.Visible = False Then
-            BarButtonItemFinancialSettings.Visibility = BarItemVisibility.Never
-        End If
         If RibbonPageEmployees.Visible = False Then
             BarButtonItemHR_Settings.Visibility = BarItemVisibility.Never
             BarButtonItemSelfServiceSettings.Visibility = BarItemVisibility.Never
@@ -373,13 +370,31 @@ Public Class Main
             Else
                 RibbonDeleteData.Visible = True
             End If
-        Else
-            CheckAndOpenFormByShortcut(e)
         End If
+    End Sub
+
+    Private Sub Main_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
+        CheckAndOpenFormByShortcut(e)
     End Sub
 
     Private Sub CheckAndOpenFormByShortcut(e As KeyEventArgs)
         Try
+            Dim activeControl As Control = Me.ActiveControl
+            If activeControl IsNot Nothing Then
+                If TypeOf activeControl Is TextBox OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.TextEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.MemoEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.ButtonEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.ComboBoxEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.LookUpEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.SearchLookUpEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.SpinEdit OrElse
+                   TypeOf activeControl Is DevExpress.XtraEditors.DateEdit OrElse
+                   TypeOf activeControl Is RichTextBox Then
+                    Return
+                End If
+            End If
+
             If e.KeyCode = Keys.ControlKey OrElse e.KeyCode = Keys.ShiftKey OrElse
                e.KeyCode = Keys.Menu OrElse e.KeyCode = Keys.LWin OrElse
                e.KeyCode = Keys.RWin OrElse e.KeyCode = Keys.Alt Then
@@ -410,12 +425,12 @@ Public Class Main
             End If
 
             Dim sql As New SQLControl
-            Dim sqlString As String = "SELECT FormID, NameEn FROM SystemForms WHERE ShortCut = N'" & shortcutText.Replace("'", "''") & "'"
+            Dim sqlString As String = "SELECT FormID, FormName FROM SystemForms WHERE ShortCut = N'" & shortcutText.Replace("'", "''") & "'"
             sql.SqlTrueTimeRunQuery(sqlString)
 
             If sql.SQLDS.Tables(0).Rows.Count > 0 Then
                 Dim formIDObj As Object = sql.SQLDS.Tables(0).Rows(0).Item("FormID")
-                Dim formName As String = sql.SQLDS.Tables(0).Rows(0).Item("NameEn").ToString()
+                Dim formName As String = sql.SQLDS.Tables(0).Rows(0).Item("FormName").ToString()
 
                 Dim formID As Integer = 0
                 If formIDObj IsNot Nothing AndAlso Not IsDBNull(formIDObj) Then
@@ -1201,7 +1216,7 @@ Public Class Main
         End If
     End Sub
 
-    Private Sub BarButtonItem15_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem15.ItemClick
+    Private Sub btnControlPanel_ItemClick(sender As Object, e As ItemClickEventArgs) Handles btnControlPanel.ItemClick
         Dim PassText As String = "ourcompany"
         Dim arg As New XtraInputBoxArgs()
         Dim editor As New TextEdit
@@ -3142,7 +3157,7 @@ Public Class Main
         End If
     End Sub
 
-    Private Sub BarButtonItem241_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItemFinancialSettings.ItemClick
+    Private Sub BarButtonItem241_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs)
         Dim child As Form = Nothing
         For Each f As Form In MdiChildren
             If TypeOf f Is AccSettings Then

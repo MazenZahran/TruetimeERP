@@ -1,9 +1,67 @@
-﻿CREATE TABLE NotificationsForms (
-    [id] INT IDENTITY(1,1) PRIMARY KEY,
-    [FormID] INT,
-    [EmpID] INT DEFAULT -1,
-    [Phones] NVARCHAR(MAX),
-    [WhenEdit] BIT DEFAULT 0,
-    [WhenDelete] BIT DEFAULT 0,
-    [WhenAdd] BIT DEFAULT 0
-);
+﻿CREATE TABLE [dbo].[SystemForms](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[FormID] [int] NOT NULL,
+	[NameAr] [nvarchar](255) NOT NULL,
+	[NameEn] [nvarchar](255) NOT NULL,
+	[CategoryAr] [nvarchar](max) NOT NULL,
+	[CategoryEn] [nvarchar](max) NOT NULL,
+	[ShortCut] [nvarchar](max) NULL,
+	[FormName] [nvarchar](max) NULL,
+ CONSTRAINT [PK_SystemForms_1] PRIMARY KEY CLUSTERED 
+(
+	[FormID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[SystemForms] ON 
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (4, 1, N'فاتورة مشتريات', N'PurchaseInvoice', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (5, 2, N'فاتورة مبيعات', N'SalesInvoice', N'سندات', N'voucher', N'Ctrl+I', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (6, 3, N'سند صرف', N'PaymentVoucher', N'سندات', N'voucher', N'F', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (9, 4, N'سند قبض', N'ReceiptVoucher', N'سندات', N'voucher', N'Ctrl+A', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (10, 5, N'سند قيد', N'JournalEntry', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (13, 6, N'اشعار مدين', N'DebitNote', N'سندات', N'voucher', N'Ctrl+V', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (15, 7, N'اشعار دائن', N'CreditNote', N'سندات', N'voucher', N'Ctrl+Z', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (16, 8, N'ارسالية مشتريات', N'PurchaseDeliveryNote', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (17, 9, N'ارسالية مبيعات', N'SalesDeliveryNote', N'سندات', N'voucher', N'Shift+Packet', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (18, 10, N'طلبية مشتريات', N'PurchaseOrder', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (19, 11, N'طلبية مبيعات', N'SalesOrder', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (20, 12, N'مردودات مبيعات', N'SalesReturns', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (21, 13, N'مردودات مشتريات', N'PurchaseReturns', N'سندات', N'voucher', N'Ctrl+W', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (25, 16, N'ارسالية داخلية', N'InternalDeliveryNote', N'سندات', N'voucher', N'Ctrl+Alt+V', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (26, 17, N'سند ادخال بضاعة', N'GoodsInwardVoucher', N'سندات', N'voucher', N'Ctrl+Shift+I', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (27, 18, N'سند اخراج بضاعة', N'GoodsOutwardVoucher', N'سندات', N'voucher', N'Ctrl+Shift+D', N'MoneyTransList')
+GO
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (28, 19, N'سند انتاج', N'ProductionVoucher', N'سندات', N'voucher', N'', N'MoneyTransList')
+GO
+SET IDENTITY_INSERT [dbo].[SystemForms] OFF
+GO
+SET ANSI_PADDING ON
+GO
+ALTER TABLE [dbo].[SystemForms] ADD UNIQUE NONCLUSTERED 
+(
+	[NameEn] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+ALTER TABLE [dbo].[SystemForms] ADD UNIQUE NONCLUSTERED 
+(
+	[NameAr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO

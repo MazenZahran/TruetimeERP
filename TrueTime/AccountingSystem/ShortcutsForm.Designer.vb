@@ -19,13 +19,14 @@ Partial Class ShortcutsForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ShortcutsForm))
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.TblSystemForms = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryShortCut = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
@@ -62,7 +63,7 @@ Partial Class ShortcutsForm
         Me.TblSystemForms.MainView = Me.GridView1
         Me.TblSystemForms.Name = "TblSystemForms"
         Me.TblSystemForms.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryShortCut})
-        Me.TblSystemForms.Size = New System.Drawing.Size(705, 353)
+        Me.TblSystemForms.Size = New System.Drawing.Size(705, 337)
         Me.TblSystemForms.TabIndex = 4
         Me.TblSystemForms.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -71,6 +72,7 @@ Partial Class ShortcutsForm
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn5, Me.GridColumn4})
         Me.GridView1.GridControl = Me.TblSystemForms
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsView.ShowFooter = True
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'GridColumn1
@@ -80,30 +82,18 @@ Partial Class ShortcutsForm
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.OptionsColumn.AllowEdit = False
         Me.GridColumn1.OptionsColumn.ReadOnly = True
-        Me.GridColumn1.Visible = True
-        Me.GridColumn1.VisibleIndex = 0
         Me.GridColumn1.Width = 100
         '
         'GridColumn2
         '
-        Me.GridColumn2.Caption = "اسم الفورم بالعربي"
+        Me.GridColumn2.Caption = "السند"
         Me.GridColumn2.FieldName = "NameAr"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.OptionsColumn.AllowEdit = False
         Me.GridColumn2.OptionsColumn.ReadOnly = True
         Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 1
+        Me.GridColumn2.VisibleIndex = 0
         Me.GridColumn2.Width = 250
-        '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "الاختصار"
-        Me.GridColumn4.ColumnEdit = Me.RepositoryShortCut
-        Me.GridColumn4.FieldName = "ShortCut"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 3
-        Me.GridColumn4.Width = 150
         '
         'GridColumn5
         '
@@ -113,16 +103,23 @@ Partial Class ShortcutsForm
         Me.GridColumn5.OptionsColumn.AllowEdit = False
         Me.GridColumn5.OptionsColumn.ReadOnly = True
         Me.GridColumn5.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
-        Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 2
         Me.GridColumn5.Width = 200
+        '
+        'GridColumn4
+        '
+        Me.GridColumn4.Caption = "الاختصار"
+        Me.GridColumn4.ColumnEdit = Me.RepositoryShortCut
+        Me.GridColumn4.FieldName = "ShortCut"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 1
+        Me.GridColumn4.Width = 150
         '
         'RepositoryShortCut
         '
         Me.RepositoryShortCut.AutoHeight = False
-        Me.RepositoryShortCut.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "اضغط على الاختصار", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), "")})
+        Me.RepositoryShortCut.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)})
         Me.RepositoryShortCut.Name = "RepositoryShortCut"
-        Me.RepositoryShortCut.ReadOnly = True
         Me.RepositoryShortCut.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         '
         'btnSave
@@ -131,9 +128,10 @@ Partial Class ShortcutsForm
         Me.btnSave.Appearance.ForeColor = System.Drawing.Color.White
         Me.btnSave.Appearance.Options.UseBackColor = True
         Me.btnSave.Appearance.Options.UseForeColor = True
-        Me.btnSave.Location = New System.Drawing.Point(16, 369)
+        Me.btnSave.ImageOptions.Image = Global.TrueTime.My.Resources.Resources.add_32
+        Me.btnSave.Location = New System.Drawing.Point(16, 359)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(206, 28)
+        Me.btnSave.Size = New System.Drawing.Size(152, 38)
         Me.btnSave.StyleController = Me.LayoutControl1
         Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "حفظ"
@@ -152,25 +150,28 @@ Partial Class ShortcutsForm
         Me.LayoutControlItem1.Control = Me.TblSystemForms
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(711, 353)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(711, 343)
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem1.TextVisible = False
         '
         'LayoutControlItem2
         '
         Me.LayoutControlItem2.Control = Me.btnSave
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 353)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 343)
+        Me.LayoutControlItem2.MaxSize = New System.Drawing.Size(158, 44)
+        Me.LayoutControlItem2.MinSize = New System.Drawing.Size(158, 44)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(212, 34)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(158, 44)
+        Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem2.TextVisible = False
         '
         'EmptySpaceItem1
         '
         Me.EmptySpaceItem1.AllowHotTrack = False
-        Me.EmptySpaceItem1.Location = New System.Drawing.Point(212, 353)
+        Me.EmptySpaceItem1.Location = New System.Drawing.Point(158, 343)
         Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Size = New System.Drawing.Size(499, 34)
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(553, 44)
         Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
         '
         'ShortcutsForm
@@ -179,6 +180,7 @@ Partial Class ShortcutsForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(737, 413)
         Me.Controls.Add(Me.LayoutControl1)
+        Me.IconOptions.SvgImage = CType(resources.GetObject("ShortcutsForm.IconOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.Name = "ShortcutsForm"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Text = "إدارة الاختصارات"

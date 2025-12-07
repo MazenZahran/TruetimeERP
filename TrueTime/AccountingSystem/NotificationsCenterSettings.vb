@@ -3,7 +3,7 @@
 
     Private Sub VouchersSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GetFormsNames()
-        GetNotificationsForms()
+        GetSystemForms()
     End Sub
 
     Private Sub GetFormsNames()
@@ -15,17 +15,58 @@
 
     End Sub
 
-    Private Sub GetNotificationsForms()
+    Private Sub GetSystemForms()
         Dim sql As New SQLControl
         Dim sqlString As String
-        sqlString = "SELECT * FROM NotificationsForms"
+        sqlString = "SELECT * FROM SystemForms"
         sql.SqlTrueTimeRunQuery(sqlString)
         TblNotificationsForms.DataSource = sql.SQLDS.Tables(0)
 
     End Sub
 
+    Private Sub GridView1_KeyDown(sender As Object, e As KeyEventArgs) Handles GridView1.KeyDown
+        If e.KeyCode = Keys.Delete Then
+            DeleteSelectedRow()
+        End If
+    End Sub
+
+    Private Sub DeleteSelectedRow()
+        Try
+            Dim selectedRowHandle As Integer = GridView1.FocusedRowHandle
+            If selectedRowHandle < 0 Then
+                MsgBox("الرجاء تحديد سطر للحذف", MsgBoxStyle.Information, "تنبيه")
+                Return
+            End If
+
+            Dim result As MsgBoxResult = MsgBox("هل أنت متأكد من حذف هذا السطر؟", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "تأكيد الحذف")
+            If result = MsgBoxResult.No Then
+                Return
+            End If
+
+            Dim idObj As Object = GridView1.GetRowCellValue(selectedRowHandle, "id")
+
+            If Not IsNothing(idObj) AndAlso Not IsDBNull(idObj) AndAlso Not String.IsNullOrWhiteSpace(idObj.ToString()) Then
+                Dim idVal As Integer = 0
+                Integer.TryParse(idObj.ToString(), idVal)
+
+                Dim sql As New SQLControl
+                Dim sqlString As String = "DELETE FROM SystemForms WHERE id = " & idVal
+                sql.SqlTrueTimeRunQuery(sqlString)
+                MsgBox("تم الحذف بنجاح", MsgBoxStyle.Information, "نجح")
+            End If
+
+            GridView1.DeleteRow(selectedRowHandle)
+            GetSystemForms()
+
+        Catch ex As Exception
+            MsgBox("حدث خطأ أثناء الحذف: " & ex.Message, MsgBoxStyle.Critical, "خطأ")
+        End Try
+    End Sub
+
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
+            Dim usedFormIDs As New List(Of Integer)
+
             For i = 0 To GridView1.RowCount - 1
                 Dim idObj As Object = GridView1.GetRowCellValue(i, "id")
                 Dim formIDObj As Object = GridView1.GetRowCellValue(i, "FormID")
@@ -34,6 +75,15 @@
                     Continue For
                 End If
 
+                Dim formID As Integer = 0
+                Integer.TryParse(formIDObj.ToString(), formID)
+
+                If usedFormIDs.Contains(formID) Then
+                    MsgBox("لا يمكن تكرار نفس السند في القائمة. الصف رقم " & (i + 1), MsgBoxStyle.Exclamation, "تحذير")
+                    Return
+                End If
+                usedFormIDs.Add(formID)
+
                 Dim phonesObj As Object = GridView1.GetRowCellValue(i, "Phones")
                 Dim whenEditObj As Object = GridView1.GetRowCellValue(i, "WhenEdit")
                 Dim whenDeleteObj As Object = GridView1.GetRowCellValue(i, "WhenDelete")
@@ -41,9 +91,6 @@
 
                 Dim sql As New SQLControl
                 Dim sqlString As String = String.Empty
-
-                Dim formID As Integer = 0
-                Integer.TryParse(formIDObj.ToString(), formID)
 
                 Dim phones As String = ""
                 If Not IsNothing(phonesObj) AndAlso Not IsDBNull(phonesObj) Then
@@ -71,13 +118,23 @@
                     End If
                 End If
 
+                If String.IsNullOrWhiteSpace(phones) Then
+                    MsgBox("يجب إدخال أرقام الهواتف. السطر رقم " & (i + 1), MsgBoxStyle.Exclamation, "تحذير")
+                    Return
+                End If
+
+                If whenEdit = 0 AndAlso whenDelete = 0 AndAlso whenAdd = 0 Then
+                    MsgBox("يجب تحديد خيار واحد على الأقل (عند التعديل، عند الحذف، أو عند الإضافة). السطر رقم " & (i + 1), MsgBoxStyle.Exclamation, "تحذير")
+                    Return
+                End If
+
                 If idObj Is Nothing OrElse IsDBNull(idObj) OrElse String.IsNullOrWhiteSpace(idObj.ToString()) Then
-                    sqlString = "INSERT INTO NotificationsForms (FormID, Phones, WhenEdit, WhenDelete, WhenAdd) VALUES (" &
+                    sqlString = "INSERT INTO SystemForms (FormID, Phones, WhenEdit, WhenDelete, WhenAdd) VALUES (" &
                                      formID & ", N'" & phones & "', " & whenEdit & ", " & whenDelete & ", " & whenAdd & ")"
                 Else
                     Dim idVal As Integer = 0
                     Integer.TryParse(idObj.ToString(), idVal)
-                    sqlString = "UPDATE NotificationsForms SET " &
+                    sqlString = "UPDATE SystemForms SET " &
                                  "FormID = " & formID & ", " &
                                  "Phones = N'" & phones.Replace("'", "''") & "', " &
                                  "WhenEdit = " & whenEdit & ", " &
@@ -91,7 +148,7 @@
             Next
 
             MsgBox("تم الحفظ بنجاح")
-            GetNotificationsForms()
+            GetSystemForms()
 
         Catch ex As Exception
             MsgBox("حدث خطأ أثناء الحفظ: " & ex.Message, MsgBoxStyle.Critical, "خطأ")
