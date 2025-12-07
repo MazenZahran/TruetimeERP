@@ -1943,8 +1943,8 @@ Public Class MoneyTrans
 
 
             Dim Sql As New SQLControl
-            Sql.SqlTrueAccountingRunQuery("SELECT " & _Type & " FROM SystemForms WHERE FormID = " & FormID & " ;
-                                                   SELECT Phones FROM SystemForms WHERE FormID = " & FormID & ";
+            Sql.SqlTrueAccountingRunQuery("SELECT " & _Type & " FROM NotificationsForms WHERE FormID = " & FormID & " ;
+                                                   SELECT Phones FROM NotificationsForms WHERE FormID = " & FormID & ";
                                                    SELECT NameAr FROM SystemForms WHERE FormID = " & FormID)
             SendStatus = Sql.SQLDS.Tables(0).Rows(0).Item(_Type)
             Phones = Sql.SQLDS.Tables(1).Rows(0).Item("Phones")

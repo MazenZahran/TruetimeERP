@@ -3,7 +3,7 @@
 
     Private Sub VouchersSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GetFormsNames()
-        GetSystemForms()
+        GetNotificationsForms()
     End Sub
 
     Private Sub GetFormsNames()
@@ -15,10 +15,10 @@
 
     End Sub
 
-    Private Sub GetSystemForms()
+    Private Sub GetNotificationsForms()
         Dim sql As New SQLControl
         Dim sqlString As String
-        sqlString = "SELECT * FROM SystemForms"
+        sqlString = "SELECT * FROM NotificationsForms"
         sql.SqlTrueTimeRunQuery(sqlString)
         TblNotificationsForms.DataSource = sql.SQLDS.Tables(0)
 
@@ -50,13 +50,13 @@
                 Integer.TryParse(idObj.ToString(), idVal)
 
                 Dim sql As New SQLControl
-                Dim sqlString As String = "DELETE FROM SystemForms WHERE id = " & idVal
+                Dim sqlString As String = "DELETE FROM NotificationsForms WHERE id = " & idVal
                 sql.SqlTrueTimeRunQuery(sqlString)
                 MsgBox("تم الحذف بنجاح", MsgBoxStyle.Information, "نجح")
             End If
 
             GridView1.DeleteRow(selectedRowHandle)
-            GetSystemForms()
+            GetNotificationsForms()
 
         Catch ex As Exception
             MsgBox("حدث خطأ أثناء الحذف: " & ex.Message, MsgBoxStyle.Critical, "خطأ")
@@ -129,12 +129,12 @@
                 End If
 
                 If idObj Is Nothing OrElse IsDBNull(idObj) OrElse String.IsNullOrWhiteSpace(idObj.ToString()) Then
-                    sqlString = "INSERT INTO SystemForms (FormID, Phones, WhenEdit, WhenDelete, WhenAdd) VALUES (" &
+                    sqlString = "INSERT INTO NotificationsForms (FormID, Phones, WhenEdit, WhenDelete, WhenAdd) VALUES (" &
                                      formID & ", N'" & phones & "', " & whenEdit & ", " & whenDelete & ", " & whenAdd & ")"
                 Else
                     Dim idVal As Integer = 0
                     Integer.TryParse(idObj.ToString(), idVal)
-                    sqlString = "UPDATE SystemForms SET " &
+                    sqlString = "UPDATE NotificationsForms SET " &
                                  "FormID = " & formID & ", " &
                                  "Phones = N'" & phones.Replace("'", "''") & "', " &
                                  "WhenEdit = " & whenEdit & ", " &
@@ -148,7 +148,7 @@
             Next
 
             MsgBox("تم الحفظ بنجاح")
-            GetSystemForms()
+            GetNotificationsForms()
 
         Catch ex As Exception
             MsgBox("حدث خطأ أثناء الحفظ: " & ex.Message, MsgBoxStyle.Critical, "خطأ")

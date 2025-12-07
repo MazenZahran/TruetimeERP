@@ -1,12 +1,20 @@
-﻿CREATE TABLE [dbo].[SystemForms](
+﻿CREATE TABLE NotificationsForms (
+    [id] INT IDENTITY(1,1) PRIMARY KEY,
+    [FormID] INT,
+    [EmpID] INT DEFAULT -1,
+    [Phones] NVARCHAR(MAX),
+    [WhenEdit] BIT DEFAULT 0,
+    [WhenDelete] BIT DEFAULT 0,
+    [WhenAdd] BIT DEFAULT 0
+);
+
+CREATE TABLE [dbo].[SystemForms](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[FormID] [int] NOT NULL,
 	[NameAr] [nvarchar](255) NOT NULL,
 	[NameEn] [nvarchar](255) NOT NULL,
 	[CategoryAr] [nvarchar](max) NOT NULL,
-	[CategoryEn] [nvarchar](max) NOT NULL,
-	[ShortCut] [nvarchar](max) NULL,
-	[FormName] [nvarchar](max) NULL,
+	[CategoryEn] [nvarchar](max) NOT NULL
  CONSTRAINT [PK_SystemForms_1] PRIMARY KEY CLUSTERED 
 (
 	[FormID] ASC
@@ -15,6 +23,13 @@
 GO
 SET IDENTITY_INSERT [dbo].[SystemForms] ON 
 GO
+
+ALTER TABLE [dbo].[SystemForms] ADD [ShortCut] [nvarchar](max)
+GO
+
+ALTER TABLE [dbo].[SystemForms] ADD [FormName] [nvarchar](max)
+GO
+
 INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (4, 1, N'فاتورة مشتريات', N'PurchaseInvoice', N'سندات', N'voucher', N'', N'MoneyTransList')
 GO
 INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (5, 2, N'فاتورة مبيعات', N'SalesInvoice', N'سندات', N'voucher', N'Ctrl+I', N'MoneyTransList')
