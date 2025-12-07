@@ -12,30 +12,38 @@ Public Class MoneyTransList
 
     Public Property InitialDocName As Integer = 0
 
-    Private Sub NewDocument()
+    Public Sub NewDocument(Optional _DocName As Integer = 0)
 
-        Select Case TextEditDocName.EditValue
+        Dim DocName As Integer = 0
+
+        If (String.IsNullOrEmpty(_DocName) Or _DocName = 0) Then
+            DocName = TextEditDocName.EditValue
+        Else
+            DocName = _DocName
+        End If
+
+        Select Case DocName
             Case 1, 17, 8
                 Dim ctr As Integer = 0
                 Dim child As Form = Nothing
                 Dim f As AccStockMove = New AccStockMove()
-                f.DocName.EditValue = TextEditDocName.EditValue
+                f.DocName.EditValue = DocName
                 ctr = ctr + 1
                 f.MdiParent = My.Forms.Main
                 With f
                     .Show()
-                    .DocName.EditValue = TextEditDocName.EditValue
-                    .DocName.Text = TextEditDocName.EditValue
+                    .DocName.EditValue = DocName
+                    .DocName.Text = DocName
                     .DocStatus.Text = -1
                     .LoadDefault()
-                    If TextEditDocName.EditValue = 1 Then .Text = "فاتورة مشتريات"
-                    If TextEditDocName.EditValue = 17 Then .Text = "سند ادخال بضاعة"
-                    If TextEditDocName.EditValue = 8 Then .Text = "ارسالية مشتريات"
+                    If DocName = 1 Then .Text = "فاتورة مشتريات"
+                    If DocName = 17 Then .Text = "سند ادخال بضاعة"
+                    If DocName = 8 Then .Text = "ارسالية مشتريات"
                     '.LayoutControlItem26.Visibility = XtraLayout.Utils.LayoutVisibility.Never
                     .LookCostCenter.EditValue = GetDefaultCostCenter(GlobalVariables.CurrUser)
-                    .DocID.EditValue = GetDocNo(TextEditDocName.EditValue, True)
-                    If TextEditDocName.EditValue = 17 Then .AccountForRefranace.EditValue = "4020000000"
-                    If TextEditDocName.EditValue = 8 Then
+                    .DocID.EditValue = GetDocNo(DocName, True)
+                    If DocName = 17 Then .AccountForRefranace.EditValue = "4020000000"
+                    If DocName = 8 Then
                         .ColStockDiscount.Visible = False
                         .ColStockPrice.Visible = False
                         .colDocAmount.Visible = False
@@ -49,22 +57,22 @@ Public Class MoneyTransList
                 Dim ctr As Integer = 0
                 Dim child As Form = Nothing
                 Dim f As AccStockMove = New AccStockMove()
-                f.DocName.EditValue = TextEditDocName.EditValue
+                f.DocName.EditValue = DocName
                 ctr = ctr + 1
                 f.MdiParent = My.Forms.Main
                 With f
                     .DocName.EditValue = 1
-                    .DocName.Text = TextEditDocName.EditValue
+                    .DocName.Text = DocName
                     .Show()
                     .LoadDefault()
-                    If TextEditDocName.EditValue = 2 Then .Text = "فاتورة مبيعات"
-                    If TextEditDocName.EditValue = 18 Then .Text = "سند اخراج بضاعة"
-                    If TextEditDocName.EditValue = 9 Then .Text = "ارسالية مبيعات"
+                    If DocName = 2 Then .Text = "فاتورة مبيعات"
+                    If DocName = 18 Then .Text = "سند اخراج بضاعة"
+                    If DocName = 9 Then .Text = "ارسالية مبيعات"
                     '.LayoutControlItem26.Visibility = XtraLayout.Utils.LayoutVisibility.Never
                     .LookCostCenter.EditValue = GetDefaultCostCenter(GlobalVariables.CurrUser)
-                    .DocID.EditValue = GetDocNo(TextEditDocName.EditValue, True)
-                    If TextEditDocName.EditValue = 18 Then .AccountForRefranace.EditValue = "4020000000"
-                    If TextEditDocName.EditValue = 9 Then
+                    .DocID.EditValue = GetDocNo(DocName, True)
+                    If DocName = 18 Then .AccountForRefranace.EditValue = "4020000000"
+                    If DocName = 9 Then
                         .ColStockDiscount.Visible = False
                         .ColStockPrice.Visible = False
                         .colDocAmount.Visible = False
@@ -219,11 +227,11 @@ Public Class MoneyTransList
                 Dim ctr As Integer = 0
                 Dim child As Form = Nothing
                 Dim f As CreditDebitNotes = New CreditDebitNotes()
-                f.TextDocName.EditValue = TextEditDocName.EditValue
+                f.TextDocName.EditValue = DocName
                 ctr = ctr + 1
                 With f
                     .TextDocStatus.EditValue = -1
-                    .TextDocName.EditValue = TextEditDocName.EditValue
+                    .TextDocName.EditValue = DocName
                     If .ShowDialog <> DialogResult.OK Then
                         RefreshList()
                     End If
@@ -233,11 +241,11 @@ Public Class MoneyTransList
                 Dim ctr As Integer = 0
                 Dim child As Form = Nothing
                 Dim f As CreditDebitNotes = New CreditDebitNotes()
-                f.TextDocName.EditValue = TextEditDocName.EditValue
+                f.TextDocName.EditValue = DocName
                 ctr = ctr + 1
                 With f
                     .TextDocStatus.EditValue = -1
-                    .TextDocName.EditValue = TextEditDocName.EditValue
+                    .TextDocName.EditValue = DocName
                     If .ShowDialog <> DialogResult.OK Then
                         RefreshList()
                     End If

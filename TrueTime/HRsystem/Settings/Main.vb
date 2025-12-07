@@ -425,19 +425,28 @@ Public Class Main
             End If
 
             Dim sql As New SQLControl
-            Dim sqlString As String = "SELECT FormID, FormName FROM SystemForms WHERE ShortCut = N'" & shortcutText.Replace("'", "''") & "'"
+            Dim sqlString As String = "SELECT FormID, FormName, ISNULL(OpenAsNew, 0) AS OpenAsNew FROM SystemForms WHERE ShortCut = N'" & shortcutText.Replace("'", "''") & "'"
             sql.SqlTrueTimeRunQuery(sqlString)
 
             If sql.SQLDS.Tables(0).Rows.Count > 0 Then
                 Dim formIDObj As Object = sql.SQLDS.Tables(0).Rows(0).Item("FormID")
                 Dim formName As String = sql.SQLDS.Tables(0).Rows(0).Item("FormName").ToString()
+                Dim openAsNew As Boolean = False
+
+                If Not IsDBNull(sql.SQLDS.Tables(0).Rows(0).Item("OpenAsNew")) Then
+                    openAsNew = CBool(sql.SQLDS.Tables(0).Rows(0).Item("OpenAsNew"))
+                End If
 
                 Dim formID As Integer = 0
                 If formIDObj IsNot Nothing AndAlso Not IsDBNull(formIDObj) Then
                     Integer.TryParse(formIDObj.ToString(), formID)
                 End If
 
-                OpenFormByName(formName, formID)
+                If openAsNew Then
+                    MoneyTransList.NewDocument(formID)
+                Else
+                    OpenFormByName(formName, formID)
+                End If
 
                 e.Handled = True
                 e.SuppressKeyPress = True
@@ -3536,7 +3545,7 @@ Public Class Main
         End If
     End Sub
 
-    Private Sub BarButtonItem278_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem278.ItemClick
+    Private Sub btnGeneralSettings_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnGeneralSettings.ItemClick
         QuickSettings.ShowDialog()
     End Sub
 

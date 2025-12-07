@@ -20,13 +20,12 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.components = New System.ComponentModel.Container()
         Dim SplashScreenManager1 As DevExpress.XtraSplashScreen.SplashScreenManager = New DevExpress.XtraSplashScreen.SplashScreenManager(Me, Nothing, True, True)
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
-        Dim SkinPaddingEdges4 As DevExpress.Skins.SkinPaddingEdges = New DevExpress.Skins.SkinPaddingEdges()
-        Dim SkinPaddingEdges5 As DevExpress.Skins.SkinPaddingEdges = New DevExpress.Skins.SkinPaddingEdges()
-        Dim PushTransition2 As DevExpress.Utils.Animation.PushTransition = New DevExpress.Utils.Animation.PushTransition()
-        Dim SkinPaddingEdges6 As DevExpress.Skins.SkinPaddingEdges = New DevExpress.Skins.SkinPaddingEdges()
+        Dim SkinPaddingEdges1 As DevExpress.Skins.SkinPaddingEdges = New DevExpress.Skins.SkinPaddingEdges()
+        Dim SkinPaddingEdges2 As DevExpress.Skins.SkinPaddingEdges = New DevExpress.Skins.SkinPaddingEdges()
+        Dim PushTransition1 As DevExpress.Utils.Animation.PushTransition = New DevExpress.Utils.Animation.PushTransition()
+        Dim SkinPaddingEdges3 As DevExpress.Skins.SkinPaddingEdges = New DevExpress.Skins.SkinPaddingEdges()
         Me.RibbonControl = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.Notifications = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonNotifications = New DevExpress.XtraBars.BarButtonItem()
@@ -228,7 +227,6 @@ Partial Class Main
         Me.BarButtonItem275 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem276 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem277 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem278 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem279 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem280 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem281 = New DevExpress.XtraBars.BarButtonItem()
@@ -309,6 +307,7 @@ Partial Class Main
         Me.btnVouchersSettings = New DevExpress.XtraBars.BarButtonItem()
         Me.btnShortCut = New DevExpress.XtraBars.BarButtonItem()
         Me.btnControlPanel = New DevExpress.XtraBars.BarButtonItem()
+        Me.btnGeneralSettings = New DevExpress.XtraBars.BarButtonItem()
         Me.RibbonMiniToolbar1 = New DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(Me.components)
         Me.PopupMenu8 = New DevExpress.XtraBars.PopupMenu(Me.components)
         Me.RibbonPageCategory2 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
@@ -596,9 +595,9 @@ Partial Class Main
         Me.RibbonControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue
         Me.RibbonControl.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(93, 107, 93, 107)
         Me.RibbonControl.ExpandCollapseItem.Id = 0
-        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.Notifications, Me.RibbonControl.ExpandCollapseItem, Me.BarButtonNotifications, Me.BarButtonItem1, Me.BarButtonItemEmloyeesFile, Me.BarButtonEmployeesEdit, Me.BarButtonItemIndexes, Me.SkinRibbonGalleryBarItem2, Me.BarButtonItemShiftReport, Me.BarButtonItemAttendaceTrans, Me.BarStaticItemAbout, Me.BarButtonItem17, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.BarButtonItem2, Me.BarButtonItem9, Me.BarButtonItem15, Me.BarButtonItem55, Me.BarButtonItem56, Me.BarButtonItem58, Me.BarButtonItem59, Me.BarButtonItem60, Me.BarButtonItem63, Me.BarButtonItem64, Me.BarButtonItem65, Me.BarButtonItem66, Me.BarButtonItem70, Me.BarButtonItem71, Me.BarButtonItem72, Me.BarButtonItem73, Me.BarButtonItem74, Me.SkinRibbonGalleryBarItem3, Me.BarButtonItem75, Me.BarButtonItem78, Me.BarButtonItem82, Me.BarButtonItem89, Me.BarSubItem1, Me.BarSubItem2, Me.BarButtonItem93, Me.BarButtonItem94, Me.BarButtonItem95, Me.BarButtonItem96, Me.BarButtonItem97, Me.BarButtonItem98, Me.BarButtonItem99, Me.BarButtonItem100, Me.BarButtonItem102, Me.ItemDataBaseName, Me.ItemUserName, Me.BarButtonItem103, Me.BarButtonItem104, Me.BarButtonItem106, Me.BarButtonItem107, Me.BarButtonItem108, Me.BarButtonItem109, Me.BarButtonItem110, Me.BarButtonItem114, Me.BarButtonItem115, Me.BarLanguage, Me.BarButtonItem119, Me.BarButtonItem120, Me.BarStaticItem1, Me.BarStaticItem4, Me.BarButtonCostCenter, Me.BarButtonItem122, Me.BarButtonItemAttendanceByHour, Me.BarButtonItem128, Me.ItemElapseTime, Me.BarSubItem3, Me.BarButtonItem130, Me.BarButtonItem131, Me.BarButtonItem138, Me.BarButtonItem137, Me.BarButtonItem139, Me.BarButtonItem141, Me.BarStaticItem5, Me.BarButtonItem142, Me.BarButtonItem143, Me.BarButtonItem145, Me.BarButtonItem146, Me.BarButtonItem147, Me.BarButtonItem148, Me.BarButtonItem154, Me.BarButtonItem155, Me.BarButtonItem156, Me.BarButtonItem157, Me.BarButtonItem158, Me.BarButtonSales, Me.BarButtonItem165, Me.BarStaticItem6, Me.BarButtonItem178, Me.BarButtonPurchases, Me.BarButtonItem180, Me.BarButtonItem181, Me.BarButtonItem182, Me.BarButtonItem184, Me.BarButtonItem185, Me.BarButtonItem186, Me.BarButtonItem187, Me.BarButtonItem190, Me.BarButtonItem191, Me.BarButtonItem179, Me.BarButtonItem188, Me.BarButtonItem195, Me.BarButtonItem196, Me.BarButtonItem197, Me.BarButtonItem198, Me.BarButtonItem199, Me.BarButtonItem201, Me.BarButtonItem205, Me.BarButtonItemStockInternal, Me.BarSubItem11, Me.BarButtonItemShelfContains, Me.BarButtonItem208, Me.BarButtonItemBalanceOnShelves, Me.BarButtonItem3, Me.BarButtonItem210, Me.BarButtonItem211, Me.BarButtonItemSelfServiceSettings, Me.SkinPaletteDropDownButtonItem1, Me.BarSubItem12, Me.BarButtonItem91, Me.BarButtonItemItemsTransOnShelves, Me.BarSubItem13, Me.BarButtonItem214, Me.BarButtonItem215, Me.BarStaticItem8, Me.BarEditItemSync, Me.BarStaticItem9, Me.BarButtonItemStockOUT, Me.BarButtonItemStockIn, Me.BarButtonItem90, Me.BarSubItem15, Me.BarButtonItem220, Me.BarButtonItem221, Me.BarButtonItem222, Me.BarButtonItem223, Me.BarButtonItem224, Me.BarButtonItem225, Me.BarButtonItem227, Me.BarButtonItem229, Me.BarButtonItem230, Me.BarButtonItem231, Me.BarButtonItem232, Me.BarButtonItem233, Me.BarButtonItem234, Me.BarButtonItem212, Me.BarButtonItem235, Me.BarButtonDeleteData, Me.BarButtonItem238, Me.BarButtonItem239, Me.BarButtonItem240, Me.BarButtonItemHR_Settings, Me.BarButtonItem243, Me.BarButtonItem244, Me.BarButtonItem245, Me.BarButtonItem246, Me.BarButtonItem247, Me.BarEditDate, Me.BarButtonItem251, Me.BarButtonItem252, Me.BarButtonItem253, Me.BarButtonItem254, Me.BarButtonItem255, Me.BarButtonItem256, Me.BarWorkspaceMenuItem2, Me.BarSubItem16, Me.BarButtonItem112, Me.BarButtonItem207, Me.BarButtonItem162, Me.BarButtonItem259, Me.BarButtonItem260, Me.BarButtonItem261, Me.BarSubItem17, Me.BarButtonItem250, Me.BarButtonItem262, Me.BarEndDate, Me.BarButtonItem263, Me.BarButtonItem264, Me.BarButtonInternalOrders, Me.BarButtonItem265, Me.BarButtonItem266, Me.BarButtonItem267, Me.BarSubItem18, Me.BarButtonItem268, Me.BarButtonItem269, Me.BarButtonItem270, Me.BarButtonItem271, Me.BarButtonItem272, Me.BarButtonItem273, Me.BarButtonItem275, Me.BarButtonItem276, Me.BarButtonItem277, Me.BarButtonItem278, Me.BarButtonItem279, Me.BarButtonItem280, Me.BarButtonItem281, Me.BarButtonItem274, Me.BarButtonItem282, Me.BarItemBalanceByBatchNo, Me.BarButtonItem284, Me.BarAccountStatmentForRef, Me.BarButtonItem83, Me.BarButtonItem85, Me.BarButtonItem287, Me.BarButtonItems, Me.BarButtonItem289, Me.BarButtonItemChangePrice, Me.BarButtonItem291, Me.BarButtonItem292, Me.BarButtonItem293, Me.BarButtonItem294, Me.BarButtonItem295, Me.BarButtonItem296, Me.BarButtonMonthlyAttReport, Me.BarButtonMonthlyAdjustmentAtt, Me.BarButtonItem237, Me.BarButtonItemCostCenter1, Me.BarButtonItem297, Me.BarButtonItem121, Me.BarButtonItem203, Me.BarSubItem7, Me.BarSubItem8, Me.BarSubItem9, Me.BarButtonItem298, Me.BarBarPlanRequiredHoursForm, Me.BarPlanRequiredHours, Me.BarPlansNames, Me.BarButtonItem299, Me.BarButtonItem300, Me.BarButtonItemGeneralAttendanceReport, Me.BarButtonPrintBarcodesSettings, Me.BarInternalOrdersAudit, Me.ItemsBarcodes, Me.BarInternalOrdersLogsReports, Me.BarButtonItem303, Me.BarButtonItem304, Me.BarSubItem14, Me.BarButtonItem305, Me.BarButtonItem306, Me.BarButtonItem84, Me.BarButtonItem202, Me.BarSubItem19, Me.BarButtonItem307, Me.BarButtonItem308, Me.BarButtonItemAccountStatment, Me.BarButtonItem213, Me.BarButtonItem219, Me.BarButtonItemQuickAddNewItem, Me.BarButtonPurchaseDispatch, Me.BarButtonSalesDispatch, Me.BarButtonPrintBarcodes, Me.BarButtonItem206, Me.BarButtonItem218, Me.BarButtonItem241, Me.BarButtonItem242, Me.BarButtonItem288, Me.BarButtonItem302, Me.BarSubItemJardMenue, Me.BarButtonItemJard, Me.BarSubItem21, Me.BarButtonItem309, Me.BarButtonItemRCCIInsentives, Me.BarButtonItem311, Me.BarButtonItemRCCIreports, Me.BarCustomersCarsAndParts, Me.BarButtonItem16, Me.Statickey_, Me.Statickey, Me.mnuWhatsApp, Me.BarButtonItem285, Me.btnOpenLinkWhatsApp, Me.mnuFinansialSett, Me.btnFinansialSettings, Me.btnVouchersSettings, Me.btnShortCut, Me.btnControlPanel})
+        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.Notifications, Me.RibbonControl.ExpandCollapseItem, Me.BarButtonNotifications, Me.BarButtonItem1, Me.BarButtonItemEmloyeesFile, Me.BarButtonEmployeesEdit, Me.BarButtonItemIndexes, Me.SkinRibbonGalleryBarItem2, Me.BarButtonItemShiftReport, Me.BarButtonItemAttendaceTrans, Me.BarStaticItemAbout, Me.BarButtonItem17, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.BarButtonItem2, Me.BarButtonItem9, Me.BarButtonItem15, Me.BarButtonItem55, Me.BarButtonItem56, Me.BarButtonItem58, Me.BarButtonItem59, Me.BarButtonItem60, Me.BarButtonItem63, Me.BarButtonItem64, Me.BarButtonItem65, Me.BarButtonItem66, Me.BarButtonItem70, Me.BarButtonItem71, Me.BarButtonItem72, Me.BarButtonItem73, Me.BarButtonItem74, Me.SkinRibbonGalleryBarItem3, Me.BarButtonItem75, Me.BarButtonItem78, Me.BarButtonItem82, Me.BarButtonItem89, Me.BarSubItem1, Me.BarSubItem2, Me.BarButtonItem93, Me.BarButtonItem94, Me.BarButtonItem95, Me.BarButtonItem96, Me.BarButtonItem97, Me.BarButtonItem98, Me.BarButtonItem99, Me.BarButtonItem100, Me.BarButtonItem102, Me.ItemDataBaseName, Me.ItemUserName, Me.BarButtonItem103, Me.BarButtonItem104, Me.BarButtonItem106, Me.BarButtonItem107, Me.BarButtonItem108, Me.BarButtonItem109, Me.BarButtonItem110, Me.BarButtonItem114, Me.BarButtonItem115, Me.BarLanguage, Me.BarButtonItem119, Me.BarButtonItem120, Me.BarStaticItem1, Me.BarStaticItem4, Me.BarButtonCostCenter, Me.BarButtonItem122, Me.BarButtonItemAttendanceByHour, Me.BarButtonItem128, Me.ItemElapseTime, Me.BarSubItem3, Me.BarButtonItem130, Me.BarButtonItem131, Me.BarButtonItem138, Me.BarButtonItem137, Me.BarButtonItem139, Me.BarButtonItem141, Me.BarStaticItem5, Me.BarButtonItem142, Me.BarButtonItem143, Me.BarButtonItem145, Me.BarButtonItem146, Me.BarButtonItem147, Me.BarButtonItem148, Me.BarButtonItem154, Me.BarButtonItem155, Me.BarButtonItem156, Me.BarButtonItem157, Me.BarButtonItem158, Me.BarButtonSales, Me.BarButtonItem165, Me.BarStaticItem6, Me.BarButtonItem178, Me.BarButtonPurchases, Me.BarButtonItem180, Me.BarButtonItem181, Me.BarButtonItem182, Me.BarButtonItem184, Me.BarButtonItem185, Me.BarButtonItem186, Me.BarButtonItem187, Me.BarButtonItem190, Me.BarButtonItem191, Me.BarButtonItem179, Me.BarButtonItem188, Me.BarButtonItem195, Me.BarButtonItem196, Me.BarButtonItem197, Me.BarButtonItem198, Me.BarButtonItem199, Me.BarButtonItem201, Me.BarButtonItem205, Me.BarButtonItemStockInternal, Me.BarSubItem11, Me.BarButtonItemShelfContains, Me.BarButtonItem208, Me.BarButtonItemBalanceOnShelves, Me.BarButtonItem3, Me.BarButtonItem210, Me.BarButtonItem211, Me.BarButtonItemSelfServiceSettings, Me.SkinPaletteDropDownButtonItem1, Me.BarSubItem12, Me.BarButtonItem91, Me.BarButtonItemItemsTransOnShelves, Me.BarSubItem13, Me.BarButtonItem214, Me.BarButtonItem215, Me.BarStaticItem8, Me.BarEditItemSync, Me.BarStaticItem9, Me.BarButtonItemStockOUT, Me.BarButtonItemStockIn, Me.BarButtonItem90, Me.BarSubItem15, Me.BarButtonItem220, Me.BarButtonItem221, Me.BarButtonItem222, Me.BarButtonItem223, Me.BarButtonItem224, Me.BarButtonItem225, Me.BarButtonItem227, Me.BarButtonItem229, Me.BarButtonItem230, Me.BarButtonItem231, Me.BarButtonItem232, Me.BarButtonItem233, Me.BarButtonItem234, Me.BarButtonItem212, Me.BarButtonItem235, Me.BarButtonDeleteData, Me.BarButtonItem238, Me.BarButtonItem239, Me.BarButtonItem240, Me.BarButtonItemHR_Settings, Me.BarButtonItem243, Me.BarButtonItem244, Me.BarButtonItem245, Me.BarButtonItem246, Me.BarButtonItem247, Me.BarEditDate, Me.BarButtonItem251, Me.BarButtonItem252, Me.BarButtonItem253, Me.BarButtonItem254, Me.BarButtonItem255, Me.BarButtonItem256, Me.BarWorkspaceMenuItem2, Me.BarSubItem16, Me.BarButtonItem112, Me.BarButtonItem207, Me.BarButtonItem162, Me.BarButtonItem259, Me.BarButtonItem260, Me.BarButtonItem261, Me.BarSubItem17, Me.BarButtonItem250, Me.BarButtonItem262, Me.BarEndDate, Me.BarButtonItem263, Me.BarButtonItem264, Me.BarButtonInternalOrders, Me.BarButtonItem265, Me.BarButtonItem266, Me.BarButtonItem267, Me.BarSubItem18, Me.BarButtonItem268, Me.BarButtonItem269, Me.BarButtonItem270, Me.BarButtonItem271, Me.BarButtonItem272, Me.BarButtonItem273, Me.BarButtonItem275, Me.BarButtonItem276, Me.BarButtonItem277, Me.BarButtonItem279, Me.BarButtonItem280, Me.BarButtonItem281, Me.BarButtonItem274, Me.BarButtonItem282, Me.BarItemBalanceByBatchNo, Me.BarButtonItem284, Me.BarAccountStatmentForRef, Me.BarButtonItem83, Me.BarButtonItem85, Me.BarButtonItem287, Me.BarButtonItems, Me.BarButtonItem289, Me.BarButtonItemChangePrice, Me.BarButtonItem291, Me.BarButtonItem292, Me.BarButtonItem293, Me.BarButtonItem294, Me.BarButtonItem295, Me.BarButtonItem296, Me.BarButtonMonthlyAttReport, Me.BarButtonMonthlyAdjustmentAtt, Me.BarButtonItem237, Me.BarButtonItemCostCenter1, Me.BarButtonItem297, Me.BarButtonItem121, Me.BarButtonItem203, Me.BarSubItem7, Me.BarSubItem8, Me.BarSubItem9, Me.BarButtonItem298, Me.BarBarPlanRequiredHoursForm, Me.BarPlanRequiredHours, Me.BarPlansNames, Me.BarButtonItem299, Me.BarButtonItem300, Me.BarButtonItemGeneralAttendanceReport, Me.BarButtonPrintBarcodesSettings, Me.BarInternalOrdersAudit, Me.ItemsBarcodes, Me.BarInternalOrdersLogsReports, Me.BarButtonItem303, Me.BarButtonItem304, Me.BarSubItem14, Me.BarButtonItem305, Me.BarButtonItem306, Me.BarButtonItem84, Me.BarButtonItem202, Me.BarSubItem19, Me.BarButtonItem307, Me.BarButtonItem308, Me.BarButtonItemAccountStatment, Me.BarButtonItem213, Me.BarButtonItem219, Me.BarButtonItemQuickAddNewItem, Me.BarButtonPurchaseDispatch, Me.BarButtonSalesDispatch, Me.BarButtonPrintBarcodes, Me.BarButtonItem206, Me.BarButtonItem218, Me.BarButtonItem241, Me.BarButtonItem242, Me.BarButtonItem288, Me.BarButtonItem302, Me.BarSubItemJardMenue, Me.BarButtonItemJard, Me.BarSubItem21, Me.BarButtonItem309, Me.BarButtonItemRCCIInsentives, Me.BarButtonItem311, Me.BarButtonItemRCCIreports, Me.BarCustomersCarsAndParts, Me.BarButtonItem16, Me.Statickey_, Me.Statickey, Me.mnuWhatsApp, Me.BarButtonItem285, Me.btnOpenLinkWhatsApp, Me.mnuFinansialSett, Me.btnFinansialSettings, Me.btnVouchersSettings, Me.btnShortCut, Me.btnControlPanel, Me.btnGeneralSettings})
         resources.ApplyResources(Me.RibbonControl, "RibbonControl")
-        Me.RibbonControl.MaxItemId = 526
+        Me.RibbonControl.MaxItemId = 527
         Me.RibbonControl.MiniToolbars.Add(Me.RibbonMiniToolbar1)
         Me.RibbonControl.Name = "RibbonControl"
         Me.RibbonControl.OptionsMenuMinWidth = 1075
@@ -666,9 +665,9 @@ Partial Class Main
         Me.SkinRibbonGalleryBarItem2.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
         Me.SkinRibbonGalleryBarItem2.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.Squeeze
         Me.SkinRibbonGalleryBarItem2.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Top
-        SkinPaddingEdges4.Left = 27
-        SkinPaddingEdges4.Right = 27
-        Me.SkinRibbonGalleryBarItem2.Gallery.ItemImagePadding = SkinPaddingEdges4
+        SkinPaddingEdges1.Left = 27
+        SkinPaddingEdges1.Right = 27
+        Me.SkinRibbonGalleryBarItem2.Gallery.ItemImagePadding = SkinPaddingEdges1
         Me.SkinRibbonGalleryBarItem2.Id = 22
         Me.SkinRibbonGalleryBarItem2.ImageOptions.SvgImage = CType(resources.GetObject("SkinRibbonGalleryBarItem2.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.SkinRibbonGalleryBarItem2.Name = "SkinRibbonGalleryBarItem2"
@@ -860,9 +859,9 @@ Partial Class Main
         Me.SkinRibbonGalleryBarItem3.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
         Me.SkinRibbonGalleryBarItem3.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.Squeeze
         Me.SkinRibbonGalleryBarItem3.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Top
-        SkinPaddingEdges5.Left = 20
-        SkinPaddingEdges5.Right = 20
-        Me.SkinRibbonGalleryBarItem3.Gallery.ItemImagePadding = SkinPaddingEdges5
+        SkinPaddingEdges2.Left = 20
+        SkinPaddingEdges2.Right = 20
+        Me.SkinRibbonGalleryBarItem3.Gallery.ItemImagePadding = SkinPaddingEdges2
         Me.SkinRibbonGalleryBarItem3.Id = 105
         Me.SkinRibbonGalleryBarItem3.ImageOptions.SvgImage = CType(resources.GetObject("SkinRibbonGalleryBarItem3.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.SkinRibbonGalleryBarItem3.Name = "SkinRibbonGalleryBarItem3"
@@ -1937,7 +1936,7 @@ Partial Class Main
         'WorkspaceManager1
         '
         Me.WorkspaceManager1.TargetControl = Me
-        Me.WorkspaceManager1.TransitionType = PushTransition2
+        Me.WorkspaceManager1.TransitionType = PushTransition1
         '
         'BarSubItem16
         '
@@ -2125,13 +2124,6 @@ Partial Class Main
         Me.BarButtonItem277.Id = 414
         Me.BarButtonItem277.ImageOptions.SvgImage = CType(resources.GetObject("BarButtonItem277.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BarButtonItem277.Name = "BarButtonItem277"
-        '
-        'BarButtonItem278
-        '
-        resources.ApplyResources(Me.BarButtonItem278, "BarButtonItem278")
-        Me.BarButtonItem278.Id = 415
-        Me.BarButtonItem278.ImageOptions.SvgImage = CType(resources.GetObject("BarButtonItem278.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.BarButtonItem278.Name = "BarButtonItem278"
         '
         'BarButtonItem279
         '
@@ -2693,7 +2685,7 @@ Partial Class Main
         resources.ApplyResources(Me.mnuFinansialSett, "mnuFinansialSett")
         Me.mnuFinansialSett.Id = 521
         Me.mnuFinansialSett.ImageOptions.SvgImage = CType(resources.GetObject("mnuFinansialSett.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.mnuFinansialSett.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.btnFinansialSettings), New DevExpress.XtraBars.LinkPersistInfo(Me.btnVouchersSettings), New DevExpress.XtraBars.LinkPersistInfo(Me.btnShortCut), New DevExpress.XtraBars.LinkPersistInfo(Me.btnControlPanel)})
+        Me.mnuFinansialSett.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.btnFinansialSettings), New DevExpress.XtraBars.LinkPersistInfo(Me.btnVouchersSettings), New DevExpress.XtraBars.LinkPersistInfo(Me.btnShortCut), New DevExpress.XtraBars.LinkPersistInfo(Me.btnControlPanel), New DevExpress.XtraBars.LinkPersistInfo(Me.btnGeneralSettings)})
         Me.mnuFinansialSett.Name = "mnuFinansialSett"
         Me.mnuFinansialSett.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
         '
@@ -2726,6 +2718,13 @@ Partial Class Main
         Me.btnControlPanel.Id = 525
         Me.btnControlPanel.ImageOptions.SvgImage = CType(resources.GetObject("btnControlPanel.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.btnControlPanel.Name = "btnControlPanel"
+        '
+        'btnGeneralSettings
+        '
+        resources.ApplyResources(Me.btnGeneralSettings, "btnGeneralSettings")
+        Me.btnGeneralSettings.Id = 526
+        Me.btnGeneralSettings.ImageOptions.SvgImage = CType(resources.GetObject("btnGeneralSettings.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.btnGeneralSettings.Name = "btnGeneralSettings"
         '
         'RibbonMiniToolbar1
         '
@@ -3260,7 +3259,6 @@ Partial Class Main
         'RibbonPageGroup36
         '
         Me.RibbonPageGroup36.ItemLinks.Add(Me.BarButtonItem243)
-        Me.RibbonPageGroup36.ItemLinks.Add(Me.BarButtonItem278)
         Me.RibbonPageGroup36.ItemLinks.Add(Me.BarButtonItemHR_Settings)
         Me.RibbonPageGroup36.ItemLinks.Add(Me.BarButtonItemSelfServiceSettings)
         Me.RibbonPageGroup36.ItemLinks.Add(Me.mnuFinansialSett)
@@ -3426,9 +3424,9 @@ Partial Class Main
         Me.SkinRibbonGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
         Me.SkinRibbonGalleryBarItem1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.Squeeze
         Me.SkinRibbonGalleryBarItem1.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Top
-        SkinPaddingEdges6.Left = 8
-        SkinPaddingEdges6.Right = 8
-        Me.SkinRibbonGalleryBarItem1.Gallery.ItemImagePadding = SkinPaddingEdges6
+        SkinPaddingEdges3.Left = 8
+        SkinPaddingEdges3.Right = 8
+        Me.SkinRibbonGalleryBarItem1.Gallery.ItemImagePadding = SkinPaddingEdges3
         Me.SkinRibbonGalleryBarItem1.Id = 16
         Me.SkinRibbonGalleryBarItem1.ImageOptions.SvgImage = CType(resources.GetObject("SkinRibbonGalleryBarItem1.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.SkinRibbonGalleryBarItem1.Name = "SkinRibbonGalleryBarItem1"
@@ -5010,7 +5008,6 @@ Partial Class Main
     Friend WithEvents BarButtonItem275 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem276 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem277 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem278 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem279 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem280 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem281 As DevExpress.XtraBars.BarButtonItem
@@ -5119,4 +5116,5 @@ Partial Class Main
     Friend WithEvents btnVouchersSettings As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents btnShortCut As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents btnControlPanel As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents btnGeneralSettings As DevExpress.XtraBars.BarButtonItem
 End Class
