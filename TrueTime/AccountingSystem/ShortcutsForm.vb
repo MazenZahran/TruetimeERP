@@ -132,6 +132,10 @@
             MsgBox("تم حفظ الاختصارات بنجاح", MsgBoxStyle.Information, "نجح")
             LoadSystemForms()
 
+            If My.Forms.Main IsNot Nothing Then
+                ShortcutManager.Instance.Refresh()
+            End If
+
         Catch ex As Exception
             MsgBox("حدث خطأ أثناء الحفظ: " & ex.Message, MsgBoxStyle.Critical, "خطأ")
         End Try

@@ -21,6 +21,7 @@ Public Class Main
     Dim LogStatus As Boolean = True
     Dim LogNotes As String = String.Empty
     Private ctr As Integer = 0
+    Private shortcutsCache As Dictionary(Of String, Tuple(Of Integer, String, Boolean))
 
     Public Sub New()
         InitializeComponent()
@@ -36,6 +37,7 @@ Public Class Main
         WindowsFormsSettings.AllowHoverAnimation = DefaultBoolean.True
         'Application.SetCompatibleTextRenderingDefault(False)
         Me.RibbonControl.Minimized = True
+        ShortcutManager.Instance.LoadShortcuts()
         '  gghjghjg
         Dim f As CalenderWithTasks = New CalenderWithTasks()
         f.MdiParent = Me
@@ -380,72 +382,17 @@ Public Class Main
     Private Sub CheckAndOpenFormByShortcut(e As KeyEventArgs)
         Try
             Dim activeControl As Control = Me.ActiveControl
-            If activeControl IsNot Nothing Then
-                If TypeOf activeControl Is TextBox OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.TextEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.MemoEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.ButtonEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.ComboBoxEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.LookUpEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.SearchLookUpEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.SpinEdit OrElse
-                   TypeOf activeControl Is DevExpress.XtraEditors.DateEdit OrElse
-                   TypeOf activeControl Is RichTextBox Then
-                    Return
-                End If
-            End If
+            If IsEditControl(activeControl) Then Return
 
-            If e.KeyCode = Keys.ControlKey OrElse e.KeyCode = Keys.ShiftKey OrElse
-               e.KeyCode = Keys.Menu OrElse e.KeyCode = Keys.LWin OrElse
-               e.KeyCode = Keys.RWin OrElse e.KeyCode = Keys.Alt Then
-                Return
-            End If
+            Dim shortcutText As String = ShortcutManager.BuildShortcutText(e)
+            If String.IsNullOrWhiteSpace(shortcutText) Then Return
 
-            Dim shortcutText As String = ""
-
-            If e.Control Then
-                shortcutText = "Ctrl"
-            End If
-
-            If e.Alt Then
-                If shortcutText <> "" Then shortcutText &= "+"
-                shortcutText &= "Alt"
-            End If
-
-            If e.Shift Then
-                If shortcutText <> "" Then shortcutText &= "+"
-                shortcutText &= "Shift"
-            End If
-
-            If e.KeyCode <> Keys.None Then
-                If shortcutText <> "" Then shortcutText &= "+"
-                shortcutText &= e.KeyCode.ToString()
-            Else
-                Return
-            End If
-
-            Dim sql As New SQLControl
-            Dim sqlString As String = "SELECT FormID, FormName, ISNULL(OpenAsNew, 0) AS OpenAsNew FROM SystemForms WHERE ShortCut = N'" & shortcutText.Replace("'", "''") & "'"
-            sql.SqlTrueTimeRunQuery(sqlString)
-
-            If sql.SQLDS.Tables(0).Rows.Count > 0 Then
-                Dim formIDObj As Object = sql.SQLDS.Tables(0).Rows(0).Item("FormID")
-                Dim formName As String = sql.SQLDS.Tables(0).Rows(0).Item("FormName").ToString()
-                Dim openAsNew As Boolean = False
-
-                If Not IsDBNull(sql.SQLDS.Tables(0).Rows(0).Item("OpenAsNew")) Then
-                    openAsNew = CBool(sql.SQLDS.Tables(0).Rows(0).Item("OpenAsNew"))
-                End If
-
-                Dim formID As Integer = 0
-                If formIDObj IsNot Nothing AndAlso Not IsDBNull(formIDObj) Then
-                    Integer.TryParse(formIDObj.ToString(), formID)
-                End If
-
-                If openAsNew Then
-                    MoneyTransList.NewDocument(formID)
+            Dim shortcutInfo As ShortcutInfo = ShortcutManager.Instance.FindShortcut(shortcutText)
+            If shortcutInfo IsNot Nothing Then
+                If shortcutInfo.OpenAsNew Then
+                    MoneyTransList.NewDocument(shortcutInfo.FormID)
                 Else
-                    OpenFormByName(formName, formID)
+                    OpenFormByName(shortcutInfo.FormName, shortcutInfo.FormID)
                 End If
 
                 e.Handled = True
@@ -455,6 +402,21 @@ Public Class Main
         Catch ex As Exception
         End Try
     End Sub
+
+    Private Function IsEditControl(ctrl As Control) As Boolean
+        If ctrl Is Nothing Then Return False
+
+        Return TypeOf ctrl Is TextBox OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.TextEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.MemoEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.ButtonEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.ComboBoxEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.LookUpEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.SearchLookUpEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.SpinEdit OrElse
+           TypeOf ctrl Is DevExpress.XtraEditors.DateEdit OrElse
+           TypeOf ctrl Is RichTextBox
+    End Function
 
     Private Sub OpenFormByName(formName As String, formID As Integer)
         Try

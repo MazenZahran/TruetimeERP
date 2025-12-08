@@ -1430,6 +1430,7 @@
     <Compile Include="HRsystem\Settings\UsersPermissions.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AccountingSystem\Models\ShortcutInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -3118,6 +3119,7 @@
     <Compile Include="HRsystem\Zen\ZenHrSyncData.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Shortcuts\ShortcutManager.vb" />
     <Compile Include="SignaturesDocument.Designer.vb">
       <DependentUpon>SignaturesDocument.vb</DependentUpon>
     </Compile>
