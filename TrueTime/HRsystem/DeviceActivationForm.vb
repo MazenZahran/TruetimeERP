@@ -10,10 +10,17 @@ Public Class DeviceActivationForm
     Private _deviceName As String
     Private _deviceModel As String
     Private _staticContractKey As String
+    Private _lastRequestDetails As String = ""
+    Private _lastResponseDetails As String = ""
 
     Public Sub New()
         InitializeComponent()
         LoadDeviceInfo()
+        Me.KeyPreview = True
+        AddHandler Me.KeyDown, AddressOf DeviceActivationForm_KeyDown
+        Dim MyDBConnection As String = ConfigurationManager.ConnectionStrings("TrueTime.My.MySettings.TrueTimeConnectionString").ConnectionString
+        Dim builder As SqlConnectionStringBuilder = New SqlConnectionStringBuilder(MyDBConnection)
+        DBName.Text = builder.InitialCatalog
     End Sub
 
     Private Sub LoadDeviceInfo()
@@ -23,6 +30,59 @@ Public Class DeviceActivationForm
         _staticContractKey = GetStaticContractKeyFromDatabase()
 
         lblDeviceName.Text = "اسم الجهاز: " & _deviceName
+    End Sub
+
+    Private Sub DeviceActivationForm_KeyDown(sender As Object, e As KeyEventArgs)
+        If e.Control AndAlso e.KeyCode = Keys.D Then
+            ShowDebugDetails()
+            e.Handled = True
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub ShowDebugDetails()
+        Dim debugForm As New Form()
+        debugForm.Text = "تفاصيل الطلب والرد - Debug"
+        debugForm.Size = New Size(800, 600)
+        debugForm.RightToLeft = RightToLeft.Yes
+        debugForm.RightToLeftLayout = True
+        debugForm.StartPosition = FormStartPosition.CenterParent
+
+        Dim panel As New Panel()
+        panel.Dock = DockStyle.Fill
+        panel.AutoScroll = True
+
+        Dim txtDetails As New TextBox()
+        txtDetails.Multiline = True
+        txtDetails.ScrollBars = ScrollBars.Both
+        txtDetails.Dock = DockStyle.Fill
+        txtDetails.Font = New Font("Consolas", 10)
+        txtDetails.ReadOnly = True
+        txtDetails.WordWrap = False
+
+        Dim details As New StringBuilder()
+        details.AppendLine("========== معلومات الجهاز ==========")
+        details.AppendLine("Device Key: " & _deviceKey)
+        details.AppendLine("Device Name: " & _deviceName)
+        details.AppendLine("Device Model: " & _deviceModel)
+        details.AppendLine("Static Key: " & If(String.IsNullOrEmpty(_staticContractKey), "(فارغ)", _staticContractKey))
+        details.AppendLine("")
+        details.AppendLine("========== آخر طلب  ==========")
+        details.AppendLine(If(String.IsNullOrEmpty(_lastRequestDetails), "(لم يتم إرسال أي طلب بعد)", _lastRequestDetails))
+        details.AppendLine("")
+        details.AppendLine("========== آخر رد  ==========")
+        details.AppendLine(If(String.IsNullOrEmpty(_lastResponseDetails), "(لم يتم استلام أي رد بعد)", _lastResponseDetails))
+        details.AppendLine("")
+        details.AppendLine("========== حالة التفعيل من ق.ب ==========")
+        Dim cachedStatus As String = GetDeviceStatusFromDatabase()
+        details.AppendLine(If(String.IsNullOrEmpty(cachedStatus), "(-)", cachedStatus))
+
+        txtDetails.Text = details.ToString()
+
+        panel.Controls.Add(txtDetails)
+        debugForm.Controls.Add(panel)
+
+        debugForm.ShowDialog(Me)
     End Sub
 
     Private Async Sub btnRequestActivation_Click(sender As Object, e As EventArgs) Handles btnRequestActivation.Click
@@ -43,6 +103,7 @@ Public Class DeviceActivationForm
             lblStatus.Text = "جاري إرسال الطلب..."
 
             Dim result As String = Await SubmitDeviceRequest(_deviceKey, _deviceName, _deviceModel, txtNotes.Text, txtRequestedBy.Text)
+            _lastResponseDetails = result
 
             Dim jsonResult = JObject.Parse(result)
             Dim message As String = jsonResult("message")?.ToString()
@@ -70,6 +131,7 @@ Public Class DeviceActivationForm
             lblStatus.Text = "جاري فحص حالة التفعيل..."
 
             Dim result As String = Await CheckDeviceStatus()
+            _lastResponseDetails = result
 
             Dim json = JObject.Parse(result)
             Dim exists As Boolean = json("exists")
@@ -89,6 +151,7 @@ Public Class DeviceActivationForm
                 _staticContractKey = contractKey
 
                 result = Await CheckDeviceStatus()
+                _lastResponseDetails = result
                 json = JObject.Parse(result)
                 exists = json("exists")
                 isActive = json("isActive")
@@ -104,6 +167,7 @@ Public Class DeviceActivationForm
 
             ElseIf deviceRepeatCount > 1 AndAlso Not String.IsNullOrEmpty(_staticContractKey) Then
                 result = Await CheckDeviceStatus()
+                _lastResponseDetails = result
                 json = JObject.Parse(result)
                 exists = json("exists")
                 isActive = json("isActive")
@@ -111,6 +175,7 @@ Public Class DeviceActivationForm
             ElseIf deviceRepeatCount = 0 Then
                 MessageBox.Show("الجهاز غير مُفعّل. يرجى طلب التفعيل أولاً.", "غير مفعل", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 lblStatus.Text = "الجهاز غير مفعل"
+                ResetModule()
                 Return
             End If
 
@@ -166,6 +231,7 @@ Public Class DeviceActivationForm
         Try
             Dim apiUrl As String = GlobalVariables.ttsSystemsAPI & "Access/CheckDeviceStatus"
             Dim jsonBody As String = "{""uniqueDeviceKey"": """ & _deviceKey & """, ""StaticContractKey"": """ & _staticContractKey & """}"
+            _lastRequestDetails = "Body: " & jsonBody
 
             Using client As New HttpClient()
                 Dim content As New StringContent(jsonBody, Encoding.UTF8, "application/json")
@@ -196,6 +262,7 @@ Public Class DeviceActivationForm
                 ""userNotes"": """ & userNotes & """,
                 ""RequestedBy"": """ & RequestedBy & """
             }"
+            _lastRequestDetails = "Body: " & jsonBody
 
             Using client As New HttpClient()
                 Dim content As New StringContent(jsonBody, Encoding.UTF8, "application/json")
@@ -378,5 +445,31 @@ Public Class DeviceActivationForm
             Console.WriteLine("Error saving IsNew: " & ex.Message)
             MessageBox.Show("خطأ في حفظ حالة التفعيل: " & ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Public Sub ResetModule()
+        Try
+            Dim connString As String = ConfigurationManager.ConnectionStrings("TrueTime.My.MySettings.TrueTimeConnectionString").ConnectionString
+
+            Using con As New SqlConnection(connString)
+                con.Open()
+
+                Dim query As String = "UPDATE Module " &
+                                  "SET Value = NULL " &
+                                  "WHERE (Text = 'Body' OR Text = 'DeviceActivationStatus' OR Text = 'StaticContractKey' OR Text = 'IsNew') "
+
+                Using cmd As New SqlCommand(query, con)
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            Console.WriteLine("Error saving: " & ex.Message)
+            MessageBox.Show("خطأ في الحفظ: " & ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ResetModule()
     End Sub
 End Class

@@ -33,6 +33,8 @@ Partial Class DeviceActivationForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtRequestedBy = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DBName = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -202,12 +204,34 @@ Partial Class DeviceActivationForm
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "طلب التفعيل بواسطة:"
         '
+        'DBName
+        '
+        Me.DBName.AutoSize = True
+        Me.DBName.Location = New System.Drawing.Point(507, 10)
+        Me.DBName.Name = "DBName"
+        Me.DBName.Size = New System.Drawing.Size(13, 13)
+        Me.DBName.TabIndex = 13
+        Me.DBName.Text = ".."
+        Me.DBName.UseMnemonic = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(415, 10)
+        Me.Button1.Name = "Button1"
+        Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Button1.Size = New System.Drawing.Size(31, 24)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "⭮"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'DeviceActivationForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(580, 420)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DBName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtRequestedBy)
         Me.Controls.Add(Me.PictureBox1)
@@ -248,4 +272,6 @@ Partial Class DeviceActivationForm
     Friend WithEvents lblDBName As Label
     Friend WithEvents txtRequestedBy As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents DBName As Label
+    Friend WithEvents Button1 As Button
 End Class
