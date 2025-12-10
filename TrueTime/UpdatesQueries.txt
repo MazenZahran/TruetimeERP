@@ -30,39 +30,39 @@ GO
 ALTER TABLE [dbo].[SystemForms] ADD [FormName] [nvarchar](max)
 GO
 
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (4, 1, N'فاتورة مشتريات', N'PurchaseInvoice', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (4, 1, N'فاتورة مشتريات', N'PurchaseInvoice', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (5, 2, N'فاتورة مبيعات', N'SalesInvoice', N'سندات', N'voucher', N'Ctrl+I', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (5, 2, N'فاتورة مبيعات', N'SalesInvoice', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (6, 3, N'سند صرف', N'PaymentVoucher', N'سندات', N'voucher', N'F', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (6, 3, N'سند صرف', N'PaymentVoucher', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (9, 4, N'سند قبض', N'ReceiptVoucher', N'سندات', N'voucher', N'Ctrl+A', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (9, 4, N'سند قبض', N'ReceiptVoucher', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (10, 5, N'سند قيد', N'JournalEntry', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (10, 5, N'سند قيد', N'JournalEntry', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (13, 6, N'اشعار مدين', N'DebitNote', N'سندات', N'voucher', N'Ctrl+V', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (13, 6, N'اشعار مدين', N'DebitNote', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (15, 7, N'اشعار دائن', N'CreditNote', N'سندات', N'voucher', N'Ctrl+Z', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (15, 7, N'اشعار دائن', N'CreditNote', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (16, 8, N'ارسالية مشتريات', N'PurchaseDeliveryNote', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (16, 8, N'ارسالية مشتريات', N'PurchaseDeliveryNote', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (17, 9, N'ارسالية مبيعات', N'SalesDeliveryNote', N'سندات', N'voucher', N'Shift+Packet', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (17, 9, N'ارسالية مبيعات', N'SalesDeliveryNote', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (18, 10, N'طلبية مشتريات', N'PurchaseOrder', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (18, 10, N'طلبية مشتريات', N'PurchaseOrder', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (19, 11, N'طلبية مبيعات', N'SalesOrder', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (19, 11, N'طلبية مبيعات', N'SalesOrder', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (20, 12, N'مردودات مبيعات', N'SalesReturns', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (20, 12, N'مردودات مبيعات', N'SalesReturns', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (21, 13, N'مردودات مشتريات', N'PurchaseReturns', N'سندات', N'voucher', N'Ctrl+W', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (21, 13, N'مردودات مشتريات', N'PurchaseReturns', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (25, 16, N'ارسالية داخلية', N'InternalDeliveryNote', N'سندات', N'voucher', N'Ctrl+Alt+V', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (25, 16, N'ارسالية داخلية', N'InternalDeliveryNote', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (26, 17, N'سند ادخال بضاعة', N'GoodsInwardVoucher', N'سندات', N'voucher', N'Ctrl+Shift+I', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (26, 17, N'سند ادخال بضاعة', N'GoodsInwardVoucher', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (27, 18, N'سند اخراج بضاعة', N'GoodsOutwardVoucher', N'سندات', N'voucher', N'Ctrl+Shift+D', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (27, 18, N'سند اخراج بضاعة', N'GoodsOutwardVoucher', N'سندات', N'voucher', N'MoneyTransList')
 GO
-INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [ShortCut], [FormName]) VALUES (28, 19, N'سند انتاج', N'ProductionVoucher', N'سندات', N'voucher', N'', N'MoneyTransList')
+INSERT [dbo].[SystemForms] ([id], [FormID], [NameAr], [NameEn], [CategoryAr], [CategoryEn], [FormName]) VALUES (28, 19, N'سند انتاج', N'ProductionVoucher', N'سندات', N'voucher', N'MoneyTransList')
 GO
 SET IDENTITY_INSERT [dbo].[SystemForms] OFF
 GO
